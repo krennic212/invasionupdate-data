@@ -35,10 +35,12 @@ async function get(url, accept) {
   return res;
 }
 
+/** All title-ish text (og:title, <title>, first <h1>), so a multi-defendant headline is caught wherever it is. */
 function titleOf(html) {
   const og = html.match(/<meta[^>]+property="og:title"[^>]+content="([^"]+)"/i);
+  const t = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
   const h1 = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
-  return decode((og?.[1] || h1?.[1] || "").replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
+  return decode([og?.[1], t?.[1], h1?.[1]].filter(Boolean).join(" | ").replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
 }
 
 async function toJpeg(buf) {
