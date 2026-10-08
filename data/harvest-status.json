@@ -1,17 +1,14 @@
 {
-  "checkedAt": 1791499618962,
-  "checkedAtIso": "2026-10-08T22:46:58.962Z",
-  "added": [
-    "Lara Gonzalez",
-    "Oleg Korniev",
-    "Jose Molina-Ovalle"
-  ],
-  "addedStatus": "pending",
-  "autoApprove": false,
+  "checkedAt": 1791500029436,
+  "checkedAtIso": "2026-10-08T22:53:49.436Z",
+  "added": [],
+  "addedStatus": "approved",
+  "heldPending": [],
+  "autoApprove": true,
   "sentToReview": [],
   "scannedReleases": 94,
   "error": null,
-  "note": "Added 3 as pending: Lara Gonzalez, Oleg Korniev, Jose Molina-Ovalle",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
