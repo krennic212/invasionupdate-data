@@ -182,6 +182,7 @@ export function statusFrom(sentence, title = "") {
   if (!pending && (/\b(removed|deported|repatriated)\b/i.test(s) || /\b(deports|removes|deported|removed)\b/i.test(title))) return "Removed";
   if (/\b(convicted|sentenced|pleaded guilty|pled guilty|found guilty|convictions?)\b/i.test(s)) return "Convicted";
   if (/\b(charged|indicted|arrested|accused|alleged|allegedly|wanted|detained|apprehended|complaint)\b/i.test(s)) return "Charged";
+  if (/\b(pleads? guilty|pleaded guilty|sentenced|convicted|found guilty)\b/i.test(title)) return "Convicted";
   if (/\b(arrests?|arrested|charged|charges|indicted|indictment|apprehend\w*|nabs|detainer)\b/i.test(title)) return "Charged";
   return "As posted";
 }
