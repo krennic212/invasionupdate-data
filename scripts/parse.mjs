@@ -175,15 +175,39 @@ export function extractPeople(blocks) {
   return found;
 }
 
-/** Status from the source's own verbs (sentence first, then the release title). */
+/** Prior-history phrases ("previously removed", "prior conviction", "criminal history includes")
+ *  describe the past, not the stage of THIS case, so they never set the label. */
+export function stripPriors(text) {
+  return String(text || "")
+    .replace(/\b(previously|prior|earlier|already|twice|once|formerly)\s+(been\s+)?(removed|deported|convicted)\b/gi, "prior-history")
+    .replace(/\bprior\s+(\w+\s+){0,2}convictions?\b/gi, "prior-history")
+    .replace(/\bcriminal (history|record)\b/gi, "prior-history");
+}
+
+export const CONVICT_WORDS = /\b(convicted|convictions?|sentenced|pleaded guilty|pled guilty|pleads guilty|found guilty)\b/i;
+export const CHARGE_WORDS = /\b(charged|charges|charging|indicted|indictment|arrested|arrests?|accused|alleged|allegedly|complaint|wanted|detained|apprehended)\b/i;
+const REMOVE_WORDS = /\b(removed|deported|repatriated)\b/i;
+const NOT_YET_REMOVED = /\bpending (removal|immigration)|in ICE custody|awaiting removal|will be (removed|deported)|processed for (removal|deportation)/i;
+
+/**
+ * Stage label from the source's own words. Rules (stage is never escalated):
+ *  - Convicted only when the person's own sentence says convicted / sentenced / pleaded or found guilty
+ *    (not "prior conviction"), or, if the sentence has no stage word at all, a title that says so
+ *    and does not also say charged / indicted / arrested.
+ *  - Removed only when the sentence says removed / deported (not "previously"), or the sentence has
+ *    no stage word and the title says deports / removes.
+ *  - Otherwise charged / indicted / arrested wording gives Charged; nothing at all gives "As posted".
+ */
 export function statusFrom(sentence, title = "") {
-  const s = String(sentence).replace(/\b(previously|prior|earlier|already|twice|once)\s+(been\s+)?(removed|deported)\b/gi, "previously-returned");
-  const pending = /\bpending (removal|immigration)|in ICE custody|awaiting removal|will be (removed|deported)|processed for (removal|deportation)/i.test(s);
-  if (!pending && (/\b(removed|deported|repatriated)\b/i.test(s) || /\b(deports|removes|deported|removed)\b/i.test(title))) return "Removed";
-  if (/\b(convicted|sentenced|pleaded guilty|pled guilty|found guilty|convictions?)\b/i.test(s)) return "Convicted";
-  if (/\b(charged|indicted|arrested|accused|alleged|allegedly|wanted|detained|apprehended|complaint)\b/i.test(s)) return "Charged";
-  if (/\b(pleads? guilty|pleaded guilty|sentenced|convicted|found guilty)\b/i.test(title)) return "Convicted";
-  if (/\b(arrests?|arrested|charged|charges|indicted|indictment|apprehend\w*|nabs|detainer)\b/i.test(title)) return "Charged";
+  const s = stripPriors(sentence);
+  const t = stripPriors(title);
+  const notYet = NOT_YET_REMOVED.test(s);
+  if (!notYet && REMOVE_WORDS.test(s)) return "Removed";
+  if (CONVICT_WORDS.test(s)) return "Convicted";
+  if (CHARGE_WORDS.test(s)) return "Charged";
+  if (!notYet && /\b(deports|removes|deported|removed)\b/i.test(t) && !CHARGE_WORDS.test(t)) return "Removed";
+  if (CONVICT_WORDS.test(t) && !CHARGE_WORDS.test(t)) return "Convicted";
+  if (CHARGE_WORDS.test(t) || /\b(apprehend\w*|nabs|detainer)\b/i.test(t)) return "Charged";
   return "As posted";
 }
 

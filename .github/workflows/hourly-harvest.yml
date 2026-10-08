@@ -24,9 +24,9 @@ jobs:
     outputs:
       changed: ${{ steps.diff.outputs.changed }}
     env:
-      # Approval gate. "false": new rows enter the feed as status "pending" and the site
-      # hides them until approved. Flip to "true" to auto-approve new official rows.
-      AUTO_APPROVE: "false"
+      # Approval gate. "true": new official rows go live at once, EXCEPT rows that trip a hard guard
+      # (possible minor, stage escalation, at large, non-citizen not stated), which stay "pending". Set "false" to require approval for every new row.
+      AUTO_APPROVE: "true"
       APPROVE_INPUT: ${{ github.event.inputs.approve }}
     steps:
       - uses: actions/checkout@v4

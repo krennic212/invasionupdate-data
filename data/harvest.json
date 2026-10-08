@@ -2,7 +2,7 @@
   {
     "name": "Lara Gonzalez",
     "city": "Not stated",
-    "crime": "As posted: According to court records, on October 4, 2026, Lara Gonzalez, a Mexican national, traveled into Canada through the Houlton port of entry.",
+    "crime": "Convicted: According to court records, on October 4, 2026, Lara Gonzalez, a Mexican national, traveled into Canada through the Houlton port of entry.",
     "usa": "DOJ release Oct 8, 2026: Mexican National Pleads Guilty to Eluding Immigration Inspection",
     "foreign": "Not stated in post",
     "picked": "10/8/2026 (DOJ release)",
@@ -41,7 +41,8 @@
     "confirmedBy": "DOJ",
     "lat": null,
     "lon": null,
-    "status": "pending"
+    "status": "pending",
+    "holdReason": "kept pending by owner: dual citizen, unclear fit; not stated to be a non-citizen"
   },
   {
     "name": "Jose Molina-Ovalle",
@@ -745,7 +746,8 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "pending"
+    "status": "pending",
+    "holdReason": "kept pending by owner: suspect still at large (DHS release says both suspects remain at large)"
   },
   {
     "name": "Dangelo Rafael Jean Caraballo",
@@ -767,7 +769,8 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "pending"
+    "status": "pending",
+    "holdReason": "kept pending by owner: suspect still at large (DHS release says both suspects remain at large)"
   },
   {
     "name": "Abraham Hermosillo Alvarez",
@@ -926,7 +929,7 @@
   {
     "name": "Jose Almendares Suazo",
     "city": "Not stated",
-    "crime": "Convicted: Jose Almendares Suazo, 30, a criminal illegal alien from Honduras who had been previously removed from the U.S. Almendares Suazo has a prior conviction for assault causing bodily injury, as well as a prior arrest for assault involving family violence.",
+    "crime": "Charged: Jose Almendares Suazo, 30, a criminal illegal alien from Honduras who had been previously removed from the U.S. Almendares Suazo has a prior conviction for assault causing bodily injury, as well as a prior arrest for assault involving family violence.",
     "usa": "ICE release Sep 25, 2026: ICE arrests 121 during summer enforcement initiative in Texas lake community, including 2 members of the Tren de Aragua terrorist organization",
     "foreign": "Not stated in post",
     "picked": "9/25/2026 (ICE release)",

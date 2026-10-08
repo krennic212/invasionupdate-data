@@ -23,6 +23,7 @@
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { extractPeople, htmlBlocks, decode, toRow } from "./parse.mjs";
 import { nameKey, routeRows, isOfficialUrl } from "./rules.mjs";
+import { holdReasons, holdReasonsForRow } from "./guards.mjs";
 
 const HARVEST = process.env.HARVEST_FILE || "data/harvest.json";
 const REVIEW = process.env.REVIEW_FILE || "data/review.json";
@@ -31,9 +32,14 @@ const STATUS = process.env.STATUS_FILE || "data/harvest-status.json";
 const UA = "InvasionUpdateHarvest/2.0 (+https://github.com/krennic212/invasionupdate-data)";
 const MAX_LINKS = Number(process.env.MAX_LINKS || 15);
 /** Approval gate. "false" (default): new rows go in as status "pending" and the site hides them
- *  until scripts/approve.mjs marks them "approved". "true": new official rows go live at once. */
+ *  until scripts/approve.mjs marks them "approved". "true": new official rows go live at once,
+ *  EXCEPT rows that trip a hard guard (scripts/guards.mjs), which always stay "pending". */
 const AUTO_APPROVE = String(process.env.AUTO_APPROVE || "false").toLowerCase() === "true";
 const NEW_STATUS = AUTO_APPROVE ? "approved" : "pending";
+function gate(row, reasons) {
+  if (reasons.length) return { ...row, status: "pending", holdReason: reasons.join("; ") };
+  return { ...row, status: NEW_STATUS };
+}
 const MAX_AGE_DAYS = Number(process.env.MAX_AGE_DAYS || 30);
 
 const DOJ_API = "https://www.justice.gov/api/v1/press_releases.json?pagesize=40&sort=created&direction=DESC";
@@ -150,6 +156,7 @@ async function main() {
   };
   const added = [];
   const toReview = [];
+  const held = [];
   const errors = [];
   let scanned = 0;
 
@@ -159,7 +166,7 @@ async function main() {
     const { live, review: rv } = routeRows(pending);
     for (const r0 of live) {
       if (have.has(nameKey(r0.name))) continue;
-      const r = { ...r0, id: uniqueId(r0.id || `pending-${nameKey(r0.name).replace(/ /g, "-")}`), status: NEW_STATUS };
+      const r = gate({ ...r0, id: uniqueId(r0.id || `pending-${nameKey(r0.name).replace(/ /g, "-")}`) }, holdReasonsForRow(r0));
       harvest.unshift(r);
       have.add(nameKey(r.name));
       added.push(r.name);
@@ -191,7 +198,11 @@ async function main() {
       if (!k || have.has(k)) continue;
       have.add(k);
       const row = toRow(hit, rel);
-      fresh.push({ ...row, id: uniqueId(row.id), status: NEW_STATUS });
+      const label = row.crime.slice(0, row.crime.indexOf(":"));
+      const reasons = holdReasons({ name: hit.name, sentence: hit.sentence, title: rel.title, releaseText: rel.blocks.join(" "), label });
+      const gated = gate({ ...row, id: uniqueId(row.id) }, reasons);
+      if (gated.status === "pending") held.push(`${hit.name} (${gated.holdReason || "approval gate"})`);
+      fresh.push(gated);
       added.push(hit.name);
     }
   }
@@ -205,6 +216,7 @@ async function main() {
     checkedAtIso: new Date().toISOString(),
     added,
     addedStatus: NEW_STATUS,
+    heldPending: held,
     autoApprove: AUTO_APPROVE,
     sentToReview: toReview,
     scannedReleases: scanned,
@@ -213,7 +225,7 @@ async function main() {
     sources: ["dhs.gov/news-releases/press-releases", "ice.gov/newsroom", "cbp.gov/newsroom", "justice.gov press-release API"],
     writer: "scripts/harvest.mjs (GitHub Actions, krennic212/invasionupdate-data)",
   });
-  console.log(JSON.stringify({ added: added.length, names: added, sentToReview: toReview, scannedReleases: scanned, errors }, null, 2));
+  console.log(JSON.stringify({ added: added.length, names: added, heldPending: held, sentToReview: toReview, scannedReleases: scanned, errors }, null, 2));
 }
 
 main().catch((err) => {

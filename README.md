@@ -26,12 +26,24 @@ Served at **https://krennic212.github.io/invasionupdate-data/harvest.json** (plu
 - `photo` is always blank.
 - The feed never shrinks. `scripts/validate.mjs` fails the run if any existing row would disappear.
 
-## Approval gate
+## Approval gate and hard guards
 
-New rows come in as `"status": "pending"`, and the site shows only `"approved"` rows.
-To approve, open **Actions → Hourly harvest → Run workflow** and enter `all`, or a comma-separated list of row `id`s, in the *approve* box.
-Locally: `node scripts/approve.mjs all`.
-To let new official rows go live automatically, set `AUTO_APPROVE: "true"` in `.github/workflows/hourly-harvest.yml`.
+`AUTO_APPROVE: "true"` is set in `.github/workflows/hourly-harvest.yml`, so new official rows go live right away (`"status": "approved"`).
+The site shows only rows marked `"approved"`.
+
+These hard guards (`scripts/guards.mjs`) apply **even with auto-approve on**. A row that trips one is written as `"pending"`, with a `holdReason`, and stays off the site until a person approves it:
+
+- The release indicates the person is a **minor or juvenile**.
+- **Stage escalation.** The label would be later than the source's own wording, so a charged, indicted or arrested person is never labeled Convicted or Sentenced. "Prior conviction" and "previously removed" never set the stage.
+- The person is a **suspect still at large**.
+- The source sentence **doesn't state the person is a non-citizen** (dual citizens included).
+
+To approve, open **Actions → Hourly harvest → Run workflow**.
+- `all` approves every pending row that has no `holdReason`.
+- A held row is approved only when you name its `id`, which also clears its `holdReason`.
+
+Locally: `node scripts/approve.mjs all` or `node scripts/approve.mjs <id>,<id>`.
+To require approval for every new row, set `AUTO_APPROVE: "false"`.
 
 ## Schedule
 

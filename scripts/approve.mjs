@@ -5,7 +5,9 @@
  *   node scripts/approve.mjs all                 # approve every pending row
  *   node scripts/approve.mjs dhs-20261008-ian-clive-burton,ice-20260925-axon-solomon-mejia-ortega
  *
- * Only rows with status "pending" are touched. Unknown ids make the run fail
+ * Only rows with status "pending" are touched. "all" skips rows held by a hard guard
+ * (they carry a holdReason); a held row is approved only when its id is named, which
+ * also clears its holdReason. Unknown ids make the run fail
  * (so a typo is never silently ignored). Nothing is ever deleted.
  */
 import { readFileSync, writeFileSync } from "node:fs";
@@ -19,9 +21,11 @@ export function approveRows(rows, spec) {
   const approved = [];
   const out = rows.map((r) => {
     if (r?.status !== "pending") return r;
+    if (all && r.holdReason) return r;
     if (!all && !ids.has(r.id)) return r;
     approved.push(r.id);
-    return { ...r, status: "approved" };
+    const { holdReason, ...rest } = r;
+    return { ...rest, status: "approved" };
   });
   const unknown = all ? [] : [...ids].filter((id) => !approved.includes(id));
   return { rows: out, approved, unknown };

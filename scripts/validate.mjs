@@ -21,6 +21,7 @@ for (const [i, r] of (Array.isArray(rows) ? rows : []).entries()) {
   if (!isOfficialRow(r)) problems.push(`${tag}: no official federal source link`);
   if (typeof r.when !== "string" || !r.when.trim()) problems.push(`${tag}: no date`);
   if (r.photo) problems.push(`${tag}: photo must be empty`);
+  if (r.status === "approved" && r.holdReason) problems.push(`${tag}: approved but has holdReason (${r.holdReason}); approve it by id only after review, and clear holdReason`);
   if (r.status !== "approved" && r.status !== "pending") problems.push(`${tag}: status must be "approved" or "pending"`);
 }
 let prior = [];
