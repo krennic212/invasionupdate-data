@@ -36,7 +36,7 @@ const AUTO_APPROVE = String(process.env.AUTO_APPROVE || "false").toLowerCase() =
 const NEW_STATUS = AUTO_APPROVE ? "approved" : "pending";
 const MAX_AGE_DAYS = Number(process.env.MAX_AGE_DAYS || 30);
 
-const DOJ_API = "https://www.justice.gov/api/v1/press_releases.json?pagesize=50&sort=created&direction=DESC";
+const DOJ_API = "https://www.justice.gov/api/v1/press_releases.json?pagesize=40&sort=created&direction=DESC";
 const DOJ_PAGES = Number(process.env.DOJ_PAGES || 4);
 const IMMIGRATION = /illegal(ly)?\s+(alien|present|reent|re-ent|immigrant)|\balien\b|\baliens\b|reentry|re-entry|unlawfully present|citizen of|national of|\bnationals?\b|deport|removal|removed from the united states|noncitizen|non-citizen/i;
 
@@ -49,8 +49,8 @@ const LISTS = [
 const readJson = (f, dflt) => (existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : dflt);
 const writeJson = (f, v) => writeFileSync(f, `${JSON.stringify(v, null, 2)}\n`);
 
-async function fetchText(url) {
-  const res = await fetch(url, { headers: { "user-agent": UA, accept: "text/html,application/json,*/*" }, redirect: "follow", signal: AbortSignal.timeout(25000) });
+async function fetchText(url, accept = "text/html,*/*") {
+  const res = await fetch(url, { headers: { "user-agent": UA, accept }, redirect: "follow", signal: AbortSignal.timeout(25000) });
   if (!res.ok) throw new Error(`${res.status} ${url}`);
   return res.text();
 }
@@ -107,10 +107,11 @@ async function readRelease(rel, errors) {
 
 async function dojReleases(errors) {
   const out = [];
+  let seen = 0;
   for (let page = 0; page < DOJ_PAGES; page++) {
     let payload;
     try {
-      payload = JSON.parse(await fetchText(`${DOJ_API}&page=${page}`));
+      payload = JSON.parse(await fetchText(`${DOJ_API}&page=${page}`, "application/json"));
     } catch (e) {
       errors.push(`DOJ API: ${String(e.message || e)}`);
       break;
@@ -118,6 +119,7 @@ async function dojReleases(errors) {
     const results = Array.isArray(payload?.results) ? payload.results : [];
     if (!results.length) break;
     for (const r of results) {
+      seen += 1;
       const url = String(r.url || "").trim();
       if (!isOfficialUrl(url)) continue;
       const title = decode(String(r.title || "")).replace(/\s+/g, " ").trim();
@@ -130,6 +132,7 @@ async function dojReleases(errors) {
       out.push({ office: "TheJusticeDept", url, date, title, blocks: htmlBlocks(body) });
     }
   }
+  console.error(`DOJ API: ${seen} releases read, ${out.length} with immigration wording in the window`);
   return out;
 }
 
