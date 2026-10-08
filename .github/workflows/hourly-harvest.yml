@@ -1,0 +1,87 @@
+name: Hourly harvest
+
+on:
+  schedule:
+    - cron: "47 * * * *"
+  workflow_dispatch:
+    inputs:
+      approve:
+        description: 'Approve pending rows before harvesting: "all", or comma-separated row ids. Leave blank to only harvest.'
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: invasionupdate-data-harvest
+  cancel-in-progress: false
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      changed: ${{ steps.diff.outputs.changed }}
+    env:
+      # Approval gate. "false": new rows enter the feed as status "pending" and the site
+      # hides them until approved. Flip to "true" to auto-approve new official rows.
+      AUTO_APPROVE: "false"
+      APPROVE_INPUT: ${{ github.event.inputs.approve }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Tests
+        run: node --test scripts/*.test.mjs
+      - name: Approve pending rows (manual input only)
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.approve != ''
+        run: node scripts/approve.mjs "$APPROVE_INPUT"
+      - name: Harvest official papers (DHS, ICE, CBP, DOJ)
+        run: node scripts/harvest.mjs
+      - name: Cut duplicates, blank photos
+        run: node scripts/dedupe.mjs data/harvest.json data/review.json
+      - name: Guardrail check (official source, date, no photo, status, never shrinks)
+        run: node scripts/validate.mjs data/harvest.json
+      - name: Did rows change?
+        id: diff
+        run: |
+          if git diff --quiet -- data/harvest.json data/review.json; then
+            git checkout -- data/harvest-status.json data/pending.json
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Stamp harvest-meta.json
+        if: steps.diff.outputs.changed == 'true'
+        run: node scripts/write-meta.mjs
+      - name: Commit only when rows changed
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "invasionupdate-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "harvest: feed update $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
+          git pull --rebase --quiet && git push
+      - name: Stage public files
+        if: steps.diff.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        run: mkdir -p _site && cp data/harvest.json data/harvest-meta.json data/harvest-status.json _site/
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.diff.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        with:
+          path: _site
+
+  publish:
+    needs: harvest
+    if: needs.harvest.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
