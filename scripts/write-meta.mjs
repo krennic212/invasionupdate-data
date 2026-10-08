@@ -14,6 +14,7 @@ const meta = {
   rows: list.length,
   approved: list.filter((r) => r?.status === "approved").length,
   pending: list.filter((r) => r?.status === "pending").length,
+  photos: list.filter((r) => r?.photo).length,
   reviewRows: Array.isArray(review) ? review.length : 0,
   source: "https://github.com/krennic212/invasionupdate-data",
 };

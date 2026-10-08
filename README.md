@@ -1,7 +1,7 @@
 # invasionupdate-data
 
 Public data feed for **Invasion Update** (https://invasionupdate.grok.me).
-This repo holds only the harvest scripts, the workflow, and the data files. It has no app code, no secrets, and no photos.
+This repo holds only the harvest scripts, the workflow, and the data files. It has no app code and no secrets. The only photos are copies of images from official single-person releases (`data/photos/`).
 
 ## Files
 
@@ -23,7 +23,13 @@ Served at **https://krennic212.github.io/invasionupdate-data/harvest.json** (plu
 - The charge label is the release's sentence, copied word for word (DOJ/DHS wording included). The `Charged` / `Convicted` / `Removed`
   prefix comes from the verbs in that sentence or the release title.
 - Duplicates are removed when they are the same person on the same release. Co-defendants are never merged.
-- `photo` is always blank.
+- **Photos (official releases only).** A row gets a photo only when:
+  - it is approved and passes every guard;
+  - its official release page produced exactly one row and names exactly one person, and the title doesn't describe several defendants;
+  - the release body has one image whose alt text, title, caption or file name names that person (or says booking/mugshot). Seals, logos, banners, theme art and generic or og:image defaults are skipped.
+
+  The image is copied to `data/photos/<id>.jpg` (300 KB or less) and served from this Pages site. `photo` holds the Pages URL and `photoSourceUrl` holds the original. Rows from X or news never get photos.
+  Each release is checked once, and the result is stored in `data/photo-checks.json`. `scripts/validate.mjs` fails the run if any photo breaks these rules or its file is missing.
 - The feed never shrinks. `scripts/validate.mjs` fails the run if any existing row would disappear.
 
 ## Approval gate and hard guards

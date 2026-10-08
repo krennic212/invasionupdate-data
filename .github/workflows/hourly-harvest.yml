@@ -35,6 +35,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+          cache: npm
+      - name: Install (sharp, for resizing official photos)
+        run: npm ci --no-audit --no-fund
       - name: Tests
         run: node --test scripts/*.test.mjs
       - name: Approve pending rows (manual input only)
@@ -44,12 +47,14 @@ jobs:
         run: node scripts/harvest.mjs
       - name: Cut duplicates, blank photos
         run: node scripts/dedupe.mjs data/harvest.json data/review.json
-      - name: Guardrail check (official source, date, no photo, status, never shrinks)
+      - name: Official single-person release photos (copied into data/photos, never hotlinked)
+        run: node scripts/photos.mjs
+      - name: Guardrail check (official source, date, status, photo rules, never shrinks)
         run: node scripts/validate.mjs data/harvest.json
       - name: Did rows change?
         id: diff
         run: |
-          if git diff --quiet -- data/harvest.json data/review.json; then
+          if [ -z "$(git status --porcelain -- data/harvest.json data/review.json data/photos data/photo-checks.json)" ]; then
             git checkout -- data/harvest-status.json data/pending.json
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
@@ -68,7 +73,7 @@ jobs:
           git pull --rebase --quiet && git push
       - name: Stage public files
         if: steps.diff.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
-        run: mkdir -p _site && cp data/harvest.json data/harvest-meta.json data/harvest-status.json _site/
+        run: mkdir -p _site/photos && cp data/harvest.json data/harvest-meta.json data/harvest-status.json _site/ && cp -r data/photos/. _site/photos/
       - uses: actions/upload-pages-artifact@v3
         if: steps.diff.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
         with:

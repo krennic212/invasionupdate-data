@@ -7,7 +7,8 @@
  *    (justice.gov/usao-xx/pr/<slug> vs justice.gov/opa/pr/<slug>).
  *    The first row in the file is kept as is.
  *    Co-defendants (different names on one release) are never merged.
- *  - blanks any photo field, so the data never carries an image.
+ *  - blanks any photo that is not a copy in this repo (data/photos via Pages), and every photo on
+ *    review rows (X / news), so the data never hotlinks or carries an X / news image.
  * Writes only when something changed.
  *
  *   node scripts/dedupe.mjs data/harvest.json [data/review.json ...]
@@ -15,6 +16,7 @@
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { nameKey, urlsIn } from "./rules.mjs";
+import { PHOTO_PREFIX } from "./photo-rules.mjs";
 
 export function urlKey(url) {
   try {
@@ -39,7 +41,9 @@ export function dedupeRows(rows) {
   const merged = [];
   const seen = new Map();
   for (const r of rows) {
-    const row = r && typeof r === "object" && r.photo ? { ...r, photo: "" } : r;
+    // Only photos copied into this repo by scripts/photos.mjs survive; anything else is blanked.
+    const keep = r && typeof r === "object" && String(r.photo || "").startsWith(PHOTO_PREFIX) && !r.reviewReason;
+    const row = r && typeof r === "object" && r.photo && !keep ? { ...r, photo: "" } : r;
     const n = nameKey(row?.name);
     if (!n) {
       out.push(row);

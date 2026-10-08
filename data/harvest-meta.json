@@ -1,8 +1,9 @@
 {
-  "updatedAt": "2026-10-08T22:53:49Z",
+  "updatedAt": "2026-10-08T23:40:17Z",
   "rows": 127,
   "approved": 124,
   "pending": 3,
+  "photos": 11,
   "reviewRows": 716,
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -2291,7 +2291,7 @@
     "id": "1909330076887400506",
     "when": "7 Apr 2025",
     "text": "ICE Dallas Fugitive Operations arrested Carlos Ambriz, 53, a previously deported Mexican national in Catoosa, Oklahoma, convicted in Montana of deliberate homicide of his own child. He remains in ICE custody pending removal. Official ICE post.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/1909330076887400506.jpg",
     "origin": "Mexico",
     "lat": 36.1721,
     "lon": -95.7273,
@@ -2301,7 +2301,8 @@
     "confirmedBy": "ICE",
     "via": "@ERODallas 1909330076887400506",
     "sourceUrl": "https://www.ice.gov/news/releases/ice-arrests-previously-deported-mexican-national-okla-convicted-homicide-his-own",
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://www.ice.gov/sites/default/files/2025-04/250407dallas.png"
   },
   {
     "name": "Javier Zeledon Reyes",
@@ -2313,7 +2314,7 @@
     "id": "1899576906409779212",
     "when": "11 Mar 2025",
     "text": "ICE Baltimore arrested Javier Zeledon Reyes, 56, an illegal alien from Nicaragua in Hyattsville, who admitted during immigration proceedings to massacring about 20 people in the 1990s and later providing material support to a cartel in Mexico. He remains in ICE custody pending removal. Official ICE post.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/1899576906409779212.jpg",
     "origin": "Nicaragua",
     "lat": 38.9506,
     "lon": -76.9347,
@@ -2323,7 +2324,8 @@
     "confirmedBy": "ICE",
     "via": "@EROBaltimore 1899576906409779212",
     "sourceUrl": "https://www.ice.gov/news/releases/ice-apprehends-illegal-alien-ties-nicaraguan-massacre-and-mexican-drug-cartel",
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://www.ice.gov/sites/default/files/images/250311baltimore.png"
   },
   {
     "name": "Gener Pop-Cuz",
@@ -2357,7 +2359,7 @@
     "id": "1928492520343826836",
     "when": "30 May 2025",
     "text": "May 27: ICE Baltimore arrested Moises Alberto Figueroa-Bonilla, 20, an illegally present Salvadoran national and validated MS-13 member previously deported four times, at his residence in Frederick. He remains in ICE custody.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/1928492520343826836.jpg",
     "origin": "El Salvador",
     "lat": 39.4082,
     "lon": -77.4009,
@@ -2367,7 +2369,8 @@
     "confirmedBy": "ICE",
     "via": "@EROBaltimore 1928492520343826836",
     "sourceUrl": "https://www.ice.gov/news/releases/ice-arrests-ms-13-gang-member-previously-removed-us-4-times",
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://www.ice.gov/sites/default/files/2025-05/250530baltimore.png"
   },
   {
     "name": "Alex Yonatan Flores-Arce",
@@ -2379,7 +2382,7 @@
     "id": "1927519118237774037",
     "when": "28 May 2025",
     "text": "May 22: ICE Baltimore arrested Alex Yonatan Flores-Arce, 20, an illegally present Honduran national convicted of second-degree rape, after Howard County Detention Center failed to honor an ICE detainer. He has a final administrative removal order.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/1927519118237774037.jpg",
     "origin": "Honduras",
     "lat": 39.2037,
     "lon": -76.856,
@@ -2389,7 +2392,8 @@
     "confirmedBy": "ICE",
     "via": "@EROBaltimore 1927519118237774037",
     "sourceUrl": "https://www.ice.gov/news/releases/ice-arrests-convicted-rapist-after-local-jurisdiction-fails-honor-immigration",
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://www.ice.gov/sites/default/files/2025-05/250527baltimore.jpg"
   },
   {
     "name": "Edvin Giovanni Ceron-Reyes",
@@ -2401,7 +2405,7 @@
     "id": "",
     "when": "3 Apr 2025",
     "text": "March 31: ICE Baltimore arrested Edvin Giovanni Ceron-Reyes, 37, an illegal Guatemalan citizen in Cumberland after transfer from Western Correctional Facility, convicted of two counts of attempted first-degree murder. He remains in ICE custody pending removal.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/edvin-giovanni-ceron-reyes-cef60010.jpg",
     "origin": "Guatemala",
     "lat": 39.6504,
     "lon": -78.7574,
@@ -2411,7 +2415,8 @@
     "confirmedBy": "ICE",
     "via": "ICE newsroom",
     "sourceUrl": "https://www.ice.gov/news/releases/ice-arrests-guatemalan-alien-convicted-attempted-murder",
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://www.ice.gov/sites/default/files/images/250404baltimore.jpg"
   },
   {
     "name": "Rene Pop-Chub",
@@ -2423,7 +2428,7 @@
     "id": "",
     "when": "14 Apr 2025",
     "text": "April 12: ICE Baltimore arrested Rene Pop-Chub, 32, an illegal Guatemalan citizen in Hyattsville after Prince George's County failed to honor an ICE detainer. He is pending charges for murder, assault, and reckless endangerment.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/rene-pop-chub-6f95346e.jpg",
     "origin": "Guatemala",
     "lat": 38.9506,
     "lon": -76.9347,
@@ -2433,7 +2438,8 @@
     "confirmedBy": "ICE",
     "via": "ICE newsroom",
     "sourceUrl": "https://www.ice.gov/news/releases/ice-arrests-guatemalan-alien-charged-murder-assault-after-release-noncooperative",
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://www.ice.gov/sites/default/files/2025-04/250415baltimore.png"
   },
   {
     "name": "Keycy Robinson Alexis Barrera-Rosa",
@@ -2533,7 +2539,7 @@
     "id": "1891867268310569253",
     "when": "18 Feb 2025",
     "text": "Feb. 10: ICE Cincinnati arrested Ciro Teodoro-Rivera, an illegal alien from Mexico convicted of sexual imposition and aggravated assault. He remains in ICE custody pending removal.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/1891867268310569253.jpg",
     "origin": "Mexico",
     "lat": 39.1,
     "lon": -84.51,
@@ -2543,7 +2549,8 @@
     "confirmedBy": "ICE",
     "via": "@ERODetroit 1891867268310569253",
     "sourceUrl": "https://www.ice.gov/news/releases/ice-cincinnati-arrests-illegal-alien-convicted-sex-crimes",
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://www.ice.gov/sites/default/files/images/250213cincinnati-1.png"
   },
   {
     "name": "Luis Naula-Candelario",
@@ -2555,7 +2562,7 @@
     "id": "1894479479948677376",
     "when": "25 Feb 2025",
     "text": "Feb. 12: ICE Columbus and U.S. Marshals arrested Luis Naula-Candelario, a criminal alien from Ecuador wanted in his home country for murder, in Pickerington, Ohio. He remains in ICE custody.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/1894479479948677376.jpg",
     "origin": "Ecuador",
     "lat": 39.9061,
     "lon": -82.7563,
@@ -2565,7 +2572,8 @@
     "confirmedBy": "ICE",
     "via": "@ERODetroit 1894479479948677376",
     "sourceUrl": "https://www.ice.gov/news/releases/ice-columbus-and-us-marshals-arrest-ecuadorian-illegal-alien-wanted-murder",
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://www.ice.gov/sites/default/files/images/250219columbus.png"
   },
   {
     "name": "Christopher Alexis Rodriguez Flores",
@@ -2577,7 +2585,7 @@
     "id": "",
     "when": "14 Apr 2025",
     "text": "April 9: ICE San Antonio removed Christopher Alexis Rodriguez Flores, 24, a Salvadoran national wanted in El Salvador for rape of a child, on an ICE Air charter.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/christopher-alexis-rodriguez-flores-c1fe143c.jpg",
     "origin": "El Salvador",
     "lat": 29.6442,
     "lon": -98.3128,
@@ -2587,7 +2595,8 @@
     "confirmedBy": "ICE",
     "via": "ICE newsroom",
     "sourceUrl": "https://www.ice.gov/news/releases/ice-removes-salvadoran-national-wanted-rape-against-minor-his-home-country",
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://www.ice.gov/sites/default/files/2025-04/250415sanantonio.jpg"
   },
   {
     "name": "Francisco Javier Melendez Torres",
@@ -2599,7 +2608,7 @@
     "id": "1887319753426981329",
     "when": "5 Feb 2025",
     "text": "Jan. 31: ICE Philadelphia removed Francisco Javier Melendez Torres, a citizen of El Salvador with a final order of removal, a foreign fugitive wanted for aggravated rape of a child. Arrested Oct. 25, 2024, in Levittown, New York.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/1887319753426981329.jpg",
     "origin": "El Salvador",
     "lat": 40.7259,
     "lon": -73.5143,
@@ -2609,7 +2618,8 @@
     "confirmedBy": "ICE",
     "via": "@EROPhiladelphia 1887319753426981329",
     "sourceUrl": "https://www.ice.gov/news/releases/ice-philadelphia-removes-salvadorian-citizen-wanted-aggravated-rape-minor",
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://www.ice.gov/sites/default/files/images/250202philadelphia.jpg"
   },
   {
     "name": "Yermanny Suarez Laureano",
@@ -2733,7 +2743,7 @@
     "id": "2100967318259925149",
     "when": "18 Sep 2026",
     "text": "HSI Kansas City posted only an ice.gov newsroom URL (no name on the tweet). ICE Chicago: Amos Sheik Massaquoi, 55, a criminal illegal alien from Liberia living in Chicago, was removed to Liberia on Aug. 11, 2026. HSI Maryland arrest Aug. 23, 2019; ICE Baltimore April 1, 2025. Overstay after Nov. 6, 2006. Human-rights allegations in Liberia are believed / as posted — not labeled a U.S. conviction. No mugshot on the release. Link-only newsroom tweets still count.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/2100967318259925149.jpg",
     "via": "@HSIKansasCity 2100967318259925149 · ICE Chicago newsroom",
     "sourceUrl": "https://www.ice.gov/news/releases/ice-chicago-removes-former-liberian-combatant-who-participated-killings-torture",
     "voting": false,
@@ -2741,7 +2751,8 @@
     "confirmedBy": "ICE",
     "lat": 41.86,
     "lon": -87.65,
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://www.ice.gov/sites/default/files/2026-09/Amos%20Sheik%20Massaquoi_0.png"
   },
   {
     "name": "Jose Flores-Flores",
