@@ -1,0 +1,23 @@
+{
+  "_note": "Severity points table (Krennic, 2026-10-09). Edit points here; scripts/severity.mjs and its tests read this file. A person's severity = SUM over distinct crimes of points x stage weight x count bonus.",
+  "crimes": {
+    "murder":          { "label": "Murder / manslaughter",            "points": 95 },
+    "childSex":        { "label": "Child sex crime",                  "points": 92 },
+    "rape":            { "label": "Rape / sexual assault",            "points": 90 },
+    "officer":         { "label": "Attack on police officer",         "points": 88 },
+    "attemptedMurder": { "label": "Attempted murder",                 "points": 85 },
+    "kidnapping":      { "label": "Kidnapping / human trafficking",   "points": 82 },
+    "childViolence":   { "label": "Violent crime against a child",    "points": 80 },
+    "robberyAssault":  { "label": "Armed robbery / aggravated assault", "points": 70 },
+    "weapons":         { "label": "Weapons",                          "points": 55 },
+    "drugs":           { "label": "Drug trafficking",                 "points": 50 },
+    "theft":           { "label": "Burglary / theft",                 "points": 35 },
+    "dui":             { "label": "DUI",                              "points": 25 },
+    "fraud":           { "label": "Fraud (incl. voter fraud)",        "points": 60 },
+    "immigration":     { "label": "Illegal entry / reentry",          "points": 5 }
+  },
+  "stage": { "convicted": 1.0, "notConvicted": 0.9 },
+  "extraCountBonus": 0.1,
+  "extraCountBonusCap": 0.3,
+  "highlights": { "days": 7, "limit": 25 }
+}

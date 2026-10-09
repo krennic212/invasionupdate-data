@@ -1,0 +1,285 @@
+{
+  "asOf": "2026-10-09",
+  "windowDays": 7,
+  "total": 102,
+  "rows": [
+    {
+      "id": "dhs-20261008-ian-clive-burton",
+      "name": "Ian Clive Burton",
+      "when": "8 Oct 2026",
+      "severity": 238,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Attack on police officer",
+        "Weapons"
+      ]
+    },
+    {
+      "id": "dhs-20261005-eris-ramon-arguera",
+      "name": "Eris Ramon Arguera",
+      "when": "5 Oct 2026",
+      "severity": 165,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Armed robbery / aggravated assault"
+      ]
+    },
+    {
+      "id": "dhs-20261005-herma-perez-caballero",
+      "name": "Herma Perez-Caballero",
+      "when": "5 Oct 2026",
+      "severity": 165,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Armed robbery / aggravated assault"
+      ]
+    },
+    {
+      "id": "x-2107181638035857530-fausto-omana-briseno",
+      "name": "Fausto Omana-Briseno",
+      "when": "5 Oct 2026",
+      "severity": 164,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Rape / sexual assault"
+      ]
+    },
+    {
+      "id": "x-2107567290237796414-saul-vazquez-mora",
+      "name": "Saul Vazquez Mora",
+      "when": "6 Oct 2026",
+      "severity": 160,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Armed robbery / aggravated assault"
+      ]
+    },
+    {
+      "id": "dhs-20261008-angel-ramirez-castillo",
+      "name": "Angel Ramirez-Castillo",
+      "when": "8 Oct 2026",
+      "severity": 155,
+      "severityReason": "Attempted murder",
+      "severityCrimes": [
+        "Attempted murder",
+        "Armed robbery / aggravated assault"
+      ]
+    },
+    {
+      "id": "dhs-20261008-irvin-roblero-ortiz",
+      "name": "Irvin Roblero-Ortiz",
+      "when": "8 Oct 2026",
+      "severity": 152,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Armed robbery / aggravated assault"
+      ]
+    },
+    {
+      "id": "x-2107456058973159861-phai-you",
+      "name": "Phai You",
+      "when": "6 Oct 2026",
+      "severity": 150,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Weapons"
+      ]
+    },
+    {
+      "id": "doj-20261005-christhian-aybar-berroa",
+      "name": "Christhian Aybar-Berroa",
+      "when": "5 Oct 2026",
+      "severity": 143,
+      "severityReason": "Attack on police officer",
+      "severityCrimes": [
+        "Attack on police officer",
+        "Weapons"
+      ]
+    },
+    {
+      "id": "doj-20261005-miguel-francisco-mora-nunez",
+      "name": "Miguel Francisco Mora Nunez",
+      "when": "5 Oct 2026",
+      "severity": 143,
+      "severityReason": "Attack on police officer",
+      "severityCrimes": [
+        "Attack on police officer",
+        "Weapons"
+      ]
+    },
+    {
+      "id": "dhs-20261007-miguel-cadena-gomez",
+      "name": "Miguel Cadena-Gomez",
+      "when": "7 Oct 2026",
+      "severity": 142,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "x-2106368675884503148-juan-aguilar-naranjo",
+      "name": "Juan Aguilar Naranjo",
+      "when": "3 Oct 2026",
+      "severity": 140,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Drug trafficking",
+        "Burglary / theft"
+      ]
+    },
+    {
+      "id": "x-2108243525322084482-marlon-romero-medina",
+      "name": "Marlon Romero Medina",
+      "when": "8 Oct 2026",
+      "severity": 137,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Armed robbery / aggravated assault"
+      ]
+    },
+    {
+      "id": "x-2108264206034522467-jose-jacinto-vasquez-arellano",
+      "name": "Jose Jacinto Vasquez Arellano",
+      "when": "8 Oct 2026",
+      "severity": 130,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons",
+        "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "dhs-20261008-cesar-funes-oliva",
+      "name": "Cesar Funes-Oliva",
+      "when": "8 Oct 2026",
+      "severity": 127,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Burglary / theft"
+      ]
+    },
+    {
+      "id": "dhs-20261005-abraham-leon-aguirre",
+      "name": "Abraham Leon-Aguirre",
+      "when": "5 Oct 2026",
+      "severity": 125,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Drug trafficking",
+        "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "dhs-20261007-gonzalo-sanchez",
+      "name": "Gonzalo Sanchez",
+      "when": "7 Oct 2026",
+      "severity": 117,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "DUI"
+      ]
+    },
+    {
+      "id": "x-2107215032882810906-salvador-j-sotolongo",
+      "name": "Salvador J. Sotolongo",
+      "when": "5 Oct 2026",
+      "severity": 113,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons"
+      ]
+    },
+    {
+      "id": "dhs-20261008-jose-luis-mata-cedillo",
+      "name": "Jose Luis Mata-Cedillo",
+      "when": "8 Oct 2026",
+      "severity": 110,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Drug trafficking",
+        "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "x-2107833328044851595-alfonso-duran",
+      "name": "Alfonso Duran",
+      "when": "7 Oct 2026",
+      "severity": 108,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "DUI"
+      ]
+    },
+    {
+      "id": "x-2107803124752629805-reynaldo-c-zayas",
+      "name": "Reynaldo C. Zayas",
+      "when": "7 Oct 2026",
+      "severity": 108,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "dhs-20261007-victor-gonzalez-ibarra",
+      "name": "Victor Gonzalez-Ibarra",
+      "when": "7 Oct 2026",
+      "severity": 105,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "x-2107516241216667970-orlando-adrina-salgado",
+      "name": "Orlando Adrina Salgado",
+      "when": "6 Oct 2026",
+      "severity": 105,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Burglary / theft"
+      ]
+    },
+    {
+      "id": "x-2107948122273964218-javier-roman-flores",
+      "name": "Javier Roman Flores",
+      "when": "7 Oct 2026",
+      "severity": 101,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2107417033252262121-jerome-nicolas-pascal-charton",
+      "name": "Jerome Nicolas Pascal Charton",
+      "when": "6 Oct 2026",
+      "severity": 99,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    }
+  ]
+}

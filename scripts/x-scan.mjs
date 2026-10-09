@@ -35,6 +35,7 @@ import { holdReasons } from "./guards.mjs";
 import { nameKey } from "./rules.mjs";
 import { LIVE_X_HANDLES, TRUSTED_REPORTER_X_HANDLES } from "./x-handles.mjs";
 import { buildMeta } from "./write-meta.mjs";
+import { writeSeverityFiles } from "./severity.mjs";
 import { scrubVictimNames } from "./victims.mjs";
 
 const OFFICIAL = new Map(LIVE_X_HANDLES.map((h) => [h.toLowerCase(), h]));
@@ -210,6 +211,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   if (write) {
     if (res.live.length) writeFileSync(HARVEST, `${JSON.stringify([...res.live.reverse(), ...harvest], null, 2)}\n`);
     if (res.review.length) writeFileSync(REVIEW, `${JSON.stringify([...res.review.reverse(), ...review], null, 2)}\n`);
+    if (res.live.length) writeSeverityFiles(HARVEST, HARVEST.replace(/[^/\\]*$/, "highlights.json")); // severity on new live rows + data/highlights.json
     const prev = BigInt(state.lastSeenId || 0);
     const next = res.maxId && BigInt(res.maxId) > prev ? res.maxId : String(state.lastSeenId || "");
     if (res.live.length || res.review.length) {
