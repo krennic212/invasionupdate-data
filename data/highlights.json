@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-09",
   "windowDays": 7,
-  "total": 104,
+  "total": 108,
   "rows": [
     {
       "id": "dhs-20261008-ian-clive-burton",
@@ -37,6 +37,19 @@
         "Attack on police officer",
         "Attempted murder",
         "Weapons"
+      ]
+    },
+    {
+      "id": "dhs-20261009-gerardo-miguel-mora",
+      "name": "Gerardo Miguel-Mora",
+      "when": "9 Oct 2026",
+      "severity": 194,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Drug trafficking",
+        "Assault / battery",
+        "Burglary / theft"
       ]
     },
     {
@@ -277,18 +290,6 @@
       "severityCrimes": [
         "Child sex crime",
         "DUI"
-      ]
-    },
-    {
-      "id": "dhs-20261008-jose-luis-mata-cedillo",
-      "name": "Jose Luis Mata-Cedillo",
-      "when": "8 Oct 2026",
-      "severity": 110,
-      "severityReason": "Weapons",
-      "severityCrimes": [
-        "Weapons",
-        "Drug trafficking",
-        "Illegal entry / reentry"
       ]
     }
   ]
