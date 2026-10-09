@@ -10,8 +10,12 @@
  *                   points (scripts/severity-points.json) x stage weight x count bonus
  *   severityCrimes  labels of the crimes that scored, highest points first
  *   severityReason  the top label ("" when nothing scored), used as the card tag
- * Stage weight: data stage "Convicted" (or a "Removed" row whose wording says convicted /
- * sentenced / pleaded guilty) = stage.convicted; Charged / Arrested / As posted / other = stage.notConvicted.
+ * Stage weight is PER CRIME (Krennic 2026-10-09: convicted 100%, charged / arrested / pending 90%):
+ * on a row whose data stage is "Convicted" (or a "Removed" row whose wording says convicted / sentenced /
+ * pleaded guilty), each crime takes the stage of the wording tied to it (stageNear: the nearest stage word
+ * before it in the same sentence, or "<crime> charge pending" after it). A crime only ever mentioned under
+ * pending / charged / accused / awaiting-trial wording gets stage.notConvicted; unclear -> the row stage.
+ * Charged / Arrested / As posted / other rows: every crime = stage.notConvicted (never upgraded).
  * Each crime type counts once per person; "N counts of X" adds extraCountBonus per extra count,
  * capped at extraCountBonusCap.
  *
@@ -26,6 +30,9 @@ export const TABLE = JSON.parse(readFileSync(new URL("./severity-points.json", i
 
 const CHILD = String.raw`(?:child(?:ren)?|minors?|juveniles?|(?:victim[- ]while[- ])?under(?:[- ]the[- ]age[- ]of)?[- ](?:1[0-7]|thirteen|fourteen|fifteen|sixteen|seventeen)|\d{1,2}[- ]year[- ]old (?:child|girl|boy|victim)|age 1[0-7]|less[- ]than[- ](?:1[0-7]|[1-9])[- ]years?(?:[- ]of[- ]age|[- ]old)?)`;
 const OFFICER = String.raw`(?:police|law enforcement|nypd|lapd|ice|cbp|border patrol|federal|correctional|detention|peace)?\s*(?:officers?|detectives?|deput(?:y|ies)|troopers?|agents?|cops?|policem[ae]n)\b`;
+
+const DRUG = String.raw`(?:fentanyl|cocaine|heroin|morphine|(?:crystal\s+)?(?:meth)?amphetamines?|meth|marijuana|cannabis|narcotics?|controlled\s+substances?|drugs?|opioids?|crack|oxycodone|methamphetamine)`;
+const DRUG_TRADE = String.raw`(?:traffick\w*|distribut\w*|smuggl\w*|deliver\w*|manufactur\w*|mfr|importation|import\w*|sale|sell\w*|dealing)`;
 
 /** Order matters: a matched span is blanked out before the later categories run. */
 export const PATTERNS = [
@@ -58,10 +65,15 @@ export const PATTERNS = [
   ["alienSmuggling", [/\b(?:smuggl\w*\s+(?:illegal\s+)?aliens?|alien smuggling|human smuggling|smuggling of (?:illegal\s+)?aliens?)\b/gi]],
   ["weaponsSkip", [/\b(?:with|using)\s+an?\s+(?:deadly\s+|dangerous\s+)?(?:weapon|firearm|gun|knife)\b/gi]],
   ["weapons", [/\b(?:firearms?|guns?|handguns?|rifles?|shotguns?|ammunition|weapons?|explosives?)\b/gi]],
-  ["drugs", [/\b(?:fentanyl|cocaine|heroin|morphine|(?:crystal\s+)?(?:meth)?amphetamine|meth|marijuana|narcotics?|controlled substances?|drugs?|opioids?|crack|oxycodone|(?:intent\s+to\s+)?distribut\w*|possess\w*\s+with\s+intent)\b/gi]],
+  // Trafficking (50) only with trafficking / distribution / intent-to-distribute / smuggling wording tied to a drug word;
+  // any other drug wording ("possession of controlled substance", "drug charges") is Drug possession (30).
+  ["drugs", [
+    new RegExp(String.raw`\b${DRUG}\b(?:(?![.;,])[^]){0,40}?\b${DRUG_TRADE}|\b${DRUG_TRADE}(?:(?![.;,])[^]){0,40}?\b${DRUG}\b|\b(?:possess\w*\s+with\s+)?intent\s+to\s+(?:distribute|deliver|sell)\b|\bdrug[- ]traffick\w*`, "gi"),
+  ]],
+  ["drugPossession", [new RegExp(String.raw`\b${DRUG}\b`, "gi")]],
   ["fraud", [/\b(?:fraud\w*|identity theft|money laundering|launder\w*|forg\w*|counterfeit\w*|false statements?|false claims? (?:to|of) (?:u\.s\.\s+)?citizenship|vot(?:e|ed|ing)\s+(?:as|by)\s+(?:an\s+alien|a\s+non-?citizen)|unlawful(?:ly)? vot\w*|illegal(?:ly)? vot\w*|voter fraud|procure naturalization unlawfully|embezzl\w*|scam\w*)\b/gi]],
   ["theft", [/\b(?:burglar\w*|theft|larceny|shoplift\w*|receiving stolen|stolen property|breaking and entering)\b/gi]],
-  ["dui", [/\b(?:dui|dwi|owi|driving under the influence|driving while (?:intoxicated|impaired|under the influence)|drunk driving|operating (?:a (?:motor )?vehicle )?while (?:intoxicated|impaired))\b/gi]],
+  ["dui", [/\b(?:(?:dui|dwi|owi)s?|driving under the influence|driving while (?:intoxicated|impaired|under the influence)|drunk driving|operating (?:a (?:motor )?vehicle )?while (?:intoxicated|impaired))\b/gi]],
   ["immigration", [/\b(?:illegal(?:ly)?\s+re-?entr\w*|illegal\s+entry|unlawful(?:ly)?\s+re-?entr\w*|illegally re-?entering|re-?entry (?:after|of a removed)|immigration violation|found in the united states after)\b/gi]],
 ];
 
@@ -86,8 +98,15 @@ function headline(usa) {
 
 /** Distinct crime keys found in text, with the explicit count (1 if none stated). */
 export function crimesIn(text) {
+  return crimeHits(text).found;
+}
+
+/** crimesIn plus where each crime was matched: { found: Map key->count, at: Map key->[[start,end]...], text } (offsets in ` ${text} `). */
+export function crimeHits(text) {
   let s = ` ${text} `;
+  const orig = s;
   const found = new Map();
+  const at = new Map();
   let officerLethal = false;
   for (const [key, res] of PATTERNS) {
     for (const re of res) {
@@ -99,8 +118,11 @@ export function crimesIn(text) {
           const after = s.slice(m.index + m[0].length, m.index + m[0].length + 12);
           const b = before.match(COUNT_BEFORE);
           let n = 1;
-          if (b && (/counts?\s+of\s+$/i.test(before) || COUNT_AFTER.test(after))) n = Number(b[1]) || NUM[b[1].toLowerCase()] || 1;
+          // "N counts of X" / "N X charges" / "two DUIs" (a number right before a plural DUI / DWI)
+          if (b && (/counts?\s+of\s+$/i.test(before) || COUNT_AFTER.test(after) || (key === "dui" && /^(?:dui|dwi|owi)s$/i.test(m[0]) && /\s$/.test(before) && !/\bcounts?\s+of\s+$/i.test(before)))) n = Number(b[1]) || NUM[b[1].toLowerCase()] || 1;
           found.set(key, Math.max(found.get(key) || 0, n));
+          if (!at.has(key)) at.set(key, []);
+          at.get(key).push([m.index, m.index + m[0].length]);
           if (key === "officer" && /\b(?:stab\w*|shoot\w*|shot|kill\w*|fired at)\b/i.test(m[0])) officerLethal = true;
         }
       }
@@ -109,11 +131,37 @@ export function crimesIn(text) {
   }
   found.delete("weaponsSkip");
   found.delete("skip");
-  if (found.has("rapeNarrative") && !found.has("rape") && !found.has("childSex")) found.set("rape", found.get("rapeNarrative"));
+  if (found.has("rapeNarrative") && !found.has("rape") && !found.has("childSex")) { found.set("rape", found.get("rapeNarrative")); at.set("rape", at.get("rapeNarrative")); }
   found.delete("rapeNarrative");
+  // Trafficking already covers the drugs it names ("trafficking in heroin and possession of heroin" = one drug crime).
+  if (found.has("drugs")) found.delete("drugPossession");
   // Stabbing or shooting an officer, with no murder charge named, is attempted murder as well as an attack on an officer.
-  if (officerLethal && !found.has("murder")) found.set("attemptedMurder", Math.max(found.get("attemptedMurder") || 0, 1));
-  return found;
+  if (officerLethal && !found.has("murder")) { found.set("attemptedMurder", Math.max(found.get("attemptedMurder") || 0, 1)); if (!at.has("attemptedMurder")) at.set("attemptedMurder", at.get("officer") || []); }
+  for (const k of [...at.keys()]) if (!found.has(k)) at.delete(k);
+  return { found, at, text: orig };
+}
+
+// Stage wording that sets the stage of the crimes after it (until the next one or the sentence end).
+const CONVICT_MARK = /\b(?:convicted|convictions?|sentenced|pleaded guilty|pled guilty|pleads guilty|found guilty|guilty plea)\b/gi;
+const PENDING_MARK = /\b(?:pending|charged|charges?|charging|indicted|indictment|accused|alleged(?:ly)?|awaiting\s+trial|faces|facing|arrested\s+(?:for|on)|arrests?\s+for|wanted\s+for|suspected\s+of|complaint)\b/gi;
+// "... murder charge pending" / "... charges are pending": the marker sits after the crime.
+const PENDING_AFTER = /^[^.;,]{0,30}?\b(?:charges?|counts?)\s+(?:is\s+|are\s+|remain\s+|still\s+)?pending\b/i;
+
+/**
+ * Stage of ONE crime occurrence from the stage wording tied to it: the nearest stage word before it in the
+ * same sentence ("convicted of X and has pending charges for Y"), or "<X> charge(s) pending" right after it.
+ * null when the sentence says nothing (caller falls back to the row stage).
+ */
+export function stageNear(text, start, end) {
+  if (PENDING_AFTER.test(text.slice(end, end + 60))) return "notConvicted";
+  const sentStart = Math.max(text.lastIndexOf(". ", start), text.lastIndexOf("! ", start), text.lastIndexOf("? ", start), 0);
+  const seg = text.slice(sentStart, start);
+  let best = null;
+  for (const [re, st] of [[CONVICT_MARK, "convicted"], [PENDING_MARK, "notConvicted"]]) {
+    re.lastIndex = 0;
+    for (const m of seg.matchAll(re)) if (!best || m.index > best.i) best = { i: m.index, st };
+  }
+  return best ? best.st : null;
 }
 
 const CONVICT_WORDS = /\b(?:convicted|convictions?|sentenced|pleaded guilty|pled guilty|found guilty)\b/i;
@@ -132,20 +180,28 @@ export function stageOf(row) {
  * says nothing about any one person.
  */
 export function scoreRow(row, table = TABLE, { releaseRows = 1 } = {}) {
-  let found = crimesIn(cleanText(`${row?.crime || ""} . ${row?.text || ""}`));
+  let hits = crimeHits(cleanText(`${row?.crime || ""} . ${row?.text || ""}`));
   let from = "charge";
-  if (!found.size && releaseRows <= 2) {
-    found = crimesIn(cleanText(headline(row?.usa)));
-    from = found.size ? "headline" : "none";
+  if (!hits.found.size && releaseRows <= 2) {
+    hits = crimeHits(cleanText(headline(row?.usa)));
+    from = hits.found.size ? "headline" : "none";
   }
-  const w = table.stage[stageOf(row)] ?? 1;
-  const parts = [...found].map(([key, n]) => {
+  const rowStage = stageOf(row);
+  const parts = [...hits.found].map(([key, n]) => {
     const def = table.crimes[key];
     const bonus = Math.min(table.extraCountBonusCap, table.extraCountBonus * Math.max(0, n - 1));
-    return { key, label: def.label, count: n, points: def.points * w * (1 + bonus) };
+    // Per-crime stage: the wording tied to this crime decides; unclear -> the row stage. Never above the row stage
+    // (a Charged / Arrested / As posted row is never scored as convicted). Any convicted mention wins for the crime.
+    let stage = rowStage;
+    if (rowStage === "convicted" && from === "charge") {
+      const st = (hits.at.get(key) || []).map(([a, b]) => stageNear(hits.text, a, b) || rowStage);
+      if (st.length && !st.includes("convicted")) stage = "notConvicted";
+    }
+    const w = table.stage[stage] ?? 1;
+    return { key, label: def.label, count: n, stage, points: def.points * w * (1 + bonus) };
   }).sort((a, b) => b.points - a.points || a.label.localeCompare(b.label));
   const severity = Math.round(parts.reduce((t, p) => t + p.points, 0));
-  return { severity, severityReason: parts[0]?.label || "", severityCrimes: parts.map((p) => p.label), parts, from, stage: stageOf(row) };
+  return { severity, severityReason: parts[0]?.label || "", severityCrimes: parts.map((p) => p.label), parts, from, stage: rowStage };
 }
 
 const FIELDS = ["severity", "severityReason", "severityCrimes"];

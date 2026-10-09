@@ -10,10 +10,11 @@
     "office": "ICEgov",
     "id": "x-2108687308140752975-anthony-alfredo-moreno",
     "when": "9 Oct 2026",
-    "severity": 50,
-    "severityReason": "Drug trafficking",
+    "severity": 55,
+    "severityReason": "DUI",
     "severityCrimes": [
-      "Drug trafficking"
+      "DUI",
+      "Drug possession"
     ],
     "text": "@ICEgov Oct 9, 2026, as posted: Anthony Alfredo Moreno, an illegal alien from El Salvador, has convictions for two DUIs and disorderly conduct: create hazardous or physically offensive condition, plus pending charges for criminal obstruction of breathing or blood circulation - apply pressure, multiple criminal possessions of controlled substance, criminal contempt, and aggravated unlicensed operation of a motor vehicle.",
     "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2108687308140752975-anthony-alfredo-moreno.jpg",
@@ -94,12 +95,12 @@
     "office": "ICEgov",
     "id": "x-2108687300699754743-juan-jose-morales-colindres",
     "when": "9 Oct 2026",
-    "severity": 180,
+    "severity": 157,
     "severityReason": "Rape / sexual assault",
     "severityCrimes": [
       "Rape / sexual assault",
-      "Drug trafficking",
-      "Assault / battery"
+      "Assault / battery",
+      "Drug possession"
     ],
     "text": "@ICEgov Oct 9, 2026, as posted: Juan Jose Morales-Colindres, an illegal alien from Guatemala, convicted of assault 3rd degree: with intent to cause physical injury and rape 3rd degree and pending charges for rape 3rd degree-act in manner injure child less than 17, criminal contempt 2nd degree, criminal possession controlled, and multiple criminal possession of controlled substances.",
     "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2108687300699754743-juan-jose-morales-colindres.jpg",
@@ -210,7 +211,7 @@
     "office": "ICEgov",
     "id": "x-2108687289643655310-dimeir-cruz-velasquez",
     "when": "9 Oct 2026",
-    "severity": 145,
+    "severity": 136,
     "severityReason": "Rape / sexual assault",
     "severityCrimes": [
       "Rape / sexual assault",
@@ -239,7 +240,7 @@
     "office": "ICEgov",
     "id": "x-2108687287579980178-francis-omar-ramirez-lopez",
     "when": "9 Oct 2026",
-    "severity": 120,
+    "severity": 118,
     "severityReason": "Rape / sexual assault",
     "severityCrimes": [
       "Rape / sexual assault",
@@ -269,7 +270,7 @@
     "office": "ICEgov",
     "id": "x-2108687285159948789-marcos-antonio-pandy-castillo",
     "when": "9 Oct 2026",
-    "severity": 194,
+    "severity": 175,
     "severityReason": "Murder / manslaughter",
     "severityCrimes": [
       "Murder / manslaughter",
@@ -335,7 +336,7 @@
     "via": "justice.gov/usao-sdca/pr/us-attorneys-office-filed-99-border-related-cases-week",
     "sourceUrl": "https://www.justice.gov/usao-sdca/pr/us-attorneys-office-filed-99-border-related-cases-week",
     "voting": false,
-    "origin": "States",
+    "origin": "Not stated",
     "confirmedBy": "DOJ",
     "lat": null,
     "lon": null,
@@ -390,7 +391,7 @@
     "via": "justice.gov/usao-sdca/pr/us-attorneys-office-filed-99-border-related-cases-week",
     "sourceUrl": "https://www.justice.gov/usao-sdca/pr/us-attorneys-office-filed-99-border-related-cases-week",
     "voting": false,
-    "origin": "States",
+    "origin": "Not stated",
     "confirmedBy": "DOJ",
     "lat": null,
     "lon": null,
@@ -543,12 +544,12 @@
     "office": "DHSgov",
     "id": "dhs-20261009-new-york",
     "when": "9 Oct 2026",
-    "severity": 182,
+    "severity": 164,
     "severityReason": "Child sex crime",
     "severityCrimes": [
       "Child sex crime",
-      "Drug trafficking",
       "Burglary / theft",
+      "Drug possession",
       "DUI"
     ],
     "text": "DHS Oct 9, 2026, as posted: “In Syracuse, New York, ICE has arrested illegal aliens with criminal histories that include sexual exploitation of a minor, cocaine possession, driving under the influence, and burglary.",
@@ -601,11 +602,11 @@
     "office": "DHSgov",
     "id": "dhs-20261009-norberto-machada-rodriguez",
     "when": "9 Oct 2026",
-    "severity": 126,
+    "severity": 108,
     "severityReason": "Rape / sexual assault",
     "severityCrimes": [
       "Rape / sexual assault",
-      "Drug trafficking"
+      "Drug possession"
     ],
     "text": "DHS Oct 9, 2026, as posted: Norberto Machada-Rodriguez, an illegal alien from Cuba, whose criminal history includes sexual assault and cocaine possession.",
     "photo": "",
@@ -654,11 +655,11 @@
     "office": "DHSgov",
     "id": "dhs-20261009-haikham-phimasone",
     "when": "9 Oct 2026",
-    "severity": 104,
-    "severityReason": "Drug trafficking",
+    "severity": 86,
+    "severityReason": "Assault / battery",
     "severityCrimes": [
-      "Drug trafficking",
       "Assault / battery",
+      "Drug possession",
       "DUI"
     ],
     "text": "DHS Oct 9, 2026, as posted: Haikham Phimasone, an illegal alien from Laos, whose criminal history includes assault, driving under the influence of liquor, and dangerous drugs.",
@@ -1017,13 +1018,13 @@
     "office": "DHSgov",
     "id": "dhs-20261009-gerardo-miguel-mora",
     "when": "9 Oct 2026",
-    "severity": 194,
+    "severity": 176,
     "severityReason": "Rape / sexual assault",
     "severityCrimes": [
       "Rape / sexual assault",
-      "Drug trafficking",
       "Assault / battery",
-      "Burglary / theft"
+      "Burglary / theft",
+      "Drug possession"
     ],
     "text": "DHS Oct 9, 2026, as posted: In January, ICE arrested Gerardo Miguel-Mora, an illegal alien from Mexico, after he had been released by New York sanctuary politicians despite having a criminal history that includes arrests for strangulation, rape, sexual assault, burglary, grand larceny, and drug possession.",
     "photo": "",
@@ -2097,10 +2098,10 @@
     "office": "EROSeattle",
     "id": "x-2107935515685380503-miguel-lizarraga-saucedo",
     "when": "7 Oct 2026",
-    "severity": 50,
-    "severityReason": "Drug trafficking",
+    "severity": 30,
+    "severityReason": "Drug possession",
     "severityCrimes": [
-      "Drug trafficking"
+      "Drug possession"
     ],
     "text": "@EROSeattle Oct 7, 2026, as posted: ICE Seattle arrested illegal alien Miguel Lizarraga-Saucedo, 30, of Mexico. Arrested by DEA, convicted federally for crystal amphetamine possession and sentenced to 101 months in prison. Will remain in ICE custody until returned to Mexico.",
     "photo": "",
@@ -2661,11 +2662,11 @@
     "office": "EROSanDiego",
     "id": "x-2107527661379866765-pedro-amaya",
     "when": "6 Oct 2026",
-    "severity": 77,
-    "severityReason": "Drug trafficking",
+    "severity": 59,
+    "severityReason": "Burglary / theft",
     "severityCrimes": [
-      "Drug trafficking",
-      "Burglary / theft"
+      "Burglary / theft",
+      "Drug possession"
     ],
     "text": "@EROSanDiego Oct 6, 2026, as posted: ICE San Diego arrested Pedro Amaya, a criminal illegal alien from El Salvador. Amay’s convictions include possession of controlled substance, evading a peace officer, 2nd degree burglary and grand theft, he will remain in ICE custody pending immigration proceedings.",
     "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2107527661379866765-pedro-amaya.jpg",
@@ -2811,7 +2812,7 @@
     "via": "@ICEgov 2107456058973159861",
     "sourceUrl": "https://x.com/ICEgov/status/2107456058973159861",
     "voting": false,
-    "origin": "Cambodian",
+    "origin": "Cambodia",
     "confirmedBy": "ICE",
     "lat": 42.2621,
     "lon": -71.8034,
@@ -3192,11 +3193,11 @@
     "office": "EROSanFrancisco",
     "id": "x-2106438128517230631-cesar-garibay-acevedo",
     "when": "3 Oct 2026",
-    "severity": 95,
+    "severity": 77,
     "severityReason": "Weapons",
     "severityCrimes": [
       "Weapons",
-      "Drug trafficking"
+      "Drug possession"
     ],
     "text": "@EROSanFrancisco Oct 3, 2026, as posted: ICE San Francisco arrested illegal alien Cesar Garibay Acevedo, 23, of Mexico, in Modesto. He has pending charges for illegal possession of an assault weapon and possession of a controlled substance. He is in ICE custody and agreed to voluntarily departure.",
     "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2106438128517230631-cesar-garibay-acevedo.jpg",
@@ -3221,13 +3222,13 @@
     "office": "EROMiami",
     "id": "x-2106368675884503148-juan-aguilar-naranjo",
     "when": "3 Oct 2026",
-    "severity": 176,
+    "severity": 158,
     "severityReason": "Armed robbery / aggravated assault",
     "severityCrimes": [
       "Armed robbery / aggravated assault",
-      "Drug trafficking",
       "Assault / battery",
-      "Burglary / theft"
+      "Burglary / theft",
+      "Drug possession"
     ],
     "text": "@EROMiami Oct 3, 2026, as posted: ICE arrested Juan Aguilar Naranjo, a criminal illegal alien from Cuba with a final order of removal. His convictions include cocaine possession, false imprisonment, robbery, resisting arrest, battery, burglary, and theft. He remains in ICE custody pending removal.",
     "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2106368675884503148-juan-aguilar-naranjo.jpg",
@@ -3336,7 +3337,7 @@
     "office": "EROSanFrancisco",
     "id": "x-2106066932948770880-honorio-galvez-castillo",
     "when": "2 Oct 2026",
-    "severity": 100,
+    "severity": 98,
     "severityReason": "Armed robbery / aggravated assault",
     "severityCrimes": [
       "Armed robbery / aggravated assault",
@@ -4165,11 +4166,11 @@
     "office": "DHSgov",
     "id": "dhs-20261007-miguel-cadena-gomez",
     "when": "7 Oct 2026",
-    "severity": 142,
+    "severity": 122,
     "severityReason": "Child sex crime",
     "severityCrimes": [
       "Child sex crime",
-      "Drug trafficking"
+      "Drug possession"
     ],
     "text": "DHS Oct 7, 2026, as posted: Miguel Cadena-Gomez, an illegal alien from Mexico, convicted for indecency with a child – sexual contact and possession of a controlled substance in San Antonio, Texas.",
     "photo": "",
@@ -4193,12 +4194,12 @@
     "office": "DHSgov",
     "id": "dhs-20261007-naun-martinez-zuniga",
     "when": "7 Oct 2026",
-    "severity": 182,
+    "severity": 162,
     "severityReason": "Terrorist plot",
     "severityCrimes": [
       "Terrorist plot",
-      "Drug trafficking",
       "Burglary / theft",
+      "Drug possession",
       "Illegal entry / reentry"
     ],
     "text": "DHS Oct 7, 2026, as posted: Naun Martinez-Zuniga, an illegal alien from Mexico, convicted for FOUR counts of illegal re-entry, making a terrorist threat, theft of property, TWO counts of possession of marijuana, and possession of a controlled substance in San Antonio, Texas.",
@@ -5090,10 +5091,10 @@
     "office": "DHSgov",
     "id": "dhs-20261005-cecilia-betzabet-velazquez-moran",
     "when": "5 Oct 2026",
-    "severity": 50,
-    "severityReason": "Drug trafficking",
+    "severity": 30,
+    "severityReason": "Drug possession",
     "severityCrimes": [
-      "Drug trafficking"
+      "Drug possession"
     ],
     "text": "DHS Oct. 5, 2026: ICE arrested Cecilia Betzabet Velazquez-Moran, a criminal illegal alien from Mexico, convicted of possession of a controlled substance in Yuba City, California. Convicted, not Removed. uniqueByName.",
     "photo": "",
@@ -5975,10 +5976,10 @@
     "office": "ICEgov",
     "id": "2101053675519033827",
     "when": "18 Sep 2026",
-    "severity": 50,
-    "severityReason": "Drug trafficking",
+    "severity": 30,
+    "severityReason": "Drug possession",
     "severityCrimes": [
-      "Drug trafficking"
+      "Drug possession"
     ],
     "text": "ICE / DHS: Miguel Galeas Rodriguez, criminal illegal alien from Honduras, arrested Aug 30, 2026 in Operation Corral Light at El Corralon, Memphis. Conviction: cocaine possession. Named on the 9/1 DHS PR; @ICEgov 2101053675519033827 is the 121-count video with no names. Photo blank. Not Removed.",
     "photo": "",
@@ -6521,7 +6522,7 @@
     "office": "EROBaltimore",
     "id": "",
     "when": "5 Aug 2026",
-    "severity": 40,
+    "severity": 36,
     "severityReason": "Assault / battery",
     "severityCrimes": [
       "Assault / battery"

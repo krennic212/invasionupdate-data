@@ -6,7 +6,7 @@
  * that is not on the page. The charge label is the source sentence, word for word.
  */
 
-import { countryFor } from "./country.mjs";
+import { countryFor, cleanOrigin, DEMONYMS } from "./country.mjs";
 import { readFileSync } from "node:fs";
 
 /** "City, ST" -> [lat, lon], same keys as the app's CITY_GEO (src/data/city-geo.ts). */
@@ -220,11 +220,14 @@ function cleanCountry(c) {
 
 /** Origin exactly as the sentence states it: "from X" / "of X" / "a Mexican national". */
 function originFrom(desc, type, country) {
+  // "a United States citizen" / "a U.S. citizen" is never a foreign origin (was read as "States").
+  if (/\b(?:United\s+States|U\.\s?S\.?|USA|American)\b/.test(String(desc || ""))) return "";
   const c = cleanCountry(country);
-  if (c && /^[A-Z]/.test(c) && !NOT_NAME.test(c)) return c;
+  if (c && /^[A-Z]/.test(c) && !NOT_NAME.test(c)) return cleanOrigin(c);
   const words = String(desc || "").trim().split(/\s+/).filter((w) => /^[A-Z]/.test(w));
   for (const w of words) if (DEMONYM[w]) return DEMONYM[w];
-  if (/national|citizen/.test(type) && words.length) return words[words.length - 1];
+  for (const w of words) if (DEMONYMS[w]) return DEMONYMS[w];
+  if (/national|citizen/.test(type) && words.length) return cleanOrigin(words[words.length - 1]);
   return "";
 }
 
@@ -268,7 +271,7 @@ export function extractPeople(blocks, { title = "" } = {}) {
           let sentence = s;
           if (!VERB.test(s) && sents[i + 1] && VERB.test(sents[i + 1])) sentence = `${s} ${sents[i + 1]}`;
           // Country only from wording tied to this person ("<Name>, 36, of Guatemala", "Honduran national <Name>").
-          found.push({ name, origin: origin || countryFor(name, s), sentence, city: cityFrom(s) || cityFrom(sentence) });
+          found.push({ name, origin: cleanOrigin(origin) || countryFor(name, s), sentence, city: cityFrom(s) || cityFrom(sentence) });
           }
         }
       }

@@ -1,5 +1,5 @@
 {
-  "_note": "Severity points table (Krennic, 2026-10-09). Edit points here; scripts/severity.mjs and its tests read this file. A person's severity = SUM over distinct crimes of points x stage weight x count bonus.",
+  "_note": "Severity points table (Krennic, 2026-10-09). Edit points here; scripts/severity.mjs and its tests read this file. A person's severity = SUM over distinct crimes of points x stage weight x count bonus. Stage weight is per crime: a crime the text ties to a conviction = stage.convicted, one it ties to a pending charge / arrest / accusation = stage.notConvicted (row stage when unclear; never above the row stage).",
   "crimes": {
     "murder":          { "label": "Murder / manslaughter",            "points": 95 },
     "childSex":        { "label": "Child sex crime",                  "points": 92 },
@@ -16,6 +16,7 @@
     "fraud":           { "label": "Fraud (incl. voter fraud)",        "points": 60 },
     "weapons":         { "label": "Weapons",                          "points": 55 },
     "drugs":           { "label": "Drug trafficking",                 "points": 50 },
+    "drugPossession":  { "label": "Drug possession",                  "points": 30 },
     "assault":         { "label": "Assault / battery",                "points": 40 },
     "theft":           { "label": "Burglary / theft",                 "points": 35 },
     "dui":             { "label": "DUI",                              "points": 25 },

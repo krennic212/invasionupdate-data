@@ -59,3 +59,15 @@ test("country: ICE '<Name>, an illegal alien and <gang> member from <Country>' w
   assert.equal(countryFor("Juan Perez", "Juan Perez, an illegal alien and gang member wanted in Ecuador, was arrested."), "");
   assert.equal(countryFor("Juan Perez", "Juan Perez, an illegal alien and gang member from Modesto, was arrested."), "");
 });
+
+test("country: 'United States' / 'U.S. citizen' is never a country (Efrain Antonio Avalos was given 'States')", async () => {
+  const { cleanOrigin } = await import("./country.mjs");
+  const people = extractPeople(["On October 3, 2026, Efrain Antonio Avalos, a United States citizen, was arrested and charged with Transportation of Illegal Aliens."]);
+  assert.deepEqual(people.map((p) => [p.name, p.origin]), [["Efrain Antonio Avalos", ""]]);
+  assert.equal(extractPeople(["September 6, 2026, Justin Jimenez, a United States citizen, was arrested and charged with Importation of Controlled Substance."])[0]?.origin || "", "");
+  for (const v of ["States", "United States", "the United States", "U.S.", "US", "USA", "U.S.A.", "America", "American"]) assert.equal(cleanOrigin(v), "", v);
+  assert.equal(cleanOrigin("Mexico"), "Mexico");
+  assert.equal(countryFor("John Doe", "John Doe, 30, a U.S. citizen, was charged."), "");
+  assert.equal(countryFor("John Doe", "John Doe, 30, of the United States, was charged."), "");
+  assert.equal(extractPeople(["ICE deported Phai You, a Cambodian citizen convicted of second-degree murder in Massachusetts."])[0].origin, "Cambodia");
+});

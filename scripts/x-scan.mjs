@@ -40,7 +40,7 @@ import { LIVE_X_HANDLES, TRUSTED_REPORTER_X_HANDLES } from "./x-handles.mjs";
 import { buildMeta } from "./write-meta.mjs";
 import { writeSeverityFiles } from "./severity.mjs";
 import { scrubVictimNames } from "./victims.mjs";
-import { countryFor } from "./country.mjs";
+import { countryFor, cleanOrigin } from "./country.mjs";
 
 const OFFICIAL = new Map(LIVE_X_HANDLES.map((h) => [h.toLowerCase(), h]));
 const TRUSTED = new Set(TRUSTED_REPORTER_X_HANDLES.map((h) => h.toLowerCase()));
@@ -140,7 +140,7 @@ export function rowsForPost(post, picks = []) {
       via: `@${handle} ${post.id}`,
       sourceUrl: url,
       voting: /\b(illegal(ly)? vot|unlawful(ly)? vot|voting (as|by)|voted in|vote in|registered to vote)/i.test(hit.sentence),
-      origin: hit.origin || countryFor(hit.name, clean) || "Not stated", // only wording tied to this person
+      origin: cleanOrigin(hit.origin) || countryFor(hit.name, clean) || "Not stated", // only wording tied to this person
 
       confirmedBy: a.confirmedBy,
       ...latLonFor(hit.city),

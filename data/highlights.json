@@ -43,63 +43,25 @@
       "id": "dhs-20261009-gerardo-miguel-mora",
       "name": "Gerardo Miguel-Mora",
       "when": "9 Oct 2026",
-      "severity": 194,
+      "severity": 176,
       "severityReason": "Rape / sexual assault",
       "severityCrimes": [
         "Rape / sexual assault",
-        "Drug trafficking",
         "Assault / battery",
-        "Burglary / theft"
+        "Burglary / theft",
+        "Drug possession"
       ]
     },
     {
       "id": "x-2108687285159948789-marcos-antonio-pandy-castillo",
       "name": "Marcos Antonio Pandy-Castillo",
       "when": "9 Oct 2026",
-      "severity": 194,
+      "severity": 175,
       "severityReason": "Murder / manslaughter",
       "severityCrimes": [
         "Murder / manslaughter",
         "Weapons",
         "Assault / battery"
-      ]
-    },
-    {
-      "id": "dhs-20261007-naun-martinez-zuniga",
-      "name": "Naun Martinez-Zuniga",
-      "when": "7 Oct 2026",
-      "severity": 182,
-      "severityReason": "Terrorist plot",
-      "severityCrimes": [
-        "Terrorist plot",
-        "Drug trafficking",
-        "Burglary / theft",
-        "Illegal entry / reentry"
-      ]
-    },
-    {
-      "id": "x-2108687300699754743-juan-jose-morales-colindres",
-      "name": "Juan Jose Morales-Colindres",
-      "when": "9 Oct 2026",
-      "severity": 180,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Drug trafficking",
-        "Assault / battery"
-      ]
-    },
-    {
-      "id": "x-2106368675884503148-juan-aguilar-naranjo",
-      "name": "Juan Aguilar Naranjo",
-      "when": "3 Oct 2026",
-      "severity": 176,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Drug trafficking",
-        "Assault / battery",
-        "Burglary / theft"
       ]
     },
     {
@@ -148,6 +110,19 @@
       ]
     },
     {
+      "id": "dhs-20261007-naun-martinez-zuniga",
+      "name": "Naun Martinez-Zuniga",
+      "when": "7 Oct 2026",
+      "severity": 162,
+      "severityReason": "Terrorist plot",
+      "severityCrimes": [
+        "Terrorist plot",
+        "Burglary / theft",
+        "Drug possession",
+        "Illegal entry / reentry"
+      ]
+    },
+    {
       "id": "x-2107567290237796414-saul-vazquez-mora",
       "name": "Saul Vazquez Mora",
       "when": "6 Oct 2026",
@@ -156,6 +131,31 @@
       "severityCrimes": [
         "Rape / sexual assault",
         "Armed robbery / aggravated assault"
+      ]
+    },
+    {
+      "id": "x-2106368675884503148-juan-aguilar-naranjo",
+      "name": "Juan Aguilar Naranjo",
+      "when": "3 Oct 2026",
+      "severity": 158,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Assault / battery",
+        "Burglary / theft",
+        "Drug possession"
+      ]
+    },
+    {
+      "id": "x-2108687300699754743-juan-jose-morales-colindres",
+      "name": "Juan Jose Morales-Colindres",
+      "when": "9 Oct 2026",
+      "severity": 157,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Assault / battery",
+        "Drug possession"
       ]
     },
     {
@@ -237,17 +237,6 @@
       ]
     },
     {
-      "id": "x-2108687289643655310-dimeir-cruz-velasquez",
-      "name": "Dimeir Cruz-Velasquez",
-      "when": "9 Oct 2026",
-      "severity": 145,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Weapons"
-      ]
-    },
-    {
       "id": "x-2107803124752629805-reynaldo-c-zayas",
       "name": "Reynaldo C. Zayas",
       "when": "7 Oct 2026",
@@ -260,14 +249,14 @@
       ]
     },
     {
-      "id": "dhs-20261007-miguel-cadena-gomez",
-      "name": "Miguel Cadena-Gomez",
-      "when": "7 Oct 2026",
-      "severity": 142,
-      "severityReason": "Child sex crime",
+      "id": "x-2108687289643655310-dimeir-cruz-velasquez",
+      "name": "Dimeir Cruz-Velasquez",
+      "when": "9 Oct 2026",
+      "severity": 136,
+      "severityReason": "Rape / sexual assault",
       "severityCrimes": [
-        "Child sex crime",
-        "Drug trafficking"
+        "Rape / sexual assault",
+        "Weapons"
       ]
     },
     {
@@ -291,6 +280,17 @@
       "severityCrimes": [
         "Child sex crime",
         "Burglary / theft"
+      ]
+    },
+    {
+      "id": "dhs-20261007-carlos-arturo-zelaya-argueta",
+      "name": "Carlos Arturo Zelaya-Argueta",
+      "when": "7 Oct 2026",
+      "severity": 125,
+      "severityReason": "Sexual abuse of an animal",
+      "severityCrimes": [
+        "Sexual abuse of an animal",
+        "Drug trafficking"
       ]
     }
   ]

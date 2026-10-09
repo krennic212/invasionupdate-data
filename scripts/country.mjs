@@ -77,6 +77,12 @@ const BEFORE = [
 ];
 
 const toCountry = (v) => DEMONYMS[v] || DEMONYMS[Object.keys(DEMONYMS).find((k) => k.toLowerCase() === String(v).toLowerCase())] || v;
+/** "United States", "U.S.", "USA", "America(n)", a bare "States" are never a country of origin (a U.S. citizen is not foreign). */
+export const US_ORIGIN = /^(?:the\s+)?(?:united\s+states(?:\s+of\s+america)?|u\.?\s?s\.?(?:\s?a\.?)?|states|america|american|us citizen)$/i;
+export function cleanOrigin(o) {
+  const v = String(o ?? "").trim();
+  return !v || US_ORIGIN.test(v) ? "" : v;
+}
 const normC = (c) => (c === "Korea" ? "South Korea" : c === "Myanmar" ? "Burma" : c.replace(/^St\. /, "Saint "));
 
 /** Country stated for this one person, or "". */

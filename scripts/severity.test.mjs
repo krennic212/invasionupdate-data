@@ -16,7 +16,7 @@ test("points table has the locked values (edit severity-points.json, not code)",
   assert.deepEqual(P, {
     murder: 95, childSex: 92, rape: 90, terrorism: 90, officer: 88, attemptedMurder: 85, materialSupport: 85,
     kidnapping: 82, childViolence: 80, animalSex: 75, robberyAssault: 70, alienSmuggling: 65, fraud: 60,
-    weapons: 55, drugs: 50, assault: 40, theft: 35, dui: 25, immigration: 5,
+    weapons: 55, drugs: 50, drugPossession: 30, assault: 40, theft: 35, dui: 25, immigration: 5,
   });
   assert.deepEqual(W, { convicted: 1, notConvicted: 0.9 });
   assert.equal(TABLE.extraCountBonus, 0.1);
@@ -40,7 +40,7 @@ test("classification: one crime each", () => {
     ["convicted of conspiracy to distribute methamphetamine.", "drugs"],
     ["convicted for burglary in Bonneville County, Idaho.", "theft"],
     ["convicted of DUI.", "dui"],
-    ["charged with voting by an alien in a federal election.", "fraud"],
+    ["convicted of voting by an alien in a federal election.", "fraud"],
     ["sentenced for illegally reentering the United States after deportation.", "immigration"],
   ];
   for (const [text, key] of cases) {
@@ -251,4 +251,44 @@ test("NY sex-offense wording: 'less than N years', 'course of sexual conduct', '
   assert.equal(r.severity, TABLE.crimes.rape.points);
   // "less than N" without years is not a child (e.g. amounts)
   assert.deepEqual(s("Convicted: X Y was convicted of theft of less than 5 grams of gold.").severityCrimes, ["Burglary / theft"]);
+});
+
+test("stage weight is per crime: convicted crime 100%, pending charge 90% (Pandy-Castillo pattern)", () => {
+  const pandy = scoreRow(conv("Marcos Antonio Pandy-Castillo, a Crips gang member and illegal alien from Honduras, was convicted of criminal mischief: intent to damage property and has pending charges for murder - intention, assault with intent to cause serious injury with a weapon, assault with intent to cause disfigurement/dismember, gang assault 1st degree, two counts of assault with intent to cause physical injury with weapon, assault while confined in a correctional facility, and criminal possession of weapon."));
+  assert.deepEqual(pandy.parts.map((p) => [p.key, p.stage]), [["murder", "notConvicted"], ["weapons", "notConvicted"], ["assault", "notConvicted"]]);
+  assert.equal(pandy.severity, Math.round((P.murder + P.weapons + P.assault * 1.1) * W.notConvicted)); // 175, was 194
+  // convicted of one crime, pending charge for another
+  const mixed = scoreRow(conv("John Doe was convicted of robbery and has pending charges for murder."));
+  assert.deepEqual(Object.fromEntries(mixed.parts.map((p) => [p.key, p.stage])), { murder: "notConvicted", robberyAssault: "convicted" });
+  assert.equal(mixed.severity, Math.round(P.murder * W.notConvicted + P.robberyAssault * W.convicted));
+  // "has convictions for X with pending charges for Y and X": X stays convicted (any convicted mention wins)
+  const fr = scoreRow(conv("Francis Omar Ramirez Lopez has convictions for sexual assault and illegal reentry with pending charges for DUI and illegal reentry."));
+  assert.deepEqual(Object.fromEntries(fr.parts.map((p) => [p.key, p.stage])), { rape: "convicted", dui: "notConvicted", immigration: "convicted" });
+  // accused / awaiting trial / "<crime> charge pending" / "recently charged with"
+  assert.equal(scoreRow(conv("convicted of theft; accused of rape.")).parts.find((p) => p.key === "rape").stage, "notConvicted");
+  assert.equal(scoreRow(conv("convicted of theft and is awaiting trial for kidnapping.")).parts.find((p) => p.key === "kidnapping").stage, "notConvicted");
+  assert.equal(scoreRow(conv("convicted of burglary. His murder charge is pending.")).parts.find((p) => p.key === "murder").stage, "notConvicted");
+  assert.equal(scoreRow(conv("driving without a valid license; recently charged with assault.")).parts.find((p) => p.key === "assault").stage, "notConvicted");
+  // unclear wording falls back to the row stage; a Charged row is never upgraded by "convicted" wording
+  assert.equal(score(conv("Criminal illegal alien from Mexico with a murder record.")), P.murder);
+  assert.equal(score(chg("He was convicted of murder and charged with robbery.")), Math.round((P.murder + P.robberyAssault) * W.notConvicted));
+});
+
+test("DUIs / DWIs / driving while intoxicated are DUI; drug possession is not trafficking (Anthony Alfredo Moreno)", () => {
+  const moreno = scoreRow(conv("Anthony Alfredo Moreno, an illegal alien from El Salvador, has convictions for two DUIs and disorderly conduct: create hazardous or physically offensive condition, plus pending charges for criminal obstruction of breathing or blood circulation - apply pressure, multiple criminal possessions of controlled substance, criminal contempt, and aggravated unlicensed operation of a motor vehicle."));
+  assert.deepEqual(Object.fromEntries(moreno.parts.map((p) => [p.key, [p.count, p.stage]])), { dui: [2, "convicted"], drugPossession: [1, "notConvicted"] });
+  assert.equal(moreno.severity, Math.round(P.dui * 1.1 * W.convicted + P.drugPossession * W.notConvicted)); // 55, was 50 (scored as trafficking)
+  assert.ok(!moreno.severityCrimes.includes(L.drugs));
+  for (const t of ["convicted of two DWIs.", "convicted of driving while intoxicated.", "convicted of DUIs."]) assert.deepEqual(scoreRow(conv(t)).severityCrimes, [L.dui], t);
+  assert.equal(score(conv("convicted of two DWIs.")), Math.round(P.dui * 1.1));
+  assert.equal(TABLE.crimes.drugPossession.points, 30);
+  // possession -> 30; trafficking / distribution / intent to distribute / smuggling -> 50 (once, not plus possession)
+  assert.deepEqual(scoreRow(conv("convicted of possession of a controlled substance.")).severityCrimes, [L.drugPossession]);
+  assert.deepEqual(scoreRow(conv("convicted for crystal amphetamine possession.")).severityCrimes, [L.drugPossession]);
+  for (const t of ["convicted of possession with intent to distribute cocaine.", "convicted for trafficking a controlled substance: heroin.", "convicted of cocaine smuggling.", "convicted of trafficking in heroin and possession of heroin.", "convicted of distribution of fentanyl."]) {
+    assert.deepEqual(scoreRow(conv(t)).severityCrimes, [L.drugs], t);
+  }
+  // firearms trafficking is not drug trafficking; distribution of child pornography is not drugs
+  assert.deepEqual(scoreRow(conv("convicted of firearms trafficking.")).severityCrimes, [L.weapons]);
+  assert.deepEqual(scoreRow(conv("convicted of distribution of child pornography.")).severityCrimes, [L.childSex]);
 });
