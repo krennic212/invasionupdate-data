@@ -40,6 +40,7 @@ const save = () => {
 };
 if (none !== null) {
   checks[k] = { checkedAt: new Date().toISOString(), name: r.name, result: "none", why: none || "no single-person photo" };
+  if (r.photo) { r.photo = ""; delete r.photoSourceUrl; r.photoHold = none || "no single-person photo"; }
   save();
   console.log(JSON.stringify({ id: rowId, result: "none", why: checks[k].why }));
   process.exit(0);
@@ -68,6 +69,7 @@ const file = `${photoKey(r)}.jpg`;
 writeFileSync(`data/photos/${file}`, out);
 r.photo = `${PHOTO_PREFIX}${file}`;
 r.photoSourceUrl = img;
+delete r.photoHold;
 checks[k] = { checkedAt: new Date().toISOString(), name: r.name, result: "photo", file, image: img, bytes: out.length, reviewed };
 const problem = photoProblem(r, { counts: releaseCounts([...rows, ...review]), checks, fileBytes: (f) => (existsSync(`data/photos/${f}`) ? statSync(`data/photos/${f}`).size : null) });
 if (problem) die(`photo would fail the pre-publish check: ${problem}`);

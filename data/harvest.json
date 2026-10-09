@@ -801,7 +801,7 @@
     "id": "x-2107567290237796414-saul-vazquez-mora",
     "when": "6 Oct 2026",
     "text": "@ICEgov Oct 6, 2026, as posted: Saul Vazquez Mora, an illegal alien from Mexico, convicted of rape and domestic battery.",
-    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2107567290237796414-saul-vazquez-mora.jpg",
+    "photo": "",
     "via": "@ICEgov 2107567290237796414",
     "sourceUrl": "https://x.com/ICEgov/status/2107567290237796414",
     "voting": false,
@@ -810,7 +810,7 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "photoSourceUrl": "https://pbs.twimg.com/media/HT-UY3nW4AAi7WO.jpg"
+    "photoHold": "second person's face partly visible at the left edge"
   },
   {
     "name": "Isidro Zarate-Valente",
@@ -3990,7 +3990,7 @@
     "id": "1927519118237774037",
     "when": "28 May 2025",
     "text": "May 22: ICE Baltimore arrested Alex Yonatan Flores-Arce, 20, an illegally present Honduran national convicted of second-degree rape, after Howard County Detention Center failed to honor an ICE detainer. He has a final administrative removal order.",
-    "photo": "https://krennic212.github.io/invasionupdate-data/photos/1927519118237774037.jpg",
+    "photo": "",
     "origin": "Honduras",
     "lat": 39.2037,
     "lon": -76.856,
@@ -4001,7 +4001,7 @@
     "via": "@EROBaltimore 1927519118237774037",
     "sourceUrl": "https://www.ice.gov/news/releases/ice-arrests-convicted-rapist-after-local-jurisdiction-fails-honor-immigration",
     "status": "approved",
-    "photoSourceUrl": "https://www.ice.gov/sites/default/files/2025-05/250527baltimore.jpg"
+    "photoHold": "second person behind him with part of the face visible at top right"
   },
   {
     "name": "Edvin Giovanni Ceron-Reyes",
@@ -4052,8 +4052,8 @@
   {
     "name": "Keycy Robinson Alexis Barrera-Rosa",
     "city": "La Plata, MD",
-    "crime": "Charged (not convicted on this card): pending first-degree murder of girlfriend Lesbia Mileth Ramirez-Guerra. Illegal alien from Guatemala.",
-    "usa": "Charged (not convicted on this card): pending first-degree murder of girlfriend Lesbia Mileth Ramirez-Guerra",
+    "crime": "Charged (not convicted on this card): pending first-degree murder of the victim. Illegal alien from Guatemala.",
+    "usa": "Charged (not convicted on this card): pending first-degree murder of the victim",
     "picked": "4/5/2025",
     "office": "EROBaltimore",
     "id": "",
@@ -4216,7 +4216,7 @@
     "id": "1887319753426981329",
     "when": "5 Feb 2025",
     "text": "Jan. 31: ICE Philadelphia removed Francisco Javier Melendez Torres, a citizen of El Salvador with a final order of removal, a foreign fugitive wanted for aggravated rape of a child. Arrested Oct. 25, 2024, in Levittown, New York.",
-    "photo": "https://krennic212.github.io/invasionupdate-data/photos/1887319753426981329.jpg",
+    "photo": "",
     "origin": "El Salvador",
     "lat": 40.7259,
     "lon": -73.5143,
@@ -4227,7 +4227,7 @@
     "via": "@EROPhiladelphia 1887319753426981329",
     "sourceUrl": "https://www.ice.gov/news/releases/ice-philadelphia-removes-salvadorian-citizen-wanted-aggravated-rape-minor",
     "status": "approved",
-    "photoSourceUrl": "https://www.ice.gov/sites/default/files/images/250202philadelphia.jpg"
+    "photoHold": "second person in frame: officer at right whose face is visible in profile (blurred)"
   },
   {
     "name": "Yermanny Suarez Laureano",
@@ -4320,13 +4320,13 @@
   {
     "name": "Bou Khathavong",
     "city": "Philadelphia, PA",
-    "crime": "Removed. role in the 1994 murder of Philadelphia high school student Eddie Polec. Illegal alien from Laos.",
-    "usa": "Removed. role in the 1994 murder of Philadelphia high school student Eddie Polec",
+    "crime": "Removed. role in the 1994 murder of the victim. Illegal alien from Laos.",
+    "usa": "Removed. role in the 1994 murder of the victim",
     "picked": "9/2/2025",
     "office": "EROPhiladelphia",
     "id": "",
     "when": "28 Oct 2025",
-    "text": "Sept. 2: ICE Philadelphia removed Bou Khathavong to Laos after years of legal proceedings. He was arrested Nov. 11, 1994, for his role in the murder of 16-year-old Eddie Polec.",
+    "text": "Sept. 2: ICE Philadelphia removed Bou Khathavong to Laos after years of legal proceedings. He was arrested Nov. 11, 1994, for his role in the murder of a 16-year-old victim.",
     "photo": "",
     "origin": "Laos",
     "lat": 39.9526,

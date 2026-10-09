@@ -35,7 +35,9 @@
     "result": "photo",
     "file": "1909330076887400506.jpg",
     "image": "https://www.ice.gov/sites/default/files/2025-04/250407dallas.png",
-    "bytes": 20050
+    "bytes": 20050,
+    "reviewed": "visual check 2026-10-09: one adult man seated in vehicle, no child, no other person",
+    "reviewedAt": "2026-10-09T13:23:44.157Z"
   },
   "ice.gov/news/releases/ice-apprehends-illegal-alien-ties-nicaraguan-massacre-and-mexican-drug-cartel": {
     "checkedAt": "2026-10-08T23:39:34.562Z",
@@ -43,7 +45,9 @@
     "result": "photo",
     "file": "1899576906409779212.jpg",
     "image": "https://www.ice.gov/sites/default/files/images/250311baltimore.png",
-    "bytes": 35553
+    "bytes": 35553,
+    "reviewed": "visual check 2026-10-09: one adult man seated in vehicle, no child, no other person",
+    "reviewedAt": "2026-10-09T13:23:44.323Z"
   },
   "ice.gov/news/releases/ice-baltimore-arrests-guatemalan-alien-deadly-weapons-charges": {
     "checkedAt": "2026-10-08T23:39:35.551Z",
@@ -57,15 +61,19 @@
     "result": "photo",
     "file": "1928492520343826836.jpg",
     "image": "https://www.ice.gov/sites/default/files/2025-05/250530baltimore.png",
-    "bytes": 20246
+    "bytes": 20246,
+    "reviewed": "visual check 2026-10-09: one adult man in vehicle, headshot crop, no child, no other person",
+    "reviewedAt": "2026-10-09T13:23:44.492Z"
   },
   "ice.gov/news/releases/ice-arrests-convicted-rapist-after-local-jurisdiction-fails-honor-immigration": {
     "checkedAt": "2026-10-08T23:39:37.683Z",
     "name": "Alex Yonatan Flores-Arce",
-    "result": "photo",
+    "result": "dropped",
     "file": "1927519118237774037.jpg",
     "image": "https://www.ice.gov/sites/default/files/2025-05/250527baltimore.jpg",
-    "bytes": 20178
+    "bytes": 20178,
+    "why": "second person behind him with part of the face visible at top right",
+    "reviewedAt": "2026-10-09T13:23:39.042Z"
   },
   "ice.gov/news/releases/ice-arrests-guatemalan-alien-convicted-attempted-murder": {
     "checkedAt": "2026-10-08T23:39:38.696Z",
@@ -73,7 +81,9 @@
     "result": "photo",
     "file": "edvin-giovanni-ceron-reyes-cef60010.jpg",
     "image": "https://www.ice.gov/sites/default/files/images/250404baltimore.jpg",
-    "bytes": 30260
+    "bytes": 30260,
+    "reviewed": "visual check 2026-10-09: single-person headshot of one adult man, no child, no other person",
+    "reviewedAt": "2026-10-09T13:23:44.660Z"
   },
   "ice.gov/news/releases/ice-arrests-guatemalan-alien-charged-murder-assault-after-release-noncooperative": {
     "checkedAt": "2026-10-08T23:39:39.692Z",
@@ -81,7 +91,9 @@
     "result": "photo",
     "file": "rene-pop-chub-6f95346e.jpg",
     "image": "https://www.ice.gov/sites/default/files/2025-04/250415baltimore.png",
-    "bytes": 33726
+    "bytes": 33726,
+    "reviewed": "visual check 2026-10-09: one adult man in handcuffs; officer beside him has his back to the camera (face not visible); no child",
+    "reviewedAt": "2026-10-09T13:23:44.843Z"
   },
   "ice.gov/news/releases/ice-cincinnati-arrests-illegal-alien-convicted-sex-crimes": {
     "checkedAt": "2026-10-08T23:39:40.685Z",
@@ -89,7 +101,9 @@
     "result": "photo",
     "file": "1891867268310569253.jpg",
     "image": "https://www.ice.gov/sites/default/files/images/250213cincinnati-1.png",
-    "bytes": 40582
+    "bytes": 40582,
+    "reviewed": "visual check 2026-10-09: one adult man seated in vehicle, no child, no other person",
+    "reviewedAt": "2026-10-09T13:23:45.022Z"
   },
   "ice.gov/news/releases/ice-columbus-and-us-marshals-arrest-ecuadorian-illegal-alien-wanted-murder": {
     "checkedAt": "2026-10-08T23:39:41.711Z",
@@ -97,7 +111,9 @@
     "result": "photo",
     "file": "1894479479948677376.jpg",
     "image": "https://www.ice.gov/sites/default/files/images/250219columbus.png",
-    "bytes": 31668
+    "bytes": 31668,
+    "reviewed": "visual check 2026-10-09: one adult man; officer has his back to the camera (face not visible); no child",
+    "reviewedAt": "2026-10-09T13:23:45.193Z"
   },
   "ice.gov/news/releases/ice-removes-salvadoran-national-wanted-rape-against-minor-his-home-country": {
     "checkedAt": "2026-10-08T23:39:42.747Z",
@@ -105,15 +121,19 @@
     "result": "photo",
     "file": "christopher-alexis-rodriguez-flores-c1fe143c.jpg",
     "image": "https://www.ice.gov/sites/default/files/2025-04/250415sanantonio.jpg",
-    "bytes": 37108
+    "bytes": 37108,
+    "reviewed": "visual check 2026-10-09: one adult man; two officers with backs to the camera (faces not visible); no child",
+    "reviewedAt": "2026-10-09T13:23:45.368Z"
   },
   "ice.gov/news/releases/ice-philadelphia-removes-salvadorian-citizen-wanted-aggravated-rape-minor": {
     "checkedAt": "2026-10-08T23:39:43.844Z",
     "name": "Francisco Javier Melendez Torres",
-    "result": "photo",
+    "result": "dropped",
     "file": "1887319753426981329.jpg",
     "image": "https://www.ice.gov/sites/default/files/images/250202philadelphia.jpg",
-    "bytes": 24499
+    "bytes": 24499,
+    "why": "second person in frame: officer at right whose face is visible in profile (blurred)",
+    "reviewedAt": "2026-10-09T13:23:38.898Z"
   },
   "ice.gov/news/releases/ice-philadelphia-removes-criminal-alien-wanted-homicide-dominican-republic": {
     "checkedAt": "2026-10-08T23:39:44.781Z",
@@ -151,7 +171,9 @@
     "result": "photo",
     "file": "2100967318259925149.jpg",
     "image": "https://www.ice.gov/sites/default/files/2026-09/Amos%20Sheik%20Massaquoi_0.png",
-    "bytes": 6604
+    "bytes": 6604,
+    "reviewed": "visual check 2026-10-09: booking photo, one adult man, no child, no other person",
+    "reviewedAt": "2026-10-09T13:23:45.540Z"
   },
   "dhs.gov/news/2026/09/17/ice-hsi-arrests-mexican-alien-illegally-voting-past-elections": {
     "checkedAt": "2026-10-08T23:39:49.332Z",
@@ -459,11 +481,12 @@
   "x.com/icegov/status/2107567290237796414": {
     "checkedAt": "2026-10-09T04:45:23.085Z",
     "name": "Saul Vazquez Mora",
-    "result": "photo",
+    "result": "dropped",
     "file": "x-2107567290237796414-saul-vazquez-mora.jpg",
     "image": "https://pbs.twimg.com/media/HT-UY3nW4AAi7WO.jpg",
     "bytes": 20055,
-    "reviewed": "Viewed image: single-person booking photo in front of a height chart"
+    "why": "second person's face partly visible at the left edge",
+    "reviewedAt": "2026-10-09T13:23:39.328Z"
   },
   "x.com/icegov/status/2107567293496742150": {
     "checkedAt": "2026-10-09T04:45:23.867Z",

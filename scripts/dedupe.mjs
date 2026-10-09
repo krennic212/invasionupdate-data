@@ -9,6 +9,9 @@
  *    Co-defendants (different names on one release) are never merged.
  *  - blanks any photo that is not a copy in this repo (data/photos via Pages), and every photo on
  *    review rows (X / news), so the data never hotlinks or carries an X / news image.
+ *  - shared feed rules for every writer (release harvest, X scan, hand edits):
+ *      victim names in row text are replaced with a neutral description (scripts/victims.mjs);
+ *      a row with photoHold never carries a photo.
  * Writes only when something changed.
  *
  *   node scripts/dedupe.mjs data/harvest.json [data/review.json ...]
@@ -17,6 +20,18 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { nameKey, urlsIn } from "./rules.mjs";
 import { PHOTO_PREFIX } from "./photo-rules.mjs";
+import { scrubVictimNames } from "./victims.mjs";
+
+/** Shared normalize step applied to every row in every rows file. */
+export function normalizeRow(r) {
+  if (!r || typeof r !== "object") return r;
+  let row = scrubVictimNames(r).row;
+  if (row.photoHold && row.photo) {
+    row = { ...row, photo: "" };
+    delete row.photoSourceUrl;
+  }
+  return row;
+}
 
 export function urlKey(url) {
   try {
@@ -40,7 +55,8 @@ export function dedupeRows(rows) {
   const out = [];
   const merged = [];
   const seen = new Map();
-  for (const r of rows) {
+  for (const r0 of rows) {
+    const r = normalizeRow(r0);
     // Only photos copied into this repo by scripts/photos.mjs survive; anything else is blanked.
     const keep = r && typeof r === "object" && String(r.photo || "").startsWith(PHOTO_PREFIX) && !r.reviewReason;
     const row = r && typeof r === "object" && r.photo && !keep ? { ...r, photo: "" } : r;

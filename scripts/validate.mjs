@@ -5,6 +5,8 @@
  *  - any live row lacks a name, an official source link (official federal .gov page, or a
  *    https://x.com/<handle>/status/<id> post by an OFFICIAL_X_HANDLES agency account), or a date
  *  - any live row has a status other than "approved" / "pending"
+ *  - any row (feed or review) still names a victim (scripts/victims.mjs; dedupe.mjs scrubs them)
+ *  - any row has photoHold and a photo, or a release photo has no visual check ("reviewed") on record
  *  - any row carries a photo that is not allowed: a photo is allowed only on an approved,
  *    unheld, official row whose release produced exactly one row, with a single-person photo
  *    check on record, served from this repo's Pages site, and the file exists (<= 300 KB)
@@ -14,6 +16,7 @@ import { readFileSync, existsSync, statSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { isLiveSourceRow, nameKey } from "./rules.mjs";
 import { photoProblem, releaseCounts } from "./photo-rules.mjs";
+import { victimNamesIn } from "./victims.mjs";
 
 const FILE = process.argv[2] || "data/harvest.json";
 const rows = JSON.parse(readFileSync(FILE, "utf8"));
@@ -23,6 +26,10 @@ const checks = existsSync("data/photo-checks.json") ? JSON.parse(readFileSync("d
 const counts = releaseCounts([...(Array.isArray(rows) ? rows : []), ...review]);
 const fileBytes = (f) => (existsSync(`data/photos/${f}`) ? statSync(`data/photos/${f}`).size : null);
 for (const r of review) if (r && r.photo) problems.push(`review row (${r.name}): photo must be empty (X / news rows never get photos)`);
+for (const r of [...(Array.isArray(rows) ? rows : []), ...review]) {
+  const v = r && typeof r === "object" ? victimNamesIn(r) : [];
+  if (v.length) problems.push(`row (${r.name}): names a victim (${v.join(", ")}); run scripts/dedupe.mjs to replace it with a neutral description`);
+}
 if (!Array.isArray(rows) || rows.length === 0) problems.push("feed is empty or not an array");
 for (const [i, r] of (Array.isArray(rows) ? rows : []).entries()) {
   const tag = `row ${i} (${r?.name ?? "?"})`;

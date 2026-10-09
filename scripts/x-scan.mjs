@@ -35,6 +35,7 @@ import { holdReasons } from "./guards.mjs";
 import { nameKey } from "./rules.mjs";
 import { OFFICIAL_X_HANDLES } from "./x-handles.mjs";
 import { buildMeta } from "./write-meta.mjs";
+import { scrubVictimNames } from "./victims.mjs";
 
 const OFFICIAL = new Map(OFFICIAL_X_HANDLES.map((h) => [h.toLowerCase(), h]));
 
@@ -116,7 +117,7 @@ export function rowsForPost(post, picks = []) {
     const reasons = holdReasons({ name: hit.name, sentence: hit.sentence, title: "", releaseText: clean, label });
     // A pick can only ADD a hold (e.g. the sentence's non-citizen wording describes a co-defendant, not this person).
     if (hit.hold) reasons.push(`reviewer hold: ${hit.hold}`);
-    const base = {
+    const base = scrubVictimNames({
       name: hit.name,
       city: hit.city || "Not stated",
       crime: `${label}: ${hit.sentence}`,
@@ -136,7 +137,7 @@ export function rowsForPost(post, picks = []) {
       confirmedBy: a.confirmedBy,
       lat: null,
       lon: null,
-    };
+    }).row; // shared feed rule: victim names -> neutral description
     if (!official) return { live: false, row: { ...base, status: "pending", reviewReason: `X post by @${handle}: not an official agency account` } };
     if (reasons.length) return { live: false, row: { ...base, status: "pending", holdReason: reasons.join("; "), reviewReason: `held by guard: ${reasons.join("; ")}` } };
     return { live: true, row: { ...base, status: "approved" } };

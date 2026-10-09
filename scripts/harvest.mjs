@@ -21,6 +21,7 @@
  * The workflow commits only when harvest.json or review.json actually changed.
  */
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { scrubVictimNames } from "./victims.mjs";
 import { extractPeople, htmlBlocks, decode, toRow } from "./parse.mjs";
 import { nameKey, routeRows, isOfficialUrl } from "./rules.mjs";
 import { holdReasons, holdReasonsForRow } from "./guards.mjs";
@@ -202,7 +203,7 @@ async function main() {
       const reasons = holdReasons({ name: hit.name, sentence: hit.sentence, title: rel.title, releaseText: rel.blocks.join(" "), label });
       const gated = gate({ ...row, id: uniqueId(row.id) }, reasons);
       if (gated.status === "pending") held.push(`${hit.name} (${gated.holdReason || "approval gate"})`);
-      fresh.push(gated);
+      fresh.push(scrubVictimNames(gated).row);
       added.push(hit.name);
     }
   }

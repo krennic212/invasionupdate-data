@@ -8,6 +8,10 @@
  *    pick the single person-specific image, download it, resize to <= 300 KB JPEG, and save it as
  *    data/photos/<key>.jpg. The result is recorded in data/photo-checks.json so it is not refetched.
  *  - network errors are not recorded, so the release is retried next run.
+ *  - VISUAL CHECK: code cannot tell whether an image shows a child or a second person whose face can
+ *    be seen, so a newly found image is never published here. The file is saved and the row is held:
+ *    photo "", photoHold "needs visual check", check result "held" (with file + image). A person /
+ *    agent looks at it and runs scripts/photo-review.mjs <rowId> --ok "<what you saw>" or --drop "<why>".
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync, statSync } from "node:fs";
 import sharp from "sharp";
@@ -60,16 +64,18 @@ async function main() {
   mkdirSync(DIR, { recursive: true });
   const counts = releaseCounts([...rows, ...review]);
   const taken = new Set();
-  const log = { added: [], removed: [], none: [], errors: [] };
+  const log = { held: [], removed: [], none: [], errors: [] };
   let fetched = 0;
 
   // 1) Withdraw photos that no longer pass the rules (never delete files).
   const fileBytes = (f) => (existsSync(`${DIR}/${f}`) ? statSync(`${DIR}/${f}`).size : null);
   for (const r of rows) {
-    if (r.photo && photoProblem(r, { counts, checks, fileBytes })) {
-      log.removed.push(`${r.name}: ${photoProblem(r, { counts, checks, fileBytes })}`);
+    const why = r.photo ? photoProblem(r, { counts, checks, fileBytes }) : "";
+    if (why) {
+      log.removed.push(`${r.name}: ${why}`);
       r.photo = "";
       delete r.photoSourceUrl;
+      if (/^needs visual check/.test(why)) r.photoHold = "needs visual check";
     } else if (!r.photo && r.photoSourceUrl) {
       delete r.photoSourceUrl;
     }
@@ -78,7 +84,7 @@ async function main() {
 
   // 2) Check eligible rows once per release.
   for (const r of rows) {
-    if (r.photo || r.status !== "approved" || r.holdReason || !isOfficialRow(r)) continue;
+    if (r.photo || r.photoHold || r.status !== "approved" || r.holdReason || !isOfficialRow(r)) continue;
     const rel = officialUrlOf(r);
     const k = urlKey(rel);
     if ((counts.get(k) || 0) !== 1) continue;
@@ -124,10 +130,11 @@ async function main() {
     taken.add(key);
     const file = `${key}.jpg`;
     writeFileSync(`${DIR}/${file}`, conv.out);
-    r.photo = `${PHOTO_PREFIX}${file}`;
-    r.photoSourceUrl = img;
-    record("photo", { file, image: img, bytes: conv.out.length });
-    log.added.push(`${r.name} <- ${img}`);
+    // Never published automatically: held until someone looks at it (scripts/photo-review.mjs).
+    r.photo = "";
+    r.photoHold = "needs visual check";
+    record("held", { file, image: img, bytes: conv.out.length, why: "needs visual check" });
+    log.held.push(`${r.name} <- ${img} (data/photos/${file})`);
   }
 
   writeJson(HARVEST, rows);

@@ -61,7 +61,7 @@ const REL = "https://www.ice.gov/news/releases/ice-arrests-guatemalan-alien-conv
 const good = { name: "Edvin Giovanni Ceron-Reyes", crime: "Convicted: Edvin Giovanni Ceron-Reyes, a Guatemalan national, convicted of attempted murder.", usa: "ICE release Apr 4, 2025: ICE arrests Guatemalan alien convicted of attempted murder", text: "", status: "approved", sourceUrl: REL, photo: `${PHOTO_PREFIX}edvin-1.jpg`, photoSourceUrl: "https://www.ice.gov/sites/default/files/images/250404baltimore.jpg" };
 const ctx = (over = {}) => ({
   counts: releaseCounts([good]),
-  checks: { [urlKey(REL)]: { result: "photo", file: "edvin-1.jpg" } },
+  checks: { [urlKey(REL)]: { result: "photo", file: "edvin-1.jpg", reviewed: "one adult, no child, no other visible face" } },
   fileBytes: (f) => (f === "edvin-1.jpg" ? 40000 : null),
   ...over,
 });
@@ -125,4 +125,20 @@ test("X photo rejected: reporter post, non-X image, unreviewed, multi-person pos
   assert.match(photoProblem({ ...xGood, holdReason: "possible minor / juvenile" }, xctx()), /held/);
   assert.match(photoProblem({ ...xGood, status: "pending" }, xctx()), /not approved/);
   assert.match(photoProblem({ ...xGood, photo: IMG }, xctx()), /Pages/);
+});
+
+// ---- visual check: no child, no second visible face ----
+test("a release photo without a visual check on record is held, not published", () => {
+  const checks = { [urlKey(REL)]: { result: "photo", file: "edvin-1.jpg" } };
+  assert.match(photoProblem(good, ctx({ checks })), /needs visual check/);
+  const held = { [urlKey(REL)]: { result: "held", file: "edvin-1.jpg", why: "needs visual check" } };
+  assert.match(photoProblem(good, ctx({ checks: held })), /no single-person photo check/);
+});
+
+test("a row with photoHold never carries a photo", () => {
+  assert.match(photoProblem({ ...good, photoHold: "second person's face visible" }, ctx()), /photoHold/);
+  assert.equal(photoProblem({ ...good, photo: "", photoHold: "needs visual check" }, ctx()), "");
+  const { rows } = dedupeRows([{ ...good, photoHold: "needs visual check" }]);
+  assert.equal(rows[0].photo, "");
+  assert.equal(rows[0].photoSourceUrl, undefined);
 });

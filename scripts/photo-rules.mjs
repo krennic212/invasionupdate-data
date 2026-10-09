@@ -10,6 +10,13 @@
  *    the person (first + last name) or says booking / mugshot.
  * The image is copied into data/photos/ and served from GitHub Pages; the feed never hotlinks.
  *
+ * Visual check (every photo, release or X): no child, and no second person whose face can be seen.
+ * This cannot be checked reliably by code, so scripts/photos.mjs never publishes a new release photo
+ * by itself: it saves the file and HOLDS the row (photo "", photoHold "needs visual check", check
+ * result "held"). A person / agent looks at the image and runs scripts/photo-review.mjs --ok (single
+ * person, headshot / booking crop, no child, no other visible face) or --drop "<reason>". Only a check
+ * with a "reviewed" note can carry a photo; a row with photoHold never carries one.
+ *
  * Official agency X posts (OFFICIAL_X_HANDLES, see rules.mjs) may also carry a photo, with the same
  * approved / unheld / one-row-per-post / repo-hosted / <= 300 KB / check-on-record rules, plus:
  *  - photoSourceUrl is the post's own image on X's media host (https://pbs.twimg.com/media/...);
@@ -168,6 +175,7 @@ export function photoProblem(row, ctx) {
   const bytes = ctx.fileBytes(file);
   if (bytes == null) return `photo file data/photos/${file} does not exist`;
   if (bytes > MAX_PHOTO_BYTES) return `photo file is ${bytes} bytes (max ${MAX_PHOTO_BYTES})`;
+  if (row.photoHold) return `photo on a row with photoHold (${row.photoHold})`;
   if (row.status !== "approved" || row.holdReason) return "photo on a row that is not approved or is held by a guard";
   const g = holdReasonsForRow(row);
   if (g.length) return `photo withheld by guard rule (${g.join("; ")})`;
@@ -181,5 +189,6 @@ export function photoProblem(row, ctx) {
   const chk = ctx.checks[urlKey(rel)];
   if (!chk || chk.result !== "photo" || chk.file !== file) return "no single-person photo check on record for this release";
   if (viaX && (chk.image !== row.photoSourceUrl || !chk.reviewed)) return "no reviewed single-person photo check on record for this X post";
+  if (!viaX && !String(chk.reviewed || "").trim()) return "needs visual check (no reviewed note on record: no child, no second visible face)";
   return "";
 }
