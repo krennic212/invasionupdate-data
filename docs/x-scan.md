@@ -15,7 +15,7 @@ exists, the official URL is used as `sourceUrl`. Photos stay official-only: his 
 (no photo candidates, `x-photo.mjs` refuses them). All other reporter / news / activist handles
 (`NOT_OFFICIAL_X_HANDLES`) still go to review.json only.
 
-## Every scheduled run (every 30 min)
+## Every scheduled run (hourly, 7:39 AM - 5:39 PM CT)
 
 0. `cd /workspace/invasionupdate-data && git pull --rebase`
 1. Read the state: `cat data/x-scan-state.json` -> `lastSeenId` (highest post id already read).
@@ -23,7 +23,10 @@ exists, the official URL is used as `sourceUrl`. Photos stay official-only: his 
 3. For each query (and each further page while `meta.next_token` is present):
    - Reserve first: `node scripts/x-usage.mjs reserve 1 "batch N page M"`. **Exit code 1 = stop the run now**
      (cap would pass 999). Do not make the call.
-   - Call `search_recent_posts`/`search_posts_all` with: `query`, `since_id` = lastSeenId, `max_results` 25+,
+   - Window (Krennic 2026-10-09): `node scripts/x-queries.mjs --window` prints `{since_id}` or `{start_time}`.
+     Every scan covers at least the last 75 minutes: it starts from whichever is EARLIER, the post after lastSeenId
+     or now - 75 min (so the first run of the day still catches overnight posts). Dedupe handles any overlap.
+   - Call `search_recent_posts`/`search_posts_all` with: `query`, the window from above (`since_id` or `start_time`), `max_results` 25+,
      `sort_order` recency, `post.fields` "created_at,author_id,attachments,note_tweet",
      `expansions` "author_id,attachments.media_keys", `user.fields` "username", `media.fields` "type,url".
      (`note_tweet` carries the full text of long posts; without it text is cut at 280 chars.)
