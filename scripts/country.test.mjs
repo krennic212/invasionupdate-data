@@ -51,3 +51,11 @@ test("x-scan: the @EROSeattle post goes live by itself with country Guatemala (n
   assert.deepEqual(live.map((r) => [r.name, r.origin, r.status]), [["Ronald Zacarias-Gregorio", "Guatemala", "approved"]]);
   assert.match(live[0].crime, /^Arrested: ICE Seattle arrested illegal alien Ronald Zacarias-Gregorio, 36, of Guatemala\./);
 });
+
+test("country: ICE '<Name>, an illegal alien and <gang> member from <Country>' wording (Oct 9 NYC thread)", () => {
+  assert.equal(countryFor("Dimeir Cruz-Velasquez", "Dimeir Cruz-Velasquez, an illegal alien and Tren de Aragua terrorist group member from Venezuela, was convicted of attempted criminal sale of firearm-3rd degree"), "Venezuela");
+  assert.equal(countryFor("Anderson Smith Sisalima Gualan", "Anderson Smith Sisalima Gualan, an illegal alien and Latin Kings gang member from Ecuador, was convicted of felony assault"), "Ecuador");
+  // a place that is not tied to the person's own clause still gives nothing
+  assert.equal(countryFor("Juan Perez", "Juan Perez, an illegal alien and gang member wanted in Ecuador, was arrested."), "");
+  assert.equal(countryFor("Juan Perez", "Juan Perez, an illegal alien and gang member from Modesto, was arrested."), "");
+});

@@ -238,3 +238,17 @@ test("'As posted' rows (criminal history includes ...) use the 90% non-convictio
   assert.equal(TABLE.stage.notConvicted, 0.9);
   assert.equal(scoreRow(row).severity, Math.round(TABLE.crimes.theft.points * 0.9));
 });
+
+test("NY sex-offense wording: 'less than N years', 'course of sexual conduct', 'intercourse ... without consent'", () => {
+  const s = (crime) => scoreRow({ crime, text: "", usa: "" });
+  // child under 13 / less than 11: child sex crime (counted once, not also as rape)
+  assert.deepEqual(s("Convicted: Germis Arquimides Santos Santos, an illegal alien from El Salvador, convicted of attempted course of sexual conduct in the second degree: actor over 17, two or more acts on a child under 13.").severityCrimes, ["Child sex crime"]);
+  assert.deepEqual(s("Convicted: Angel Agusto De Leon, an illegal alien from Belize, was convicted of act in manner injure child less than 17 and sexual abuse 1st: sexual contact with individual less than 11 years old.").severityCrimes, ["Child sex crime"]);
+  assert.deepEqual(s("Convicted: Wilson Omar Santos Paz, an illegal alien from Honduras, has convictions for indecent assault on a person less than 13 years of age, unlawful contact with a minor sexual offenses, as well as felony illegal reentry.").severityCrimes, ["Child sex crime", "Illegal entry / reentry"]);
+  // non-consensual intercourse = rape / sexual assault
+  const r = s("Convicted: Jefferson Avimael Mendoza-Sifuentes, an illegal alien from Guatemala, was convicted of sexual misconduct - having intercourse with another without consent.");
+  assert.deepEqual(r.severityCrimes, ["Rape / sexual assault"]);
+  assert.equal(r.severity, TABLE.crimes.rape.points);
+  // "less than N" without years is not a child (e.g. amounts)
+  assert.deepEqual(s("Convicted: X Y was convicted of theft of less than 5 grams of gold.").severityCrimes, ["Burglary / theft"]);
+});

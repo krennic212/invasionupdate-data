@@ -766,5 +766,104 @@
     "name": "Jose Jacinto Vasquez Arellano",
     "result": "none",
     "why": "Post carries a video only (no photo); video thumbnail is not a reviewed headshot / booking photo"
+  },
+  "x.com/icegov/status/2108687282790093050": {
+    "checkedAt": "2026-10-09T22:50:27.513Z",
+    "name": "Anderson Smith Sisalima Gualan",
+    "result": "photo",
+    "file": "x-2108687282790093050-anderson-smith-sisalima-gualan.jpg",
+    "image": "https://pbs.twimg.com/media/HUONm77W0AAIWlN?format=png&name=orig",
+    "bytes": 14988,
+    "reviewed": "Viewed image: booking photo of one adult man, dark shoulder-length hair, gray hoodie, plain blue-gray wall; no text, no other people, no child"
+  },
+  "x.com/icegov/status/2108687285159948789": {
+    "checkedAt": "2026-10-09T22:50:27.940Z",
+    "name": "Marcos Antonio Pandy-Castillo",
+    "result": "photo",
+    "file": "x-2108687285159948789-marcos-antonio-pandy-castillo.jpg",
+    "image": "https://pbs.twimg.com/media/HUONscWXEAAcMrE?format=png&name=orig",
+    "bytes": 18672,
+    "reviewed": "Viewed image: booking-style close headshot of one adult man with long locs, black hoodie, plain background; no text, no other people, no child"
+  },
+  "x.com/icegov/status/2108687287579980178": {
+    "checkedAt": "2026-10-09T22:50:28.368Z",
+    "name": "Francis Omar Ramirez Lopez",
+    "result": "photo",
+    "file": "x-2108687287579980178-francis-omar-ramirez-lopez.jpg",
+    "image": "https://pbs.twimg.com/media/HUONxtoWQAAZykH?format=png&name=orig",
+    "bytes": 12253,
+    "reviewed": "Viewed image: booking photo of one adult man with goatee, tan jail shirt, plain white wall; no text, no other people, no child"
+  },
+  "x.com/icegov/status/2108687289643655310": {
+    "checkedAt": "2026-10-09T22:50:28.791Z",
+    "name": "Dimeir Cruz-Velasquez",
+    "result": "photo",
+    "file": "x-2108687289643655310-dimeir-cruz-velasquez.jpg",
+    "image": "https://pbs.twimg.com/media/HUON2XLW8AAkQ6e?format=png&name=orig",
+    "bytes": 5529,
+    "reviewed": "Viewed image: booking photo of one adult man with braided hair and beard, black shirt, plain wall; no text, no other people, no child"
+  },
+  "x.com/icegov/status/2108687291560427548": {
+    "checkedAt": "2026-10-09T22:50:29.213Z",
+    "name": "Yung Ho Lo",
+    "result": "photo",
+    "file": "x-2108687291560427548-yung-ho-lo.jpg",
+    "image": "https://pbs.twimg.com/media/HUON5YEWoAAIES0?format=png&name=orig",
+    "bytes": 6014,
+    "reviewed": "Viewed image: booking photo of one adult middle-aged man, green jail shirt over white tee, gray wall; no text, no other people, no child"
+  },
+  "x.com/icegov/status/2108687294161203493": {
+    "checkedAt": "2026-10-09T22:50:29.689Z",
+    "name": "Jefferson Avimael Mendoza-Sifuentes",
+    "result": "photo",
+    "file": "x-2108687294161203493-jefferson-avimael-mendoza-sifuentes.jpg",
+    "image": "https://pbs.twimg.com/media/HUON8LBWoAEFO7L?format=png&name=orig",
+    "bytes": 10525,
+    "reviewed": "Viewed image: booking photo of one adult young man, yellow shirt reading AUGUSTA, plain wall; no other people, no child"
+  },
+  "x.com/icegov/status/2108687297793372571": {
+    "checkedAt": "2026-10-09T22:50:30.130Z",
+    "name": "Wilson Omar Santos Paz",
+    "result": "photo",
+    "file": "x-2108687297793372571-wilson-omar-santos-paz.jpg",
+    "image": "https://pbs.twimg.com/media/HUOOAmQXkAAtXgp?format=png&name=orig",
+    "bytes": 5147,
+    "reviewed": "Viewed image: booking photo of one adult bald man with beard, gray tee, plain wall; no text, no other people, no child"
+  },
+  "x.com/icegov/status/2108687300699754743": {
+    "checkedAt": "2026-10-09T22:50:30.580Z",
+    "name": "Juan Jose Morales-Colindres",
+    "result": "photo",
+    "file": "x-2108687300699754743-juan-jose-morales-colindres.jpg",
+    "image": "https://pbs.twimg.com/media/HUOOFD-WUAAvnXj?format=jpg&name=orig",
+    "bytes": 9527,
+    "reviewed": "Viewed image: booking photo of one adult man in gray tank top, chest tattoo, yellow panel on wall at left; no text, no other people, no child"
+  },
+  "x.com/icegov/status/2108687303077920981": {
+    "checkedAt": "2026-10-09T22:50:31.143Z",
+    "name": "Germis Arquimides Santos Santos",
+    "result": "photo",
+    "file": "x-2108687303077920981-germis-arquimides-santos-santos.jpg",
+    "image": "https://pbs.twimg.com/media/HUOOINoXEAAbH8T?format=jpg&name=orig",
+    "bytes": 13732,
+    "reviewed": "Viewed image: booking photo of one adult man, black cape over white tee, plain wall with white side margins; no text, no other people, no child"
+  },
+  "x.com/icegov/status/2108687305393283155": {
+    "checkedAt": "2026-10-09T22:50:31.798Z",
+    "name": "Angel Agusto De Leon",
+    "result": "photo",
+    "file": "x-2108687305393283155-angel-agusto-de-leon.jpg",
+    "image": "https://pbs.twimg.com/media/HUOONgeXsAACjr_?format=png&name=orig",
+    "bytes": 8135,
+    "reviewed": "Viewed image: booking photo of one adult man, olive green tee, plain white wall; no other people, no child"
+  },
+  "x.com/icegov/status/2108687308140752975": {
+    "checkedAt": "2026-10-09T22:50:32.201Z",
+    "name": "Anthony Alfredo Moreno",
+    "result": "photo",
+    "file": "x-2108687308140752975-anthony-alfredo-moreno.jpg",
+    "image": "https://pbs.twimg.com/media/HUOOSyBW0AAywz4?format=png&name=orig",
+    "bytes": 6391,
+    "reviewed": "Viewed image: booking photo of one adult man with beard, white tee, plain wall; no text, no other people, no child"
   }
 }

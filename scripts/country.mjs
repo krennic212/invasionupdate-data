@@ -63,6 +63,8 @@ const AFTER = [
   new RegExp(`^\\s*(?:,\\s+)?(?:\\d{1,3},\\s+)?(?:of|from)\\s+(?:the\\s+)?${C}${END}`),
   // ", a criminal illegal alien from Mexico" / ", 64, a lawful permanent resident from Cuba" / ", a citizen of Honduras"
   new RegExp(`^\\s*,\\s+(?:\\d{1,3},\\s+)?(?:an?\\s+)?(?:\\d{1,3}-year-old\\s+)?(?:[A-Za-z-]+\\s+){0,4}?${TYPE}\\s+(?:from|of)\\s+(?:the\\s+)?${C}${END}`),
+  // ", an illegal alien and Tren de Aragua terrorist group member from Venezuela" (ICE wording; the country still sits in the person's own clause)
+  new RegExp(`^\\s*,\\s+(?:\\d{1,3},\\s+)?(?:an?\\s+)?(?:criminal\\s+)?illegal\\s+alien\\s+and\\s+(?:[A-Za-z'’-]+\\s+){1,6}?(?:member|affiliate|associate)\\s+(?:from|of)\\s+(?:the\\s+)?${C}${END}`),
   // ", 45, a Mexican national" / ", a Honduran citizen"
   new RegExp(`^\\s*,\\s+(?:\\d{1,3},\\s+)?(?:an?\\s+)?(?:\\d{1,3}-year-old\\s+)?(?:[a-z-]+\\s+){0,3}?${D}\\s+(?:national|citizen|native)${END}`),
 ];

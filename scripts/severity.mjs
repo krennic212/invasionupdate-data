@@ -24,7 +24,7 @@ import { fileURLToPath } from "node:url";
 
 export const TABLE = JSON.parse(readFileSync(new URL("./severity-points.json", import.meta.url), "utf8"));
 
-const CHILD = String.raw`(?:child(?:ren)?|minors?|juveniles?|(?:victim[- ]while[- ])?under(?:[- ]the[- ]age[- ]of)?[- ](?:1[0-7]|thirteen|fourteen|fifteen|sixteen|seventeen)|\d{1,2}[- ]year[- ]old (?:child|girl|boy|victim)|age 1[0-7])`;
+const CHILD = String.raw`(?:child(?:ren)?|minors?|juveniles?|(?:victim[- ]while[- ])?under(?:[- ]the[- ]age[- ]of)?[- ](?:1[0-7]|thirteen|fourteen|fifteen|sixteen|seventeen)|\d{1,2}[- ]year[- ]old (?:child|girl|boy|victim)|age 1[0-7]|less[- ]than[- ](?:1[0-7]|[1-9])[- ]years?(?:[- ]of[- ]age|[- ]old)?)`;
 const OFFICER = String.raw`(?:police|law enforcement|nypd|lapd|ice|cbp|border patrol|federal|correctional|detention|peace)?\s*(?:officers?|detectives?|deput(?:y|ies)|troopers?|agents?|cops?|policem[ae]n)\b`;
 
 /** Order matters: a matched span is blanked out before the later categories run. */
@@ -33,7 +33,7 @@ export const PATTERNS = [
   ["skip", [/\b(?:cruelty to animals?|animal cruelty)\b/gi]],
   ["childSex", [
     new RegExp(String.raw`\b(?:rape|sexual(?:ly)?\s+(?:abuse|assault|conduct|exploitation|contact|battery|offen[cs]e|intercourse|penetration)\w*|sex(?:ual)?\s+(?:abuse|assault|offen[cs]e|crimes?)|indecen(?:t|cy)(?:\s+\w+){0,4}|lewd(?:\s+(?:or|and)\s+lascivious)?(?:\s+\w+){0,3}|molest\w*|indecent liberties|sodomy)(?:(?!\s(?:and|or)\s|,)[^;.]){0,40}?\b(?:with|of|on|upon|against|involving|to|a)\b(?:(?!\s(?:and|or)\s|,)[^;.]){0,25}?${CHILD}`, "gi"),
-    new RegExp(String.raw`\b(?:child|minor)\s+(?:porn\w*|sex\w*|molest\w*|exploitation|sexual abuse|abuse material)|\bchild molestation|\bmolest\w*|\bstatutory\s+(?:rape|sex\w*(?:\s+offen[cs]e)?)|\bcsam\b|obscene material depicting minors|harmful material to a minor|enticement of a minor|sexually abuse a \d{1,2}[- ]year[- ]old|criminal sexual conduct[^;.]{0,30}person under`, "gi"),
+    new RegExp(String.raw`\b(?:child|minor)\s+(?:porn\w*|sex\w*|molest\w*|exploitation|sexual abuse|abuse material)|\bchild molestation|\bmolest\w*|\bstatutory\s+(?:rape|sex\w*(?:\s+offen[cs]e)?)|\bcsam\b|obscene material depicting minors|harmful material to a minor|enticement of a minor|sexually abuse a \d{1,2}[- ]year[- ]old|criminal sexual conduct[^;.]{0,30}person under|\bcourse of sexual conduct\b`, "gi"),
     /\b(?:coercion and enticement|persuade,\s+induce,\s+entice|entice(?:ment)?,?\s+and\s+coerce)\b/gi,
   ]],
   ["attemptedMurder", [
@@ -45,7 +45,7 @@ export const PATTERNS = [
   ]],
   ["murder", [/\b(?:murder\w*|homicide|manslaughter|massacr\w*)\b/gi]],
   ["kidnapping", [/\b(?:kidnap\w*|abduct\w*|human trafficking|sex trafficking|labor trafficking|trafficking (?:in|of) persons)\b/gi]],
-  ["rape", [/\b(?:rap(?:e|ed|es|ing)|sexual\s+(?:assault|battery|abuse|penetration)|sex crimes?|indecent assault|sodomy|forcible fondling)\b/gi]],
+  ["rape", [/\b(?:rap(?:e|ed|es|ing)|sexual\s+(?:assault|battery|abuse|penetration)|sex crimes?|indecent assault|sodomy|forcible fondling|(?:sexual\s+)?intercourse\s+with\s+(?:another|a person|an individual)\s+without\s+(?:\w+\s+)?consent)\b/gi]],
   // "sexually assaulted her": narrative wording, counted as rape only if no child sex crime / rape charge was found.
   ["rapeNarrative", [/\bsexually\s+(?:assault|abus|batter)\w*/gi]],
   ["childViolence", [

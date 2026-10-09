@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-09",
   "windowDays": 7,
-  "total": 119,
+  "total": 130,
   "rows": [
     {
       "id": "dhs-20261008-ian-clive-burton",
@@ -53,6 +53,18 @@
       ]
     },
     {
+      "id": "x-2108687285159948789-marcos-antonio-pandy-castillo",
+      "name": "Marcos Antonio Pandy-Castillo",
+      "when": "9 Oct 2026",
+      "severity": 194,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Weapons",
+        "Assault / battery"
+      ]
+    },
+    {
       "id": "dhs-20261007-naun-martinez-zuniga",
       "name": "Naun Martinez-Zuniga",
       "when": "7 Oct 2026",
@@ -63,6 +75,18 @@
         "Drug trafficking",
         "Burglary / theft",
         "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "x-2108687300699754743-juan-jose-morales-colindres",
+      "name": "Juan Jose Morales-Colindres",
+      "when": "9 Oct 2026",
+      "severity": 180,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Drug trafficking",
+        "Assault / battery"
       ]
     },
     {
@@ -168,6 +192,17 @@
       ]
     },
     {
+      "id": "x-2108687291560427548-yung-ho-lo",
+      "name": "Yung Ho Lo",
+      "when": "9 Oct 2026",
+      "severity": 152,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Armed robbery / aggravated assault"
+      ]
+    },
+    {
       "id": "dhs-20261006-han-lee",
       "name": "Han Lee",
       "when": "6 Oct 2026",
@@ -199,6 +234,17 @@
         "Armed robbery / aggravated assault",
         "Weapons",
         "Assault / battery"
+      ]
+    },
+    {
+      "id": "x-2108687289643655310-dimeir-cruz-velasquez",
+      "name": "Dimeir Cruz-Velasquez",
+      "when": "9 Oct 2026",
+      "severity": 145,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Weapons"
       ]
     },
     {
@@ -245,51 +291,6 @@
       "severityCrimes": [
         "Child sex crime",
         "Burglary / theft"
-      ]
-    },
-    {
-      "id": "dhs-20261009-norberto-machada-rodriguez",
-      "name": "Norberto Machada-Rodriguez",
-      "when": "9 Oct 2026",
-      "severity": 126,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Drug trafficking"
-      ]
-    },
-    {
-      "id": "dhs-20261007-carlos-arturo-zelaya-argueta",
-      "name": "Carlos Arturo Zelaya-Argueta",
-      "when": "7 Oct 2026",
-      "severity": 125,
-      "severityReason": "Sexual abuse of an animal",
-      "severityCrimes": [
-        "Sexual abuse of an animal",
-        "Drug trafficking"
-      ]
-    },
-    {
-      "id": "dhs-20261005-abraham-leon-aguirre",
-      "name": "Abraham Leon-Aguirre",
-      "when": "5 Oct 2026",
-      "severity": 125,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Drug trafficking",
-        "Illegal entry / reentry"
-      ]
-    },
-    {
-      "id": "dhs-20261008-irvin-roblero-ortiz",
-      "name": "Irvin Roblero-Ortiz",
-      "when": "8 Oct 2026",
-      "severity": 122,
-      "severityReason": "Kidnapping / human trafficking",
-      "severityCrimes": [
-        "Kidnapping / human trafficking",
-        "Assault / battery"
       ]
     }
   ]
