@@ -38,10 +38,11 @@
     "office": "TheJusticeDept",
     "id": "doj-20261005-miguel-francisco-mora-nunez",
     "when": "5 Oct 2026",
-    "severity": 143,
+    "severity": 228,
     "severityReason": "Attack on police officer",
     "severityCrimes": [
       "Attack on police officer",
+      "Attempted murder",
       "Weapons"
     ],
     "text": "DOJ Oct 5, 2026, as posted: United States Attorney for the Southern District of New York, Jamie McDonald, Acting Special Agent in Charge of the New York Field Office of Homeland Security Investigations (“HSI”), Pete Gizas, Director of the New York Field Office of U.S. Customs and Border Protection (“CBP”), Francis J. Russo, and Commissioner of the New York City Police Department (“NYPD”), Jessica S. Tisch, announced today that MIGUEL FRANCISCO MORA NUNEZ and CHRISTHIAN AYBAR-BERROA were sentenced to 180 months and 151 months in prison, respectively, for possession of ammunition as illegal aliens in connection with the shooting of an off-duty U.S. Customs and Border Protection (“CBP”) Officer in Manhattan last summer.",
@@ -66,10 +67,11 @@
     "office": "TheJusticeDept",
     "id": "doj-20261005-christhian-aybar-berroa",
     "when": "5 Oct 2026",
-    "severity": 143,
+    "severity": 228,
     "severityReason": "Attack on police officer",
     "severityCrimes": [
       "Attack on police officer",
+      "Attempted murder",
       "Weapons"
     ],
     "text": "DOJ Oct 5, 2026, as posted: United States Attorney for the Southern District of New York, Jamie McDonald, Acting Special Agent in Charge of the New York Field Office of Homeland Security Investigations (“HSI”), Pete Gizas, Director of the New York Field Office of U.S. Customs and Border Protection (“CBP”), Francis J. Russo, and Commissioner of the New York City Police Department (“NYPD”), Jessica S. Tisch, announced today that MIGUEL FRANCISCO MORA NUNEZ and CHRISTHIAN AYBAR-BERROA were sentenced to 180 months and 151 months in prison, respectively, for possession of ammunition as illegal aliens in connection with the shooting of an off-duty U.S. Customs and Border Protection (“CBP”) Officer in Manhattan last summer.",
@@ -416,10 +418,10 @@
     "office": "EROBoston",
     "id": "x-2108517077191721359-maycon-eleazar-de-jesus-barrios",
     "when": "9 Oct 2026",
-    "severity": 63,
-    "severityReason": "Armed robbery / aggravated assault",
+    "severity": 36,
+    "severityReason": "Assault / battery",
     "severityCrimes": [
-      "Armed robbery / aggravated assault"
+      "Assault / battery"
     ],
     "text": "@EROBoston Oct 9, 2026, as posted: On Oct. 2, ICE Boston arrested Maycon Eleazar De Jesus Barrios, a criminal illegal alien from Guatemala, during targeted operations in Marlborough, Mass. His criminal history includes arrest for assault and battery on a family/household member.",
     "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2108517077191721359-maycon-eleazar-de-jesus-barrios.jpg",
@@ -638,11 +640,12 @@
     "office": "ERONewOrleans",
     "id": "x-2108243525322084482-marlon-romero-medina",
     "when": "8 Oct 2026",
-    "severity": 137,
+    "severity": 173,
     "severityReason": "Kidnapping / human trafficking",
     "severityCrimes": [
       "Kidnapping / human trafficking",
-      "Armed robbery / aggravated assault"
+      "Armed robbery / aggravated assault",
+      "Assault / battery"
     ],
     "text": "@ERONewOrleans Oct 8, 2026, as posted: Under President Trump and Secretary Mullin, ICE is targeting the worst of the worst. ERO New Orleans arrested Marlon Romero Medina, a criminal illegal alien from Honduras, in Smyrna, TN last week. His rap sheet includes felony convictions for aggravated assault, assault & kidnapping.",
     "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2108243525322084482-marlon-romero-medina.jpg",
@@ -1056,10 +1059,10 @@
     "office": "EroHarlingen",
     "id": "x-2107889524097343995-zinzun-bautista",
     "when": "7 Oct 2026",
-    "severity": 90,
-    "severityReason": "Armed robbery / aggravated assault",
+    "severity": 63,
+    "severityReason": "Assault / battery",
     "severityCrimes": [
-      "Armed robbery / aggravated assault",
+      "Assault / battery",
       "DUI",
       "Illegal entry / reentry"
     ],
@@ -1200,10 +1203,11 @@
     "office": "EROWashington",
     "id": "x-2107826150915379321-jae-lee",
     "when": "7 Oct 2026",
-    "severity": 63,
+    "severity": 99,
     "severityReason": "Armed robbery / aggravated assault",
     "severityCrimes": [
-      "Armed robbery / aggravated assault"
+      "Armed robbery / aggravated assault",
+      "Assault / battery"
     ],
     "text": "@EROWashington Oct 7, 2026, as posted: ICE @EROWashington D.C. arrested Jae Lee, an illegal alien offender from South Korea, in Hagerstown, Maryland. Lee's criminal history includes assault and aggravated strongarm domestic assault. Lee will remain in ICE custody pending deportation proceedings.",
     "photo": "",
@@ -1227,11 +1231,12 @@
     "office": "EROMiami",
     "id": "x-2107803124752629805-reynaldo-c-zayas",
     "when": "7 Oct 2026",
-    "severity": 108,
+    "severity": 144,
     "severityReason": "Armed robbery / aggravated assault",
     "severityCrimes": [
       "Armed robbery / aggravated assault",
-      "Drug trafficking"
+      "Drug trafficking",
+      "Assault / battery"
     ],
     "text": "@EROMiami Oct 7, 2026, as posted: ICE arrested Reynaldo C. Zayas, a criminal illegal alien from Cuba with a final order of removal. His convictions include drug trafficking in methamphetamine/amphetamine, controlled substance possession, assault, domestic violence probation violation.",
     "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2107803124752629805-reynaldo-c-zayas.jpg",
@@ -1256,10 +1261,10 @@
     "office": "EROBoston",
     "id": "x-2107780192295125447-miguel-francisco-flores",
     "when": "7 Oct 2026",
-    "severity": 63,
-    "severityReason": "Armed robbery / aggravated assault",
+    "severity": 36,
+    "severityReason": "Assault / battery",
     "severityCrimes": [
-      "Armed robbery / aggravated assault"
+      "Assault / battery"
     ],
     "text": "@EROBoston Oct 7, 2026, as posted: On Oct. 2, ICE Boston arrested Miguel Francisco-Flores, a criminal illegal alien from Mexico, during targeted operations in Marlborough, Mass. His criminal history includes arrest for assault and battery on a family/household member.",
     "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2107780192295125447-miguel-francisco-flores.jpg",
@@ -2037,11 +2042,12 @@
     "office": "EROMiami",
     "id": "x-2107215032882810906-salvador-j-sotolongo",
     "when": "5 Oct 2026",
-    "severity": 113,
+    "severity": 149,
     "severityReason": "Armed robbery / aggravated assault",
     "severityCrimes": [
       "Armed robbery / aggravated assault",
-      "Weapons"
+      "Weapons",
+      "Assault / battery"
     ],
     "text": "@EROMiami Oct 5, 2026, as posted: ICE arrested Salvador J. Sotolongo, a criminal illegal alien from Cuba with a final order of removal. His convictions include multiple agg assaults, weapons offenses, domestic violence, obstruction of justice & traffic-related offenses. He remains in ICE custody pending removal.",
     "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2107215032882810906-salvador-j-sotolongo.jpg",
@@ -2150,11 +2156,12 @@
     "office": "EROMiami",
     "id": "x-2106368675884503148-juan-aguilar-naranjo",
     "when": "3 Oct 2026",
-    "severity": 140,
+    "severity": 176,
     "severityReason": "Armed robbery / aggravated assault",
     "severityCrimes": [
       "Armed robbery / aggravated assault",
       "Drug trafficking",
+      "Assault / battery",
       "Burglary / theft"
     ],
     "text": "@EROMiami Oct 3, 2026, as posted: ICE arrested Juan Aguilar Naranjo, a criminal illegal alien from Cuba with a final order of removal. His convictions include cocaine possession, false imprisonment, robbery, resisting arrest, battery, burglary, and theft. He remains in ICE custody pending removal.",
@@ -2819,11 +2826,11 @@
     "office": "DHSgov",
     "id": "dhs-20261008-irvin-roblero-ortiz",
     "when": "8 Oct 2026",
-    "severity": 152,
+    "severity": 122,
     "severityReason": "Kidnapping / human trafficking",
     "severityCrimes": [
       "Kidnapping / human trafficking",
-      "Armed robbery / aggravated assault"
+      "Assault / battery"
     ],
     "text": "DHS Oct 8, 2026, as posted: Irvin Roblero-Ortiz, a criminal illegal alien from Guatemala, convicted for abduction and strangulation in Accomack, Virginia.",
     "photo": "",
@@ -2983,9 +2990,10 @@
     "office": "DHSgov",
     "id": "dhs-20261007-carlos-arturo-zelaya-argueta",
     "when": "7 Oct 2026",
-    "severity": 50,
-    "severityReason": "Drug trafficking",
+    "severity": 125,
+    "severityReason": "Sexual abuse of an animal",
     "severityCrimes": [
+      "Sexual abuse of an animal",
       "Drug trafficking"
     ],
     "text": "DHS Oct 7, 2026, as posted: Carlos Arturo Zelaya-Argueta, a criminal illegal alien from El Salvador, convicted for sexual abuse of an animal and distribution of Schedule I or II drugs in Arlington, Virginia.",
@@ -3120,9 +3128,10 @@
     "office": "DHSgov",
     "id": "dhs-20261007-naun-martinez-zuniga",
     "when": "7 Oct 2026",
-    "severity": 92,
-    "severityReason": "Drug trafficking",
+    "severity": 182,
+    "severityReason": "Terrorist plot",
     "severityCrimes": [
+      "Terrorist plot",
       "Drug trafficking",
       "Burglary / theft",
       "Illegal entry / reentry"
@@ -3176,9 +3185,10 @@
     "office": "DHSgov",
     "id": "dhs-20261006-han-lee",
     "when": "6 Oct 2026",
-    "severity": 60,
-    "severityReason": "Fraud (incl. voter fraud)",
+    "severity": 152,
+    "severityReason": "Child sex crime",
     "severityCrimes": [
+      "Child sex crime",
       "Fraud (incl. voter fraud)"
     ],
     "text": "DHS Oct 6, 2026, as posted: Han Lee, a criminal illegal alien from South Korea, convicted for money laundering and conspiracy to persuade, induce, entice, and coerce one or more individuals in Boston, Massachusetts.",
@@ -3284,10 +3294,11 @@
     "office": "DHSgov",
     "id": "dhs-20261006-sneider-mejia-bautista",
     "when": "6 Oct 2026",
-    "severity": 79,
+    "severity": 156,
     "severityReason": "Attack on police officer",
     "severityCrimes": [
-      "Attack on police officer"
+      "Attack on police officer",
+      "Attempted murder"
     ],
     "text": "DHS Oct 6, 2026, as posted: U.S. Immigration and Customs Enforcement’s (ICE) Enforcement and Removal Operations (ERO New York City has since identified both suspects: Dangelo Rafael Jean Caraballo and Sneider Mejia Bautista, both illegal aliens from the Dominican Republic. Update: the DHS release title says the suspects remain at large; the U.S. Marshals report both were arrested Oct 7, 2026 in Lynn, MA (https://www.usmarshals.gov/news/press-release/two-fugitives-arrested-brutal-stabbing-of-nypd-detective).",
     "photo": "",
@@ -3312,10 +3323,11 @@
     "office": "DHSgov",
     "id": "dhs-20261006-dangelo-rafael-jean-caraballo",
     "when": "6 Oct 2026",
-    "severity": 79,
+    "severity": 156,
     "severityReason": "Attack on police officer",
     "severityCrimes": [
-      "Attack on police officer"
+      "Attack on police officer",
+      "Attempted murder"
     ],
     "text": "DHS Oct 6, 2026, as posted: U.S. Immigration and Customs Enforcement’s (ICE) Enforcement and Removal Operations (ERO New York City has since identified both suspects: Dangelo Rafael Jean Caraballo and Sneider Mejia Bautista, both illegal aliens from the Dominican Republic. Update: the DHS release title says the suspects remain at large; the U.S. Marshals report both were arrested Oct 7, 2026 in Lynn, MA (https://www.usmarshals.gov/news/press-release/two-fugitives-arrested-brutal-stabbing-of-nypd-detective).",
     "photo": "",
@@ -3340,9 +3352,11 @@
     "office": "DHSgov",
     "id": "dhs-20261005-abraham-hermosillo-alvarez",
     "when": "5 Oct 2026",
-    "severity": 0,
-    "severityReason": "",
-    "severityCrimes": [],
+    "severity": 81,
+    "severityReason": "Terrorist plot",
+    "severityCrimes": [
+      "Terrorist plot"
+    ],
     "text": "DHS Oct 5, 2026, as posted: Abraham Hermosillo Alvarez, an illegal alien from Mexico and the alleged ringleader of the failed terrorist plot against UFC Freedom 250 at the White House, arrested by the Federal Bureau of Investigation (FBI) on June 14 in Omaha, Nebraska.",
     "photo": "",
     "via": "dhs.gov/news/2026/10/05/dhs-highlights-worst-illegal-aliens-arrested-or-convicted-nebraska",
@@ -3521,10 +3535,10 @@
     "office": "ICEgov",
     "id": "ice-20260925-jose-almendares-suazo",
     "when": "25 Sep 2026",
-    "severity": 63,
-    "severityReason": "Armed robbery / aggravated assault",
+    "severity": 36,
+    "severityReason": "Assault / battery",
     "severityCrimes": [
-      "Armed robbery / aggravated assault"
+      "Assault / battery"
     ],
     "text": "ICE Sep 25, 2026, as posted: Jose Almendares Suazo, 30, a criminal illegal alien from Honduras who had been previously removed from the U.S. Almendares Suazo has a prior conviction for assault causing bodily injury, as well as a prior arrest for assault involving family violence.",
     "photo": "",
@@ -3957,9 +3971,11 @@
     "office": "DHSgov",
     "id": "dhs-20261005-joel-antonio-garcia-martinez",
     "when": "5 Oct 2026",
-    "severity": 0,
-    "severityReason": "",
-    "severityCrimes": [],
+    "severity": 65,
+    "severityReason": "Alien smuggling",
+    "severityCrimes": [
+      "Alien smuggling"
+    ],
     "text": "DHS Oct. 5, 2026: ICE arrested Joel Antonio Garcia-Martinez, a criminal illegal alien from Honduras, convicted of smuggling illegal aliens for profit in the District of Arizona. Convicted, not Removed. uniqueByName.",
     "photo": "",
     "via": "@DHSgov 2107176187189703085",
@@ -4036,11 +4052,11 @@
     "office": "DHSgov",
     "id": "dhs-2026-09-21-wow-0",
     "when": "20 Sep 2026",
-    "severity": 200,
+    "severity": 170,
     "severityReason": "Murder / manslaughter",
     "severityCrimes": [
       "Murder / manslaughter",
-      "Armed robbery / aggravated assault",
+      "Assault / battery",
       "Burglary / theft"
     ],
     "text": "DHS: Mykhaylo Kofel, a criminal illegal alien from Ukraine, convicted of second-degree murder and burglary with assault or battery in Miami, FL. ICE arrested over the weekend. Convicted, not Removed. No mugshot URL on the release. uniqueByName.",
@@ -4261,10 +4277,10 @@
     "office": "DHSgov",
     "id": "dhs-2026-09-21-wow-8",
     "when": "20 Sep 2026",
-    "severity": 70,
-    "severityReason": "Armed robbery / aggravated assault",
+    "severity": 40,
+    "severityReason": "Assault / battery",
     "severityCrimes": [
-      "Armed robbery / aggravated assault"
+      "Assault / battery"
     ],
     "text": "DHS: Leeroy Latior, a criminal illegal alien from Marshall Islands, convicted of possession of sexually explicit material involving a child, and battery in Benton County, AR. ICE arrested over the weekend. Convicted, not Removed. No mugshot URL on the release. uniqueByName.",
     "photo": "",
@@ -4289,12 +4305,13 @@
     "office": "DHSgov",
     "id": "dhs-2026-09-21-wow-9",
     "when": "20 Sep 2026",
-    "severity": 207,
+    "severity": 247,
     "severityReason": "Kidnapping / human trafficking",
     "severityCrimes": [
       "Kidnapping / human trafficking",
       "Armed robbery / aggravated assault",
-      "Weapons"
+      "Weapons",
+      "Assault / battery"
     ],
     "text": "DHS: Billy Montes-Ruiz, a criminal illegal alien from El Salvador, convicted of kidnapping, robbery, felon in possession of a firearm, and assault with a firearm in Fullerton, CA. ICE arrested over the weekend. Convicted, not Removed. No mugshot URL on the release. uniqueByName.",
     "photo": "",
@@ -4372,9 +4389,10 @@
     "office": "DHSgov",
     "id": "dhs-2026-09-21-wow-12",
     "when": "20 Sep 2026",
-    "severity": 40,
-    "severityReason": "Burglary / theft",
+    "severity": 105,
+    "severityReason": "Alien smuggling",
     "severityCrimes": [
+      "Alien smuggling",
       "Burglary / theft",
       "Illegal entry / reentry"
     ],
@@ -4725,11 +4743,12 @@
     "office": "DHSgov",
     "id": "2100962698414395473",
     "when": "17 Sep 2026",
-    "severity": 160,
+    "severity": 200,
     "severityReason": "Armed robbery / aggravated assault",
     "severityCrimes": [
       "Armed robbery / aggravated assault",
       "Fraud (incl. voter fraud)",
+      "Assault / battery",
       "DUI",
       "Illegal entry / reentry"
     ],
@@ -5053,11 +5072,11 @@
     "office": "DHSgov",
     "id": "2101091314959896868",
     "when": "18 Sep 2026",
-    "severity": 160,
+    "severity": 130,
     "severityReason": "Rape / sexual assault",
     "severityCrimes": [
       "Rape / sexual assault",
-      "Armed robbery / aggravated assault"
+      "Assault / battery"
     ],
     "text": "DHS: Nehemias Omar Garcia-Martinez, criminal illegal alien from Honduras, convicted of second-degree rape and assault. Updated Oct. 2: deported Sept. 23. Status = Removed. uniqueByName.",
     "photo": "",
@@ -5216,10 +5235,11 @@
     "office": "EROBaltimore",
     "id": "1899576906409779212",
     "when": "11 Mar 2025",
-    "severity": 86,
+    "severity": 162,
     "severityReason": "Murder / manslaughter",
     "severityCrimes": [
-      "Murder / manslaughter"
+      "Murder / manslaughter",
+      "Material support to a cartel"
     ],
     "text": "ICE Baltimore arrested Javier Zeledon Reyes, 56, an illegal alien from Nicaragua in Hyattsville, who admitted during immigration proceedings to massacring about 20 people in the 1990s and later providing material support to a cartel in Mexico. He remains in ICE custody pending removal. Official ICE post.",
     "photo": "https://krennic212.github.io/invasionupdate-data/photos/1899576906409779212.jpg",
@@ -5353,11 +5373,11 @@
     "office": "EROBaltimore",
     "id": "",
     "when": "14 Apr 2025",
-    "severity": 149,
+    "severity": 122,
     "severityReason": "Murder / manslaughter",
     "severityCrimes": [
       "Murder / manslaughter",
-      "Armed robbery / aggravated assault"
+      "Assault / battery"
     ],
     "text": "April 12: ICE Baltimore arrested Rene Pop-Chub, 32, an illegal Guatemalan citizen in Hyattsville after Prince George's County failed to honor an ICE detainer. He is pending charges for murder, assault, and reckless endangerment.",
     "photo": "https://krennic212.github.io/invasionupdate-data/photos/rene-pop-chub-6f95346e.jpg",
@@ -5436,10 +5456,10 @@
     "office": "EROBaltimore",
     "id": "",
     "when": "5 Aug 2026",
-    "severity": 70,
-    "severityReason": "Armed robbery / aggravated assault",
+    "severity": 40,
+    "severityReason": "Assault / battery",
     "severityCrimes": [
-      "Armed robbery / aggravated assault"
+      "Assault / battery"
     ],
     "text": "July 9, 2026: ICE Baltimore arrested Yeferson Jose Canamo-Jordan, 28, a Venezuelan national and suspected TdA member, during a vehicle stop in Upper Marlboro after Prince George's County Detention Center declined ICE detainers.",
     "photo": "",
@@ -5769,9 +5789,11 @@
     "office": "TheJusticeDept",
     "id": "",
     "when": "16 Sep 2026",
-    "severity": 0,
-    "severityReason": "",
-    "severityCrimes": [],
+    "severity": 77,
+    "severityReason": "Material support to a cartel",
+    "severityCrimes": [
+      "Material support to a cartel"
+    ],
     "text": "DOJ / SDTX: Jose Flores-Flores, a 21-year-old Mexican national of Reynosa, Tamaulipas, was indicted for allegedly providing material support to the Gulf Cartel, a designated foreign terrorist organization. Authorities encountered him near Mission on July 10. He remains in custody. Rapid Response 47 posted the Justice Department release (name is in the article, not the tweet).",
     "photo": "",
     "via": "@RapidResponse47 2100264127105028130 · DOJ SDTX",

@@ -13,7 +13,11 @@ const chg = (crime, extra = {}) => ({ ...conv(crime, extra), crime: `Charged: ${
 const score = (r) => scoreRow(r).severity;
 
 test("points table has the locked values (edit severity-points.json, not code)", () => {
-  assert.deepEqual(P, { murder: 95, childSex: 92, rape: 90, officer: 88, attemptedMurder: 85, kidnapping: 82, childViolence: 80, robberyAssault: 70, weapons: 55, drugs: 50, theft: 35, dui: 25, fraud: 60, immigration: 5 });
+  assert.deepEqual(P, {
+    murder: 95, childSex: 92, rape: 90, terrorism: 90, officer: 88, attemptedMurder: 85, materialSupport: 85,
+    kidnapping: 82, childViolence: 80, animalSex: 75, robberyAssault: 70, alienSmuggling: 65, fraud: 60,
+    weapons: 55, drugs: 50, assault: 40, theft: 35, dui: 25, immigration: 5,
+  });
   assert.deepEqual(W, { convicted: 1, notConvicted: 0.9 });
   assert.equal(TABLE.extraCountBonus, 0.1);
   assert.equal(TABLE.extraCountBonusCap, 0.3);
@@ -48,7 +52,10 @@ test("classification: one crime each", () => {
 });
 
 test("classification: stabbing / shooting / assaulting an officer", () => {
-  assert.equal(scoreRow(chg("Two illegal aliens stabbed an NYPD officer in the Bronx.")).severityReason, L.officer);
+  const stab = scoreRow(chg("Two illegal aliens stabbed an NYPD officer in the Bronx."));
+  assert.equal(stab.severityReason, L.officer);
+  assert.ok(stab.severityCrimes.includes(L.attemptedMurder));
+  assert.equal(stab.severity, Math.round((P.officer + P.attemptedMurder) * W.notConvicted));
   assert.equal(scoreRow(conv("sentenced in connection with the shooting of an off-duty U.S. Customs and Border Protection (“CBP”) Officer in Manhattan.")).severityReason, L.officer);
   const burton = scoreRow(conv("convicted for murder, assault on a law enforcement officer, resisting arrest, and possession of a firearm."));
   assert.deepEqual(burton.severityCrimes, [L.murder, L.officer, L.weapons]);
@@ -58,11 +65,40 @@ test("classification: stabbing / shooting / assaulting an officer", () => {
   assert.ok(!scoreRow(chg("Sheriff deputies and ICE officers arrested him after he attempted to sexually abuse a 14-year-old child.")).severityCrimes.includes(L.officer));
 });
 
+test("plain assault, battery and strangulation are not aggravated assault", () => {
+  assert.equal(score(conv("convicted of assault.")), P.assault);
+  assert.equal(score(conv("convicted of battery.")), P.assault);
+  assert.equal(score(conv("convicted of assault and battery.")), P.assault);
+  assert.equal(score(conv("convicted of strangulation.")), P.assault);
+  assert.equal(score(conv("convicted of aggravated assault.")), P.robberyAssault);
+  assert.equal(score(conv("convicted of aggravated battery.")), P.robberyAssault);
+  assert.equal(score(conv("convicted of domestic violence.")), P.robberyAssault);
+  assert.ok(P.assault < P.robberyAssault);
+});
+
+test("crimes that used to score 0", () => {
+  const plot = scoreRow(chg("the alleged ringleader of the failed terrorist plot against UFC Freedom 250 at the White House."));
+  assert.equal(plot.severityReason, L.terrorism);
+  assert.equal(plot.severity, Math.round(P.terrorism * W.notConvicted));
+  const support = scoreRow(chg("providing material support to the Gulf Cartel, a designated foreign terrorist organization."));
+  assert.deepEqual(support.severityCrimes, [L.materialSupport]);
+  assert.equal(support.severity, Math.round(P.materialSupport * W.notConvicted));
+  assert.equal(score(conv("convicted of smuggling illegal aliens for profit.")), P.alienSmuggling);
+  assert.equal(score(conv("convicted of alien smuggling.")), P.alienSmuggling);
+  assert.equal(score(conv("convicted of smuggling goods from the United States.")), 0);
+  const animal = scoreRow(conv("convicted for sexual abuse of an animal and distribution of Schedule I drugs."));
+  assert.deepEqual(animal.severityCrimes, [L.animalSex, L.drugs]);
+  assert.equal(animal.severity, P.animalSex + P.drugs);
+  const entice = scoreRow(conv("convicted for money laundering and conspiracy to persuade, induce, entice, and coerce one or more individuals."));
+  assert.ok(entice.severityCrimes.includes(L.childSex));
+  assert.ok(entice.severityCrimes.includes(L.fraud));
+});
+
 test("immigration-only row is 5 points and ranks below every violent row", () => {
   const reentry = score(conv("pleaded guilty to illegal reentry after deportation."));
   assert.equal(reentry, 5);
   const dui = score(conv("convicted of DUI."));
-  for (const t of ["murder", "rape", "sexual abuse of a minor", "aggravated assault", "kidnapping"]) {
+  for (const t of ["murder", "rape", "sexual abuse of a minor", "aggravated assault", "kidnapping", "assault"]) {
     assert.ok(score(chg(`charged with ${t}.`)) > dui, t);
     assert.ok(score(chg(`charged with ${t}.`)) > reentry, t);
   }
@@ -93,7 +129,7 @@ test("same crime twice is not double-counted; explicit extra counts add 10% each
 test("a rape of a child is one child sex crime, not child sex + rape", () => {
   assert.deepEqual(scoreRow(conv("convicted of rape of a child and indecent assault and battery on a victim-while-under-14.")).severityCrimes, [L.childSex]);
   assert.deepEqual(scoreRow(chg("charged with statutory rape and sexual exploitation of a minor. He lied to a 15-year-old girl so that he could sexually assault her.")).severityCrimes, [L.childSex]);
-  assert.deepEqual(scoreRow(conv("convicted for sexual abuse of an animal.")).severityCrimes, []);
+  assert.deepEqual(scoreRow(conv("convicted for sexual abuse of an animal.")).severityCrimes, [L.animalSex]);
 });
 
 test("stage weighting: convicted full, charged / arrested / as posted 90%, never upgraded", () => {
@@ -114,7 +150,8 @@ test("release headline is used only when the row names no crime and the release 
   const row = { ...conv(""), crime: "As posted: ICE has since identified both suspects.", usa: "DHS release Oct 6, 2026: DHS Issues Statement After Two Illegal Aliens Stab Off-Duty NYPD Detective | Homeland Security" };
   const two = withSeverityAll([{ ...row, sourceUrl: "https://www.dhs.gov/x" }, { ...row, name: "B", sourceUrl: "https://www.dhs.gov/x" }]);
   assert.equal(two[0].severityReason, L.officer);
-  assert.equal(two[0].severity, Math.round(P.officer * 0.9));
+  assert.ok(two[0].severityCrimes.includes(L.attemptedMurder));
+  assert.equal(two[0].severity, Math.round((P.officer + P.attemptedMurder) * 0.9));
   const roundup = withSeverityAll([1, 2, 3].map((i) => ({ ...row, name: `P${i}`, crime: "Removed: MS-13 gang member, deported.", usa: "DHS release: murderers and thieves deported", sourceUrl: "https://www.dhs.gov/y" })));
   assert.equal(roundup[0].severity, 0);
   assert.equal(roundup[0].severityReason, "");

@@ -29,10 +29,12 @@ const OFFICER = String.raw`(?:police|law enforcement|nypd|lapd|ice|cbp|border pa
 
 /** Order matters: a matched span is blanked out before the later categories run. */
 export const PATTERNS = [
-  ["skip", [/\b(?:sexual (?:abuse|contact) (?:of|with) an animal|bestiality|cruelty to animals?|animal cruelty)\b/gi]],
+  ["animalSex", [/\b(?:sexual (?:abuse|contact) (?:of|with) an animal|bestiality)\b/gi]],
+  ["skip", [/\b(?:cruelty to animals?|animal cruelty)\b/gi]],
   ["childSex", [
     new RegExp(String.raw`\b(?:rape|sexual(?:ly)?\s+(?:abuse|assault|conduct|exploitation|contact|battery|offen[cs]e|intercourse|penetration)\w*|sex(?:ual)?\s+(?:abuse|assault|offen[cs]e|crimes?)|indecen(?:t|cy)(?:\s+\w+){0,4}|lewd(?:\s+(?:or|and)\s+lascivious)?(?:\s+\w+){0,3}|molest\w*|indecent liberties|sodomy)(?:(?!\s(?:and|or)\s|,)[^;.]){0,40}?\b(?:with|of|on|upon|against|involving|to|a)\b(?:(?!\s(?:and|or)\s|,)[^;.]){0,25}?${CHILD}`, "gi"),
     new RegExp(String.raw`\b(?:child|minor)\s+(?:porn\w*|sex\w*|molest\w*|exploitation|sexual abuse|abuse material)|\bchild molestation|\bmolest\w*|\bstatutory\s+(?:rape|sex\w*(?:\s+offen[cs]e)?)|\bcsam\b|obscene material depicting minors|harmful material to a minor|enticement of a minor|sexually abuse a \d{1,2}[- ]year[- ]old|criminal sexual conduct[^;.]{0,30}person under`, "gi"),
+    /\b(?:coercion and enticement|persuade,\s+induce,\s+entice|entice(?:ment)?,?\s+and\s+coerce)\b/gi,
   ]],
   ["attemptedMurder", [
     /\b(?:attempt(?:ed|ing)?|conspiracy|conspiring|solicitation)\s+(?:to\s+(?:commit\s+)?)?(?:(?:first|second|1st|2nd)[- ]degree\s+)?(?:murder|homicide|kill)\w*/gi,
@@ -49,7 +51,11 @@ export const PATTERNS = [
   ["childViolence", [
     new RegExp(String.raw`\b(?:child abuse|abuse of a child|cruelty to (?:a\s+)?(?:child|children|juvenile)|injury to (?:a\s+)?child|(?:assault|battery|beat\w*|strangl\w*|abus\w*)\b[^;.]{0,20}\b(?:on|of|upon|against)\s+(?:a\s+)?${CHILD})`, "gi"),
   ]],
-  ["robberyAssault", [/\b(?:robb\w*|carjack\w*|(?:aggravated|felonious|malicious|domestic|sexual)?\s*assault(?!\s+(?:weapon|rifle))\w*|(?:aggravated|domestic)?\s*battery|domestic violence|strangulation|deadly conduct)\b/gi]],
+  ["terrorism", [/\b(?:terrorist plot|terror plot|act of terrorism|terrorist attack|terrorist threat|domestic terrorism)\b/gi]],
+  ["materialSupport", [/\bmaterial support\b/gi]],
+  ["robberyAssault", [/\b(?:robb\w*|carjack\w*|(?:aggravated|felonious|malicious|domestic)\s+assault(?!\s+(?:weapon|rifle))\w*|(?:aggravated|domestic)\s+battery|domestic violence|deadly conduct)\b/gi]],
+  ["assault", [/\b(?:assault(?!\s+(?:weapon|rifle))\w*|battery|strangulation)\b/gi]],
+  ["alienSmuggling", [/\b(?:smuggl\w*\s+(?:illegal\s+)?aliens?|alien smuggling|human smuggling|smuggling of (?:illegal\s+)?aliens?)\b/gi]],
   ["weaponsSkip", [/\b(?:with|using)\s+an?\s+(?:deadly\s+|dangerous\s+)?(?:weapon|firearm|gun|knife)\b/gi]],
   ["weapons", [/\b(?:firearms?|guns?|handguns?|rifles?|shotguns?|ammunition|weapons?|explosives?)\b/gi]],
   ["drugs", [/\b(?:fentanyl|cocaine|heroin|morphine|(?:crystal\s+)?(?:meth)?amphetamine|meth|marijuana|narcotics?|controlled substances?|drugs?|opioids?|crack|oxycodone|(?:intent\s+to\s+)?distribut\w*|possess\w*\s+with\s+intent)\b/gi]],
@@ -82,6 +88,7 @@ function headline(usa) {
 export function crimesIn(text) {
   let s = ` ${text} `;
   const found = new Map();
+  let officerLethal = false;
   for (const [key, res] of PATTERNS) {
     for (const re of res) {
       re.lastIndex = 0;
@@ -94,6 +101,7 @@ export function crimesIn(text) {
           let n = 1;
           if (b && (/counts?\s+of\s+$/i.test(before) || COUNT_AFTER.test(after))) n = Number(b[1]) || NUM[b[1].toLowerCase()] || 1;
           found.set(key, Math.max(found.get(key) || 0, n));
+          if (key === "officer" && /\b(?:stab\w*|shoot\w*|shot|kill\w*|fired at)\b/i.test(m[0])) officerLethal = true;
         }
       }
       for (const m of hits) s = s.slice(0, m.index) + " ".repeat(m[0].length) + s.slice(m.index + m[0].length);
@@ -103,6 +111,8 @@ export function crimesIn(text) {
   found.delete("skip");
   if (found.has("rapeNarrative") && !found.has("rape") && !found.has("childSex")) found.set("rape", found.get("rapeNarrative"));
   found.delete("rapeNarrative");
+  // Stabbing or shooting an officer, with no murder charge named, is attempted murder as well as an attack on an officer.
+  if (officerLethal && !found.has("murder")) found.set("attemptedMurder", Math.max(found.get("attemptedMurder") || 0, 1));
   return found;
 }
 
