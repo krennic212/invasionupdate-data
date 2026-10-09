@@ -1,26 +1,14 @@
 {
-  "updatedAt": "2026-10-09T19:54:37Z",
-  "rows": 226,
-  "approved": 225,
+  "updatedAt": "2026-10-09T20:56:29Z",
+  "rows": 227,
+  "approved": 226,
   "pending": 1,
   "photos": 54,
   "reviewRows": 751,
-  "lastAddedAt": "2026-10-09T19:54:37Z",
-  "lastAddedCount": 13,
+  "lastAddedAt": "2026-10-09T20:56:29Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Arturo Moises Urzua Yanez",
-    "Juan Jose Zavala Romero",
-    "Yair de Jesus Trejo-Mendoza",
-    "Everardo Hernandez-Huizar",
-    "Antonio de Jesus Jimenez Martinez",
-    "Josue Emmanuel Garcia-Ramirez",
-    "Juan Carlos Munoz-Aguilera",
-    "Pedro Barajas-Garcia",
-    "Fidel Espinoza-Olvera",
-    "Bryan David Tasiguano Leon",
-    "Rafael Andres Rubio Bohorquez",
-    "Gerardo Miguel-Mora",
-    "Gabriel Aguilar-Benitez"
+    "Alejandro Rojas Garcia"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
