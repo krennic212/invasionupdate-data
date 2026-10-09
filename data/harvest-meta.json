@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-09T21:54:52Z",
-  "rows": 238,
-  "approved": 236,
-  "pending": 2,
+  "updatedAt": "2026-10-09T22:24:06Z",
+  "rows": 241,
+  "approved": 237,
+  "pending": 4,
   "photos": 55,
   "reviewRows": 751,
-  "lastAddedAt": "2026-10-09T21:49:42Z",
+  "lastAddedAt": "2026-10-09T22:24:06Z",
   "lastAddedCount": 1,
   "lastAdded": [
-    "Ronald Zacarias-Gregorio"
+    "Victor Hugo Gutierrez De La Torre"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -1,19 +1,21 @@
 {
-  "checkedAt": 1791582399113,
-  "checkedAtIso": "2026-10-09T21:46:39.113Z",
+  "checkedAt": 1791584646058,
+  "checkedAtIso": "2026-10-09T22:24:06.058Z",
   "added": [
-    "Maykel Ramos-De La Torre",
-    "Amador Rodriguez-Garcia",
-    "Angel Paguada-Banegas",
-    "Jose Lemus"
+    "Efrain Antonio Avalos",
+    "Victor Hugo Gutierrez De La Torre",
+    "Justin Jimenez"
   ],
   "addedStatus": "approved",
-  "heldPending": [],
+  "heldPending": [
+    "Efrain Antonio Avalos (not stated to be a non-citizen)",
+    "Justin Jimenez (not stated to be a non-citizen)"
+  ],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 92,
+  "scannedReleases": 102,
   "error": null,
-  "note": "Added 4 as approved: Maykel Ramos-De La Torre, Amador Rodriguez-Garcia, Angel Paguada-Banegas, Jose Lemus",
+  "note": "Added 3 as approved: Efrain Antonio Avalos, Victor Hugo Gutierrez De La Torre, Justin Jimenez",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
