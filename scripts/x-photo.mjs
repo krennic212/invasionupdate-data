@@ -6,6 +6,7 @@
  *
  *   node scripts/x-photo.mjs <rowId> <https://pbs.twimg.com/media/...> --reviewed "booking photo, one person, matches post"
  *   node scripts/x-photo.mjs <rowId> --none "graphic / collage / several people"
+ *   node scripts/x-photo.mjs --todo <run>/write.json [...]   # exit 1 if any photo candidate has no recorded decision
  *
  * Refuses unless: the row is in data/harvest.json, approved, not held by any guard, its source is an
  * OFFICIAL_X_HANDLES post, that post produced exactly one row (feed + review) and names exactly one
@@ -22,6 +23,23 @@ import { PHOTO_PREFIX, MAX_PHOTO_BYTES, isXMediaUrl, photoKey, photoProblem, rel
 
 const die = (m) => { console.error(`x-photo: ${m}`); process.exit(1); };
 const args = process.argv.slice(2);
+if (args[0] === "--todo") {
+  // Every photo candidate from x-scan.mjs output must end with a recorded decision (--reviewed or --none).
+  const checksNow = existsSync("data/photo-checks.json") ? JSON.parse(readFileSync("data/photo-checks.json", "utf8")) : {};
+  const live = new Map(JSON.parse(readFileSync("data/harvest.json", "utf8")).map((x) => [x?.id, x]));
+  const todo = [];
+  for (const f of args.slice(1)) {
+    for (const c of JSON.parse(readFileSync(f, "utf8")).photoCandidates || []) {
+      const row = live.get(c.id);
+      if (!row) continue; // row no longer live (held / moved): nothing to publish
+      const post = urlsIn(row.sourceUrl).find(isOfficialXPostUrl);
+      if (!post || checksNow[urlKey(post)] || row.photo) continue;
+      todo.push({ id: c.id, name: c.name, post: c.post, images: (c.images || []).map((i) => i.url), pick: c.pick || null, flag: c.flag || undefined });
+    }
+  }
+  console.log(JSON.stringify({ undecided: todo.length, todo }, null, 2));
+  process.exit(todo.length ? 1 : 0);
+}
 const flag = (k) => { const i = args.indexOf(k); if (i < 0) return null; const v = args[i + 1]; args.splice(i, 2); return v || ""; };
 const reviewed = flag("--reviewed");
 const none = flag("--none");

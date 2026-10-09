@@ -17,8 +17,11 @@
  *  - crime = "<Stage>: <the post's own sentence>", word for word ("illegal alien" kept). Stage comes
  *    from the post's wording only and is never escalated.
  *  - Any hard guard (minor, at large, non-citizen not stated, stage) -> review.json as "pending" with holdReason.
- *  - photo is "" here. photoCandidates lists live rows whose post names one person and has exactly one
- *    photo; after LOOKING at each image, attach it with scripts/x-photo.mjs (or record --none). sourceUrl = https://x.com/<handle>/status/<id>; when = post date (CT).
+ *  - photo is "" here. photoCandidates lists EVERY live official-post row whose post has any photo, with ALL
+ *    of its images (original size + alt text; `pick` = the image whose alt names the person). Multi-person
+ *    posts are flagged "multi-person: match by alt text or caption only". After LOOKING at the images, every
+ *    candidate gets a recorded decision: scripts/x-photo.mjs --reviewed or --none "<why>"
+ *    (check with: node scripts/x-photo.mjs --todo <scan output.json>). sourceUrl = https://x.com/<handle>/status/<id>; when = post date (CT).
  *  - Dedupe by normalized name against harvest.json + review.json (and within the run). Nothing is deleted.
  *  - Retweets are skipped (the original author's post is what counts).
  *
@@ -76,7 +79,7 @@ export function normalizePosts(payload) {
     const fromUrl = String(p.url || "").match(/(?:x|twitter)\.com\/([A-Za-z0-9_]{1,15})\/status\//)?.[1];
     const username = p.username || p.author?.username || users.get(String(p.author_id)) || fromUrl || "";
     out.push({ id: String(p.id), text: p.note_tweet?.text || p.text, created_at: p.created_at || "", username, referenced: p.referenced_tweets || [],
-      media: Array.isArray(p.media) ? p.media : (p.attachments?.media_keys || []).map((k) => media.get(String(k))).filter(Boolean).map((m) => ({ type: m.type, url: m.url || "" })) });
+      media: Array.isArray(p.media) ? p.media : (p.attachments?.media_keys || []).map((k) => media.get(String(k))).filter(Boolean).map((m) => ({ type: m.type, url: m.url || "", alt: m.alt_text || "" })) });
   }
   return out;
 }
@@ -167,6 +170,41 @@ export function collapseById(posts) {
   return [...byId.values()];
 }
 
+/** pbs.twimg.com/media/<id>.<ext> -> the original-size URL x-photo.mjs accepts (?format=<ext>&name=orig). */
+export function xOrigUrl(url) {
+  const m = String(url || "").match(/^https:\/\/pbs\.twimg\.com\/media\/([A-Za-z0-9_-]+)\.(jpe?g|png|webp)$/i);
+  return m ? `https://pbs.twimg.com/media/${m[1]}?format=${m[2].toLowerCase().replace("jpeg", "jpg")}&name=orig` : String(url || "");
+}
+
+const fold = (s) => String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+/** Does an image's alt text name the person (first AND last name word)? */
+export function altNamesPerson(alt, name) {
+  const words = fold(name).split(/[^a-z]+/).filter((w) => w.length >= 2);
+  if (words.length < 2) return false;
+  const altWords = new Set(fold(alt).split(/[^a-z]+/));
+  return altWords.has(words[0]) && altWords.has(words[words.length - 1]);
+}
+
+const MULTI_PERSON = "multi-person: match by alt text or caption only";
+
+/**
+ * Pure: photo candidate for one row of an official (not trusted-reporter) post, or null when the post
+ * has no photo. images = ALL of the post's photos (original size, with alt text); pick = the one image
+ * whose alt text names the person (when exactly one does).
+ */
+export function photoCandidateFor(p, row, id, rowsInPost) {
+  if (TRUSTED.has(String(p?.username).toLowerCase())) return null;
+  const photos = (p?.media || []).filter((m) => m && m.type === "photo" && m.url);
+  if (!photos.length) return null;
+  const images = photos.map((m) => ({ url: xOrigUrl(m.url), alt: m.alt || "", namesPerson: altNamesPerson(m.alt, row.name) }));
+  const named = images.filter((i) => i.namesPerson);
+  const pick = named.length === 1 ? named[0].url : null;
+  const c = { id, name: row.name, post: row.sourceUrl, images, pick, image: pick || (images.length === 1 ? images[0].url : null) };
+  if (rowsInPost > 1) Object.assign(c, { multiPerson: true, flag: MULTI_PERSON });
+  return c;
+}
+
 /** Pure: posts -> { live, review, skipped, maxId } deduped against existing rows. */
 export function scan(posts, { existing = [], picks = {} } = {}) {
   const have = new Set(existing.map((r) => nameKey(r?.name)).filter(Boolean));
@@ -207,9 +245,11 @@ export function scan(posts, { existing = [], picks = {} } = {}) {
       for (let n = 2; ids.has(id); n++) id = `${row.id}-${n}`;
       ids.add(id);
       (isLive ? live : review).push({ ...row, id });
-      // Photo only when the post names exactly one person and carries exactly one photo; the agent must look at it.
-      const photos = (p.media || []).filter((m) => m.type === "photo" && m.url);
-      if (isLive && !TRUSTED.has(String(p.username).toLowerCase()) && list.length === 1 && photos.length === 1) photoCandidates.push({ id, name: row.name, post: row.sourceUrl, image: photos[0].url });
+      // Every image of a live official post is a photo candidate (never silently dropped); the agent must
+      // LOOK at each one and record a decision with x-photo.mjs (--reviewed or --none). Multi-person posts are
+      // listed too, flagged: only an image whose alt text / caption names this person could ever match.
+      const c = photoCandidateFor(p, row, id, list.length);
+      if (isLive && c) photoCandidates.push(c);
     }
   }
   return { live, review, skipped, photoCandidates, maxId: maxId ? String(maxId) : "" };

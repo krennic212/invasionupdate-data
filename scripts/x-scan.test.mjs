@@ -209,3 +209,46 @@ test("x-scan: a repeated post id keeps the full-text copy (short then long, and 
     assert.equal(one[0].text, "short but now the much longer full text");
   }
 });
+
+test("x-scan photos: a 4-image official post naming one person gives 4 candidate images, alt text picks the headshot", () => {
+  const raw = {
+    data: [{ id: "2108648490519945233", author_id: "1", created_at: "2026-10-09T19:59:11.000Z",
+      text: "Alejandro Rojas Garcia, 65, a Mexican national in the United States illegally, was convicted at trial of child pornography charges.",
+      attachments: { media_keys: ["k1", "k2", "k3", "k4"] } }],
+    includes: { users: [{ id: "1", username: "TheJusticeDept" }], media: [
+      { media_key: "k1", type: "photo", url: "https://pbs.twimg.com/media/HUNsmaKXMAMMJjU.jpg", alt_text: "Photo of Alejandro Rojas Garcia" },
+      { media_key: "k2", type: "photo", url: "https://pbs.twimg.com/media/HUNsTkaWMAABDaK.jpg", alt_text: "Electronic Storage Devices Found in Garcia’s Apartment" },
+      { media_key: "k3", type: "photo", url: "https://pbs.twimg.com/media/HUNsW0YWoAAq1Oq.png", alt_text: "Front of Crucifix" },
+      { media_key: "k4", type: "photo", url: "https://pbs.twimg.com/media/HUNsZlBWwAAcrM2.png", alt_text: "Inside Crucifix" },
+    ] },
+  };
+  const { live, photoCandidates } = scan(normalizePosts(raw), { existing: [] });
+  assert.deepEqual(live.map((r) => r.name), ["Alejandro Rojas Garcia"]);
+  assert.equal(photoCandidates.length, 1);
+  const c = photoCandidates[0];
+  assert.equal(c.images.length, 4);
+  assert.equal(c.pick, "https://pbs.twimg.com/media/HUNsmaKXMAMMJjU?format=jpg&name=orig");
+  assert.equal(c.image, c.pick);
+  assert.equal(c.images[3].url, "https://pbs.twimg.com/media/HUNsZlBWwAAcrM2?format=png&name=orig");
+  assert.deepEqual(c.images.map((i) => i.namesPerson), [true, false, false, false]);
+  assert.equal(c.multiPerson, undefined);
+});
+
+test("x-scan photos: a 0-image official post gives no candidate", () => {
+  const posts = normalizePosts([{ id: "31", username: "ICEgov", created_at: "2026-10-09T15:00:00Z", text: "ICE arrested Pedro Gomez Ruiz, an illegal alien from Honduras charged with robbery." }]);
+  const { live, photoCandidates } = scan(posts, { existing: [] });
+  assert.equal(live.length, 1);
+  assert.deepEqual(photoCandidates, []);
+});
+
+test("x-scan photos: a multi-person post lists every row as a flagged candidate", () => {
+  const posts = normalizePosts([{ id: "32", username: "ICEgov", created_at: "2026-10-09T15:00:00Z",
+    text: "ICE arrested Pedro Gomez Ruiz, an illegal alien from Honduras charged with robbery.\nICE arrested Mario Lopez Diaz, an illegal alien from Mexico charged with assault.",
+    media: [{ type: "photo", url: "https://pbs.twimg.com/media/a1.jpg", alt: "Mario Lopez Diaz" }, { type: "photo", url: "https://pbs.twimg.com/media/a2.jpg", alt: "" }] }]);
+  const { live, photoCandidates } = scan(posts, { existing: [] });
+  assert.equal(live.length, 2);
+  assert.equal(photoCandidates.length, live.length);
+  assert.ok(photoCandidates.every((c) => c.multiPerson && c.flag === "multi-person: match by alt text or caption only" && c.images.length === 2));
+  assert.equal(photoCandidates.find((c) => c.name === "Mario Lopez Diaz").pick, "https://pbs.twimg.com/media/a1?format=jpg&name=orig");
+  assert.equal(photoCandidates.find((c) => c.name === "Pedro Gomez Ruiz").pick, null);
+});

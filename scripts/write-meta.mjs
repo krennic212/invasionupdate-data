@@ -8,9 +8,12 @@
  * named people (from data/harvest-status.json `added`). A run that only re-approves rows,
  * cuts duplicates or adds photos keeps the previous values, so the site's
  * "N added at <time>" badge never resets to 0 and never goes stale.
+ * lastAdded only ever lists people whose row is currently approved (held rows drop out).
  */
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
+
+const nameKey = (n) => String(n || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z]+/g, " ").trim();
 
 const readJson = (p, fallback) => {
   if (!existsSync(p)) return fallback;
@@ -40,6 +43,11 @@ export function buildMeta({ rows, review, status, prev, now }) {
       last = { lastAddedAt: at, lastAddedCount: added.length, lastAdded: added };
     }
   }
+  // lastAdded lists only people whose row is approved right now (a row held later, e.g. a place name read
+  // as a person, drops out); lastAddedCount follows the list.
+  const approvedNames = new Set(list.filter((r) => r?.status === "approved" && !r?.holdReason).map((r) => nameKey(r?.name)));
+  const keep = last.lastAdded.filter((n) => approvedNames.has(nameKey(n)));
+  if (keep.length !== last.lastAdded.length) last = { ...last, lastAdded: keep, lastAddedCount: keep.length };
   return {
     updatedAt: now,
     rows: list.length,

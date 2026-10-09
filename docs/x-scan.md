@@ -44,12 +44,21 @@ exists, the official URL is used as `sourceUrl`. Photos stay official-only: his 
    data/review.json (held or non-official), updates data/harvest-meta.json (`lastAddedAt`, `lastAddedCount`,
    `lastAdded` when live rows were added) and writes data/x-scan-state.json (new `lastSeenId`).
    If nothing new was read, still update the state file only when lastSeenId changed.
-6. Photos: for each `photoCandidates` entry, download the image and LOOK at it.
-   - One named adult, plain headshot / booking photo, no text card, no other people:
-     `node scripts/x-photo.mjs <rowId> <pbs.twimg.com/media url> --reviewed "Viewed image: <what you saw>"`
-   - Otherwise: `node scripts/x-photo.mjs <rowId> --none "<why>"` (graphic, arrest scene, several people, ...).
+6. Photos: save the `--write` output to `<run>/write.json`. `photoCandidates` lists EVERY live official-post row whose
+   post has any photo, with ALL of the post's images (`images[]`: original-size URL, alt text, `namesPerson`) and
+   `pick` = the image whose alt text names the person. Review every candidate; none may be left undecided.
+   - Download every image of the candidate and LOOK at each one (start with `pick` when set).
+   - One named adult, plain headshot / booking photo, no text card, no other people, no child:
+     `node scripts/x-photo.mjs <rowId> "<images[i].url>" --reviewed "Viewed image: <what you saw>"`
+   - Otherwise: `node scripts/x-photo.mjs <rowId> --none "<why>"` (graphic, arrest scene, several people,
+     evidence photo only, no image of the person, ...).
+   - `multiPerson` candidates (flag "multi-person: match by alt text or caption only"): an image may only be tied
+     to a person by alt text / caption naming them. x-photo.mjs still refuses to publish a photo for a post that
+     produced more than one row, so record `--none "multi-person post"` (one decision covers the post).
    - Never a reporter/news image, never a minor, never a held row (the script refuses these anyway).
-   - Then `node scripts/write-meta.mjs` to refresh the photo count (keeps lastAdded).
+   - Then `node scripts/write-meta.mjs` to refresh the photo count (keeps lastAdded; lastAdded only lists
+     rows that are approved right now).
+   - Gate: `node scripts/x-photo.mjs --todo <run>/write.json` must print `"undecided": 0` (exit 0) before committing.
 7. Check: `npm test && node scripts/validate.mjs && node scripts/dedupe.mjs data/harvest.json data/review.json`
 8. Commit only if something changed (`git status --short`), `git pull --rebase`, then
    `git -c credential.helper='!gh auth git-credential' push`.
