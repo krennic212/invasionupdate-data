@@ -2675,17 +2675,17 @@
     "office": "DHSgov",
     "id": "dhs-20261006-sneider-mejia-bautista",
     "when": "6 Oct 2026",
-    "text": "DHS Oct 6, 2026, as posted: U.S. Immigration and Customs Enforcement’s (ICE) Enforcement and Removal Operations (ERO New York City has since identified both suspects: Dangelo Rafael Jean Caraballo and Sneider Mejia Bautista, both illegal aliens from the Dominican Republic.",
+    "text": "DHS Oct 6, 2026, as posted: U.S. Immigration and Customs Enforcement’s (ICE) Enforcement and Removal Operations (ERO New York City has since identified both suspects: Dangelo Rafael Jean Caraballo and Sneider Mejia Bautista, both illegal aliens from the Dominican Republic. Update: the DHS release title says the suspects remain at large; the U.S. Marshals report both were arrested Oct 7, 2026 in Lynn, MA (https://www.usmarshals.gov/news/press-release/two-fugitives-arrested-brutal-stabbing-of-nypd-detective).",
     "photo": "",
     "via": "dhs.gov/news/2026/10/06/dhs-issues-statement-after-two-illegal-aliens-stab-duty-nypd-detective-suspects",
-    "sourceUrl": "https://www.dhs.gov/news/2026/10/06/dhs-issues-statement-after-two-illegal-aliens-stab-duty-nypd-detective-suspects",
+    "sourceUrl": "https://www.dhs.gov/news/2026/10/06/dhs-issues-statement-after-two-illegal-aliens-stab-duty-nypd-detective-suspects https://www.usmarshals.gov/news/press-release/two-fugitives-arrested-brutal-stabbing-of-nypd-detective",
     "voting": false,
     "origin": "Dominican Republic",
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "kept pending by owner: suspect still at large (DHS release says both suspects remain at large)"
+    "status": "approved",
+    "approvalNote": "Approved by Krennic 2026-10-09: at-large hold cleared after U.S. Marshals reported both arrested Oct 7, 2026 in Lynn, MA. Stage unchanged (As posted)."
   },
   {
     "name": "Dangelo Rafael Jean Caraballo",
@@ -2698,17 +2698,17 @@
     "office": "DHSgov",
     "id": "dhs-20261006-dangelo-rafael-jean-caraballo",
     "when": "6 Oct 2026",
-    "text": "DHS Oct 6, 2026, as posted: U.S. Immigration and Customs Enforcement’s (ICE) Enforcement and Removal Operations (ERO New York City has since identified both suspects: Dangelo Rafael Jean Caraballo and Sneider Mejia Bautista, both illegal aliens from the Dominican Republic.",
+    "text": "DHS Oct 6, 2026, as posted: U.S. Immigration and Customs Enforcement’s (ICE) Enforcement and Removal Operations (ERO New York City has since identified both suspects: Dangelo Rafael Jean Caraballo and Sneider Mejia Bautista, both illegal aliens from the Dominican Republic. Update: the DHS release title says the suspects remain at large; the U.S. Marshals report both were arrested Oct 7, 2026 in Lynn, MA (https://www.usmarshals.gov/news/press-release/two-fugitives-arrested-brutal-stabbing-of-nypd-detective).",
     "photo": "",
     "via": "dhs.gov/news/2026/10/06/dhs-issues-statement-after-two-illegal-aliens-stab-duty-nypd-detective-suspects",
-    "sourceUrl": "https://www.dhs.gov/news/2026/10/06/dhs-issues-statement-after-two-illegal-aliens-stab-duty-nypd-detective-suspects",
+    "sourceUrl": "https://www.dhs.gov/news/2026/10/06/dhs-issues-statement-after-two-illegal-aliens-stab-duty-nypd-detective-suspects https://www.usmarshals.gov/news/press-release/two-fugitives-arrested-brutal-stabbing-of-nypd-detective",
     "voting": false,
     "origin": "Dominican Republic",
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "kept pending by owner: suspect still at large (DHS release says both suspects remain at large)"
+    "status": "approved",
+    "approvalNote": "Approved by Krennic 2026-10-09: at-large hold cleared after U.S. Marshals reported both arrested Oct 7, 2026 in Lynn, MA. Stage unchanged (As posted)."
   },
   {
     "name": "Abraham Hermosillo Alvarez",
