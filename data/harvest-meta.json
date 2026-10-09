@@ -1,19 +1,17 @@
 {
-  "updatedAt": "2026-10-09T21:46:06Z",
-  "rows": 233,
-  "approved": 231,
+  "updatedAt": "2026-10-09T21:46:39Z",
+  "rows": 237,
+  "approved": 235,
   "pending": 2,
   "photos": 55,
   "reviewRows": 751,
-  "lastAddedAt": "2026-10-09T20:57:15Z",
-  "lastAddedCount": 6,
+  "lastAddedAt": "2026-10-09T21:46:39Z",
+  "lastAddedCount": 4,
   "lastAdded": [
-    "New York",
-    "Hsa Mu Na",
-    "Norberto Machada-Rodriguez",
-    "Said Ibrahim",
-    "Haikham Phimasone",
-    "Mohammed Al Nassar"
+    "Maykel Ramos-De La Torre",
+    "Amador Rodriguez-Garcia",
+    "Angel Paguada-Banegas",
+    "Jose Lemus"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

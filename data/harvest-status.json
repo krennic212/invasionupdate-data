@@ -1,13 +1,11 @@
 {
-  "checkedAt": 1791579435455,
-  "checkedAtIso": "2026-10-09T20:57:15.455Z",
+  "checkedAt": 1791582399113,
+  "checkedAtIso": "2026-10-09T21:46:39.113Z",
   "added": [
-    "New York",
-    "Hsa Mu Na",
-    "Norberto Machada-Rodriguez",
-    "Said Ibrahim",
-    "Haikham Phimasone",
-    "Mohammed Al Nassar"
+    "Maykel Ramos-De La Torre",
+    "Amador Rodriguez-Garcia",
+    "Angel Paguada-Banegas",
+    "Jose Lemus"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -15,7 +13,7 @@
   "sentToReview": [],
   "scannedReleases": 92,
   "error": null,
-  "note": "Added 6 as approved: New York, Hsa Mu Na, Norberto Machada-Rodriguez, Said Ibrahim, Haikham Phimasone, Mohammed Al Nassar",
+  "note": "Added 4 as approved: Maykel Ramos-De La Torre, Amador Rodriguez-Garcia, Angel Paguada-Banegas, Jose Lemus",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
