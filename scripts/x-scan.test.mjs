@@ -181,3 +181,31 @@ test("X scan fills city + lat/lon from the post's own sentence (Mass. / MS)", ()
   assert.equal(c.row.city, "Not stated");
   assert.equal(c.row.lat, null);
 });
+
+test("x-scan: a repeated post id keeps the full-text copy (short then long, and long then short)", async () => {
+  const { collapseById } = await import("./x-scan.mjs");
+  const short = "ERO Houston arrested Juan Perez Lara, an illegal alien from Mexico. His criminal history includes https://t.co/abc";
+  const full = "ERO Houston arrested Juan Perez Lara, an illegal alien from Mexico. His criminal history includes a conviction for aggravated assault in Houston, TX.";
+  const shortCopy = { id: "2108558269681729603", username: "EROHouston", created_at: "2026-10-09T14:00:41.000Z", text: short };
+  const longCopy = { id: "2108558269681729603", username: "EROHouston", created_at: "2026-10-09T14:00:41.000Z", note_tweet: { text: full }, text: short };
+  for (const order of [[shortCopy, longCopy], [longCopy, shortCopy]]) {
+    const posts = normalizePosts(order);
+    assert.equal(posts.length, 2);
+    const one = collapseById(posts);
+    assert.equal(one.length, 1);
+    assert.equal(one[0].text, full);
+    const { live } = scan(posts, { existing: [] });
+    assert.equal(live.length, 1);
+    assert.match(live[0].text, /conviction for aggravated assault/);
+    assert.ok(!/criminal history includes$/.test(live[0].text));
+  }
+  // also across separate response files (raw API pages), as in a real run
+  const page = (p) => ({ data: [p], includes: { users: [{ id: "9", username: "EROHouston" }] } });
+  const a = { id: "5", author_id: "9", created_at: "2026-10-09T14:00:41.000Z", text: "short" };
+  const b = { ...a, note_tweet: { text: "short but now the much longer full text" } };
+  for (const files of [[page(a), page(b)], [page(b), page(a)]]) {
+    const one = collapseById(files.flatMap((f) => normalizePosts(f)));
+    assert.equal(one.length, 1);
+    assert.equal(one[0].text, "short but now the much longer full text");
+  }
+});

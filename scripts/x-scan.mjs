@@ -146,6 +146,27 @@ export function rowsForPost(post, picks = []) {
   });
 }
 
+/**
+ * The same post id can come back more than once in a run (e.g. page 1 without note_tweet, page 2 with it).
+ * Keep ONE copy per id: the one with the longest text (note_tweet full text beats the 280-char cut),
+ * whichever order the copies arrive in. Ties keep the first copy. Media missing on the kept copy is
+ * filled from another copy of the same post.
+ */
+export function collapseById(posts) {
+  const byId = new Map();
+  for (const p of posts) {
+    if (!p || !p.id) continue;
+    const id = String(p.id);
+    const cur = byId.get(id);
+    if (!cur) { byId.set(id, p); continue; }
+    const longer = String(p.text || "").length > String(cur.text || "").length ? p : cur;
+    const other = longer === p ? cur : p;
+    const media = (longer.media || []).length ? longer.media : (other.media || []);
+    byId.set(id, { ...longer, media });
+  }
+  return [...byId.values()];
+}
+
 /** Pure: posts -> { live, review, skipped, maxId } deduped against existing rows. */
 export function scan(posts, { existing = [], picks = {} } = {}) {
   const have = new Set(existing.map((r) => nameKey(r?.name)).filter(Boolean));
@@ -155,7 +176,8 @@ export function scan(posts, { existing = [], picks = {} } = {}) {
   const skipped = [];
   const photoCandidates = [];
   let maxId = 0n;
-  const sorted = [...posts].sort((x, y) => (BigInt(x.id) < BigInt(y.id) ? -1 : 1));
+  // Duplicates of one post id are collapsed first, keeping the full-text copy (not whichever came first).
+  const sorted = collapseById(posts).sort((x, y) => (BigInt(x.id) < BigInt(y.id) ? -1 : BigInt(x.id) > BigInt(y.id) ? 1 : 0));
   const seenPost = new Set();
   const made = new Map();
   for (const p of sorted) {
@@ -227,7 +249,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       });
       writeFileSync(META, `${JSON.stringify(meta, null, 2)}\n`);
     }
-    writeFileSync(stateFile, `${JSON.stringify({ lastSeenId: next, lastRunAt: new Date().toISOString(), postsRead: posts.length, addedLive: res.live.map((r) => r.name), addedReview: res.review.map((r) => r.name) }, null, 2)}\n`);
+    writeFileSync(stateFile, `${JSON.stringify({ lastSeenId: next, lastRunAt: new Date().toISOString(), postsRead: collapseById(posts).length, addedLive: res.live.map((r) => r.name), addedReview: res.review.map((r) => r.name) }, null, 2)}\n`);
   }
-  console.log(JSON.stringify({ write, postsRead: posts.length, live: res.live.map((r) => ({ name: r.name, crime: r.crime, sourceUrl: r.sourceUrl })), review: res.review.map((r) => ({ name: r.name, why: r.reviewReason, sourceUrl: r.sourceUrl })), skipped: res.skipped, photoCandidates: res.photoCandidates, maxId: res.maxId }, null, 2));
+  console.log(JSON.stringify({ write, postsRead: collapseById(posts).length, live: res.live.map((r) => ({ name: r.name, crime: r.crime, sourceUrl: r.sourceUrl })), review: res.review.map((r) => ({ name: r.name, why: r.reviewReason, sourceUrl: r.sourceUrl })), skipped: res.skipped, photoCandidates: res.photoCandidates, maxId: res.maxId }, null, 2));
 }
