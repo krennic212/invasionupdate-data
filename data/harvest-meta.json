@@ -5,5 +5,12 @@
   "pending": 3,
   "photos": 11,
   "reviewRows": 716,
+  "lastAddedAt": "2026-10-08T22:46:58Z",
+  "lastAddedCount": 3,
+  "lastAdded": [
+    "Lara Gonzalez",
+    "Oleg Korniev",
+    "Jose Molina-Ovalle"
+  ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -8,7 +8,7 @@ This repo holds only the harvest scripts, the workflow, and the data files. It h
 - `data/harvest.json`: the feed. A JSON array of case rows taken from **official federal sources only**
   (dhs.gov, ice.gov, cbp.gov, justice.gov and other federal agency sites). Every row has `sourceUrl`, `when` (date), `photo: ""`, and
   `status`, which is `"approved"` or `"pending"`.
-- `data/harvest-meta.json`: `{ updatedAt, rows, approved, pending, reviewRows, source }`. `updatedAt` is the last time the feed changed (new pending rows or an approval).
+- `data/harvest-meta.json`: `{ updatedAt, rows, approved, pending, photos, reviewRows, lastAddedAt, lastAddedCount, lastAdded, source }`. `updatedAt` is the last time the feed changed (new rows, an approval, or a photo). `lastAddedAt` / `lastAddedCount` / `lastAdded` are the time and names of the last run that actually added people; runs that add nobody keep the previous values.
 - `data/harvest-status.json`: notes from the last run that changed something.
 - `data/review.json`: rows from X posts, reporters, and news sites. These rows are **never** published by this feed and are kept here for review only.
 - `data/pending.json`: optional intake. Rows dropped here are sorted on the next run. Official sources go to the feed, and anything else goes to `review.json`.
