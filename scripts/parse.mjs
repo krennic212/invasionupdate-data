@@ -6,6 +6,7 @@
  * that is not on the page. The charge label is the source sentence, word for word.
  */
 
+import { countryFor } from "./country.mjs";
 import { readFileSync } from "node:fs";
 
 /** "City, ST" -> [lat, lon], same keys as the app's CITY_GEO (src/data/city-geo.ts). */
@@ -79,6 +80,9 @@ const PATTERNS = [
   new RegExp(`(?:^|:\\s+|,\\s+|\\b(?:arrested|identified|charged|indicted|removed|deported)\\s+)${NAME}\\s+and\\s+${NAME},\\s+(?:both|each)\\s+${DESC}${TYPE}(?:\\s+(?:from|of)\\s+${COUNTRY})?`, "g"),
   // "John Doe, 45, who is illegally present in the United States"
   new RegExp(`(?:^|\\s)${NAME},\\s+${AGE}(?:who\\s+(?:is|was)\\s+)?(illegally|unlawfully)\\s+present`, "g"),
+  // ICE's common wording: "ICE Seattle arrested illegal alien Ronald Zacarias-Gregorio, 36, of Guatemala."
+  // "... arrested criminal illegal alien Tung Huy Nguyen, 52, of Vietnam" / "... arrested criminal alien <Name>, 30, of El Salvador"
+  new RegExp(`\\b(?:arrested|arrests|removed|deported|apprehended|detained)\\s+(?:an?\\s+)?(?:criminal\\s+)?(?:illegal\\s+)?alien\\s+${NAME}(?=,|\\.|\\s+(?:in|on|at|from|of|who|after|for|upon|was)\\b|$)`, "g"),
 ];
 
 const NOT_NAME = /\b(ICE|DHS|HSI|ERO|CBP|USCIS|FBI|DEA|ATF|DOJ|U\.S|United|States|America|American|Department|Justice|Attorney|Attorneys|Office|Offices|Secretary|President|Homeland|Security|Immigration|Customs|Enforcement|Border|Patrol|County|Court|District|Federal|Judge|Agent|Agents|Special|Officers|Officer|Police|Sheriff|Government|Administration|Trump|Biden|Obama|Act|Operation|Task|Force|Division|Bureau|Service|Services|Today|Yesterday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|January|February|March|April|May|June|July|August|September|October|November|December|The|This|These|Those|His|Her|Their|According|Under|Assistant|Acting|Chief|Director|Deputy|Senior|Prosecutor)\b/;
@@ -249,7 +253,8 @@ export function extractPeople(blocks, { title = "" } = {}) {
             ? [m[1], m[2]].map((n) => ({ n, origin: originFrom(m[3], m[4], m[5]) }))
             : [{ n: m[1], origin: re === PATTERNS[0] ? originFrom(m[2], m[3] || "", m[4]) : "" }];
           for (const { n, origin } of people) {
-          const name = n.replace(/\s+/g, " ").trim();
+          // "... alien Zinzun Bautista." -> no sentence period in the name (Jr. / Sr. keep theirs).
+          const name = n.replace(/\s+/g, " ").trim().replace(/(?<!\b(?:Jr|Sr|[A-Z]))\.$/, "");
           const toks = name.split(" ");
           if (toks.length < 2 || toks.length > 6 || name.length > 60) continue;
           if (NOT_NAME.test(name)) continue;
@@ -262,7 +267,8 @@ export function extractPeople(blocks, { title = "" } = {}) {
           // paragraph when the first has no charge / conviction / removal verb.
           let sentence = s;
           if (!VERB.test(s) && sents[i + 1] && VERB.test(sents[i + 1])) sentence = `${s} ${sents[i + 1]}`;
-          found.push({ name, origin, sentence, city: cityFrom(s) || cityFrom(sentence) });
+          // Country only from wording tied to this person ("<Name>, 36, of Guatemala", "Honduran national <Name>").
+          found.push({ name, origin: origin || countryFor(name, s), sentence, city: cityFrom(s) || cityFrom(sentence) });
           }
         }
       }
