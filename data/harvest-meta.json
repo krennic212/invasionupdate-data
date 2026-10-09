@@ -1,17 +1,14 @@
 {
-  "updatedAt": "2026-10-09T21:46:39Z",
-  "rows": 237,
-  "approved": 235,
+  "updatedAt": "2026-10-09T21:50:20Z",
+  "rows": 238,
+  "approved": 236,
   "pending": 2,
   "photos": 55,
   "reviewRows": 751,
-  "lastAddedAt": "2026-10-09T21:46:39Z",
-  "lastAddedCount": 4,
+  "lastAddedAt": "2026-10-09T21:49:42Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Maykel Ramos-De La Torre",
-    "Amador Rodriguez-Garcia",
-    "Angel Paguada-Banegas",
-    "Jose Lemus"
+    "Ronald Zacarias-Gregorio"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

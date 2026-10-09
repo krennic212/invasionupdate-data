@@ -1,5 +1,32 @@
 [
   {
+    "name": "Ronald Zacarias-Gregorio",
+    "city": "Marysville, WA",
+    "crime": "Arrested: ICE Seattle arrested illegal alien Ronald Zacarias-Gregorio, 36, of Guatemala. Was arrested in Marysville, WA, for mfr/deliver of amphetamine/meth.",
+    "usa": "ICE X post Oct 9, 2026 (@EROSeattle)",
+    "foreign": "Not stated in post",
+    "picked": "10/9/2026 (@EROSeattle post)",
+    "entered": "Not stated",
+    "office": "EROSeattle",
+    "id": "x-2108663800823971854-ronald-zacarias-gregorio",
+    "when": "9 Oct 2026",
+    "severity": 45,
+    "severityReason": "Drug trafficking",
+    "severityCrimes": [
+      "Drug trafficking"
+    ],
+    "text": "@EROSeattle Oct 9, 2026, as posted: ICE Seattle arrested illegal alien Ronald Zacarias-Gregorio, 36, of Guatemala. Was arrested in Marysville, WA, for mfr/deliver of amphetamine/meth. Will remain in ICE custody pending immigration proceedings.",
+    "photo": "",
+    "via": "@EROSeattle 2108663800823971854",
+    "sourceUrl": "https://x.com/EROSeattle/status/2108663800823971854",
+    "voting": false,
+    "origin": "Not stated",
+    "confirmedBy": "ICE",
+    "lat": 48.0656,
+    "lon": -122.1562,
+    "status": "approved"
+  },
+  {
     "name": "Maykel Ramos-De La Torre",
     "city": "Key West, FL",
     "crime": "Convicted: Maykel Ramos-De La Torre, a criminal illegal alien from Cuba, convicted for vehicular homicide in Key West, Florida.",
