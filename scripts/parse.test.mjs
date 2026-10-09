@@ -85,3 +85,60 @@ test("demonym inside the description sets origin", () => {
 test("release title fills in status when the naming sentence has no verb", () => {
   assert.equal(statusFrom("On October 4, Lara Gonzalez, a Mexican national, traveled into Canada.", "Mexican National Pleads Guilty to Eluding Immigration Inspection"), "Convicted");
 });
+
+import { cityFrom, latLonFor } from "./parse.mjs";
+
+test("cityFrom: AP-style state abbreviation (Marlborough, Mass.)", () => {
+  assert.equal(
+    cityFrom("On Oct. 2, ICE Boston arrested Maycon Eleazar De Jesus Barrios, a criminal illegal alien from Guatemala, during targeted operations in Marlborough, Mass. His criminal history includes arrest for assault and battery on a family/household member."),
+    "Marlborough, MA",
+  );
+  assert.equal(cityFrom("He was arrested in Tampa, Fla."), "Tampa, FL");
+  assert.equal(cityFrom("arrested in Albany, N.Y., on Monday"), "Albany, NY");
+  assert.equal(cityFrom("convicted in San Jose, Calif., of robbery"), "San Jose, CA");
+});
+
+test("cityFrom: two-letter postal code (Yazoo City, MS), but never MS-13", () => {
+  assert.equal(
+    cityFrom("ERO New Orleans arrested Byron Arevalo-Pacheco, a criminal illegal alien from Guatemala, in Yazoo City, MS."),
+    "Yazoo City, MS",
+  );
+  assert.equal(cityFrom("an illegal alien from El Salvador and member of Los Angeles, MS-13"), "");
+  assert.equal(cityFrom("arrested in Lynn, MA on Oct 7"), "Lynn, MA");
+});
+
+test("cityFrom: full state names still work", () => {
+  assert.equal(cityFrom("convicted for murder in Monmouth County, New Jersey."), "Monmouth County, NJ");
+  assert.equal(cityFrom("arrested in St. Louis, Missouri"), "St. Louis, MO");
+});
+
+test("cityFrom: NYC boroughs and New York City -> New York, NY", () => {
+  assert.equal(cityFrom("NYPD arrested him in Manhattan, NY for assault"), "New York, NY");
+  assert.equal(cityFrom("arrested in the Bronx for robbery"), "New York, NY");
+  assert.equal(cityFrom("raped a corpse on a subway car in Brooklyn"), "New York, NY");
+  assert.equal(cityFrom("arrested in New York City"), "New York, NY");
+  assert.equal(cityFrom("sentenced in Queens Criminal Court"), "");
+});
+
+test("cityFrom: no guessing (origin, no place, agency names)", () => {
+  assert.equal(cityFrom("Salvador Parra Lopez, an illegal alien from Mexico, convicted of aiding and abetting."), "");
+  assert.equal(cityFrom("an illegal alien from Juarez, Mexico"), "");
+  assert.equal(cityFrom("ICE Boston arrested John Doe."), "");
+  assert.equal(cityFrom("sentenced by the U.S. District Court in Boston"), "");
+});
+
+test("latLonFor: city table lookup, nulls when not in the table", () => {
+  assert.deepEqual(latLonFor("Marlborough, MA"), { lat: latLonFor("marlborough, ma").lat, lon: latLonFor("marlborough, ma").lon });
+  assert.equal(typeof latLonFor("Lynn, MA").lat, "number");
+  assert.deepEqual(latLonFor("Not stated"), { lat: null, lon: null });
+  assert.deepEqual(latLonFor("Nowhere, ZZ"), { lat: null, lon: null });
+});
+
+test("toRow fills lat/lon from the city it read", () => {
+  const [h] = extractPeople(htmlBlocks("<p>ICE Boston arrested Maycon Eleazar De Jesus Barrios, a criminal illegal alien from Guatemala, during targeted operations in Marlborough, Mass.</p>"));
+  assert.equal(h.city, "Marlborough, MA");
+  const row = toRow(h, { office: "ICEgov", date: "2026-10-09", title: "t", url: "https://www.ice.gov/news/x" });
+  assert.equal(row.city, "Marlborough, MA");
+  assert.equal(typeof row.lat, "number");
+  assert.equal(typeof row.lon, "number");
+});

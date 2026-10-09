@@ -30,7 +30,7 @@
  */
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
-import { extractPeople, statusFrom, stripPriors, dateParts, slug, cityFrom } from "./parse.mjs";
+import { extractPeople, statusFrom, stripPriors, dateParts, slug, cityFrom, latLonFor } from "./parse.mjs";
 import { holdReasons } from "./guards.mjs";
 import { nameKey } from "./rules.mjs";
 import { LIVE_X_HANDLES, TRUSTED_REPORTER_X_HANDLES } from "./x-handles.mjs";
@@ -137,8 +137,7 @@ export function rowsForPost(post, picks = []) {
       voting: /\b(illegal(ly)? vot|unlawful(ly)? vot|voting (as|by)|voted in|vote in|registered to vote)/i.test(hit.sentence),
       origin: hit.origin || "Not stated",
       confirmedBy: a.confirmedBy,
-      lat: null,
-      lon: null,
+      ...latLonFor(hit.city),
     }).row; // shared feed rule: victim names -> neutral description
     if (!official) return { live: false, row: { ...base, status: "pending", reviewReason: `X post by @${handle}: not an official agency account` } };
     if (reasons.length) return { live: false, row: { ...base, status: "pending", holdReason: reasons.join("; "), reviewReason: `held by guard: ${reasons.join("; ")}` } };

@@ -167,3 +167,17 @@ test("x-scan: trusted reporter @BillMelugin_ goes live, guards still hold, no ph
   assert.ok(review.some((x) => x.name === "Mario Lopez Diaz"));
   assert.ok(review.some((x) => x.name === "Carlos Mendez Soto"));
 });
+
+import { rowsForPost } from "./x-scan.mjs";
+
+test("X scan fills city + lat/lon from the post's own sentence (Mass. / MS)", () => {
+  const mk = (id, username, text) => normalizePosts([{ id, username, created_at: "2026-10-09T15:00:00Z", text }])[0];
+  const [a] = rowsForPost(mk("2108517077191721359", "EROBoston", "On Oct. 2, ICE Boston arrested Maycon Eleazar De Jesus Barrios, a criminal illegal alien from Guatemala, during targeted operations in Marlborough, Mass. His criminal history includes arrest for assault and battery on a family/household member."));
+  assert.equal(a.row.city, "Marlborough, MA");
+  assert.equal(typeof a.row.lat, "number");
+  const [b] = rowsForPost(mk("1", "ERONewOrleans", "ERO New Orleans arrested Byron Arevalo-Pacheco, a criminal illegal alien from Guatemala, in Yazoo City, MS. His criminal history includes molestation of minor."));
+  assert.equal(b.row.city, "Yazoo City, MS");
+  const [c] = rowsForPost(mk("2", "ICEgov", "Salvador Parra Lopez, an illegal alien from Mexico, convicted of aiding and abetting possession with intent to distribute a controlled substance."));
+  assert.equal(c.row.city, "Not stated");
+  assert.equal(c.row.lat, null);
+});

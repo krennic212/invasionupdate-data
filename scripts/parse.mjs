@@ -6,6 +6,19 @@
  * that is not on the page. The charge label is the source sentence, word for word.
  */
 
+import { readFileSync } from "node:fs";
+
+/** "City, ST" -> [lat, lon], same keys as the app's CITY_GEO (src/data/city-geo.ts). */
+const CITY_GEO = JSON.parse(readFileSync(new URL("./city-geo.json", import.meta.url), "utf8"));
+const CITY_GEO_CI = new Map(Object.keys(CITY_GEO).map((k) => [k.toLowerCase(), k]));
+
+/** { lat, lon } from the city table, or nulls when the city is not stated / not in the table. */
+export function latLonFor(city) {
+  const c = String(city || "").trim();
+  const key = CITY_GEO[c] ? c : CITY_GEO_CI.get(c.toLowerCase());
+  return key ? { lat: CITY_GEO[key][0], lon: CITY_GEO[key][1] } : { lat: null, lon: null };
+}
+
 const ENT = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " ", rsquo: "’", lsquo: "‘", rdquo: "”", ldquo: "“", ndash: "–", mdash: "—", hellip: "…", eacute: "é", aacute: "á", iacute: "í", oacute: "ó", uacute: "ú", ntilde: "ñ", Eacute: "É", Aacute: "Á", Iacute: "Í", Oacute: "Ó", Uacute: "Ú", Ntilde: "Ñ", uuml: "ü" };
 
 export function decode(s) {
@@ -94,18 +107,56 @@ const STATES = {
   Virginia: "VA", Washington: "WA", "West Virginia": "WV", Wisconsin: "WI", Wyoming: "WY",
   "District of Columbia": "DC", "Puerto Rico": "PR",
 };
-const STATE_RE = Object.keys(STATES).sort((a, b) => b.length - a.length).join("|");
+/** AP-style state abbreviations as they appear in releases and posts ("Mass.", "N.Y."). */
+const AP_STATES = {
+  "Ala.": "AL", "Ariz.": "AZ", "Ark.": "AR", "Calif.": "CA", "Cal.": "CA", "Colo.": "CO", "Conn.": "CT",
+  "Del.": "DE", "D.C.": "DC", "Fla.": "FL", "Ga.": "GA", "Ill.": "IL", "Ind.": "IN", "Kan.": "KS", "Kans.": "KS",
+  "Ky.": "KY", "La.": "LA", "Md.": "MD", "Mass.": "MA", "Mich.": "MI", "Minn.": "MN", "Miss.": "MS", "Mo.": "MO",
+  "Mont.": "MT", "Neb.": "NE", "Nebr.": "NE", "Nev.": "NV", "N.H.": "NH", "N.J.": "NJ", "N.M.": "NM", "N.Mex.": "NM",
+  "N.Y.": "NY", "N.C.": "NC", "N.D.": "ND", "Okla.": "OK", "Ore.": "OR", "Oreg.": "OR", "Pa.": "PA", "Penn.": "PA",
+  "P.R.": "PR", "R.I.": "RI", "S.C.": "SC", "S.D.": "SD", "Tenn.": "TN", "Tex.": "TX", "Vt.": "VT", "Va.": "VA",
+  "Wash.": "WA", "W.Va.": "WV", "W. Va.": "WV", "Wis.": "WI", "Wisc.": "WI", "Wyo.": "WY",
+};
+const CODES = new Set([...Object.values(STATES)]);
+const STATE_OF = (s) => STATES[s] || AP_STATES[s] || (CODES.has(s) ? s : "");
+const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const STATE_RE = [
+  ...Object.keys(STATES).map((k) => `${esc(k)}\\b`),
+  // "Mass." / "N.Y.": the trailing period ends the token (it may also end the sentence).
+  ...Object.keys(AP_STATES).map((k) => `${esc(k)}(?=$|[\\s,;:)"”’])`),
+  // Two-letter postal codes only as a bare token: "Yazoo City, MS" yes, "MS-13" no.
+  ...[...CODES].map((c) => `${c}(?![\\w-])`),
+].sort((a, b) => b.length - a.length).join("|");
 
-/** "in Monmouth County, New Jersey" -> "Monmouth County, NJ". Only when the sentence says it. */
+/** NYC boroughs and "New York City" are placed as New York, NY (the city table key). */
+const NYC = /^(?:Manhattan|Brooklyn|Queens|(?:the\s+)?Bronx|Staten Island|New York City|Harlem)$/i;
+const NYC_BARE = /\b(?:in|on)\s+(?:the\s+)?(Manhattan|Brooklyn|Queens|Bronx|Staten Island|New York City)\b(?!,?\s+(?:County|Criminal|Supreme|District|Family)\b)/g;
+
+/**
+ * Place the sentence ties to the person or the act: "in X, ST" / "of X, ST" (last one wins),
+ * or a bare NYC borough / "New York City". "from X" is origin and never a place here.
+ * "in Monmouth County, New Jersey" -> "Monmouth County, NJ"; "in Marlborough, Mass." -> "Marlborough, MA";
+ * "in Yazoo City, MS" -> "Yazoo City, MS"; "in Manhattan" -> "New York, NY". Only when the sentence says it.
+ */
 export function cityFrom(sentence) {
-  const re = new RegExp(`\\b(?:in|of)\\s+((?:[A-Z][A-Za-z.'’-]+\\s?){1,4}),\\s+(${STATE_RE})\\b`, "g");
+  const text = String(sentence || "");
+  const re = new RegExp(`\\b(?:in|of)\\s+((?:[A-Z][A-Za-z.'’-]+\\s?){1,4}),\\s+(${STATE_RE})`, "g");
   let last = null;
   let m;
-  while ((m = re.exec(sentence))) last = m;
-  if (!last) return "";
-  const city = last[1].trim();
-  if (NOT_NAME.test(city) && !/County/.test(city)) return "";
-  return `${city}, ${STATES[last[2]]}`;
+  while ((m = re.exec(text))) last = m;
+  let bare = null;
+  NYC_BARE.lastIndex = 0;
+  while ((m = NYC_BARE.exec(text))) bare = m;
+  if (last && (!bare || last.index > bare.index)) {
+    const city = last[1].trim();
+    const st = STATE_OF(last[2]);
+    if (!st) return "";
+    if (NYC.test(city) && st === "NY") return "New York, NY";
+    if (NOT_NAME.test(city) && !/County/.test(city)) return "";
+    return `${city}, ${st}`;
+  }
+  if (bare) return "New York, NY";
+  return "";
 }
 
 const AND_COUNTRIES = /^(Antigua and Barbuda|Trinidad and Tobago|Bosnia and Herzegovina|Saint Kitts and Nevis|Sao Tome and Principe|Saint Vincent and the Grenadines)\b/;
@@ -166,7 +217,7 @@ export function extractPeople(blocks) {
           // paragraph when the first has no charge / conviction / removal verb.
           let sentence = s;
           if (!VERB.test(s) && sents[i + 1] && VERB.test(sents[i + 1])) sentence = `${s} ${sents[i + 1]}`;
-          found.push({ name, origin, sentence, city: cityFrom(s) });
+          found.push({ name, origin, sentence, city: cityFrom(s) || cityFrom(sentence) });
           }
         }
       }
@@ -260,7 +311,6 @@ export function toRow(hit, rel) {
     voting: /\b(illegal(ly)? vot|unlawful(ly)? vot|voting (as|by)|voted in|vote in|registered to vote)/i.test(hit.sentence),
     origin: hit.origin || "Not stated",
     confirmedBy: a.confirmedBy,
-    lat: null,
-    lon: null,
+    ...latLonFor(hit.city),
   };
 }

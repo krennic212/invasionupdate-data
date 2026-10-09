@@ -23,7 +23,7 @@
   },
   {
     "name": "Miguel Francisco Mora Nunez",
-    "city": "Manhattan, NY",
+    "city": "New York, NY",
     "crime": "Convicted: United States Attorney for the Southern District of New York, Jamie McDonald, Acting Special Agent in Charge of the New York Field Office of Homeland Security Investigations (“HSI”), Pete Gizas, Director of the New York Field Office of U.S. Customs and Border Protection (“CBP”), Francis J. Russo, and Commissioner of the New York City Police Department (“NYPD”), Jessica S. Tisch, announced today that MIGUEL FRANCISCO MORA NUNEZ and CHRISTHIAN AYBAR-BERROA were sentenced to 180 months and 151 months in prison, respectively, for possession of ammunition as illegal aliens in connection with the shooting of an off-duty U.S. Customs and Border Protection (“CBP”) Officer in Manhattan last summer.",
     "usa": "DOJ release Oct 5, 2026: Two Dominican Republic Nationals Sentenced To 180 Months And 151 Months In Prison For Possession Of Ammunition By An Illegal Alien In Connection With The Shooting Of An Off-Duty CBP Officer",
     "foreign": "Not stated in post",
@@ -39,13 +39,13 @@
     "voting": false,
     "origin": "Dominican Republic",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 40.71,
+    "lon": -74.01,
     "status": "approved"
   },
   {
     "name": "Christhian Aybar-Berroa",
-    "city": "Manhattan, NY",
+    "city": "New York, NY",
     "crime": "Convicted: United States Attorney for the Southern District of New York, Jamie McDonald, Acting Special Agent in Charge of the New York Field Office of Homeland Security Investigations (“HSI”), Pete Gizas, Director of the New York Field Office of U.S. Customs and Border Protection (“CBP”), Francis J. Russo, and Commissioner of the New York City Police Department (“NYPD”), Jessica S. Tisch, announced today that MIGUEL FRANCISCO MORA NUNEZ and CHRISTHIAN AYBAR-BERROA were sentenced to 180 months and 151 months in prison, respectively, for possession of ammunition as illegal aliens in connection with the shooting of an off-duty U.S. Customs and Border Protection (“CBP”) Officer in Manhattan last summer.",
     "usa": "DOJ release Oct 5, 2026: Two Dominican Republic Nationals Sentenced To 180 Months And 151 Months In Prison For Possession Of Ammunition By An Illegal Alien In Connection With The Shooting Of An Off-Duty CBP Officer",
     "foreign": "Not stated in post",
@@ -61,13 +61,13 @@
     "voting": false,
     "origin": "Dominican Republic",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 40.71,
+    "lon": -74.01,
     "status": "approved"
   },
   {
     "name": "Jose Antonio Ibarra",
-    "city": "Not stated",
+    "city": "New York, NY",
     "crime": "Arrested: In August 2023, New York Police Department (NYPD) officers arrested Jose Antonio Ibarra, an illegal alien from Venezuela and Tren de Aragua gang member, for recklessly driving a motorcycle with a 2-year-old child who was not wearing a helmet.",
     "usa": "DHS release Sep 14, 2026: ICE Arrests Illegal Alien with a New York-Issued Commercial Driver’s License",
     "foreign": "Not stated in post",
@@ -83,8 +83,8 @@
     "voting": false,
     "origin": "Venezuela",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 40.71,
+    "lon": -74.01,
     "status": "approved"
   },
   {
@@ -331,7 +331,7 @@
   },
   {
     "name": "Maycon Eleazar De Jesus Barrios",
-    "city": "Not stated",
+    "city": "Marlborough, MA",
     "crime": "Arrested: On Oct. 2, ICE Boston arrested Maycon Eleazar De Jesus Barrios, a criminal illegal alien from Guatemala, during targeted operations in Marlborough, Mass.",
     "usa": "ICE X post Oct 9, 2026 (@EROBoston)",
     "foreign": "Not stated in post",
@@ -347,8 +347,8 @@
     "voting": false,
     "origin": "Guatemala",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 42.3509,
+    "lon": -71.5434,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HUGehZsWcAAU-Lo.jpg"
   },
@@ -370,8 +370,8 @@
     "voting": true,
     "origin": "Not stated",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 30.8635,
+    "lon": -87.7644,
     "status": "approved"
   },
   {
@@ -509,7 +509,7 @@
   },
   {
     "name": "Marlon Romero Medina",
-    "city": "Not stated",
+    "city": "Smyrna, TN",
     "crime": "Arrested: ERO New Orleans arrested Marlon Romero Medina, a criminal illegal alien from Honduras, in Smyrna, TN last week.",
     "usa": "ICE X post Oct 8, 2026 (@ERONewOrleans)",
     "foreign": "Not stated in post",
@@ -525,8 +525,8 @@
     "voting": false,
     "origin": "Honduras",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 35.9828,
+    "lon": -86.5186,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HT9bURcWEAAzjJd.png"
   },
@@ -895,7 +895,7 @@
   },
   {
     "name": "Byron Arevalo-Pacheco",
-    "city": "Not stated",
+    "city": "Yazoo City, MS",
     "crime": "Arrested: ERO New Orleans arrested Byron Arevalo-Pacheco, a criminal illegal alien from Guatemala, in Yazoo City, MS.",
     "usa": "ICE X post Oct 7, 2026 (@ERONewOrleans)",
     "foreign": "Not stated in post",
@@ -911,8 +911,8 @@
     "voting": false,
     "origin": "Guatemala",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 32.8594,
+    "lon": -90.4031,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HT9bHJeWIAA-PHE.png"
   },
@@ -1008,7 +1008,7 @@
   },
   {
     "name": "Miguel Francisco-Flores",
-    "city": "Not stated",
+    "city": "Marlborough, MA",
     "crime": "Arrested: On Oct. 2, ICE Boston arrested Miguel Francisco-Flores, a criminal illegal alien from Mexico, during targeted operations in Marlborough, Mass.",
     "usa": "ICE X post Oct 7, 2026 (@EROBoston)",
     "foreign": "Not stated in post",
@@ -1024,14 +1024,14 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 42.3509,
+    "lon": -71.5434,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HUBW2w_X0AAFgjS.png"
   },
   {
     "name": "Damil Emilia Mercedes-Silven",
-    "city": "Not stated",
+    "city": "Bayamon, PR",
     "crime": "Removed: ICE arrested Damil Emilia Mercedes-Silven upon her release from the Bayamon Women’s Jail in Puerto Rico and deported her home to the Dominican Republic. Her criminal history includes child abuse. Under @POTUS Trump, ICE is removing illegal aliens, including violent criminal illegal aliens like Mercedes-Silven, to protect the United States and its territories.",
     "usa": "ICE X post Oct 6, 2026 (@ICEgov)",
     "foreign": "Not stated in post",
@@ -1047,8 +1047,8 @@
     "voting": false,
     "origin": "Not stated",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 18.3986,
+    "lon": -66.1557,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HT-13TpWAAA-Vrl.png"
   },
@@ -1393,7 +1393,7 @@
   },
   {
     "name": "Phai You",
-    "city": "Not stated",
+    "city": "Worcester, MA",
     "crime": "Removed: ICE deported Phai You, a Cambodian citizen convicted of second-degree murder in Massachusetts.",
     "usa": "ICE X post Oct 6, 2026 (@ICEgov)",
     "foreign": "Not stated in post",
@@ -1409,14 +1409,14 @@
     "voting": false,
     "origin": "Cambodian",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 42.2621,
+    "lon": -71.8034,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HT8wHjmWQAA8fv7.png"
   },
   {
     "name": "Jerome Nicolas Pascal Charton",
-    "city": "Not stated",
+    "city": "Dedham, MA",
     "crime": "Arrested: On Oct. 1, ICE Boston arrested Jerome Nicolas Pascal Charton, a criminal illegal alien from France, during targeted operations in Dedham, Mass.",
     "usa": "ICE X post Oct 6, 2026 (@EROBoston)",
     "foreign": "Not stated in post",
@@ -1432,8 +1432,8 @@
     "voting": false,
     "origin": "France",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 42.2437,
+    "lon": -71.1637,
     "status": "approved"
   },
   {
@@ -1454,8 +1454,8 @@
     "voting": false,
     "origin": "Not stated",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 37.092,
+    "lon": -84.6041,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HT5nsJjWoAAEX4h.png"
   },
@@ -1668,7 +1668,7 @@
   },
   {
     "name": "Fausto Omana-Briseno",
-    "city": "Not stated",
+    "city": "North Prince George, VA",
     "crime": "Arrested: ICE @EROWashington D.C. arrested Fausto Omana-Briseno, a criminal illegal alien from Mexico, in North Prince George, VA.",
     "usa": "ICE X post Oct 5, 2026 (@EROWashington)",
     "foreign": "Not stated in post",
@@ -1684,8 +1684,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 37.249,
+    "lon": -77.221,
     "status": "approved"
   },
   {
@@ -1826,7 +1826,7 @@
   },
   {
     "name": "Honorio Galvez-Castillo",
-    "city": "Not stated",
+    "city": "Jamestown, CA",
     "crime": "Convicted: ICE San Francisco arrested criminal alien Honorio Galvez-Castillo, 25, of Mexico, in Jamestown, CA. He has felony convictions for domestic violence and illegal reentry, and an arrest for DUI.",
     "usa": "ICE X post Oct 2, 2026 (@EROSanFrancisco)",
     "foreign": "Not stated in post",
@@ -1842,8 +1842,8 @@
     "voting": false,
     "origin": "Not stated",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 37.9065,
+    "lon": -120.4946,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HTF0hEtWkAAGd4s.png"
   },
@@ -1939,7 +1939,7 @@
   },
   {
     "name": "Lara Gonzalez",
-    "city": "Not stated",
+    "city": "Houlton, ME",
     "crime": "Convicted: According to court records, on October 4, 2026, Lara Gonzalez, a Mexican national, traveled into Canada through the Houlton port of entry.",
     "usa": "DOJ release Oct 8, 2026: Mexican National Pleads Guilty to Eluding Immigration Inspection",
     "foreign": "Not stated in post",
@@ -1955,8 +1955,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 46.1262,
+    "lon": -67.8403,
     "status": "approved"
   },
   {
@@ -1984,7 +1984,7 @@
   },
   {
     "name": "Jose Molina-Ovalle",
-    "city": "Not stated",
+    "city": "Worcester, MA",
     "crime": "Charged: Richard Molina-Ovalle, 36, of Worcester and Jose Molina-Ovalle, 27, a Dominican national unlawfully residing in Worcester, were charged in an indictment with conspiracy to distribute 400 grams or more of fentanyl and related charges.",
     "usa": "DOJ release Oct 7, 2026: Two Men Indicted for Drug Conspiracy and Firearms Charges",
     "foreign": "Not stated in post",
@@ -2000,8 +2000,8 @@
     "voting": false,
     "origin": "Dominican Republic",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 42.2621,
+    "lon": -71.8034,
     "status": "approved"
   },
   {
@@ -2242,8 +2242,8 @@
     "voting": false,
     "origin": "Jamaica",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 40.2458,
+    "lon": -74.2768,
     "status": "approved"
   },
   {
@@ -2286,8 +2286,8 @@
     "voting": false,
     "origin": "El Salvador",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 33.9435,
+    "lon": -83.9643,
     "status": "approved"
   },
   {
@@ -2308,8 +2308,8 @@
     "voting": false,
     "origin": "Guatemala",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 37.7159,
+    "lon": -75.6803,
     "status": "approved"
   },
   {
@@ -2358,7 +2358,7 @@
   },
   {
     "name": "Chimaobim Adedayo Igbojekwe",
-    "city": "Not stated",
+    "city": "East Pennsboro Township, PA",
     "crime": "Charged: On September 27, Chimaobim Adedayo Igbojekwe, an illegal alien from Nigeria, was arrested in East Pennsboro Township for indecent exposure and disorderly conduct.",
     "usa": "DHS release Oct 7, 2026: DHS Issues Statement After ICE Arrests Illegal Alien from Nigeria Who Exposed Himself in Public While Working for Congressional Campaign in Pennsylvania | Homeland Security",
     "foreign": "Not stated in post",
@@ -2374,8 +2374,8 @@
     "voting": false,
     "origin": "Nigeria",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 40.2898,
+    "lon": -76.9361,
     "status": "approved"
   },
   {
@@ -2484,8 +2484,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 40.2169,
+    "lon": -74.7433,
     "status": "approved"
   },
   {
@@ -2666,7 +2666,7 @@
   },
   {
     "name": "Sneider Mejia Bautista",
-    "city": "Not stated",
+    "city": "Lynn, MA",
     "crime": "As posted: U.S. Immigration and Customs Enforcement’s (ICE) Enforcement and Removal Operations (ERO New York City has since identified both suspects: Dangelo Rafael Jean Caraballo and Sneider Mejia Bautista, both illegal aliens from the Dominican Republic.",
     "usa": "DHS release Oct 6, 2026: DHS Issues Statement After Two Illegal Aliens Stab Off-Duty NYPD Detective; Suspects Remain At-Large | Homeland Security",
     "foreign": "Not stated in post",
@@ -2682,14 +2682,14 @@
     "voting": false,
     "origin": "Dominican Republic",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 42.47,
+    "lon": -70.95,
     "status": "approved",
     "approvalNote": "Approved by Krennic 2026-10-09: at-large hold cleared after U.S. Marshals reported both arrested Oct 7, 2026 in Lynn, MA. Stage unchanged (As posted)."
   },
   {
     "name": "Dangelo Rafael Jean Caraballo",
-    "city": "Not stated",
+    "city": "Lynn, MA",
     "crime": "As posted: U.S. Immigration and Customs Enforcement’s (ICE) Enforcement and Removal Operations (ERO New York City has since identified both suspects: Dangelo Rafael Jean Caraballo and Sneider Mejia Bautista, both illegal aliens from the Dominican Republic.",
     "usa": "DHS release Oct 6, 2026: DHS Issues Statement After Two Illegal Aliens Stab Off-Duty NYPD Detective; Suspects Remain At-Large | Homeland Security",
     "foreign": "Not stated in post",
@@ -2705,8 +2705,8 @@
     "voting": false,
     "origin": "Dominican Republic",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 42.47,
+    "lon": -70.95,
     "status": "approved",
     "approvalNote": "Approved by Krennic 2026-10-09: at-large hold cleared after U.S. Marshals reported both arrested Oct 7, 2026 in Lynn, MA. Stage unchanged (As posted)."
   },
@@ -2800,7 +2800,7 @@
   },
   {
     "name": "Isaac Melendez-Carranza",
-    "city": "Not stated",
+    "city": "Loudoun County, VA",
     "crime": "Charged: WASHINGTON — On Aug. 20, the Loudoun County Sheriff's Office arrested Isaac Melendez-Carranza, 31, a criminal illegal alien from El Salvador, for possession with intent to distribute a controlled substance within 1,000 feet of a school and possession with intent to manufacture, sell or distribute fentanyl.",
     "usa": "ICE release Sep 28, 2026: ICE lodges immigration detainer against criminal illegal alien linked to Virginia high school fentanyl overdoses",
     "foreign": "Not stated in post",
@@ -2816,13 +2816,13 @@
     "voting": false,
     "origin": "El Salvador",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 39.0867,
+    "lon": -77.5775,
     "status": "approved"
   },
   {
     "name": "Willian Josue Ordonez Vasquez",
-    "city": "Not stated",
+    "city": "Lake Lewisville, TX",
     "crime": "Charged: Willian Josue Ordonez Vasquez, 24, Venezuelan citizen and self-admitted Tren de Aragua gang member.",
     "usa": "ICE release Sep 25, 2026: ICE arrests 121 during summer enforcement initiative in Texas lake community, including 2 members of the Tren de Aragua terrorist organization",
     "foreign": "Not stated in post",
@@ -2838,13 +2838,13 @@
     "voting": false,
     "origin": "Venezuela",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 33.0461,
+    "lon": -96.9939,
     "status": "approved"
   },
   {
     "name": "Edwin Josue Cabrera-Zelaya",
-    "city": "Not stated",
+    "city": "Lake Lewisville, TX",
     "crime": "Charged: Edwin Josue Cabrera-Zelaya, 22, Honduras citizen and self-admitted Tren de Aragua gang member.",
     "usa": "ICE release Sep 25, 2026: ICE arrests 121 during summer enforcement initiative in Texas lake community, including 2 members of the Tren de Aragua terrorist organization",
     "foreign": "Not stated in post",
@@ -2860,13 +2860,13 @@
     "voting": false,
     "origin": "Honduras",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 33.0461,
+    "lon": -96.9939,
     "status": "approved"
   },
   {
     "name": "Jose Almendares Suazo",
-    "city": "Not stated",
+    "city": "Lake Lewisville, TX",
     "crime": "Charged: Jose Almendares Suazo, 30, a criminal illegal alien from Honduras who had been previously removed from the U.S. Almendares Suazo has a prior conviction for assault causing bodily injury, as well as a prior arrest for assault involving family violence.",
     "usa": "ICE release Sep 25, 2026: ICE arrests 121 during summer enforcement initiative in Texas lake community, including 2 members of the Tren de Aragua terrorist organization",
     "foreign": "Not stated in post",
@@ -2882,13 +2882,13 @@
     "voting": false,
     "origin": "Honduras",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 33.0461,
+    "lon": -96.9939,
     "status": "approved"
   },
   {
     "name": "Diego Gomez Hernandez",
-    "city": "Not stated",
+    "city": "Lake Lewisville, TX",
     "crime": "Charged: Diego Gomez Hernandez, 22, a Mexican criminal illegal alien.",
     "usa": "ICE release Sep 25, 2026: ICE arrests 121 during summer enforcement initiative in Texas lake community, including 2 members of the Tren de Aragua terrorist organization",
     "foreign": "Not stated in post",
@@ -2904,13 +2904,13 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 33.0461,
+    "lon": -96.9939,
     "status": "approved"
   },
   {
     "name": "Luis Alfrando Digueros Quintanilla",
-    "city": "Not stated",
+    "city": "Lake Lewisville, TX",
     "crime": "Charged: Luis Alfrando Digueros Quintanilla, 23, Guatemalan citizen and previously removed noncitizen.",
     "usa": "ICE release Sep 25, 2026: ICE arrests 121 during summer enforcement initiative in Texas lake community, including 2 members of the Tren de Aragua terrorist organization",
     "foreign": "Not stated in post",
@@ -2926,13 +2926,13 @@
     "voting": false,
     "origin": "Guatemala",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 33.0461,
+    "lon": -96.9939,
     "status": "approved"
   },
   {
     "name": "Axon Solomon Mejia Ortega",
-    "city": "Not stated",
+    "city": "Lake Lewisville, TX",
     "crime": "Charged: Axon Solomon Mejia Ortega, 35, Mexican citizen unlawfully present in the United States.",
     "usa": "ICE release Sep 25, 2026: ICE arrests 121 during summer enforcement initiative in Texas lake community, including 2 members of the Tren de Aragua terrorist organization",
     "foreign": "Not stated in post",
@@ -2948,8 +2948,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 33.0461,
+    "lon": -96.9939,
     "status": "approved"
   },
   {
