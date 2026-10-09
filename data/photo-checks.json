@@ -736,5 +736,11 @@
     "image": "https://pbs.twimg.com/media/HUNsmaKXMAMMJjU?format=jpg&name=orig",
     "bytes": 9300,
     "reviewed": "Viewed image (1 of 4 in post, alt 'Photo of Alejandro Rojas Garcia', same photo captioned in USAO-MN press release): close-up face headshot of one adult man (~60s, gray hair, light patterned shirt), taken inside a vehicle; no other people, no text, no minors. Other 3 images are evidence exhibits (storage devices, crucifix front/inside) and were not used."
+  },
+  "x.com/usao_wdmo/status/2107579277432758721": {
+    "checkedAt": "2026-10-09T21:48:55.548Z",
+    "name": "Andre’s Garcia",
+    "result": "none",
+    "why": "Viewed both post images (no alt text): arrest scenes in a parking lot, 3 people each (two HSI agents in POLICE vests + the arrestee), all faces blurred; no headshot / booking photo of the person"
   }
 }
