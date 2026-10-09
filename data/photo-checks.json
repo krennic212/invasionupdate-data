@@ -703,5 +703,23 @@
     "image": "https://pbs.twimg.com/media/HUGehZsWcAAU-Lo.jpg",
     "bytes": 108475,
     "reviewed": "Viewed image: single-person custody photo of the named adult man standing in handcuffs against a dark backdrop; only his face in frame (an officer's arm at the edge), no text overlay"
+  },
+  "dhs.gov/news/2026/06/23/criminal-illegal-alien-sentenced-5-years-prison-raping-corpse-new-york-subway": {
+    "checkedAt": "2026-10-09T15:07:09.549Z",
+    "name": "Felix Jeronimo-Rojas",
+    "result": "none",
+    "why": "no single person-specific image in the release"
+  },
+  "dhs.gov/news/2026/09/14/ice-arrests-illegal-alien-new-york-issued-commercial-drivers-license": {
+    "checkedAt": "2026-10-09T15:07:09.611Z",
+    "name": "Jose Antonio Ibarra",
+    "result": "none",
+    "why": "release names 4 people"
+  },
+  "ice.gov/news/releases/ero-new-york-city-arrests-unlawfully-present-venezuelan-national-convicted-assaulting": {
+    "checkedAt": "2026-10-09T15:07:10.170Z",
+    "name": "Darwin Andres Gomez Izquiel",
+    "result": "none",
+    "why": "no single person-specific image in the release"
   }
 }
