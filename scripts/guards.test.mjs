@@ -76,3 +76,12 @@ test("extractor never yields a person without non-citizen wording in the sentenc
   const hits = extractPeople(["Richard Molina-Ovalle, 36, of Worcester and Jose Molina-Ovalle, 27, a Dominican national unlawfully residing in Worcester, were charged in an indictment."]);
   assert.deepEqual(hits.map((h) => h.name), ["Jose Molina-Ovalle"]);
 });
+
+test("a place name is held as 'not a person' (every writer, incl. X picks and pending intake)", () => {
+  const sentence = "“In Syracuse, New York, ICE has arrested illegal aliens with criminal histories that include sexual exploitation of a minor, cocaine possession, driving under the influence, and burglary.";
+  const title = "DHS Highlights Worst Illegal Aliens Arrested in Syracuse, New York | Homeland Security";
+  assert.ok(holdReasons({ name: "New York", sentence, title, label: "As posted" }).some((r) => r.startsWith("not a person")));
+  assert.ok(holdReasons({ name: "Syracuse", sentence, title, label: "As posted" }).some((r) => r.startsWith("not a person")));
+  assert.ok(holdReasons({ name: "Monmouth County", sentence, title: "", label: "As posted" }).some((r) => r.startsWith("not a person")));
+  assert.equal(holdReasons({ name: "Said Ibrahim", sentence: "Said Ibrahim, an illegal alien from Somalia, whose criminal history includes cruelty toward a child.", title, label: "As posted" }).length, 0);
+});

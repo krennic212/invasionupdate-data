@@ -142,3 +142,71 @@ test("toRow fills lat/lon from the city it read", () => {
   assert.equal(typeof row.lat, "number");
   assert.equal(typeof row.lon, "number");
 });
+
+// --- Place names are never people (DHS "Worst Illegal Aliens Arrested in Syracuse, New York", Oct 9 2026) ---
+import { isPlaceName, titlePlaces, HISTORY } from "./parse.mjs";
+
+const SYR_TITLE = "DHS Highlights Worst Illegal Aliens Arrested in Syracuse, New York | Homeland Security";
+const SYR = `<h1>DHS Highlights Worst Illegal Aliens Arrested in Syracuse, New York</h1>
+<p>“In Syracuse, New York, ICE has arrested illegal aliens with criminal histories that include sexual exploitation of a minor, cocaine possession, driving under the influence, and burglary.</p>
+<ul>
+<li>Norberto Machada-Rodriguez, an illegal alien from Cuba, whose criminal history includes sexual assault and cocaine possession.</li>
+<li>Said Ibrahim, an illegal alien from Somalia, whose criminal history includes cruelty toward a child.</li>
+<li>Haikham Phimasone, an illegal alien from Laos, whose criminal history includes assault, driving under the influence of liquor, and dangerous drugs.</li>
+<li>Hsa Mu Na, an illegal alien from Burma, whose criminal history includes sexual exploitation of a minor – material – transport and sex offense.</li>
+<li>Mohammed Al Nassar, an illegal alien from Iraq, whose criminal history includes burglary.</li>
+</ul>`;
+
+test("Syracuse release: 'New York' from 'In Syracuse, New York, ICE has arrested illegal aliens' is not a person", () => {
+  const names = extractPeople(htmlBlocks(SYR), { title: SYR_TITLE }).map((h) => h.name);
+  assert.ok(!names.includes("New York"), names.join(", "));
+  assert.ok(!names.some((n) => /syracuse|new york/i.test(n)));
+  assert.deepEqual(names, ["Norberto Machada-Rodriguez", "Said Ibrahim", "Haikham Phimasone", "Hsa Mu Na", "Mohammed Al Nassar"]);
+  // even without the title, the body sentence alone never yields a place "person"
+  assert.deepEqual(extractPeople(["“In Syracuse, New York, ICE has arrested illegal aliens with criminal histories that include sexual exploitation of a minor, cocaine possession, driving under the influence, and burglary."]), []);
+});
+
+test("isPlaceName: states, city-geo cities, 'City, State', County, headline 'in <Place>'", () => {
+  for (const p of ["New York", "Syracuse, New York", "Syracuse", "Texas", "North Carolina", "San Antonio", "St. Louis", "Monmouth County", "Kansas City", "New York City", "Brooklyn", "Lincoln, NE"]) {
+    assert.equal(isPlaceName(p), true, p);
+  }
+  for (const n of ["Norberto Machada-Rodriguez", "Hsa Mu Na", "Mohammed Al Nassar", "Ian Clive Burton", "Said Ibrahim"]) assert.equal(isPlaceName(n), false, n);
+  assert.deepEqual(titlePlaces(SYR_TITLE), ["syracuse, new york", "syracuse", "new york"]);
+  assert.equal(isPlaceName("Lake Placid", { title: "ICE arrests 12 in Lake Placid" }), true);
+});
+
+test("single-word and place names are rejected by the extractor", () => {
+  assert.deepEqual(extractPeople(["Arrested in Texas, Houston, a Mexican national, was charged with fraud."]).map((h) => h.name), []);
+  assert.deepEqual(extractPeople(["ICE arrested, in Ohio, Monmouth County, an illegal alien from Mexico."]).map((h) => h.name), []);
+});
+
+// --- Past record is not a charge ---
+test("'criminal history includes' / 'prior convictions for' is never labeled Charged (As posted)", () => {
+  const title = SYR_TITLE;
+  for (const s of [
+    "Norberto Machada-Rodriguez, an illegal alien from Cuba, whose criminal history includes sexual assault and cocaine possession.",
+    "Hsa Mu Na, an illegal alien from Burma, whose criminal history includes sexual exploitation of a minor – material – transport and sex offense.",
+    "Mohammed Al Nassar, an illegal alien from Iraq, whose criminal history includes burglary.",
+    "In January, ICE arrested Gerardo Miguel-Mora, an illegal alien from Mexico, after he had been released by New York sanctuary politicians despite having a criminal history that includes arrests for strangulation, rape, sexual assault, burglary, grand larceny, and drug possession.",
+    "John Doe, a Mexican national with prior convictions for assault and burglary, was arrested by ICE.",
+    "John Doe, an illegal alien from Honduras, has prior arrests for DUI.",
+    "Jose Almendares Suazo, 30, a criminal illegal alien from Honduras who had been previously removed from the U.S. Almendares Suazo has a prior conviction for assault causing bodily injury, as well as a prior arrest for assault involving family violence.",
+  ]) {
+    assert.ok(HISTORY.test(s), s);
+    assert.equal(statusFrom(s, title), "As posted", s);
+    assert.equal(statusFrom(s, "ICE arrests 121; man convicted"), "As posted", `title never sets it: ${s}`);
+  }
+  // Convicted / Removed only when the text outside the history clause says so
+  assert.equal(statusFrom("On October 1, Jose Luis Mata-Cedillo, an illegal alien from Mexico, was sentenced to 20 years in prison after he had previously been convicted for cocaine trafficking.", "t"), "Convicted");
+  assert.equal(statusFrom("John Doe, an illegal alien from Mexico, whose criminal history includes convictions for robbery.", "t"), "As posted");
+  assert.equal(statusFrom("ICE arrested Jane Roe and deported her home to the Dominican Republic. Her criminal history includes child abuse.", ""), "Removed");
+});
+
+test("toRow: Syracuse rows read 'As posted:' with the sentence verbatim", () => {
+  const rel = { office: "DHSgov", url: "https://www.dhs.gov/news/2026/10/09/dhs-highlights-worst-illegal-aliens-arrested-syracuse-new-york", date: "2026-10-09", title: SYR_TITLE };
+  for (const h of extractPeople(htmlBlocks(SYR), { title: SYR_TITLE })) {
+    const row = toRow(h, rel);
+    assert.equal(row.crime, `As posted: ${h.sentence}`);
+    assert.match(row.crime, /criminal history includes/);
+  }
+});

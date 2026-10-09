@@ -23,6 +23,8 @@ Served at **https://krennic212.github.io/invasionupdate-data/harvest.json** (plu
   ("illegal alien", "national", "citizen of", "unlawfully present"). Immigration status is never inferred.
 - The charge label is the release's sentence, copied word for word (DOJ/DHS wording included). The `Charged` / `Convicted` / `Removed`
   prefix comes from the verbs in that sentence or the release title.
+- A past record is not a charge: when the sentence says "criminal history includes", "prior convictions / arrests for", "previously convicted of" or similar, the prefix is never `Charged` (and never taken from the headline); it is `As posted` unless the text outside that clause says removed / convicted / sentenced. Severity weight for these rows is the non-conviction 90%.
+- A place is never a person: names that are a US state, a city in `scripts/city-geo.json`, "City, State", contain County / City / Parish / etc., are a single word, or match the headline's "in <Place>" are rejected by `scripts/parse.mjs`, and `scripts/guards.mjs` holds any such row ("not a person") for every writer.
 - Duplicates are removed when they are the same person on the same release. Co-defendants are never merged.
 - **Photos (official releases only).** A row gets a photo only when:
   - it is approved and passes every guard;

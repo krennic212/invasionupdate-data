@@ -230,3 +230,11 @@ test("writeSeverityFiles writes both files and is idempotent", () => {
   assert.equal(JSON.parse(once)[0].severity, 95);
   assert.equal(JSON.parse(readFileSync(hl, "utf8")).rows[0].id, "a");
 });
+
+test("'As posted' rows (criminal history includes ...) use the 90% non-conviction weight", async () => {
+  const { scoreRow, stageOf, TABLE } = await import("./severity.mjs");
+  const row = { crime: "As posted: Mohammed Al Nassar, an illegal alien from Iraq, whose criminal history includes burglary.", text: "", usa: "" };
+  assert.equal(stageOf(row), "notConvicted");
+  assert.equal(TABLE.stage.notConvicted, 0.9);
+  assert.equal(scoreRow(row).severity, Math.round(TABLE.crimes.theft.points * 0.9));
+});

@@ -194,7 +194,7 @@ async function main() {
   const fresh = [];
   for (const rel of rels) {
     scanned += 1;
-    for (const hit of extractPeople(rel.blocks)) {
+    for (const hit of extractPeople(rel.blocks, { title: rel.title })) {
       const k = nameKey(hit.name);
       if (!k || have.has(k)) continue;
       have.add(k);

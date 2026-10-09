@@ -159,6 +159,47 @@ export function cityFrom(sentence) {
   return "";
 }
 
+/** City names from scripts/city-geo.json ("Syracuse", "St. Louis"), lowercased. */
+const CITY_NAMES = new Set(Object.keys(CITY_GEO).map((k) => k.replace(/,\s*[A-Z]{2}$/, "").trim().toLowerCase()));
+const STATE_NAMES = new Set(Object.keys(STATES).map((k) => k.toLowerCase()));
+const PLACE_WORD = /\b(?:County|Parish|Borough|Township|City|Village|Metro|Metropolitan|Area|Region|Valley|Island|Islands)\b/i;
+const placeKey = (s) => String(s || "").replace(/[“”"‘’']/g, "").replace(/\s+/g, " ").trim().toLowerCase();
+
+/**
+ * Place phrases a release headline names with "in <Place>" / "across <Place>":
+ * "DHS Highlights Worst Illegal Aliens Arrested in Syracuse, New York | Homeland Security"
+ *   -> ["syracuse, new york", "syracuse", "new york"].
+ */
+export function titlePlaces(title) {
+  const out = new Set();
+  const t = String(title || "").replace(/\s*\|.*$/, "");
+  const re = /\b(?:in|across|throughout|near|around)\s+((?:[A-Z][A-Za-z.'’-]*,?\s*){1,6})/g;
+  let m;
+  while ((m = re.exec(t))) {
+    const phrase = m[1].replace(/[,\s]+$/, "").trim();
+    if (!phrase) continue;
+    out.add(placeKey(phrase));
+    for (const part of phrase.split(/\s*,\s*/)) if (part) out.add(placeKey(part));
+  }
+  return [...out];
+}
+
+/**
+ * True when a "name" is really a place: a US state ("New York"), a city in city-geo.json
+ * ("Syracuse"), "City, State" ("Syracuse, New York"), New York City / boroughs, anything with
+ * County / Parish / Borough / City / ..., or a place the release headline names ("... in <Place>").
+ */
+export function isPlaceName(name, { title = "" } = {}) {
+  const n = placeKey(name);
+  if (!n) return false;
+  if (STATE_NAMES.has(n) || CITY_NAMES.has(n) || NYC.test(n)) return true;
+  if (PLACE_WORD.test(n)) return true;
+  const cs = n.match(/^(.+?),\s*(.+)$/);
+  if (cs && (STATE_NAMES.has(cs[2]) || STATE_OF(cs[2].toUpperCase()) || CITY_NAMES.has(cs[1]))) return true;
+  if (title && titlePlaces(title).includes(n)) return true;
+  return false;
+}
+
 const AND_COUNTRIES = /^(Antigua and Barbuda|Trinidad and Tobago|Bosnia and Herzegovina|Saint Kitts and Nevis|Sao Tome and Principe|Saint Vincent and the Grenadines)\b/;
 
 function cleanCountry(c) {
@@ -188,8 +229,10 @@ const VERB = /\b(charged|indicted|convicted|sentenced|pleaded|pled|found guilty|
 /**
  * Find named non-citizens in a release.
  * Returns [{ name, origin, sentence, city }]; sentence is verbatim from the page.
+ * A name must have 2+ words and must not be a place (isPlaceName: state, city-geo city,
+ * "City, State", County / City / ..., or a place from the release title's "in <Place>").
  */
-export function extractPeople(blocks) {
+export function extractPeople(blocks, { title = "" } = {}) {
   const found = [];
   const seen = new Set();
   for (const block of blocks) {
@@ -210,6 +253,8 @@ export function extractPeople(blocks) {
           const toks = name.split(" ");
           if (toks.length < 2 || toks.length > 6 || name.length > 60) continue;
           if (NOT_NAME.test(name)) continue;
+          // Never a place: "In Syracuse, New York, ICE has arrested illegal aliens ..." is not a person named "New York".
+          if (isPlaceName(name, { title })) continue;
           const key = name.toLowerCase();
           if (seen.has(key)) continue;
           seen.add(key);
@@ -237,6 +282,31 @@ export function stripPriors(text) {
     .replace(/\bcriminal (history|record)\b/gi, "prior-history");
 }
 
+/**
+ * The release describes the person's PAST record ("whose criminal history includes burglary",
+ * "a criminal history that includes arrests for ...", "prior convictions for", "prior arrest for",
+ * "previously convicted of", "history of ..."). Those crimes are not a charge in this case.
+ */
+export const HISTORY = /\b(?:criminal|arrest|conviction|police|immigration)\s+(?:histor(?:y|ies)|records?)\b|\b(?:histor(?:y|ies)|records?)\s+(?:that\s+)?(?:includes?|including|include)\b|\bhistory\s+of\b|\bprior\s+(?:\w+\s+){0,2}(?:convictions?|arrests?|charges?)\b|\bpreviously\s+(?:been\s+)?(?:convicted|arrested|charged)\s+(?:of|for|with)\b/i;
+
+/** Sentence with every history clause cut out (from the history phrase to the next ";" or sentence end). */
+export function withoutHistory(sentence) {
+  const re = new RegExp(`(?:${HISTORY.source})[^;]*?(?=;|[.!?](?:\\s|$)|$)`, "gi");
+  return String(sentence || "").replace(re, " prior-history ");
+}
+
+/**
+ * Stage for a sentence that lists a past record. Never "Charged" and never taken from the title
+ * (the headline's "Arrested" is the immigration arrest, not a charge for the listed crimes).
+ * Removed / Convicted only when the text OUTSIDE the history clause says so; otherwise "As posted".
+ */
+function historyStatus(sentence) {
+  const s = stripPriors(withoutHistory(sentence));
+  if (!NOT_YET_REMOVED.test(s) && REMOVE_WORDS.test(s)) return "Removed";
+  if (CONVICT_WORDS.test(s)) return "Convicted";
+  return "As posted";
+}
+
 export const CONVICT_WORDS = /\b(convicted|convictions?|sentenced|pleaded guilty|pled guilty|pleads guilty|found guilty)\b/i;
 export const CHARGE_WORDS = /\b(charged|charges|charging|indicted|indictment|arrested|arrests?|accused|alleged|allegedly|complaint|wanted|detained|apprehended)\b/i;
 const REMOVE_WORDS = /\b(removed|deported|repatriated)\b/i;
@@ -250,8 +320,11 @@ const NOT_YET_REMOVED = /\bpending (removal|immigration)|in ICE custody|awaiting
  *  - Removed only when the sentence says removed / deported (not "previously"), or the sentence has
  *    no stage word and the title says deports / removes.
  *  - Otherwise charged / indicted / arrested wording gives Charged; nothing at all gives "As posted".
+ *  - A sentence that lists a past record ("criminal history includes", "prior convictions / arrests for")
+ *    is never Charged: Removed / Convicted only from wording outside that clause, else "As posted".
  */
 export function statusFrom(sentence, title = "") {
+  if (HISTORY.test(String(sentence || ""))) return historyStatus(sentence);
   const s = stripPriors(sentence);
   const t = stripPriors(title);
   const notYet = NOT_YET_REMOVED.test(s);

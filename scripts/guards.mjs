@@ -8,8 +8,11 @@
  *                 this person is only charged / indicted / arrested. The stage is never escalated.
  *  3. at-large  - the person is described as a suspect still at large / not yet in custody.
  *  4. status    - the sentence does not state the person is a non-citizen.
+ *  5. place     - the "name" is a place (state, city-geo city, "City, State", County, or the
+ *                 release headline's "in <Place>"), not a person. Covers every writer (release
+ *                 harvest, X scan picks, pending intake).
  */
-import { stripPriors, CONVICT_WORDS, CHARGE_WORDS } from "./parse.mjs";
+import { stripPriors, CONVICT_WORDS, CHARGE_WORDS, isPlaceName } from "./parse.mjs";
 
 const esc = (s) => String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
@@ -63,6 +66,7 @@ export function nonCitizenStated(sentence) {
 /** All reasons a row must stay pending (empty array = may be auto-approved). */
 export function holdReasons({ name, sentence, title = "", releaseText = "", label = "" }) {
   const out = [];
+  if (String(name || "").trim().split(/\s+/).length < 2 || isPlaceName(name, { title })) out.push("not a person: name is a place name or a single word");
   if (isMinor(name, sentence, title)) out.push("possible minor / juvenile");
   if (!stageOk(label, sentence, title)) out.push(`stage: label "${label}" is later than the source wording`);
   if (atLarge(sentence, releaseText)) out.push("suspect described as still at large");

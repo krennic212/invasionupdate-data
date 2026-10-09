@@ -104,7 +104,7 @@ async function main() {
       checks[k] = { checkedAt: new Date().toISOString(), name: r.name, result, ...extra };
     };
     const title = titleOf(html);
-    const people = extractPeople(htmlBlocks(html)).map((p) => p.name);
+    const people = extractPeople(htmlBlocks(html), { title }).map((p) => p.name);
     if (titleIsMulti(title)) { record("none", { why: "release title describes several people" }); log.none.push(`${r.name}: multi-person title`); continue; }
     if (people.length > 1) { record("none", { why: `release names ${people.length} people` }); log.none.push(`${r.name}: release names ${people.length} people`); continue; }
     const img = pickImage(html, rel, r.name);
