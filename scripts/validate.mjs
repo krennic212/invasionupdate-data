@@ -12,12 +12,14 @@
  *    unheld, official row whose release produced exactly one row, with a single-person photo
  *    check on record, served from this repo's Pages site, and the file exists (<= 300 KB)
  *  - any row in the previous committed feed is missing now (the feed never shrinks silently)
+ *  - any row (feed or review) has an empty id, or an id another row (in either file) also uses
  */
 import { readFileSync, existsSync, statSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { isLiveSourceRow, nameKey } from "./rules.mjs";
 import { photoProblem, releaseCounts } from "./photo-rules.mjs";
 import { victimNamesIn } from "./victims.mjs";
+import { idProblems } from "./ids.mjs";
 
 const FILE = process.argv[2] || "data/harvest.json";
 const rows = JSON.parse(readFileSync(FILE, "utf8"));
@@ -32,6 +34,8 @@ for (const r of [...(Array.isArray(rows) ? rows : []), ...review]) {
   if (v.length) problems.push(`row (${r.name}): names a victim (${v.join(", ")}); run scripts/dedupe.mjs to replace it with a neutral description`);
 }
 if (!Array.isArray(rows) || rows.length === 0) problems.push("feed is empty or not an array");
+// Every row needs its own id (approve.mjs, photos and highlights look rows up by id).
+problems.push(...idProblems({ [FILE]: Array.isArray(rows) ? rows : [], "data/review.json": review }));
 for (const [i, r] of (Array.isArray(rows) ? rows : []).entries()) {
   const tag = `row ${i} (${r?.name ?? "?"})`;
   if (!r || typeof r !== "object") { problems.push(`${tag}: not an object`); continue; }

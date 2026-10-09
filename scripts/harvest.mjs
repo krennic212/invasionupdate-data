@@ -20,6 +20,7 @@
  * Writes data/harvest.json, data/review.json, data/harvest-status.json.
  * The workflow commits only when harvest.json or review.json actually changed.
  */
+import { uniqueId as makeUniqueId, rowIdBase } from "./ids.mjs";
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { scrubVictimNames } from "./victims.mjs";
 import { extractPeople, htmlBlocks, decode, toRow } from "./parse.mjs";
@@ -148,13 +149,9 @@ async function main() {
   const review = readJson(REVIEW, []);
   if (!Array.isArray(harvest) || !Array.isArray(review)) throw new Error("data files must be JSON arrays");
   const have = new Set([...harvest, ...review].map((r) => nameKey(r?.name)).filter(Boolean));
-  const ids = new Set(harvest.map((r) => r?.id).filter(Boolean));
-  const uniqueId = (id) => {
-    let out = id;
-    for (let n = 2; ids.has(out); n++) out = `${id}-${n}`;
-    ids.add(out);
-    return out;
-  };
+  // Ids are unique across feed AND review (scripts/ids.mjs); an empty id gets one in the house style.
+  const ids = new Set([...harvest, ...review].map((r) => r?.id).filter(Boolean));
+  const uniqueId = (id, row = {}) => makeUniqueId(String(id || "").trim() || rowIdBase(row), ids);
   const added = [];
   const toReview = [];
   const held = [];
@@ -167,13 +164,14 @@ async function main() {
     const { live, review: rv } = routeRows(pending);
     for (const r0 of live) {
       if (have.has(nameKey(r0.name))) continue;
-      const r = gate({ ...r0, id: uniqueId(r0.id || `pending-${nameKey(r0.name).replace(/ /g, "-")}`) }, holdReasonsForRow(r0));
+      const r = gate({ ...r0, id: uniqueId(r0.id || `pending-${nameKey(r0.name).replace(/ /g, "-")}`, r0) }, holdReasonsForRow(r0));
       harvest.unshift(r);
       have.add(nameKey(r.name));
       added.push(r.name);
     }
-    for (const r of rv) {
-      if (have.has(nameKey(r.name))) continue;
+    for (const r0 of rv) {
+      if (have.has(nameKey(r0.name))) continue;
+      const r = { ...r0, id: uniqueId(r0.id, r0) };
       review.unshift(r);
       have.add(nameKey(r.name));
       toReview.push(r.name);
@@ -201,7 +199,7 @@ async function main() {
       const row = toRow(hit, rel);
       const label = row.crime.slice(0, row.crime.indexOf(":"));
       const reasons = holdReasons({ name: hit.name, sentence: hit.sentence, title: rel.title, releaseText: rel.blocks.join(" "), label });
-      const gated = gate({ ...row, id: uniqueId(row.id) }, reasons);
+      const gated = gate({ ...row, id: uniqueId(row.id, row) }, reasons);
       if (gated.status === "pending") held.push(`${hit.name} (${gated.holdReason || "approval gate"})`);
       fresh.push(scrubVictimNames(gated).row);
       added.push(hit.name);

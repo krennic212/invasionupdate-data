@@ -41,6 +41,7 @@ import { buildMeta } from "./write-meta.mjs";
 import { writeSeverityFiles } from "./severity.mjs";
 import { scrubVictimNames } from "./victims.mjs";
 import { countryFor, cleanOrigin } from "./country.mjs";
+import { uniqueId as makeUniqueId, rowIdBase } from "./ids.mjs";
 
 const OFFICIAL = new Map(LIVE_X_HANDLES.map((h) => [h.toLowerCase(), h]));
 const TRUSTED = new Set(TRUSTED_REPORTER_X_HANDLES.map((h) => h.toLowerCase()));
@@ -243,9 +244,8 @@ export function scan(posts, { existing = [], picks = {} } = {}) {
       if (have.has(k)) { skipped.push(`${row.name} (already in feed/review)`); continue; }
       if (best.get(k) !== m) { skipped.push(`${row.name} (same person in another post this run)`); continue; }
       have.add(k);
-      let id = row.id;
-      for (let n = 2; ids.has(id); n++) id = `${row.id}-${n}`;
-      ids.add(id);
+      // Unique across feed + review + this run, even when one post names several people with the same slug.
+      const id = makeUniqueId(row.id || rowIdBase(row), ids);
       (isLive ? live : review).push({ ...row, id });
       // Every image of a live official post is a photo candidate (never silently dropped); the agent must
       // LOOK at each one and record a decision with x-photo.mjs (--reviewed or --none). Multi-person posts are
