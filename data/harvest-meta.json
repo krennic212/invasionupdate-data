@@ -1,14 +1,19 @@
 {
-  "updatedAt": "2026-10-09T20:56:29Z",
-  "rows": 227,
-  "approved": 226,
+  "updatedAt": "2026-10-09T20:57:16Z",
+  "rows": 233,
+  "approved": 232,
   "pending": 1,
   "photos": 54,
   "reviewRows": 751,
-  "lastAddedAt": "2026-10-09T20:56:29Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-10-09T20:57:15Z",
+  "lastAddedCount": 6,
   "lastAdded": [
-    "Alejandro Rojas Garcia"
+    "New York",
+    "Hsa Mu Na",
+    "Norberto Machada-Rodriguez",
+    "Said Ibrahim",
+    "Haikham Phimasone",
+    "Mohammed Al Nassar"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

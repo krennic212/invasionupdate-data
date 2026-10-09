@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-09",
   "windowDays": 7,
-  "total": 109,
+  "total": 114,
   "rows": [
     {
       "id": "dhs-20261008-ian-clive-burton",
@@ -50,6 +50,19 @@
         "Drug trafficking",
         "Assault / battery",
         "Burglary / theft"
+      ]
+    },
+    {
+      "id": "dhs-20261009-new-york",
+      "name": "New York",
+      "when": "9 Oct 2026",
+      "severity": 182,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Drug trafficking",
+        "Burglary / theft",
+        "DUI"
       ]
     },
     {
@@ -248,6 +261,17 @@
       ]
     },
     {
+      "id": "dhs-20261009-norberto-machada-rodriguez",
+      "name": "Norberto Machada-Rodriguez",
+      "when": "9 Oct 2026",
+      "severity": 126,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Drug trafficking"
+      ]
+    },
+    {
       "id": "dhs-20261007-carlos-arturo-zelaya-argueta",
       "name": "Carlos Arturo Zelaya-Argueta",
       "when": "7 Oct 2026",
@@ -268,28 +292,6 @@
         "Armed robbery / aggravated assault",
         "Drug trafficking",
         "Illegal entry / reentry"
-      ]
-    },
-    {
-      "id": "dhs-20261008-irvin-roblero-ortiz",
-      "name": "Irvin Roblero-Ortiz",
-      "when": "8 Oct 2026",
-      "severity": 122,
-      "severityReason": "Kidnapping / human trafficking",
-      "severityCrimes": [
-        "Kidnapping / human trafficking",
-        "Assault / battery"
-      ]
-    },
-    {
-      "id": "dhs-20261007-gonzalo-sanchez",
-      "name": "Gonzalo Sanchez",
-      "when": "7 Oct 2026",
-      "severity": 117,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "DUI"
       ]
     }
   ]
