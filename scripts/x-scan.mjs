@@ -10,7 +10,7 @@
  * includes.users via author_id, a `username` field, or its x.com `url`).
  *
  * Rules (same as the .gov harvest, see guards.mjs):
- *  - Only a post by an OFFICIAL_X_HANDLES account can go live (data/harvest.json, status "approved").
+ *  - Only a post by a LIVE_X_HANDLES account (official agency + trusted reporter) can go live (data/harvest.json, status "approved").
  *    Reporter / media / any other account -> data/review.json, never live.
  *  - A person becomes a row only when the post itself names them with non-citizen wording
  *    (parse.mjs extractPeople), or via an explicit pick whose sentence is verbatim in the post.
@@ -33,14 +33,16 @@ import { fileURLToPath } from "node:url";
 import { extractPeople, statusFrom, stripPriors, dateParts, slug, cityFrom } from "./parse.mjs";
 import { holdReasons } from "./guards.mjs";
 import { nameKey } from "./rules.mjs";
-import { OFFICIAL_X_HANDLES } from "./x-handles.mjs";
+import { LIVE_X_HANDLES, TRUSTED_REPORTER_X_HANDLES } from "./x-handles.mjs";
 import { buildMeta } from "./write-meta.mjs";
 import { scrubVictimNames } from "./victims.mjs";
 
-const OFFICIAL = new Map(OFFICIAL_X_HANDLES.map((h) => [h.toLowerCase(), h]));
+const OFFICIAL = new Map(LIVE_X_HANDLES.map((h) => [h.toLowerCase(), h]));
+const TRUSTED = new Set(TRUSTED_REPORTER_X_HANDLES.map((h) => h.toLowerCase()));
 
 export function agencyOf(handle) {
   const h = String(handle).toLowerCase();
+  if (TRUSTED.has(h)) return { label: "Trusted reporter", confirmedBy: `Reporter (@${handle})` };
   if (/^(ice|ero)/.test(h)) return { label: "ICE", confirmedBy: "ICE" };
   if (/^hsi/.test(h)) return { label: "HSI", confirmedBy: "ICE" };
   if (/^(dhs|spoxdhs|secmullindhs)/.test(h)) return { label: "DHS", confirmedBy: "DHS" };
@@ -185,7 +187,7 @@ export function scan(posts, { existing = [], picks = {} } = {}) {
       (isLive ? live : review).push({ ...row, id });
       // Photo only when the post names exactly one person and carries exactly one photo; the agent must look at it.
       const photos = (p.media || []).filter((m) => m.type === "photo" && m.url);
-      if (isLive && list.length === 1 && photos.length === 1) photoCandidates.push({ id, name: row.name, post: row.sourceUrl, image: photos[0].url });
+      if (isLive && !TRUSTED.has(String(p.username).toLowerCase()) && list.length === 1 && photos.length === 1) photoCandidates.push({ id, name: row.name, post: row.sourceUrl, image: photos[0].url });
     }
   }
   return { live, review, skipped, photoCandidates, maxId: maxId ? String(maxId) : "" };

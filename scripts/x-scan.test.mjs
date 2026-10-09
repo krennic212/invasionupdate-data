@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { isOfficialXPostUrl, isLiveSourceRow, isOfficialRow } from "./rules.mjs";
+import { isOfficialXPostUrl, isLiveSourceRow, isOfficialRow, isTrustedXPostUrl } from "./rules.mjs";
 import { scan, normalizePosts } from "./x-scan.mjs";
 import { reserveCalls } from "./x-usage.mjs";
 
@@ -19,8 +19,19 @@ test("official agency X post URL passes the pre-publish source check (case-insen
   assert.equal(isOfficialRow({ sourceUrl: "https://x.com/ICEgov/status/1" }), false);
 });
 
-test("reporter / media handles fail", () => {
-  for (const h of ["BillMelugin_", "billmelugin_", "AliBradleyTV", "FoxNews", "nypost", "libsoftiktok", "StephenM"]) {
+test("trusted reporter @BillMelugin_ passes the live-source check (Krennic decision 2026-10-09) but is not an official agency / photo source", () => {
+  for (const u of ["https://x.com/BillMelugin_/status/2108569012669907166", "https://x.com/billmelugin_/status/1", "https://twitter.com/BILLMELUGIN_/status/1/"]) {
+    assert.equal(isLiveSourceRow({ sourceUrl: u }), true, u);
+    assert.equal(isTrustedXPostUrl(u), true, u);
+    assert.equal(isOfficialXPostUrl(u), false, u);
+  }
+  for (const u of ["https://x.com/BillMelugin/status/1", "https://x.com/BillMelugin__/status/1", "https://x.com/BillMelugin_", "https://x.com/BillMelugin_/status/1/photo/1", "http://x.com/BillMelugin_/status/1"]) {
+    assert.equal(isLiveSourceRow({ sourceUrl: u }), false, u);
+  }
+});
+
+test("other reporter / media handles still fail", () => {
+  for (const h of ["AliBradleyTV", "FoxNews", "foxnewspolitics", "JennieSTaer", "nypost", "libsoftiktok", "StephenM", "BillMelugin", "BillMelugin__"]) {
     assert.equal(isOfficialXPostUrl(`https://x.com/${h}/status/123`), false, h);
     assert.equal(isLiveSourceRow({ sourceUrl: `https://x.com/${h}/status/123` }), false, h);
   }
@@ -61,7 +72,7 @@ const post = (id, username, text) => ({ id, username, created_at: "2026-10-08T15
 test("x-scan: official post goes live verbatim; reporter, minor, at-large, no-status go to review; dedupe by name", () => {
   const posts = normalizePosts([
     post("11", "ERONewYork", "ERO New York arrested Jose Luis Ramos, a criminal illegal alien from Ecuador charged with assault. https://t.co/x"),
-    post("12", "BillMelugin_", "ICE arrested Pedro Gomez Ruiz, an illegal alien from Honduras charged with robbery."),
+    post("12", "AliBradleyTV", "ICE arrested Pedro Gomez Ruiz, an illegal alien from Honduras charged with robbery."),
     post("13", "ICEgov", "ICE arrested Mario Lopez Diaz, 16, a Mexican national charged with robbery."),
     post("14", "EROHouston", "Carlos Mendez Soto, an illegal alien from Mexico charged with murder, remains at large."),
     post("15", "ICEgov", "ICE arrested Jane Existing, a Mexican national charged with theft."),
@@ -127,12 +138,32 @@ test("pick hold: a reviewer hold sends the row to review even when the guards pa
   assert.ok(held && held.status === "pending" && /reviewer hold/.test(held.holdReason));
 });
 
-test("x-queries: every official handle is in exactly one query and each query fits the X limit", async () => {
+test("x-queries: every official handle and trusted reporter is in exactly one query and each query fits the X limit", async () => {
   const { buildQueries, MAX_QUERY } = await import("./x-queries.mjs");
-  const { OFFICIAL_X_HANDLES } = await import("./x-handles.mjs");
   const qs = buildQueries();
   for (const q of qs) assert.ok(q.length <= MAX_QUERY);
   const all = qs.flatMap((q) => [...q.matchAll(/from:([A-Za-z0-9_]+)/g)].map((m) => m[1]));
-  assert.deepEqual([...all].sort(), [...OFFICIAL_X_HANDLES].sort());
-  assert.ok(!all.some((h) => /^BillMelugin_$/i.test(h)));
+  const { LIVE_X_HANDLES } = await import("./x-handles.mjs");
+  assert.deepEqual([...all].sort(), [...LIVE_X_HANDLES].sort());
+  assert.ok(all.includes("BillMelugin_"), "trusted reporter is scanned");
+  for (const h of ["AliBradleyTV", "FoxNews", "nypost"]) assert.ok(!all.includes(h), h);
+});
+
+test("x-scan: trusted reporter @BillMelugin_ goes live, guards still hold, no photo candidate", () => {
+  const posts = normalizePosts([
+    { ...post("21", "BillMelugin_", "ICE arrested Pedro Gomez Ruiz, an illegal alien from Honduras charged with robbery."), media: [{ type: "photo", url: "https://pbs.twimg.com/media/a.jpg" }] },
+    post("22", "BillMelugin_", "ICE arrested Mario Lopez Diaz, 16, a Mexican national charged with robbery."),
+    post("23", "BillMelugin_", "Carlos Mendez Soto, an illegal alien from Mexico charged with murder, remains at large."),
+    post("24", "BillMelugin_", "Police arrested Juan Perez Lara for robbery."),
+  ]);
+  const { live, review, photoCandidates } = scan(posts, { existing: [] });
+  assert.deepEqual(live.map((r) => r.name), ["Pedro Gomez Ruiz"]);
+  assert.equal(live[0].sourceUrl, "https://x.com/BillMelugin_/status/21");
+  assert.equal(live[0].crime, "Charged: ICE arrested Pedro Gomez Ruiz, an illegal alien from Honduras charged with robbery.");
+  assert.equal(live[0].photo, "");
+  assert.ok(isLiveSourceRow(live[0]));
+  assert.deepEqual((photoCandidates || []).length, 0);
+  assert.ok(review.every((x) => x.status === "pending" && x.holdReason));
+  assert.ok(review.some((x) => x.name === "Mario Lopez Diaz"));
+  assert.ok(review.some((x) => x.name === "Carlos Mendez Soto"));
 });

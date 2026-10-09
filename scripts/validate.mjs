@@ -3,7 +3,8 @@
  * Guardrail check run before anything is committed or published. Fails the job if:
  *  - data/harvest.json is not a non-empty array
  *  - any live row lacks a name, an official source link (official federal .gov page, or a
- *    https://x.com/<handle>/status/<id> post by an OFFICIAL_X_HANDLES agency account), or a date
+ *    https://x.com/<handle>/status/<id> post by an OFFICIAL_X_HANDLES agency account or a trusted reporter
+ *    in TRUSTED_REPORTER_X_HANDLES, Krennic decision 2026-10-09), or a date
  *  - any live row has a status other than "approved" / "pending"
  *  - any row (feed or review) still names a victim (scripts/victims.mjs; dedupe.mjs scrubs them)
  *  - any row has photoHold and a photo, or a release photo has no visual check ("reviewed") on record
@@ -35,7 +36,7 @@ for (const [i, r] of (Array.isArray(rows) ? rows : []).entries()) {
   const tag = `row ${i} (${r?.name ?? "?"})`;
   if (!r || typeof r !== "object") { problems.push(`${tag}: not an object`); continue; }
   if (typeof r.name !== "string" || !r.name.trim()) problems.push(`${tag}: no name`);
-  if (!isLiveSourceRow(r)) problems.push(`${tag}: no official federal source link (.gov page or official agency X post)`);
+  if (!isLiveSourceRow(r)) problems.push(`${tag}: no live source link (.gov page, official agency X post, or trusted reporter post)`);
   if (typeof r.when !== "string" || !r.when.trim()) problems.push(`${tag}: no date`);
   const pp = photoProblem(r, { counts, checks, fileBytes });
   if (pp) problems.push(`${tag}: ${pp}`);

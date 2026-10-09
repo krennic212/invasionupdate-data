@@ -39,9 +39,20 @@ export const OFFICIAL_X_HANDLES = [
   "usattydunavant", "usattyRaybould", "usattyreitz", "usattysimmons", "usattyholyoak", "usatty_capito",
 ];
 
+/**
+ * Trusted reporter accounts (Krennic decision 2026-10-09): NOT agency accounts, but their posts may
+ * put rows live like an official agency post. Every other guard still applies (verbatim wording,
+ * stage never overstated, minor / at-large / no non-citizen wording -> held pending, victim names
+ * stripped). Photos stay official-only: a trusted reporter's post never supplies a photo.
+ */
+export const TRUSTED_REPORTER_X_HANDLES = ["BillMelugin_"];
+
+/** Every X account whose posts may go live: official agency accounts + trusted reporters. */
+export const LIVE_X_HANDLES = [...OFFICIAL_X_HANDLES, ...TRUSTED_REPORTER_X_HANDLES];
+
 /** In HARVEST_HANDLES but NOT official agency accounts: their posts always go to review.json. */
 export const NOT_OFFICIAL_X_HANDLES = [
-  "BillMelugin_", "AliBradleyTV", "FoxNews", "foxnewspolitics", "JennieSTaer", "realDailyWire",
+  "AliBradleyTV", "FoxNews", "foxnewspolitics", "JennieSTaer", "realDailyWire",
   "JustTheNews", "californiapost", "nypost", "MassDailyNews", "RapidResponse47", "libsoftiktok",
   "StephenM", "MatthewTrag", "ScottPresler",
 ];

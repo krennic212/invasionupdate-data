@@ -4,6 +4,17 @@ X is read only through the X MCP tools (`x` namespace). Scripts in this repo nev
 saved responses into rows. Hard cap: **999 X calls per CT day**, counted in
 `/workspace/invasionupdate-xscan/usage-YYYY-MM-DD.json` (every call counts, including 429s and empty pages).
 
+## Trusted reporter: Krennic decision 2026-10-09
+
+`@BillMelugin_` (Fox News reporter, not an agency account) is a **trusted reporter**: his X posts may put rows
+live like an official agency post (`TRUSTED_REPORTER_X_HANDLES` / `LIVE_X_HANDLES` in `scripts/x-handles.mjs`,
+`isLiveSourceRow` in `scripts/rules.mjs`, and his handle is in the scan queries from `scripts/x-queries.mjs`).
+Every other guard still applies to his rows: verbatim wording, the stage is never overstated, minors / people at large /
+people not stated to be non-citizens are held pending, and victim names are stripped. If an official source also
+exists, the official URL is used as `sourceUrl`. Photos stay official-only: his posts never supply a photo
+(no photo candidates, `x-photo.mjs` refuses them). All other reporter / news / activist handles
+(`NOT_OFFICIAL_X_HANDLES`) still go to review.json only.
+
 ## Every scheduled run (every 30 min)
 
 0. `cd /workspace/invasionupdate-data && git pull --rebase`

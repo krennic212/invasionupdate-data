@@ -10,7 +10,7 @@ This repo holds only the harvest scripts, the workflow, and the data files. It h
   `status`, which is `"approved"` or `"pending"`.
 - `data/harvest-meta.json`: `{ updatedAt, rows, approved, pending, photos, reviewRows, lastAddedAt, lastAddedCount, lastAdded, source }`. `updatedAt` is the last time the feed changed (new rows, an approval, or a photo). `lastAddedAt` / `lastAddedCount` / `lastAdded` are the time and names of the last run that actually added people; runs that add nobody keep the previous values.
 - `data/harvest-status.json`: notes from the last run that changed something.
-- `data/review.json`: rows from reporter / news / non-agency X posts and news sites, plus official X rows held by a guard (minor, at large, non-citizen not stated, stage). These rows are **never** published by this feed and are kept here for review only.
+- `data/review.json`: rows from reporter / news / non-agency X posts (except the trusted reporter @BillMelugin_, Krennic decision 2026-10-09) and news sites, plus official X rows held by a guard (minor, at large, non-citizen not stated, stage). These rows are **never** published by this feed and are kept here for review only.
 - Official agency X posts (handles in `scripts/x-handles.mjs`, from HARVEST_HANDLES minus reporters / media / activists) **do** go live, approved, via `scripts/x-scan.mjs` (see `docs/x-scan.md`). `sourceUrl` is the `https://x.com/<handle>/status/<id>` post.
 - `data/pending.json`: optional intake. Rows dropped here are sorted on the next run. Official sources go to the feed, and anything else goes to `review.json`.
 
@@ -18,7 +18,7 @@ Served at **https://krennic212.github.io/invasionupdate-data/harvest.json** (plu
 
 ## Rules the scripts enforce
 
-- Only official federal or agency sources go live.
+- Only official federal or agency sources go live, plus the trusted reporter @BillMelugin_ (trusted reporter: Krennic decision 2026-10-09; every other guard still applies and his posts never supply photos, see docs/x-scan.md).
 - A person is added only when the release itself names them **and** describes them with its own non-citizen wording
   ("illegal alien", "national", "citizen of", "unlawfully present"). Immigration status is never inferred.
 - The charge label is the release's sentence, copied word for word (DOJ/DHS wording included). The `Charged` / `Convicted` / `Removed`

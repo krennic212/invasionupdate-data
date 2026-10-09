@@ -1,14 +1,28 @@
 {
-  "updatedAt": "2026-10-09T13:38:34Z",
-  "rows": 198,
-  "approved": 195,
+  "updatedAt": "2026-10-09T15:06:27Z",
+  "rows": 213,
+  "approved": 210,
   "pending": 3,
   "photos": 54,
-  "reviewRows": 754,
-  "lastAddedAt": "2026-10-09T12:31:30Z",
-  "lastAddedCount": 1,
+  "reviewRows": 751,
+  "lastAddedAt": "2026-10-09T15:06:27Z",
+  "lastAddedCount": 15,
   "lastAdded": [
-    "Maycon Eleazar De Jesus Barrios"
+    "Felix Jeronimo-Rojas",
+    "Miguel Francisco Mora Nunez",
+    "Christhian Aybar-Berroa",
+    "Jose Antonio Ibarra",
+    "Darwin Andres Gomez Izquiel",
+    "Bhator Konah Bryant",
+    "Edvile Vaidoto Edmunds",
+    "Joshua Frederick Kofi Edzie",
+    "Alan Barbu Kargbo",
+    "Paul Kras",
+    "Fadil Rasim Ozegovic",
+    "Aparecido Donizetti Padovan",
+    "Chis Adam Pettiquoi",
+    "Christian Liam Schenk",
+    "Hester Sophia Weihmann"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
