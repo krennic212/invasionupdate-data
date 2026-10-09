@@ -76,7 +76,10 @@ test("photo rejected: missing file, hotlink, too big, held, pending, X source, m
   assert.match(photoProblem(good, ctx({ fileBytes: () => 400000 })), /max/);
   assert.match(photoProblem({ ...good, holdReason: "possible minor / juvenile" }, ctx()), /held/);
   assert.match(photoProblem({ ...good, status: "pending" }, ctx()), /not approved/);
-  assert.match(photoProblem({ ...good, sourceUrl: "https://x.com/ICEgov/status/1" }, ctx()), /official source/);
+  // reporter / news X posts are never an official photo source
+  assert.match(photoProblem({ ...good, sourceUrl: "https://x.com/BillMelugin_/status/1" }, ctx()), /official source/);
+  // an official X post still needs its own one-row count, its own image and its own reviewed check
+  assert.ok(photoProblem({ ...good, sourceUrl: "https://x.com/ICEgov/status/1" }, ctx()));
   assert.match(photoProblem(good, ctx({ counts: releaseCounts([good, { ...good, name: "Other Person", photo: "" }]) })), /more than one row/);
   assert.match(photoProblem(good, ctx({ checks: {} })), /no single-person photo check/);
   assert.match(photoProblem({ ...good, photoSourceUrl: "https://pbs.twimg.com/x.jpg" }, ctx()), /photoSourceUrl/);
@@ -93,4 +96,33 @@ test("dedupe keeps repo-hosted photos on feed rows, blanks everything else", () 
     { ...good, name: "C", reviewReason: "X post", photo: `${PHOTO_PREFIX}c.jpg` },
   ]);
   assert.deepEqual(rows.map((r) => r.photo), [good.photo, "", ""]);
+});
+
+// ---- official agency X post photos ----
+const POST = "https://x.com/EROHouston/status/2108000000000000001";
+const IMG = "https://pbs.twimg.com/media/Gabc123XYZ.jpg";
+const xGood = { name: "Juan Carlos Perez", crime: "Charged: ERO Houston arrested Juan Carlos Perez, a criminal illegal alien from Mexico charged with assault.", usa: "ICE X post Oct 8, 2026 (@EROHouston)", text: "@EROHouston Oct 8, 2026, as posted: ERO Houston arrested Juan Carlos Perez, a criminal illegal alien from Mexico charged with assault.", status: "approved", sourceUrl: POST, photo: `${PHOTO_PREFIX}x-1.jpg`, photoSourceUrl: IMG };
+const xctx = (over = {}) => ({
+  counts: releaseCounts([xGood]),
+  checks: { [urlKey(POST)]: { result: "photo", file: "x-1.jpg", image: IMG, reviewed: "single-person booking photo of the named person" } },
+  fileBytes: (f) => (f === "x-1.jpg" ? 30000 : null),
+  ...over,
+});
+
+test("official agency X post photo with a reviewed check passes", () => {
+  assert.equal(photoProblem(xGood, xctx()), "");
+});
+
+test("X photo rejected: reporter post, non-X image, unreviewed, multi-person post, held / minor, pending, hotlink", () => {
+  assert.match(photoProblem({ ...xGood, sourceUrl: "https://x.com/BillMelugin_/status/2108000000000000001" }, xctx()), /official source/);
+  assert.match(photoProblem({ ...xGood, sourceUrl: "https://x.com/EROHouston1/status/2108000000000000001" }, xctx()), /official source/);
+  assert.match(photoProblem({ ...xGood, photoSourceUrl: "https://nypost.com/a.jpg" }, xctx()), /pbs\.twimg\.com/);
+  assert.match(photoProblem({ ...xGood, photoSourceUrl: "https://pbs.twimg.com/profile_images/1/a.jpg" }, xctx()), /pbs\.twimg\.com/);
+  assert.match(photoProblem(xGood, xctx({ checks: { [urlKey(POST)]: { result: "photo", file: "x-1.jpg", image: IMG } } })), /reviewed/);
+  assert.match(photoProblem(xGood, xctx({ checks: {} })), /no single-person photo check/);
+  assert.match(photoProblem(xGood, xctx({ counts: releaseCounts([xGood, { ...xGood, name: "Other Person", photo: "" }]) })), /more than one row/);
+  assert.match(photoProblem({ ...xGood, crime: "Charged: ERO Houston arrested Juan Carlos Perez, 16, a Mexican national charged with assault." }, xctx()), /guard/);
+  assert.match(photoProblem({ ...xGood, holdReason: "possible minor / juvenile" }, xctx()), /held/);
+  assert.match(photoProblem({ ...xGood, status: "pending" }, xctx()), /not approved/);
+  assert.match(photoProblem({ ...xGood, photo: IMG }, xctx()), /Pages/);
 });

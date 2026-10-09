@@ -10,7 +10,8 @@ This repo holds only the harvest scripts, the workflow, and the data files. It h
   `status`, which is `"approved"` or `"pending"`.
 - `data/harvest-meta.json`: `{ updatedAt, rows, approved, pending, photos, reviewRows, lastAddedAt, lastAddedCount, lastAdded, source }`. `updatedAt` is the last time the feed changed (new rows, an approval, or a photo). `lastAddedAt` / `lastAddedCount` / `lastAdded` are the time and names of the last run that actually added people; runs that add nobody keep the previous values.
 - `data/harvest-status.json`: notes from the last run that changed something.
-- `data/review.json`: rows from X posts, reporters, and news sites. These rows are **never** published by this feed and are kept here for review only.
+- `data/review.json`: rows from reporter / news / non-agency X posts and news sites, plus official X rows held by a guard (minor, at large, non-citizen not stated, stage). These rows are **never** published by this feed and are kept here for review only.
+- Official agency X posts (handles in `scripts/x-handles.mjs`, from HARVEST_HANDLES minus reporters / media / activists) **do** go live, approved, via `scripts/x-scan.mjs` (see `docs/x-scan.md`). `sourceUrl` is the `https://x.com/<handle>/status/<id>` post.
 - `data/pending.json`: optional intake. Rows dropped here are sorted on the next run. Official sources go to the feed, and anything else goes to `review.json`.
 
 Served at **https://krennic212.github.io/invasionupdate-data/harvest.json** (plus `harvest-meta.json` and `harvest-status.json`). `review.json` is not deployed.
@@ -28,7 +29,7 @@ Served at **https://krennic212.github.io/invasionupdate-data/harvest.json** (plu
   - its official release page produced exactly one row and names exactly one person, and the title doesn't describe several defendants;
   - the release body has one image whose alt text, title, caption or file name names that person (or says booking/mugshot). Seals, logos, banners, theme art and generic or og:image defaults are skipped.
 
-  The image is copied to `data/photos/<id>.jpg` (300 KB or less) and served from this Pages site. `photo` holds the Pages URL and `photoSourceUrl` holds the original. Rows from X or news never get photos.
+  The image is copied to `data/photos/<id>.jpg` (300 KB or less) and served from this Pages site. `photo` holds the Pages URL and `photoSourceUrl` holds the original. Rows from reporter / news posts never get photos. An official agency X row may carry the post's own image only after a person / agent has looked at it and confirmed one person's headshot or booking photo (`scripts/x-photo.mjs`), with the same one-row, unheld, repo-hosted rules.
   Each release is checked once, and the result is stored in `data/photo-checks.json`. `scripts/validate.mjs` fails the run if any photo breaks these rules or its file is missing.
 - The feed never shrinks. `scripts/validate.mjs` fails the run if any existing row would disappear.
 

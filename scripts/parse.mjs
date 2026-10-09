@@ -180,6 +180,8 @@ export function extractPeople(blocks) {
 export function stripPriors(text) {
   return String(text || "")
     .replace(/\b(previously|prior|earlier|already|twice|once|formerly)\s+(been\s+)?(removed|deported|convicted)\b/gi, "prior-history")
+    .replace(/\b(\d+|two|three|four|five|six|multiple|several)[- ]times?[- ](previously[- ])?(removed|deported)\b/gi, "prior-history")
+    .replace(/\b(removed|deported)\s+(from\s+the\s+(U\.S\.|United States)\s+)?(at least\s+)?(once|twice|thrice|\d+|two|three|four|five|six|multiple|several)(\s+times)?\b/gi, "prior-history")
     .replace(/\bprior\s+(\w+\s+){0,2}convictions?\b/gi, "prior-history")
     .replace(/\bcriminal (history|record)\b/gi, "prior-history");
 }
@@ -187,7 +189,7 @@ export function stripPriors(text) {
 export const CONVICT_WORDS = /\b(convicted|convictions?|sentenced|pleaded guilty|pled guilty|pleads guilty|found guilty)\b/i;
 export const CHARGE_WORDS = /\b(charged|charges|charging|indicted|indictment|arrested|arrests?|accused|alleged|allegedly|complaint|wanted|detained|apprehended)\b/i;
 const REMOVE_WORDS = /\b(removed|deported|repatriated)\b/i;
-const NOT_YET_REMOVED = /\bpending (removal|immigration)|in ICE custody|awaiting removal|will be (removed|deported)|processed for (removal|deportation)/i;
+const NOT_YET_REMOVED = /\bpending (removal|immigration)|in ICE custody|awaiting removal|will be (removed|deported)|processed for (removal|deportation)|ordered (removed|deported)/i;
 
 /**
  * Stage label from the source's own words. Rules (stage is never escalated):

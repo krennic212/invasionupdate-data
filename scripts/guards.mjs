@@ -73,7 +73,7 @@ export function holdReasons({ name, sentence, title = "", releaseText = "", labe
 /** Re-check an existing row from its own fields (crime = "<Label>: <verbatim sentence>", usa = "... release <date>: <title>"). */
 export function holdReasonsForRow(row) {
   const crime = String(row?.crime || "");
-  const m = crime.match(/^(Removed|Convicted|Charged|As posted):\s*([\s\S]*)$/);
+  const m = crime.match(/^(Removed|Convicted|Charged|Arrested|As posted):\s*([\s\S]*)$/);
   const label = m ? m[1] : "";
   const sentence = m ? m[2] : crime;
   const title = String(row?.usa || "").replace(/^[^:]*release [A-Z][a-z]{2} \d{1,2}, \d{4}:\s*/, "");

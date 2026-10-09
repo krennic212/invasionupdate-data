@@ -9,9 +9,16 @@
  *    banner, flag, icon, social or generic image, and its alt / title / caption / file name names
  *    the person (first + last name) or says booking / mugshot.
  * The image is copied into data/photos/ and served from GitHub Pages; the feed never hotlinks.
+ *
+ * Official agency X posts (OFFICIAL_X_HANDLES, see rules.mjs) may also carry a photo, with the same
+ * approved / unheld / one-row-per-post / repo-hosted / <= 300 KB / check-on-record rules, plus:
+ *  - photoSourceUrl is the post's own image on X's media host (https://pbs.twimg.com/media/...);
+ *  - the check on record (keyed by the post URL) has result "photo", the same file and image, and
+ *    a reviewer note that the image is a single-person headshot / booking photo of the named person
+ *    (scripts/x-photo.mjs writes it). Reporter / news posts never qualify (they are not official).
  */
 import { decode } from "./parse.mjs";
-import { nameKey, urlsIn, isOfficialUrl } from "./rules.mjs";
+import { nameKey, urlsIn, isOfficialUrl, isOfficialXPostUrl } from "./rules.mjs";
 import { holdReasonsForRow } from "./guards.mjs";
 
 export const PAGES_BASE = "https://krennic212.github.io/invasionupdate-data/";
@@ -37,11 +44,21 @@ export function urlKey(url) {
   }
 }
 
-/** How many rows (feed + review) cite each official release URL. */
+/** Official X media host only (the image attached to the official post). */
+export function isXMediaUrl(url) {
+  return /^https:\/\/pbs\.twimg\.com\/media\/[A-Za-z0-9_-]+(\.(jpe?g|png|webp))?(\?format=(jpg|png|webp)(&name=\w+)?)?$/i.test(String(url || ""));
+}
+
+/** The source a photo is tied to: the official .gov release, else the official agency X post. */
+export function photoReleaseOf(row) {
+  return officialUrlOf(row) || urlsIn(row?.sourceUrl).find(isOfficialXPostUrl) || "";
+}
+
+/** How many rows (feed + review) cite each official release URL / official X post URL. */
 export function releaseCounts(rows) {
   const n = new Map();
   for (const r of rows) {
-    for (const u of urlsIn(r?.sourceUrl).filter(isOfficialUrl)) {
+    for (const u of urlsIn(r?.sourceUrl).filter((x) => isOfficialUrl(x) || isOfficialXPostUrl(x))) {
       const k = urlKey(u);
       n.set(k, (n.get(k) || 0) + 1);
     }
@@ -154,11 +171,15 @@ export function photoProblem(row, ctx) {
   if (row.status !== "approved" || row.holdReason) return "photo on a row that is not approved or is held by a guard";
   const g = holdReasonsForRow(row);
   if (g.length) return `photo withheld by guard rule (${g.join("; ")})`;
-  const rel = officialUrlOf(row);
+  const rel = photoReleaseOf(row);
   if (!rel) return "photo on a row without an official source";
+  const viaX = !isOfficialUrl(rel);
   if ((ctx.counts.get(urlKey(rel)) || 0) !== 1) return "photo on a row whose release has more than one row";
-  if (!isOfficialUrl(String(row.photoSourceUrl || ""))) return "photoSourceUrl is not an official federal URL";
+  if (viaX) {
+    if (!isXMediaUrl(row.photoSourceUrl)) return "photoSourceUrl is not the official X post's own image (pbs.twimg.com/media)";
+  } else if (!isOfficialUrl(String(row.photoSourceUrl || ""))) return "photoSourceUrl is not an official federal URL";
   const chk = ctx.checks[urlKey(rel)];
   if (!chk || chk.result !== "photo" || chk.file !== file) return "no single-person photo check on record for this release";
+  if (viaX && (chk.image !== row.photoSourceUrl || !chk.reviewed)) return "no reviewed single-person photo check on record for this X post";
   return "";
 }

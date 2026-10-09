@@ -2,7 +2,8 @@
 /**
  * Guardrail check run before anything is committed or published. Fails the job if:
  *  - data/harvest.json is not a non-empty array
- *  - any live row lacks a name, an official federal source link, or a date
+ *  - any live row lacks a name, an official source link (official federal .gov page, or a
+ *    https://x.com/<handle>/status/<id> post by an OFFICIAL_X_HANDLES agency account), or a date
  *  - any live row has a status other than "approved" / "pending"
  *  - any row carries a photo that is not allowed: a photo is allowed only on an approved,
  *    unheld, official row whose release produced exactly one row, with a single-person photo
@@ -11,7 +12,7 @@
  */
 import { readFileSync, existsSync, statSync } from "node:fs";
 import { execFileSync } from "node:child_process";
-import { isOfficialRow, nameKey } from "./rules.mjs";
+import { isLiveSourceRow, nameKey } from "./rules.mjs";
 import { photoProblem, releaseCounts } from "./photo-rules.mjs";
 
 const FILE = process.argv[2] || "data/harvest.json";
@@ -27,7 +28,7 @@ for (const [i, r] of (Array.isArray(rows) ? rows : []).entries()) {
   const tag = `row ${i} (${r?.name ?? "?"})`;
   if (!r || typeof r !== "object") { problems.push(`${tag}: not an object`); continue; }
   if (typeof r.name !== "string" || !r.name.trim()) problems.push(`${tag}: no name`);
-  if (!isOfficialRow(r)) problems.push(`${tag}: no official federal source link`);
+  if (!isLiveSourceRow(r)) problems.push(`${tag}: no official federal source link (.gov page or official agency X post)`);
   if (typeof r.when !== "string" || !r.when.trim()) problems.push(`${tag}: no date`);
   const pp = photoProblem(r, { counts, checks, fileBytes });
   if (pp) problems.push(`${tag}: ${pp}`);
