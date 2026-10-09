@@ -27,7 +27,8 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "approved"
+    "status": "pending",
+    "holdReason": "not a person: parser read place name from headline"
   },
   {
     "name": "Hsa Mu Na",

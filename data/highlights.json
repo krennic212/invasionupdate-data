@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-09",
   "windowDays": 7,
-  "total": 114,
+  "total": 113,
   "rows": [
     {
       "id": "dhs-20261008-ian-clive-burton",
@@ -50,19 +50,6 @@
         "Drug trafficking",
         "Assault / battery",
         "Burglary / theft"
-      ]
-    },
-    {
-      "id": "dhs-20261009-new-york",
-      "name": "New York",
-      "when": "9 Oct 2026",
-      "severity": 182,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Drug trafficking",
-        "Burglary / theft",
-        "DUI"
       ]
     },
     {
@@ -292,6 +279,17 @@
         "Armed robbery / aggravated assault",
         "Drug trafficking",
         "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "dhs-20261008-irvin-roblero-ortiz",
+      "name": "Irvin Roblero-Ortiz",
+      "when": "8 Oct 2026",
+      "severity": 122,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Assault / battery"
       ]
     }
   ]
