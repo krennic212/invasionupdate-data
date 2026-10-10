@@ -1,5 +1,32 @@
 [
   {
+    "name": "Wilfredo Sanchez",
+    "city": "Not stated",
+    "crime": "Arrested: ICE Seattle arrested illegal alien Wilfredo Sanchez, 49, of Honduras.",
+    "usa": "ICE X post Oct 10, 2026 (@EROSeattle)",
+    "foreign": "Not stated in post",
+    "picked": "10/10/2026 (@EROSeattle post)",
+    "entered": "Not stated",
+    "office": "EROSeattle",
+    "id": "x-2109026189880836238-wilfredo-sanchez",
+    "when": "10 Oct 2026",
+    "severity": 23,
+    "severityReason": "DUI",
+    "severityCrimes": [
+      "DUI"
+    ],
+    "text": "@EROSeattle Oct 10, 2026, as posted: ICE Seattle arrested illegal alien Wilfredo Sanchez, 49, of Honduras. Arrested for DUI by Washington State Patrol in 2019, served 2 yrs probation and other restrictions. Now will remain in ICE custody pending return to Honduras.",
+    "photo": "",
+    "via": "@EROSeattle 2109026189880836238",
+    "sourceUrl": "https://x.com/EROSeattle/status/2109026189880836238",
+    "voting": false,
+    "origin": "Honduras",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved"
+  },
+  {
     "name": "Joel Velazco-Carrizosa",
     "city": "Not stated",
     "crime": "Arrested: ICE New Orleans arrested Joel Velazco-Carrizosa, an illegal alien from Mexico.",
