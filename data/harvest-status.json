@@ -1,21 +1,14 @@
 {
-  "checkedAt": 1791584646058,
-  "checkedAtIso": "2026-10-09T22:24:06.058Z",
-  "added": [
-    "Efrain Antonio Avalos",
-    "Victor Hugo Gutierrez De La Torre",
-    "Justin Jimenez"
-  ],
+  "checkedAt": 1791598196702,
+  "checkedAtIso": "2026-10-10T02:09:56.702Z",
+  "added": [],
   "addedStatus": "approved",
-  "heldPending": [
-    "Efrain Antonio Avalos (not stated to be a non-citizen)",
-    "Justin Jimenez (not stated to be a non-citizen)"
-  ],
+  "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 102,
+  "scannedReleases": 97,
   "error": null,
-  "note": "Added 3 as approved: Efrain Antonio Avalos, Victor Hugo Gutierrez De La Torre, Justin Jimenez",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

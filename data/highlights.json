@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-09",
   "windowDays": 7,
-  "total": 130,
+  "total": 127,
   "rows": [
     {
       "id": "dhs-20261008-ian-clive-burton",
@@ -131,19 +131,6 @@
       "severityCrimes": [
         "Rape / sexual assault",
         "Armed robbery / aggravated assault"
-      ]
-    },
-    {
-      "id": "x-2106368675884503148-juan-aguilar-naranjo",
-      "name": "Juan Aguilar Naranjo",
-      "when": "3 Oct 2026",
-      "severity": 158,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Assault / battery",
-        "Burglary / theft",
-        "Drug possession"
       ]
     },
     {
@@ -291,6 +278,18 @@
       "severityCrimes": [
         "Sexual abuse of an animal",
         "Drug trafficking"
+      ]
+    },
+    {
+      "id": "dhs-20261005-abraham-leon-aguirre",
+      "name": "Abraham Leon-Aguirre",
+      "when": "5 Oct 2026",
+      "severity": 125,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Drug trafficking",
+        "Illegal entry / reentry"
       ]
     }
   ]
