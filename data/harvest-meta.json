@@ -1,24 +1,14 @@
 {
-  "updatedAt": "2026-10-10T02:09:57Z",
-  "rows": 252,
-  "approved": 248,
+  "updatedAt": "2026-10-10T12:47:40Z",
+  "rows": 253,
+  "approved": 249,
   "pending": 4,
   "photos": 66,
   "reviewRows": 751,
-  "lastAddedAt": "2026-10-09T22:48:20Z",
-  "lastAddedCount": 11,
+  "lastAddedAt": "2026-10-10T12:47:22Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Anthony Alfredo Moreno",
-    "Angel Agusto De Leon",
-    "Germis Arquimides Santos Santos",
-    "Juan Jose Morales-Colindres",
-    "Wilson Omar Santos Paz",
-    "Jefferson Avimael Mendoza-Sifuentes",
-    "Yung Ho Lo",
-    "Dimeir Cruz-Velasquez",
-    "Francis Omar Ramirez Lopez",
-    "Marcos Antonio Pandy-Castillo",
-    "Anderson Smith Sisalima Gualan"
+    "Juan Leonardo Parra Altamirano"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

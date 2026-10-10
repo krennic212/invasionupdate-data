@@ -865,5 +865,11 @@
     "image": "https://pbs.twimg.com/media/HUOOSyBW0AAywz4?format=png&name=orig",
     "bytes": 6391,
     "reviewed": "Viewed image: booking photo of one adult man with beard, white tee, plain wall; no text, no other people, no child"
+  },
+  "x.com/eroboston/status/2108880723612766243": {
+    "checkedAt": "2026-10-10T12:47:40.603Z",
+    "name": "Juan Leonardo Parra Altamirano",
+    "result": "none",
+    "why": "Viewed: single-adult booking headshot, but only 88x127 px, below the repo 100 px minimum (shapeOk refuses)"
   }
 }
