@@ -15,16 +15,17 @@
     "severityCrimes": [
       "Murder / manslaughter"
     ],
-    "text": "@EROBoston Oct 10, 2026, as posted: ICE Boston arrested Juan Leonardo Parra Altamirano, a criminal illegal alien from Ecuador, following his release from Massachusetts DOC custody. His criminal history includes conviction for vehicular homicide-negligent manslaughter and leaving the scene of an injured person.",
+    "text": "@EROBoston Oct 10, 2026, as posted: ICE Boston arrested Juan Leonardo Parra Altamirano, a criminal illegal alien from Ecuador, following his release from Massachusetts DOC custody. His criminal history includes conviction for vehicular homicide-negligent manslaughter and leaving the scene of an injured person. Update: DHS reported him deported Sept 24, 2026 (https://x.com/DHSgov/status/2106144667259515150).",
     "photo": "",
     "via": "@EROBoston 2108880723612766243",
-    "sourceUrl": "https://x.com/EROBoston/status/2108880723612766243",
+    "sourceUrl": "https://x.com/EROBoston/status/2108880723612766243 https://x.com/DHSgov/status/2106144667259515150",
     "voting": false,
     "origin": "Ecuador",
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "approved"
+    "status": "approved",
+    "approvalNote": "DHS reported him deported Sept 24, 2026"
   },
   {
     "name": "Anthony Alfredo Moreno",

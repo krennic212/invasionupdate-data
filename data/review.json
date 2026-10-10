@@ -1408,7 +1408,9 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "reviewReason": "X post (not an official .gov page)"
+    "reviewReason": "X post (not an official .gov page)",
+    "duplicateOf": "x-2108880723612766243-juan-leonardo-parra-altamirano",
+    "holdReason": "duplicate of x-2108880723612766243-juan-leonardo-parra-altamirano"
   },
   {
     "name": "Ramon Antonio Bonifacio",

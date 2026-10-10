@@ -47,3 +47,48 @@ test("look-alike hosts are not official", () => {
   assert.equal(isOfficialRow({ sourceUrl: "http://www.ice.gov/x" }), false);
   assert.equal(isOfficialRow({ sourceUrl: "https://www.ice.gov/news/releases/x" }), true);
 });
+
+import { leadingGivenNameVariant, findLikelyDuplicates, countryKey } from "./dedupe.mjs";
+
+test("leading given-name variant: longer name is shorter plus leading given names", () => {
+  assert.equal(leadingGivenNameVariant("Juan Leonardo Parra Altamirano", "Leonardo Parra Altamirano"), true);
+  assert.equal(leadingGivenNameVariant("Leonardo Parra Altamirano", "Juan Leonardo Parra Altamirano"), true);
+  assert.equal(leadingGivenNameVariant("Jose Doe", "John Doe"), false);
+  assert.equal(leadingGivenNameVariant("Juan Perez", "Juan Perez"), false);
+  assert.equal(leadingGivenNameVariant("Maria Elena Vargas", "Elena Vargas"), true);
+  assert.equal(leadingGivenNameVariant("Ana Vargas Lopez", "Maria Vargas Lopez"), false);
+});
+
+test("likely duplicate report: same country + leading given-name variant, no auto-merge", () => {
+  const live = {
+    id: "x-1-juan-leonardo-parra-altamirano",
+    name: "Juan Leonardo Parra Altamirano",
+    origin: "Ecuador",
+    sourceUrl: "https://x.com/EROBoston/status/1",
+    photo: "",
+  };
+  const rev = {
+    id: "dhs-1",
+    name: "Leonardo Parra Altamirano",
+    origin: "Ecuador",
+    sourceUrl: "https://x.com/DHSgov/status/2",
+    photo: "",
+  };
+  const otherCountry = { ...rev, id: "dhs-2", origin: "Mexico" };
+  const unrelated = { id: "x-2", name: "Juan Perez", origin: "Ecuador", sourceUrl: "https://x.com/ICEgov/status/3", photo: "" };
+
+  const hits = findLikelyDuplicates([
+    { file: "data/harvest.json", rows: [live, unrelated] },
+    { file: "data/review.json", rows: [rev, otherCountry] },
+  ]);
+  assert.equal(hits.length, 1);
+  assert.equal(hits[0].a.name, "Juan Leonardo Parra Altamirano");
+  assert.equal(hits[0].b.name, "Leonardo Parra Altamirano");
+  assert.match(hits[0].reason, /leading given-name|surname|country/i);
+
+  // Same-URL exact dedupe still merges; likely-duplicate pairs are NOT collapsed.
+  const { rows, merged } = dedupeRows([live, rev]);
+  assert.equal(rows.length, 2);
+  assert.equal(merged.length, 0);
+  assert.equal(countryKey({ origin: "Not stated" }), "");
+});

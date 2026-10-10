@@ -14,6 +14,10 @@
  *      a row with photoHold never carries a photo.
  * Writes only when something changed.
  *
+ * Also reports likely cross-row duplicates (never auto-merged): when one normalized
+ * name is the other plus extra leading given names, the surname tokens match, and
+ * the country (origin) matches.
+ *
  *   node scripts/dedupe.mjs data/harvest.json [data/review.json ...]
  */
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
@@ -51,6 +55,66 @@ export function releaseSlug(url) {
   }
 }
 
+export function nameTokens(name) {
+  return nameKey(name).split(" ").filter(Boolean);
+}
+
+/**
+ * True when one normalized name is the other plus one or more extra leading given
+ * names (longer = leading token(s) + shorter), and the surname tokens match.
+ * Surname tokens = the last two tokens of the shorter name when it has 3+ tokens,
+ * otherwise its last token (one given + one surname).
+ */
+export function leadingGivenNameVariant(a, b) {
+  const ta = nameTokens(a);
+  const tb = nameTokens(b);
+  if (ta.length < 2 || tb.length < 2 || ta.length === tb.length) return false;
+  const [long, short] = ta.length > tb.length ? [ta, tb] : [tb, ta];
+  if (long.slice(-short.length).join(" ") !== short.join(" ")) return false;
+  const surnameCount = short.length >= 3 ? 2 : 1;
+  return long.slice(-surnameCount).join(" ") === short.slice(-surnameCount).join(" ");
+}
+
+export function countryKey(row) {
+  const o = nameKey(row?.origin);
+  if (!o || o === "not stated" || o === "unknown") return "";
+  return o;
+}
+
+/**
+ * Flag pairs that look like the same person under a longer / shorter given-name
+ * form with the same country. Never merges; report only.
+ * rowsByFile: [{ file, rows }]
+ */
+export function findLikelyDuplicates(rowsByFile) {
+  const flat = [];
+  for (const { file, rows } of rowsByFile || []) {
+    for (const r of rows || []) {
+      if (!r || typeof r !== "object") continue;
+      const n = nameKey(r.name);
+      const c = countryKey(r);
+      if (!n || !c) continue;
+      flat.push({ file, row: r, name: n, country: c });
+    }
+  }
+  const out = [];
+  for (let i = 0; i < flat.length; i++) {
+    for (let j = i + 1; j < flat.length; j++) {
+      const a = flat[i];
+      const b = flat[j];
+      if (a.country !== b.country) continue;
+      if (a.name === b.name) continue;
+      if (!leadingGivenNameVariant(a.row.name, b.row.name)) continue;
+      out.push({
+        a: { id: a.row.id || "", name: a.row.name, origin: a.row.origin || "", file: a.file },
+        b: { id: b.row.id || "", name: b.row.name, origin: b.row.origin || "", file: b.file },
+        reason: "leading given-name variant; surname tokens match; same country",
+      });
+    }
+  }
+  return out;
+}
+
 export function dedupeRows(rows) {
   const out = [];
   const merged = [];
@@ -86,6 +150,7 @@ export function dedupeRows(rows) {
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const files = process.argv.slice(2);
   if (!files.length) files.push("data/harvest.json");
+  const rowsByFile = [];
   for (const file of files) {
     if (!existsSync(file)) continue;
     const before = readFileSync(file, "utf8");
@@ -93,6 +158,11 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     const { rows, merged } = dedupeRows(Array.isArray(parsed) ? parsed : []);
     const after = `${JSON.stringify(rows, null, 2)}\n`;
     if (after !== before) writeFileSync(file, after);
+    rowsByFile.push({ file, rows });
     console.log(JSON.stringify({ file, rows: rows.length, merged, changed: after !== before }));
+  }
+  const likelyDuplicates = findLikelyDuplicates(rowsByFile);
+  if (likelyDuplicates.length) {
+    console.log(JSON.stringify({ likelyDuplicates }));
   }
 }
