@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-10T12:47:40Z",
-  "rows": 253,
-  "approved": 249,
+  "updatedAt": "2026-10-10T15:44:38Z",
+  "rows": 254,
+  "approved": 250,
   "pending": 4,
-  "photos": 66,
+  "photos": 67,
   "reviewRows": 751,
-  "lastAddedAt": "2026-10-10T12:47:22Z",
+  "lastAddedAt": "2026-10-10T15:44:31Z",
   "lastAddedCount": 1,
   "lastAdded": [
-    "Juan Leonardo Parra Altamirano"
+    "Joel Velazco-Carrizosa"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

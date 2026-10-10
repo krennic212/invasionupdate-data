@@ -1,5 +1,33 @@
 [
   {
+    "name": "Joel Velazco-Carrizosa",
+    "city": "Not stated",
+    "crime": "Arrested: ICE New Orleans arrested Joel Velazco-Carrizosa, an illegal alien from Mexico.",
+    "usa": "ICE X post Oct 10, 2026 (@ERONewOrleans)",
+    "foreign": "Not stated in post",
+    "picked": "10/10/2026 (@ERONewOrleans post)",
+    "entered": "Not stated",
+    "office": "ERONewOrleans",
+    "id": "x-2108939863122976840-joel-velazco-carrizosa",
+    "when": "10 Oct 2026",
+    "severity": 83,
+    "severityReason": "Child sex crime",
+    "severityCrimes": [
+      "Child sex crime"
+    ],
+    "text": "@ERONewOrleans Oct 10, 2026, as posted: 🚨SEX OFFENDER ARRESTED ICE New Orleans arrested Joel Velazco-Carrizosa, an illegal alien from Mexico. Criminal history includes a conviction for second degree sexual assault of a child and was sentenced to 14 years in prison. He will no longer be a danger to our society.",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2108939863122976840-joel-velazco-carrizosa.jpg",
+    "via": "@ERONewOrleans 2108939863122976840",
+    "sourceUrl": "https://x.com/ERONewOrleans/status/2108939863122976840",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HUIPAE6WMAAopkW?format=png&name=orig"
+  },
+  {
     "name": "Juan Leonardo Parra Altamirano",
     "city": "Not stated",
     "crime": "Arrested: ICE Boston arrested Juan Leonardo Parra Altamirano, a criminal illegal alien from Ecuador, following his release from Massachusetts DOC custody.",
