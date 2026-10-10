@@ -1,5 +1,35 @@
 [
   {
+    "name": "Franklin Alexander Alarenga-Mejia",
+    "city": "Not stated",
+    "crime": "Arrested: ICE San Francisco arrested criminal alien Franklin Alexander Alarenga-Mejia, 29, of El Salvador, in Vacaville.",
+    "usa": "ICE X post Oct 10, 2026 (@EROSanFrancisco)",
+    "foreign": "Not stated in post",
+    "picked": "10/10/2026 (@EROSanFrancisco post)",
+    "entered": "Not stated",
+    "office": "EROSanFrancisco",
+    "id": "x-2109053109188370611-franklin-alexander-alarenga-mejia",
+    "when": "10 Oct 2026",
+    "severity": 95,
+    "severityReason": "Assault / battery",
+    "severityCrimes": [
+      "Assault / battery",
+      "Burglary / theft",
+      "Drug possession"
+    ],
+    "text": "@EROSanFrancisco Oct 10, 2026, as posted: ICE San Francisco arrested criminal alien Franklin Alexander Alarenga-Mejia, 29, of El Salvador, in Vacaville. He has convictions for assault with great bodily injury, controlled substance while in jail, 2nd-degree burglary, etc. He is in ICE custody pending removal proceedings.",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2109053109188370611-franklin-alexander-alarenga-mejia.jpg",
+    "via": "@EROSanFrancisco 2109053109188370611",
+    "sourceUrl": "https://x.com/EROSanFrancisco/status/2109053109188370611",
+    "voting": false,
+    "origin": "El Salvador",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HT-gFwDXoAEUHED?format=png&name=orig"
+  },
+  {
     "name": "Wilfredo Sanchez",
     "city": "Not stated",
     "crime": "Arrested: ICE Seattle arrested illegal alien Wilfredo Sanchez, 49, of Honduras.",
