@@ -913,5 +913,11 @@
     "image": "https://pbs.twimg.com/media/HUIMBZNX0AAol-y?format=png&name=orig",
     "bytes": 8694,
     "reviewed": "Viewed image: plain booking-style headshot of one adult man in a white t-shirt against a gray wall; no text, no other people, no child"
+  },
+  "x.com/eroseattle/status/2109388570062647575": {
+    "checkedAt": "2026-10-11T21:47:21.432Z",
+    "name": "Sanjay Kaushik",
+    "result": "none",
+    "why": "graphic card: ICE 'Worst of the Worst' flyer with large text overlays (FELONY ARREST, ARRESTED), not a plain headshot"
   }
 }
