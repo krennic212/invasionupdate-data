@@ -1,5 +1,34 @@
 [
   {
+    "name": "Elvin Peguero Pena",
+    "city": "Lawrence, MA",
+    "crime": "Arrested: On Sept. 10, ICE Boston arrested Elvin Peguero Pena, a criminal illegal alien from the Dominican Republic, during targeted operations in Lawrence, Mass.",
+    "usa": "ICE X post Oct 11, 2026 (@EROBoston)",
+    "foreign": "Not stated in post",
+    "picked": "10/11/2026 (@EROBoston post)",
+    "entered": "Not stated",
+    "office": "EROBoston",
+    "id": "x-2109243866184339518-elvin-peguero-pena",
+    "when": "11 Oct 2026",
+    "severity": 45,
+    "severityReason": "Drug trafficking",
+    "severityCrimes": [
+      "Drug trafficking"
+    ],
+    "text": "@EROBoston Oct 11, 2026, as posted: On Sept. 10, ICE Boston arrested Elvin Peguero Pena, a criminal illegal alien from the Dominican Republic, during targeted operations in Lawrence, Mass. Pena’s criminal history includes arrest for possession of drugs with intent to sell or distribute (cocaine). Update: ICE Boston reported \"Pena was REMOVED from the United States on Oct. 6\" (https://x.com/EROBoston/status/2109243867207758042).",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2109243866184339518-elvin-peguero-pena.jpg",
+    "via": "@EROBoston 2109243866184339518",
+    "sourceUrl": "https://x.com/EROBoston/status/2109243866184339518 https://x.com/EROBoston/status/2109243867207758042",
+    "voting": false,
+    "origin": "Dominican Republic",
+    "confirmedBy": "ICE",
+    "lat": 42.708,
+    "lon": -71.1638,
+    "status": "approved",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HUGf00pX0AAl1TA?format=png&name=orig",
+    "approvalNote": "ICE Boston reported him removed from the United States on Oct. 6"
+  },
+  {
     "name": "Franklin Alexander Alarenga-Mejia",
     "city": "Not stated",
     "crime": "Arrested: ICE San Francisco arrested criminal alien Franklin Alexander Alarenga-Mejia, 29, of El Salvador, in Vacaville.",
