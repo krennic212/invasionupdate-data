@@ -1,5 +1,33 @@
 [
   {
+    "name": "Denis Uvaldo Caal-Xol",
+    "city": "Nashville, TN",
+    "crime": "As posted: ICE New Orleans arrested Denis Uvaldo Caal-Xol an illegal alien from Guatemala. Criminal history includes a felony conviction for assault in Nashville, TN.",
+    "usa": "ICE X post Oct 11, 2026 (@ERONewOrleans)",
+    "foreign": "Not stated in post",
+    "picked": "10/11/2026 (@ERONewOrleans post)",
+    "entered": "Not stated",
+    "office": "ERONewOrleans",
+    "id": "x-2109317853815980361-denis-uvaldo-caal-xol",
+    "when": "11 Oct 2026",
+    "severity": 36,
+    "severityReason": "Assault / battery",
+    "severityCrimes": [
+      "Assault / battery"
+    ],
+    "text": "@ERONewOrleans Oct 11, 2026, as posted: ICE New Orleans arrested Denis Uvaldo Caal-Xol an illegal alien from Guatemala. Criminal history includes a felony conviction for assault in Nashville, TN.",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2109317853815980361-denis-uvaldo-caal-xol.jpg",
+    "via": "@ERONewOrleans 2109317853815980361",
+    "sourceUrl": "https://x.com/ERONewOrleans/status/2109317853815980361",
+    "voting": false,
+    "origin": "Guatemala",
+    "confirmedBy": "ICE",
+    "lat": 36.16,
+    "lon": -86.78,
+    "status": "approved",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HUIMBZNX0AAol-y?format=png&name=orig"
+  },
+  {
     "name": "Elvin Peguero Pena",
     "city": "Lawrence, MA",
     "crime": "Arrested: On Sept. 10, ICE Boston arrested Elvin Peguero Pena, a criminal illegal alien from the Dominican Republic, during targeted operations in Lawrence, Mass.",

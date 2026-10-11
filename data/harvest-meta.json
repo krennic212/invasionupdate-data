@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-11T12:45:54Z",
-  "rows": 257,
-  "approved": 253,
+  "updatedAt": "2026-10-11T16:43:02Z",
+  "rows": 258,
+  "approved": 254,
   "pending": 4,
-  "photos": 69,
+  "photos": 70,
   "reviewRows": 751,
-  "lastAddedAt": "2026-10-11T12:45:31Z",
+  "lastAddedAt": "2026-10-11T16:42:52Z",
   "lastAddedCount": 1,
   "lastAdded": [
-    "Elvin Peguero Pena"
+    "Denis Uvaldo Caal-Xol"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
