@@ -1,5 +1,32 @@
 [
   {
+    "name": "Hacina Saadi",
+    "city": "Not stated",
+    "crime": "Charged: Hacina Saadi, 48, an illegal alien from France, has been charged by information with voting by an alien during the 2024 election.",
+    "usa": "DOJ release Oct 12, 2026: Justice Department Announces Charges Involving 16 Individuals for Election Crimes",
+    "foreign": "Not stated in post",
+    "picked": "10/12/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261012-hacina-saadi",
+    "when": "12 Oct 2026",
+    "severity": 54,
+    "severityReason": "Fraud (incl. voter fraud)",
+    "severityCrimes": [
+      "Fraud (incl. voter fraud)"
+    ],
+    "text": "DOJ Oct 12, 2026, as posted: Hacina Saadi, 48, an illegal alien from France, has been charged by information with voting by an alien during the 2024 election.",
+    "photo": "",
+    "via": "justice.gov/opa/pr/justice-department-announces-charges-involving-16-individuals-election-crimes",
+    "sourceUrl": "https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-16-individuals-election-crimes",
+    "voting": true,
+    "origin": "France",
+    "confirmedBy": "DOJ",
+    "lat": null,
+    "lon": null,
+    "status": "approved"
+  },
+  {
     "name": "Miguel Angel Morales- Alvarez",
     "city": "Not stated",
     "crime": "Arrested: ICE New Orleans arrested Miguel Angel Morales- Alvarez, an illegal alien from Mexico.",
