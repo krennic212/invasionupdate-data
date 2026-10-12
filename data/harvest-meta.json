@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-12T12:43:34Z",
-  "rows": 259,
-  "approved": 255,
+  "updatedAt": "2026-10-12T13:00:45Z",
+  "rows": 260,
+  "approved": 256,
   "pending": 4,
-  "photos": 70,
+  "photos": 71,
   "reviewRows": 751,
-  "lastAddedAt": "2026-10-11T21:47:07Z",
+  "lastAddedAt": "2026-10-12T13:00:22Z",
   "lastAddedCount": 1,
   "lastAdded": [
-    "Sanjay Kaushik"
+    "Furvio Flete Garcia"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
