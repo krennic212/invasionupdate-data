@@ -1,5 +1,35 @@
 [
   {
+    "name": "Miguel Angel Morales- Alvarez",
+    "city": "Not stated",
+    "crime": "Arrested: ICE New Orleans arrested Miguel Angel Morales- Alvarez, an illegal alien from Mexico.",
+    "usa": "ICE X post Oct 12, 2026 (@ERONewOrleans)",
+    "foreign": "Not stated in post",
+    "picked": "10/12/2026 (@ERONewOrleans post)",
+    "entered": "Not stated",
+    "office": "ERONewOrleans",
+    "id": "x-2109652307868824056-miguel-angel-morales-alvarez",
+    "when": "12 Oct 2026",
+    "severity": 86,
+    "severityReason": "Assault / battery",
+    "severityCrimes": [
+      "Assault / battery",
+      "Drug possession",
+      "DUI"
+    ],
+    "text": "@ERONewOrleans Oct 12, 2026, as posted: ICE New Orleans arrested Miguel Angel Morales- Alvarez, an illegal alien from Mexico. His lengthy criminal history includes convictions for: 💥Possession of a controlled substance 💥Evading arrest 💥DWI (x3) 💥Assault causing bodily injury family member 💥Failure to provide ID",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2109652307868824056-miguel-angel-morales-alvarez.jpg",
+    "via": "@ERONewOrleans 2109652307868824056",
+    "sourceUrl": "https://x.com/ERONewOrleans/status/2109652307868824056",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HUIPLrUXIAAleX6?format=png&name=orig"
+  },
+  {
     "name": "Furvio Flete Garcia",
     "city": "Danbury, CT",
     "crime": "Arrested: On Sept. 25, ICE Boston arrested Furvio Flete Garcia, a previously deported criminal illegal alien from the Dominican Republic, during targeted operations in Danbury, Connecticut.",
