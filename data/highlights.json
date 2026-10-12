@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-12",
   "windowDays": 7,
-  "total": 104,
+  "total": 105,
   "rows": [
     {
       "id": "dhs-20261008-ian-clive-burton",
@@ -13,6 +13,20 @@
         "Murder / manslaughter",
         "Attack on police officer",
         "Weapons"
+      ]
+    },
+    {
+      "id": "x-2109695592888713517-julio-cesar-ojeda",
+      "name": "Julio Cesar Ojeda",
+      "when": "12 Oct 2026",
+      "severity": 203,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons",
+        "Assault / battery",
+        "Burglary / theft",
+        "DUI"
       ]
     },
     {
@@ -277,17 +291,6 @@
       "severityCrimes": [
         "Rape / sexual assault",
         "Drug possession"
-      ]
-    },
-    {
-      "id": "x-2107833328044851595-alfonso-duran",
-      "name": "Alfonso Duran",
-      "when": "7 Oct 2026",
-      "severity": 108,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "DUI"
       ]
     }
   ]
