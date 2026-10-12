@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-10-11",
+  "asOf": "2026-10-12",
   "windowDays": 7,
-  "total": 133,
+  "total": 102,
   "rows": [
     {
       "id": "dhs-20261008-ian-clive-burton",
@@ -12,30 +12,6 @@
       "severityCrimes": [
         "Murder / manslaughter",
         "Attack on police officer",
-        "Weapons"
-      ]
-    },
-    {
-      "id": "doj-20261005-christhian-aybar-berroa",
-      "name": "Christhian Aybar-Berroa",
-      "when": "5 Oct 2026",
-      "severity": 228,
-      "severityReason": "Attack on police officer",
-      "severityCrimes": [
-        "Attack on police officer",
-        "Attempted murder",
-        "Weapons"
-      ]
-    },
-    {
-      "id": "doj-20261005-miguel-francisco-mora-nunez",
-      "name": "Miguel Francisco Mora Nunez",
-      "when": "5 Oct 2026",
-      "severity": 228,
-      "severityReason": "Attack on police officer",
-      "severityCrimes": [
-        "Attack on police officer",
-        "Attempted murder",
         "Weapons"
       ]
     },
@@ -74,39 +50,6 @@
         "Kidnapping / human trafficking",
         "Armed robbery / aggravated assault",
         "Assault / battery"
-      ]
-    },
-    {
-      "id": "dhs-20261005-eris-ramon-arguera",
-      "name": "Eris Ramon Arguera",
-      "when": "5 Oct 2026",
-      "severity": 165,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "Armed robbery / aggravated assault"
-      ]
-    },
-    {
-      "id": "dhs-20261005-herma-perez-caballero",
-      "name": "Herma Perez-Caballero",
-      "when": "5 Oct 2026",
-      "severity": 165,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "Armed robbery / aggravated assault"
-      ]
-    },
-    {
-      "id": "x-2107181638035857530-fausto-omana-briseno",
-      "name": "Fausto Omana-Briseno",
-      "when": "5 Oct 2026",
-      "severity": 164,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Rape / sexual assault"
       ]
     },
     {
@@ -212,18 +155,6 @@
       ]
     },
     {
-      "id": "x-2107215032882810906-salvador-j-sotolongo",
-      "name": "Salvador J. Sotolongo",
-      "when": "5 Oct 2026",
-      "severity": 149,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons",
-        "Assault / battery"
-      ]
-    },
-    {
       "id": "x-2107803124752629805-reynaldo-c-zayas",
       "name": "Reynaldo C. Zayas",
       "when": "7 Oct 2026",
@@ -281,15 +212,82 @@
       ]
     },
     {
-      "id": "dhs-20261005-abraham-leon-aguirre",
-      "name": "Abraham Leon-Aguirre",
-      "when": "5 Oct 2026",
-      "severity": 125,
-      "severityReason": "Armed robbery / aggravated assault",
+      "id": "dhs-20261008-irvin-roblero-ortiz",
+      "name": "Irvin Roblero-Ortiz",
+      "when": "8 Oct 2026",
+      "severity": 122,
+      "severityReason": "Kidnapping / human trafficking",
       "severityCrimes": [
-        "Armed robbery / aggravated assault",
+        "Kidnapping / human trafficking",
+        "Assault / battery"
+      ]
+    },
+    {
+      "id": "dhs-20261007-miguel-cadena-gomez",
+      "name": "Miguel Cadena-Gomez",
+      "when": "7 Oct 2026",
+      "severity": 122,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Drug possession"
+      ]
+    },
+    {
+      "id": "x-2108687287579980178-francis-omar-ramirez-lopez",
+      "name": "Francis Omar Ramirez Lopez",
+      "when": "9 Oct 2026",
+      "severity": 118,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "DUI",
+        "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "dhs-20261007-gonzalo-sanchez",
+      "name": "Gonzalo Sanchez",
+      "when": "7 Oct 2026",
+      "severity": 117,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "DUI"
+      ]
+    },
+    {
+      "id": "dhs-20261008-jose-luis-mata-cedillo",
+      "name": "Jose Luis Mata-Cedillo",
+      "when": "8 Oct 2026",
+      "severity": 110,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
         "Drug trafficking",
         "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "dhs-20261009-norberto-machada-rodriguez",
+      "name": "Norberto Machada-Rodriguez",
+      "when": "9 Oct 2026",
+      "severity": 108,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Drug possession"
+      ]
+    },
+    {
+      "id": "x-2107833328044851595-alfonso-duran",
+      "name": "Alfonso Duran",
+      "when": "7 Oct 2026",
+      "severity": 108,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "DUI"
       ]
     }
   ]
