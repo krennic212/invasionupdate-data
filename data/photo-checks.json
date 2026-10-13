@@ -980,10 +980,11 @@
   "ice.gov/news/releases/dhs-ice-comment-dangerous-consequences-sanctuary-policies": {
     "checkedAt": "2026-10-13T14:47:57.189Z",
     "name": "Oscar Bergal",
-    "result": "held",
+    "result": "photo",
     "file": "ice-20261013-oscar-bergal.jpg",
     "image": "https://www.ice.gov/sites/default/files/2026-10/261013newyork.png",
     "bytes": 15208,
-    "why": "needs visual check"
+    "reviewed": "Viewed image: one adult man head-and-shoulders booking-style photo, white tank top, wood background; release alt text 'Oscar Bergal'; no child, no second face",
+    "reviewedAt": "2026-10-13T14:54:24.188Z"
   }
 }

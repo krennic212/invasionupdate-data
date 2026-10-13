@@ -14,7 +14,7 @@
     "severityReason": "",
     "severityCrimes": [],
     "text": "ICE Oct 13, 2026, as posted: On Oct. 8, ICE officers arrested Oscar Bergal, a criminal illegal alien and documented associate of the notorious Trinitario street gang in the Bronx, NY.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/ice-20261013-oscar-bergal.jpg",
     "via": "ice.gov/news/releases/dhs-ice-comment-dangerous-consequences-sanctuary-policies",
     "sourceUrl": "https://www.ice.gov/news/releases/dhs-ice-comment-dangerous-consequences-sanctuary-policies",
     "voting": false,
@@ -23,7 +23,7 @@
     "lat": 40.71,
     "lon": -74.01,
     "status": "approved",
-    "photoHold": "needs visual check"
+    "photoSourceUrl": "https://www.ice.gov/sites/default/files/2026-10/261013newyork.png"
   },
   {
     "name": "Ali Omar Flores-Sandino",
