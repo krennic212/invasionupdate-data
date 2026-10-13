@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-12",
   "windowDays": 7,
-  "total": 105,
+  "total": 80,
   "rows": [
     {
       "id": "dhs-20261008-ian-clive-burton",
@@ -80,17 +80,6 @@
       ]
     },
     {
-      "id": "x-2107567290237796414-saul-vazquez-mora",
-      "name": "Saul Vazquez Mora",
-      "when": "6 Oct 2026",
-      "severity": 160,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Armed robbery / aggravated assault"
-      ]
-    },
-    {
       "id": "x-2108687300699754743-juan-jose-morales-colindres",
       "name": "Juan Jose Morales-Colindres",
       "when": "9 Oct 2026",
@@ -100,28 +89,6 @@
         "Rape / sexual assault",
         "Assault / battery",
         "Drug possession"
-      ]
-    },
-    {
-      "id": "dhs-20261006-dangelo-rafael-jean-caraballo",
-      "name": "Dangelo Rafael Jean Caraballo",
-      "when": "6 Oct 2026",
-      "severity": 156,
-      "severityReason": "Attack on police officer",
-      "severityCrimes": [
-        "Attack on police officer",
-        "Attempted murder"
-      ]
-    },
-    {
-      "id": "dhs-20261006-sneider-mejia-bautista",
-      "name": "Sneider Mejia Bautista",
-      "when": "6 Oct 2026",
-      "severity": 156,
-      "severityReason": "Attack on police officer",
-      "severityCrimes": [
-        "Attack on police officer",
-        "Attempted murder"
       ]
     },
     {
@@ -144,28 +111,6 @@
       "severityCrimes": [
         "Kidnapping / human trafficking",
         "Armed robbery / aggravated assault"
-      ]
-    },
-    {
-      "id": "dhs-20261006-han-lee",
-      "name": "Han Lee",
-      "when": "6 Oct 2026",
-      "severity": 152,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Fraud (incl. voter fraud)"
-      ]
-    },
-    {
-      "id": "x-2107456058973159861-phai-you",
-      "name": "Phai You",
-      "when": "6 Oct 2026",
-      "severity": 150,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "Weapons"
       ]
     },
     {
@@ -291,6 +236,60 @@
       "severityCrimes": [
         "Rape / sexual assault",
         "Drug possession"
+      ]
+    },
+    {
+      "id": "x-2107833328044851595-alfonso-duran",
+      "name": "Alfonso Duran",
+      "when": "7 Oct 2026",
+      "severity": 108,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "DUI"
+      ]
+    },
+    {
+      "id": "doj-20261009-gabriel-aguilar-benitez",
+      "name": "Gabriel Aguilar-Benitez",
+      "when": "9 Oct 2026",
+      "severity": 105,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "dhs-20261007-victor-gonzalez-ibarra",
+      "name": "Victor Gonzalez-Ibarra",
+      "when": "7 Oct 2026",
+      "severity": 105,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "x-2107948122273964218-javier-roman-flores",
+      "name": "Javier Roman Flores",
+      "when": "7 Oct 2026",
+      "severity": 101,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2107826150915379321-jae-lee",
+      "name": "Jae Lee",
+      "when": "7 Oct 2026",
+      "severity": 99,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Assault / battery"
       ]
     }
   ]

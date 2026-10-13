@@ -1,16 +1,14 @@
 {
-  "checkedAt": 1791824867340,
-  "checkedAtIso": "2026-10-12T17:07:47.340Z",
-  "added": [
-    "Hacina Saadi"
-  ],
+  "checkedAt": 1791858720101,
+  "checkedAtIso": "2026-10-13T02:32:00.101Z",
+  "added": [],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 97,
+  "scannedReleases": 96,
   "error": null,
-  "note": "Added 1 as approved: Hacina Saadi",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
