@@ -1001,5 +1001,71 @@
     "image": "https://pbs.twimg.com/media/HUcE9gjaYAAMZ6E?format=png&name=orig",
     "bytes": 17726,
     "reviewed": "Viewed image: close-up headshot of one adult woman with glasses, hair pulled back, parking lot behind her; no other people, no child, no text"
+  },
+  "x.com/dhsgov/status/2110096221318557963": {
+    "checkedAt": "2026-10-13T20:47:06.699Z",
+    "name": "Paulo Jorge Silva",
+    "result": "none",
+    "why": "arrest scene: three people (two officers escorting him), faces blurred, not a headshot"
+  },
+  "x.com/icegov/status/2110107802240995443": {
+    "checkedAt": "2026-10-13T20:47:06.889Z",
+    "name": "Angel Norberto Bautista-Herrera",
+    "result": "none",
+    "why": "second person visible through the window behind him (back of head); not clearly one person only"
+  },
+  "x.com/icegov/status/2110107795643101690": {
+    "checkedAt": "2026-10-13T20:47:07.409Z",
+    "name": "Juan Contreras Bonilla",
+    "result": "photo",
+    "file": "x-2110107795643101690-juan-contreras-bonilla.jpg",
+    "image": "https://pbs.twimg.com/media/HUibSVsW4AAf7by?format=jpg&name=orig",
+    "bytes": 11269,
+    "reviewed": "Viewed image: booking photo, one adult man in orange, plain grey wall, no other people, no text"
+  },
+  "x.com/icegov/status/2110107798386421936": {
+    "checkedAt": "2026-10-13T20:47:08.037Z",
+    "name": "Emmanuel Herrera Sanchez",
+    "result": "photo",
+    "file": "x-2110107798386421936-emmanuel-herrera-sanchez.jpg",
+    "image": "https://pbs.twimg.com/media/HUibVu-W4AAWhE2?format=jpg&name=orig",
+    "bytes": 12544,
+    "reviewed": "Viewed image: booking photo, one adult man in grey shirt, tiled wall, no other people, no text"
+  },
+  "x.com/icegov/status/2110107808662434173": {
+    "checkedAt": "2026-10-13T20:47:08.598Z",
+    "name": "Rocio Basurto-Ayala",
+    "result": "photo",
+    "file": "x-2110107808662434173-rocio-basurto-ayala.jpg",
+    "image": "https://pbs.twimg.com/media/HUibgb_XIAAnxXM?format=jpg&name=orig",
+    "bytes": 13408,
+    "reviewed": "Viewed image: booking photo, one adult woman in dark fleece, door with empty window behind, no other people, no text"
+  },
+  "x.com/icegov/status/2110107811103268902": {
+    "checkedAt": "2026-10-13T20:47:09.246Z",
+    "name": "Dina Zulema Avelar",
+    "result": "photo",
+    "file": "x-2110107811103268902-dina-zulema-avelar.jpg",
+    "image": "https://pbs.twimg.com/media/HUibk3kW4AAb8AB?format=jpg&name=orig",
+    "bytes": 7382,
+    "reviewed": "Viewed image: booking photo, one adult woman in grey top, plain teal wall, no other people, no text"
+  },
+  "x.com/icegov/status/2110107813133337013": {
+    "checkedAt": "2026-10-13T20:47:09.858Z",
+    "name": "Miguel Obed Romero-Reyes",
+    "result": "photo",
+    "file": "x-2110107813133337013-miguel-obed-romero-reyes.jpg",
+    "image": "https://pbs.twimg.com/media/HUibquRXgAARaQb?format=jpg&name=orig",
+    "bytes": 11223,
+    "reviewed": "Viewed image: booking photo, one adult man in grey sweatshirt, door with empty window behind, no other people, no text"
+  },
+  "x.com/icegov/status/2110107815704703178": {
+    "checkedAt": "2026-10-13T20:47:10.475Z",
+    "name": "Victor Hugo Rosaldo-Lara",
+    "result": "photo",
+    "file": "x-2110107815704703178-victor-hugo-rosaldo-lara.jpg",
+    "image": "https://pbs.twimg.com/media/HUibtE9X0AAmh7m?format=jpg&name=orig",
+    "bytes": 12268,
+    "reviewed": "Viewed image: booking photo, one adult man in white shirt, plain grey wall, no other people, no text"
   }
 }
