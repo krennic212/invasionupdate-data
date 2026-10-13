@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-13",
   "windowDays": 7,
-  "total": 85,
+  "total": 104,
   "rows": [
     {
       "id": "dhs-20261008-ian-clive-burton",
@@ -30,6 +30,28 @@
       ]
     },
     {
+      "id": "dhs-20261013-alberto-estrada",
+      "name": "Alberto Estrada",
+      "when": "13 Oct 2026",
+      "severity": 182,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Rape / sexual assault"
+      ]
+    },
+    {
+      "id": "dhs-20261013-henri-antonio-chay-castro",
+      "name": "Henri Antonio Chay-Castro",
+      "when": "13 Oct 2026",
+      "severity": 182,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Rape / sexual assault"
+      ]
+    },
+    {
       "id": "dhs-20261009-gerardo-miguel-mora",
       "name": "Gerardo Miguel-Mora",
       "when": "9 Oct 2026",
@@ -40,6 +62,30 @@
         "Assault / battery",
         "Burglary / theft",
         "Drug possession"
+      ]
+    },
+    {
+      "id": "dhs-20261013-christian-eduardo-lopez-nava",
+      "name": "Christian Eduardo Lopez-Nava",
+      "when": "13 Oct 2026",
+      "severity": 175,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "dhs-20261013-londy-de-jesus-nuesi-molina",
+      "name": "Londy De Jesus Nuesi-Molina",
+      "when": "13 Oct 2026",
+      "severity": 175,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons",
+        "Drug trafficking"
       ]
     },
     {
@@ -171,6 +217,17 @@
       ]
     },
     {
+      "id": "dhs-20261013-jose-rodriguez-eraso",
+      "name": "Jose Rodriguez-Eraso",
+      "when": "13 Oct 2026",
+      "severity": 125,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Drug possession"
+      ]
+    },
+    {
       "id": "dhs-20261007-carlos-arturo-zelaya-argueta",
       "name": "Carlos Arturo Zelaya-Argueta",
       "when": "7 Oct 2026",
@@ -236,60 +293,6 @@
         "Weapons",
         "Drug trafficking",
         "Illegal entry / reentry"
-      ]
-    },
-    {
-      "id": "dhs-20261009-norberto-machada-rodriguez",
-      "name": "Norberto Machada-Rodriguez",
-      "when": "9 Oct 2026",
-      "severity": 108,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Drug possession"
-      ]
-    },
-    {
-      "id": "x-2107833328044851595-alfonso-duran",
-      "name": "Alfonso Duran",
-      "when": "7 Oct 2026",
-      "severity": 108,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "DUI"
-      ]
-    },
-    {
-      "id": "doj-20261009-gabriel-aguilar-benitez",
-      "name": "Gabriel Aguilar-Benitez",
-      "when": "9 Oct 2026",
-      "severity": 105,
-      "severityReason": "Weapons",
-      "severityCrimes": [
-        "Weapons",
-        "Drug trafficking"
-      ]
-    },
-    {
-      "id": "dhs-20261007-victor-gonzalez-ibarra",
-      "name": "Victor Gonzalez-Ibarra",
-      "when": "7 Oct 2026",
-      "severity": 105,
-      "severityReason": "Weapons",
-      "severityCrimes": [
-        "Weapons",
-        "Drug trafficking"
-      ]
-    },
-    {
-      "id": "x-2107948122273964218-javier-roman-flores",
-      "name": "Javier Roman Flores",
-      "when": "7 Oct 2026",
-      "severity": 101,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
       ]
     }
   ]
