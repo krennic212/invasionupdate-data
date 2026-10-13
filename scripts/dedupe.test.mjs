@@ -92,3 +92,12 @@ test("likely duplicate report: same country + leading given-name variant, no aut
   assert.equal(merged.length, 0);
   assert.equal(countryKey({ origin: "Not stated" }), "");
 });
+
+test("likely-duplicate report skips pairs already linked by duplicateOf", async () => {
+  const { findLikelyDuplicates } = await import("./dedupe.mjs");
+  const live = { id: "x-1-juan-leonardo-parra-altamirano", name: "Juan Leonardo Parra Altamirano", origin: "Venezuela" };
+  const rev = { id: "x-2-leonardo-parra-altamirano", name: "Leonardo Parra Altamirano", origin: "Venezuela" };
+  assert.equal(findLikelyDuplicates([{ file: "h", rows: [live] }, { file: "r", rows: [rev] }]).length, 1);
+  assert.equal(findLikelyDuplicates([{ file: "h", rows: [live] }, { file: "r", rows: [{ ...rev, duplicateOf: live.id }] }]).length, 0);
+  assert.equal(findLikelyDuplicates([{ file: "h", rows: [{ ...live, duplicateOf: "other" }] }, { file: "r", rows: [rev] }]).length, 1);
+});

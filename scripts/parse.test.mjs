@@ -210,3 +210,33 @@ test("toRow: Syracuse rows read 'As posted:' with the sentence verbatim", () => 
     assert.match(row.crime, /criminal history includes/);
   }
 });
+
+// --- DHS Oct 13 2026 "Bonnie and Clyde" release ---
+import { releaseLabel as _rl, extractPeople as _ep, toRow as _tr } from "./parse.mjs";
+const OCT13_TITLE = "ILLEGAL ALIEN BONNIE AND CLYDE: ICE Arrests Illegal Alien Couple After Multi-State Jewelry Theft Spree | Homeland Security";
+const OCT13 = [
+  "According to local reporting, police in Nassau County, New York arrested Rudi Lacatusu and Mirabela Lacatusu, illegal aliens from Romania, on October 5, and charged them each with THREE counts of grand larceny after a series of jewelry thefts.",
+  "In September, ICE arrested Simranpal Singh, an illegal alien from India, in Pennsylvania who had been issued a Commercial Driver’s License (CDL) by Hochul’s New York.",
+];
+const OCT13_REL = { title: OCT13_TITLE, office: "DHSgov", date: "2026-10-13", url: "https://www.dhs.gov/news/2026/10/13/illegal-alien-bonnie-and-clyde-ice-arrests-illegal-alien-couple-after-multi-state" };
+
+test("stage comes from the person's own sentence: 'ICE arrested <Name>' is Arrested, not Charged", () => {
+  const hit = _ep(OCT13, { title: OCT13_TITLE }).find((h) => h.name === "Simranpal Singh");
+  assert.ok(hit);
+  assert.equal(_rl(hit.sentence, OCT13_TITLE), "Arrested");
+  assert.match(_tr(hit, OCT13_REL).crime, /^Arrested: In September, ICE arrested Simranpal Singh/);
+  assert.equal(_rl("John Doe, a Mexican national, was charged with fraud.", OCT13_TITLE), "Charged");
+});
+
+test("'A and B, illegal aliens from X' gives a row for each person, both Charged, both Romania", () => {
+  const hits = _ep(OCT13, { title: OCT13_TITLE });
+  for (const n of ["Rudi Lacatusu", "Mirabela Lacatusu"]) {
+    const h = hits.find((x) => x.name === n);
+    assert.ok(h, n);
+    assert.equal(h.sentence, OCT13[0]);
+    const row = _tr(h, OCT13_REL);
+    assert.equal(row.origin, "Romania");
+    assert.equal(row.crime, `Charged: ${OCT13[0]}`);
+  }
+  assert.equal(_tr(hits.find((x) => x.name === "Simranpal Singh"), OCT13_REL).origin, "India");
+});

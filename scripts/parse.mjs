@@ -77,7 +77,8 @@ const PATTERNS = [
   // "Jane Doe, 39, of Omaha, Nebraska, a citizen of Honduras, ..."
   new RegExp(`(?:^|[—–-]\\s+|,\\s+|\\band\\s+|\\b(?:arrested|removed|deported|charged|sentenced|indicted|convicted|apprehended|detained)\\s+)${NAME},\\s+${AGE}${OF_PLACE}${DESC}${TYPE}(?:\\s+(?:from|of)\\s+${COUNTRY})?`, "g"),
   // "Jane Roe and John Doe, both illegal aliens from the Dominican Republic" (two people, two rows)
-  new RegExp(`(?:^|:\\s+|,\\s+|\\b(?:arrested|identified|charged|indicted|removed|deported)\\s+)${NAME}\\s+and\\s+${NAME},\\s+(?:both|each)\\s+${DESC}${TYPE}(?:\\s+(?:from|of)\\s+${COUNTRY})?`, "g"),
+  // "Rudi Lacatusu and Mirabela Lacatusu, illegal aliens from Romania" (plural wording, no "both"; DHS Oct 13 2026)
+  new RegExp(`(?:^|:\\s+|,\\s+|\\b(?:arrested|identified|charged|indicted|removed|deported)\\s+)${NAME}\\s+and\\s+${NAME},\\s+(?:(?:both|each)\\s+${DESC}${TYPE}|${DESC}(alien|national|citizen|noncitizen|non-citizen)s)(?:\\s+(?:from|of)\\s+${COUNTRY})?`, "g"),
   // "John Doe, 45, who is illegally present in the United States"
   new RegExp(`(?:^|\\s)${NAME},\\s+${AGE}(?:who\\s+(?:is|was)\\s+)?(illegally|unlawfully)\\s+present`, "g"),
   // ICE's common wording: "ICE Seattle arrested illegal alien Ronald Zacarias-Gregorio, 36, of Guatemala."
@@ -253,7 +254,7 @@ export function extractPeople(blocks, { title = "" } = {}) {
         while ((m = re.exec(s))) {
           const pair = re === PATTERNS[1];
           const people = pair
-            ? [m[1], m[2]].map((n) => ({ n, origin: originFrom(m[3], m[4], m[5]) }))
+            ? [m[1], m[2]].map((n) => ({ n, origin: originFrom(m[3] ?? m[5], m[4] ?? m[6], m[7]) }))
             : [{ n: m[1], origin: re === PATTERNS[0] ? originFrom(m[2], m[3] || "", m[4]) : "" }];
           for (const { n, origin } of people) {
           // "... alien Zinzun Bautista." -> no sentence period in the name (Jr. / Sr. keep theirs).
@@ -346,6 +347,22 @@ export function statusFrom(sentence, title = "") {
   return "As posted";
 }
 
+export const FORMAL_CHARGE = /\b(charged|charges|charging|indicted|indictment|complaint|accused)\b/i;
+
+/**
+ * Stage for a press-release row. The stage comes from the sentence naming the person; the release
+ * headline is used only when that sentence has no stage word at all. An arrest / detention with no
+ * formal-charge wording in the person's own sentence is "Arrested", never "Charged" (same rule as xLabel).
+ */
+export function releaseLabel(sentence, title = "") {
+  const own = statusFrom(sentence, "");
+  if (own === "Charged") return FORMAL_CHARGE.test(stripPriors(sentence)) ? "Charged" : "Arrested";
+  if (own !== "As posted") return own;
+  if (HISTORY.test(String(sentence || ""))) return own;
+  const t = statusFrom(sentence, title);
+  return t === "Charged" && !FORMAL_CHARGE.test(stripPriors(title)) ? "Arrested" : t;
+}
+
 const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 export function dateParts(iso) {
@@ -374,7 +391,7 @@ export function slug(s) {
 export function toRow(hit, rel) {
   const a = AGENCY[rel.office] || { label: rel.office, confirmedBy: "DHS" };
   const d = dateParts(rel.date);
-  const status = statusFrom(hit.sentence, rel.title);
+  const status = releaseLabel(hit.sentence, rel.title);
   return {
     name: hit.name,
     city: hit.city || "Not stated",
@@ -391,7 +408,7 @@ export function toRow(hit, rel) {
     via: rel.url.replace(/^https:\/\/(www\.)?/, ""),
     sourceUrl: rel.url,
     voting: /\b(illegal(ly)? vot|unlawful(ly)? vot|voting (as|by)|voted in|vote in|registered to vote)/i.test(hit.sentence),
-    origin: hit.origin || "Not stated",
+    origin: cleanOrigin(hit.origin) || countryFor(hit.name, hit.sentence) || "Not stated", // only wording tied to this person
     confirmedBy: a.confirmedBy,
     ...latLonFor(hit.city),
   };

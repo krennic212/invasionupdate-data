@@ -81,6 +81,13 @@ export function countryKey(row) {
   return o;
 }
 
+/** True when either row's duplicateOf names the other row's id. */
+export function alreadyLinked(a, b) {
+  const da = String(a?.duplicateOf || "").trim();
+  const db = String(b?.duplicateOf || "").trim();
+  return (!!da && da === String(b?.id || "")) || (!!db && db === String(a?.id || ""));
+}
+
 /**
  * Flag pairs that look like the same person under a longer / shorter given-name
  * form with the same country. Never merges; report only.
@@ -105,6 +112,8 @@ export function findLikelyDuplicates(rowsByFile) {
       if (a.country !== b.country) continue;
       if (a.name === b.name) continue;
       if (!leadingGivenNameVariant(a.row.name, b.row.name)) continue;
+      // Already resolved by hand: one side's duplicateOf points to the other's id.
+      if (alreadyLinked(a.row, b.row)) continue;
       out.push({
         a: { id: a.row.id || "", name: a.row.name, origin: a.row.origin || "", file: a.file },
         b: { id: b.row.id || "", name: b.row.name, origin: b.row.origin || "", file: b.file },
