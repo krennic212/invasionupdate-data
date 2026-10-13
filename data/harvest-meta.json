@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-13T14:55:37Z",
-  "rows": 267,
-  "approved": 263,
+  "updatedAt": "2026-10-13T14:56:18Z",
+  "rows": 268,
+  "approved": 264,
   "pending": 4,
   "photos": 76,
   "reviewRows": 751,
-  "lastAddedAt": "2026-10-13T14:47:56Z",
+  "lastAddedAt": "2026-10-13T14:56:17Z",
   "lastAddedCount": 1,
   "lastAdded": [
-    "Oscar Bergal"
+    "Ortiz Santana"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

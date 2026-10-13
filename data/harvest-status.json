@@ -1,16 +1,16 @@
 {
-  "checkedAt": 1791902876698,
-  "checkedAtIso": "2026-10-13T14:47:56.698Z",
+  "checkedAt": 1791903377668,
+  "checkedAtIso": "2026-10-13T14:56:17.668Z",
   "added": [
-    "Oscar Bergal"
+    "Ortiz Santana"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 94,
+  "scannedReleases": 101,
   "error": null,
-  "note": "Added 1 as approved: Oscar Bergal",
+  "note": "Added 1 as approved: Ortiz Santana",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
