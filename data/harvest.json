@@ -1,5 +1,33 @@
 [
   {
+    "name": "Ali Omar Flores-Sandino",
+    "city": "Not stated",
+    "crime": "Arrested: ICE Harlingen arrested Ali Omar Flores-Sandino, an illegal alien from Nicaragua, recently arrested for assault causing bodily injury.",
+    "usa": "ICE X post Oct 13, 2026 (@EroHarlingen)",
+    "foreign": "Not stated in post",
+    "picked": "10/13/2026 (@EroHarlingen post)",
+    "entered": "Not stated",
+    "office": "EroHarlingen",
+    "id": "x-2110000100550586640-ali-omar-flores-sandino",
+    "when": "13 Oct 2026",
+    "severity": 36,
+    "severityReason": "Assault / battery",
+    "severityCrimes": [
+      "Assault / battery"
+    ],
+    "text": "@EroHarlingen Oct 13, 2026, as posted: ICE Harlingen arrested Ali Omar Flores-Sandino, an illegal alien from Nicaragua, recently arrested for assault causing bodily injury. He received due process and on Oct. 2 an immigration judge ordered him removed from the U.S. ICE will deport him to his home country ASAP!",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2110000100550586640-ali-omar-flores-sandino.jpg",
+    "via": "@EroHarlingen 2110000100550586640",
+    "sourceUrl": "https://x.com/EroHarlingen/status/2110000100550586640",
+    "voting": false,
+    "origin": "Nicaragua",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HUIUTTBXIAAc6-c?format=jpg&name=orig"
+  },
+  {
     "name": "Santo Rodolfo Garcia Mendez",
     "city": "Hillsboro, NH",
     "crime": "Arrested: ICE Boston arrested Santo Rodolfo Garcia Mendez, a criminal illegal alien from the Dominican Republic, during ops in Hillsboro, NH.",
