@@ -1,5 +1,33 @@
 [
   {
+    "name": "Santo Rodolfo Garcia Mendez",
+    "city": "Hillsboro, NH",
+    "crime": "Arrested: ICE Boston arrested Santo Rodolfo Garcia Mendez, a criminal illegal alien from the Dominican Republic, during ops in Hillsboro, NH.",
+    "usa": "ICE X post Oct 13, 2026 (@EROBoston)",
+    "foreign": "Not stated in post",
+    "picked": "10/13/2026 (@EROBoston post)",
+    "entered": "Not stated",
+    "office": "EROBoston",
+    "id": "x-2109974923909501263-santo-rodolfo-garcia-mendez",
+    "when": "13 Oct 2026",
+    "severity": 45,
+    "severityReason": "Drug trafficking",
+    "severityCrimes": [
+      "Drug trafficking"
+    ],
+    "text": "@EROBoston Oct 13, 2026, as posted: ICE Boston arrested Santo Rodolfo Garcia Mendez, a criminal illegal alien from the Dominican Republic, during ops in Hillsboro, NH. His criminal history includes conviction for conspiracy to distribute and possession with intent to distribute a controlled substance (heroin).",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2109974923909501263-santo-rodolfo-garcia-mendez.jpg",
+    "via": "@EROBoston 2109974923909501263",
+    "sourceUrl": "https://x.com/EROBoston/status/2109974923909501263",
+    "voting": false,
+    "origin": "Dominican Republic",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HUghwxFXsAAExGq?format=png&name=orig"
+  },
+  {
     "name": "Jose Ricberto Machado-Batres",
     "city": "Washington, DC",
     "crime": "As posted: ICE @EROWashington D.C. arrested Jose Ricberto Machado-Batres, a criminal illegal alien from El Salvador, in Washington, D.C. Machado-Batres' criminal history includes human slavery or trafficking.",
