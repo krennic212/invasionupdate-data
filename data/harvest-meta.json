@@ -1,22 +1,14 @@
 {
-  "updatedAt": "2026-10-13T20:47:10Z",
-  "rows": 302,
-  "approved": 298,
+  "updatedAt": "2026-10-13T23:15:03Z",
+  "rows": 303,
+  "approved": 299,
   "pending": 4,
   "photos": 83,
   "reviewRows": 753,
-  "lastAddedAt": "2026-10-13T20:46:30Z",
-  "lastAddedCount": 9,
+  "lastAddedAt": "2026-10-13T23:15:02Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Victor Hugo Rosaldo-Lara",
-    "Miguel Obed Romero-Reyes",
-    "Dina Zulema Avelar",
-    "Rocio Basurto-Ayala",
-    "Angel Norberto Bautista-Herrera",
-    "Emmanuel Herrera Sanchez",
-    "Juan Contreras Bonilla",
-    "Paulo Jorge Silva",
-    "Fredy Rolando Rivera-Gonzalez"
+    "Cristian Popescu"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

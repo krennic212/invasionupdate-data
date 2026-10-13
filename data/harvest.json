@@ -1,5 +1,32 @@
 [
   {
+    "name": "Cristian Popescu",
+    "city": "Bothell, WA",
+    "crime": "Charged: Cristian Popescu, 46, of Bothell, Washington, is a citizen of Romania, residing in the United States. Popescu pleaded not guilty and trial is set for December 21, 2026.",
+    "usa": "DOJ release Oct 13, 2026: Pastor of Kirkland, Washington, church indicted on ten counts of wire fraud and five counts of money laundering in $13 million fraud scheme",
+    "foreign": "Not stated in post",
+    "picked": "10/13/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261013-cristian-popescu",
+    "when": "13 Oct 2026",
+    "severity": 70,
+    "severityReason": "Fraud (incl. voter fraud)",
+    "severityCrimes": [
+      "Fraud (incl. voter fraud)"
+    ],
+    "text": "DOJ Oct 13, 2026, as posted: Cristian Popescu, 46, of Bothell, Washington, is a citizen of Romania, residing in the United States. Popescu pleaded not guilty and trial is set for December 21, 2026.",
+    "photo": "",
+    "via": "justice.gov/usao-wdwa/pr/pastor-kirkland-washington-church-indicted-ten-counts-wire-fraud-and-five-counts-money",
+    "sourceUrl": "https://www.justice.gov/usao-wdwa/pr/pastor-kirkland-washington-church-indicted-ten-counts-wire-fraud-and-five-counts-money",
+    "voting": false,
+    "origin": "Romania",
+    "confirmedBy": "DOJ",
+    "lat": null,
+    "lon": null,
+    "status": "approved"
+  },
+  {
     "name": "Victor Hugo Rosaldo-Lara",
     "city": "Not stated",
     "crime": "Convicted: Victor Hugo Rosaldo-Lara, an illegal alien from Mexico, convicted of sexual exploitation of a minor, third degree.",

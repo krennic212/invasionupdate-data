@@ -1,17 +1,16 @@
 {
-  "checkedAt": 1791921058372,
-  "checkedAtIso": "2026-10-13T19:50:58.372Z",
+  "checkedAt": 1791933302973,
+  "checkedAtIso": "2026-10-13T23:15:02.973Z",
   "added": [
-    "Mirabela Lacatusu",
-    "Simranpal Singh"
+    "Cristian Popescu"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 100,
+  "scannedReleases": 87,
   "error": null,
-  "note": "Added 2 as approved: Mirabela Lacatusu, Simranpal Singh",
+  "note": "Added 1 as approved: Cristian Popescu",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
