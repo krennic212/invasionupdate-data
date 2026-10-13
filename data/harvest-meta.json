@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-13T13:56:03Z",
-  "rows": 266,
-  "approved": 262,
+  "updatedAt": "2026-10-13T14:47:57Z",
+  "rows": 267,
+  "approved": 263,
   "pending": 4,
   "photos": 75,
   "reviewRows": 751,
-  "lastAddedAt": "2026-10-13T13:55:48Z",
+  "lastAddedAt": "2026-10-13T14:47:56Z",
   "lastAddedCount": 1,
   "lastAdded": [
-    "Ali Omar Flores-Sandino"
+    "Oscar Bergal"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

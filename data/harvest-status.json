@@ -1,14 +1,16 @@
 {
-  "checkedAt": 1791895325683,
-  "checkedAtIso": "2026-10-13T12:42:05.683Z",
-  "added": [],
+  "checkedAt": 1791902876698,
+  "checkedAtIso": "2026-10-13T14:47:56.698Z",
+  "added": [
+    "Oscar Bergal"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 96,
+  "scannedReleases": 94,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 1 as approved: Oscar Bergal",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
