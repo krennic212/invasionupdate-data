@@ -1,18 +1,14 @@
 {
-  "updatedAt": "2026-10-14T20:30:34Z",
-  "rows": 309,
-  "approved": 305,
+  "updatedAt": "2026-10-14T23:45:34Z",
+  "rows": 310,
+  "approved": 306,
   "pending": 4,
   "photos": 83,
   "reviewRows": 753,
-  "lastAddedAt": "2026-10-14T20:30:33Z",
-  "lastAddedCount": 5,
+  "lastAddedAt": "2026-10-14T23:45:33Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Wilver Ever Albayero",
-    "Julio Alberto Lopez-Carahui",
-    "Roque Calihua-Cruz",
-    "Jaime Martins-Olivera",
-    "Luis Antonio Alejandro-Ramos"
+    "Ephantus Mwangi"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

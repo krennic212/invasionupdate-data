@@ -1,5 +1,32 @@
 [
   {
+    "name": "Ephantus Mwangi",
+    "city": "Not stated",
+    "crime": "Convicted: KANSAS CITY – The District of Kansas today announced that on October 5, 2026, Ephantus Mwangi, a Kenyan national and Missouri businessman, was sentenced to 51 months in prison for willfully failing to pay over employment taxes to the IRS on behalf of the company he owned and operated.",
+    "usa": "DOJ release Oct 14, 2026: U.S. Attorney’s Office – District of Kansas Joins DOJ Fraud Division, IRS, and IRS-CI in National Tax Enforcement Surge Exposing More than $490M in Tax Fraud; Kansas Business Owner Sent to Prison for Employment Tax Crimes",
+    "foreign": "Not stated in post",
+    "picked": "10/14/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261014-ephantus-mwangi",
+    "when": "14 Oct 2026",
+    "severity": 60,
+    "severityReason": "Fraud (incl. voter fraud)",
+    "severityCrimes": [
+      "Fraud (incl. voter fraud)"
+    ],
+    "text": "DOJ Oct 14, 2026, as posted: KANSAS CITY – The District of Kansas today announced that on October 5, 2026, Ephantus Mwangi, a Kenyan national and Missouri businessman, was sentenced to 51 months in prison for willfully failing to pay over employment taxes to the IRS on behalf of the company he owned and operated.",
+    "photo": "",
+    "via": "justice.gov/usao-ks/pr/us-attorneys-office-district-kansas-joins-doj-fraud-division-irs-and-irs-ci-national-tax",
+    "sourceUrl": "https://www.justice.gov/usao-ks/pr/us-attorneys-office-district-kansas-joins-doj-fraud-division-irs-and-irs-ci-national-tax",
+    "voting": false,
+    "origin": "Kenya",
+    "confirmedBy": "DOJ",
+    "lat": null,
+    "lon": null,
+    "status": "approved"
+  },
+  {
     "name": "Wilver Ever Albayero",
     "city": "Signal Hill, CA",
     "crime": "Convicted: Wilver Ever Albayero, a criminal illegal alien from El Salvador, convicted for sex with a minor three years younger in Signal Hill, California.",

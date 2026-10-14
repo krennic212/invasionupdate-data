@@ -1,20 +1,16 @@
 {
-  "checkedAt": 1792009833624,
-  "checkedAtIso": "2026-10-14T20:30:33.624Z",
+  "checkedAt": 1792021533426,
+  "checkedAtIso": "2026-10-14T23:45:33.426Z",
   "added": [
-    "Wilver Ever Albayero",
-    "Julio Alberto Lopez-Carahui",
-    "Roque Calihua-Cruz",
-    "Jaime Martins-Olivera",
-    "Luis Antonio Alejandro-Ramos"
+    "Ephantus Mwangi"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 101,
+  "scannedReleases": 97,
   "error": null,
-  "note": "Added 5 as approved: Wilver Ever Albayero, Julio Alberto Lopez-Carahui, Roque Calihua-Cruz, Jaime Martins-Olivera, Luis Antonio Alejandro-Ramos",
+  "note": "Added 1 as approved: Ephantus Mwangi",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
