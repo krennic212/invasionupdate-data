@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-10-13",
+  "asOf": "2026-10-14",
   "windowDays": 7,
-  "total": 116,
+  "total": 91,
   "rows": [
     {
       "id": "dhs-20261008-ian-clive-burton",
@@ -124,19 +124,6 @@
       ]
     },
     {
-      "id": "dhs-20261007-naun-martinez-zuniga",
-      "name": "Naun Martinez-Zuniga",
-      "when": "7 Oct 2026",
-      "severity": 162,
-      "severityReason": "Terrorist plot",
-      "severityCrimes": [
-        "Terrorist plot",
-        "Burglary / theft",
-        "Drug possession",
-        "Illegal entry / reentry"
-      ]
-    },
-    {
       "id": "x-2108687300699754743-juan-jose-morales-colindres",
       "name": "Juan Jose Morales-Colindres",
       "when": "9 Oct 2026",
@@ -168,18 +155,6 @@
       "severityCrimes": [
         "Kidnapping / human trafficking",
         "Armed robbery / aggravated assault"
-      ]
-    },
-    {
-      "id": "x-2107803124752629805-reynaldo-c-zayas",
-      "name": "Reynaldo C. Zayas",
-      "when": "7 Oct 2026",
-      "severity": 144,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Drug trafficking",
-        "Assault / battery"
       ]
     },
     {
@@ -228,17 +203,6 @@
       ]
     },
     {
-      "id": "dhs-20261007-carlos-arturo-zelaya-argueta",
-      "name": "Carlos Arturo Zelaya-Argueta",
-      "when": "7 Oct 2026",
-      "severity": 125,
-      "severityReason": "Sexual abuse of an animal",
-      "severityCrimes": [
-        "Sexual abuse of an animal",
-        "Drug trafficking"
-      ]
-    },
-    {
       "id": "dhs-20261008-irvin-roblero-ortiz",
       "name": "Irvin Roblero-Ortiz",
       "when": "8 Oct 2026",
@@ -247,17 +211,6 @@
       "severityCrimes": [
         "Kidnapping / human trafficking",
         "Assault / battery"
-      ]
-    },
-    {
-      "id": "dhs-20261007-miguel-cadena-gomez",
-      "name": "Miguel Cadena-Gomez",
-      "when": "7 Oct 2026",
-      "severity": 122,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Drug possession"
       ]
     },
     {
@@ -273,17 +226,6 @@
       ]
     },
     {
-      "id": "dhs-20261007-gonzalo-sanchez",
-      "name": "Gonzalo Sanchez",
-      "when": "7 Oct 2026",
-      "severity": 117,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "DUI"
-      ]
-    },
-    {
       "id": "dhs-20261008-jose-luis-mata-cedillo",
       "name": "Jose Luis Mata-Cedillo",
       "when": "8 Oct 2026",
@@ -293,6 +235,59 @@
         "Weapons",
         "Drug trafficking",
         "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "dhs-20261009-norberto-machada-rodriguez",
+      "name": "Norberto Machada-Rodriguez",
+      "when": "9 Oct 2026",
+      "severity": 108,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Drug possession"
+      ]
+    },
+    {
+      "id": "doj-20261009-gabriel-aguilar-benitez",
+      "name": "Gabriel Aguilar-Benitez",
+      "when": "9 Oct 2026",
+      "severity": 105,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "x-2108687297793372571-wilson-omar-santos-paz",
+      "name": "Wilson Omar Santos Paz",
+      "when": "9 Oct 2026",
+      "severity": 97,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "dhs-20261013-gerado-balcazar-portillo",
+      "name": "Gerado Balcazar-Portillo",
+      "when": "13 Oct 2026",
+      "severity": 95,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter"
+      ]
+    },
+    {
+      "id": "dhs-20261013-jorge-serrano-fernandez",
+      "name": "Jorge Serrano-Fernandez",
+      "when": "13 Oct 2026",
+      "severity": 95,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter"
       ]
     }
   ]

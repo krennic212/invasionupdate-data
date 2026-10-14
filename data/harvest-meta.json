@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-13T23:15:03Z",
-  "rows": 303,
-  "approved": 299,
+  "updatedAt": "2026-10-14T16:45:29Z",
+  "rows": 304,
+  "approved": 300,
   "pending": 4,
   "photos": 83,
   "reviewRows": 753,
-  "lastAddedAt": "2026-10-13T23:15:02Z",
+  "lastAddedAt": "2026-10-14T16:45:28Z",
   "lastAddedCount": 1,
   "lastAdded": [
-    "Cristian Popescu"
+    "Sasa Micev"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

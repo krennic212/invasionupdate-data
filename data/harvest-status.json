@@ -1,16 +1,16 @@
 {
-  "checkedAt": 1791933302973,
-  "checkedAtIso": "2026-10-13T23:15:02.973Z",
+  "checkedAt": 1791996328978,
+  "checkedAtIso": "2026-10-14T16:45:28.978Z",
   "added": [
-    "Cristian Popescu"
+    "Sasa Micev"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 87,
+  "scannedReleases": 88,
   "error": null,
-  "note": "Added 1 as approved: Cristian Popescu",
+  "note": "Added 1 as approved: Sasa Micev",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
