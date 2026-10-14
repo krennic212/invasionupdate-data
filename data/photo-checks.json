@@ -1079,5 +1079,14 @@
     "name": "Sasa Micev",
     "result": "none",
     "why": "no single person-specific image in the release"
+  },
+  "ice.gov/news/releases/ice-washington-dc-arrests-criminal-illegal-alien-convicted-possessing-child-sex-abuse": {
+    "checkedAt": "2026-10-14T20:30:34.179Z",
+    "name": "Luis Antonio Alejandro-Ramos",
+    "result": "held",
+    "file": "ice-20261014-luis-antonio-alejandro-ramos.jpg",
+    "image": "https://www.ice.gov/sites/default/files/2026-10/261014dc-2.png",
+    "bytes": 12181,
+    "why": "needs visual check"
   }
 }

@@ -1,14 +1,18 @@
 {
-  "updatedAt": "2026-10-14T16:45:29Z",
-  "rows": 304,
-  "approved": 300,
+  "updatedAt": "2026-10-14T20:30:34Z",
+  "rows": 309,
+  "approved": 305,
   "pending": 4,
   "photos": 83,
   "reviewRows": 753,
-  "lastAddedAt": "2026-10-14T16:45:28Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-10-14T20:30:33Z",
+  "lastAddedCount": 5,
   "lastAdded": [
-    "Sasa Micev"
+    "Wilver Ever Albayero",
+    "Julio Alberto Lopez-Carahui",
+    "Roque Calihua-Cruz",
+    "Jaime Martins-Olivera",
+    "Luis Antonio Alejandro-Ramos"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

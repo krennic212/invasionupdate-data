@@ -1,16 +1,20 @@
 {
-  "checkedAt": 1791996328978,
-  "checkedAtIso": "2026-10-14T16:45:28.978Z",
+  "checkedAt": 1792009833624,
+  "checkedAtIso": "2026-10-14T20:30:33.624Z",
   "added": [
-    "Sasa Micev"
+    "Wilver Ever Albayero",
+    "Julio Alberto Lopez-Carahui",
+    "Roque Calihua-Cruz",
+    "Jaime Martins-Olivera",
+    "Luis Antonio Alejandro-Ramos"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 88,
+  "scannedReleases": 101,
   "error": null,
-  "note": "Added 1 as approved: Sasa Micev",
+  "note": "Added 5 as approved: Wilver Ever Albayero, Julio Alberto Lopez-Carahui, Roque Calihua-Cruz, Jaime Martins-Olivera, Luis Antonio Alejandro-Ramos",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
