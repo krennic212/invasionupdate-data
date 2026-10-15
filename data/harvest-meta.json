@@ -1,15 +1,24 @@
 {
-  "updatedAt": "2026-10-15T20:31:38Z",
-  "rows": 358,
-  "approved": 354,
+  "updatedAt": "2026-10-15T20:44:27Z",
+  "rows": 369,
+  "approved": 365,
   "pending": 4,
   "photos": 107,
   "reviewRows": 761,
-  "lastAddedAt": "2026-10-15T20:30:30Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-10-15T20:44:27Z",
+  "lastAddedCount": 11,
   "lastAdded": [
-    "Denis Joseph Bouchard",
-    "Victor Soseia Hachipan"
+    "Luis Ernesto Oliva-Lugo",
+    "Orlin Orlando Limas Herrera",
+    "Carmen Urias Velasquez",
+    "Luis Hernandez Flores",
+    "Luis Ramos-De La Cruz",
+    "Miguel Angel Saldana",
+    "Froylan Dominguez Aguirre",
+    "Ernesto Mario Solano Abad",
+    "Rosalio Garcia-Martinez",
+    "William Benjamin Diaz Jacinto",
+    "Juan Gutierrez-Garcia"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
