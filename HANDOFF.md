@@ -7,3 +7,4 @@ Source: https://www.justice.gov/usao-ednc/pr/ednc-unveils-ten-federal-indictment
 - Skipped: James Darius Osborne (release gives no non-citizen status; felon-voting case).
 - No photos: this is a multi-defendant release. All defendants are adults and the release says they were arrested.
 - Tests and validate passed. Approved count 365 -> 374.
+- Then I started the hourly workflow by hand (run 38810063373, approve input left blank) to deploy Pages. Its normal scan added 13 more official rows (Valdez-Flores, Aman Kumar, ... Suvorov). Live feed: 392 rows, 387 approved, 5 pending. Verified on Pages.
