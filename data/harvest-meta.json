@@ -1,26 +1,15 @@
 {
-  "updatedAt": "2026-10-15T21:28:25Z",
-  "rows": 392,
-  "approved": 387,
+  "updatedAt": "2026-10-15T22:43:47Z",
+  "rows": 394,
+  "approved": 389,
   "pending": 5,
   "photos": 107,
   "reviewRows": 761,
-  "lastAddedAt": "2026-10-15T21:28:24Z",
-  "lastAddedCount": 13,
+  "lastAddedAt": "2026-10-15T22:43:47Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Mario Jesus Valdez-Flores",
-    "Aman Kumar",
-    "David Antonio Aviles Perez",
-    "Cuong Chanh Phan",
-    "Partap Singh",
-    "Gerson Emir Cuadra Soto",
-    "Rajinder Kumar",
-    "Ricardo Curbelo-Aguilar",
-    "Julio Eduardo Ortega-Diaz",
-    "Jaime Marques-Orellana",
-    "Rafael Calderon-Vierya",
-    "Antonio Alvarez",
-    "Alexander Suvorov"
+    "Pedro Vega-Wizard",
+    "Robin Augustus Reid"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
