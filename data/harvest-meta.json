@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-10-15T22:43:47Z",
-  "rows": 394,
-  "approved": 389,
+  "updatedAt": "2026-10-15T22:44:32Z",
+  "rows": 395,
+  "approved": 390,
   "pending": 5,
   "photos": 107,
   "reviewRows": 761,
-  "lastAddedAt": "2026-10-15T22:43:47Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-10-15T22:44:31Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Pedro Vega-Wizard",
-    "Robin Augustus Reid"
+    "Becerra-Del Rio"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

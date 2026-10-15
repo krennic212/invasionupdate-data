@@ -1,28 +1,16 @@
 {
-  "checkedAt": 1792099704358,
-  "checkedAtIso": "2026-10-15T21:28:24.358Z",
+  "checkedAt": 1792104271761,
+  "checkedAtIso": "2026-10-15T22:44:31.761Z",
   "added": [
-    "Mario Jesus Valdez-Flores",
-    "Aman Kumar",
-    "David Antonio Aviles Perez",
-    "Cuong Chanh Phan",
-    "Partap Singh",
-    "Gerson Emir Cuadra Soto",
-    "Rajinder Kumar",
-    "Ricardo Curbelo-Aguilar",
-    "Julio Eduardo Ortega-Diaz",
-    "Jaime Marques-Orellana",
-    "Rafael Calderon-Vierya",
-    "Antonio Alvarez",
-    "Alexander Suvorov"
+    "Becerra-Del Rio"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 99,
+  "scannedReleases": 90,
   "error": null,
-  "note": "Added 13 as approved: Mario Jesus Valdez-Flores, Aman Kumar, David Antonio Aviles Perez, Cuong Chanh Phan, Partap Singh, Gerson Emir Cuadra Soto, Rajinder Kumar, Ricardo Curbelo-Aguilar, Julio Eduardo Ortega-Diaz, Jaime Marques-Orellana, Rafael Calderon-Vierya, Antonio Alvarez, Alexander Suvorov",
+  "note": "Added 1 as approved: Becerra-Del Rio",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
