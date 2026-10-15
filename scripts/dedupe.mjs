@@ -99,25 +99,34 @@ export function findLikelyDuplicates(rowsByFile) {
     for (const r of rows || []) {
       if (!r || typeof r !== "object") continue;
       const n = nameKey(r.name);
-      const c = countryKey(r);
-      if (!n || !c) continue;
-      flat.push({ file, row: r, name: n, country: c });
+      if (!n) continue;
+      flat.push({ file, row: r, name: n, country: countryKey(r) });
     }
   }
   const out = [];
+  const srcKey = (r) => String(r?.sourceUrl || "").trim().toLowerCase();
   for (let i = 0; i < flat.length; i++) {
     for (let j = i + 1; j < flat.length; j++) {
       const a = flat[i];
       const b = flat[j];
-      if (a.country !== b.country) continue;
-      if (a.name === b.name) continue;
-      if (!leadingGivenNameVariant(a.row.name, b.row.name)) continue;
+      let reason = "";
+      if (a.name === b.name) {
+        // Exact same name from different sources: flag unless either row is already marked duplicateOf.
+        if (a.row.duplicateOf || b.row.duplicateOf) continue;
+        if (srcKey(a.row) && srcKey(a.row) === srcKey(b.row)) continue;
+        if (a.country && b.country && a.country !== b.country) continue;
+        reason = "exact name match; different sources";
+      } else {
+        if (!a.country || a.country !== b.country) continue;
+        if (!leadingGivenNameVariant(a.row.name, b.row.name)) continue;
+        reason = "leading given-name variant; surname tokens match; same country";
+      }
       // Already resolved by hand: one side's duplicateOf points to the other's id.
       if (alreadyLinked(a.row, b.row)) continue;
       out.push({
         a: { id: a.row.id || "", name: a.row.name, origin: a.row.origin || "", file: a.file },
         b: { id: b.row.id || "", name: b.row.name, origin: b.row.origin || "", file: b.file },
-        reason: "leading given-name variant; surname tokens match; same country",
+        reason,
       });
     }
   }

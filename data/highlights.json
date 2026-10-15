@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-15",
   "windowDays": 7,
-  "total": 104,
+  "total": 103,
   "rows": [
     {
       "id": "x-2109695592888713517-julio-cesar-ojeda",
@@ -191,6 +191,17 @@
       ]
     },
     {
+      "id": "dhs-20261013-victor-manuel-moralez-diaz",
+      "name": "Victor Manuel Moralez Diaz",
+      "when": "13 Oct 2026",
+      "severity": 115,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "DUI"
+      ]
+    },
+    {
       "id": "dhs-20261009-norberto-machada-rodriguez",
       "name": "Norberto Machada-Rodriguez",
       "when": "9 Oct 2026",
@@ -199,17 +210,6 @@
       "severityCrimes": [
         "Rape / sexual assault",
         "Drug possession"
-      ]
-    },
-    {
-      "id": "x-2110230618164662735-victor-manuel",
-      "name": "Victor Manuel Moralez Diaz",
-      "when": "13 Oct 2026",
-      "severity": 105,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "DUI"
       ]
     },
     {

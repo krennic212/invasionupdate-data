@@ -101,3 +101,14 @@ test("likely-duplicate report skips pairs already linked by duplicateOf", async 
   assert.equal(findLikelyDuplicates([{ file: "h", rows: [live] }, { file: "r", rows: [{ ...rev, duplicateOf: live.id }] }]).length, 0);
   assert.equal(findLikelyDuplicates([{ file: "h", rows: [{ ...live, duplicateOf: "other" }] }, { file: "r", rows: [rev] }]).length, 1);
 });
+
+test("exact-name match across different sources is flagged unless one side has duplicateOf", async () => {
+  const { findLikelyDuplicates } = await import("./dedupe.mjs");
+  const dhs = { id: "dhs-1-victor-manuel-moralez-diaz", name: "Victor Manuel Moralez Diaz", origin: "Mexico", sourceUrl: "https://www.dhs.gov/news/x" };
+  const x = { id: "x-2-victor-manuel", name: "Victor Manuel Moralez Diaz", origin: "Not stated", sourceUrl: "https://x.com/EROLosAngeles/status/2" };
+  const hits = findLikelyDuplicates([{ file: "data/harvest.json", rows: [dhs, x] }]);
+  assert.equal(hits.length, 1);
+  assert.match(hits[0].reason, /exact name/);
+  assert.equal(findLikelyDuplicates([{ file: "h", rows: [dhs] }, { file: "r", rows: [{ ...x, duplicateOf: dhs.id }] }]).length, 0);
+  assert.equal(findLikelyDuplicates([{ file: "h", rows: [dhs, { ...x, sourceUrl: dhs.sourceUrl }] }]).length, 0);
+});

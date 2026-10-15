@@ -697,35 +697,6 @@
     "photoSourceUrl": "https://pbs.twimg.com/media/HUIQWFOXoAAvwk0?format=png&name=orig"
   },
   {
-    "name": "Victor Manuel Moralez Diaz",
-    "city": "Not stated",
-    "crime": "Arrested: 🚨ICE Los Angeles arrested criminal illegal alien Victor Manuel, Moralez Diaz, 45, of Mexico, Oct. 10.",
-    "usa": "ICE X post Oct 13, 2026 (@EROLosAngeles)",
-    "foreign": "Not stated in post",
-    "picked": "10/13/2026 (@EROLosAngeles post)",
-    "entered": "Not stated",
-    "office": "EROLosAngeles",
-    "id": "x-2110230618164662735-victor-manuel",
-    "when": "13 Oct 2026",
-    "severity": 105,
-    "severityReason": "Child sex crime",
-    "severityCrimes": [
-      "Child sex crime",
-      "DUI"
-    ],
-    "text": "@EROLosAngeles Oct 13, 2026, as posted: 🚨ICE Los Angeles arrested criminal illegal alien Victor Manuel, Moralez Diaz, 45, of Mexico, Oct. 10. Moralez is a registered sex offender and has previous arrests for DUI and attempted unlawful sexual intercourse with a minor. He is now in removal proceedings.",
-    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2110230618164662735-victor-manuel.jpg",
-    "via": "@EROLosAngeles 2110230618164662735",
-    "sourceUrl": "https://x.com/EROLosAngeles/status/2110230618164662735",
-    "voting": false,
-    "origin": "Not stated",
-    "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
-    "status": "approved",
-    "photoSourceUrl": "https://pbs.twimg.com/media/HUirncWXMAA-dJ1?format=png&name=orig"
-  },
-  {
     "name": "Jose Cruz Segovia",
     "city": "Not stated",
     "crime": "Arrested: 🚨ICE Los Angeles arrested criminal illegal alien Jose Cruz Segovia, 42, of El Salvador, Oct. 10.",
@@ -1552,21 +1523,23 @@
     "office": "DHSgov",
     "id": "dhs-20261013-victor-manuel-moralez-diaz",
     "when": "13 Oct 2026",
-    "severity": 92,
+    "severity": 115,
     "severityReason": "Child sex crime",
     "severityCrimes": [
-      "Child sex crime"
+      "Child sex crime",
+      "DUI"
     ],
-    "text": "DHS Oct 13, 2026, as posted: Victor Manuel Moralez Diaz, a criminal illegal alien from Mexico, convicted for attempted sexual intercourse with a minor in Long Beach, California.",
+    "text": "DHS Oct 13, 2026, as posted: Victor Manuel Moralez Diaz, a criminal illegal alien from Mexico, convicted for attempted sexual intercourse with a minor in Long Beach, California. Update: @EROLosAngeles posted Oct 13, 2026: \"🚨ICE Los Angeles arrested criminal illegal alien Victor Manuel, Moralez Diaz, 45, of Mexico, Oct. 10. Moralez is a registered sex offender and has previous arrests for DUI and attempted unlawful sexual intercourse with a minor. He is now in removal proceedings.\" (https://x.com/EROLosAngeles/status/2110230618164662735).",
     "photo": "",
     "via": "dhs.gov/news/2026/10/13/worst-worst-over-columbus-day-weekend-ice-arrests-murderers-pedophiles-rapists-drug",
-    "sourceUrl": "https://www.dhs.gov/news/2026/10/13/worst-worst-over-columbus-day-weekend-ice-arrests-murderers-pedophiles-rapists-drug",
+    "sourceUrl": "https://www.dhs.gov/news/2026/10/13/worst-worst-over-columbus-day-weekend-ice-arrests-murderers-pedophiles-rapists-drug https://x.com/EROLosAngeles/status/2110230618164662735",
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
     "lat": 33.77,
     "lon": -118.19,
-    "status": "approved"
+    "status": "approved",
+    "approvalNote": "Merged duplicate x-2110230618164662735-victor-manuel (ERO Los Angeles arrest post, Oct 13, 2026)"
   },
   {
     "name": "Jesus Villanueva-Carvajal",
