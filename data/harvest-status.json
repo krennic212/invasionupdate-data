@@ -1,18 +1,18 @@
 {
-  "checkedAt": 1792085694344,
-  "checkedAtIso": "2026-10-15T17:34:54.344Z",
+  "checkedAt": 1792089981886,
+  "checkedAtIso": "2026-10-15T18:46:21.886Z",
   "added": [
-    "Denis Joseph Bouchard"
+    "Victor Soseia Hachipan"
   ],
   "addedStatus": "approved",
   "heldPending": [
-    "Denis Joseph Bouchard (not stated to be a non-citizen)"
+    "Victor Soseia Hachipan (suspect described as still at large)"
   ],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 105,
+  "scannedReleases": 95,
   "error": null,
-  "note": "Added 1 as approved: Denis Joseph Bouchard",
+  "note": "Added 1 as approved: Victor Soseia Hachipan",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

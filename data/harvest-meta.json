@@ -1,15 +1,12 @@
 {
-  "updatedAt": "2026-10-15T18:10:14Z",
-  "rows": 357,
+  "updatedAt": "2026-10-15T18:46:22Z",
+  "rows": 358,
   "approved": 352,
-  "pending": 5,
+  "pending": 6,
   "photos": 107,
   "reviewRows": 761,
-  "lastAddedAt": "2026-10-15T17:46:37Z",
-  "lastAddedCount": 2,
-  "lastAdded": [
-    "Jose Aguirre Ponce",
-    "Leonel Silva"
-  ],
+  "lastAddedAt": "2026-10-15T18:46:21Z",
+  "lastAddedCount": 0,
+  "lastAdded": [],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
