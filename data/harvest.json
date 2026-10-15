@@ -1,5 +1,32 @@
 [
   {
+    "name": "Edgar Sanchez-Solis",
+    "city": "Not stated",
+    "crime": "Convicted: Edgar Sanchez-Solis, 27, an illegal alien from Mexico, was sentenced today to five years in prison for his role in an international human smuggling conspiracy that illegally brought aliens from Mexico and Central and South America across the northern border with Canada into the United States.",
+    "usa": "DOJ release Oct 15, 2026: Illegal Alien from Mexico Sentenced for International Conspiracy to Smuggle Aliens from Canada into United States",
+    "foreign": "Not stated in post",
+    "picked": "10/15/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261015-edgar-sanchez-solis",
+    "when": "15 Oct 2026",
+    "severity": 65,
+    "severityReason": "Alien smuggling",
+    "severityCrimes": [
+      "Alien smuggling"
+    ],
+    "text": "DOJ Oct 15, 2026, as posted: Edgar Sanchez-Solis, 27, an illegal alien from Mexico, was sentenced today to five years in prison for his role in an international human smuggling conspiracy that illegally brought aliens from Mexico and Central and South America across the northern border with Canada into the United States.",
+    "photo": "",
+    "via": "justice.gov/opa/pr/illegal-alien-mexico-sentenced-international-conspiracy-smuggle-aliens-canada-united-states",
+    "sourceUrl": "https://www.justice.gov/opa/pr/illegal-alien-mexico-sentenced-international-conspiracy-smuggle-aliens-canada-united-states",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "DOJ",
+    "lat": null,
+    "lon": null,
+    "status": "approved"
+  },
+  {
     "name": "Edwin Abel Aplicano-Vargas",
     "city": "Not stated",
     "crime": "Removed: Edwin Abel Aplicano-Vargas, 36, an illegal alien from Honduras who is currently serving a prison sentence for third‑degree sexual offense convictions in Prince George’s County, is facing indictment for illegal re-entry after prior removal. According to court documents, Aplicano-Vargas unlawfully re-entered the United States after authorities removed him in 2011.",

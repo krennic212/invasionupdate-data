@@ -1,18 +1,16 @@
 {
-  "checkedAt": 1792079368302,
-  "checkedAtIso": "2026-10-15T15:49:28.302Z",
+  "checkedAt": 1792081852746,
+  "checkedAtIso": "2026-10-15T16:30:52.746Z",
   "added": [
-    "Edwin Abel Aplicano-Vargas",
-    "Juan Carlos Rivas-Montano",
-    "Celstino Patishtan"
+    "Edgar Sanchez-Solis"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 94,
+  "scannedReleases": 97,
   "error": null,
-  "note": "Added 3 as approved: Edwin Abel Aplicano-Vargas, Juan Carlos Rivas-Montano, Celstino Patishtan",
+  "note": "Added 1 as approved: Edgar Sanchez-Solis",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

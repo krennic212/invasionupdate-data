@@ -1,16 +1,14 @@
 {
-  "updatedAt": "2026-10-15T15:49:29Z",
-  "rows": 351,
-  "approved": 347,
+  "updatedAt": "2026-10-15T16:30:53Z",
+  "rows": 352,
+  "approved": 348,
   "pending": 4,
   "photos": 102,
   "reviewRows": 761,
-  "lastAddedAt": "2026-10-15T15:49:28Z",
-  "lastAddedCount": 3,
+  "lastAddedAt": "2026-10-15T16:30:52Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Edwin Abel Aplicano-Vargas",
-    "Juan Carlos Rivas-Montano",
-    "Celstino Patishtan"
+    "Edgar Sanchez-Solis"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
