@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-15",
   "windowDays": 7,
-  "total": 110,
+  "total": 112,
   "rows": [
     {
       "id": "x-2109695592888713517-julio-cesar-ojeda",
@@ -214,6 +214,17 @@
       ]
     },
     {
+      "id": "x-2110761428525240505-reynaldo-chamizo-zayas",
+      "name": "Reynaldo Chamizo Zayas",
+      "when": "15 Oct 2026",
+      "severity": 108,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Drug trafficking"
+      ]
+    },
+    {
       "id": "dhs-20261009-norberto-machada-rodriguez",
       "name": "Norberto Machada-Rodriguez",
       "when": "9 Oct 2026",
@@ -274,18 +285,6 @@
       "severityReason": "Murder / manslaughter",
       "severityCrimes": [
         "Murder / manslaughter"
-      ]
-    },
-    {
-      "id": "x-2109053109188370611-franklin-alexander-alarenga-mejia",
-      "name": "Franklin Alexander Alarenga-Mejia",
-      "when": "10 Oct 2026",
-      "severity": 95,
-      "severityReason": "Assault / battery",
-      "severityCrimes": [
-        "Assault / battery",
-        "Burglary / theft",
-        "Drug possession"
       ]
     }
   ]

@@ -1,14 +1,15 @@
 {
-  "updatedAt": "2026-10-15T16:30:53Z",
-  "rows": 352,
-  "approved": 348,
+  "updatedAt": "2026-10-15T16:43:39Z",
+  "rows": 354,
+  "approved": 350,
   "pending": 4,
   "photos": 102,
   "reviewRows": 761,
-  "lastAddedAt": "2026-10-15T16:30:52Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-10-15T16:43:39Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Edgar Sanchez-Solis"
+    "Viviana Vanessa Castellano-Ordonez",
+    "Reynaldo Chamizo Zayas"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
