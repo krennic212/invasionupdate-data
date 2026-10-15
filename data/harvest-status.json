@@ -1,21 +1,18 @@
 {
-  "checkedAt": 1792072393054,
-  "checkedAtIso": "2026-10-15T13:53:13.054Z",
+  "checkedAt": 1792079368302,
+  "checkedAtIso": "2026-10-15T15:49:28.302Z",
   "added": [
-    "Gerardo Bautista-Ramirez",
-    "Samuel Orozco Lopez",
-    "Victor Lozano-Mota",
-    "Leonardo Arriaga Mendoza",
-    "Rubicil Perez-Valle",
-    "Ernesto Ramirez-Sierra"
+    "Edwin Abel Aplicano-Vargas",
+    "Juan Carlos Rivas-Montano",
+    "Celstino Patishtan"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 102,
+  "scannedReleases": 94,
   "error": null,
-  "note": "Added 6 as approved: Gerardo Bautista-Ramirez, Samuel Orozco Lopez, Victor Lozano-Mota, Leonardo Arriaga Mendoza, Rubicil Perez-Valle, Ernesto Ramirez-Sierra",
+  "note": "Added 3 as approved: Edwin Abel Aplicano-Vargas, Juan Carlos Rivas-Montano, Celstino Patishtan",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
