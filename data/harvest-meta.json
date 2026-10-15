@@ -1,19 +1,15 @@
 {
-  "updatedAt": "2026-10-15T13:53:13Z",
-  "rows": 346,
-  "approved": 342,
+  "updatedAt": "2026-10-15T14:44:00Z",
+  "rows": 348,
+  "approved": 344,
   "pending": 4,
   "photos": 102,
-  "reviewRows": 760,
-  "lastAddedAt": "2026-10-15T13:53:13Z",
-  "lastAddedCount": 6,
+  "reviewRows": 761,
+  "lastAddedAt": "2026-10-15T14:44:00Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Gerardo Bautista-Ramirez",
-    "Samuel Orozco Lopez",
-    "Victor Lozano-Mota",
-    "Leonardo Arriaga Mendoza",
-    "Rubicil Perez-Valle",
-    "Ernesto Ramirez-Sierra"
+    "Abel Martinez",
+    "Candido Luna-Rangel"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
