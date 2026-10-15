@@ -22,8 +22,7 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "suspect described as still at large"
+    "status": "approved"
   },
   {
     "name": "Jose Aguirre Ponce",
@@ -104,8 +103,7 @@
     "confirmedBy": "DOJ",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen"
+    "status": "approved"
   },
   {
     "name": "Viviana Vanessa Castellano-Ordonez",

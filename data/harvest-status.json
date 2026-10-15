@@ -1,23 +1,20 @@
 {
-  "checkedAt": 1792089981886,
-  "checkedAtIso": "2026-10-15T18:46:21.886Z",
+  "checkedAt": 1792096230513,
+  "checkedAtIso": "2026-10-15T20:30:30.513Z",
   "added": [
+    "Denis Joseph Bouchard",
     "Victor Soseia Hachipan"
   ],
   "addedStatus": "approved",
-  "heldPending": [
-    "Victor Soseia Hachipan (suspect described as still at large)"
-  ],
+  "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 95,
+  "scannedReleases": 0,
   "error": null,
-  "note": "Added 1 as approved: Victor Soseia Hachipan",
+  "note": "Manual approve after guard fixes: Denis (false-claim U.S. citizen wording) and Victor (investigative whereabouts wording).",
   "sources": [
-    "dhs.gov/news-releases/press-releases",
-    "ice.gov/newsroom",
-    "cbp.gov/newsroom",
-    "justice.gov press-release API"
+    "https://www.justice.gov/usao-ednc/pr/ednc-unveils-ten-federal-indictments-alleging-noncitizens-voted-2024-election",
+    "https://www.dhs.gov/news/2026/10/15/hsi-investigation-leads-arrest-sex-offender-illegal-alien-released-oregon-sanctuary"
   ],
-  "writer": "scripts/harvest.mjs (GitHub Actions, krennic212/invasionupdate-data)"
+  "writer": "Rex periodic: scripts/approve.mjs + guards.mjs fix"
 }

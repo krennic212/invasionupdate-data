@@ -1,12 +1,15 @@
 {
-  "updatedAt": "2026-10-15T18:46:22Z",
+  "updatedAt": "2026-10-15T20:30:30Z",
   "rows": 358,
-  "approved": 352,
-  "pending": 6,
+  "approved": 354,
+  "pending": 4,
   "photos": 107,
   "reviewRows": 761,
-  "lastAddedAt": "2026-10-15T18:46:21Z",
-  "lastAddedCount": 0,
-  "lastAdded": [],
+  "lastAddedAt": "2026-10-15T20:30:30Z",
+  "lastAddedCount": 2,
+  "lastAdded": [
+    "Denis Joseph Bouchard",
+    "Victor Soseia Hachipan"
+  ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -46,7 +46,7 @@ export function stageOk(label, sentence, title = "") {
   return true;
 }
 
-const AT_LARGE_STRONG = /\bat[- ]large\b|\bremains? (a )?fugitive\b|\bstill (being )?sought\b|\b(has|have) not (yet )?been (arrested|apprehended|located|found)\b|\bnot yet (been )?(arrested|apprehended|located)\b|\bwhereabouts\b/i;
+const AT_LARGE_STRONG = /\bat[- ]large\b|\bremains? (a )?fugitive\b|\bstill (being )?sought\b|\b(has|have) not (yet )?been (arrested|apprehended|located|found)\b|\bnot yet (been )?(arrested|apprehended|located)\b|\bwhereabouts (?:are|is|remain|remains) (?:still )?unknown\b|\bunknown whereabouts\b/i;
 const AT_LARGE_SENTENCE = /\bon the run\b|\bescaped\b|\bfled\b/i;
 
 /** Sentence: strong or weak wording. Rest of the release: strong wording only (fail-safe: holds the whole release). */
@@ -56,7 +56,9 @@ export function atLarge(sentence, releaseText = "") {
 
 export function nonCitizenStated(sentence) {
   const s = String(sentence || "");
-  if (/\bdual (national|citizen)|\bnaturali[sz]ed\b|\bU\.S\. citizen\b|\bUnited States citizen\b|\bAmerican citizen\b/i.test(s)) return false;
+  // Ignore "falsely claiming to be a U.S. citizen" so real foreign-citizen wording still counts.
+  const stripped = s.replace(/\b(?:falsely\s+)?claim(?:ing|ed|s)?\s+to\s+be\s+(?:a\s+)?(?:U\.S\.|United States|American)\s+citizen\b/gi, " ");
+  if (/\bdual (national|citizen)|\bnaturali[sz]ed\b|\bU\.S\. citizen\b|\bUnited States citizen\b|\bAmerican citizen\b/i.test(stripped)) return false;
   return (
     /\baliens?\b|\bnon-?citizens?\b|\b(illegally|unlawfully) (present|residing|in the United States|in the U\.S\.)|\bnationals?\b|\bcitizens? of\b|\bforeign national\b|\billegal (immigrant|migrant)s?\b/i.test(s) ||
     /\b[A-Z][a-z]+ citizens?\b/.test(s)

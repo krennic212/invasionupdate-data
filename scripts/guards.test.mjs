@@ -48,6 +48,12 @@ test("suspects still at large: held pending", () => {
   assert.ok(atLarge("ERO identified both suspects: A B and C D, both illegal aliens from the Dominican Republic.", "Both suspects remaining at-large."));
   assert.equal(atLarge(clean.sentence, "ICE arrested him Tuesday."), false);
   assert.ok(holdReasons({ ...clean, releaseText: "the suspect remains at large" }).includes("suspect described as still at large"));
+  // investigative "whereabouts" after an arrest is not at-large
+  assert.equal(atLarge(
+    "On October 7, HSI arrested Victor Soseia Hachipan, an illegal alien from Micronesia, during a targeted enforcement operation in Keizer, Oregon.",
+    "HSI issued an administrative subpoena requesting information that could lead to Hachipan\'s whereabouts. HSI finally arrested this illegal alien."
+  ), false);
+  assert.ok(atLarge("John Doe, an illegal alien from Mexico, whereabouts are unknown."));
 });
 
 test("not stated to be a non-citizen: held pending", () => {
@@ -55,6 +61,13 @@ test("not stated to be a non-citizen: held pending", () => {
   assert.equal(nonCitizenStated("Richard Molina-Ovalle, 36, of Worcester, was charged."), false);
   assert.equal(nonCitizenStated("Axon Solomon Mejia Ortega, 35, Mexican citizen unlawfully present in the United States."), true);
   assert.ok(holdReasons({ name: "Richard Molina-Ovalle", sentence: "Richard Molina-Ovalle, 36, of Worcester, was charged.", label: "Charged" }).includes("not stated to be a non-citizen"));
+});
+
+test("falsely claiming U.S. citizenship does not cancel foreign-citizen wording", () => {
+  const sentence = "the U.S. Attorney's Office convicted Denis Joseph Bouchard, 70, a Canadian citizen, for falsely claiming to be a United States citizen when he voted.";
+  assert.equal(nonCitizenStated(sentence), true);
+  assert.deepEqual(holdReasons({ name: "Denis Joseph Bouchard", sentence, title: "EDNC Unveils Ten Federal Indictments", label: "Convicted" }), []);
+  assert.equal(nonCitizenStated("Efrain Antonio Avalos, a United States citizen, was arrested and charged with Transportation of Illegal Aliens."), false);
 });
 
 test("existing rows are re-checked from their own fields", () => {
