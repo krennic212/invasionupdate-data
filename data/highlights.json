@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-15",
   "windowDays": 7,
-  "total": 103,
+  "total": 104,
   "rows": [
     {
       "id": "x-2109695592888713517-julio-cesar-ojeda",
@@ -203,7 +203,7 @@
     },
     {
       "id": "x-2110230618164662735-victor-manuel",
-      "name": "Victor Manuel",
+      "name": "Victor Manuel Moralez Diaz",
       "when": "13 Oct 2026",
       "severity": 105,
       "severityReason": "Child sex crime",

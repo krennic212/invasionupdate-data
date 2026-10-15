@@ -54,8 +54,10 @@ try {
   prior = [];
 }
 if (Array.isArray(prior) && Array.isArray(rows)) {
+  // A row is kept when its name OR its id is still in the feed (a name correction keeps the id).
   const now = new Set(rows.map((r) => nameKey(r?.name)));
-  const lost = prior.filter((r) => !now.has(nameKey(r?.name))).map((r) => r?.name);
+  const ids = new Set(rows.map((r) => r?.id).filter(Boolean));
+  const lost = prior.filter((r) => !now.has(nameKey(r?.name)) && !(r?.id && ids.has(r.id))).map((r) => r?.name);
   if (lost.length) problems.push(`feed would drop ${lost.length} existing row(s): ${lost.slice(0, 5).join(", ")}`);
 }
 if (problems.length) {

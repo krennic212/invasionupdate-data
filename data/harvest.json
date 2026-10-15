@@ -1,5 +1,33 @@
 [
   {
+    "name": "Jose Cedillos Umana",
+    "city": "Not stated",
+    "crime": "Arrested: 🚨Just today, @EROHouston officers arrested Jose Cedillos Umana, a twice-deported violent criminal alien & aggravated felon who has been convicted 2x for both burglary & assault.",
+    "usa": "ICE X post Oct 14, 2026 (@EROHouston)",
+    "foreign": "Not stated in post",
+    "picked": "10/14/2026 (@EROHouston post)",
+    "entered": "Not stated",
+    "office": "EROHouston",
+    "id": "x-2110521097946845561-jose-cedillos-umana",
+    "when": "14 Oct 2026",
+    "severity": 68,
+    "severityReason": "Assault / battery",
+    "severityCrimes": [
+      "Assault / battery",
+      "Burglary / theft"
+    ],
+    "text": "@EROHouston Oct 14, 2026, as posted: 🚨Just today, @EROHouston officers arrested Jose Cedillos Umana, a twice-deported violent criminal alien & aggravated felon who has been convicted 2x for both burglary & assault. Without their efforts, he would still be out terrorizing residents in the local community. (2 of 3)",
+    "photo": "",
+    "via": "@EROHouston 2110521097946845561",
+    "sourceUrl": "https://x.com/EROHouston/status/2110521097946845561",
+    "voting": false,
+    "origin": "Not stated",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved"
+  },
+  {
     "name": "Juan Carlos Izaguirre Membreno",
     "city": "Boston, MA",
     "crime": "Arrested: On Oct. 13, ICE Boston arrested Juan Carlos Izaguirre Membreno, a criminal illegal alien from Honduras, in Boston, Mass.",
@@ -669,7 +697,7 @@
     "photoSourceUrl": "https://pbs.twimg.com/media/HUIQWFOXoAAvwk0?format=png&name=orig"
   },
   {
-    "name": "Victor Manuel",
+    "name": "Victor Manuel Moralez Diaz",
     "city": "Not stated",
     "crime": "Arrested: 🚨ICE Los Angeles arrested criminal illegal alien Victor Manuel, Moralez Diaz, 45, of Mexico, Oct. 10.",
     "usa": "ICE X post Oct 13, 2026 (@EROLosAngeles)",

@@ -83,7 +83,7 @@ const PATTERNS = [
   new RegExp(`(?:^|\\s)${NAME},\\s+${AGE}(?:who\\s+(?:is|was)\\s+)?(illegally|unlawfully)\\s+present`, "g"),
   // ICE's common wording: "ICE Seattle arrested illegal alien Ronald Zacarias-Gregorio, 36, of Guatemala."
   // "... arrested criminal illegal alien Tung Huy Nguyen, 52, of Vietnam" / "... arrested criminal alien <Name>, 30, of El Salvador"
-  new RegExp(`\\b(?:arrested|arrests|removed|deported|apprehended|detained)\\s+(?:an?\\s+)?(?:criminal\\s+)?(?:illegal\\s+)?alien\\s+${NAME}(?=,|\\.|\\s+(?:in|on|at|from|of|who|after|for|upon|was)\\b|$)`, "g"),
+  new RegExp(`\\b(?:arrested|arrests|removed|deported|apprehended|detained)\\s+(?:an?\\s+)?(?:criminal\\s+)?(?:illegal\\s+)?alien\\s+${NAME}(?:,\\s+(${PART}(?:\\s+${PART}){0,2})(?=,\\s+\\d{1,3}\\b))?(?=,|\\.|\\s+(?:in|on|at|from|of|who|after|for|upon|was)\\b|$)`, "g"),
 ];
 
 const NOT_NAME = /\b(ICE|DHS|HSI|ERO|CBP|USCIS|FBI|DEA|ATF|DOJ|U\.S|United|States|America|American|Department|Justice|Attorney|Attorneys|Office|Offices|Secretary|President|Homeland|Security|Immigration|Customs|Enforcement|Border|Patrol|County|Court|District|Federal|Judge|Agent|Agents|Special|Officers|Officer|Police|Sheriff|Government|Administration|Trump|Biden|Obama|Act|Operation|Task|Force|Division|Bureau|Service|Services|Today|Yesterday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|January|February|March|April|May|June|July|August|September|October|November|December|The|This|These|Those|His|Her|Their|According|Under|Assistant|Acting|Chief|Director|Deputy|Senior|Prosecutor)\b/;
@@ -255,7 +255,7 @@ export function extractPeople(blocks, { title = "" } = {}) {
           const pair = re === PATTERNS[1];
           const people = pair
             ? [m[1], m[2]].map((n) => ({ n, origin: originFrom(m[3] ?? m[5], m[4] ?? m[6], m[7]) }))
-            : [{ n: m[1], origin: re === PATTERNS[0] ? originFrom(m[2], m[3] || "", m[4]) : "" }];
+            : [{ n: re === PATTERNS[3] && m[2] ? `${m[1]} ${m[2]}` : m[1], origin: re === PATTERNS[0] ? originFrom(m[2], m[3] || "", m[4]) : "" }];
           for (const { n, origin } of people) {
           // "... alien Zinzun Bautista." -> no sentence period in the name (Jr. / Sr. keep theirs).
           const name = n.replace(/\s+/g, " ").trim().replace(/(?<!\b(?:Jr|Sr|[A-Z]))\.$/, "");
@@ -285,9 +285,11 @@ export function extractPeople(blocks, { title = "" } = {}) {
  *  describe the past, not the stage of THIS case, so they never set the label. */
 export function stripPriors(text) {
   return String(text || "")
-    .replace(/\b(previously|prior|earlier|already|twice|once|formerly)\s+(been\s+)?(removed|deported|convicted)\b/gi, "prior-history")
+    .replace(/\b(previously|prior|earlier|already|twice|thrice|once|formerly)[\s-]+(been\s+)?(removed|deported|convicted)\b/gi, "prior-history")
     .replace(/\b(\d+|two|three|four|five|six|multiple|several)[- ]times?[- ](previously[- ])?(removed|deported)\b/gi, "prior-history")
     .replace(/\b(removed|deported)\s+(from\s+the\s+(U\.S\.|United States)\s+)?(at least\s+)?(once|twice|thrice|\d+|two|three|four|five|six|multiple|several)(\s+times)?\b/gi, "prior-history")
+    // "has been convicted 2x" / "convicted twice" / "convicted 3 times": a counted record is history.
+    .replace(/\b((has|have|had)\s+been\s+)?convicted\s+(\d+x|\d+\s+times|twice|thrice|(two|three|four|five|multiple|several)\s+times)\b/gi, "prior-history")
     .replace(/\bprior\s+(\w+\s+){0,2}convictions?\b/gi, "prior-history")
     .replace(/\bcriminal (history|record)\b/gi, "prior-history");
 }

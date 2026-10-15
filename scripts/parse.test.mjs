@@ -240,3 +240,18 @@ test("'A and B, illegal aliens from X' gives a row for each person, both Charged
   }
   assert.equal(_tr(hits.find((x) => x.name === "Simranpal Singh"), OCT13_REL).origin, "India");
 });
+
+test("ICE 'First Middle, Surname Surname, 45' comma-split name is joined", async () => {
+  const s = "🚨ICE Los Angeles arrested criminal illegal alien Victor Manuel, Moralez Diaz, 45, of Mexico, Oct. 10. Moralez is a registered sex offender.";
+  const people = extractPeople([s]);
+  assert.deepEqual(people.map((p) => p.name), ["Victor Manuel Moralez Diaz"]);
+  // Normal wording is unchanged.
+  assert.deepEqual(extractPeople(["ICE Seattle arrested illegal alien Ronald Zacarias-Gregorio, 36, of Guatemala."]).map((p) => p.name), ["Ronald Zacarias-Gregorio"]);
+});
+
+test("'twice-deported' is prior history, not Removed", async () => {
+  const { xLabel } = await import("./x-scan.mjs");
+  const s = "🚨Just today, @EROHouston officers arrested Jose Cedillos Umana, a twice-deported violent criminal alien & aggravated felon who has been convicted 2x for both burglary & assault.";
+  assert.equal(xLabel(s), "Arrested");
+  assert.notEqual(statusFrom("He was twice-deported and arrested again."), "Removed");
+});
