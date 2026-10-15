@@ -1083,16 +1083,224 @@
   "ice.gov/news/releases/ice-washington-dc-arrests-criminal-illegal-alien-convicted-possessing-child-sex-abuse": {
     "checkedAt": "2026-10-14T20:30:34.179Z",
     "name": "Luis Antonio Alejandro-Ramos",
-    "result": "held",
+    "result": "photo",
     "file": "ice-20261014-luis-antonio-alejandro-ramos.jpg",
     "image": "https://www.ice.gov/sites/default/files/2026-10/261014dc-2.png",
     "bytes": 12181,
-    "why": "needs visual check"
+    "reviewed": "Viewed image: single adult male booking headshot, light tee, dark gray background; one person only, no child, no second face",
+    "reviewedAt": "2026-10-15T12:41:06.840Z"
   },
   "justice.gov/usao-ks/pr/us-attorneys-office-district-kansas-joins-doj-fraud-division-irs-and-irs-ci-national-tax": {
     "checkedAt": "2026-10-14T23:45:34.015Z",
     "name": "Ephantus Mwangi",
     "result": "none",
     "why": "no single person-specific image in the release"
+  },
+  "x.com/ndganews/status/2110460213719392313": {
+    "checkedAt": "2026-10-15T12:48:37.512Z",
+    "name": "Andres Huerta Rendon",
+    "result": "none",
+    "why": "multi-person post"
+  },
+  "x.com/ero__phoenix/status/2110128447196647832": {
+    "checkedAt": "2026-10-15T12:49:36.725Z",
+    "name": "Alexander Camey-Tunche",
+    "result": "none",
+    "why": "graphic card with ARRESTED/FACING REMOVAL text overlays and ICE seal"
+  },
+  "x.com/ero__phoenix/status/2110430437919305908": {
+    "checkedAt": "2026-10-15T12:49:36.904Z",
+    "name": "Omar Heras Reyes",
+    "result": "none",
+    "why": "graphic card with ARRESTED/FACING REMOVAL text overlays and ICE seal"
+  },
+  "x.com/eroboston/status/2110406872725659948": {
+    "checkedAt": "2026-10-15T12:49:37.074Z",
+    "name": "Andy Sabriel Alcantara Beltre",
+    "result": "none",
+    "why": "arrest scene: handcuffs/waist chain and second person partially visible"
+  },
+  "x.com/eroboston/status/2110689822792966222": {
+    "checkedAt": "2026-10-15T12:49:37.252Z",
+    "name": "Juan Carlos Izaguirre Membreno",
+    "result": "none",
+    "why": "arrest scene: handcuffs/waist shackles and officer with gear partially visible"
+  },
+  "x.com/erosandiego/status/2110141590169883128": {
+    "checkedAt": "2026-10-15T12:49:37.732Z",
+    "name": "Primitivo Velasquez",
+    "result": "photo",
+    "file": "x-2110141590169883128-primitivo-velasquez.jpg",
+    "image": "https://pbs.twimg.com/media/HUi6l9Bb0AAN-E7?format=png&name=orig",
+    "bytes": 3579,
+    "reviewed": "Viewed image: single adult male booking headshot, plain wall, no other people, no text card"
+  },
+  "x.com/erolosangeles/status/2110154365612724583": {
+    "checkedAt": "2026-10-15T12:49:38.184Z",
+    "name": "Xuerui Zhao",
+    "result": "photo",
+    "file": "x-2110154365612724583-xuerui-zhao.jpg",
+    "image": "https://pbs.twimg.com/media/HUiq7DKWgAAenMF?format=jpg&name=orig",
+    "bytes": 26620,
+    "reviewed": "Viewed image: single adult male booking headshot in yellow hoodie, institutional door background"
+  },
+  "x.com/erolosangeles/status/2110185068073513296": {
+    "checkedAt": "2026-10-15T12:49:38.554Z",
+    "name": "Jose Cruz Segovia",
+    "result": "photo",
+    "file": "x-2110185068073513296-jose-cruz-segovia.jpg",
+    "image": "https://pbs.twimg.com/media/HUirM-sXEAA7XTX?format=png&name=orig",
+    "bytes": 21011,
+    "reviewed": "Viewed image: single adult male booking headshot, office doors background, no overlays"
+  },
+  "x.com/erolosangeles/status/2110230618164662735": {
+    "checkedAt": "2026-10-15T12:49:38.974Z",
+    "name": "Victor Manuel",
+    "result": "photo",
+    "file": "x-2110230618164662735-victor-manuel.jpg",
+    "image": "https://pbs.twimg.com/media/HUirncWXMAA-dJ1?format=png&name=orig",
+    "bytes": 29737,
+    "reviewed": "Viewed image: single adult male booking headshot in black polo, cinderblock wall"
+  },
+  "x.com/eroneworleans/status/2110349652566409368": {
+    "checkedAt": "2026-10-15T12:49:39.334Z",
+    "name": "Ruben Ortiz Herrera",
+    "result": "photo",
+    "file": "x-2110349652566409368-ruben-ortiz-herrera.jpg",
+    "image": "https://pbs.twimg.com/media/HUIQWFOXoAAvwk0?format=png&name=orig",
+    "bytes": 17785,
+    "reviewed": "Viewed image: single adult male booking headshot in plaid shirt, office background"
+  },
+  "x.com/erosandiego/status/2110366262031216679": {
+    "checkedAt": "2026-10-15T12:49:39.725Z",
+    "name": "Darwin Cortes",
+    "result": "photo",
+    "file": "x-2110366262031216679-darwin-cortes.jpg",
+    "image": "https://pbs.twimg.com/media/HUi673MbgAArf4c?format=png&name=orig",
+    "bytes": 10837,
+    "reviewed": "Viewed image: single adult male booking headshot, security window and cinderblock"
+  },
+  "x.com/erosanfrancisco/status/2110419110383198447": {
+    "checkedAt": "2026-10-15T12:49:40.085Z",
+    "name": "Denys Honcharov",
+    "result": "photo",
+    "file": "x-2110419110383198447-denys-honcharov.jpg",
+    "image": "https://pbs.twimg.com/media/HUcFLIsasAAiEB6?format=png&name=orig",
+    "bytes": 14928,
+    "reviewed": "Viewed image: single adult male booking headshot with height scale, plain wall"
+  },
+  "x.com/eroharlingen/status/2110445088824529208": {
+    "checkedAt": "2026-10-15T12:49:40.883Z",
+    "name": "Ismael Cura Castaneda",
+    "result": "photo",
+    "file": "x-2110445088824529208-ismael-cura-castaneda.jpg",
+    "image": "https://pbs.twimg.com/media/HUnOhOSWYAAVEOs?format=jpg&name=orig",
+    "bytes": 6855,
+    "reviewed": "Viewed image: single adult male booking headshot, cell door numbered 3 behind"
+  },
+  "x.com/eroharlingen/status/2110450444124258332": {
+    "checkedAt": "2026-10-15T12:49:41.299Z",
+    "name": "Miguel Jimenez-Santez",
+    "result": "photo",
+    "file": "x-2110450444124258332-miguel-jimenez-santez.jpg",
+    "image": "https://pbs.twimg.com/media/HUnTch7WsAARkf3?format=jpg&name=orig",
+    "bytes": 5628,
+    "reviewed": "Viewed image: single adult male booking headshot in Nautica shirt, cinderblock wall"
+  },
+  "x.com/dhsgov/status/2110460222775193982": {
+    "checkedAt": "2026-10-15T12:49:41.722Z",
+    "name": "Joshua Gabriel Car Hombrebueno",
+    "result": "photo",
+    "file": "x-2110460222775193982-joshua-gabriel-car-hombrebueno.jpg",
+    "image": "https://pbs.twimg.com/media/HUncGb5aAAACAfu?format=jpg&name=orig",
+    "bytes": 5264,
+    "reviewed": "Viewed image: single adult male booking headshot, plain wall"
+  },
+  "x.com/icegov/status/2110460981424120202": {
+    "checkedAt": "2026-10-15T12:49:42.122Z",
+    "name": "Eduardo Castillo Hernandez",
+    "result": "photo",
+    "file": "x-2110460981424120202-eduardo-castillo-hernandez.jpg",
+    "image": "https://pbs.twimg.com/media/HUncj48WMAIRvm_?format=jpg&name=orig",
+    "bytes": 13777,
+    "reviewed": "Viewed image: single adult male booking headshot, institutional hallway background"
+  },
+  "x.com/icegov/status/2110460984574001422": {
+    "checkedAt": "2026-10-15T12:49:42.569Z",
+    "name": "Maria Cid Rincon",
+    "result": "photo",
+    "file": "x-2110460984574001422-maria-cid-rincon.jpg",
+    "image": "https://pbs.twimg.com/media/HUncmONXEAERBld?format=jpg&name=orig",
+    "bytes": 15037,
+    "reviewed": "Viewed image: single adult female booking headshot, facility doorway background"
+  },
+  "x.com/icegov/status/2110460986750586887": {
+    "checkedAt": "2026-10-15T12:49:42.937Z",
+    "name": "Denis Sabastian Baca-Lopes",
+    "result": "photo",
+    "file": "x-2110460986750586887-denis-sabastian-baca-lopes.jpg",
+    "image": "https://pbs.twimg.com/media/HUncuBjWIAAfw65?format=jpg&name=orig",
+    "bytes": 6999,
+    "reviewed": "Viewed image: single adult male booking headshot against height chart"
+  },
+  "x.com/icegov/status/2110460989535850632": {
+    "checkedAt": "2026-10-15T12:49:43.310Z",
+    "name": "Jose Camilo Hernandez Escobar",
+    "result": "photo",
+    "file": "x-2110460989535850632-jose-camilo-hernandez-escobar.jpg",
+    "image": "https://pbs.twimg.com/media/HUncxGoW8AIUkXH?format=jpg&name=orig",
+    "bytes": 11073,
+    "reviewed": "Viewed image: single adult male booking headshot, plain wall and doorframe"
+  },
+  "x.com/icegov/status/2110460992324841525": {
+    "checkedAt": "2026-10-15T12:49:43.667Z",
+    "name": "Na Xin Wu",
+    "result": "photo",
+    "file": "x-2110460992324841525-na-xin-wu.jpg",
+    "image": "https://pbs.twimg.com/media/HUncz1uWwAA65x_?format=jpg&name=orig",
+    "bytes": 8166,
+    "reviewed": "Viewed image: single adult female booking headshot, plain grey wall"
+  },
+  "x.com/icegov/status/2110460995080749103": {
+    "checkedAt": "2026-10-15T12:49:44.131Z",
+    "name": "Jesus Modesto Sanchez",
+    "result": "photo",
+    "file": "x-2110460995080749103-jesus-modesto-sanchez.jpg",
+    "image": "https://pbs.twimg.com/media/HUnc16fWEAAFzM3?format=jpg&name=orig",
+    "bytes": 10233,
+    "reviewed": "Viewed image: single adult male booking headshot, cinderblock wall and door"
+  },
+  "x.com/icegov/status/2110460997672583538": {
+    "checkedAt": "2026-10-15T12:49:44.528Z",
+    "name": "Gregorio Alberto Rios-Cruz",
+    "result": "photo",
+    "file": "x-2110460997672583538-gregorio-alberto-rios-cruz.jpg",
+    "image": "https://pbs.twimg.com/media/HUnc3snXsAAfmx0?format=jpg&name=orig",
+    "bytes": 10296,
+    "reviewed": "Viewed image: single adult male booking headshot, office/facility background"
+  },
+  "x.com/icegov/status/2110461000453619967": {
+    "checkedAt": "2026-10-15T12:49:45.058Z",
+    "name": "Eprain Gonzalez Sanchez",
+    "result": "photo",
+    "file": "x-2110461000453619967-eprain-gonzalez-sanchez.jpg",
+    "image": "https://pbs.twimg.com/media/HUnc7MjWwAAM4px?format=jpg&name=orig",
+    "bytes": 10960,
+    "reviewed": "Viewed image: single adult male booking headshot against plain wall"
+  },
+  "x.com/icegov/status/2110461005742604476": {
+    "checkedAt": "2026-10-15T12:49:45.436Z",
+    "name": "Francsico Delfino Martinez Perez",
+    "result": "photo",
+    "file": "x-2110461005742604476-francsico-delfino-martinez-perez.jpg",
+    "image": "https://pbs.twimg.com/media/HUnc_VMWsAEokhz?format=jpg&name=orig",
+    "bytes": 11357,
+    "reviewed": "Viewed image: single adult male booking headshot with glasses, plain wall and blinds"
+  },
+  "x.com/eroelpaso/status/2110425877238669559": {
+    "checkedAt": "2026-10-15T12:50:00.417Z",
+    "name": "Clemente Vasquez",
+    "result": "none",
+    "why": "source image only 79x83 px (banner/icon size), not a usable headshot"
   }
 }

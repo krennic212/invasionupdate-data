@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-15",
   "windowDays": 7,
-  "total": 76,
+  "total": 103,
   "rows": [
     {
       "id": "x-2109695592888713517-julio-cesar-ojeda",
@@ -112,6 +112,18 @@
       ]
     },
     {
+      "id": "x-2110461000453619967-eprain-gonzalez-sanchez",
+      "name": "Eprain Gonzalez Sanchez",
+      "when": "14 Oct 2026",
+      "severity": 155,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Assault / battery",
+        "DUI"
+      ]
+    },
+    {
       "id": "x-2108687291560427548-yung-ho-lo",
       "name": "Yung Ho Lo",
       "when": "9 Oct 2026",
@@ -123,6 +135,17 @@
       ]
     },
     {
+      "id": "x-2110461005742604476-francsico-delfino-martinez-perez",
+      "name": "Francsico Delfino Martinez Perez",
+      "when": "14 Oct 2026",
+      "severity": 140,
+      "severityReason": "Attempted murder",
+      "severityCrimes": [
+        "Attempted murder",
+        "Weapons"
+      ]
+    },
+    {
       "id": "x-2108687289643655310-dimeir-cruz-velasquez",
       "name": "Dimeir Cruz-Velasquez",
       "when": "9 Oct 2026",
@@ -130,6 +153,17 @@
       "severityReason": "Rape / sexual assault",
       "severityCrimes": [
         "Rape / sexual assault",
+        "Weapons"
+      ]
+    },
+    {
+      "id": "x-2110460986750586887-denis-sabastian-baca-lopes",
+      "name": "Denis Sabastian Baca-Lopes",
+      "when": "14 Oct 2026",
+      "severity": 125,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
         "Weapons"
       ]
     },
@@ -165,6 +199,17 @@
       "severityCrimes": [
         "Rape / sexual assault",
         "Drug possession"
+      ]
+    },
+    {
+      "id": "x-2110230618164662735-victor-manuel",
+      "name": "Victor Manuel",
+      "when": "13 Oct 2026",
+      "severity": 105,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "DUI"
       ]
     },
     {
@@ -239,46 +284,6 @@
       "severityReason": "Murder / manslaughter",
       "severityCrimes": [
         "Murder / manslaughter"
-      ]
-    },
-    {
-      "id": "ice-20261014-luis-antonio-alejandro-ramos",
-      "name": "Luis Antonio Alejandro-Ramos",
-      "when": "14 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261013-abraham-garcia-aguilar",
-      "name": "Abraham Garcia-Aguilar",
-      "when": "13 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261013-jesus-villanueva-carvajal",
-      "name": "Jesus Villanueva-Carvajal",
-      "when": "13 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261013-jonathan-augustin-miranda",
-      "name": "Jonathan Augustin-Miranda",
-      "when": "13 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
       ]
     }
   ]
