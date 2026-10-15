@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-15",
   "windowDays": 7,
-  "total": 103,
+  "total": 104,
   "rows": [
     {
       "id": "x-2109695592888713517-julio-cesar-ojeda",
@@ -132,6 +132,18 @@
       "severityCrimes": [
         "Kidnapping / human trafficking",
         "Armed robbery / aggravated assault"
+      ]
+    },
+    {
+      "id": "x-2110718652127285708-salvador-javiquer-sotolongo",
+      "name": "Salvador Javiquer Sotolongo",
+      "when": "15 Oct 2026",
+      "severity": 144,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons",
+        "Burglary / theft"
       ]
     },
     {
@@ -274,16 +286,6 @@
         "Assault / battery",
         "Burglary / theft",
         "Drug possession"
-      ]
-    },
-    {
-      "id": "dhs-20261009-maykel-ramos-de-la-torre",
-      "name": "Maykel Ramos-De La Torre",
-      "when": "9 Oct 2026",
-      "severity": 95,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter"
       ]
     }
   ]
