@@ -1,5 +1,32 @@
 [
   {
+    "name": "Mukeshkumar Somabhai Chaudhari",
+    "city": "Not stated",
+    "crime": "Arrested: WASHINGTON – The United States Department of Homeland Security (DHS) released the following statement after U.S. Immigration and Customs Enforcement's (ICE) Homeland Security Investigations (HSI) arrested Mukeshkumar Somabhai Chaudhari, a non-citizen, for knowingly making a false claim of United States citizenship to vote in the 2024 general election.",
+    "usa": "DHS release Oct 16, 2026: ICE HSI Arrests Non-Citizen for Illegally Voting in the 2024 Election | Homeland Security",
+    "foreign": "Not stated in post",
+    "picked": "10/16/2026 (DHS release)",
+    "entered": "Not stated",
+    "office": "DHSgov",
+    "id": "dhs-20261016-mukeshkumar-somabhai-chaudhari",
+    "when": "16 Oct 2026",
+    "severity": 54,
+    "severityReason": "Fraud (incl. voter fraud)",
+    "severityCrimes": [
+      "Fraud (incl. voter fraud)"
+    ],
+    "text": "DHS Oct 16, 2026, as posted: WASHINGTON – The United States Department of Homeland Security (DHS) released the following statement after U.S. Immigration and Customs Enforcement's (ICE) Homeland Security Investigations (HSI) arrested Mukeshkumar Somabhai Chaudhari, a non-citizen, for knowingly making a false claim of United States citizenship to vote in the 2024 general election.",
+    "photo": "",
+    "via": "dhs.gov/news/2026/10/16/ice-hsi-arrests-non-citizen-illegally-voting-2024-election",
+    "sourceUrl": "https://www.dhs.gov/news/2026/10/16/ice-hsi-arrests-non-citizen-illegally-voting-2024-election",
+    "voting": true,
+    "origin": "Not stated",
+    "confirmedBy": "DHS",
+    "lat": null,
+    "lon": null,
+    "status": "approved"
+  },
+  {
     "name": "Salvador Gaytan Guillermo",
     "city": "Not stated",
     "crime": "Arrested: ICE San Diego arrested Salvador Gaytan Guillermo a criminal illegal alien from Mexico.",

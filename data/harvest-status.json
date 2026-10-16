@@ -1,19 +1,16 @@
 {
-  "checkedAt": 1792160395351,
-  "checkedAtIso": "2026-10-16T14:19:55.351Z",
+  "checkedAt": 1792165884533,
+  "checkedAtIso": "2026-10-16T15:51:24.533Z",
   "added": [
-    "Georgii Gabiev",
-    "Rene Flores-Lue",
-    "Morris Brown",
-    "Roberto Carlos Munoz-Guatemala"
+    "Mukeshkumar Somabhai Chaudhari"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 102,
+  "scannedReleases": 93,
   "error": null,
-  "note": "Added 4 as approved: Georgii Gabiev, Rene Flores-Lue, Morris Brown, Roberto Carlos Munoz-Guatemala",
+  "note": "Added 1 as approved: Mukeshkumar Somabhai Chaudhari",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
