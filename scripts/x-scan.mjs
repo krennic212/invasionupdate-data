@@ -34,7 +34,7 @@
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { extractPeople, statusFrom, stripPriors, dateParts, slug, cityFrom, latLonFor } from "./parse.mjs";
-import { holdReasons } from "./guards.mjs";
+import { holdReasons, denaturalizedStated } from "./guards.mjs";
 import { nameKey } from "./rules.mjs";
 import { LIVE_X_HANDLES, TRUSTED_REPORTER_X_HANDLES } from "./x-handles.mjs";
 import { buildMeta } from "./write-meta.mjs";
@@ -144,6 +144,7 @@ export function rowsForPost(post, picks = []) {
       origin: cleanOrigin(hit.origin) || countryFor(hit.name, clean) || "Not stated", // only wording tied to this person
 
       confirmedBy: a.confirmedBy,
+      ...(denaturalizedStated(`${hit.sentence} ${clean}`) ? { kind: "denaturalized" } : {}), // Krennic 2026-10-16
       ...latLonFor(hit.city),
     }).row; // shared feed rule: victim names -> neutral description
     if (!official) return { live: false, row: { ...base, status: "pending", reviewReason: `X post by @${handle}: not an official agency account` } };

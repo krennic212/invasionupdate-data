@@ -65,6 +65,27 @@ export function nonCitizenStated(sentence) {
   );
 }
 
+/**
+ * Krennic decision 2026-10-16: a person whose U.S. citizenship has ACTUALLY been revoked (denaturalized) counts like a
+ * stated non-citizen. Only completed revocation counts; "faces denaturalization proceedings", "seeks to revoke",
+ * "initiated proceedings to revoke", "could be denaturalized" do NOT (that person is still a U.S. citizen).
+ * Checked against the sentence plus the whole post/release text (headlines often carry it).
+ */
+export function denaturalizedStated(text) {
+  const s = String(text || "").replace(/\s+/g, " ");
+  const pending = /\b(?:could|may|might|would|will|to|seek(?:s|ing)? to|move[sd]? to|faces?|facing)\s+(?:be\s+)?(?:denaturali[sz]ed|revoke|strip)/i;
+  const done =
+    /\bcitizenship\s+(?:was\s+|has\s+been\s+|is\s+|been\s+)?(?:revoked|stripped|cancell?ed)\b/i.test(s) ||
+    /\b(?:was|were|been|is|got|now|recently|officially|formally|has been|had been|and|who was)\s+denaturali[sz]ed\b/i.test(s) ||
+    /^\s*denaturali[sz]ed\b/i.test(s) ||
+    /\brevoked\s+(?:his|her|their)\s+(?:U\.S\.\s+|United States\s+)?citizenship\b/i.test(s) ||
+    /\bstripped\s+of\s+(?:his|her|their)\s+(?:U\.S\.\s+|United States\s+)?citizenship\b/i.test(s) ||
+    /\bdenaturali[sz]ation\s+order\b|\border(?:ed)?\s+(?:his|her|their)\s+denaturali[sz]ation\b/i.test(s);
+  if (!done) return false;
+  // If the only revocation wording is forward-looking, it is not done.
+  return !(pending.test(s) && !/\bcitizenship\s+(?:was\s+|has\s+been\s+)?revoked\b|\b(?:was|has been|been)\s+denaturali[sz]ed\b/i.test(s));
+}
+
 /** All reasons a row must stay pending (empty array = may be auto-approved). */
 export function holdReasons({ name, sentence, title = "", releaseText = "", label = "" }) {
   const out = [];
@@ -72,7 +93,7 @@ export function holdReasons({ name, sentence, title = "", releaseText = "", labe
   if (isMinor(name, sentence, title)) out.push("possible minor / juvenile");
   if (!stageOk(label, sentence, title)) out.push(`stage: label "${label}" is later than the source wording`);
   if (atLarge(sentence, releaseText)) out.push("suspect described as still at large");
-  if (!nonCitizenStated(sentence)) out.push("not stated to be a non-citizen");
+  if (!nonCitizenStated(sentence) && !denaturalizedStated(`${sentence} ${releaseText}`)) out.push("not stated to be a non-citizen");
   return out;
 }
 

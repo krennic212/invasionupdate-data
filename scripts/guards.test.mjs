@@ -98,3 +98,22 @@ test("a place name is held as 'not a person' (every writer, incl. X picks and pe
   assert.ok(holdReasons({ name: "Monmouth County", sentence, title: "", label: "As posted" }).some((r) => r.startsWith("not a person")));
   assert.equal(holdReasons({ name: "Said Ibrahim", sentence: "Said Ibrahim, an illegal alien from Somalia, whose criminal history includes cruelty toward a child.", title, label: "As posted" }).length, 0);
 });
+
+import { denaturalizedStated } from "./guards.mjs";
+import { rowsForPost } from "./x-scan.mjs";
+test("denaturalized (citizenship revoked) counts like a stated non-citizen (Krennic 2026-10-16)", () => {
+  const head = "CHILD SEX ABUSER’S CITIZENSHIP REVOKED AFTER NATURALIZATION FRAUD CONVICTION";
+  const sentence = "Cyril Domaquik Clemens, a Liberian native, was convicted of three counts of indecent liberties with a child.";
+  assert.equal(denaturalizedStated(head), true);
+  assert.equal(denaturalizedStated("John Doe was denaturalized on Monday."), true);
+  assert.equal(denaturalizedStated("A judge revoked his citizenship."), true);
+  assert.ok(!holdReasons({ name: "Cyril Domaquik Clemens", sentence, releaseText: `${head} ${sentence}`, label: "Convicted" }).includes("not stated to be a non-citizen"));
+  // Proceedings only: still a U.S. citizen -> still held.
+  for (const t of ["FACES DENATURALIZATION PROCEEDINGS", "DOJ has initiated proceedings to revoke Javier Marrero-Pando’s citizenship", "he could be denaturalized", "DOJ seeks to revoke his citizenship"]) {
+    assert.equal(denaturalizedStated(t), false, t);
+  }
+  const rows = rowsForPost({ id: "1", username: "ICEgov", created_at: "2026-10-05T15:00:00Z", text: `${head}\n\n${sentence}`, referenced: [], media: [] }, [{ name: "Cyril Domaquik Clemens", sentence }]);
+  const r = rows.find((x) => x.row.name === "Cyril Domaquik Clemens");
+  assert.ok(r, JSON.stringify(rows.map((x) => x.row.name)));
+  { assert.equal(r.row.kind, "denaturalized"); assert.ok(!/non-citizen/.test(r.row.holdReason || "")); }
+});

@@ -68,3 +68,14 @@ exists, the official URL is used as `sourceUrl`. Photos stay official-only: his 
 
 Typical quiet 30-minute run: 5 calls (one per query, no second page) + 0-1 refetch = ~6 calls,
 ~288/day at 48 runs. Stop paging early once results reach lastSeenId.
+
+## Denaturalized people: Krennic decision 2026-10-16
+
+People whose U.S. citizenship has **actually been revoked** (denaturalized) stay on the site. They are treated like a
+stated non-citizen: `denaturalizedStated()` in `scripts/guards.mjs` checks the sentence plus the whole post text
+(headlines like "CITIZENSHIP REVOKED" count), so they are not held under "not stated to be a non-citizen".
+`x-scan.mjs` tags these rows `kind: "denaturalized"` (the app shows them as Denaturalized).
+Only completed revocation counts ("citizenship revoked", "was denaturalized", "revoked his citizenship",
+"stripped of his citizenship"). "Faces denaturalization proceedings", "initiated proceedings to revoke",
+"seeks to revoke", "could be denaturalized" do NOT count: that person is still a U.S. citizen and stays held.
+The stage label still follows the sentence wording (Convicted / Charged / ...); never label beyond what is stated.
