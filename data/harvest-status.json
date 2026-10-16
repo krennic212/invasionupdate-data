@@ -1,16 +1,14 @@
 {
-  "checkedAt": 1792104271761,
-  "checkedAtIso": "2026-10-15T22:44:31.761Z",
-  "added": [
-    "Becerra-Del Rio"
-  ],
+  "checkedAt": 1792153958199,
+  "checkedAtIso": "2026-10-16T12:32:38.199Z",
+  "added": [],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 90,
+  "scannedReleases": 95,
   "error": null,
-  "note": "Added 1 as approved: Becerra-Del Rio",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
