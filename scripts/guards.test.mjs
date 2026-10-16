@@ -117,3 +117,9 @@ test("denaturalized (citizenship revoked) counts like a stated non-citizen (Kren
   assert.ok(r, JSON.stringify(rows.map((x) => x.row.name)));
   { assert.equal(r.row.kind, "denaturalized"); assert.ok(!/non-citizen/.test(r.row.holdReason || "")); }
 });
+
+test("at-large arrest / targeted enforcement jargon is not 'at large' (Krennic 2026-10-16)", () => {
+  for (const t of ["We arrested him in an at-large targeted enforcement action in Bronx.", "ICE Chicago made an at-large arrest of him.", "during an at-large operation", "in at-large enforcement"]) assert.equal(atLarge("He was charged.", t), false, t);
+  for (const t of ["He remains at large.", "The suspect is at large.", "He remains a fugitive.", "He is still being sought.", "Do not attempt to apprehend any subject."]) assert.equal(atLarge("He was charged.", t), true, t);
+  assert.equal(atLarge("He was charged.", "ICE made an at-large arrest of one man; his co-defendant remains at large."), true);
+});

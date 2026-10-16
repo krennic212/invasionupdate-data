@@ -46,11 +46,17 @@ export function stageOk(label, sentence, title = "") {
   return true;
 }
 
-const AT_LARGE_STRONG = /\bat[- ]large\b|\bremains? (a )?fugitive\b|\bstill (being )?sought\b|\b(has|have) not (yet )?been (arrested|apprehended|located|found)\b|\bnot yet (been )?(arrested|apprehended|located)\b|\bwhereabouts (?:are|is|remain|remains) (?:still )?unknown\b|\bunknown whereabouts\b/i;
+const AT_LARGE_STRONG = /\bat[- ]large\b|\bremains? (a )?fugitive\b|\bstill (being )?sought\b|\b(has|have) not (yet )?been (arrested|apprehended|located|found)\b|\bnot yet (been )?(arrested|apprehended|located)\b|\bwhereabouts (?:are|is|remain|remains) (?:still )?unknown\b|\bunknown whereabouts\b|\binformation (?:about|on|regarding) (?:his|her|their) whereabouts\b|\bdo not attempt to apprehend\b/i;
 const AT_LARGE_SENTENCE = /\bon the run\b|\bescaped\b|\bfled\b/i;
 
 /** Sentence: strong or weak wording. Rest of the release: strong wording only (fail-safe: holds the whole release). */
+// ICE jargon: an "at-large arrest / at-large targeted enforcement (action) / at-large operation" is an arrest made out in
+// the community, not a fugitive (Krennic 2026-10-16). Strip it before testing; real fugitive wording still holds.
+const AT_LARGE_JARGON = /\bat[- ]large\s+(?:(?:targeted\s+)?(?:enforcement\s+)?(?:arrests?|actions?|operations?|enforcement)|targeted\s+(?:enforcement|arrests?|operations?)(?:\s+(?:actions?|operations?))?)\b/gi;
+const dejargon = (t) => String(t || "").replace(AT_LARGE_JARGON, " ");
+
 export function atLarge(sentence, releaseText = "") {
+  sentence = dejargon(sentence); releaseText = dejargon(releaseText);
   return AT_LARGE_STRONG.test(sentence) || AT_LARGE_SENTENCE.test(sentence) || AT_LARGE_STRONG.test(releaseText);
 }
 
