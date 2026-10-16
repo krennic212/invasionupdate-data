@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-16",
   "windowDays": 7,
-  "total": 132,
+  "total": 136,
   "rows": [
     {
       "id": "x-2109695592888713517-julio-cesar-ojeda",
@@ -234,6 +234,26 @@
       ]
     },
     {
+      "id": "dhs-20261016-claudius-anglo-ricardo-smith",
+      "name": "Claudius Anglo Ricardo Smith",
+      "when": "16 Oct 2026",
+      "severity": 95,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter"
+      ]
+    },
+    {
+      "id": "dhs-20261016-korakanh-phornsavanh",
+      "name": "Korakanh Phornsavanh",
+      "when": "16 Oct 2026",
+      "severity": 95,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter"
+      ]
+    },
+    {
       "id": "dhs-20261015-cuong-chanh-phan",
       "name": "Cuong Chanh Phan",
       "when": "15 Oct 2026",
@@ -261,28 +281,6 @@
       "severityReason": "Murder / manslaughter",
       "severityCrimes": [
         "Murder / manslaughter"
-      ]
-    },
-    {
-      "id": "dhs-20261013-ramon-acosta-diaz",
-      "name": "Ramon Acosta-Diaz",
-      "when": "13 Oct 2026",
-      "severity": 95,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter"
-      ]
-    },
-    {
-      "id": "x-2109053109188370611-franklin-alexander-alarenga-mejia",
-      "name": "Franklin Alexander Alarenga-Mejia",
-      "when": "10 Oct 2026",
-      "severity": 95,
-      "severityReason": "Assault / battery",
-      "severityCrimes": [
-        "Assault / battery",
-        "Burglary / theft",
-        "Drug possession"
       ]
     }
   ]

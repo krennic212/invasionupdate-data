@@ -1,16 +1,19 @@
 {
-  "checkedAt": 1792165884533,
-  "checkedAtIso": "2026-10-16T15:51:24.533Z",
+  "checkedAt": 1792172657802,
+  "checkedAtIso": "2026-10-16T17:44:17.802Z",
   "added": [
-    "Mukeshkumar Somabhai Chaudhari"
+    "Korakanh Phornsavanh",
+    "Claudius Anglo Ricardo Smith",
+    "Hernan Marcelo Tamayo-Fernandez",
+    "Kelvin Alexander Espinal-Marin"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 93,
+  "scannedReleases": 96,
   "error": null,
-  "note": "Added 1 as approved: Mukeshkumar Somabhai Chaudhari",
+  "note": "Added 4 as approved: Korakanh Phornsavanh, Claudius Anglo Ricardo Smith, Hernan Marcelo Tamayo-Fernandez, Kelvin Alexander Espinal-Marin",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
