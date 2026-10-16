@@ -1,21 +1,21 @@
 {
-  "checkedAt": 1792187006163,
-  "checkedAtIso": "2026-10-16T21:43:26.163Z",
+  "checkedAt": 1792189119124,
+  "checkedAtIso": "2026-10-16T22:18:39.124Z",
   "added": [
-    "Ygor Fokin Saviolli",
-    "Gabriel Cezar Menezes",
-    "Tadeu Sebastiane Rabelo Alves Barbosa"
+    "Vikki Bradt",
+    "Samantha Merkle",
+    "Suad Sasic",
+    "Jacques Patry",
+    "Paula Stitt",
+    "Taralynn Bosco"
   ],
   "addedStatus": "approved",
-  "heldPending": [
-    "Gabriel Cezar Menezes (not stated to be a non-citizen)",
-    "Tadeu Sebastiane Rabelo Alves Barbosa (not stated to be a non-citizen)"
-  ],
+  "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 96,
+  "scannedReleases": 94,
   "error": null,
-  "note": "Added 3 as approved: Ygor Fokin Saviolli, Gabriel Cezar Menezes, Tadeu Sebastiane Rabelo Alves Barbosa",
+  "note": "Added 6 as approved: Vikki Bradt, Samantha Merkle, Suad Sasic, Jacques Patry, Paula Stitt, Taralynn Bosco",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
