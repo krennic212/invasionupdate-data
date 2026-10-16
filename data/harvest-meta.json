@@ -1,14 +1,21 @@
 {
-  "updatedAt": "2026-10-16T20:42:04Z",
-  "rows": 418,
-  "approved": 413,
+  "updatedAt": "2026-10-16T21:35:38Z",
+  "rows": 426,
+  "approved": 421,
   "pending": 5,
   "photos": 124,
   "reviewRows": 760,
-  "lastAddedAt": "2026-10-16T20:42:04Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-10-16T21:35:37Z",
+  "lastAddedCount": 8,
   "lastAdded": [
-    "José María Mena Rosales"
+    "Jared Adonay Cruz Rivera",
+    "Rudy Gabriel Sauceda Ramos",
+    "Jonathan Homez Gonzalez",
+    "Jeremias Alexander Gomez Gonzalez",
+    "Henrri Enrique Cortez Vargas",
+    "Robin Acosta Gonzalez",
+    "Wuilians Bruno Tejada Villeda",
+    "Miguel Dario Bautista Jimenez"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
