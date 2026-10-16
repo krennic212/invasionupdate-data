@@ -1,23 +1,21 @@
 {
-  "checkedAt": 1792186537390,
-  "checkedAtIso": "2026-10-16T21:35:37.390Z",
+  "checkedAt": 1792187006163,
+  "checkedAtIso": "2026-10-16T21:43:26.163Z",
   "added": [
-    "Jared Adonay Cruz Rivera",
-    "Rudy Gabriel Sauceda Ramos",
-    "Jonathan Homez Gonzalez",
-    "Jeremias Alexander Gomez Gonzalez",
-    "Henrri Enrique Cortez Vargas",
-    "Robin Acosta Gonzalez",
-    "Wuilians Bruno Tejada Villeda",
-    "Miguel Dario Bautista Jimenez"
+    "Ygor Fokin Saviolli",
+    "Gabriel Cezar Menezes",
+    "Tadeu Sebastiane Rabelo Alves Barbosa"
   ],
   "addedStatus": "approved",
-  "heldPending": [],
+  "heldPending": [
+    "Gabriel Cezar Menezes (not stated to be a non-citizen)",
+    "Tadeu Sebastiane Rabelo Alves Barbosa (not stated to be a non-citizen)"
+  ],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 85,
+  "scannedReleases": 96,
   "error": null,
-  "note": "Added 8 as approved: Jared Adonay Cruz Rivera, Rudy Gabriel Sauceda Ramos, Jonathan Homez Gonzalez, Jeremias Alexander Gomez Gonzalez, Henrri Enrique Cortez Vargas, Robin Acosta Gonzalez, Wuilians Bruno Tejada Villeda, Miguel Dario Bautista Jimenez",
+  "note": "Added 3 as approved: Ygor Fokin Saviolli, Gabriel Cezar Menezes, Tadeu Sebastiane Rabelo Alves Barbosa",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

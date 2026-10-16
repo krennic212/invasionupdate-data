@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-16",
   "windowDays": 7,
-  "total": 138,
+  "total": 139,
   "rows": [
     {
       "id": "x-2109695592888713517-julio-cesar-ojeda",
@@ -201,6 +201,17 @@
       ]
     },
     {
+      "id": "doj-20261016-ygor-fokin-saviolli",
+      "name": "Ygor Fokin Saviolli",
+      "when": "16 Oct 2026",
+      "severity": 110,
+      "severityReason": "Fraud (incl. voter fraud)",
+      "severityCrimes": [
+        "Fraud (incl. voter fraud)",
+        "Drug trafficking"
+      ]
+    },
+    {
       "id": "x-2110761428525240505-reynaldo-chamizo-zayas",
       "name": "Reynaldo Chamizo Zayas",
       "when": "15 Oct 2026",
@@ -266,16 +277,6 @@
     {
       "id": "dhs-20261013-gerado-balcazar-portillo",
       "name": "Gerado Balcazar-Portillo",
-      "when": "13 Oct 2026",
-      "severity": 95,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter"
-      ]
-    },
-    {
-      "id": "dhs-20261013-jorge-serrano-fernandez",
-      "name": "Jorge Serrano-Fernandez",
       "when": "13 Oct 2026",
       "severity": 95,
       "severityReason": "Murder / manslaughter",
