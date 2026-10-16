@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-16",
   "windowDays": 7,
-  "total": 121,
+  "total": 128,
   "rows": [
     {
       "id": "x-2109695592888713517-julio-cesar-ojeda",
@@ -178,6 +178,17 @@
       ]
     },
     {
+      "id": "x-2111066576921514218-joao-victor-borges-de-queiroz",
+      "name": "Joao Victor Borges De Queiroz",
+      "when": "16 Oct 2026",
+      "severity": 113,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons"
+      ]
+    },
+    {
       "id": "x-2110761428525240505-reynaldo-chamizo-zayas",
       "name": "Reynaldo Chamizo Zayas",
       "when": "15 Oct 2026",
@@ -186,6 +197,17 @@
       "severityCrimes": [
         "Armed robbery / aggravated assault",
         "Drug trafficking"
+      ]
+    },
+    {
+      "id": "x-2111087267460653341-jose-angel-quesada-ponce",
+      "name": "Jose Angel Quesada-Ponce",
+      "when": "16 Oct 2026",
+      "severity": 106,
+      "severityReason": "Attack on police officer",
+      "severityCrimes": [
+        "Attack on police officer",
+        "Drug possession"
       ]
     },
     {
@@ -254,26 +276,6 @@
     {
       "id": "dhs-20261015-jaime-marques-orellana",
       "name": "Jaime Marques-Orellana",
-      "when": "15 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2110830170663731606-juan-gutierrez-garcia",
-      "name": "Juan Gutierrez-Garcia",
-      "when": "15 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261015-julio-eduardo-ortega-diaz",
-      "name": "Julio Eduardo Ortega-Diaz",
       "when": "15 Oct 2026",
       "severity": 92,
       "severityReason": "Child sex crime",

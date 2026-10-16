@@ -1,17 +1,20 @@
 {
-  "updatedAt": "2026-10-16T14:22:04Z",
-  "rows": 401,
-  "approved": 396,
+  "updatedAt": "2026-10-16T14:47:29Z",
+  "rows": 408,
+  "approved": 403,
   "pending": 5,
   "photos": 107,
   "reviewRows": 760,
-  "lastAddedAt": "2026-10-16T14:19:55Z",
-  "lastAddedCount": 4,
+  "lastAddedAt": "2026-10-16T14:47:29Z",
+  "lastAddedCount": 7,
   "lastAdded": [
-    "Georgii Gabiev",
-    "Rene Flores-Lue",
-    "Morris Brown",
-    "Roberto Carlos Munoz-Guatemala"
+    "Jose Angel Quesada-Ponce",
+    "Joao Victor Borges De Queiroz",
+    "Ivan Jared Lagos-Espinoza",
+    "Rubel Rafael Rodriguez-Lista",
+    "Jose Israel Paiz-Godoy",
+    "Cruz Ramirez-Chavez",
+    "Gerardo Valencia-Torres"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
