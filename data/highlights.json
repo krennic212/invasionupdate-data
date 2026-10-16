@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-16",
   "windowDays": 7,
-  "total": 117,
+  "total": 120,
   "rows": [
     {
       "id": "x-2109695592888713517-julio-cesar-ojeda",
@@ -15,6 +15,17 @@
         "Assault / battery",
         "Burglary / theft",
         "DUI"
+      ]
+    },
+    {
+      "id": "dhs-20261016-rene-flores-lue",
+      "name": "Rene Flores-Lue",
+      "when": "16 Oct 2026",
+      "severity": 182,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Rape / sexual assault"
       ]
     },
     {
@@ -263,16 +274,6 @@
     {
       "id": "dhs-20261015-julio-eduardo-ortega-diaz",
       "name": "Julio Eduardo Ortega-Diaz",
-      "when": "15 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2110830186690212309-luis-hernandez-flores",
-      "name": "Luis Hernandez Flores",
       "when": "15 Oct 2026",
       "severity": 92,
       "severityReason": "Child sex crime",

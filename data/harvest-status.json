@@ -1,14 +1,19 @@
 {
-  "checkedAt": 1792153958199,
-  "checkedAtIso": "2026-10-16T12:32:38.199Z",
-  "added": [],
+  "checkedAt": 1792160395351,
+  "checkedAtIso": "2026-10-16T14:19:55.351Z",
+  "added": [
+    "Georgii Gabiev",
+    "Rene Flores-Lue",
+    "Morris Brown",
+    "Roberto Carlos Munoz-Guatemala"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 95,
+  "scannedReleases": 102,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 4 as approved: Georgii Gabiev, Rene Flores-Lue, Morris Brown, Roberto Carlos Munoz-Guatemala",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
