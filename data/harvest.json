@@ -1731,7 +1731,7 @@
     "severity": 0,
     "severityReason": "",
     "severityCrimes": [],
-    "text": "DOJ Oct 15, 2026, as posted: Mervin Sylvester Bogle, 60, a native of Jamaica and a lawful permanent resident residing in Harnett County, is charged with one count of falsely claiming citizenship to vote.",
+    "text": "DOJ Oct 15, 2026, as posted: Mervin Sylvester Bogle, 60, a native of Jamaica and a lawful permanent resident residing in Harnett County, is charged with one count of falsely claiming citizenship to vote. DOJ national release Oct 16, 2026 (https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-16-aliens-illegal-voting), as posted: \"Jamaican national Mervin Sylvester Bogle, 60, a lawful permanent resident, has been charged with one count of falsely claiming citizenship to vote.\"",
     "photo": "",
     "via": "justice.gov/usao-ednc/pr/ednc-unveils-ten-federal-indictments-alleging-noncitizens-voted-2024-election",
     "sourceUrl": "https://www.justice.gov/usao-ednc/pr/ednc-unveils-ten-federal-indictments-alleging-noncitizens-voted-2024-election",
@@ -1740,8 +1740,8 @@
     "confirmedBy": "DOJ",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen"
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-16-aliens-illegal-voting"
   },
   {
     "name": "Ludgardys Olena Matthews",
