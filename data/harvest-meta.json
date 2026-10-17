@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-10-17T12:47:30Z",
-  "rows": 444,
-  "approved": 438,
+  "updatedAt": "2026-10-17T14:42:41Z",
+  "rows": 445,
+  "approved": 439,
   "pending": 6,
   "photos": 124,
-  "reviewRows": 760,
-  "lastAddedAt": "2026-10-17T12:47:30Z",
-  "lastAddedCount": 2,
+  "reviewRows": 761,
+  "lastAddedAt": "2026-10-17T14:42:41Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Venancio Pariachi-Ayala",
-    "John Arthur"
+    "Marcos Lopez Vera"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

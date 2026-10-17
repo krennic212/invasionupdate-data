@@ -1,5 +1,33 @@
 [
   {
+    "name": "Marcos Lopez Vera",
+    "city": "Not stated",
+    "crime": "Arrested: ICE San Diego arrested Marcos Lopez Vera a criminal illegal alien from Mexico.",
+    "usa": "ICE X post Oct 17, 2026 (@EROSanDiego)",
+    "foreign": "Not stated in post",
+    "picked": "10/17/2026 (@EROSanDiego post)",
+    "entered": "Not stated",
+    "office": "EROSanDiego",
+    "id": "x-2111465505999425775-marcos-lopez-vera",
+    "when": "17 Oct 2026",
+    "severity": 54,
+    "severityReason": "Burglary / theft",
+    "severityCrimes": [
+      "Burglary / theft",
+      "DUI"
+    ],
+    "text": "@EROSanDiego Oct 17, 2026, as posted: ICE San Diego arrested Marcos Lopez Vera a criminal illegal alien from Mexico. Lopez’s criminal history includes convictions for fighting in a public place, DUI, theft, threaten crime with intent to terrorize. Lopez will remain in ICE custody pending removal.",
+    "photo": "",
+    "via": "@EROSanDiego 2111465505999425775",
+    "sourceUrl": "https://x.com/EROSanDiego/status/2111465505999425775",
+    "voting": false,
+    "origin": "Not stated",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved"
+  },
+  {
     "name": "Venancio Pariachi-Ayala",
     "city": "Not stated",
     "crime": "Charged: ICE Denver arrested Venancio Pariachi-Ayala a criminal alien from Peru. He has charges for simple assault and assault and simple battery.",
