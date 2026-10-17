@@ -1,14 +1,15 @@
 {
-  "updatedAt": "2026-10-17T14:42:41Z",
-  "rows": 445,
-  "approved": 439,
+  "updatedAt": "2026-10-17T17:49:59Z",
+  "rows": 447,
+  "approved": 441,
   "pending": 6,
   "photos": 124,
   "reviewRows": 761,
-  "lastAddedAt": "2026-10-17T14:42:41Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-10-17T17:49:59Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Marcos Lopez Vera"
+    "Yitao Zhao",
+    "Beza Kebede"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
