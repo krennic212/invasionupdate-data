@@ -1,21 +1,14 @@
 {
-  "checkedAt": 1792189119124,
-  "checkedAtIso": "2026-10-16T22:18:39.124Z",
-  "added": [
-    "Vikki Bradt",
-    "Samantha Merkle",
-    "Suad Sasic",
-    "Jacques Patry",
-    "Paula Stitt",
-    "Taralynn Bosco"
-  ],
+  "checkedAt": 1792199355210,
+  "checkedAtIso": "2026-10-17T01:09:15.210Z",
+  "added": [],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
   "scannedReleases": 94,
   "error": null,
-  "note": "Added 6 as approved: Vikki Bradt, Samantha Merkle, Suad Sasic, Jacques Patry, Paula Stitt, Taralynn Bosco",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
