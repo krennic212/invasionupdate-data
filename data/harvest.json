@@ -16,7 +16,7 @@
       "Drug trafficking"
     ],
     "text": "@ERODenver Oct 17, 2026, as posted: ICE Denver arrested Alan Miramontes-Torres a criminal alien from Mexico. He has an arrest and pending charges for tampering w/evidence, poss. of a controlled substance, manufacture of a controlled substance and will remain in ICE custody pending immigration proceedings.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2111608200797770029-alan-miramontes-torres.jpg",
     "via": "@ERODenver 2111608200797770029",
     "sourceUrl": "https://x.com/ERODenver/status/2111608200797770029",
     "voting": false,
@@ -24,7 +24,8 @@
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HUsiaGlb0AA1HcE.png"
   },
   {
     "name": "Yulianny Ulacio-Valderrama",
@@ -41,7 +42,7 @@
     "severityReason": "",
     "severityCrimes": [],
     "text": "@ERODenver Oct 17, 2026, as posted: ICE Denver arrested Yulianny Ulacio-Valderrama a criminal alien from Venezuela. She has a conviction for shop lifting and will remain in ICE custody pending immigration proceedings.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2111593098388345329-yulianny-ulacio-valderrama.jpg",
     "via": "@ERODenver 2111593098388345329",
     "sourceUrl": "https://x.com/ERODenver/status/2111593098388345329",
     "voting": false,
@@ -49,7 +50,8 @@
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HUsiT9FbUAAeaFO.png"
   },
   {
     "name": "Rafael Perez Rosario",
