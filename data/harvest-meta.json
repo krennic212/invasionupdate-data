@@ -1,14 +1,15 @@
 {
-  "updatedAt": "2026-10-17T20:46:53Z",
-  "rows": 450,
-  "approved": 442,
+  "updatedAt": "2026-10-18T12:45:24Z",
+  "rows": 452,
+  "approved": 444,
   "pending": 8,
   "photos": 135,
-  "reviewRows": 761,
-  "lastAddedAt": "2026-10-17T20:46:52Z",
-  "lastAddedCount": 1,
+  "reviewRows": 762,
+  "lastAddedAt": "2026-10-18T12:45:24Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Rafael Perez Rosario"
+    "Alan Miramontes-Torres",
+    "Yulianny Ulacio-Valderrama"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
