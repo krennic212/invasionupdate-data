@@ -1,5 +1,32 @@
 [
   {
+    "name": "Gaye Tyndale-Simpson",
+    "city": "Trenton, NJ",
+    "crime": "Convicted: Gaye Tyndale-Simpson, an illegal alien from Jamaica, pleaded guilty to one count of voting by an alien in a federal election before U.S. Magistrate Rukhsanah L. Singh in federal court in Trenton, New Jersey.",
+    "usa": "DOJ release Oct 19, 2026: Illegal Alien Admits to Illegally Voting in Federal Election in New Jersey",
+    "foreign": "Not stated in post",
+    "picked": "10/19/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261019-gaye-tyndale-simpson",
+    "when": "19 Oct 2026",
+    "severity": 60,
+    "severityReason": "Fraud (incl. voter fraud)",
+    "severityCrimes": [
+      "Fraud (incl. voter fraud)"
+    ],
+    "text": "DOJ Oct 19, 2026, as posted: Gaye Tyndale-Simpson, an illegal alien from Jamaica, pleaded guilty to one count of voting by an alien in a federal election before U.S. Magistrate Rukhsanah L. Singh in federal court in Trenton, New Jersey.",
+    "photo": "",
+    "via": "justice.gov/opa/pr/illegal-alien-admits-illegally-voting-federal-election-new-jersey",
+    "sourceUrl": "https://www.justice.gov/opa/pr/illegal-alien-admits-illegally-voting-federal-election-new-jersey",
+    "voting": true,
+    "origin": "Jamaica",
+    "confirmedBy": "DOJ",
+    "lat": 40.2169,
+    "lon": -74.7433,
+    "status": "approved"
+  },
+  {
     "name": "Omar Israel Hernandez",
     "city": "Not stated",
     "crime": "Arrested: Omar Israel Hernandez, a criminal illegal alien from Mexico, arrested by ICE in July.",

@@ -1,17 +1,14 @@
 {
-  "updatedAt": "2026-10-19T20:50:43Z",
-  "rows": 527,
-  "approved": 519,
+  "updatedAt": "2026-10-19T21:47:10Z",
+  "rows": 528,
+  "approved": 520,
   "pending": 8,
   "photos": 143,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-19T20:50:42Z",
-  "lastAddedCount": 4,
+  "lastAddedAt": "2026-10-19T21:47:09Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Omar Israel Hernandez",
-    "Greg Chukwuka Orji",
-    "Oscar Sanchez-Corona",
-    "Jose Luis Rauda-Diaz"
+    "Gaye Tyndale-Simpson"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
