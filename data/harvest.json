@@ -1,5 +1,33 @@
 [
   {
+    "name": "Osiel Guajardo-Tanguma",
+    "city": "Not stated",
+    "crime": "Removed: ERO Harlingen arrested and deported Osiel Guajardo-Tanguma, an illegal alien from Mexico, with a final removal order.",
+    "usa": "ICE X post Oct 19, 2026 (@EroHarlingen)",
+    "foreign": "Not stated in post",
+    "picked": "10/19/2026 (@EroHarlingen post)",
+    "entered": "Not stated",
+    "office": "EroHarlingen",
+    "id": "x-2112185751060554121-osiel-guajardo-tanguma",
+    "when": "19 Oct 2026",
+    "severity": 32,
+    "severityReason": "Drug possession",
+    "severityCrimes": [
+      "Drug possession",
+      "Illegal entry / reentry"
+    ],
+    "text": "@EroHarlingen Oct 19, 2026, as posted: ERO Harlingen arrested and deported Osiel Guajardo-Tanguma, an illegal alien from Mexico, with a final removal order. Guajardo was recently arrested for cocaine possession, illegal entry and being illegally present in the U.S. after a previous deportation. He has been removed.",
+    "photo": "",
+    "via": "@EroHarlingen 2112185751060554121",
+    "sourceUrl": "https://x.com/EroHarlingen/status/2112185751060554121",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved"
+  },
+  {
     "name": "Denroy Dwayne Briscoe",
     "city": "Not stated",
     "crime": "Convicted: Denroy Dwayne Briscoe was convicted of sexual abuse in New York — he was 33 and his victim was 13.",

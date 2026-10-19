@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-19T14:12:48Z",
-  "rows": 463,
-  "approved": 455,
+  "updatedAt": "2026-10-19T14:51:09Z",
+  "rows": 464,
+  "approved": 456,
   "pending": 8,
   "photos": 137,
-  "reviewRows": 762,
-  "lastAddedAt": "2026-10-19T13:55:26Z",
+  "reviewRows": 763,
+  "lastAddedAt": "2026-10-19T14:51:09Z",
   "lastAddedCount": 1,
   "lastAdded": [
-    "Yoirlan Tome-Rojas"
+    "Osiel Guajardo-Tanguma"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
