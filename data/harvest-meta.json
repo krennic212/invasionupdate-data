@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-19T20:12:32Z",
-  "rows": 522,
-  "approved": 514,
+  "updatedAt": "2026-10-19T20:50:00Z",
+  "rows": 523,
+  "approved": 515,
   "pending": 8,
   "photos": 143,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-19T20:11:41Z",
+  "lastAddedAt": "2026-10-19T20:50:00Z",
   "lastAddedCount": 1,
   "lastAdded": [
-    "Verónica Bullene"
+    "Nestor Javier Banda Casa"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
