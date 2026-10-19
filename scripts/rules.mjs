@@ -20,6 +20,16 @@ export const OFFICIAL_HOSTS = [
   "atf.gov",
 ];
 
+/**
+ * Every dedupe key for a row: its name plus any a.k.a. (row.aka, a string or an array). A person
+ * listed under an alias ("Verónica Bullene, a.k.a. Verónica Hernández Martínez") is the same person,
+ * so neither name may be added again.
+ */
+export function nameKeysOf(row) {
+  const akas = Array.isArray(row?.aka) ? row.aka : [row?.aka];
+  return [row?.name, ...akas].map(nameKey).filter(Boolean);
+}
+
 export function nameKey(name) {
   return String(name || "")
     .toLowerCase()

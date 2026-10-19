@@ -24,7 +24,7 @@ import { uniqueId as makeUniqueId, rowIdBase } from "./ids.mjs";
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { scrubVictimNames } from "./victims.mjs";
 import { extractPeople, htmlBlocks, decode, toRow } from "./parse.mjs";
-import { nameKey, routeRows, isOfficialUrl } from "./rules.mjs";
+import { nameKey, nameKeysOf, routeRows, isOfficialUrl } from "./rules.mjs";
 import { holdReasons, holdReasonsForRow } from "./guards.mjs";
 
 const HARVEST = process.env.HARVEST_FILE || "data/harvest.json";
@@ -148,7 +148,8 @@ async function main() {
   const harvest = readJson(HARVEST, []);
   const review = readJson(REVIEW, []);
   if (!Array.isArray(harvest) || !Array.isArray(review)) throw new Error("data files must be JSON arrays");
-  const have = new Set([...harvest, ...review].map((r) => nameKey(r?.name)).filter(Boolean));
+  // Names AND a.k.a. names, so a person is never added twice under an alias.
+  const have = new Set([...harvest, ...review].flatMap((r) => nameKeysOf(r)));
   // Ids are unique across feed AND review (scripts/ids.mjs); an empty id gets one in the house style.
   const ids = new Set([...harvest, ...review].map((r) => r?.id).filter(Boolean));
   const uniqueId = (id, row = {}) => makeUniqueId(String(id || "").trim() || rowIdBase(row), ids);
@@ -163,17 +164,17 @@ async function main() {
   if (Array.isArray(pending) && pending.length) {
     const { live, review: rv } = routeRows(pending);
     for (const r0 of live) {
-      if (have.has(nameKey(r0.name))) continue;
+      if (nameKeysOf(r0).some((k) => have.has(k))) continue;
       const r = gate({ ...r0, id: uniqueId(r0.id || `pending-${nameKey(r0.name).replace(/ /g, "-")}`, r0) }, holdReasonsForRow(r0));
       harvest.unshift(r);
-      have.add(nameKey(r.name));
+      for (const k of nameKeysOf(r)) have.add(k);
       added.push(r.name);
     }
     for (const r0 of rv) {
-      if (have.has(nameKey(r0.name))) continue;
+      if (nameKeysOf(r0).some((k) => have.has(k))) continue;
       const r = { ...r0, id: uniqueId(r0.id, r0) };
       review.unshift(r);
-      have.add(nameKey(r.name));
+      for (const k of nameKeysOf(r)) have.add(k);
       toReview.push(r.name);
     }
     writeJson(PENDING, []);

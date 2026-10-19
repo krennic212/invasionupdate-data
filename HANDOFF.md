@@ -14,3 +14,11 @@ Source: https://www.justice.gov/usao-ednc/pr/ednc-unveils-ten-federal-indictment
 Source: https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-16-aliens-illegal-voting (residences from https://www.justice.gov/usao-ndny/pr/five-non-citizens-arrested-voter-fraud-across-northern-district).
 - Added via data/pending.json: Vikki Bradt, Samantha Merkle, Suad Sasic, Jacques Patry, Paula Stitt (NDNY, complaints), Taralynn Bosco (D. Idaho). All "Charged", labels copied word for word from the OPA release. No photos (multi-defendant release).
 - NC 10 already present from the EDNC release; Bogle still pending (guard left on; the OPA release calls him "Jamaican national", approve only if Krennic says so).
+
+# HANDOFF: 2026-10-19 DOJ "Operation Protect the Vote" (28 LPRs charged in California)
+
+Source: https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes (same list as https://www.justice.gov/usao-cdca/pr/11-foreign-nationals-arrested-california-federal-charges-alleging-they-illegally).
+- 27 rows came in through the hourly scan of the CDCA release. 21 went live; 6 were held "not stated to be a non-citizen" because their sentences contain "U.S. citizen" wording (Muñoz, Kaur, Nazarín González, Rivas García, Viduya Adawag, Lwin).
+- Krennic approved those 6 on 2026-10-19 (`node scripts/approve.mjs <id>`). Same as the Bogle precedent: the label stays the release's own sentence, the OPA LPR statement and the OPA nationality line are added to `text`, and `statusSourceUrl` = the OPA URL. Stage stays Charged.
+- Added Verónica Bullene (aka "Verónica Hernández Martínez"), NDCA, Petaluma, CA, through data/pending.json (auto-approve, guards on, no hold). The label is the OPA sentence. Charged. No photo. The row has `aka`. harvest.mjs now dedupes on name + aka (`nameKeysOf` in scripts/rules.mjs, test scripts/rules-aka.test.mjs), so the alias is never added as a second person.
+- Result: 28/28 approved.

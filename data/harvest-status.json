@@ -1,20 +1,16 @@
 {
-  "checkedAt": 1792439201800,
-  "checkedAtIso": "2026-10-19T19:46:41.800Z",
+  "checkedAt": 1792440701659,
+  "checkedAtIso": "2026-10-19T20:11:41.659Z",
   "added": [
-    "Marvin Anthony Figueroa-Nunez",
-    "Carlos Alex Ortiz-Cruz",
-    "Daniel Delgado-Trevino",
-    "Marco Banega",
-    "Benicio Baza-Carchure"
+    "Verónica Bullene"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 86,
+  "scannedReleases": 0,
   "error": null,
-  "note": "Added 5 as approved: Marvin Anthony Figueroa-Nunez, Carlos Alex Ortiz-Cruz, Daniel Delgado-Trevino, Marco Banega, Benicio Baza-Carchure",
+  "note": "Added 1 as approved: Verónica Bullene",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

@@ -1,5 +1,33 @@
 [
   {
+    "name": "Verónica Bullene",
+    "city": "Petaluma, CA",
+    "crime": "Charged: Verónica Bullene, 43, a.k.a. “Verónica Hernández Martínez,” a Mexican national living in Petaluma, California, made false statements on her naturalization application that she had never claimed to be a U.S. citizen when, in fact, she did so under penalty of perjury to register to vote in 2022 and 2023 then voted in 2024.",
+    "usa": "DOJ release Oct 19, 2026: Justice Department Charges 28 Foreign Nationals in California for Election Crimes",
+    "foreign": "Not stated in post",
+    "picked": "10/19/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261019-veronica-bullene",
+    "when": "19 Oct 2026",
+    "severity": 54,
+    "severityReason": "Fraud (incl. voter fraud)",
+    "severityCrimes": [
+      "Fraud (incl. voter fraud)"
+    ],
+    "text": "DOJ Oct 19, 2026, as posted: Verónica Bullene, 43, a.k.a. “Verónica Hernández Martínez,” a Mexican national living in Petaluma, California, made false statements on her naturalization application that she had never claimed to be a U.S. citizen when, in fact, she did so under penalty of perjury to register to vote in 2022 and 2023 then voted in 2024.",
+    "photo": "",
+    "via": "justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes",
+    "sourceUrl": "https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes",
+    "voting": true,
+    "origin": "Mexico",
+    "confirmedBy": "DOJ",
+    "lat": null,
+    "lon": null,
+    "aka": "Verónica Hernández Martínez",
+    "status": "approved"
+  },
+  {
     "name": "Marvin Anthony Figueroa-Nunez",
     "city": "Modesto, CA",
     "crime": "Convicted: Marvin Anthony Figueroa-Nunez, a criminal illegal alien from Honduras, convicted for driving under the influence and evading a peace officer in Modesto, California.",
@@ -777,7 +805,7 @@
     "severityCrimes": [
       "Fraud (incl. voter fraud)"
     ],
-    "text": "DOJ Oct 19, 2026, as posted: Omar Alexander Muñoz, 72, a Belizean national living in Commerce, fraudulently registered to vote in September 2019, claiming his was a U.S. citizen, then voted in U.S. elections in 2020, twice in 2022, and in 2024.",
+    "text": "DOJ Oct 19, 2026, as posted: Omar Alexander Muñoz, 72, a Belizean national living in Commerce, fraudulently registered to vote in September 2019, claiming his was a U.S. citizen, then voted in U.S. elections in 2020, twice in 2022, and in 2024. DOJ national release Oct 19, 2026 (https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes), as posted: \"All 28 foreign nationals charged are lawful permanent residents (LPRs), or “green card” holders. Although LPRs have legal immigration status in the United States, they are not U.S. citizens and are not permitted to vote in U.S. elections.\" and \"Omar Alexander Muñoz, 72, a Belizean national living in Commerce, California\".",
     "photo": "",
     "via": "justice.gov/usao-cdca/pr/11-foreign-nationals-arrested-california-federal-charges-alleging-they-illegally",
     "sourceUrl": "https://www.justice.gov/usao-cdca/pr/11-foreign-nationals-arrested-california-federal-charges-alleging-they-illegally",
@@ -786,8 +814,8 @@
     "confirmedBy": "DOJ",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen"
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes"
   },
   {
     "name": "Amandeep Kaur",
@@ -805,7 +833,7 @@
     "severityCrimes": [
       "Fraud (incl. voter fraud)"
     ],
-    "text": "DOJ Oct 19, 2026, as posted: Amandeep Kaur, 30, an Indian national living in Rancho Palos Verdes and who is seeking to become a U.S. citizen, fraudulently registered to vote in December 2022 and voted in the November 2024 U.S. election.",
+    "text": "DOJ Oct 19, 2026, as posted: Amandeep Kaur, 30, an Indian national living in Rancho Palos Verdes and who is seeking to become a U.S. citizen, fraudulently registered to vote in December 2022 and voted in the November 2024 U.S. election. DOJ national release Oct 19, 2026 (https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes), as posted: \"All 28 foreign nationals charged are lawful permanent residents (LPRs), or “green card” holders. Although LPRs have legal immigration status in the United States, they are not U.S. citizens and are not permitted to vote in U.S. elections.\" and \"Amandeep Kaur, 30, an Indian national living in Rancho Palos Verdes, California\".",
     "photo": "",
     "via": "justice.gov/usao-cdca/pr/11-foreign-nationals-arrested-california-federal-charges-alleging-they-illegally",
     "sourceUrl": "https://www.justice.gov/usao-cdca/pr/11-foreign-nationals-arrested-california-federal-charges-alleging-they-illegally",
@@ -814,8 +842,8 @@
     "confirmedBy": "DOJ",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen"
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes"
   },
   {
     "name": "Ana Domínguez",
@@ -1126,7 +1154,7 @@
     "severity": 0,
     "severityReason": "",
     "severityCrimes": [],
-    "text": "DOJ Oct 19, 2026, as posted: Maricela Nazarín González, 43, a Mexican national living in Clovis, registered to vote in 2020, indicating that she was a U.S. citizen, and voted in elections in 2022, twice in 2024, and 2025.",
+    "text": "DOJ Oct 19, 2026, as posted: Maricela Nazarín González, 43, a Mexican national living in Clovis, registered to vote in 2020, indicating that she was a U.S. citizen, and voted in elections in 2022, twice in 2024, and 2025. DOJ national release Oct 19, 2026 (https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes), as posted: \"All 28 foreign nationals charged are lawful permanent residents (LPRs), or “green card” holders. Although LPRs have legal immigration status in the United States, they are not U.S. citizens and are not permitted to vote in U.S. elections.\" and \"Maricela Nazarín González, 43, a Mexican national living in Clovis, California\".",
     "photo": "",
     "via": "justice.gov/usao-cdca/pr/11-foreign-nationals-arrested-california-federal-charges-alleging-they-illegally",
     "sourceUrl": "https://www.justice.gov/usao-cdca/pr/11-foreign-nationals-arrested-california-federal-charges-alleging-they-illegally",
@@ -1135,8 +1163,8 @@
     "confirmedBy": "DOJ",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen"
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes"
   },
   {
     "name": "Rony de Jesús Sicaja",
@@ -1206,7 +1234,7 @@
     "severityCrimes": [
       "Fraud (incl. voter fraud)"
     ],
-    "text": "DOJ Oct 19, 2026, as posted: Juan Antonio Rivas García, 46, a Mexican national and Sacramento resident, fraudulently registered to vote in 2018 and 2020, both times falsely asserting under oath that he was a U.S. citizen.",
+    "text": "DOJ Oct 19, 2026, as posted: Juan Antonio Rivas García, 46, a Mexican national and Sacramento resident, fraudulently registered to vote in 2018 and 2020, both times falsely asserting under oath that he was a U.S. citizen. DOJ national release Oct 19, 2026 (https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes), as posted: \"All 28 foreign nationals charged are lawful permanent residents (LPRs), or “green card” holders. Although LPRs have legal immigration status in the United States, they are not U.S. citizens and are not permitted to vote in U.S. elections.\" and \"Juan Antonio Rivas García, 46, a Mexican national and Sacramento, California, resident\".",
     "photo": "",
     "via": "justice.gov/usao-cdca/pr/11-foreign-nationals-arrested-california-federal-charges-alleging-they-illegally",
     "sourceUrl": "https://www.justice.gov/usao-cdca/pr/11-foreign-nationals-arrested-california-federal-charges-alleging-they-illegally",
@@ -1215,8 +1243,8 @@
     "confirmedBy": "DOJ",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen"
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes"
   },
   {
     "name": "Giezell Viduya Adawag",
@@ -1234,7 +1262,7 @@
     "severityCrimes": [
       "Fraud (incl. voter fraud)"
     ],
-    "text": "DOJ Oct 19, 2026, as posted: Giezell Viduya Adawag, 41, a Philippines national and Vacaville resident, fraudulently registered to vote the day of the November 2024 general election, falsely certified that she was a U.S. citizen, and voted in the election that day.",
+    "text": "DOJ Oct 19, 2026, as posted: Giezell Viduya Adawag, 41, a Philippines national and Vacaville resident, fraudulently registered to vote the day of the November 2024 general election, falsely certified that she was a U.S. citizen, and voted in the election that day. DOJ national release Oct 19, 2026 (https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes), as posted: \"All 28 foreign nationals charged are lawful permanent residents (LPRs), or “green card” holders. Although LPRs have legal immigration status in the United States, they are not U.S. citizens and are not permitted to vote in U.S. elections.\" and \"Giezell Viduya Adawag, 41, a Philippines national and Vacaville, California, resident\".",
     "photo": "",
     "via": "justice.gov/usao-cdca/pr/11-foreign-nationals-arrested-california-federal-charges-alleging-they-illegally",
     "sourceUrl": "https://www.justice.gov/usao-cdca/pr/11-foreign-nationals-arrested-california-federal-charges-alleging-they-illegally",
@@ -1243,8 +1271,8 @@
     "confirmedBy": "DOJ",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen"
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes"
   },
   {
     "name": "Kamlesh Navnitlal Shah",
@@ -1316,7 +1344,7 @@
     "severityCrimes": [
       "Fraud (incl. voter fraud)"
     ],
-    "text": "DOJ Oct 19, 2026, as posted: Moe Thida Lwin, 57, a Myanmar national and Daly City resident, fraudulently registered to vote in 2024 and then proceeded to illegally vote in a U.S. citizen.",
+    "text": "DOJ Oct 19, 2026, as posted: Moe Thida Lwin, 57, a Myanmar national and Daly City resident, fraudulently registered to vote in 2024 and then proceeded to illegally vote in a U.S. citizen. DOJ national release Oct 19, 2026 (https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes), as posted: \"All 28 foreign nationals charged are lawful permanent residents (LPRs), or “green card” holders. Although LPRs have legal immigration status in the United States, they are not U.S. citizens and are not permitted to vote in U.S. elections.\" and \"Moe Thida Lwin, 57, a Myanmar national and Daly City, California, resident\".",
     "photo": "",
     "via": "justice.gov/usao-cdca/pr/11-foreign-nationals-arrested-california-federal-charges-alleging-they-illegally",
     "sourceUrl": "https://www.justice.gov/usao-cdca/pr/11-foreign-nationals-arrested-california-federal-charges-alleging-they-illegally",
@@ -1325,8 +1353,8 @@
     "confirmedBy": "DOJ",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen"
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes"
   },
   {
     "name": "Manakotau Mataele Finau",
