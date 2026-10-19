@@ -1,14 +1,17 @@
 {
-  "updatedAt": "2026-10-19T20:50:00Z",
-  "rows": 523,
-  "approved": 515,
+  "updatedAt": "2026-10-19T20:50:43Z",
+  "rows": 527,
+  "approved": 519,
   "pending": 8,
   "photos": 143,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-19T20:50:00Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-10-19T20:50:42Z",
+  "lastAddedCount": 4,
   "lastAdded": [
-    "Nestor Javier Banda Casa"
+    "Omar Israel Hernandez",
+    "Greg Chukwuka Orji",
+    "Oscar Sanchez-Corona",
+    "Jose Luis Rauda-Diaz"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

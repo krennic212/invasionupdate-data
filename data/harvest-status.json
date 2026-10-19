@@ -1,14 +1,19 @@
 {
-  "checkedAt": 1792440751596,
-  "checkedAtIso": "2026-10-19T20:12:31.596Z",
-  "added": [],
+  "checkedAt": 1792443042358,
+  "checkedAtIso": "2026-10-19T20:50:42.358Z",
+  "added": [
+    "Omar Israel Hernandez",
+    "Greg Chukwuka Orji",
+    "Oscar Sanchez-Corona",
+    "Jose Luis Rauda-Diaz"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 90,
+  "scannedReleases": 87,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 4 as approved: Omar Israel Hernandez, Greg Chukwuka Orji, Oscar Sanchez-Corona, Jose Luis Rauda-Diaz",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
