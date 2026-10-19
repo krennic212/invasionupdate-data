@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-19",
   "windowDays": 7,
-  "total": 180,
+  "total": 201,
   "rows": [
     {
       "id": "x-2111148670829957349-leo-robert-jackson",
@@ -86,6 +86,18 @@
       ]
     },
     {
+      "id": "x-2112267610163175525-frankie-miller",
+      "name": "Frankie Miller",
+      "when": "19 Oct 2026",
+      "severity": 171,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons",
+        "Burglary / theft"
+      ]
+    },
+    {
       "id": "x-2110054259710435384-badshah-sahi",
       "name": "Badshah Sahi",
       "when": "13 Oct 2026",
@@ -140,6 +152,17 @@
       "severityCrimes": [
         "Armed robbery / aggravated assault",
         "Assault / battery",
+        "Burglary / theft"
+      ]
+    },
+    {
+      "id": "x-2112267387831570806-yusniel-gonzalez",
+      "name": "Yusniel Gonzalez",
+      "when": "19 Oct 2026",
+      "severity": 130,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
         "Burglary / theft"
       ]
     },
@@ -232,6 +255,17 @@
       ]
     },
     {
+      "id": "x-2112267614667911511-sergio-de-anda-rodriguez",
+      "name": "Sergio De Anda-Rodriguez",
+      "when": "19 Oct 2026",
+      "severity": 105,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Burglary / theft"
+      ]
+    },
+    {
       "id": "x-2110830172635079157-william-benjamin-diaz-jacinto",
       "name": "William Benjamin Diaz Jacinto",
       "when": "15 Oct 2026",
@@ -264,23 +298,13 @@
       ]
     },
     {
-      "id": "dhs-20261016-claudius-anglo-ricardo-smith",
-      "name": "Claudius Anglo Ricardo Smith",
-      "when": "16 Oct 2026",
-      "severity": 95,
-      "severityReason": "Murder / manslaughter",
+      "id": "x-2112267579226018224-ricardo-rafael-bugarin-carrion",
+      "name": "Ricardo Rafael Bugarin-Carrion",
+      "when": "19 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
       "severityCrimes": [
-        "Murder / manslaughter"
-      ]
-    },
-    {
-      "id": "dhs-20261016-korakanh-phornsavanh",
-      "name": "Korakanh Phornsavanh",
-      "when": "16 Oct 2026",
-      "severity": 95,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter"
+        "Child sex crime"
       ]
     },
     {
