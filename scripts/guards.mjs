@@ -52,7 +52,8 @@ const AT_LARGE_SENTENCE = /\bon the run\b|\bescaped\b|\bfled\b/i;
 /** Sentence: strong or weak wording. Rest of the release: strong wording only (fail-safe: holds the whole release). */
 // ICE jargon: an "at-large arrest / at-large targeted enforcement (action) / at-large operation" is an arrest made out in
 // the community, not a fugitive (Krennic 2026-10-16). Strip it before testing; real fugitive wording still holds.
-const AT_LARGE_JARGON = /\bat[- ]large\s+(?:(?:targeted\s+)?(?:enforcement\s+)?(?:arrests?|actions?|operations?|enforcement)|targeted\s+(?:enforcement|arrests?|operations?)(?:\s+(?:actions?|operations?))?)\b/gi;
+// Also ICE community-arrest phrasing: "arrested him/her at large" / "arrested <name> at-large" (Krennic 2026-10-19).
+const AT_LARGE_JARGON = /\bat[- ]large\s+(?:(?:targeted\s+)?(?:enforcement\s+)?(?:arrests?|actions?|operations?|enforcement)|targeted\s+(?:enforcement|arrests?|operations?)(?:\s+(?:actions?|operations?))?)|\barrested\s+(?:him|her|them)\s+at[- ]large|\barrested(?:\s+\S+){0,6}\s+at[- ]large\b/gi;
 const dejargon = (t) => String(t || "").replace(AT_LARGE_JARGON, " ");
 
 export function atLarge(sentence, releaseText = "") {

@@ -1,20 +1,14 @@
 {
-  "updatedAt": "2026-10-19T13:51:12Z",
-  "rows": 461,
-  "approved": 453,
+  "updatedAt": "2026-10-19T13:55:26Z",
+  "rows": 462,
+  "approved": 454,
   "pending": 8,
   "photos": 137,
   "reviewRows": 763,
-  "lastAddedAt": "2026-10-19T13:51:11Z",
-  "lastAddedCount": 7,
+  "lastAddedAt": "2026-10-19T13:55:26Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Gustavo Adolfo Flores-Ramirez",
-    "Jose Luis Perez-Arrias",
-    "Emerson Jossiel Calderon-Hernandez",
-    "Hector Castro-Lopez",
-    "Amaurys Gutierrez-Nunez",
-    "Omar Alberto Sanchez-Briones",
-    "Luis Alberto Guajardo"
+    "Yoirlan Tome-Rojas"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

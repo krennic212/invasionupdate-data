@@ -52,7 +52,7 @@ export const PATTERNS = [
   ]],
   ["murder", [/\b(?:murder\w*|homicide|manslaughter|massacr\w*)\b/gi]],
   ["kidnapping", [/\b(?:kidnap\w*|abduct\w*|human trafficking|sex trafficking|labor trafficking|trafficking (?:in|of) persons)\b/gi]],
-  ["rape", [/\b(?:rap(?:e|ed|es|ing)|sexual\s+(?:assault|battery|abuse|penetration)|sex crimes?|indecent assault|sodomy|forcible fondling|(?:sexual\s+)?intercourse\s+with\s+(?:another|a person|an individual)\s+without\s+(?:\w+\s+)?consent)\b/gi]],
+  ["rape", [/\b(?:rap(?:e|ed|es|ing)|sex(?:ual)?\s+(?:assault|battery|abuse|penetration)|sex crimes?|indecent assault|sodomy|forcible fondling|(?:sexual\s+)?intercourse\s+with\s+(?:another|a person|an individual)\s+without\s+(?:\w+\s+)?consent)\b/gi]],
   // "sexually assaulted her": narrative wording, counted as rape only if no child sex crime / rape charge was found.
   ["rapeNarrative", [/\bsexually\s+(?:assault|abus|batter)\w*/gi]],
   ["childViolence", [

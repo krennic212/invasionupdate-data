@@ -123,3 +123,14 @@ test("at-large arrest / targeted enforcement jargon is not 'at large' (Krennic 2
   for (const t of ["He remains at large.", "The suspect is at large.", "He remains a fugitive.", "He is still being sought.", "Do not attempt to apprehend any subject."]) assert.equal(atLarge("He was charged.", t), true, t);
   assert.equal(atLarge("He was charged.", "ICE made an at-large arrest of one man; his co-defendant remains at large."), true);
 });
+
+test("arrested him/her at large / arrested ... at-large is community-arrest jargon, not fugitive (Krennic 2026-10-19)", () => {
+  for (const t of [
+    "Our federal team found him, got a warrant and arrested him at large during a targeted enforcement operation.",
+    "ICE officers subsequently located and arrested her at large earlier this year.",
+    "ERO arrested them at-large in Mount Vernon.",
+    "ICE officers subsequently located and arrested Kumar at large earlier this year.",
+  ]) assert.equal(atLarge("He was charged.", t), false, t);
+  // Real fugitive wording still holds even when jargon also appears.
+  assert.equal(atLarge("He was charged.", "ICE arrested him at large; a co-defendant remains at large."), true);
+});

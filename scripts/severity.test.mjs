@@ -51,6 +51,21 @@ test("classification: one crime each", () => {
   }
 });
 
+test("sex assault / sexual assault score as rape/sexual assault (90), not plain assault (Krennic 2026-10-19)", () => {
+  for (const text of [
+    "He has convictions for sex assault and is a registered sex offender.",
+    "convicted of sexual assault.",
+    "convicted for sex assault.",
+    "convicted of aggravated sexual assault.",
+  ]) {
+    const s = scoreRow(conv(text));
+    assert.equal(s.severityReason, L.rape, text);
+    assert.ok(s.severityCrimes.includes(L.rape), text);
+    assert.ok(!s.severityCrimes.includes(L.assault), `plain assault must not win: ${text} -> ${s.severityCrimes}`);
+    assert.equal(s.severity, P.rape, text);
+  }
+});
+
 test("classification: stabbing / shooting / assaulting an officer", () => {
   const stab = scoreRow(chg("Two illegal aliens stabbed an NYPD officer in the Bronx."));
   assert.equal(stab.severityReason, L.officer);
