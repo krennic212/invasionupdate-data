@@ -67,6 +67,8 @@ export const PATTERNS = [
   ["assault", [/\b(?:assault(?!\s+(?:weapon|rifle))\w*|battery|strangulation)\b/gi]],
   ["alienSmuggling", [/\b(?:smuggl\w*\s+(?:illegal\s+)?aliens?|alien smuggling|human smuggling|smuggling of (?:illegal\s+)?aliens?)\b/gi]],
   ["weaponsSkip", [/\b(?:with|using)\s+an?\s+(?:deadly\s+|dangerous\s+)?(?:weapon|firearm|gun|knife)\b/gi]],
+  // Agency name, not a crime: "Bureau of Alcohol, Tobacco, Firearms, and Explosives" (ATF) in the post's credits.
+  ["skip", [/\b(?:Bureau\s+of\s+)?Alcohol,\s+Tobacco,\s+Firearms,?\s+(?:and|&)\s+Explosives\b/gi]],
   ["weapons", [/\b(?:firearms?|guns?|handguns?|rifles?|shotguns?|ammunition|weapons?|explosives?)\b/gi]],
   // Trafficking (50) only with trafficking / distribution / intent-to-distribute / smuggling wording tied to a drug word;
   // any other drug wording ("possession of controlled substance", "drug charges") is Drug possession (30).

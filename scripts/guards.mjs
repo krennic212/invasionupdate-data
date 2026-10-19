@@ -62,13 +62,14 @@ export function atLarge(sentence, releaseText = "") {
   return AT_LARGE_STRONG.test(sentence) || AT_LARGE_SENTENCE.test(sentence) || AT_LARGE_STRONG.test(releaseText);
 }
 
+// "undocumented immigrant(s)" / "an undocumented ..." counts like "illegal alien" (Krennic 2026-10-19).
 export function nonCitizenStated(sentence) {
   const s = String(sentence || "");
   // Ignore "falsely claiming to be a U.S. citizen" so real foreign-citizen wording still counts.
   const stripped = s.replace(/\b(?:falsely\s+)?claim(?:ing|ed|s)?\s+to\s+be\s+(?:a\s+)?(?:U\.S\.|United States|American)\s+citizen\b/gi, " ");
   if (/\bdual (national|citizen)|\bnaturali[sz]ed\b|\bU\.S\. citizen\b|\bUnited States citizen\b|\bAmerican citizen\b/i.test(stripped)) return false;
   return (
-    /\baliens?\b|\bnon-?citizens?\b|\b(illegally|unlawfully) (present|residing|in the United States|in the U\.S\.)|\bnationals?\b|\bcitizens? of\b|\bforeign national\b|\billegal (immigrant|migrant)s?\b/i.test(s) ||
+    /\baliens?\b|\bnon-?citizens?\b|\b(illegally|unlawfully) (present|residing|in the United States|in the U\.S\.)|\bnationals?\b|\bcitizens? of\b|\bforeign national\b|\billegal (immigrant|migrant)s?\b|\bundocumented (?:immigrant|migrant|alien|noncitizen|non-citizen)s?\b|\ban undocumented\b/i.test(s) ||
     /\b[A-Z][a-z]+ citizens?\b/.test(s)
   );
 }

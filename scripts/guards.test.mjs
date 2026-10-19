@@ -162,3 +162,17 @@ test("bare 'deported' (or reentry without deportation) is still not non-citizen 
   const sentence = "John Doe was convicted of assault in New York.";
   assert.ok(holdReasons({ name: "John Doe", sentence, releaseText: `${sentence} ICE deported him.`, label: "Convicted" }).includes("not stated to be a non-citizen"));
 });
+
+test("'undocumented immigrant' counts as non-citizen wording, like 'illegal alien' (Krennic 2026-10-19)", () => {
+  for (const t of [
+    "The defendant, an undocumented immigrant, deliberately entered the United States illegally.",
+    "Angel-Antonio Penaloza-Rojo, an undocumented immigrant, was sentenced to 70 months.",
+    "The two men, both undocumented immigrants, were charged with smuggling.",
+    "John Doe, an undocumented Mexican man, was arrested.",
+  ]) assert.equal(nonCitizenStated(t), true, t);
+  const sentence = "Angel-Antonio Penaloza-Rojo, an undocumented immigrant, was sentenced to 70 months in prison.";
+  assert.ok(!holdReasons({ name: "Angel-Antonio Penaloza-Rojo", sentence, label: "Convicted" }).includes("not stated to be a non-citizen"));
+  // A U.S.-citizen statement still wins; plain "undocumented" about something else does not count.
+  assert.equal(nonCitizenStated("John Doe, a U.S. citizen, hired an undocumented immigrant."), false);
+  assert.equal(nonCitizenStated("John Doe was paid in undocumented cash."), false);
+});

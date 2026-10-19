@@ -256,6 +256,12 @@ test("highlights: every child-crime row is included past the top-25 cap, in scor
   assert.equal(hl.total, 33);
 });
 
+test("the ATF agency name in a post's credits is not a weapons crime", () => {
+  const r = conv("Mexican National Sentenced to 70 Months in Prison for Drug Offense.", { text: "trafficking deadly fentanyl from Mexico. As in this case, the Bureau of Alcohol, Tobacco, Firearms, and Explosives, the Drug Enforcement Administration" });
+  assert.deepEqual(scoreRow(r).severityCrimes, [L.drugs]);
+  assert.ok(scoreRow(conv("convicted of possession of a firearm.")).severityCrimes.includes(L.weapons));
+});
+
 test("writeSeverityFiles writes both files and is idempotent", () => {
   const dir = mkdtempSync(join(tmpdir(), "sev-"));
   const h = join(dir, "harvest.json");

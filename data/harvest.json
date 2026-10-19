@@ -1,5 +1,33 @@
 [
   {
+    "name": "Angel-Antonio Penaloza-Rojo",
+    "city": "Not stated",
+    "crime": "Convicted: Mexican National Sentenced to 70 Months in Prison for Drug Offense. Today’s sentence holds Angel-Antonio Penaloza-Rojo fully accountable for his malicious disregard for American laws and the lives of Hoosiers.",
+    "usa": "DOJ X post Oct 19, 2026 (@USAO_NDIN)",
+    "foreign": "Not stated in post",
+    "picked": "10/19/2026 (@USAO_NDIN post)",
+    "entered": "Not stated",
+    "office": "USAO_NDIN",
+    "id": "x-2112180783431463009-angel-antonio-penaloza-rojo",
+    "when": "19 Oct 2026",
+    "severity": 50,
+    "severityReason": "Drug trafficking",
+    "severityCrimes": [
+      "Drug trafficking"
+    ],
+    "text": "@USAO_NDIN Oct 19, 2026, as posted: Mexican National Sentenced to 70 Months in Prison for Drug Offense \"Today’s sentence holds Angel-Antonio Penaloza-Rojo fully accountable for his malicious disregard for American laws and the lives of Hoosiers. The defendant, an undocumented immigrant, deliberately entered the United States illegally for the sole purpose of trafficking deadly fentanyl from Mexico directly into the Northern District of Indiana. Penaloza-Rojo and his co-conspirators operated a transnational drug pipeline, profiting from addiction and building wealth at the direct expense of our residents' lives and our community’s safety. Fentanyl is an absolute poison, and those who smuggle it across our borders to prey on our neighborhoods will find no safe haven here. This successful prosecution is a direct result of strong interagency partnerships. By combining the specialized resources of federal, state, and local law enforcement, we successfully dismantled this network from the street level up to its international roots. As in this case, the Bureau of Alcohol, Tobacco, Firearms, and Explosives, the Drug Enforcement Administration’s North Central Laboratory, AUSA Michael J. Toth, and the United States Attorney’s Office remain relentless in our collaborative mission to protect the Northern District of Indiana,\" said United States Attorney Adam L. Mildred. @ATF_Chicago @DEACHICAGODiv @HSIChicago @EROChicago @ISPChiefPIO",
+    "photo": "",
+    "via": "@USAO_NDIN 2112180783431463009",
+    "sourceUrl": "https://x.com/USAO_NDIN/status/2112180783431463009",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "DOJ",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "approvalNote": "Krennic approved live 2026-10-19: undocumented immigrant counts as non-citizen wording."
+  },
+  {
     "name": "Osiel Guajardo-Tanguma",
     "city": "Not stated",
     "crime": "Removed: ERO Harlingen arrested and deported Osiel Guajardo-Tanguma, an illegal alien from Mexico, with a final removal order.",

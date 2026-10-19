@@ -92,6 +92,16 @@ Bare "deported" (or "removed") alone does NOT count, and reentry wording without
 The stage label still follows the sentence wording; never label beyond what is stated. First applied to
 Denroy Dwayne Briscoe (@ICEgov 2111635929228017973), moved live with an approvalNote.
 
+## "Undocumented immigrant" is non-citizen wording: Krennic decision 2026-10-19
+
+"Undocumented immigrant(s)" (also "undocumented migrant / alien / noncitizen" and "an undocumented ...", e.g.
+"an undocumented Mexican man") counts as stating the person is a non-citizen, the same as "illegal alien".
+`nonCitizenStated()` in `scripts/guards.mjs` accepts it. Like "illegal alien", it is checked on the sentence that
+names the person; a "U.S. citizen" statement still wins. Charge text stays verbatim: never rewrite the post's words
+to add or swap in this wording. First applied to Angel-Antonio Penaloza-Rojo (@USAO_NDIN 2112180783431463009),
+moved live as Convicted with an approvalNote (his post says "The defendant, an undocumented immigrant, ..." in a
+separate sentence, so the approval rests on the note, not on the guard).
+
 ## Recent highlights always list child crimes: Krennic decision 2026-10-19
 
 `data/highlights.json` (built by `scripts/severity.mjs`, `buildHighlights`) holds approved rows from the last 7 days
