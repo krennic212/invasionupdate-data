@@ -233,6 +233,29 @@ test("highlights: approved, last 7 days, severity > 0, severity desc then newest
   assert.equal(buildHighlights(many, { now }).total, 40);
 });
 
+test("highlights: every child-crime row is included past the top-25 cap, in score order (Krennic 2026-10-19)", () => {
+  const now = Date.parse("2026-10-09T15:56:00Z");
+  const many = Array.from({ length: 30 }, (_, i) => conv("convicted of murder and rape.", { name: `M${i}`, id: `m${i}` }));
+  const rows = withSeverityAll([
+    ...many,
+    conv("convicted of sexual abuse of a minor.", { name: "Child Sex", id: "cs" }),
+    conv("convicted of child abuse.", { name: "Child Violence", id: "cv" }),
+    conv("convicted of DUI.", { name: "Dui Only", id: "dui" }),
+    conv("convicted of sexual abuse of a minor.", { name: "Child Old", id: "cold", when: "1 Oct 2026" }),
+    conv("convicted of sexual abuse of a minor.", { name: "Child Pending", id: "cp", status: "pending" }),
+  ]);
+  const hl = buildHighlights(rows, { now });
+  const ids = hl.rows.map((r) => r.id);
+  assert.equal(hl.rows.length, 27);
+  assert.ok(ids.includes("cs") && ids.includes("cv"));
+  assert.ok(!ids.includes("dui") && !ids.includes("cold") && !ids.includes("cp"));
+  assert.deepEqual(ids.slice(-2), ["cs", "cv"]); // slotted by score, not forced to the top
+  assert.equal(ids.filter((id) => /^m\d+$/.test(id)).length, 25);
+  const sev = hl.rows.map((r) => r.severity);
+  assert.deepEqual(sev, [...sev].sort((a, b) => b - a));
+  assert.equal(hl.total, 33);
+});
+
 test("writeSeverityFiles writes both files and is idempotent", () => {
   const dir = mkdtempSync(join(tmpdir(), "sev-"));
   const h = join(dir, "harvest.json");

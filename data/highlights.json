@@ -281,6 +281,176 @@
       "severityCrimes": [
         "Murder / manslaughter"
       ]
+    },
+    {
+      "id": "x-2111635929228017973-denroy-dwayne-briscoe",
+      "name": "Denroy Dwayne Briscoe",
+      "when": "17 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261016-hernan-marcelo-tamayo-fernandez",
+      "name": "Hernan Marcelo Tamayo-Fernandez",
+      "when": "16 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2111201537850786264-mario-hernandez-sanchez",
+      "name": "Mario Hernandez Sanchez",
+      "when": "16 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261015-jaime-marques-orellana",
+      "name": "Jaime Marques-Orellana",
+      "when": "15 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2110830170663731606-juan-gutierrez-garcia",
+      "name": "Juan Gutierrez-Garcia",
+      "when": "15 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261015-julio-eduardo-ortega-diaz",
+      "name": "Julio Eduardo Ortega-Diaz",
+      "when": "15 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2110830186690212309-luis-hernandez-flores",
+      "name": "Luis Hernandez Flores",
+      "when": "15 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261015-rafael-calderon-vierya",
+      "name": "Rafael Calderon-Vierya",
+      "when": "15 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2110460995080749103-jesus-modesto-sanchez",
+      "name": "Jesus Modesto Sanchez",
+      "when": "14 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "ice-20261014-luis-antonio-alejandro-ramos",
+      "name": "Luis Antonio Alejandro-Ramos",
+      "when": "14 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261013-abraham-garcia-aguilar",
+      "name": "Abraham Garcia-Aguilar",
+      "when": "13 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261013-jesus-villanueva-carvajal",
+      "name": "Jesus Villanueva-Carvajal",
+      "when": "13 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261013-jonathan-augustin-miranda",
+      "name": "Jonathan Augustin-Miranda",
+      "when": "13 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2110107815704703178-victor-hugo-rosaldo-lara",
+      "name": "Victor Hugo Rosaldo-Lara",
+      "when": "13 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2111141118049947761-cheng-saephan",
+      "name": "Cheng Saephan",
+      "when": "16 Oct 2026",
+      "severity": 83,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2110689822792966222-juan-carlos-izaguirre-membreno",
+      "name": "Juan Carlos Izaguirre Membreno",
+      "when": "15 Oct 2026",
+      "severity": 83,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2110425877238669559-clemente-vasquez",
+      "name": "Clemente Vasquez",
+      "when": "14 Oct 2026",
+      "severity": 83,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
     }
   ]
 }

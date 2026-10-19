@@ -92,6 +92,15 @@ Bare "deported" (or "removed") alone does NOT count, and reentry wording without
 The stage label still follows the sentence wording; never label beyond what is stated. First applied to
 Denroy Dwayne Briscoe (@ICEgov 2111635929228017973), moved live with an approvalNote.
 
+## Recent highlights always list child crimes: Krennic decision 2026-10-19
+
+`data/highlights.json` (built by `scripts/severity.mjs`, `buildHighlights`) holds approved rows from the last 7 days
+with severity > 0, sorted worst-first (severity desc, then newest, then name). The top 25 make the list, and **every
+child-crime row in the window is always included too, even past the cap**: any row whose `severityCrimes` include a
+category listed in `severity-points.json` `highlights.alwaysInclude` (today `childSex` = Child sex crime, which covers
+child pornography / CSAM / enticement, and `childViolence` = Violent crime against a child / child abuse).
+They keep their place in the score order; they are not forced to the top. All other rows still follow the top-25 rule.
+
 ## Krennic-approved rows are final: Krennic decision 2026-10-16
 
 A row with an `approvalNote` that records a Krennic decision (e.g. "Krennic approved Oct 16, 2026 ...") is final.

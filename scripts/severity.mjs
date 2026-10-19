@@ -21,7 +21,8 @@
  *
  * highlights.json: approved rows whose `when` is within the last highlights.days days
  * (same rule as the app's 7d filter: UTC midnight of `when` >= now - days), severity > 0,
- * sorted severity desc, then newest, then name; top highlights.limit.
+ * sorted severity desc, then newest, then name; top highlights.limit, PLUS every row whose crimes include a
+ * highlights.alwaysInclude category (child sex crime, violent crime against a child; Krennic 2026-10-19), in score order.
  */
 import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
@@ -247,6 +248,15 @@ export function withSeverityAll(rows, table = TABLE) {
   return list.map((r) => withSeverity(r, table, { releaseRows: sizes.get(releaseKey(r)) || 1 }));
 }
 
+/** Crime labels that always make highlights (table.highlights.alwaysInclude keys: child sex crime, violent crime against a child). */
+export function alwaysIncludeLabels(table = TABLE) {
+  return new Set((table.highlights?.alwaysInclude || []).map((k) => table.crimes[k]?.label).filter(Boolean));
+}
+const isAlwaysIncluded = (s, table) => {
+  const want = alwaysIncludeLabels(table);
+  return (s.severityCrimes || []).some((c) => want.has(c));
+};
+
 export function buildHighlights(rows, { now = Date.now(), table = TABLE } = {}) {
   const { days, limit } = table.highlights;
   const list = (Array.isArray(rows) ? rows : [])
@@ -259,7 +269,9 @@ export function buildHighlights(rows, { now = Date.now(), table = TABLE } = {}) 
     asOf: new Date(now).toLocaleDateString("en-CA", { timeZone: "America/Chicago" }),
     windowDays: days,
     total: list.length,
-    rows: list.slice(0, limit).map(({ r, s }) => ({
+    // Krennic 2026-10-19: every child-crime row in the window is always listed (even past the top-N cap); it keeps its
+    // place in the score order, so it is not forced to the top. All other rows still follow the top-N rule.
+    rows: list.filter((x, i) => i < limit || isAlwaysIncluded(x.s, table)).map(({ r, s }) => ({
       id: r.id, name: r.name, when: r.when, severity: s.severity, severityReason: s.severityReason, severityCrimes: s.severityCrimes,
     })),
   };

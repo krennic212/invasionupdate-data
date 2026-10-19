@@ -25,5 +25,5 @@
   "stage": { "convicted": 1.0, "notConvicted": 0.9 },
   "extraCountBonus": 0.1,
   "extraCountBonusCap": 0.3,
-  "highlights": { "days": 7, "limit": 25 }
+  "highlights": { "days": 7, "limit": 25, "alwaysInclude": ["childSex", "childViolence"] }
 }
