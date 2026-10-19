@@ -70,7 +70,8 @@
     "lon": null,
     "status": "pending",
     "holdReason": "not stated to be a non-citizen",
-    "reviewReason": "held by guard: not stated to be a non-citizen"
+    "reviewReason": "held by guard: not stated to be a non-citizen",
+    "approvalNote": "Krennic kept held 2026-10-19"
   },
   {
     "name": "Victor Manuel Moralez Diaz",
@@ -119,7 +120,8 @@
     "lon": null,
     "status": "pending",
     "holdReason": "not stated to be a non-citizen",
-    "reviewReason": "held by guard: not stated to be a non-citizen"
+    "reviewReason": "held by guard: not stated to be a non-citizen",
+    "approvalNote": "Krennic kept held 2026-10-19"
   },
   {
     "name": "Akop Kantrozyan",
