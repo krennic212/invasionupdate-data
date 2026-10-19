@@ -1,21 +1,14 @@
 {
-  "checkedAt": 1792270012299,
-  "checkedAtIso": "2026-10-17T20:46:52.299Z",
-  "added": [
-    "Rafael Perez Rosario",
-    "Lemuel Muniz-Valle",
-    "Summer Smith"
-  ],
+  "checkedAt": 1792413045972,
+  "checkedAtIso": "2026-10-19T12:30:45.972Z",
+  "added": [],
   "addedStatus": "approved",
-  "heldPending": [
-    "Lemuel Muniz-Valle (not stated to be a non-citizen)",
-    "Summer Smith (not stated to be a non-citizen)"
-  ],
+  "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 88,
+  "scannedReleases": 89,
   "error": null,
-  "note": "Added 3 as approved: Rafael Perez Rosario, Lemuel Muniz-Valle, Summer Smith",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
