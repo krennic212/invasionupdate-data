@@ -1,5 +1,33 @@
 [
   {
+    "name": "Luis Antonio Palacios Luviano",
+    "city": "Not stated",
+    "crime": "Arrested: ICE San Francisco arrested criminal alien Luis Antonio Palacios Luviano, 22, of Mexico, in Marysville.",
+    "usa": "ICE X post Oct 19, 2026 (@EROSanFrancisco)",
+    "foreign": "Not stated in post",
+    "picked": "10/19/2026 (@EROSanFrancisco post)",
+    "entered": "Not stated",
+    "office": "EROSanFrancisco",
+    "id": "x-2112234572897305043-luis-antonio-palacios-luviano",
+    "when": "19 Oct 2026",
+    "severity": 59,
+    "severityReason": "Assault / battery",
+    "severityCrimes": [
+      "Assault / battery",
+      "DUI"
+    ],
+    "text": "@EROSanFrancisco Oct 19, 2026, as posted: ICE San Francisco arrested criminal alien Luis Antonio Palacios Luviano, 22, of Mexico, in Marysville. He has convictions for battery of a spouse and reckless driving under the influence and a pending DUI. He is in ICE custody pending immigration proceedings.",
+    "photo": "",
+    "via": "@EROSanFrancisco 2112234572897305043",
+    "sourceUrl": "https://x.com/EROSanFrancisco/status/2112234572897305043",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved"
+  },
+  {
     "name": "Omar Alexander Muñoz",
     "city": "Not stated",
     "crime": "Charged: Omar Alexander Muñoz, 72, a Belizean national living in Commerce, fraudulently registered to vote in September 2019, claiming his was a U.S. citizen, then voted in U.S. elections in 2020, twice in 2022, and in 2024.",
