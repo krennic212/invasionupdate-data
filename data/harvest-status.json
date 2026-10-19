@@ -1,20 +1,19 @@
 {
-  "checkedAt": 1792418126483,
-  "checkedAtIso": "2026-10-19T13:55:26.483Z",
-  "added": [
-    "Yoirlan Tome-Rojas"
-  ],
+  "checkedAt": 1792418152203,
+  "checkedAtIso": "2026-10-19T13:55:52.203Z",
+  "added": [],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 0,
+  "scannedReleases": 90,
   "error": null,
-  "note": "Agent edit 2026-10-19: added Yoirlan Tome-Rojas (DOJ/USAO_WDTX sentenced); Kumar Arrested→Charged (ICE indictment post); Briscoe at-large jargon fix (kept pending: non-citizen not stated); Kantrozyan review duplicateOf live; sex assault severity→rape",
+  "note": "No new named people in official releases this run.",
   "sources": [
-    "https://x.com/USAO_WDTX/status/2112168593043415467",
-    "https://www.justice.gov/usao-wdtx/pr/illegal-alien-who-forced-three-cuban-women-work-strip-clubs-sentenced-over-17-years",
-    "https://x.com/ICEgov/status/2111916534318686430"
+    "dhs.gov/news-releases/press-releases",
+    "ice.gov/newsroom",
+    "cbp.gov/newsroom",
+    "justice.gov press-release API"
   ],
-  "writer": "agent (krennic212/invasionupdate-data)"
+  "writer": "scripts/harvest.mjs (GitHub Actions, krennic212/invasionupdate-data)"
 }
