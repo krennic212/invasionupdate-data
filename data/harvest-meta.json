@@ -1,15 +1,20 @@
 {
-  "updatedAt": "2026-10-19T13:50:26Z",
-  "rows": 454,
-  "approved": 446,
+  "updatedAt": "2026-10-19T13:51:12Z",
+  "rows": 461,
+  "approved": 453,
   "pending": 8,
   "photos": 137,
   "reviewRows": 763,
-  "lastAddedAt": "2026-10-19T12:44:49Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-10-19T13:51:11Z",
+  "lastAddedCount": 7,
   "lastAdded": [
-    "Vanderlucio Miranda-Silva",
-    "Jesus Loreto-Samaniego"
+    "Gustavo Adolfo Flores-Ramirez",
+    "Jose Luis Perez-Arrias",
+    "Emerson Jossiel Calderon-Hernandez",
+    "Hector Castro-Lopez",
+    "Amaurys Gutierrez-Nunez",
+    "Omar Alberto Sanchez-Briones",
+    "Luis Alberto Guajardo"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
