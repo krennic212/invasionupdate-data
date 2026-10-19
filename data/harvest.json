@@ -1,5 +1,34 @@
 [
   {
+    "name": "Juan Carlos Plascencia-Torres",
+    "city": "Oak Park, CA",
+    "crime": "Removed: Juan Carlos Plascencia-Torres was deported to Mexico after ICE Fugitive Operations officers arrested him during a targeted enforcement operation in Oak Park, California.",
+    "usa": "ICE X post Oct 19, 2026 (@ICEgov)",
+    "foreign": "Not stated in post",
+    "picked": "10/19/2026 (@ICEgov post)",
+    "entered": "Not stated",
+    "office": "ICEgov",
+    "id": "x-2112212456797880328-juan-carlos-plascencia-torres",
+    "when": "19 Oct 2026",
+    "severity": 95,
+    "severityReason": "Violent crime against a child",
+    "severityCrimes": [
+      "Violent crime against a child",
+      "DUI"
+    ],
+    "text": "@ICEgov Oct 19, 2026, as posted: Juan Carlos Plascencia-Torres was deported to Mexico after ICE Fugitive Operations officers arrested him during a targeted enforcement operation in Oak Park, California. His criminal history includes convictions for DUI, evading a peace officer, false ID, and driving without a license. He was also arrested for child abuse last year.",
+    "photo": "",
+    "via": "@ICEgov 2112212456797880328",
+    "sourceUrl": "https://x.com/ICEgov/status/2112212456797880328",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "approvalNote": "Krennic approved live 2026-10-19: deported counts as non-citizen wording."
+  },
+  {
     "name": "Angel-Antonio Penaloza-Rojo",
     "city": "Not stated",
     "crime": "Convicted: Mexican National Sentenced to 70 Months in Prison for Drug Offense. Today’s sentence holds Angel-Antonio Penaloza-Rojo fully accountable for his malicious disregard for American laws and the lives of Hoosiers.",

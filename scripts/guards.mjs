@@ -7,8 +7,8 @@
  *  2. stage     - the label would say Convicted (or Removed) but the source's own wording for
  *                 this person is only charged / indicted / arrested. The stage is never escalated.
  *  3. at-large  - the person is described as a suspect still at large / not yet in custody.
- *  4. status    - the sentence does not state the person is a non-citizen (denaturalized, or deported + illegally
- *                 reentered, anywhere in the sentence or post/release text also counts; Krennic 2026-10-16 / 2026-10-19).
+ *  4. status    - the sentence does not state the person is a non-citizen (denaturalized, or deported,
+ *                 anywhere in the sentence or post/release text also counts; Krennic 2026-10-16 / 2026-10-19).
  *  5. place     - the "name" is a place (state, city-geo city, "City, State", County, or the
  *                 release headline's "in <Place>"), not a person. Covers every writer (release
  *                 harvest, X scan picks, pending intake).
@@ -96,21 +96,33 @@ export function denaturalizedStated(text) {
 }
 
 /**
- * Krennic decision 2026-10-19: wording that the person was deported AND illegally reentered counts as stating the
- * person is a non-citizen. Both parts are required: bare "deported" / "removed" alone does NOT count, and neither does
- * reentry wording without a deportation. Accepted reentry forms: "illegally reentered / re-entered", "reentered /
- * re-entered (the United States / the U.S. / the country) illegally", "illegally reentering", "illegal reentry /
- * re-entry" (e.g. "illegal reentry after deportation"). Checked against the sentence plus the whole post/release text.
+ * Krennic decision 2026-10-19 (11:42 AM CT, replaces the narrower 'deported + illegally reentered' rule): "deported"
+ * means illegal alien. A post that says the person was deported counts as non-citizen wording on its own; no
+ * illegal-reentry wording is needed. Counts: "deported" (incl. "deported to <country>", "DEPORTED:"), "deportation of
+ * him/her/<name>", "(illegal reentry) after (a prior) deportation", "removed (him/her) to <Country>". Does NOT count: forward-looking wording ("will / could / may / to be
+ * deported", "faces / facing / pending deportation", bare "deportation proceedings"). The U.S.-citizen override still
+ * wins: if the text says the person is a U.S. / United States / American citizen, dual national or naturalized (other
+ * than "falsely claiming to be a U.S. citizen"), this does not count. Denaturalization rules are separate and unchanged.
+ * Checked against the sentence plus the whole post/release text.
  */
-export function deportedReentryStated(text) {
+const CITIZEN_CLAIM = /\b(?:falsely\s+)?claim(?:ing|ed|s)?\s+to\s+be\s+(?:a\s+)?(?:U\.S\.|United States|American)\s+citizen\b/gi;
+const CITIZEN_OVERRIDE = /\bdual (national|citizen)|\bnaturali[sz]ed\b|\bU\.S\. citizen\b|\bUnited States citizen\b|\bAmerican citizen\b/i;
+export function deportedStated(text) {
   const s = String(text || "").replace(/\s+/g, " ");
-  const deported = /\bdeport(?:ed|ation)\b/i.test(s);
-  const reentry =
-    /\billegally\s+re-?enter(?:ed|ing)\b/i.test(s) ||
-    /\bre-?entered\s+(?:(?:the\s+)?(?:United States|U\.S\.?|US|country)\s+)?illegally\b/i.test(s) ||
-    /\billegal\s+re-?entry\b/i.test(s);
-  return deported && reentry;
+  if (CITIZEN_OVERRIDE.test(s.replace(CITIZEN_CLAIM, " "))) return false;
+  // Blank forward-looking wording first so "will be deported" never counts.
+  const t = s.replace(/\b(?:will|would|could|can|may|might|shall|to|must|should)\s+(?:also\s+|then\s+|soon\s+|likely\s+)?(?:be|get)\s+deported\b/gi, " ")
+    .replace(/\b(?:faces?|facing|pending|awaiting|await|avoid(?:ed|ing)?|fight(?:ing|s)?|seek(?:s|ing)?)\s+(?:possible\s+|his\s+|her\s+)?deportation\b/gi, " ");
+  return (
+    /\bdeported\b/i.test(t) ||
+    /\bdeportation\s+of\s+(?:him|her)\b/i.test(t) ||
+    /\b[Dd]eportation\s+of\s+[A-Z][\w'-]+/.test(t) ||
+    /\b(?:after|following|since)\s+(?:his\s+|her\s+|a\s+|an\s+)?(?:prior\s+|previous\s+|earlier\s+)?deportation\b/i.test(t) ||
+    /\b[Rr]emoved\s+(?:him\s+|her\s+)?to\s+(?:the\s+)?[A-Z][a-z]+/.test(t)
+  );
 }
+/** Kept for callers of the 2026-10-19 morning rule; now the same as deportedStated (the wider rule). */
+export const deportedReentryStated = deportedStated;
 
 /** All reasons a row must stay pending (empty array = may be auto-approved). */
 export function holdReasons({ name, sentence, title = "", releaseText = "", label = "" }) {
@@ -119,7 +131,7 @@ export function holdReasons({ name, sentence, title = "", releaseText = "", labe
   if (isMinor(name, sentence, title)) out.push("possible minor / juvenile");
   if (!stageOk(label, sentence, title)) out.push(`stage: label "${label}" is later than the source wording`);
   if (atLarge(sentence, releaseText)) out.push("suspect described as still at large");
-  if (!nonCitizenStated(sentence) && !denaturalizedStated(`${sentence} ${releaseText}`) && !deportedReentryStated(`${sentence} ${releaseText}`)) out.push("not stated to be a non-citizen");
+  if (!nonCitizenStated(sentence) && !denaturalizedStated(`${sentence} ${releaseText}`) && !deportedStated(`${sentence} ${releaseText}`)) out.push("not stated to be a non-citizen");
   return out;
 }
 

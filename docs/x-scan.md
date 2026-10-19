@@ -80,17 +80,25 @@ Only completed revocation counts ("citizenship revoked", "was denaturalized", "r
 "seeks to revoke", "could be denaturalized" do NOT count: that person is still a U.S. citizen and stays held.
 The stage label still follows the sentence wording (Convicted / Charged / ...); never label beyond what is stated.
 
-## Deported + illegally reentered: Krennic decision 2026-10-19
+## "Deported" means illegal alien: Krennic decision 2026-10-19 (11:42 AM CT)
 
-Wording that the person was **deported AND illegally reentered** counts as stating the person is a non-citizen.
-`deportedReentryStated()` in `scripts/guards.mjs` checks the sentence plus the whole post text, so such rows are not
-held under "not stated to be a non-citizen". Both parts are required:
-- deportation: "deported" / "deportation";
-- illegal reentry: "illegally reentered / re-entered / reentering", "reentered / re-entered (the U.S. / the country)
-  illegally", or "illegal reentry / re-entry" (e.g. "illegal reentry after deportation").
-Bare "deported" (or "removed") alone does NOT count, and reentry wording without a deportation does not either.
-The stage label still follows the sentence wording; never label beyond what is stated. First applied to
-Denroy Dwayne Briscoe (@ICEgov 2111635929228017973), moved live with an approvalNote.
+This replaces the narrower morning rule (deported AND illegally reentered). When a post says the named person was
+**deported**, that counts as non-citizen wording on its own; no illegal-reentry wording is needed.
+`deportedStated()` in `scripts/guards.mjs` checks the sentence plus the whole post text, so such rows are not held
+under "not stated to be a non-citizen".
+- Counts: "deported", "deported to <country>", "DEPORTED:" headlines, "deportation of him / her / <Name>",
+  "(illegal reentry) after (a prior) deportation", "removed (him / her) to <Country>" (e.g. "removed to Mexico by ICE").
+- Does NOT count: forward-looking wording ("will / could / may / to be deported", "faces / facing / pending /
+  awaiting deportation", "deportation proceedings").
+- The U.S.-citizen override still wins: if the post says the person is a U.S. / United States / American citizen,
+  a dual national or naturalized, "deported" does not count (falsely claiming to be a U.S. citizen does not trigger
+  the override). Denaturalization rules (below) are unchanged.
+- The stage label still follows the post's own wording (Removed / Convicted / Charged / Arrested); an earlier crime
+  that was only an arrest stays an arrest. Never label beyond what is stated.
+- Krennic holds still win: a review row whose approvalNote records "Krennic kept held" stays held even if the guard
+  now passes it (Sergio Lopez-Leos, Aurelio Perez-Abrego, 2026-10-19). Never move those rows.
+Applied to Denroy Dwayne Briscoe (@ICEgov 2111635929228017973) and Juan Carlos Plascencia-Torres
+(@ICEgov 2112212456797880328, live as Removed), each moved live with an approvalNote.
 
 ## "Undocumented immigrant" is non-citizen wording: Krennic decision 2026-10-19
 
@@ -113,6 +121,7 @@ They keep their place in the score order; they are not forced to the top. All ot
 
 ## Krennic-approved rows are final: Krennic decision 2026-10-16
 
-A row with an `approvalNote` that records a Krennic decision (e.g. "Krennic approved Oct 16, 2026 ...") is final.
+A row with an `approvalNote` that records a Krennic decision (e.g. "Krennic approved Oct 16, 2026 ...", or
+"Krennic kept held 2026-10-19" on a held review row) is final.
 The scan and any guard re-check must never re-flag it, move it back to review.json, change its status, or relabel
 its crime/stage/kind. Leave it exactly as it is; raise any concern in the run report only.

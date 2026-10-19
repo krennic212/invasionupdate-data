@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-19",
   "windowDays": 7,
-  "total": 159,
+  "total": 160,
   "rows": [
     {
       "id": "x-2111148670829957349-leo-robert-jackson",
@@ -253,6 +253,17 @@
       ]
     },
     {
+      "id": "x-2112212456797880328-juan-carlos-plascencia-torres",
+      "name": "Juan Carlos Plascencia-Torres",
+      "when": "19 Oct 2026",
+      "severity": 95,
+      "severityReason": "Violent crime against a child",
+      "severityCrimes": [
+        "Violent crime against a child",
+        "DUI"
+      ]
+    },
+    {
       "id": "dhs-20261016-claudius-anglo-ricardo-smith",
       "name": "Claudius Anglo Ricardo Smith",
       "when": "16 Oct 2026",
@@ -266,16 +277,6 @@
       "id": "dhs-20261016-korakanh-phornsavanh",
       "name": "Korakanh Phornsavanh",
       "when": "16 Oct 2026",
-      "severity": 95,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter"
-      ]
-    },
-    {
-      "id": "dhs-20261015-cuong-chanh-phan",
-      "name": "Cuong Chanh Phan",
-      "when": "15 Oct 2026",
       "severity": 95,
       "severityReason": "Murder / manslaughter",
       "severityCrimes": [

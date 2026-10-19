@@ -135,7 +135,7 @@ test("arrested him/her at large / arrested ... at-large is community-arrest jarg
   assert.equal(atLarge("He was charged.", "ICE arrested him at large; a co-defendant remains at large."), true);
 });
 
-import { deportedReentryStated } from "./guards.mjs";
+import { deportedReentryStated, deportedStated } from "./guards.mjs";
 test("deported + illegally reentered counts as stated non-citizen (Krennic 2026-10-19)", () => {
   const sentence = "Denroy Dwayne Briscoe was convicted of sexual abuse in New York — he was 33 and his victim was 13.";
   const post = `${sentence} ICE deported him. In January 2025, ICE HSI received a notification via our tipline that Briscoe had illegally reentered the United States and was living in Mount Vernon, New York.`;
@@ -152,15 +152,38 @@ test("deported + illegally reentered counts as stated non-citizen (Krennic 2026-
   assert.ok(!holdReasonsForRow({ name: "Denroy Dwayne Briscoe", crime: `Convicted: ${sentence}`, text: post }).includes("not stated to be a non-citizen"));
 });
 
-test("bare 'deported' (or reentry without deportation) is still not non-citizen wording", () => {
+test("'deported' alone counts as non-citizen wording (Krennic 2026-10-19 11:42 CT)", () => {
   for (const t of [
+    "Juan Carlos Plascencia-Torres was deported to Mexico after ICE Fugitive Operations officers arrested him.",
     "John Doe was convicted of assault. ICE deported him.",
-    "ICE deported him to Jamaica in 2019.",
-    "He re-entered the building through a window.",
-    "He illegally reentered the residence after a protective order.",
-  ]) assert.equal(deportedReentryStated(t), false, t);
-  const sentence = "John Doe was convicted of assault in New York.";
-  assert.ok(holdReasons({ name: "John Doe", sentence, releaseText: `${sentence} ICE deported him.`, label: "Convicted" }).includes("not stated to be a non-citizen"));
+    "🚨DEPORTED: SURENOS GANG MEMBER",
+    "ICE completed the deportation of him to Honduras.",
+    "ICE carried out the deportation of John Doe last week.",
+    "ICE removed him to Guatemala on Oct 3.",
+    "He was removed to El Salvador by ICE.",
+  ]) assert.equal(deportedStated(t), true, t);
+  const sentence = "Juan Carlos Plascencia-Torres was deported to Mexico after ICE Fugitive Operations officers arrested him during a targeted enforcement operation in Oak Park, California.";
+  assert.ok(!holdReasons({ name: "Juan Carlos Plascencia-Torres", sentence, releaseText: sentence, label: "Removed" }).includes("not stated to be a non-citizen"));
+});
+
+test("forward-looking deportation wording and the U.S.-citizen override still hold", () => {
+  for (const t of [
+    "He will be deported after serving his sentence.",
+    "He could be deported if convicted.",
+    "He faces deportation.",
+    "He remains in custody pending deportation.",
+    "He was placed in deportation proceedings.",
+    "He removed the tag from the stolen jacket.",
+    "John Doe, a U.S. citizen, was mistakenly deported in 2019.",
+    "John Doe, a naturalized citizen, was deported in error.",
+    "John Doe, a dual national, was deported.",
+  ]) assert.equal(deportedStated(t), false, t);
+  // "falsely claiming to be a U.S. citizen" is not a citizenship statement.
+  assert.equal(deportedStated("He was deported after falsely claiming to be a U.S. citizen."), true);
+  const sentence = "John Doe, a U.S. citizen, was convicted of assault.";
+  assert.ok(holdReasons({ name: "John Doe", sentence, releaseText: `${sentence} He was deported in 2019.`, label: "Convicted" }).includes("not stated to be a non-citizen"));
+  // Denaturalization rules are unchanged: proceedings only still hold.
+  assert.equal(denaturalizedStated("DOJ seeks to revoke his citizenship"), false);
 });
 
 test("'undocumented immigrant' counts as non-citizen wording, like 'illegal alien' (Krennic 2026-10-19)", () => {

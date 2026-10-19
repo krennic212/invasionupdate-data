@@ -1,29 +1,5 @@
 [
   {
-    "name": "Juan Carlos Plascencia-Torres",
-    "city": "Oak Park, CA",
-    "crime": "Removed: Juan Carlos Plascencia-Torres was deported to Mexico after ICE Fugitive Operations officers arrested him during a targeted enforcement operation in Oak Park, California.",
-    "usa": "ICE X post Oct 19, 2026 (@ICEgov)",
-    "foreign": "Not stated in post",
-    "picked": "10/19/2026 (@ICEgov post)",
-    "entered": "Not stated",
-    "office": "ICEgov",
-    "id": "x-2112212456797880328-juan-carlos-plascencia-torres",
-    "when": "19 Oct 2026",
-    "text": "@ICEgov Oct 19, 2026, as posted: Juan Carlos Plascencia-Torres was deported to Mexico after ICE Fugitive Operations officers arrested him during a targeted enforcement operation in Oak Park, California. His criminal history includes convictions for DUI, evading a peace officer, false ID, and driving without a license. He was also arrested for child abuse last year.",
-    "photo": "",
-    "via": "@ICEgov 2112212456797880328",
-    "sourceUrl": "https://x.com/ICEgov/status/2112212456797880328",
-    "voting": false,
-    "origin": "Not stated",
-    "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen",
-    "reviewReason": "held by guard: not stated to be a non-citizen"
-  },
-  {
     "name": "Sha Bahadur Ghaley",
     "city": "Not stated",
     "crime": "Charged: A federal grand jury in North Carolina has indicted Sha Bahadur Ghaley for naturalization fraud.",
@@ -69,7 +45,8 @@
     "lon": null,
     "status": "pending",
     "holdReason": "not stated to be a non-citizen",
-    "reviewReason": "held by guard: not stated to be a non-citizen"
+    "reviewReason": "held by guard: not stated to be a non-citizen",
+    "approvalNote": "Krennic kept held 2026-10-19"
   },
   {
     "name": "Pedro Guzman-Hernandez",
@@ -263,7 +240,8 @@
     "lon": null,
     "status": "pending",
     "holdReason": "not stated to be a non-citizen",
-    "reviewReason": "held by guard: not stated to be a non-citizen"
+    "reviewReason": "held by guard: not stated to be a non-citizen",
+    "approvalNote": "Krennic kept held 2026-10-19"
   },
   {
     "name": "Abdulrahman Alfozan",
