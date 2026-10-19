@@ -7,7 +7,8 @@
  *  2. stage     - the label would say Convicted (or Removed) but the source's own wording for
  *                 this person is only charged / indicted / arrested. The stage is never escalated.
  *  3. at-large  - the person is described as a suspect still at large / not yet in custody.
- *  4. status    - the sentence does not state the person is a non-citizen.
+ *  4. status    - the sentence does not state the person is a non-citizen (denaturalized, or deported + illegally
+ *                 reentered, anywhere in the sentence or post/release text also counts; Krennic 2026-10-16 / 2026-10-19).
  *  5. place     - the "name" is a place (state, city-geo city, "City, State", County, or the
  *                 release headline's "in <Place>"), not a person. Covers every writer (release
  *                 harvest, X scan picks, pending intake).
@@ -93,6 +94,23 @@ export function denaturalizedStated(text) {
   return !(pending.test(s) && !/\bcitizenship\s+(?:was\s+|has\s+been\s+)?revoked\b|\b(?:was|has been|been)\s+denaturali[sz]ed\b/i.test(s));
 }
 
+/**
+ * Krennic decision 2026-10-19: wording that the person was deported AND illegally reentered counts as stating the
+ * person is a non-citizen. Both parts are required: bare "deported" / "removed" alone does NOT count, and neither does
+ * reentry wording without a deportation. Accepted reentry forms: "illegally reentered / re-entered", "reentered /
+ * re-entered (the United States / the U.S. / the country) illegally", "illegally reentering", "illegal reentry /
+ * re-entry" (e.g. "illegal reentry after deportation"). Checked against the sentence plus the whole post/release text.
+ */
+export function deportedReentryStated(text) {
+  const s = String(text || "").replace(/\s+/g, " ");
+  const deported = /\bdeport(?:ed|ation)\b/i.test(s);
+  const reentry =
+    /\billegally\s+re-?enter(?:ed|ing)\b/i.test(s) ||
+    /\bre-?entered\s+(?:(?:the\s+)?(?:United States|U\.S\.?|US|country)\s+)?illegally\b/i.test(s) ||
+    /\billegal\s+re-?entry\b/i.test(s);
+  return deported && reentry;
+}
+
 /** All reasons a row must stay pending (empty array = may be auto-approved). */
 export function holdReasons({ name, sentence, title = "", releaseText = "", label = "" }) {
   const out = [];
@@ -100,7 +118,7 @@ export function holdReasons({ name, sentence, title = "", releaseText = "", labe
   if (isMinor(name, sentence, title)) out.push("possible minor / juvenile");
   if (!stageOk(label, sentence, title)) out.push(`stage: label "${label}" is later than the source wording`);
   if (atLarge(sentence, releaseText)) out.push("suspect described as still at large");
-  if (!nonCitizenStated(sentence) && !denaturalizedStated(`${sentence} ${releaseText}`)) out.push("not stated to be a non-citizen");
+  if (!nonCitizenStated(sentence) && !denaturalizedStated(`${sentence} ${releaseText}`) && !deportedReentryStated(`${sentence} ${releaseText}`)) out.push("not stated to be a non-citizen");
   return out;
 }
 

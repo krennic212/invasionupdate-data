@@ -42,6 +42,8 @@ export const PATTERNS = [
     new RegExp(String.raw`\b(?:rape|sexual(?:ly)?\s+(?:abuse|assault|conduct|exploitation|contact|battery|offen[cs]e|intercourse|penetration)\w*|sex(?:ual)?\s+(?:abuse|assault|offen[cs]e|crimes?)|indecen(?:t|cy)(?:\s+\w+){0,4}|lewd(?:\s+(?:or|and)\s+lascivious)?(?:\s+\w+){0,3}|molest\w*|indecent liberties|sodomy)(?:(?!\s(?:and|or)\s|,)[^;.]){0,40}?\b(?:with|of|on|upon|against|involving|to|a)\b(?:(?!\s(?:and|or)\s|,)[^;.]){0,25}?${CHILD}`, "gi"),
     new RegExp(String.raw`\b(?:child|minor)\s+(?:porn\w*|sex\w*|molest\w*|exploitation|sexual abuse|abuse material)|\bchild molestation|\bmolest\w*|\bstatutory\s+(?:rape|sex\w*(?:\s+offen[cs]e)?)|\bcsam\b|obscene material depicting minors|harmful material to a minor|enticement of a minor|sexually abuse a \d{1,2}[- ]year[- ]old|criminal sexual conduct[^;.]{0,30}person under|\bcourse of sexual conduct\b`, "gi"),
     /\b(?:coercion and enticement|persuade,\s+induce,\s+entice|entice(?:ment)?,?\s+and\s+coerce)\b/gi,
+    // "convicted of sexual abuse ... his victim was 13" (victim's age stated separately, same sentence).
+    /\b(?:rape|sexual(?:ly)?\s+(?:abuse|assault|conduct|exploitation|contact|battery|offen[cs]e)\w*|sex(?:ual)?\s+(?:abuse|assault|offen[cs]e|crimes?)|molest\w*|sodomy)\b[^;.]{0,80}?\b(?:his|her|their|the)\s+victims?\s+(?:was|were|is)\s+(?:[1-9]|1[0-7])\b(?!\s*(?:years?\s+(?:older|younger)|%))(?:\s+years?\s+old)?/gi,
   ]],
   ["attemptedMurder", [
     /\b(?:attempt(?:ed|ing)?|conspiracy|conspiring|solicitation)\s+(?:to\s+(?:commit\s+)?)?(?:(?:first|second|1st|2nd)[- ]degree\s+)?(?:murder|homicide|kill)\w*/gi,

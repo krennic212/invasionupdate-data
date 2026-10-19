@@ -134,3 +134,31 @@ test("arrested him/her at large / arrested ... at-large is community-arrest jarg
   // Real fugitive wording still holds even when jargon also appears.
   assert.equal(atLarge("He was charged.", "ICE arrested him at large; a co-defendant remains at large."), true);
 });
+
+import { deportedReentryStated } from "./guards.mjs";
+test("deported + illegally reentered counts as stated non-citizen (Krennic 2026-10-19)", () => {
+  const sentence = "Denroy Dwayne Briscoe was convicted of sexual abuse in New York — he was 33 and his victim was 13.";
+  const post = `${sentence} ICE deported him. In January 2025, ICE HSI received a notification via our tipline that Briscoe had illegally reentered the United States and was living in Mount Vernon, New York.`;
+  assert.equal(deportedReentryStated(post), true);
+  for (const t of [
+    "He was deported in 2019 and later re-entered the country illegally.",
+    "He was deported, then re-entered illegally.",
+    "He was charged with illegal reentry after deportation.",
+    "After he was deported he was convicted of illegal re-entry.",
+    "He was deported in 2015 and illegally re-entered the U.S.",
+    "ICE deported him to Mexico after he served time for illegally reentering the country following a prior removal.",
+  ]) assert.equal(deportedReentryStated(t), true, t);
+  assert.ok(!holdReasons({ name: "Denroy Dwayne Briscoe", sentence, releaseText: post, label: "Convicted" }).includes("not stated to be a non-citizen"));
+  assert.ok(!holdReasonsForRow({ name: "Denroy Dwayne Briscoe", crime: `Convicted: ${sentence}`, text: post }).includes("not stated to be a non-citizen"));
+});
+
+test("bare 'deported' (or reentry without deportation) is still not non-citizen wording", () => {
+  for (const t of [
+    "John Doe was convicted of assault. ICE deported him.",
+    "ICE deported him to Jamaica in 2019.",
+    "He re-entered the building through a window.",
+    "He illegally reentered the residence after a protective order.",
+  ]) assert.equal(deportedReentryStated(t), false, t);
+  const sentence = "John Doe was convicted of assault in New York.";
+  assert.ok(holdReasons({ name: "John Doe", sentence, releaseText: `${sentence} ICE deported him.`, label: "Convicted" }).includes("not stated to be a non-citizen"));
+});

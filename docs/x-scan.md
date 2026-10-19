@@ -80,6 +80,18 @@ Only completed revocation counts ("citizenship revoked", "was denaturalized", "r
 "seeks to revoke", "could be denaturalized" do NOT count: that person is still a U.S. citizen and stays held.
 The stage label still follows the sentence wording (Convicted / Charged / ...); never label beyond what is stated.
 
+## Deported + illegally reentered: Krennic decision 2026-10-19
+
+Wording that the person was **deported AND illegally reentered** counts as stating the person is a non-citizen.
+`deportedReentryStated()` in `scripts/guards.mjs` checks the sentence plus the whole post text, so such rows are not
+held under "not stated to be a non-citizen". Both parts are required:
+- deportation: "deported" / "deportation";
+- illegal reentry: "illegally reentered / re-entered / reentering", "reentered / re-entered (the U.S. / the country)
+  illegally", or "illegal reentry / re-entry" (e.g. "illegal reentry after deportation").
+Bare "deported" (or "removed") alone does NOT count, and reentry wording without a deportation does not either.
+The stage label still follows the sentence wording; never label beyond what is stated. First applied to
+Denroy Dwayne Briscoe (@ICEgov 2111635929228017973), moved live with an approvalNote.
+
 ## Krennic-approved rows are final: Krennic decision 2026-10-16
 
 A row with an `approvalNote` that records a Krennic decision (e.g. "Krennic approved Oct 16, 2026 ...") is final.

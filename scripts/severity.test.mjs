@@ -32,6 +32,7 @@ test("classification: one crime each", () => {
     ["convicted of third-degree sexual abuse of a minor in Montgomery County, Maryland.", "childSex"],
     ["convicted of two counts of lewd or lascivious acts upon child.", "childSex"],
     ["convicted for possession of child pornography.", "childSex"],
+    ["Denroy Dwayne Briscoe was convicted of sexual abuse in New York — he was 33 and his victim was 13.", "childSex"],
     ["convicted of attempted murder.", "attemptedMurder"],
     ["convicted of kidnapping.", "kidnapping"],
     ["Her criminal history includes child abuse.", "childViolence"],
