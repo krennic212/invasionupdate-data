@@ -1,3 +1,15 @@
+# HANDOFF: 2026-10-20 (10:06 AM CDT) Ledger-only voting rows checked (Krennic approved)
+
+- Added (voting=true, statusSourceUrl = the release, no photo, guards on):
+  - Julieta Engelstad (usao-wdwi, Charged, Hudson, WI): "a citizen of Colombia living in Hudson, Wisconsin". Guards: no hold. Inserted
+    directly + approve.mjs because review.json has a reprint/X copy (aka "Julieta Englestad") that blocks pending intake by name.
+  - Sara Luma (usao-edwi, Charged by complaint, Sheboygan, WI = where she voted; residence not stated): "Luma was born in North Macedonia
+    and is a citizen of that country. She is not a United States citizen." Guard held "not stated to be a non-citizen" (the wording is
+    in a later sentence); approved by id per Krennic's rule (release states non-citizen status).
+  - Jamil Ahmad (usao-edpa, Convicted = guilty plea, sentencing Jan 26, Philadelphia, PA): "a citizen of Pakistan and a lawful permanent
+    resident of the United States". Via data/pending.json (AUTO_APPROVE=true MAX_LINKS=0 DOJ_PAGES=0), no hold.
+- Miya Pack and Forrest Scott Woody stay on the Fraud Ledger only (not added here, per Krennic).
+
 # HANDOFF: 2026-10-20 (9:46 AM CDT) voting rows: places filled, cross-post to the Fraud Ledger
 
 - 35 voting rows had city "Not stated"; all filled from the official releases (lat/lon from city-geo.json or set by hand for
