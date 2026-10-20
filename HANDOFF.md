@@ -1,3 +1,11 @@
+# HANDOFF: 2026-10-20 (11:50 AM CDT) harvest-meta.json always matches harvest.json (Krennic approved)
+
+- Same latent bug as fraudtracker-data (meta stamped only when the job's own run changed data): counts were correct today
+  only because a later run happened to re-stamp. write-meta.mjs now stores harvestSha256 and runs on every job run (and once
+  before the tests); updatedAt is kept while harvest.json is unchanged, set to the commit time for a pushed edit, now for a
+  run's own change. harvest-meta.json counts as a change. checkout fetch-depth 0. Hand edits: run `node scripts/write-meta.mjs`.
+- Tests: write-meta.test.mjs + sha256 stamp test + committed meta matches committed harvest.json. 185/185.
+
 # HANDOFF: 2026-10-20 (11:45 AM CDT) X-sourced voting rows -> official releases; state pins (Krennic approved)
 
 - Silvia Delgado Phelps, Staciann Pollion Davis (usao-sdal Oct 8, 2026), Andre's Garcia (usao-wdmo Oct 6), Andrea Catanese

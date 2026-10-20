@@ -31,12 +31,17 @@ jobs:
       APPROVE_INPUT: ${{ github.event.inputs.approve }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
           cache: npm
       - name: Install (sharp, for resizing official photos)
         run: npm ci --no-audit --no-fund
+      # A pushed harvest.json edit that was not re-stamped is caught here, before the meta test.
+      - name: Re-stamp harvest-meta.json if stale
+        run: node scripts/write-meta.mjs
       - name: Tests
         run: node --test scripts/*.test.mjs
       - name: Approve pending rows (manual input only)
@@ -52,18 +57,19 @@ jobs:
         run: node scripts/severity.mjs
       - name: Guardrail check (official source, date, status, photo rules, never shrinks)
         run: node scripts/validate.mjs data/harvest.json
+      # write-meta.mjs runs every time: updatedAt stays while harvest.json is unchanged (same sha256) and is re-stamped
+      # whenever harvest.json changed, in this run or in a pushed commit.
+      - name: Stamp harvest-meta.json
+        run: node scripts/write-meta.mjs
       - name: Did rows change?
         id: diff
         run: |
-          if [ -z "$(git status --porcelain -- data/harvest.json data/review.json data/photos data/photo-checks.json data/highlights.json)" ]; then
+          if [ -z "$(git status --porcelain -- data/harvest.json data/harvest-meta.json data/review.json data/photos data/photo-checks.json data/highlights.json)" ]; then
             git checkout -- data/harvest-status.json data/pending.json
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
-      - name: Stamp harvest-meta.json
-        if: steps.diff.outputs.changed == 'true'
-        run: node scripts/write-meta.mjs
       - name: Commit only when rows changed
         if: steps.diff.outputs.changed == 'true'
         run: |

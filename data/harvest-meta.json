@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T16:34:18Z",
+  "updatedAt": "2026-10-20T16:33:35Z",
   "rows": 654,
   "approved": 648,
   "pending": 6,
@@ -10,5 +10,6 @@
   "lastAdded": [
     "Eustaquio Espinosa-Hernández"
   ],
+  "harvestSha256": "7a0936736ab685d6fb521be7ef7253aaea80f4c9ca6bdddf2ac2faf2f5bc6292",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

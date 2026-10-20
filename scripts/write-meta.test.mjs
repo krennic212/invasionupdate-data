@@ -75,3 +75,27 @@ test("lastAdded lists only rows that are currently approved (held rows like a pl
   assert.deepEqual(fresh.lastAdded, ["Hsa Mu Na"]);
   assert.equal(fresh.lastAddedCount, 1);
 });
+
+import { sha256 } from "./write-meta.mjs";
+import { readFileSync as readMetaFile } from "node:fs";
+test("meta: updatedAt follows harvest.json's sha256 (unchanged file keeps it, any change re-stamps it)", () => {
+  const rows = [{ name: "A B", status: "approved" }];
+  const text = `${JSON.stringify(rows, null, 2)}\n`;
+  const first = buildMeta({ rows, review: [], status: null, prev: null, now: "2026-10-20T15:00:00Z", text });
+  assert.equal(first.harvestSha256, sha256(text));
+  assert.equal(buildMeta({ rows, review: [], status: null, prev: first, now: "2026-10-20T16:00:00Z", text }).updatedAt, "2026-10-20T15:00:00Z");
+  const rows2 = [...rows, { name: "C D", status: "approved" }];
+  const text2 = `${JSON.stringify(rows2, null, 2)}\n`;
+  const next = buildMeta({ rows: rows2, review: [], status: null, prev: first, now: "2026-10-20T16:00:00Z", text: text2 });
+  assert.deepEqual([next.rows, next.updatedAt], [2, "2026-10-20T16:00:00Z"]);
+});
+
+test("meta: the committed data/harvest-meta.json matches the committed data/harvest.json (run scripts/write-meta.mjs)", () => {
+  const text = readMetaFile(new URL("../data/harvest.json", import.meta.url), "utf8");
+  const meta = JSON.parse(readMetaFile(new URL("../data/harvest-meta.json", import.meta.url), "utf8"));
+  const list = JSON.parse(text);
+  assert.equal(meta.harvestSha256, sha256(text), "harvest-meta.json is stale: run node scripts/write-meta.mjs");
+  assert.equal(meta.rows, list.length);
+  assert.equal(meta.approved, list.filter((r) => r.status === "approved").length);
+  assert.equal(meta.pending, list.filter((r) => r.status === "pending").length);
+});
