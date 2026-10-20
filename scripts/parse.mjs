@@ -555,10 +555,22 @@ export function withoutHistory(sentence) {
 function historyStatus(sentence) {
   const s = stripPriors(withoutHistory(sentence));
   if (!NOT_YET_REMOVED.test(s) && REMOVE_WORDS.test(s)) return "Removed";
-  if (CONVICT_WORDS.test(s)) return "Convicted";
+  if (CONVICT_WORDS.test(s) || PLEA_WORDS.test(s)) return convictLabel(s);
   return "As posted";
 }
 
+/** Conviction wording other than a guilty plea (convicted / sentenced / found guilty). */
+export const FINAL_CONVICT_WORDS = /\b(convicted|convictions?|sentenced|found guilty)\b/i;
+/** Guilty-plea wording. A plea with no conviction / sentence wording is "Pleaded guilty", not "Convicted" (Krennic 2026-10-20). */
+// Past / present tense only: "expected to plead guilty" / "will enter a guilty plea" is not a stage.
+export const PLEA_WORDS = /\b(pleaded guilty|pled guilty|pleads guilty|entered (?:a|his|her) (?:plea of guilty|guilty plea))\b/i;
+/** "Convicted", "Pleaded guilty" or "" for text that has conviction-stage wording. */
+export function convictLabel(text) {
+  const t = String(text || "");
+  if (FINAL_CONVICT_WORDS.test(t)) return "Convicted";
+  if (PLEA_WORDS.test(t)) return "Pleaded guilty";
+  return "";
+}
 export const CONVICT_WORDS = /\b(convicted|convictions?|sentenced|pleaded guilty|pled guilty|pleads guilty|found guilty|entered (?:a|his|her) (?:plea of guilty|guilty plea))\b/i;
 export const CHARGE_WORDS = /\b(charged|charges|charging|indicted|indictment|arrested|arrests?|accused|alleged|allegedly|complaint|wanted|detained|apprehended)\b/i;
 const REMOVE_WORDS = /\b(removed|deported|repatriated)\b/i;
@@ -584,10 +596,10 @@ export function statusFrom(sentence, title = "") {
   const t = stripPriors(title);
   const notYet = NOT_YET_REMOVED.test(s);
   if (!notYet && REMOVE_WORDS.test(s)) return "Removed";
-  if (CONVICT_WORDS.test(s)) return "Convicted";
+  if (CONVICT_WORDS.test(s) || PLEA_WORDS.test(s)) return convictLabel(s);
   if (CHARGE_WORDS.test(s)) return "Charged";
   if (!notYet && /\b(deports|removes|deported|removed)\b/i.test(t) && !CHARGE_WORDS.test(t)) return "Removed";
-  if (CONVICT_WORDS.test(t) && !CHARGE_WORDS.test(t)) return "Convicted";
+  if ((CONVICT_WORDS.test(t) || PLEA_WORDS.test(t)) && !CHARGE_WORDS.test(t)) return convictLabel(t);
   if (CHARGE_WORDS.test(t) || /\b(apprehend\w*|nabs|detainer)\b/i.test(t)) return "Charged";
   return "As posted";
 }

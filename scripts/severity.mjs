@@ -93,7 +93,7 @@ export function cleanText(s) {
     .replace(/@\w+/g, " ")
     .replace(/Do not (?:name|invent)[^.]*\./gi, " ")
     .replace(/Conviction stated = \w+\.|Not Removed\.|The arrest is not a removal\.|LPR ≠ illegally present\./gi, " ")
-    .replace(/^\s*(?:Removed\.\s*)?(?:Convicted|Charged(?:\s*\(not convicted\))?|Arrested|As posted|Removed)\s*[:.]\s*/i, " ")
+    .replace(/^\s*(?:Removed\.\s*)?(?:Convicted|Pleaded guilty|Charged(?:\s*\(not convicted\))?|Arrested|As posted|Removed)\s*[:.]\s*/i, " ")
     .replace(/\s+/g, " ");
 }
 
@@ -174,7 +174,8 @@ const CONVICT_WORDS = /\b(?:convicted|convictions?|sentenced|pleaded guilty|pled
 /** "convicted" (full points) or "notConvicted". Follows the data's stage; never upgrades a Charged/Arrested/As posted row. */
 export function stageOf(row) {
   const c = String(row?.crime || "").trim();
-  if (/^(?:Removed\.\s*)?Convicted\b/i.test(c)) return "convicted";
+  // A guilty plea scores as a conviction (as it did before the "Pleaded guilty" label, Krennic 2026-10-20).
+  if (/^(?:Removed\.\s*)?(?:Convicted|Pleaded guilty)\b/i.test(c)) return "convicted";
   if (/^Removed\b/i.test(c) && CONVICT_WORDS.test(c) && !/\bnot convicted\b/i.test(c)) return "convicted";
   return "notConvicted";
 }

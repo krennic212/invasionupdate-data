@@ -83,7 +83,7 @@ test("demonym inside the description sets origin", () => {
 });
 
 test("release title fills in status when the naming sentence has no verb", () => {
-  assert.equal(statusFrom("On October 4, Lara Gonzalez, a Mexican national, traveled into Canada.", "Mexican National Pleads Guilty to Eluding Immigration Inspection"), "Convicted");
+  assert.equal(statusFrom("On October 4, Lara Gonzalez, a Mexican national, traveled into Canada.", "Mexican National Pleads Guilty to Eluding Immigration Inspection"), "Pleaded guilty");
 });
 
 import { cityFrom, latLonFor } from "./parse.mjs";

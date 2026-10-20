@@ -1,3 +1,20 @@
+# HANDOFF: 2026-10-20 (10:09 AM CDT) "Pleaded guilty" stage (Krennic approved)
+
+- New stage label "Pleaded guilty" for a guilty plea with no conviction / sentence wording (parse.mjs convictLabel /
+  PLEA_WORDS / FINAL_CONVICT_WORDS; used by statusFrom, so .gov harvest, X scan and pending intake all get it). Sentenced /
+  convicted / found guilty still reads Convicted. A future plea ("expected to plead guilty") is not a stage.
+- guards.mjs: stageOk accepts "Pleaded guilty" only with plea / conviction wording; holdReasonsForRow reads the new label.
+  severity.mjs: a "Pleaded guilty" row still scores at the conviction stage (scores unchanged).
+- Relabeled Convicted -> Pleaded guilty after checking each release / official post (plea only, no sentence yet): Jamil Ahmad
+  (EDPA, sentencing Jan 26), Gaye Tyndale-Simpson (OPA/NJ), Celstino Patishtan (usao-md roundup), Fredy Rolando Rivera-Gonzalez
+  (@USAO_WDMO + WDMO release), Juan Carlos Paxtor-Chay (@USAO_WDMO + WDMO release, sentencing in Feb), Binghui Liu
+  (@DOJFraudDiv + EDCA release), Oleg Korniev (WDNC/OPA; row is still pending, not approved).
+- Kept Convicted (source says sentenced / convicted): Encarnacion Lara Gonzalez ("pleaded guilty and was sentenced"), Felix
+  Jeronimo-Rojas, Yoirlan Tome-Rojas, Javier Marrero-Pando (ICE headline "CONVICTED OF AGGRAVATED SODOMY").
+- Tests: scripts/plea.test.mjs; guards.test.mjs / parse.test.mjs expectations updated (plea -> "Pleaded guilty").
+- Site note (krennic212/invasionupdate, not changed): src/lib/status.ts derives its badge from text words, so a "Pleaded guilty"
+  row shows "Charged"/"As posted" there unless the site learns the new label.
+
 # HANDOFF: 2026-10-20 (10:06 AM CDT) Ledger-only voting rows checked (Krennic approved)
 
 - Added (voting=true, statusSourceUrl = the release, no photo, guards on):

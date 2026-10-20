@@ -39,8 +39,9 @@ test("stage is never escalated: charged / indicted / arrested is never labeled C
   assert.equal(stageOk("Convicted", cases[2][0], cases[2][1]), false);
   assert.equal(stageOk("Removed", cases[2][0], "ICE deports illegal alien"), false);
   assert.ok(holdReasons({ name: "John Doe", sentence: cases[1][0], title: cases[1][1], label: "Convicted" })[0].startsWith("stage"));
-  // a real conviction / guilty plea in the source still reads Convicted
-  assert.equal(statusFrom("John Doe, a Mexican national, pleaded guilty today to illegal reentry.", "Mexican national pleads guilty"), "Convicted");
+  // a guilty plea reads "Pleaded guilty" (Krennic 2026-10-20); a conviction / sentence reads Convicted
+  assert.equal(statusFrom("John Doe, a Mexican national, pleaded guilty today to illegal reentry.", "Mexican national pleads guilty"), "Pleaded guilty");
+  assert.equal(statusFrom("John Doe, a Mexican national, was sentenced today to 30 months for illegal reentry.", "Mexican national sentenced"), "Convicted");
 });
 
 test("suspects still at large: held pending", () => {
