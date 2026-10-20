@@ -1,5 +1,32 @@
 [
   {
+    "name": "Geovanny Alexander Pineda Cubias",
+    "city": "Oklahoma",
+    "crime": "Convicted: TULSA, Okla. – A federal jury convicted Geovanny Alexander Pineda Cubias, a citizen of El Salvador unlawfully residing in the United States, of three counts charged against him.",
+    "usa": "DOJ release Oct 20, 2026: Jury Convicts Armed Illegal Alien from El Salvador for Drug Trafficking Crimes",
+    "foreign": "Not stated in post",
+    "picked": "10/20/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261020-geovanny-alexander-pineda-cubias",
+    "when": "20 Oct 2026",
+    "severity": 50,
+    "severityReason": "Drug trafficking",
+    "severityCrimes": [
+      "Drug trafficking"
+    ],
+    "text": "DOJ Oct 20, 2026, as posted: TULSA, Okla. – A federal jury convicted Geovanny Alexander Pineda Cubias, a citizen of El Salvador unlawfully residing in the United States, of three counts charged against him.",
+    "photo": "",
+    "via": "justice.gov/usao-ndok/pr/jury-convicts-armed-illegal-alien-el-salvador-drug-trafficking-crimes",
+    "sourceUrl": "https://www.justice.gov/usao-ndok/pr/jury-convicts-armed-illegal-alien-el-salvador-drug-trafficking-crimes",
+    "voting": false,
+    "origin": "El Salvador",
+    "confirmedBy": "DOJ",
+    "lat": 35.0078,
+    "lon": -97.0929,
+    "status": "approved"
+  },
+  {
     "name": "Vong Vongviset",
     "city": "Fresno, CA",
     "crime": "Convicted: Vong Vongviset, a criminal illegal alien from Laos, convicted for continuous sexual abuse of a child under 16 years old in Fresno, California.",

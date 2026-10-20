@@ -1,20 +1,16 @@
 {
-  "checkedAt": 1792525715796,
-  "checkedAtIso": "2026-10-20T19:48:35.796Z",
+  "checkedAt": 1792527579275,
+  "checkedAtIso": "2026-10-20T20:19:39.275Z",
   "added": [
-    "Vong Vongviset",
-    "Jhostin Richard Abreu-Concepcion",
-    "Bayron David Oviedo-Diaz",
-    "Juan Hernandez-Ortiz",
-    "Mario Mondragon"
+    "Geovanny Alexander Pineda Cubias"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 90,
+  "scannedReleases": 91,
   "error": null,
-  "note": "Added 5 as approved: Vong Vongviset, Jhostin Richard Abreu-Concepcion, Bayron David Oviedo-Diaz, Juan Hernandez-Ortiz, Mario Mondragon",
+  "note": "Added 1 as approved: Geovanny Alexander Pineda Cubias",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

@@ -1,19 +1,15 @@
 {
-  "updatedAt": "2026-10-20T19:48:36Z",
-  "rows": 669,
-  "approved": 663,
+  "updatedAt": "2026-10-20T20:19:40Z",
+  "rows": 670,
+  "approved": 664,
   "pending": 6,
   "photos": 171,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-20T19:48:35Z",
-  "lastAddedCount": 5,
+  "lastAddedAt": "2026-10-20T20:19:39Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Vong Vongviset",
-    "Jhostin Richard Abreu-Concepcion",
-    "Bayron David Oviedo-Diaz",
-    "Juan Hernandez-Ortiz",
-    "Mario Mondragon"
+    "Geovanny Alexander Pineda Cubias"
   ],
-  "harvestSha256": "1951dc73ee282cd8ea83f6caef016fb3541cbeac6c34db13dc363068297ec815",
+  "harvestSha256": "b2f6be7fbc293eb784d14f8d8e463e86da359b739725e07c725d8fed1518c823",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
