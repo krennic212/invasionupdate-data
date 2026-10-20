@@ -6,7 +6,7 @@
  * that is not on the page. The charge label is the source sentence, word for word.
  */
 
-import { countryFor, cleanOrigin, DEMONYMS } from "./country.mjs";
+import { countryFor, cleanOrigin, DEMONYMS, COUNTRIES } from "./country.mjs";
 import { readFileSync } from "node:fs";
 
 /** "City, ST" -> [lat, lon], same keys as the app's CITY_GEO (src/data/city-geo.ts). */
@@ -39,7 +39,8 @@ export function htmlBlocks(html) {
   return decode(cleaned)
     .replace(/\u00a0/g, " ")
     .split(/\n+/)
-    .map((b) => b.replace(/\s+/g, " ").trim())
+    // "Hector Castro-Lopez , an illegal alien" -> "Hector Castro-Lopez, an illegal alien" (stray space before a comma).
+    .map((b) => b.replace(/\s+/g, " ").replace(/ +,/g, ",").trim())
     .filter((b) => b.length > 0);
 }
 
@@ -75,10 +76,10 @@ const PATTERNS = [
   // "Ian Clive Burton, a criminal illegal alien from Jamaica, convicted for ..."
   // "John Doe, 45, a Mexican national, was charged ..."
   // "Jane Doe, 39, of Omaha, Nebraska, a citizen of Honduras, ..."
-  new RegExp(`(?:^|[—–-]\\s+|,\\s+|\\band\\s+|\\b(?:arrested|removed|deported|charged|sentenced|indicted|convicted|apprehended|detained)\\s+)${NAME},\\s+${AGE}${OF_PLACE}${DESC}${TYPE}(?:\\s+(?:from|of)\\s+${COUNTRY})?`, "g"),
+  new RegExp(`(?:^|[—–-]\\s+|,\\s+|;\\s+(?:and\\s+)?|\\band\\s+|\\b(?:that|is)\\s+|\\b(?:arrested|removed|deported|charged|sentenced|indicted|convicted|apprehended|detained)\\s+)${NAME},\\s+${AGE}${OF_PLACE}${DESC}${TYPE}(?:\\s+(?:from|of)\\s+${COUNTRY})?`, "g"),
   // "Jane Roe and John Doe, both illegal aliens from the Dominican Republic" (two people, two rows)
   // "Rudi Lacatusu and Mirabela Lacatusu, illegal aliens from Romania" (plural wording, no "both"; DHS Oct 13 2026)
-  new RegExp(`(?:^|:\\s+|,\\s+|\\b(?:arrested|identified|charged|indicted|removed|deported)\\s+)${NAME}\\s+and\\s+${NAME},\\s+(?:(?:both|each)\\s+${DESC}${TYPE}|${DESC}(alien|national|citizen|noncitizen|non-citizen)s)(?:\\s+(?:from|of)\\s+${COUNTRY})?`, "g"),
+  new RegExp(`(?:^|:\\s+|,\\s+|;\\s+(?:and\\s+)?|\\b(?:arrested|identified|charged|indicted|removed|deported)\\s+)${NAME}(?:,\\s+\\d{1,3},)?\\s+and\\s+${NAME},\\s+${AGE}(?:(?:both|each)\\s+${DESC}${TYPE}|${DESC}(alien|national|citizen|noncitizen|non-citizen)s)(?:\\s+(?:from|of)\\s+${COUNTRY})?`, "g"),
   // "John Doe, 45, who is illegally present in the United States"
   new RegExp(`(?:^|\\s)${NAME},\\s+${AGE}(?:who\\s+(?:is|was)\\s+)?(illegally|unlawfully)\\s+present`, "g"),
   // ICE's common wording: "ICE Seattle arrested illegal alien Ronald Zacarias-Gregorio, 36, of Guatemala."
@@ -278,7 +279,184 @@ export function extractPeople(blocks, { title = "" } = {}) {
       }
     }
   }
+  for (const h of linkedPeople(blocks, { title, seen: found })) {
+    const key = h.name.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    found.push(h);
+  }
+  // A linked hit never borrows the headline's stage: the headline may be about someone else ("Restaurant Owner
+  // Pleads Guilty" is not the co-conspirator's plea). Its label comes from its own verbatim sentences only.
+  for (const h of found) if (h.linked) h.noTitleStage = true;
   return found;
+}
+
+/* ------------------------------------------------------------------------------------------------
+ * Linked wording (2026-10-20 audit). USAO releases often put the name and the non-citizen wording in
+ * neighbouring sentences, or lead with the status. Each rule below still needs the release's OWN
+ * non-citizen words for THIS person; the label is the verbatim naming sentence + the verbatim status
+ * sentence (joined with one space). Nothing is inferred and the guards in guards.mjs still run.
+ *  B lead:     "Illegal alien from Mexico Julian Garcia-Soto was arrested ..." (+ "aka <Name>")
+ *  D ident:    "Gerardo Torres-Sanchez was found in ... and identified as an illegal alien from Mexico."
+ *  C surname:  "Toribio Canales is a citizen of El Salvador." / "Investigators saw Arce Cruz, an illegal
+ *              alien, ..." -> the full name the same release gives ("Jose Toribio Canales (44, ...)").
+ *  E anon:     "A Brazilian national was sentenced today ..." / "A Lebanese man with a Legal Permanent
+ *              Resident Card was arrested ..." followed by the sentence that names the one defendant.
+ *  F list:     "Among the illegal aliens who were deported are:" then "<Name>, whose criminal history ..."
+ *              items (DHS deportation-flight releases).
+ *  G roundup:  case paragraph naming "<Full Name> and <Full Name> were charged ...", then "... apprehend
+ *              <Surname> and ..., including <Surname>, who were determined to be citizens of Mexico" or
+ *              "... all were unlawfully present ... one of them, <Surname>, was ..." (USAO Arizona).
+ * ---------------------------------------------------------------------------------------------- */
+const escRe = (x) => String(x).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const COUNTRY_ALT = [...COUNTRIES].sort((a, b) => b.length - a.length).map(escRe).join("|");
+const AKA = `(?:,?\\s+(?:aka|a/k/a|a\\.k\\.a\\.)\\s+${NAME})?`;
+const LEAD = new RegExp(`(?:^|[.;:]\\s+|\\b(?:and|while)\\s+)(?:[Cc]riminal\\s+)?[Ii]llegal\\s+alien\\s+from\\s+(?:the\\s+)?(${COUNTRY_ALT})\\s+${NAME}${AKA}(?=\\s+(?:was|is|has|had|pleaded|faces|remains|allegedly)\\b)`, "g");
+const IDENT = new RegExp(`^(?:[A-Z][^,]{0,40},\\s+)?${NAME}\\s+(?:was|is)\\s+[^.;]{0,120}?\\b(?:identified|determined|confirmed|found)\\s+(?:to\\s+be\\s+|as\\s+)an?\\s+(?:criminal\\s+)?(?:illegal\\s+alien|citizen\\s+of|national\\s+of)(?:\\s+(?:from|of)\\s+)?(?:the\\s+)?(${COUNTRY_ALT})?`);
+const SUR = "([A-Z][A-Za-z'’-]+(?:\\s+[A-Z][A-Za-z'’-]+)?)";
+const SURNAME_STATUS = new RegExp(`(?:^|,\\s+|\\b(?:saw|that|and|when)\\s+)${SUR}(?:,\\s+an?\\s+(?:criminal\\s+)?illegal\\s+alien\\b|\\s+(?:is|was)\\s+(?:an?\\s+)?(?:criminal\\s+)?(?:illegal\\s+alien|citizen\\s+of|native\\s+and\\s+citizen\\s+of|national\\s+of)\\b|\\s+(?:is|was)\\s+an?\\s+[A-Z][a-z]+\\s+national\\b)`, "g");
+const ANON = /^(?:[A-Z][A-Za-z .,'’-]{0,40}[:–—]\s+|[A-Z][A-Za-z .,'’-]{0,40}\s+[–—-]\s+)?An?\s+(?:[A-Za-z-]+\s+){0,3}?(?:illegal\s+alien|alien|national|citizen\s+of\s+[A-Z]\w+|(?:man|woman)\s+with\s+an?\s+(?:Legal|Lawful)\s+Permanent\s+Resident(?:\s+Card)?|lawful\s+permanent\s+resident)\b/;
+const NEXT_NAME = new RegExp(`^(?:[A-Z][^,]{0,60}?\\b(?:alleges|alleged|says|states|shows)\\s+that\\s+|According\\s+to\\s+[^,]+,\\s+)?${NAME}\\s+(?:was|is|has|had|allegedly|pleaded|pled)\\b|\\b(?:sentenced|charged|indicted)\\s+${NAME},\\s+\\d{1,3}\\b`);
+const LIST_INTRO = /\b(?:illegal\s+aliens?|aliens?|non-?citizens?)\b[^:]*\b(?:deported|removed|arrested|convicted|charged|sentenced)\b[^:]*:\s*$|\b(?:deported|removed|arrested)\b[^:]*\b(?:illegal\s+aliens?|aliens?)\b[^:]*:\s*$/i;
+const LIST_ITEM = new RegExp(`^${NAME},\\s+(?:whose|who|an?)\\s`);
+const ALL_FROM = new RegExp(`\\bAll\\s+of\\s+the\\s+(?:illegal\\s+)?aliens\\b[^.]*?\\bwere\\s+from\\s+(?:the\\s+)?(${COUNTRY_ALT})\\b`);
+const STATUS_COUNTRY = new RegExp(`\\b(?:from|of)\\s+(?:the\\s+)?(${COUNTRY_ALT})(?![A-Za-z])`);
+
+function cleanName(n) {
+  return String(n || "").replace(/\s+/g, " ").trim().replace(/^(?:Co-?conspirator|Co-?defendant|Defendant|Suspect)\s+/i, "").replace(/(?<!\b(?:Jr|Sr|[A-Z]))\.$/, "").replace(/[’']s$/, "");
+}
+function okName(name, title) {
+  const toks = name.split(" ");
+  return toks.length >= 2 && toks.length <= 6 && name.length <= 60 && !NOT_NAME.test(name) && !isPlaceName(name, { title });
+}
+function countryIn(text) {
+  const m = String(text || "").match(STATUS_COUNTRY);
+  if (m) return m[1];
+  const d = String(text || "").match(/\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s+(?:national|citizen|man|woman)\b/);
+  return d ? DEMONYMS[d[1]] || DEMONYM[d[1]] || "" : "";
+}
+
+/** Full name the release gives for a surname ("Toribio Canales" -> "Jose Toribio Canales"), with its sentence. */
+function fullNameFor(sur, sentList) {
+  const re = new RegExp(`(${PART}(?:\\s+(?:${PARTICLE}\\s+)?${PART}){0,4}?)\\s+${escRe(sur)}(?![A-Za-z'’-])(?=\\s*[,(]|\\s+(?:and|was|were|is|has|have|pleaded|pled|allegedly|aka)\\b)`);
+  for (const s of sentList) {
+    const m = s.match(re);
+    if (!m) continue;
+    const lead = m[1].split(/\s+/).filter((t) => !NOT_NAME.test(t) && /^[A-ZÁÉÍÓÚÑÜ]/.test(t));
+    // Drop leading sentence words ("Investigators", "On") that are not part of the name.
+    let name = `${m[1]} ${sur}`;
+    const toks = m[1].split(/\s+/);
+    while (toks.length && (NOT_NAME.test(toks[0]) || /^(?:In|On|At|By|As|If|When|While|After|Before|Investigators|Agents|Officers|Prosecutors|Police|Records|Court|Documents)$/.test(toks[0]))) toks.shift();
+    if (!toks.length || !lead.length) continue;
+    name = cleanName(`${toks.join(" ")} ${sur}`);
+    if (name.split(" ").length <= sur.split(" ").length) continue;
+    return { name, sentence: s };
+  }
+  return null;
+}
+
+export function linkedPeople(blocks, { title = "", seen = [] } = {}) {
+  const out = [];
+  const have = new Set(seen.map((h) => h.name.toLowerCase()));
+  const covered = (n) => have.has(n.toLowerCase()) || [...have].some((h) => h.endsWith(` ${n.toLowerCase()}`));
+  const push = (h) => {
+    if (!okName(h.name, title) || covered(h.name)) return;
+    have.add(h.name.toLowerCase());
+    out.push({ city: cityFrom(h.sentence), ...h, origin: cleanOrigin(h.origin) || countryFor(h.name, h.sentence) || "", linked: true });
+  };
+  const all = blocks.filter((b) => b.length >= 25).map((b) => sentences(b));
+  const flat = all.flat();
+  const allFrom = blocks.join(" ").match(ALL_FROM)?.[1] || "";
+
+  // F: list intro + "<Name>, whose ..." items.
+  let intro = null;
+  for (const b of blocks) {
+    if (LIST_INTRO.test(b)) { intro = b; continue; }
+    if (!intro) continue;
+    if (b.length < 25) continue; // "Image" captions between list items
+    const m = b.match(LIST_ITEM);
+    if (!m) { intro = null; continue; }
+    const name = cleanName(m[1]);
+    const item = sentences(b)[0];
+    push({ name, origin: allFrom || countryIn(intro), sentence: `${intro} ${item}` });
+  }
+
+  for (let bi = 0; bi < all.length; bi++) {
+    const sents = all[bi];
+    for (let i = 0; i < sents.length; i++) {
+      const s = sents[i];
+      // B: "Illegal alien from Mexico <Name> (aka <Name>) was ..."
+      LEAD.lastIndex = 0;
+      let m;
+      while ((m = LEAD.exec(s))) {
+        const name = cleanName(m[2]);
+        push({ name, origin: m[1], sentence: withNowCharge(sents, i), ...(m[3] ? { aka: cleanName(m[3]) } : {}) });
+      }
+      // D: "<Name> was found ... and identified as an illegal alien from Mexico."
+      const d = s.match(IDENT);
+      if (d) push({ name: cleanName(d[1]), origin: d[2] || "", sentence: withNowCharge(sents, i) });
+      // C: surname + status in this sentence, full name elsewhere in the release.
+      SURNAME_STATUS.lastIndex = 0;
+      while ((m = SURNAME_STATUS.exec(s))) {
+        const sur = cleanName(m[1]);
+        if (NOT_NAME.test(sur) || /^(?:He|She|They|It|The|A|An|This|That|Who|Each|Both)$/.test(sur)) continue;
+        if (covered(sur)) continue;
+        const full = fullNameFor(sur, flat);
+        if (!full) continue;
+        const own = withNowCharge(sents, i);
+        const tail = own.startsWith(s) && NOW_CHARGE.test(own) ? own : s;
+        const sentence = full.sentence === s ? tail : `${full.sentence} ${tail}`;
+        push({ name: full.name, origin: countryIn(s.slice(m.index)), sentence });
+      }
+      // E: "A <...> national / illegal alien / man with a Legal Permanent Resident Card ..." + next sentence naming one person.
+      if (ANON.test(s)) {
+        const next = sents[i + 1] ?? (i === sents.length - 1 ? all[bi + 1]?.[0] : undefined);
+        const n = next && next.match(NEXT_NAME);
+        if (n) push({ name: cleanName(n[1] || n[2]), origin: countryIn(s), sentence: `${s} ${next}` });
+      }
+      // G: case paragraph (USAO Arizona weekly roundup).
+      const det = s.match(/^(.*?)\b(?:who|which)\s+(?:were|was)\s+determined\s+to\s+be\s+(?:citizens?|nationals?)\s+of\b/);
+      if (det) {
+        for (const full of namesChargedIn(sents)) {
+          const sur = full.name.split(" ").slice(-1)[0];
+          if (new RegExp(`(?<![A-Za-z'’-])${escRe(sur)}(?![A-Za-z'’-])`).test(det[1])) push({ name: full.name, origin: countryIn(s), sentence: `${full.sentence} ${s}` });
+        }
+      }
+      const one = s.match(/\bone\s+of\s+them,\s+([A-Z][A-Za-z'’-]+(?:\s+[A-Z][A-Za-z'’-]+)?),/);
+      if (one && i > 0 && /\ball\s+were\s+(?:unlawfully|illegally)\s+present\b/i.test(sents[i - 1])) {
+        const full = namesChargedIn(sents).find((f) => f.name.endsWith(` ${one[1]}`) || f.name === one[1]);
+        if (full) push({ name: full.name, origin: "", sentence: `${full.sentence} ${sents[i - 1]} ${s}` });
+      }
+    }
+  }
+  return out;
+}
+
+/**
+ * Naming sentence, extended (verbatim, contiguous) through a "He's now charged with ..." / "He now faces a charge
+ * of ..." sentence up to 3 sentences later in the same paragraph, so the label is this case's stage, not a past
+ * record. Otherwise the old rule: add the next sentence only when the naming sentence has no stage verb.
+ */
+const NOW_CHARGE = /\bnow\s+(?:charged|faces?\s+(?:(?:a|an|his|her|the)\s+)?(?:[\w-]+\s+){0,3}?(?:charges?|counts?))\b/i;
+function withNowCharge(sents, i) {
+  for (let k = i + 1; k <= i + 3 && k < sents.length; k++) if (NOW_CHARGE.test(sents[k])) return sents.slice(i, k + 1).join(" ");
+  if (!VERB.test(sents[i]) && sents[i + 1] && VERB.test(sents[i + 1])) return `${sents[i]} ${sents[i + 1]}`;
+  return sents[i];
+}
+
+/** People a case paragraph says were charged: "<Name> and <Name> were charged ..." / "<Name> was charged ...". */
+function namesChargedIn(sents) {
+  const out = [];
+  const re = new RegExp(`(?:^|,\\s+)${NAME}(?:\\s+and\\s+${NAME})?\\s+(?:was|were)\\s+(?:charged|indicted|arrested|sentenced|convicted)\\b`);
+  for (const s of sents) {
+    const m = s.match(re);
+    if (!m) continue;
+    for (const n of [m[1], m[2]].filter(Boolean)) {
+      const name = cleanName(n);
+      if (name.split(" ").length >= 2 && !NOT_NAME.test(name)) out.push({ name, sentence: s });
+    }
+  }
+  return out;
 }
 
 /** Prior-history phrases ("previously removed", "prior conviction", "criminal history includes")
@@ -291,6 +469,14 @@ export function stripPriors(text) {
     // "has been convicted 2x" / "convicted twice" / "convicted 3 times": a counted record is history.
     .replace(/\b((has|have|had)\s+been\s+)?convicted\s+(\d+x|\d+\s+times|twice|thrice|(two|three|four|five|multiple|several)\s+times)\b/gi, "prior-history")
     .replace(/\bprior\s+(\w+\s+){0,2}convictions?\b/gi, "prior-history")
+    // "Reyes-Hernandez was convicted in 2023 for alien smuggling ... He's now charged with illegal re-entry":
+    // a conviction dated to an earlier year is past history when the same text says "now charged / now faces".
+    .replace(/\b(?:was|were|been)\s+convicted\s+in\s+(?:19|20)\d{2}\b(?=[\s\S]*\bnow\s+(?:charged|faces?)\b)/gi, "prior-history")
+    .replace(/\b(?:has|have|had)\s+(?:also\s+)?(?:been\s+)?previously\s+convicted\b(?=[\s\S]*\bnow\s+(?:charged|faces?)\b)/gi, "prior-history")
+    // "illegally reentering the U.S. as a removed alien" / "Reentry of Removed Alien": a past removal, not this case.
+    .replace(/\b(?:a\s+)?(?:previously\s+)?(?:removed|deported)\s+aliens?\b/gi, "prior-history")
+    // "arrested near Comstock after just being removed from the U.S. on Sept. 11": the removal is past, not this case.
+    .replace(/\b(?:after|since)\s+(?:just\s+|recently\s+|being\s+)*(?:being|having\s+been)\s+(removed|deported)\b/gi, "prior-history")
     .replace(/\bcriminal (history|record)\b/gi, "prior-history");
 }
 
@@ -319,7 +505,7 @@ function historyStatus(sentence) {
   return "As posted";
 }
 
-export const CONVICT_WORDS = /\b(convicted|convictions?|sentenced|pleaded guilty|pled guilty|pleads guilty|found guilty)\b/i;
+export const CONVICT_WORDS = /\b(convicted|convictions?|sentenced|pleaded guilty|pled guilty|pleads guilty|found guilty|entered (?:a|his|her) (?:plea of guilty|guilty plea))\b/i;
 export const CHARGE_WORDS = /\b(charged|charges|charging|indicted|indictment|arrested|arrests?|accused|alleged|allegedly|complaint|wanted|detained|apprehended)\b/i;
 const REMOVE_WORDS = /\b(removed|deported|repatriated)\b/i;
 const NOT_YET_REMOVED = /\bpending (removal|immigration)|in ICE custody|awaiting removal|will be (removed|deported)|processed for (removal|deportation)|ordered (removed|deported)/i;
@@ -336,6 +522,9 @@ const NOT_YET_REMOVED = /\bpending (removal|immigration)|in ICE custody|awaiting
  *    is never Charged: Removed / Convicted only from wording outside that clause, else "As posted".
  */
 export function statusFrom(sentence, title = "") {
+  // "He's now charged with illegal re-entry" / "He now faces a charge of ...": this case's stage is Charged,
+  // whatever past record the same text lists. (Charged is never an upgrade.)
+  if (NOW_CHARGE.test(String(sentence || ""))) return "Charged";
   if (HISTORY.test(String(sentence || ""))) return historyStatus(sentence);
   const s = stripPriors(sentence);
   const t = stripPriors(title);
@@ -358,7 +547,7 @@ export const FORMAL_CHARGE = /\b(charged|charges|charging|indicted|indictment|co
  */
 export function releaseLabel(sentence, title = "") {
   const own = statusFrom(sentence, "");
-  if (own === "Charged") return FORMAL_CHARGE.test(stripPriors(sentence)) ? "Charged" : "Arrested";
+  if (own === "Charged") return FORMAL_CHARGE.test(stripPriors(sentence)) || NOW_CHARGE.test(String(sentence || "")) ? "Charged" : "Arrested";
   if (own !== "As posted") return own;
   if (HISTORY.test(String(sentence || ""))) return own;
   const t = statusFrom(sentence, title);
@@ -393,9 +582,10 @@ export function slug(s) {
 export function toRow(hit, rel) {
   const a = AGENCY[rel.office] || { label: rel.office, confirmedBy: "DHS" };
   const d = dateParts(rel.date);
-  const status = releaseLabel(hit.sentence, rel.title);
+  const status = releaseLabel(hit.sentence, hit.noTitleStage ? "" : rel.title);
   return {
     name: hit.name,
+    ...(hit.aka ? { aka: hit.aka } : {}),
     city: hit.city || "Not stated",
     crime: `${status}: ${hit.sentence}`,
     usa: `${a.label} release ${d.long}: ${rel.title}`,

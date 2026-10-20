@@ -1,8 +1,49 @@
 {
   "asOf": "2026-10-20",
   "windowDays": 7,
-  "total": 179,
+  "total": 199,
   "rows": [
+    {
+      "id": "dhs-20261016-jaime-velasquez-orozco",
+      "name": "Jaime Velasquez Orozco",
+      "when": "16 Oct 2026",
+      "severity": 312,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Rape / sexual assault",
+        "Assault / battery",
+        "Burglary / theft",
+        "Drug possession",
+        "DUI"
+      ]
+    },
+    {
+      "id": "dhs-20261016-noe-ochoa-torres",
+      "name": "Noe Ochoa Torres",
+      "when": "16 Oct 2026",
+      "severity": 283,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Child sex crime",
+        "Violent crime against a child",
+        "Drug possession"
+      ]
+    },
+    {
+      "id": "dhs-20261016-jiovany-baray-acosta",
+      "name": "Jiovany Baray-Acosta",
+      "when": "16 Oct 2026",
+      "severity": 204,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Weapons",
+        "Drug trafficking",
+        "DUI"
+      ]
+    },
     {
       "id": "x-2111148670829957349-leo-robert-jackson",
       "name": "Leo Robert Jackson",
@@ -87,6 +128,19 @@
       ]
     },
     {
+      "id": "doj-20261019-melvin-acosta-martinez",
+      "name": "Melvin Acosta-Martinez",
+      "when": "19 Oct 2026",
+      "severity": 138,
+      "severityReason": "Attack on police officer",
+      "severityCrimes": [
+        "Attack on police officer",
+        "Burglary / theft",
+        "DUI",
+        "Illegal entry / reentry"
+      ]
+    },
+    {
       "id": "x-2111506352254357989-beza-kebede",
       "name": "Beza Kebede",
       "when": "17 Oct 2026",
@@ -133,6 +187,17 @@
       ]
     },
     {
+      "id": "dhs-20261016-german-garcia-ordonez",
+      "name": "German Garcia-Ordonez",
+      "when": "16 Oct 2026",
+      "severity": 120,
+      "severityReason": "Violent crime against a child",
+      "severityCrimes": [
+        "Violent crime against a child",
+        "Assault / battery"
+      ]
+    },
+    {
       "id": "dhs-20261015-ricardo-curbelo-aguilar",
       "name": "Ricardo Curbelo-Aguilar",
       "when": "15 Oct 2026",
@@ -141,6 +206,18 @@
       "severityCrimes": [
         "Murder / manslaughter",
         "DUI"
+      ]
+    },
+    {
+      "id": "doj-20261019-raul-reyes-hernandez",
+      "name": "Raul Reyes-Hernandez",
+      "when": "19 Oct 2026",
+      "severity": 117,
+      "severityReason": "Alien smuggling",
+      "severityCrimes": [
+        "Alien smuggling",
+        "Fraud (incl. voter fraud)",
+        "Illegal entry / reentry"
       ]
     },
     {
@@ -221,47 +298,6 @@
       ]
     },
     {
-      "id": "doj-20261019-yoirlan-tome-rojas",
-      "name": "Yoirlan Tome-Rojas",
-      "when": "19 Oct 2026",
-      "severity": 98,
-      "severityReason": "Kidnapping / human trafficking",
-      "severityCrimes": [
-        "Kidnapping / human trafficking"
-      ]
-    },
-    {
-      "id": "x-2112267600654729506-anibal-rosales-velasquez",
-      "name": "Anibal Rosales-Velasquez",
-      "when": "19 Oct 2026",
-      "severity": 95,
-      "severityReason": "Weapons",
-      "severityCrimes": [
-        "Weapons",
-        "Assault / battery"
-      ]
-    },
-    {
-      "id": "x-2112267385487147356-carlos-castro-ramirez",
-      "name": "Carlos Castro-Ramirez",
-      "when": "19 Oct 2026",
-      "severity": 95,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter"
-      ]
-    },
-    {
-      "id": "x-2112267382186205218-jose-zetina-romero",
-      "name": "Jose Zetina Romero",
-      "when": "19 Oct 2026",
-      "severity": 95,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter"
-      ]
-    },
-    {
       "id": "x-2112212456797880328-juan-carlos-plascencia-torres",
       "name": "Juan Carlos Plascencia-Torres",
       "when": "19 Oct 2026",
@@ -270,16 +306,6 @@
       "severityCrimes": [
         "Violent crime against a child",
         "DUI"
-      ]
-    },
-    {
-      "id": "dhs-20261016-claudius-anglo-ricardo-smith",
-      "name": "Claudius Anglo Ricardo Smith",
-      "when": "16 Oct 2026",
-      "severity": 95,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter"
       ]
     },
     {
@@ -305,6 +331,16 @@
     {
       "id": "dhs-20261016-hernan-marcelo-tamayo-fernandez",
       "name": "Hernan Marcelo Tamayo-Fernandez",
+      "when": "16 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261016-luis-antonio-vasquez-encinas",
+      "name": "Luis Antonio Vasquez Encinas",
       "when": "16 Oct 2026",
       "severity": 92,
       "severityReason": "Child sex crime",

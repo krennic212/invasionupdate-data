@@ -22,3 +22,34 @@ Source: https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nat
 - Krennic approved those 6 on 2026-10-19 (`node scripts/approve.mjs <id>`). Same as the Bogle precedent: the label stays the release's own sentence, the OPA LPR statement and the OPA nationality line are added to `text`, and `statusSourceUrl` = the OPA URL. Stage stays Charged.
 - Added Verónica Bullene (aka "Verónica Hernández Martínez"), NDCA, Petaluma, CA, through data/pending.json (auto-approve, guards on, no hold). The label is the OPA sentence. Charged. No photo. The row has `aka`. harvest.mjs now dedupes on name + aka (`nameKeysOf` in scripts/rules.mjs, test scripts/rules-aka.test.mjs), so the alias is never added as a second person.
 - Result: 28/28 approved.
+
+# HANDOFF: 2026-10-20 missed-case audit (Oct 16–20) + harvester gap fixes
+
+Krennic chose "add the clear missed cases and fix the harvester gaps" after a list-only audit.
+
+Rows (29 live; nothing removed; existing rows unchanged except the 2 approvals):
+- Approved (`node scripts/approve.mjs doj-20261016-gabriel-cezar-menezes,doj-20261016-tadeu-sebastiane-rabelo-alves-barbosa`): Menezes, Barbosa (SDFL; held "not stated to be a non-citizen" only because co-defendant Omar Aliperti De Mello Correa is "a U.S. citizen" in the same sentence; he is NOT added). `statusSourceUrl` = the SDFL release.
+- Added via data/pending.json (AUTO_APPROVE=true, live scan off: `MAX_LINKS=0 DOJ_PAGES=0`), rows built by the new parser + `toRow`, guards on, none held:
+  - SDFL (same release): Leandro De Avila Goncalves, Joao Andrade De Mello. Convicted.
+  - usao-me: Jose Carlos Ferreira (aka "Jose Carlos Ferreria", the release uses both spellings). Convicted.
+  - usao-edpa: Mory Kante. Convicted. usao-wdla: Manuel De Jesus Arce Cruz. Charged (complaint). usao-mdfl: Jose Toribio Canales. Convicted.
+  - usao-az weekly roundup: Calixtro-Rodriguez, Ramos-Mendez (Mexico), Avendano-Soto (origin "Not stated": group was Guatemala + Mexico). Charged.
+  - usao-sdtx: Enrique Roel Pena-Soto. Charged.
+  - usao-wdtx: Reyes-Hernandez (aka Aurelio Reyes-Hernandez), Garcia-Soto, Aguilar (aka Miguel Angel Aguilar Bustillo), Masias-Milla, Acosta-Martinez, Gutierres-Cruz, Alhussni — all Charged. Alhussni is a green-card holder, NOT an illegal alien: label quotes "A Lebanese man with a Legal Permanent Resident Card". Torres-Sanchez = "As posted" (release gives no stage for his case; his 5 convictions are past record).
+  - DHS Oct 16 deportation flights out of Arizona: 9 rows, Removed, Mexico ("All of the illegal aliens on the deportation flights were from Mexico"). Jaime Velasquez Orozco was blocked at intake by name because an X-only copy sits in review.json (2100272235965555079); the official DHS row was inserted directly with the same guards (no hold) and an approvalNote. dedupe.mjs reports that pair as a "likelyDuplicate" (feed vs review) — expected; the review row is never published.
+- Skipped on purpose: Stewart, El Bahnasawy, Tellez-Gonzalez, Perez-Abrego (X-only, no official release).
+- Not added (older than Oct 16, outside the audit window; the new parser finds them, all pass guards): Wenjie Xu (usao-wdny, As posted), Alfredo Gallegos Guillen (usao-edwa), Jamil Ahmad (usao-edpa, voting plea, LPR), Orlando Rene Flores-Orellana (usao-sdtx). They will only come in if a run's DOJ window reaches them (DOJ_PAGES default 4 does not); add by hand if wanted.
+
+Parser / guard fixes (scripts/parse.mjs, scripts/guards.mjs; tests in scripts/linked.test.mjs):
+- `linkedPeople()` (called at the end of `extractPeople`): status and name in different sentences of the same release.
+  - B "Illegal alien from <Country> <Name> (aka <Name>) was …" (WDTX).
+  - D "<Name> was … identified as an illegal alien from X".
+  - C "<Surname> is a citizen of / is an illegal alien / , an illegal alien" + full name found elsewhere in the release (MDFL, WDLA).
+  - E "A/An … national / illegal alien / man with a Legal Permanent Resident Card …" + next sentence naming one person (USAO single-case releases: ME, WDTX).
+  - F list releases: intro block ending ":" with alien + deported/removed/arrested, then "<Name>, whose|who|a …" items; origin only from "All of the illegal aliens … were from <Country>" (DHS deportation flights).
+  - G Arizona roundup case paragraphs: "… who were determined to be citizens of X" / "one of them, <Surname>," tied to names "charged by criminal complaint" in the same paragraph.
+  - Linked hits never borrow the headline's stage (a headline can be about a different defendant); role prefixes ("Co-conspirator", "Defendant") are stripped from names; `aka` is now carried onto rows by `toRow`.
+- Stage: "He's now charged with … / He now faces a charge of …" → Charged, and "was convicted in 2023 …" / "previously convicted" before it are past record. "after just being removed" and "as a removed alien" are past record, not the Removed stage. "entered a plea of guilty" = Convicted. House rule unchanged: "has N convictions" still reads Convicted (photo rows depend on it).
+- Guards: "lawful/legal permanent resident" and "green card holder" count as stated non-citizen status (same as the existing LPR wording). New `nonCitizenStatedFor(name, sentence)`: in a ";"-separated multi-defendant sentence the citizen check uses the person's own clause, so a co-defendant's "U.S. citizen" no longer holds a "Brazilian national" — and the U.S. citizen himself is still never a row. "<Nationality> national" was already accepted. No guard was loosened (minors, at-large, stage, photo rules untouched).
+- ICE.gov newsroom is quiet (funding lapse); nothing depends on it — a list page with no links just adds nothing.
+- Checks: `node --test scripts/*.test.mjs` 152 pass / 0 fail; `node scripts/validate.mjs` OK; a dry harvest run on a copy of the feed added 0 rows (no duplicates of the hand-added rows).

@@ -63,13 +63,15 @@ export function atLarge(sentence, releaseText = "") {
 }
 
 // "undocumented immigrant(s)" / "an undocumented ..." counts like "illegal alien" (Krennic 2026-10-19).
+// "lawful / legal permanent resident" and "green card holder" are non-citizen statuses by definition (2026-10-20).
+// "<Nationality> national" ("a Brazilian national") counts through \bnationals?\b.
 export function nonCitizenStated(sentence) {
   const s = String(sentence || "");
   // Ignore "falsely claiming to be a U.S. citizen" so real foreign-citizen wording still counts.
   const stripped = s.replace(/\b(?:falsely\s+)?claim(?:ing|ed|s)?\s+to\s+be\s+(?:a\s+)?(?:U\.S\.|United States|American)\s+citizen\b/gi, " ");
   if (/\bdual (national|citizen)|\bnaturali[sz]ed\b|\bU\.S\. citizen\b|\bUnited States citizen\b|\bAmerican citizen\b/i.test(stripped)) return false;
   return (
-    /\baliens?\b|\bnon-?citizens?\b|\b(illegally|unlawfully) (present|residing|in the United States|in the U\.S\.)|\bnationals?\b|\bcitizens? of\b|\bforeign national\b|\billegal (immigrant|migrant)s?\b|\bundocumented (?:immigrant|migrant|alien|noncitizen|non-citizen)s?\b|\ban undocumented\b/i.test(s) ||
+    /\baliens?\b|\bnon-?citizens?\b|\b(?:lawful|legal) permanent residen(?:t|ts|ce)\b|\bgreen[- ]card holders?\b|\b(illegally|unlawfully) (present|residing|in the United States|in the U\.S\.)|\bnationals?\b|\bcitizens? of\b|\bforeign national\b|\billegal (immigrant|migrant)s?\b|\bundocumented (?:immigrant|migrant|alien|noncitizen|non-citizen)s?\b|\ban undocumented\b/i.test(s) ||
     /\b[A-Z][a-z]+ citizens?\b/.test(s)
   );
 }
@@ -124,6 +126,26 @@ export function deportedStated(text) {
 /** Kept for callers of the 2026-10-19 morning rule; now the same as deportedStated (the wider rule). */
 export const deportedReentryStated = deportedStated;
 
+/**
+ * Person-scoped check (2026-10-20). DOJ lists several defendants in one sentence separated by ";":
+ * "Gabriel Cezar Menezes, 29, a Brazilian national, was sentenced to 94 months; Omar ... Correa, 34, a U.S. citizen,
+ * was sentenced to 30 months; ...". The co-defendant's "U.S. citizen" must not cancel THIS person's own wording, and
+ * this person's own "U.S. citizen" must still hold them. True when every ";" clause that names the person is free of
+ * U.S.-citizen / naturalized / dual wording and at least one of them states non-citizen status.
+ */
+export function nonCitizenStatedFor(name, sentence) {
+  const s = String(sentence || "");
+  const n = String(name || "").trim();
+  if (!n || !/;\s/.test(s)) return nonCitizenStated(s);
+  const last = n.split(/\s+/).slice(-1)[0];
+  const parts = s.split(/;\s+/);
+  let mine = parts.filter((p) => p.includes(n));
+  if (!mine.length) mine = parts.filter((p) => new RegExp(`(?<![A-Za-z'’-])${esc(last)}(?![A-Za-z'’-])`).test(p));
+  if (!mine.length) return nonCitizenStated(s);
+  if (mine.some((p) => CITIZEN_OVERRIDE.test(p.replace(CITIZEN_CLAIM, " ")))) return false;
+  return mine.some((p) => nonCitizenStated(p));
+}
+
 /** All reasons a row must stay pending (empty array = may be auto-approved). */
 export function holdReasons({ name, sentence, title = "", releaseText = "", label = "" }) {
   const out = [];
@@ -131,7 +153,7 @@ export function holdReasons({ name, sentence, title = "", releaseText = "", labe
   if (isMinor(name, sentence, title)) out.push("possible minor / juvenile");
   if (!stageOk(label, sentence, title)) out.push(`stage: label "${label}" is later than the source wording`);
   if (atLarge(sentence, releaseText)) out.push("suspect described as still at large");
-  if (!nonCitizenStated(sentence) && !denaturalizedStated(`${sentence} ${releaseText}`) && !deportedStated(`${sentence} ${releaseText}`)) out.push("not stated to be a non-citizen");
+  if (!nonCitizenStatedFor(name, sentence) && !denaturalizedStated(`${sentence} ${releaseText}`) && !deportedStated(`${sentence} ${releaseText}`)) out.push("not stated to be a non-citizen");
   return out;
 }
 
