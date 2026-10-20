@@ -265,8 +265,12 @@ export function stateDefendants({ title = "", blocks = [] } = {}) {
     const s = b.replace(/\s+,/g, ",").replace(/\s*\(PDF\)/g, "");
     let m = s.match(new RegExp(`^${NAME},\\s*(\\d{1,3}),\\s+(?:of|from)\\s+([A-Z][A-Za-z .'’-]+?)(?=\\s*[(,]|\\s+(?:with|was|is|has)\\b|$)`));
     if (m) add(m[1], { age: m[2], place: m[3].trim() }, s);
-    m = s.match(new RegExp(`^(?:[^:]{3,90},\\s+)?${NAME}:\\s+\\d+\\s+counts?\\b`));
-    if (m) add(m[1], {}, s);
+    // "Pearsall City Council, Ramiro Trevino: 1 count" / "Former Dilley Mayor, MaryAnn Obregon: 2 counts": the office's town.
+    m = s.match(new RegExp(`^(?:([^:]{3,90}),\\s+)?${NAME}:\\s+\\d+\\s+counts?\\b`));
+    if (m) {
+      const town = (m[1] || "").match(/(?:^|\s)((?!Former\b|Candidate\b)[A-Z][a-z]+(?: (?!City\b)[A-Z][a-z]+)?) (?:City Council|Mayor|ISD)\b/);
+      add(m[2], { place: town?.[1] }, s);
+    }
     for (const x of s.matchAll(new RegExp(`\\b${VERB}\\s+${NAME}(?:,\\s*(\\d{1,3}))?(?:,?\\s+(?:of|from)\\s+([A-Z][a-z]+(?: [A-Z][a-z]+){0,2}))?(?=[,.;:]|\\s+(?:of|in|for|on|with|who|and|after)\\b)`, "g")))
       add(x[1], { age: x[2], place: x[3] }, s);
     for (const x of s.matchAll(new RegExp(`\\b${VERB}\\s+([A-Z][a-z]+) and ${NAME}(?=\\s+(?:with|for|on|of|in)\\b|[,.(])`, "g"))) {
@@ -310,16 +314,69 @@ export function datelineCity(blocks = []) {
   return "";
 }
 
+/** County seats for counties named in state election releases ("Frio County" -> Pearsall). Add as releases need them. */
+export const COUNTY_SEATS = {
+  TX: { Frio: "Pearsall", Starr: "Rio Grande City", Atascosa: "Jourdanton", Bexar: "San Antonio", Harris: "Houston", Travis: "Austin", Hidalgo: "Edinburg", Tarrant: "Fort Worth", Dallas: "Dallas" },
+  KS: { Comanche: "Coldwater", Reno: "Hutchinson", Sedgwick: "Wichita", Shawnee: "Topeka" },
+  FL: { Lee: "Fort Myers", Hillsborough: "Tampa", Marion: "Ocala", Polk: "Bartow", Okeechobee: "Okeechobee", Columbia: "Lake City", Collier: "Naples", DeSoto: "Arcadia", Brevard: "Titusville", "Miami-Dade": "Miami", Broward: "Fort Lauderdale", "Palm Beach": "West Palm Beach", Orange: "Orlando", Duval: "Jacksonville", Pinellas: "Clearwater", Leon: "Tallahassee" },
+  PA: { Berks: "Reading", Lancaster: "Lancaster", York: "York", Dauphin: "Harrisburg", Philadelphia: "Philadelphia", Allegheny: "Pittsburgh" },
+  MI: { Oakland: "Pontiac", Ingham: "Mason", "St. Joseph": "Centreville", Macomb: "Mount Clemens", Wayne: "Detroit", Branch: "Coldwater", Kent: "Grand Rapids" },
+  NH: { Merrimack: "Concord", Hillsborough: "Manchester", Rockingham: "Brentwood" },
+  NV: { Clark: "Las Vegas", Washoe: "Reno", "Carson City": "Carson City" },
+  GA: { Fulton: "Atlanta", Cobb: "Marietta", Gwinnett: "Lawrenceville", DeKalb: "Decatur" },
+  OH: { Franklin: "Columbus", Cuyahoga: "Cleveland", Hamilton: "Cincinnati", Gallia: "Gallipolis" },
+  AZ: { Maricopa: "Phoenix", Pima: "Tucson", Cochise: "Bisbee" },
+};
+/** Last-resort pin: the state capital (the release names no town, county or dateline the table knows). */
+export const STATE_CAPITALS = { AL: "Montgomery", AK: "Juneau", AZ: "Phoenix", AR: "Little Rock", CA: "Sacramento", CO: "Denver", CT: "Hartford", DE: "Dover", FL: "Tallahassee", GA: "Atlanta", HI: "Honolulu", ID: "Boise", IL: "Springfield", IN: "Indianapolis", IA: "Des Moines", KS: "Topeka", KY: "Frankfort", LA: "Baton Rouge", ME: "Augusta", MD: "Annapolis", MA: "Boston", MI: "Lansing", MN: "Saint Paul", MS: "Jackson", MO: "Jefferson City", MT: "Helena", NE: "Lincoln", NV: "Carson City", NH: "Concord", NJ: "Trenton", NM: "Santa Fe", NY: "Albany", NC: "Raleigh", ND: "Bismarck", OH: "Columbus", OK: "Oklahoma City", OR: "Salem", PA: "Harrisburg", RI: "Providence", SC: "Columbia", SD: "Pierre", TN: "Nashville", TX: "Austin", UT: "Salt Lake City", VT: "Montpelier", VA: "Richmond", WA: "Olympia", WV: "Charleston", WI: "Madison", WY: "Cheyenne" };
+
+const COUNTY_RE = /\b((?:St\. )?[A-Z][a-z]+(?:[- ][A-Z][a-z]+)?) County\b/g;
+/** Counties named in a text, most-mentioned first: [[name, count], ...]. */
+const KNOWN_COUNTIES = new Set(Object.values(COUNTY_SEATS).flatMap((c) => Object.keys(c)));
+export function countiesIn(text) {
+  const n = new Map();
+  for (const m of String(text || "").matchAll(COUNTY_RE)) {
+    // "Former Frio County Elections Administrator" / "Alleged Frio County Vote Harvester" -> "Frio".
+    const words = m[1].split(" ");
+    const name = words.length > 1 && !KNOWN_COUNTIES.has(m[1]) && !/^St\.$/.test(words[0]) ? words[words.length - 1] : m[1];
+    n.set(name, (n.get(name) || 0) + 1);
+  }
+  return [...n.entries()].sort((a, b) => b[1] - a[1]);
+}
+
 /**
- * Map pin for a state-release defendant: the home town the release prints for that person, else the release's own
- * dateline (only when no home town is printed), looked up as "City, ST" in a {"City, ST": [lat, lon]} table. No match -> null (the row is not added).
+ * Map pin for a state-release defendant, from the release's own words, in this order:
+ *   1. the home town the release prints for this person ("Michael Akioya, 39, of Oak Park");
+ *   2. a county named in this person's own entry ("of Fort Myers (Lee County)", "Frio County Judge, Rochelle Camacho") -> its seat;
+ *   3. the one county the case sentences name most (a charge / arrest / court sentence: "Frio County", "Starr County") -> its seat;
+ *   4. the dateline ("TOPEKA –"), only when the release prints no town for the person;
+ *   5. the state capital (never dropped).
+ * Every pin is "City, ST" from a {"City, ST": [lat, lon]} table; `basis` says which rule gave it.
  */
 export function stateGeo(person, rel, table) {
-  // A home town the release prints but the table lacks ("Rose Township") is not swapped for the dateline.
-  for (const place of person?.place ? [person.place] : [datelineCity(rel?.blocks)]) {
-    const key = place && `${String(place).replace(/\s+Township$/, "").trim()}, ${rel?.state}`;
+  const st = rel?.state;
+  const look = (place, basis) => {
+    const key = place && `${String(place).trim()}, ${st}`;
     const hit = key && table[key];
-    if (Array.isArray(hit) && Number.isFinite(hit[0])) return { city: key, lat: hit[0], lon: hit[1] };
+    return Array.isArray(hit) && Number.isFinite(hit[0]) ? { city: key, lat: hit[0], lon: hit[1], basis } : null;
+  };
+  const seat = (county, basis) => look(COUNTY_SEATS[st]?.[county], basis);
+  const own = person?.place ? look(person.place, "town") : null;
+  if (own) return own;
+  const mine = countiesIn(person?.sentence)[0];
+  const fromMine = mine && seat(mine[0], "county");
+  if (fromMine) return fromMine;
+  // Only sentences about the case count ("filed the charges in Comanche County", "the arrest of Modesta Vela in Starr
+  // County"), not "offered assistance to Monroe County officials".
+  const caseText = (rel?.blocks || []).flatMap((b) => String(b).split(/(?<=[.!?])\s+/)).filter((x) => CRIME_VERB.test(x) || /\b(?:court|grand jury|indict)/i.test(x)).join(" ");
+  const all = countiesIn(caseText);
+  if (all.length && (all.length === 1 || all[0][1] > all[1][1])) {
+    const fromRel = seat(all[0][0], "county");
+    if (fromRel) return fromRel;
   }
-  return null;
+  if (!person?.place) {
+    const d = look(datelineCity(rel?.blocks), "dateline");
+    if (d) return d;
+  }
+  return look(STATE_CAPITALS[st], "state");
 }

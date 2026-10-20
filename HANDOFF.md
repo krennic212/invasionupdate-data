@@ -1,3 +1,14 @@
+# HANDOFF: 2026-10-20 (11:45 AM CDT) X-sourced voting rows -> official releases; state pins (Krennic approved)
+
+- Silvia Delgado Phelps, Staciann Pollion Davis (usao-sdal Oct 8, 2026), Andre's Garcia (usao-wdmo Oct 6), Andrea Catanese
+  (usao-mdfl Oct 2), Terrance Patrick Evans (usao-mdfl Sep 30): sourceUrl / statusSourceUrl / via / usa / picked / when / text /
+  crime now the DOJ release (sentence verbatim from the release body, DOJ API), office TheJusticeDept, confirmedBy DOJ,
+  sourceNote keeps the old X URL. Stage unchanged (Charged); ids unchanged. No voting row cites X any more.
+- scripts/state-sources.mjs (shared with fraudtracker-data): stateGeo() now prefers a county named in the release over the
+  dateline (Frio County -> Pearsall, Starr County -> Rio Grande City) and falls back to the county seat or state capital
+  instead of dropping a person. No live Invasion Update row changed (all state rows already had a printed town).
+  city-geo.json + Bartow, Titusville FL. Tests 183/183.
+
 # HANDOFF: 2026-10-20 (11:30 AM CDT) federal, DHS and state voting cases + state election sources in the hourly job (Krennic approved)
 
 - Feed: 564 -> 653 rows (558 -> 647 approved). 82 voting rows (64 federal DOJ/DHS/USCIS, 18 state: FL AG 11, MI AG 5,

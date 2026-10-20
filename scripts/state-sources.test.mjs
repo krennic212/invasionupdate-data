@@ -13,6 +13,8 @@ import {
   stateDefendants,
   stateStage,
   datelineCity,
+  stateGeo,
+  countiesIn,
 } from "./state-sources.mjs";
 
 // Twelve official state release pages (scripts, styles, nav and footer stripped), saved 2026-10-20.
@@ -116,6 +118,32 @@ test("state sources: stage and dateline come from the release", () => {
   assert.equal(datelineCity(page("News/231").blocks), "Topeka");
   assert.equal(datelineCity(page("hudson-resident").blocks), "Concord");
   assert.equal(datelineCity(page("fdle-arrests").blocks), "Miami");
+});
+
+test("state sources: pins - printed town, then the person's county, then the case county (beats the dateline), then dateline, then state", () => {
+  const T = JSON.parse(readFileSync(new URL("./city-geo.json", import.meta.url), "utf8"));
+  const geo = (part, name) => {
+    const p = page(part);
+    return stateGeo(stateDefendants(p).find((d) => d.name === name), p, T);
+  };
+  // Frio County cases (TX AG, dateline HOUSTON) -> Pearsall, the county seat; office towns from the release kept.
+  assert.deepEqual([geo("nine-individuals", "Manuel Medina").city, geo("nine-individuals", "Manuel Medina").basis], ["Pearsall, TX", "county"]);
+  assert.equal(geo("nine-individuals", "MaryAnn Obregon").city, "Dilley, TX");
+  assert.equal(geo("six-indictments", "Rochelle Camacho").city, "Pearsall, TX");
+  assert.equal(geo("six-indictments", "Ramiro Trevino").city, "Pearsall, TX");
+  // Starr County (no dateline) -> Rio Grande City; Comanche County charges -> Coldwater, not the Topeka dateline.
+  assert.equal(geo("starr-county", "Modesta Vela").city, "Rio Grande City, TX");
+  assert.equal(geo("News/231", "Jose Ceballos").city, "Coldwater, KS");
+  // A county mentioned outside the case sentences ("assistance to Monroe County officials") does not count.
+  assert.deepEqual([geo("ag-sunday-announces", "Amos Clay").city, geo("ag-sunday-announces", "Amos Clay").basis], ["Harrisburg, PA", "dateline"]);
+  assert.equal(geo("ag-nessel-announces", "Kimberley DiDonato").city, "Rose Township, MI");
+  // A printed town the table lacks falls back to the person's county, else the state capital - never dropped.
+  const rel = { state: "FL", blocks: ["TALLAHASSEE – The defendants include:", "Jane Q. Roe, 40, of Nowhereville (Lee County), was charged."] };
+  assert.deepEqual(stateGeo({ name: "Jane Q. Roe", place: "Nowhereville", sentence: rel.blocks[1] }, rel, T)?.city, "Fort Myers, FL");
+  const bare = { state: "FL", blocks: ["TALLAHASSEE – John Doe was charged."] };
+  assert.equal(stateGeo({ name: "John Doe", place: "Nowhereville", sentence: bare.blocks[0] }, bare, T)?.basis, "state");
+  assert.equal(stateGeo({ name: "John Doe", place: "Nowhereville", sentence: bare.blocks[0] }, bare, T)?.city, "Tallahassee, FL");
+  assert.deepEqual(countiesIn("Former Frio County Elections Administrator and Frio County Judge"), [["Frio", 2]]);
 });
 
 test("state sources: fail soft (a dead source or page is logged, never thrown) and honor the time budget", async () => {
