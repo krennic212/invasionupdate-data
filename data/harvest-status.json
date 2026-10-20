@@ -1,16 +1,16 @@
 {
-  "checkedAt": 1792527579275,
-  "checkedAtIso": "2026-10-20T20:19:39.275Z",
+  "checkedAt": 1792539648994,
+  "checkedAtIso": "2026-10-20T23:40:48.994Z",
   "added": [
-    "Geovanny Alexander Pineda Cubias"
+    "Manuel Seberiano Garcia-Munoz"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 91,
+  "scannedReleases": 95,
   "error": null,
-  "note": "Added 1 as approved: Geovanny Alexander Pineda Cubias",
+  "note": "Added 1 as approved: Manuel Seberiano Garcia-Munoz",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

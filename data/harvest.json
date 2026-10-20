@@ -1,5 +1,32 @@
 [
   {
+    "name": "Manuel Seberiano Garcia-Munoz",
+    "city": "Nevada",
+    "crime": "Removed: Manuel Seberiano Garcia-Munoz is charged with one count of deported alien found in the United States. Because record checks indicated that Garcia-Munoz is a citizen of Mexico who was illegally present in the United States after previously being removed, Immigration and Customs Enforcement (ICE) sent an immigration detainer.",
+    "usa": "DOJ release Oct 20, 2026: Illegal Alien With Multiple Deportations and Violent Felony Convictions Charged for Illegal Reentry",
+    "foreign": "Not stated in post",
+    "picked": "10/20/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261020-manuel-seberiano-garcia-munoz",
+    "when": "20 Oct 2026",
+    "severity": 5,
+    "severityReason": "Illegal entry / reentry",
+    "severityCrimes": [
+      "Illegal entry / reentry"
+    ],
+    "text": "DOJ Oct 20, 2026, as posted: Manuel Seberiano Garcia-Munoz is charged with one count of deported alien found in the United States. Because record checks indicated that Garcia-Munoz is a citizen of Mexico who was illegally present in the United States after previously being removed, Immigration and Customs Enforcement (ICE) sent an immigration detainer.",
+    "photo": "",
+    "via": "justice.gov/usao-nv/pr/illegal-alien-multiple-deportations-and-violent-felony-convictions-charged-illegal",
+    "sourceUrl": "https://www.justice.gov/usao-nv/pr/illegal-alien-multiple-deportations-and-violent-felony-convictions-charged-illegal",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "DOJ",
+    "lat": 38.8026,
+    "lon": -116.4194,
+    "status": "approved"
+  },
+  {
     "name": "Geovanny Alexander Pineda Cubias",
     "city": "Oklahoma",
     "crime": "Convicted: TULSA, Okla. – A federal jury convicted Geovanny Alexander Pineda Cubias, a citizen of El Salvador unlawfully residing in the United States, of three counts charged against him.",

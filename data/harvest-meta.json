@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-10-20T20:19:40Z",
-  "rows": 670,
-  "approved": 664,
+  "updatedAt": "2026-10-20T23:40:50Z",
+  "rows": 671,
+  "approved": 665,
   "pending": 6,
   "photos": 171,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-20T20:19:39Z",
+  "lastAddedAt": "2026-10-20T23:40:48Z",
   "lastAddedCount": 1,
   "lastAdded": [
-    "Geovanny Alexander Pineda Cubias"
+    "Manuel Seberiano Garcia-Munoz"
   ],
-  "harvestSha256": "b2f6be7fbc293eb784d14f8d8e463e86da359b739725e07c725d8fed1518c823",
+  "harvestSha256": "51e3d9b6a42219017536a5a9f4ae03dc4e4d5d3656d8d1b6f9b00711fad1a8e6",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
