@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-10-20T17:41:04Z",
+  "updatedAt": "2026-10-20T18:07:06Z",
   "rows": 655,
   "approved": 649,
   "pending": 6,
-  "photos": 143,
+  "photos": 171,
   "reviewRows": 762,
   "lastAddedAt": "2026-10-20T17:40:53Z",
   "lastAddedCount": 1,
   "lastAdded": [
     "Octavio Fragoso"
   ],
-  "harvestSha256": "1fc7674719df7ea0ac0545c0bea4a2ad98c406704f30255d1410a90d61b7dd80",
+  "harvestSha256": "340c64c8ad09099ed98c126e90d3351289ed4a23fa4e8f0d4a8e310f08d74d6f",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
