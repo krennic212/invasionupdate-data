@@ -1,19 +1,18 @@
 {
-  "updatedAt": "2026-10-20T18:49:10Z",
-  "rows": 660,
-  "approved": 654,
+  "updatedAt": "2026-10-20T19:47:46Z",
+  "rows": 664,
+  "approved": 658,
   "pending": 6,
   "photos": 171,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-20T18:49:10Z",
-  "lastAddedCount": 5,
+  "lastAddedAt": "2026-10-20T19:47:11Z",
+  "lastAddedCount": 4,
   "lastAdded": [
-    "Francis Martinez Alvarez",
-    "Thong Vilaiphone",
-    "Isidro Flores Rodriguez",
-    "Gustavo Cardenas Arreola",
-    "Nelson Alexander Chay"
+    "Alemo Makesi Sampson",
+    "Hernaldo Beltran-Perea",
+    "Oscar Gerardo Solorzano-Garcia",
+    "Hanlie Venter"
   ],
-  "harvestSha256": "a07b9d62bb719d94a72eefd964e89df5124142f111cb2d6409e28a24f78277ba",
+  "harvestSha256": "555bccb47fd66b0751d5e35f5a8ea20adf5480a51e40de8de0e45449eaee1724",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-20",
   "windowDays": 7,
-  "total": 216,
+  "total": 220,
   "rows": [
     {
       "id": "dhs-20261016-jaime-velasquez-orozco",
@@ -153,6 +153,18 @@
       ]
     },
     {
+      "id": "x-2112629332979933428-alemo-makesi-sampson",
+      "name": "Alemo Makesi Sampson",
+      "when": "20 Oct 2026",
+      "severity": 131,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Assault / battery",
+        "Burglary / theft"
+      ]
+    },
+    {
       "id": "x-2111506352254357989-beza-kebede",
       "name": "Beza Kebede",
       "when": "17 Oct 2026",
@@ -173,6 +185,17 @@
       "severityCrimes": [
         "Murder / manslaughter",
         "Burglary / theft"
+      ]
+    },
+    {
+      "id": "x-2112627626602799184-hernaldo-beltran-perea",
+      "name": "Hernaldo Beltran-Perea",
+      "when": "20 Oct 2026",
+      "severity": 128,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Drug trafficking"
       ]
     },
     {
@@ -285,17 +308,6 @@
       "severityCrimes": [
         "Child sex crime",
         "DUI"
-      ]
-    },
-    {
-      "id": "x-2112267614667911511-sergio-de-anda-rodriguez",
-      "name": "Sergio De Anda-Rodriguez",
-      "when": "19 Oct 2026",
-      "severity": 105,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Burglary / theft"
       ]
     },
     {
