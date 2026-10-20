@@ -1,14 +1,20 @@
 {
-  "checkedAt": 1792514057491,
-  "checkedAtIso": "2026-10-20T16:34:17.491Z",
-  "added": [],
+  "checkedAt": 1792525715796,
+  "checkedAtIso": "2026-10-20T19:48:35.796Z",
+  "added": [
+    "Vong Vongviset",
+    "Jhostin Richard Abreu-Concepcion",
+    "Bayron David Oviedo-Diaz",
+    "Juan Hernandez-Ortiz",
+    "Mario Mondragon"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 81,
+  "scannedReleases": 90,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 5 as approved: Vong Vongviset, Jhostin Richard Abreu-Concepcion, Bayron David Oviedo-Diaz, Juan Hernandez-Ortiz, Mario Mondragon",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

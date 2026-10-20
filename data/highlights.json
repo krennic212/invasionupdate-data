@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-20",
   "windowDays": 7,
-  "total": 220,
+  "total": 224,
   "rows": [
     {
       "id": "dhs-20261016-jaime-velasquez-orozco",
@@ -329,6 +329,16 @@
       "severityCrimes": [
         "Violent crime against a child",
         "DUI"
+      ]
+    },
+    {
+      "id": "dhs-20261020-vong-vongviset",
+      "name": "Vong Vongviset",
+      "when": "20 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
       ]
     },
     {
