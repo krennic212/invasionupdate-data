@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-20",
   "windowDays": 7,
-  "total": 175,
+  "total": 179,
   "rows": [
     {
       "id": "x-2111148670829957349-leo-robert-jackson",
@@ -110,6 +110,18 @@
       ]
     },
     {
+      "id": "x-2112395633940382179-juan-pablo-arellano-calderon",
+      "name": "Juan Pablo Arellano Calderon",
+      "when": "19 Oct 2026",
+      "severity": 126,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Assault / battery",
+        "Drug possession"
+      ]
+    },
+    {
       "id": "x-2110460986750586887-denis-sabastian-baca-lopes",
       "name": "Denis Sabastian Baca-Lopes",
       "when": "14 Oct 2026",
@@ -173,6 +185,17 @@
       "severityCrimes": [
         "Attack on police officer",
         "Drug possession"
+      ]
+    },
+    {
+      "id": "x-2112319633269112918-florentino-ortiz-vivar",
+      "name": "Florentino Ortiz Vivar",
+      "when": "19 Oct 2026",
+      "severity": 105,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "DUI"
       ]
     },
     {
@@ -253,26 +276,6 @@
       "id": "dhs-20261016-claudius-anglo-ricardo-smith",
       "name": "Claudius Anglo Ricardo Smith",
       "when": "16 Oct 2026",
-      "severity": 95,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter"
-      ]
-    },
-    {
-      "id": "dhs-20261016-korakanh-phornsavanh",
-      "name": "Korakanh Phornsavanh",
-      "when": "16 Oct 2026",
-      "severity": 95,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter"
-      ]
-    },
-    {
-      "id": "dhs-20261015-cuong-chanh-phan",
-      "name": "Cuong Chanh Phan",
-      "when": "15 Oct 2026",
       "severity": 95,
       "severityReason": "Murder / manslaughter",
       "severityCrimes": [
