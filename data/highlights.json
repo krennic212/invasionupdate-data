@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-20",
   "windowDays": 7,
-  "total": 211,
+  "total": 216,
   "rows": [
     {
       "id": "dhs-20261016-jaime-velasquez-orozco",
@@ -114,6 +114,18 @@
         "Armed robbery / aggravated assault",
         "Weapons",
         "Burglary / theft"
+      ]
+    },
+    {
+      "id": "x-2112613244515074331-francis-martinez-alvarez",
+      "name": "Francis Martinez Alvarez",
+      "when": "20 Oct 2026",
+      "severity": 141,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Armed robbery / aggravated assault",
+        "Illegal entry / reentry"
       ]
     },
     {
@@ -287,17 +299,6 @@
       ]
     },
     {
-      "id": "x-2110830172635079157-william-benjamin-diaz-jacinto",
-      "name": "William Benjamin Diaz Jacinto",
-      "when": "15 Oct 2026",
-      "severity": 105,
-      "severityReason": "Weapons",
-      "severityCrimes": [
-        "Weapons",
-        "Drug trafficking"
-      ]
-    },
-    {
       "id": "ice-20261019-robson-martins-da-silva",
       "name": "Robson Martins Da Silva",
       "when": "19 Oct 2026",
@@ -439,6 +440,26 @@
       ]
     },
     {
+      "id": "x-2112613236386222222-gustavo-cardenas-arreola",
+      "name": "Gustavo Cardenas Arreola",
+      "when": "20 Oct 2026",
+      "severity": 83,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2112613234196799885-nelson-alexander-chay",
+      "name": "Nelson Alexander Chay",
+      "when": "20 Oct 2026",
+      "severity": 83,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
       "id": "x-2112596708794445950-octavio-fragoso",
       "name": "Octavio Fragoso",
       "when": "20 Oct 2026",
@@ -476,6 +497,16 @@
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2112613239582527890-isidro-flores-rodriguez",
+      "name": "Isidro Flores Rodriguez",
+      "when": "20 Oct 2026",
+      "severity": 72,
+      "severityReason": "Violent crime against a child",
+      "severityCrimes": [
+        "Violent crime against a child"
       ]
     }
   ]
