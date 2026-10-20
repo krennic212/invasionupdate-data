@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-20",
   "windowDays": 7,
-  "total": 210,
+  "total": 211,
   "rows": [
     {
       "id": "dhs-20261016-jaime-velasquez-orozco",
@@ -433,6 +433,16 @@
       "name": "Luis Antonio Alejandro-Ramos",
       "when": "14 Oct 2026",
       "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2112596708794445950-octavio-fragoso",
+      "name": "Octavio Fragoso",
+      "when": "20 Oct 2026",
+      "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"

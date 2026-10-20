@@ -1,5 +1,32 @@
 [
   {
+    "name": "Octavio Fragoso",
+    "city": "Not stated",
+    "crime": "Arrested: ICE San Francisco arrested criminal alien Octavio Fragoso, 58, of Mexico, in Ione.",
+    "usa": "ICE X post Oct 20, 2026 (@EROSanFrancisco)",
+    "foreign": "Not stated in post",
+    "picked": "10/20/2026 (@EROSanFrancisco post)",
+    "entered": "Not stated",
+    "office": "EROSanFrancisco",
+    "id": "x-2112596708794445950-octavio-fragoso",
+    "when": "20 Oct 2026",
+    "severity": 83,
+    "severityReason": "Child sex crime",
+    "severityCrimes": [
+      "Child sex crime"
+    ],
+    "text": "@EROSanFrancisco Oct 20, 2026, as posted: ICE San Francisco arrested criminal alien Octavio Fragoso, 58, of Mexico, in Ione. He has a conviction for lewd or lascivious acts with a minor and a prior removal. He has a final order of removal and is in ICE custody pending removal.",
+    "photo": "",
+    "via": "@EROSanFrancisco 2112596708794445950",
+    "sourceUrl": "https://x.com/EROSanFrancisco/status/2112596708794445950",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved"
+  },
+  {
     "name": "Eustaquio Espinosa-Hernández",
     "city": "Wisconsin",
     "crime": "Charged: Miguel Ángel Campos-Barragán, Giovanni Vidrio-López, and Eustaquio Espinosa-Hernández, all Mexican citizens, were extradited from Costa Rica after being indicted in the Eastern District of Wisconsin in May 2025 for alleged violations of the Maritime Drug Law Enforcement Act (MDLEA).",
