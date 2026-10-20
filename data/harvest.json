@@ -1805,7 +1805,7 @@
   },
   {
     "name": "Omar Alexander Muñoz",
-    "city": "Not stated",
+    "city": "Commerce, CA",
     "crime": "Charged: Omar Alexander Muñoz, 72, a Belizean national living in Commerce, fraudulently registered to vote in September 2019, claiming his was a U.S. citizen, then voted in U.S. elections in 2020, twice in 2022, and in 2024.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -1826,14 +1826,14 @@
     "voting": true,
     "origin": "Belize",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 33.9945,
+    "lon": -118.15,
     "status": "approved",
     "statusSourceUrl": "https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes"
   },
   {
     "name": "Amandeep Kaur",
-    "city": "Not stated",
+    "city": "Rancho Palos Verdes, CA",
     "crime": "Charged: Amandeep Kaur, 30, an Indian national living in Rancho Palos Verdes and who is seeking to become a U.S. citizen, fraudulently registered to vote in December 2022 and voted in the November 2024 U.S. election.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -1854,14 +1854,14 @@
     "voting": true,
     "origin": "India",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 33.7878,
+    "lon": -118.3572,
     "status": "approved",
     "statusSourceUrl": "https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes"
   },
   {
     "name": "Ana Domínguez",
-    "city": "Not stated",
+    "city": "Long Beach, CA",
     "crime": "Charged: Ana Domínguez, 60, a Salvadoran national living in Long Beach, fraudulently registered to vote in July 2006 and lied in her naturalization paperwork in March 2026.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -1882,13 +1882,13 @@
     "voting": true,
     "origin": "El Salvador",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 33.77,
+    "lon": -118.19,
     "status": "approved"
   },
   {
     "name": "Axel Giovani Prera García",
-    "city": "Not stated",
+    "city": "Pico Rivera, CA",
     "crime": "Charged: Axel Giovani Prera García, 46, a Guatemalan national and Pico Rivera resident, fraudulently registered to vote in 2002 and 2005, and lied in his naturalization paperwork in June 2025.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -1909,13 +1909,13 @@
     "voting": true,
     "origin": "Guatemala",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 33.9886,
+    "lon": -118.0883,
     "status": "approved"
   },
   {
     "name": "Flavio Alejandro Zúñiga",
-    "city": "Not stated",
+    "city": "La Puente, CA",
     "crime": "Charged: Flavio Alejandro Zúñiga, 43, a Mexico national and La Puente resident, fraudulently registered to vote in 2003 and lied in his naturalization paperwork in February 2026.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -1936,13 +1936,13 @@
     "voting": true,
     "origin": "Mexico",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 34.0294,
+    "lon": -117.9341,
     "status": "approved"
   },
   {
     "name": "Butleng Taing",
-    "city": "Not stated",
+    "city": "Long Beach, CA",
     "crime": "Charged: Butleng Taing, 43, a Cambodian national living in Long Beach, fraudulently registered to vote in July 2021, voted in the 2022 and 2024 U.S. elections, and lied on his naturalization paperwork in August 2025.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -1963,13 +1963,13 @@
     "voting": true,
     "origin": "Cambodia",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 33.77,
+    "lon": -118.19,
     "status": "approved"
   },
   {
     "name": "Carlos Antonio Galeas",
-    "city": "Not stated",
+    "city": "West Covina, CA",
     "crime": "Charged: Carlos Antonio Galeas, 54, a Honduran national and West Covina resident, fraudulently registered to vote in 2012 and 2016, then lied in his naturalization paperwork in September 2018.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -1990,13 +1990,13 @@
     "voting": true,
     "origin": "Honduras",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 34.0673,
+    "lon": -117.9366,
     "status": "approved"
   },
   {
     "name": "Ernest Gutiérrez Ruvalcaba",
-    "city": "Not stated",
+    "city": "Wilmington, CA",
     "crime": "Charged: Ernest Gutiérrez Ruvalcaba, 57, a Mexican national living in Wilmington, fraudulently registered to vote in February 2024 and voted one month later.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2017,13 +2017,13 @@
     "voting": true,
     "origin": "Mexico",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 33.7855,
+    "lon": -118.2645,
     "status": "approved"
   },
   {
     "name": "Jesús Narez-Madrigal",
-    "city": "Not stated",
+    "city": "Carson, CA",
     "crime": "Charged: Jesús Narez-Madrigal, 52, a Mexican national living in Carson, fraudulently registered to vote in 2014, voted in the 2024 U.S. general election, and lied in his naturalization paperwork in June 2024.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2044,13 +2044,13 @@
     "voting": true,
     "origin": "Mexico",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 33.823,
+    "lon": -118.2684,
     "status": "approved"
   },
   {
     "name": "José Antonio Bañuelos-Díaz",
-    "city": "Not stated",
+    "city": "West Adams, CA",
     "crime": "Charged: José Antonio Bañuelos-Díaz, 42, a Mexican national and West Adams resident, fraudulently registered to vote in 2007 and lied on his naturalization paperwork in March 2025.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2071,13 +2071,13 @@
     "voting": true,
     "origin": "Mexico",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 34.0326,
+    "lon": -118.3184,
     "status": "approved"
   },
   {
     "name": "Muhammad Khan",
-    "city": "Not stated",
+    "city": "Anaheim, CA",
     "crime": "Charged: Muhammad Khan, 50, a Pakistani national and Anaheim resident, submitted a provisional ballot in 2020 and lied on his naturalization paperwork five years later.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2093,16 +2093,16 @@
     "photo": "",
     "via": "justice.gov/usao-cdca/pr/11-foreign-nationals-arrested-california-federal-charges-alleging-they-illegally",
     "sourceUrl": "https://www.justice.gov/usao-cdca/pr/11-foreign-nationals-arrested-california-federal-charges-alleging-they-illegally",
-    "voting": false,
+    "voting": true,
     "origin": "Pakistan",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 33.8427,
+    "lon": -117.954,
     "status": "approved"
   },
   {
     "name": "Rouzbeh Seyamaknejad",
-    "city": "Not stated",
+    "city": "Rancho Palos Verdes, CA",
     "crime": "Charged: Rouzbeh Seyamaknejad, 63, a Canadian national and Rancho Palos Verdes resident, fraudulently registered to vote in December 2018, lied in his naturalization application in January 2024, and voted in the November 2024 U.S. election.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2123,13 +2123,13 @@
     "voting": true,
     "origin": "Canada",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 33.7878,
+    "lon": -118.3572,
     "status": "approved"
   },
   {
     "name": "Sulema de León",
-    "city": "Not stated",
+    "city": "Long Beach, CA",
     "crime": "Charged: Sulema de León, 35, a Mexican national and Long Beach resident, fraudulently registered to vote in 2013, lied on her naturalization application in 2019, and voted in the November 2020 U.S. general election.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2150,13 +2150,13 @@
     "voting": true,
     "origin": "Mexico",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 33.77,
+    "lon": -118.19,
     "status": "approved"
   },
   {
     "name": "Maricela Nazarín González",
-    "city": "Not stated",
+    "city": "Clovis, CA",
     "crime": "Charged: Maricela Nazarín González, 43, a Mexican national living in Clovis, registered to vote in 2020, indicating that she was a U.S. citizen, and voted in elections in 2022, twice in 2024, and 2025.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2175,14 +2175,14 @@
     "voting": true,
     "origin": "Mexico",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 36.8243,
+    "lon": -119.6824,
     "status": "approved",
     "statusSourceUrl": "https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes"
   },
   {
     "name": "Rony de Jesús Sicaja",
-    "city": "Not stated",
+    "city": "Fresno, CA",
     "crime": "Charged: Rony de Jesús Sicaja, 38, a Guatemalan national living in Fresno, fraudulently registered to vote in 2017, and voted in the June 2022 primary election and the November 2024 general election in the United States.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2203,13 +2203,13 @@
     "voting": true,
     "origin": "Guatemala",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 36.8411,
+    "lon": -119.8004,
     "status": "approved"
   },
   {
     "name": "Camino Giles Jiménez",
-    "city": "Not stated",
+    "city": "Kerman, CA",
     "crime": "Charged: Camino Giles Jiménez, 51, a Mexican national living in Kerman, knowingly voted in three U.S. elections despite knowing he is a noncitizen, the most recent election being the June 2026 primary.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2228,13 +2228,13 @@
     "voting": true,
     "origin": "Mexico",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 36.7236,
+    "lon": -120.0599,
     "status": "approved"
   },
   {
     "name": "Juan Antonio Rivas García",
-    "city": "Not stated",
+    "city": "Sacramento, CA",
     "crime": "Charged: Juan Antonio Rivas García, 46, a Mexican national and Sacramento resident, fraudulently registered to vote in 2018 and 2020, both times falsely asserting under oath that he was a U.S. citizen.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2255,14 +2255,14 @@
     "voting": true,
     "origin": "Mexico",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 38.58,
+    "lon": -121.49,
     "status": "approved",
     "statusSourceUrl": "https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes"
   },
   {
     "name": "Giezell Viduya Adawag",
-    "city": "Not stated",
+    "city": "Vacaville, CA",
     "crime": "Charged: Giezell Viduya Adawag, 41, a Philippines national and Vacaville resident, fraudulently registered to vote the day of the November 2024 general election, falsely certified that she was a U.S. citizen, and voted in the election that day.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2283,14 +2283,14 @@
     "voting": true,
     "origin": "Philippines",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 38.3419,
+    "lon": -121.9623,
     "status": "approved",
     "statusSourceUrl": "https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes"
   },
   {
     "name": "Kamlesh Navnitlal Shah",
-    "city": "Not stated",
+    "city": "Sacramento, CA",
     "crime": "Charged: Kamlesh Navnitlal Shah, 67, an Indian national living in Sacramento, fraudulently registered to vote on the day of the November 2024 general election and voted that day. He is charged via information.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2311,13 +2311,13 @@
     "voting": true,
     "origin": "India",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 38.58,
+    "lon": -121.49,
     "status": "approved"
   },
   {
     "name": "David Shapiro",
-    "city": "Not stated",
+    "city": "San Jose, CA",
     "crime": "Charged: David Shapiro, 41, a Georgian national living in San Jose, fraudulently registered to vote in 2024 and later voted in a U.S. election, and made false statements on his naturalization application that he had never claimed to be a U.S. citizen.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2338,13 +2338,13 @@
     "voting": true,
     "origin": "Georgia",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 37.3894,
+    "lon": -121.8868,
     "status": "approved"
   },
   {
     "name": "Moe Thida Lwin",
-    "city": "Not stated",
+    "city": "Daly City, CA",
     "crime": "Charged: Moe Thida Lwin, 57, a Myanmar national and Daly City resident, fraudulently registered to vote in 2024 and then proceeded to illegally vote in a U.S. citizen.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2365,14 +2365,14 @@
     "voting": true,
     "origin": "Myanmar",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 37.6879,
+    "lon": -122.4702,
     "status": "approved",
     "statusSourceUrl": "https://www.justice.gov/opa/pr/justice-department-charges-28-foreign-nationals-california-election-crimes"
   },
   {
     "name": "Manakotau Mataele Finau",
-    "city": "Not stated",
+    "city": "Hayward, CA",
     "crime": "Charged: Manakotau Mataele Finau, 61, a Tongan national and Hayward resident, fraudulently registered to vote in the 2024 election then vote, then lied about it in naturalization paperwork.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2393,13 +2393,13 @@
     "voting": true,
     "origin": "Tonga",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 37.6688,
+    "lon": -122.0808,
     "status": "approved"
   },
   {
     "name": "Maribel del Carmen Garcés Barriga",
-    "city": "Not stated",
+    "city": "San Francisco, CA",
     "crime": "Charged: Maribel del Carmen Garcés Barriga, 62, an Ecuadoran national and San Francisco resident, made false statements in her naturalization paperwork that she never claimed U.S. citizenship and had never voted in a U.S. election or had registered to vote.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2420,13 +2420,13 @@
     "voting": true,
     "origin": "Ecuador",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 37.6219,
+    "lon": -122.3819,
     "status": "approved"
   },
   {
     "name": "José Probitsado Amaro",
-    "city": "Not stated",
+    "city": "National City, CA",
     "crime": "Charged: José Probitsado Amaro, 51, a citizen of the Philippines living in National City, fraudulently registered to vote by falsely claiming to be a U.S. citizen.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2447,13 +2447,13 @@
     "voting": true,
     "origin": "Philippines",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 32.6749,
+    "lon": -117.0897,
     "status": "approved"
   },
   {
     "name": "Jennifer Jung",
-    "city": "Not stated",
+    "city": "San Diego, CA",
     "crime": "Charged: Jennifer Jung, 31, a Canadian national living in San Diego, fraudulently registered to vote by falsely claiming to be a U.S. citizen.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2474,13 +2474,13 @@
     "voting": true,
     "origin": "Canada",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 32.72,
+    "lon": -117.16,
     "status": "approved"
   },
   {
     "name": "Erick Ronaldo Soto Mendizábal",
-    "city": "Not stated",
+    "city": "Moreno Valley, CA",
     "crime": "Charged: Erick Ronaldo Soto Mendizábal, 64, a citizen of Guatemala and former Oceanside resident now living in Moreno Valley, fraudulently registered to vote by falsely claiming to be a U.S. citizen.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2501,13 +2501,13 @@
     "voting": true,
     "origin": "Guatemala",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 33.8858,
+    "lon": -117.2211,
     "status": "approved"
   },
   {
     "name": "Pamele Arbués Line",
-    "city": "Not stated",
+    "city": "Escondido, CA",
     "crime": "Charged: Pamele Arbués Line, 56, a citizen of the Philippines living in Escondido, registered to vote, cast a ballot in the November 2024 general election, and made false statements in her naturalization interview, denying that she had ever claimed U.S. citizenship and misrepresenting her voting history.",
     "usa": "DOJ release Oct 19, 2026: 11 Foreign Nationals Arrested in California on Federal Charges Alleging They Illegally Registered and Voted in U.S. Elections",
     "foreign": "Not stated in post",
@@ -2528,8 +2528,8 @@
     "voting": true,
     "origin": "Philippines",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 33.1101,
+    "lon": -117.07,
     "status": "approved"
   },
   {
@@ -4024,7 +4024,7 @@
   },
   {
     "name": "Mukeshkumar Somabhai Chaudhari",
-    "city": "Not stated",
+    "city": "Minnesota",
     "crime": "Arrested: WASHINGTON – The United States Department of Homeland Security (DHS) released the following statement after U.S. Immigration and Customs Enforcement's (ICE) Homeland Security Investigations (HSI) arrested Mukeshkumar Somabhai Chaudhari, a non-citizen, for knowingly making a false claim of United States citizenship to vote in the 2024 general election.",
     "usa": "DHS release Oct 16, 2026: ICE HSI Arrests Non-Citizen for Illegally Voting in the 2024 Election | Homeland Security",
     "foreign": "Not stated in post",
@@ -4045,8 +4045,8 @@
     "voting": true,
     "origin": "Not stated",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 46.7296,
+    "lon": -94.6859,
     "status": "approved"
   },
   {
@@ -5524,7 +5524,7 @@
   },
   {
     "name": "Denis Joseph Bouchard",
-    "city": "Not stated",
+    "city": "North Carolina",
     "crime": "Convicted: In addition to these recent indictments listed above, the U.S. Attorney’s Office for the Eastern District of North Carolina convicted Denis Joseph Bouchard, 70, a Canadian citizen, for falsely claiming to be a United States citizen when he voted.",
     "usa": "DOJ release Oct 15, 2026: EDNC Unveils Ten Federal Indictments Alleging Noncitizens Voted in the 2024 Election",
     "foreign": "Not stated in post",
@@ -5540,11 +5540,11 @@
     "photo": "",
     "via": "justice.gov/usao-ednc/pr/ednc-unveils-ten-federal-indictments-alleging-noncitizens-voted-2024-election",
     "sourceUrl": "https://www.justice.gov/usao-ednc/pr/ednc-unveils-ten-federal-indictments-alleging-noncitizens-voted-2024-election",
-    "voting": false,
+    "voting": true,
     "origin": "Canada",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 35.7596,
+    "lon": -79.0193,
     "status": "approved"
   },
   {
@@ -7163,7 +7163,7 @@
   },
   {
     "name": "Paulo Jorge Silva",
-    "city": "Not stated",
+    "city": "Philadelphia, PA",
     "crime": "Arrested: On October 5, @HSIPhiladelphia arrested Paulo Jorge Silva, an alien from Portugal, after voting records show that he is an active registered voter in Philadelphia and voted in the November 5, 2024 election.",
     "usa": "DHS X post Oct 13, 2026 (@DHSgov)",
     "foreign": "Not stated in post",
@@ -7184,9 +7184,10 @@
     "voting": true,
     "origin": "Portugal",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
-    "status": "approved"
+    "lat": 39.9526,
+    "lon": -75.1652,
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/usao-edpa/pr/four-non-citizens-charged-illegally-voting-2024-election"
   },
   {
     "name": "Fredy Rolando Rivera-Gonzalez",
@@ -8066,7 +8067,7 @@
   },
   {
     "name": "Hacina Saadi",
-    "city": "Not stated",
+    "city": "Philadelphia, PA",
     "crime": "Charged: Hacina Saadi, 48, an illegal alien from France, has been charged by information with voting by an alien during the 2024 election.",
     "usa": "DOJ release Oct 12, 2026: Justice Department Announces Charges Involving 16 Individuals for Election Crimes",
     "foreign": "Not stated in post",
@@ -8087,9 +8088,10 @@
     "voting": true,
     "origin": "France",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
-    "status": "approved"
+    "lat": 39.9526,
+    "lon": -75.1652,
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/usao-edpa/pr/four-non-citizens-charged-illegally-voting-2024-election"
   },
   {
     "name": "Miguel Angel Morales- Alvarez",
@@ -9566,12 +9568,13 @@
     "photo": "",
     "via": "@BillMelugin_ 2105327893643477092",
     "sourceUrl": "https://x.com/BillMelugin_/status/2105327893643477092",
-    "voting": false,
+    "voting": true,
     "origin": "Liberia",
     "confirmedBy": "Reporter (@BillMelugin_)",
     "lat": 46.7296,
     "lon": -94.6859,
-    "status": "approved"
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/usao-mn/pr/federal-grand-jury-indicts-ten-foreign-nationals-voter-fraud-minnesota-elections"
   },
   {
     "name": "Edvile Vaidoto Edmunds",
@@ -9598,7 +9601,8 @@
     "confirmedBy": "Reporter (@BillMelugin_)",
     "lat": 46.7296,
     "lon": -94.6859,
-    "status": "approved"
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/usao-mn/pr/federal-grand-jury-indicts-ten-foreign-nationals-voter-fraud-minnesota-elections"
   },
   {
     "name": "Joshua Frederick Kofi Edzie",
@@ -9625,7 +9629,8 @@
     "confirmedBy": "Reporter (@BillMelugin_)",
     "lat": 46.7296,
     "lon": -94.6859,
-    "status": "approved"
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/usao-mn/pr/federal-grand-jury-indicts-ten-foreign-nationals-voter-fraud-minnesota-elections"
   },
   {
     "name": "Alan Barbu Kargbo",
@@ -9652,7 +9657,8 @@
     "confirmedBy": "Reporter (@BillMelugin_)",
     "lat": 46.7296,
     "lon": -94.6859,
-    "status": "approved"
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/usao-mn/pr/federal-grand-jury-indicts-ten-foreign-nationals-voter-fraud-minnesota-elections"
   },
   {
     "name": "Paul Kras",
@@ -9679,7 +9685,8 @@
     "confirmedBy": "Reporter (@BillMelugin_)",
     "lat": 46.7296,
     "lon": -94.6859,
-    "status": "approved"
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/usao-mn/pr/federal-grand-jury-indicts-ten-foreign-nationals-voter-fraud-minnesota-elections"
   },
   {
     "name": "Fadil Rasim Ozegovic",
@@ -9706,7 +9713,8 @@
     "confirmedBy": "Reporter (@BillMelugin_)",
     "lat": 46.7296,
     "lon": -94.6859,
-    "status": "approved"
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/usao-mn/pr/federal-grand-jury-indicts-ten-foreign-nationals-voter-fraud-minnesota-elections"
   },
   {
     "name": "Aparecido Donizetti Padovan",
@@ -9733,10 +9741,11 @@
     "confirmedBy": "Reporter (@BillMelugin_)",
     "lat": 46.7296,
     "lon": -94.6859,
-    "status": "approved"
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/usao-mn/pr/federal-grand-jury-indicts-ten-foreign-nationals-voter-fraud-minnesota-elections"
   },
   {
-    "name": "Chis Adam Pettiquoi",
+    "name": "Chris Adam Pettiquoi",
     "city": "Minnesota",
     "crime": "Charged: Liberian national Chis Adam Pettiquoi, 43, a lawful permanent resident has been charged on one count of making a false claim of citizenship in order to vote and one count of voting by alien.",
     "usa": "Trusted reporter X post Sep 30, 2026 (@BillMelugin_)",
@@ -9760,7 +9769,9 @@
     "confirmedBy": "Reporter (@BillMelugin_)",
     "lat": 46.7296,
     "lon": -94.6859,
-    "status": "approved"
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/usao-mn/pr/federal-grand-jury-indicts-ten-foreign-nationals-voter-fraud-minnesota-elections",
+    "aka": "Chis Adam Pettiquoi"
   },
   {
     "name": "Christian Liam Schenk",
@@ -9787,7 +9798,8 @@
     "confirmedBy": "Reporter (@BillMelugin_)",
     "lat": 46.7296,
     "lon": -94.6859,
-    "status": "approved"
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/usao-mn/pr/federal-grand-jury-indicts-ten-foreign-nationals-voter-fraud-minnesota-elections"
   },
   {
     "name": "Hester Sophia Weihmann",
@@ -9814,7 +9826,8 @@
     "confirmedBy": "Reporter (@BillMelugin_)",
     "lat": 46.7296,
     "lon": -94.6859,
-    "status": "approved"
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/usao-mn/pr/federal-grand-jury-indicts-ten-foreign-nationals-voter-fraud-minnesota-elections"
   },
   {
     "name": "Maycon Eleazar De Jesus Barrios",
@@ -9869,11 +9882,12 @@
     "confirmedBy": "DOJ",
     "lat": 30.8635,
     "lon": -87.7644,
-    "status": "approved"
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/usao-sdal/pr/non-citizens-charged-election-crimes"
   },
   {
     "name": "Staciann Pollion Davis",
-    "city": "Not stated",
+    "city": "Clarke County, AL",
     "crime": "Charged: 1) A Jamaican national Staciann Pollion Davis, 42, a lawful permanent resident, (shown below) was charged by criminal complaint with allegedly voting as an alien in the November 2024 general election.",
     "usa": "DOJ X post Oct 8, 2026 (@TheJusticeDept)",
     "foreign": "Not stated in post",
@@ -9894,9 +9908,10 @@
     "voting": true,
     "origin": "Jamaica",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
-    "status": "approved"
+    "lat": 31.6766,
+    "lon": -87.8306,
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/usao-sdal/pr/non-citizens-charged-election-crimes"
   },
   {
     "name": "Juan Carlos Paxtor-Chay",
@@ -10745,7 +10760,7 @@
   },
   {
     "name": "Andre’s Garcia",
-    "city": "Not stated",
+    "city": "Cass County, MO",
     "crime": "Charged: Andre’s Garcia, 64, a lawful permanent resident from Cuba, was arrested today after being charged with unlawful voting by an alien.",
     "usa": "DOJ X post Oct 6, 2026 (@USAO_WDMO)",
     "foreign": "Not stated in post",
@@ -10766,9 +10781,10 @@
     "voting": true,
     "origin": "Cuba",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
-    "status": "approved"
+    "lat": 38.6467,
+    "lon": -94.3541,
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/usao-wdmo/pr/lawful-permanent-resident-cuba-arrested-unlawful-voting-alien"
   },
   {
     "name": "Jonathan Gomez Rangel",
@@ -10969,7 +10985,7 @@
   },
   {
     "name": "Andrea Catanese",
-    "city": "Not stated",
+    "city": "Pasco County, FL",
     "crime": "Charged: Italian national Andrea Catanese, 60, a lawful permanent resident, has been charged by federal indictment with voting by an alien, attempting to procure naturalization unlawfully, & making a false statement related to naturalization.",
     "usa": "HSI X post Oct 6, 2026 (@HSITampa)",
     "foreign": "Not stated in post",
@@ -10990,9 +11006,10 @@
     "voting": true,
     "origin": "Italy",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
-    "status": "approved"
+    "lat": 28.3232,
+    "lon": -82.4319,
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/usao-mdfl/pr/illegal-alien-italy-charged-voting-2024-general-election-and-lying-about-it"
   },
   {
     "name": "Pedro Amaya",
@@ -11500,7 +11517,7 @@
   },
   {
     "name": "Terrance Patrick Evans",
-    "city": "Not stated",
+    "city": "Citrus County, FL",
     "crime": "Charged: Bahamian national Terrance Patrick Evans, 37, a lawful permanent resident, has been charged by information with one count of voting by an alien.",
     "usa": "HSI X post Oct 5, 2026 (@HSITampa)",
     "foreign": "Not stated in post",
@@ -11521,9 +11538,10 @@
     "voting": true,
     "origin": "Bahamas",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
-    "status": "approved"
+    "lat": 28.8476,
+    "lon": -82.5257,
+    "status": "approved",
+    "statusSourceUrl": "https://www.justice.gov/usao-mdfl/pr/alien-charged-illegally-voting-2024-election"
   },
   {
     "name": "Cesar Garibay Acevedo",

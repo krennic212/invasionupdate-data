@@ -125,6 +125,60 @@ const AP_STATES = {
 };
 const CODES = new Set([...Object.values(STATES)]);
 const STATE_OF = (s) => STATES[s] || AP_STATES[s] || (CODES.has(s) ? s : "");
+/** Approximate geographic center of each state, for rows whose only place is the state (USAO district). */
+const STATE_CENTER = {
+  AL: [32.8067, -86.7911], AK: [61.3707, -152.4044], AZ: [34.0489, -111.0937], AR: [34.9697, -92.3731], CA: [36.7783, -119.4179],
+  CO: [39, -105.5], CT: [41.6032, -73.0877], DE: [38.9108, -75.5277], DC: [38.9072, -77.0369], FL: [27.6648, -81.5158],
+  GA: [32.1656, -82.9001], HI: [19.8968, -155.5828], ID: [44.0682, -114.742], IL: [40.6331, -89.3985], IN: [40.2672, -86.1349],
+  IA: [41.878, -93.0977], KS: [39.0119, -98.4842], KY: [37.8393, -84.27], LA: [31, -92], ME: [45.2538, -69.4455],
+  MD: [39.0458, -76.6413], MA: [42.4072, -71.3824], MI: [44.3148, -85.6024], MN: [46.7296, -94.6859], MS: [32.3547, -89.3985],
+  MO: [37.9643, -91.8318], MT: [46.8797, -110.3626], NE: [41.4925, -99.9018], NV: [38.8026, -116.4194], NH: [43.1939, -71.5724],
+  NJ: [40.0583, -74.4057], NM: [34.5199, -105.8701], NY: [40.7128, -74.006], NC: [35.7596, -79.0193], ND: [47.5515, -101.002],
+  OH: [40.4173, -82.9071], OK: [35.0078, -97.0929], OR: [43.8041, -120.5542], PA: [41.2033, -77.1945], RI: [41.5801, -71.4774],
+  SC: [33.8361, -81.1637], SD: [43.9695, -99.9018], TN: [35.5175, -86.5804], TX: [31.9686, -99.9018], UT: [39.321, -111.0937],
+  VT: [44.5588, -72.5778], VA: [37.5, -78.6], WA: [47.7511, -120.7401], WV: [38.5976, -80.4549], WI: [43.7844, -88.7879],
+  WY: [43.076, -107.2903], PR: [18.2208, -66.5901],
+};
+const STATE_NAME_OF = Object.fromEntries(Object.entries(STATES).map(([n, c]) => [c, n]));
+
+/** State code of a U.S. Attorney's Office release URL ("/usao-ndtx/" -> "TX", "/usao-mn/" -> "MN"). */
+export function stateFromUsao(url) {
+  const m = String(url || "").match(/\/usao-([a-z]{2,4})\//i);
+  if (!m) return "";
+  const code = m[1].slice(-2).toUpperCase();
+  return CODES.has(code) ? code : "";
+}
+
+/**
+ * Fallback place for a row whose sentence has no "in X, ST" (Krennic 2026-10-20: 33 voting rows were
+ * "Not stated"). The release's own locality ("living in Long Beach", "a Fresno resident", "of Hudson
+ * County") with the USAO district's state, when that city is in the map table or is a county; otherwise
+ * the district's state name. The USAO district counts as the state. Empty when there is no district.
+ */
+export function placeFromDistrict(sentence, url) {
+  const st = stateFromUsao(url);
+  if (!st) return "";
+  const text = String(sentence || "");
+  const loc =
+    text.match(/\b(?:living|residing|who lives|who resides)\s+in\s+((?:[A-Z][A-Za-z.'’-]+\s?){1,4})/) ||
+    text.match(/\b(?:an?\s+)?((?:[A-Z][A-Za-z.'’-]+\s?){1,3})\s+resident\b/) ||
+    text.match(/\bof\s+((?:[A-Z][A-Za-z.'’-]+\s){0,2}County)\b/);
+  if (loc) {
+    const place = loc[1].trim().replace(/[,.]$/, "");
+    const key = `${place}, ${st}`;
+    if (/\bCounty$/.test(place) || CITY_GEO_CI.has(key.toLowerCase())) return key;
+  }
+  return STATE_NAME_OF[st] || "";
+}
+
+/** { lat, lon } for a city from the table, or the state's center for a bare state name. */
+export function geoForPlace(place) {
+  const ll = latLonFor(place);
+  if (ll.lat != null) return ll;
+  const st = STATES[String(place || "").trim()];
+  return st && STATE_CENTER[st] ? { lat: STATE_CENTER[st][0], lon: STATE_CENTER[st][1] } : ll;
+}
+
 const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const STATE_RE = [
   ...Object.keys(STATES).map((k) => `${esc(k)}\\b`),
@@ -583,10 +637,11 @@ export function toRow(hit, rel) {
   const a = AGENCY[rel.office] || { label: rel.office, confirmedBy: "DHS" };
   const d = dateParts(rel.date);
   const status = releaseLabel(hit.sentence, hit.noTitleStage ? "" : rel.title);
+  const city = hit.city || placeFromDistrict(hit.sentence, rel.url) || "Not stated";
   return {
     name: hit.name,
     ...(hit.aka ? { aka: hit.aka } : {}),
-    city: hit.city || "Not stated",
+    city,
     crime: `${status}: ${hit.sentence}`,
     usa: `${a.label} release ${d.long}: ${rel.title}`,
     foreign: "Not stated in post",
@@ -599,9 +654,13 @@ export function toRow(hit, rel) {
     photo: "",
     via: rel.url.replace(/^https:\/\/(www\.)?/, ""),
     sourceUrl: rel.url,
-    voting: /\b(illegal(ly)? vot|unlawful(ly)? vot|voting (as|by)|voted in|vote in|registered to vote)/i.test(hit.sentence),
+    voting: VOTING.test(hit.sentence),
     origin: cleanOrigin(hit.origin) || countryFor(hit.name, hit.sentence) || "Not stated", // only wording tied to this person
     confirmedBy: a.confirmedBy,
-    ...latLonFor(hit.city),
+    ...(city === "Not stated" ? latLonFor("") : geoForPlace(city)),
   };
 }
+
+/** Voting / registration fraud wording in the person's own sentence. */
+export const VOTING =
+  /\b(illegal(ly)? vot|unlawful(ly)? vot|voting (as|by)|voted in|vote in|registered to vote|in order to vote|when (?:he|she) voted|provisional ballot|cast (?:a |her |his )?ballots?)/i;

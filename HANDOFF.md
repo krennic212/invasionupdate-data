@@ -1,3 +1,19 @@
+# HANDOFF: 2026-10-20 (9:46 AM CDT) voting rows: places filled, cross-post to the Fraud Ledger
+
+- 35 voting rows had city "Not stated"; all filled from the official releases (lat/lon from city-geo.json or set by hand for
+  West Adams, Kerman, Daly City, Hayward and the counties): 27 CDCA/OPA California rows ("living in X, California" / "X,
+  California, resident"), Chaudhari -> Minnesota (DHS: District of Minnesota indictment), Paulo Jorge Silva and Hacina Saadi ->
+  Philadelphia, PA (usao-edpa: "residing in Philadelphia"), Davis -> Clarke County, AL, Andre’s Garcia -> Cass County, MO,
+  Catanese -> Pasco County, FL, Evans -> Citrus County, FL (MDFL), Bouchard -> North Carolina (EDNC; no city given).
+- voting flag was false on three official voting cases; set true: Bhator Konah Bryant (false claim of citizenship in order to
+  vote, usao-mn), Muhammad Khan (provisional ballot, CDCA), Denis Joseph Bouchard (convicted, EDNC). Voting rows: 79.
+- "Chis Adam Pettiquoi" renamed to the release's "Chris Adam Pettiquoi" (aka keeps the old spelling).
+- statusSourceUrl set to the official release on X-sourced voting rows: the 10 Minnesota rows (usao-mn), Silva (usao-edpa),
+  Davis and Phelps (usao-sdal), Andre’s Garcia (usao-wdmo), Catanese and Evans (usao-mdfl).
+- Parser: toRow now falls back to placeFromDistrict(sentence, url): the release's locality ("living in X", "X resident", "of X
+  County") with the USAO district's state, else the district's state name (state-center lat/lon). VOTING regex adds
+  "in order to vote", "when he/she voted", "provisional ballot", "cast a ballot". Test: scripts/voting-place.test.mjs.
+
 # HANDOFF: 2026-10-15 EDNC noncitizen-voting release
 
 Source: https://www.justice.gov/usao-ednc/pr/ednc-unveils-ten-federal-indictments-alleging-noncitizens-voted-2024-election
