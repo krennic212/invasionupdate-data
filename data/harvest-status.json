@@ -1,17 +1,14 @@
 {
-  "checkedAt": 1792508831769,
-  "checkedAtIso": "2026-10-20T15:07:11.769Z",
-  "added": [
-    "Sara Luma",
-    "Jamil Ahmad"
-  ],
+  "checkedAt": 1792508906427,
+  "checkedAtIso": "2026-10-20T15:08:26.428Z",
+  "added": [],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 0,
+  "scannedReleases": 81,
   "error": null,
-  "note": "Added 2 as approved: Sara Luma, Jamil Ahmad",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
