@@ -1,17 +1,15 @@
 {
-  "updatedAt": "2026-10-20T15:08:27Z",
-  "rows": 562,
-  "approved": 556,
+  "updatedAt": "2026-10-20T15:40:55Z",
+  "rows": 564,
+  "approved": 558,
   "pending": 6,
   "photos": 143,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-20T12:42:21Z",
-  "lastAddedCount": 4,
+  "lastAddedAt": "2026-10-20T15:40:55Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Carlos Payes",
-    "Aureliano Padilla Cerda",
-    "Juan Pablo Arellano Calderon",
-    "Florentino Ortiz Vivar"
+    "Maria Victoria Borja-Avila",
+    "Juan Menendez Lamas"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
