@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-19",
   "windowDays": 7,
-  "total": 214,
+  "total": 175,
   "rows": [
     {
       "id": "x-2111148670829957349-leo-robert-jackson",
@@ -27,28 +27,6 @@
       ]
     },
     {
-      "id": "dhs-20261013-alberto-estrada",
-      "name": "Alberto Estrada",
-      "when": "13 Oct 2026",
-      "severity": 182,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Rape / sexual assault"
-      ]
-    },
-    {
-      "id": "dhs-20261013-henri-antonio-chay-castro",
-      "name": "Henri Antonio Chay-Castro",
-      "when": "13 Oct 2026",
-      "severity": 182,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Rape / sexual assault"
-      ]
-    },
-    {
       "id": "dhs-20261015-david-antonio-aviles-perez",
       "name": "David Antonio Aviles Perez",
       "when": "15 Oct 2026",
@@ -62,30 +40,6 @@
       ]
     },
     {
-      "id": "dhs-20261013-christian-eduardo-lopez-nava",
-      "name": "Christian Eduardo Lopez-Nava",
-      "when": "13 Oct 2026",
-      "severity": 175,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons",
-        "Drug trafficking"
-      ]
-    },
-    {
-      "id": "dhs-20261013-londy-de-jesus-nuesi-molina",
-      "name": "Londy De Jesus Nuesi-Molina",
-      "when": "13 Oct 2026",
-      "severity": 175,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons",
-        "Drug trafficking"
-      ]
-    },
-    {
       "id": "x-2112267610163175525-frankie-miller",
       "name": "Frankie Miller",
       "when": "19 Oct 2026",
@@ -95,17 +49,6 @@
         "Armed robbery / aggravated assault",
         "Weapons",
         "Burglary / theft"
-      ]
-    },
-    {
-      "id": "x-2110054259710435384-badshah-sahi",
-      "name": "Badshah Sahi",
-      "when": "13 Oct 2026",
-      "severity": 162,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Attack on police officer"
       ]
     },
     {
@@ -178,17 +121,6 @@
       ]
     },
     {
-      "id": "dhs-20261013-jose-rodriguez-eraso",
-      "name": "Jose Rodriguez-Eraso",
-      "when": "13 Oct 2026",
-      "severity": 125,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "Drug possession"
-      ]
-    },
-    {
       "id": "dhs-20261015-ricardo-curbelo-aguilar",
       "name": "Ricardo Curbelo-Aguilar",
       "when": "15 Oct 2026",
@@ -196,17 +128,6 @@
       "severityReason": "Murder / manslaughter",
       "severityCrimes": [
         "Murder / manslaughter",
-        "DUI"
-      ]
-    },
-    {
-      "id": "dhs-20261013-victor-manuel-moralez-diaz",
-      "name": "Victor Manuel Moralez Diaz",
-      "when": "13 Oct 2026",
-      "severity": 115,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
         "DUI"
       ]
     },
@@ -287,6 +208,37 @@
       ]
     },
     {
+      "id": "x-2112267600654729506-anibal-rosales-velasquez",
+      "name": "Anibal Rosales-Velasquez",
+      "when": "19 Oct 2026",
+      "severity": 95,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Assault / battery"
+      ]
+    },
+    {
+      "id": "x-2112267385487147356-carlos-castro-ramirez",
+      "name": "Carlos Castro-Ramirez",
+      "when": "19 Oct 2026",
+      "severity": 95,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter"
+      ]
+    },
+    {
+      "id": "x-2112267382186205218-jose-zetina-romero",
+      "name": "Jose Zetina Romero",
+      "when": "19 Oct 2026",
+      "severity": 95,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter"
+      ]
+    },
+    {
       "id": "x-2112212456797880328-juan-carlos-plascencia-torres",
       "name": "Juan Carlos Plascencia-Torres",
       "when": "19 Oct 2026",
@@ -295,6 +247,36 @@
       "severityCrimes": [
         "Violent crime against a child",
         "DUI"
+      ]
+    },
+    {
+      "id": "dhs-20261016-claudius-anglo-ricardo-smith",
+      "name": "Claudius Anglo Ricardo Smith",
+      "when": "16 Oct 2026",
+      "severity": 95,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter"
+      ]
+    },
+    {
+      "id": "dhs-20261016-korakanh-phornsavanh",
+      "name": "Korakanh Phornsavanh",
+      "when": "16 Oct 2026",
+      "severity": 95,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter"
+      ]
+    },
+    {
+      "id": "dhs-20261015-cuong-chanh-phan",
+      "name": "Cuong Chanh Phan",
+      "when": "15 Oct 2026",
+      "severity": 95,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter"
       ]
     },
     {
@@ -401,46 +383,6 @@
       "id": "ice-20261014-luis-antonio-alejandro-ramos",
       "name": "Luis Antonio Alejandro-Ramos",
       "when": "14 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261013-abraham-garcia-aguilar",
-      "name": "Abraham Garcia-Aguilar",
-      "when": "13 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261013-jesus-villanueva-carvajal",
-      "name": "Jesus Villanueva-Carvajal",
-      "when": "13 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261013-jonathan-augustin-miranda",
-      "name": "Jonathan Augustin-Miranda",
-      "when": "13 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2110107815704703178-victor-hugo-rosaldo-lara",
-      "name": "Victor Hugo Rosaldo-Lara",
-      "when": "13 Oct 2026",
       "severity": 92,
       "severityReason": "Child sex crime",
       "severityCrimes": [
