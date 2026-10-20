@@ -1,3 +1,28 @@
+# HANDOFF: 2026-10-20 (11:30 AM CDT) federal, DHS and state voting cases + state election sources in the hourly job (Krennic approved)
+
+- Feed: 564 -> 653 rows (558 -> 647 approved). 82 voting rows (64 federal DOJ/DHS/USCIS, 18 state: FL AG 11, MI AG 5,
+  FDLE 1, NH DOJ 1): 79 via data/pending.json (60 auto-approved, 19 guard-held then approved by id with approvalNote quoting
+  the release), 3 inserted directly because a review.json copy blocked intake by name (Arellano-Alba, Avila Gomez, Carzoli
+  Carillo; approvalNote names the review row). The hourly run then added 7 ICE Boston rows (routine). Voting: 164 unique people.
+- The 10 Minnesota rows and Paulo Jorge Silva now cite the official DOJ release (sourceUrl / statusSourceUrl / crime / usa)
+  instead of X posts; Silva aka "Paulo Silva". Engelstad aka "Julieta Englestad". Gomez Sr. kept off (Krennic). Still on
+  X sources (not changed): Phelps, Davis, Andre's Garcia, Catanese, Evans.
+- parse.mjs: nationality-lead roundup pattern ("Pakistani national Jamil Ahmad, 50, ..."), U+2010/2011 hyphens read as
+  "-", OF_PLACE also takes "of Fort Myers (Lee County), " / "of Tampa, ", origin from a written-out country ("a United Kingdom
+  national"). harvest.mjs skips a shortened roundup name (rules.mjs isShortFormOf). city-geo.json: 31 cities.
+- NEW state election sources (scripts/state-sources.mjs, same file as fraudtracker-data): stateReleases() after the DOJ API.
+  20 official newsrooms (FL AG, FDLE, TX, MI, NH, NV, PA, KS, GA AG, GA SOS, NC, OH AG, OH SOS, AZ, AL, VA, LA, MO, TN, IA);
+  https + exact host + release path; election-crime releases only; MAX_AGE_DAYS window; people only from extractPeople with
+  every guard unchanged (so the release must state non-citizen status; citizen-only cases never become rows); rows get
+  voting=true, the state agency label (AGENCY), and the person's printed town (else dateline). 180 s budget
+  (STATE_BUDGET_MS), STATE_SOURCES=0 off, fail soft (logged). WI DOJ / IN AG not added (JS-only). GA SOS / OH SOS 403 and NC /
+  NH listings empty right now (fail soft). harvest.mjs runs main() only as a script (tests import stateRel / stateCityFor).
+- HI, WDKY, WDTX, ID, UT, WDLA: read through the DOJ API (all offices); stateFromUsao maps each (test added).
+- Tests: scripts/roundup.test.mjs, scripts/state-sources.test.mjs (offline fixtures in scripts/fixtures/); plea.test.mjs
+  exempts rows approved over a stage hold. node --test scripts/*.test.mjs: 182/182.
+- dedupe / severity / validate OK. severity reports 3 feed-vs-review name matches (Arellano-Alba, Avila Gomez, Velasquez
+  Orozco): review copies only, the live rows are the official releases.
+
 # HANDOFF: 2026-10-20 (10:09 AM CDT) "Pleaded guilty" stage (Krennic approved)
 
 - New stage label "Pleaded guilty" for a guilty plea with no conviction / sentence wording (parse.mjs convictLabel /

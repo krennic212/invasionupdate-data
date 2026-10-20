@@ -67,7 +67,8 @@ const PART = "(?:[A-ZÁÉÍÓÚÑÜ][A-Za-zÁÉÍÓÚÑÜáéíóúñü'’`.-]*
 const PARTICLE = "(?:de|del|de la|de los|la|las|los|da|das|do|dos|van|von|y|e|bin|al|el)";
 const NAME = `(${PART}(?:\\s+(?:${PARTICLE}\\s+)?${PART}){1,5})`;
 const AGE = "(?:\\d{1,3},\\s+)?";
-const OF_PLACE = "(?:(?:of|from)\\s+[A-Z][A-Za-z .'-]+,\\s+(?:[A-Z][A-Za-z.]+\\s?){1,3},\\s+)?";
+// "of Omaha, Nebraska, " or (state releases) "of Fort Myers (Lee County), " / "of Tampa, ".
+const OF_PLACE = "(?:(?:of|from)\\s+[A-Z][A-Za-z .'-]+,\\s+(?:[A-Z][A-Za-z.]+\\s?){1,3},\\s+|(?:of|from)\\s+[A-Z][A-Za-z.'-]+(?:\\s[A-Z][A-Za-z.'-]+){0,2}(?:\\s\\([A-Z][A-Za-z .'-]+\\))?,\\s+)?";
 const DESC = "(?:an?\\s+)?((?:[A-Za-z-]+\\s+){0,4}?)";
 const TYPE = "(alien|national|citizen|noncitizen|non-citizen|native and citizen)s?";
 const COUNTRY = "(?:the\\s+)?([A-Z][A-Za-z'’.-]+(?:\\s+(?:and|of|the|[A-Z][A-Za-z'’.-]+)){0,4})";
@@ -85,6 +86,11 @@ const PATTERNS = [
   // ICE's common wording: "ICE Seattle arrested illegal alien Ronald Zacarias-Gregorio, 36, of Guatemala."
   // "... arrested criminal illegal alien Tung Huy Nguyen, 52, of Vietnam" / "... arrested criminal alien <Name>, 30, of El Salvador"
   new RegExp(`\\b(?:arrested|arrests|removed|deported|apprehended|detained)\\s+(?:an?\\s+)?(?:criminal\\s+)?(?:illegal\\s+)?alien\\s+${NAME}(?:,\\s+(${PART}(?:\\s+${PART}){0,2})(?=,\\s+\\d{1,3}\\b))?(?=,|\\.|\\s+(?:in|on|at|from|of|who|after|for|upon|was)\\b|$)`, "g"),
+  // DOJ election-crime roundups lead each case with the nationality (OPA Oct 5 / Oct 12 / Sept 18, 2026):
+  // "Pakistani national Jamil Ahmad, 50, a lawful permanent resident, has been charged ..." /
+  // "Nigerian national, Helen Sayen Adams, 67, ..." / "Democratic Republic of Congo National, Celestin Katubadi , 20, ...".
+  // Sentence start only, and the name must be followed by an age, so a headline or official never matches.
+  new RegExp(`^(?:[A-Z][A-Za-z .'’-]{0,40}[:–—]\\s+)?((?:[A-Z][a-z]+\\s+(?:of\\s+)?){0,3}[A-Z][a-z]+)\\s+[Nn]ational,?\\s+${NAME}\\s?,\\s+\\d{1,3},`, "g"),
 ];
 
 const NOT_NAME = /\b(ICE|DHS|HSI|ERO|CBP|USCIS|FBI|DEA|ATF|DOJ|U\.S|United|States|America|American|Department|Justice|Attorney|Attorneys|Office|Offices|Secretary|President|Homeland|Security|Immigration|Customs|Enforcement|Border|Patrol|County|Court|District|Federal|Judge|Agent|Agents|Special|Officers|Officer|Police|Sheriff|Government|Administration|Trump|Biden|Obama|Act|Operation|Task|Force|Division|Bureau|Service|Services|Today|Yesterday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|January|February|March|April|May|June|July|August|September|October|November|December|The|This|These|Those|His|Her|Their|According|Under|Assistant|Acting|Chief|Director|Deputy|Senior|Prosecutor)\b/;
@@ -280,6 +286,9 @@ function originFrom(desc, type, country) {
   if (/\b(?:United\s+States|U\.\s?S\.?|USA|American)\b/.test(String(desc || ""))) return "";
   const c = cleanCountry(country);
   if (c && /^[A-Z]/.test(c) && !NOT_NAME.test(c)) return cleanOrigin(c);
+  // "a United Kingdom national" / "a Dominican Republic national": the country name itself, written out.
+  const named = String(desc || "").trim().match(/^(?:an?\s+)?((?:[A-Z][a-z]+\s+){1,3}?[A-Z][a-z]+)$/);
+  if (named && /national|citizen/.test(type) && COUNTRIES.has(named[1])) return cleanOrigin(named[1]);
   const words = String(desc || "").trim().split(/\s+/).filter((w) => /^[A-Z]/.test(w));
   for (const w of words) if (DEMONYM[w]) return DEMONYM[w];
   for (const w of words) if (DEMONYMS[w]) return DEMONYMS[w];
@@ -302,7 +311,8 @@ export function extractPeople(blocks, { title = "" } = {}) {
     if (block.length < 25) continue;
     const sents = sentences(block);
     for (let i = 0; i < sents.length; i++) {
-      const s = sents[i];
+      // Non-breaking / figure hyphens inside names ("Arellano‑Alba", U+2011, OPA Sept 18, 2026) read as "-".
+      const s = sents[i].replace(/[\u2010\u2011]/g, "-");
       for (const re of PATTERNS) {
         re.lastIndex = 0;
         let m;
@@ -310,7 +320,9 @@ export function extractPeople(blocks, { title = "" } = {}) {
           const pair = re === PATTERNS[1];
           const people = pair
             ? [m[1], m[2]].map((n) => ({ n, origin: originFrom(m[3] ?? m[5], m[4] ?? m[6], m[7]) }))
-            : [{ n: re === PATTERNS[3] && m[2] ? `${m[1]} ${m[2]}` : m[1], origin: re === PATTERNS[0] ? originFrom(m[2], m[3] || "", m[4]) : "" }];
+            : re === PATTERNS[4]
+              ? [{ n: m[2], origin: DEMONYM[m[1]] || "" }]
+              : [{ n: re === PATTERNS[3] && m[2] ? `${m[1]} ${m[2]}` : m[1], origin: re === PATTERNS[0] ? originFrom(m[2], m[3] || "", m[4]) : "" }];
           for (const { n, origin } of people) {
           // "... alien Zinzun Bautista." -> no sentence period in the name (Jr. / Sr. keep theirs).
           const name = n.replace(/\s+/g, " ").trim().replace(/(?<!\b(?:Jr|Sr|[A-Z]))\.$/, "");
@@ -638,6 +650,30 @@ const AGENCY = {
   ICEgov: { label: "ICE", confirmedBy: "ICE" },
   TheJusticeDept: { label: "DOJ", confirmedBy: "DOJ" },
   CBP: { label: "CBP", confirmedBy: "DHS" },
+  // State election-crime newsrooms (state cases; scripts/state-sources.mjs). label = the agency, tag = id prefix.
+  FloridaAG: { label: "Florida Attorney General", tag: "fl-ag", confirmedBy: "Florida Attorney General" },
+  FDLE: { label: "Florida Department of Law Enforcement", tag: "fdle", confirmedBy: "Florida Department of Law Enforcement" },
+  TexasAG: { label: "Texas Attorney General", tag: "tx-ag", confirmedBy: "Texas Attorney General" },
+  MichiganAG: { label: "Michigan Attorney General", tag: "mi-ag", confirmedBy: "Michigan Attorney General" },
+  NewHampshireDOJ: { label: "New Hampshire Department of Justice", tag: "nh-doj", confirmedBy: "New Hampshire Department of Justice" },
+  NevadaAG: { label: "Nevada Attorney General", tag: "nv-ag", confirmedBy: "Nevada Attorney General" },
+  PennsylvaniaAG: { label: "Pennsylvania Attorney General", tag: "pa-ag", confirmedBy: "Pennsylvania Attorney General" },
+  KansasAG: { label: "Kansas Attorney General", tag: "ks-ag", confirmedBy: "Kansas Attorney General" },
+  GeorgiaAG: { label: "Georgia Attorney General", tag: "ga-ag", confirmedBy: "Georgia Attorney General" },
+  GeorgiaSOS: { label: "Georgia Secretary of State", tag: "ga-sos", confirmedBy: "Georgia Secretary of State" },
+  NorthCarolinaAG: { label: "North Carolina Attorney General", tag: "nc-ag", confirmedBy: "North Carolina Attorney General" },
+  OhioAG: { label: "Ohio Attorney General", tag: "oh-ag", confirmedBy: "Ohio Attorney General" },
+  OhioSOS: { label: "Ohio Secretary of State", tag: "oh-sos", confirmedBy: "Ohio Secretary of State" },
+  ArizonaAG: { label: "Arizona Attorney General", tag: "az-ag", confirmedBy: "Arizona Attorney General" },
+  WisconsinDOJ: { label: "Wisconsin Department of Justice", tag: "wi-doj", confirmedBy: "Wisconsin Department of Justice" },
+  AlabamaAG: { label: "Alabama Attorney General", tag: "al-ag", confirmedBy: "Alabama Attorney General" },
+  VirginiaAG: { label: "Virginia Attorney General", tag: "va-ag", confirmedBy: "Virginia Attorney General" },
+  LouisianaAG: { label: "Louisiana Attorney General", tag: "la-ag", confirmedBy: "Louisiana Attorney General" },
+  IndianaAG: { label: "Indiana Attorney General", tag: "in-ag", confirmedBy: "Indiana Attorney General" },
+  MissouriAG: { label: "Missouri Attorney General", tag: "mo-ag", confirmedBy: "Missouri Attorney General" },
+  TennesseeAG: { label: "Tennessee Attorney General", tag: "tn-ag", confirmedBy: "Tennessee Attorney General" },
+  IowaAG: { label: "Iowa Attorney General", tag: "ia-ag", confirmedBy: "Iowa Attorney General" },
+  USCIS: { label: "USCIS", confirmedBy: "DHS" },
 };
 
 export function slug(s) {
@@ -660,7 +696,7 @@ export function toRow(hit, rel) {
     picked: `${d.picked} (${a.label} release)`,
     entered: "Not stated",
     office: rel.office,
-    id: `${a.label.toLowerCase()}-${d.compact}-${slug(hit.name)}`,
+    id: `${a.tag || a.label.toLowerCase()}-${d.compact}-${slug(hit.name)}`,
     when: d.when,
     text: `${a.label} ${d.long}, as posted: ${hit.sentence}`,
     photo: "",

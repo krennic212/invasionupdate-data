@@ -52,5 +52,16 @@ test("live feed: plea-only rows read Pleaded guilty; sentenced rows stay Convict
   for (const id of RELABELED) assert.match(byId.get(id).crime, /^Pleaded guilty: /, id);
   for (const id of STAY) assert.match(byId.get(id).crime, /^Convicted: /, id);
   assert.match(feed.find((r) => r.name === "Lara Gonzalez").crime, /^Convicted: /, "Lara Gonzalez: pleaded guilty and was sentenced");
-  for (const r of feed.filter((r) => /^Pleaded guilty: /.test(r.crime))) assert.deepEqual(holdReasonsForRow(r).filter((x) => x.startsWith("stage")), [], r.name);
+  // A row Krennic approved by id over a stage hold carries the release wording in approvalNote (Samuel James Hall: "also
+  // entered a plea in May ... admitted to illegally voting"); the guard itself is unchanged and still holds it on intake.
+  for (const r of feed.filter((r) => /^Pleaded guilty: /.test(r.crime) && !/guard held "stage:/.test(r.approvalNote || ""))) assert.deepEqual(holdReasonsForRow(r).filter((x) => x.startsWith("stage")), [], r.name);
+});
+
+test("Samuel James Hall: stage hold stays on intake; approved by id with the release's plea wording", () => {
+  const feed = JSON.parse(readFileSync(new URL("../data/harvest.json", import.meta.url), "utf8"));
+  const r = feed.find((x) => x.id === "doj-20260730-samuel-james-hall");
+  assert.ok(r && r.status === "approved");
+  assert.match(r.crime, /^Pleaded guilty: .*entered a plea/);
+  assert.ok(holdReasonsForRow(r).some((x) => x.startsWith("stage")));
+  assert.match(r.approvalNote, /admitted to illegally voting/);
 });

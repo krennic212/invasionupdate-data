@@ -25,9 +25,77 @@ export const OFFICIAL_HOSTS = [
  * listed under an alias ("Verónica Bullene, a.k.a. Verónica Hernández Martínez") is the same person,
  * so neither name may be added again.
  */
+/**
+ * State election-crime newsrooms (Krennic 2026-10-20: "add the clear state voting cases and add state sources to the hourly
+ * job"). A state attorney general / state police release is an official source for a STATE case. Exact host (and path
+ * prefix where the host is a whole state portal), https only. These are NOT federal: isOfficialUrl stays federal-only, so
+ * photos (scripts/photos.mjs) and the federal DOJ/DHS/ICE/CBP scan are unchanged; only routing and the live-source check
+ * accept them.
+ */
+export const STATE_OFFICIAL_SOURCES = [
+  { host: "myfloridalegal.com", path: "/", office: "FloridaAG" },
+  { host: "fdle.state.fl.us", path: "/", office: "FDLE" },
+  { host: "texasattorneygeneral.gov", path: "/", office: "TexasAG" },
+  { host: "michigan.gov", path: "/ag/", office: "MichiganAG" },
+  { host: "doj.nh.gov", path: "/", office: "NewHampshireDOJ" },
+  { host: "ag.nv.gov", path: "/", office: "NevadaAG" },
+  { host: "attorneygeneral.gov", path: "/", office: "PennsylvaniaAG" },
+  { host: "ag.ks.gov", path: "/", office: "KansasAG" },
+  { host: "law.georgia.gov", path: "/", office: "GeorgiaAG" },
+  { host: "sos.ga.gov", path: "/", office: "GeorgiaSOS" },
+  { host: "ncdoj.gov", path: "/", office: "NorthCarolinaAG" },
+  { host: "ohioattorneygeneral.gov", path: "/", office: "OhioAG" },
+  { host: "ohiosos.gov", path: "/", office: "OhioSOS" },
+  { host: "azag.gov", path: "/", office: "ArizonaAG" },
+  { host: "doj.state.wi.us", path: "/", office: "WisconsinDOJ" },
+  { host: "alabamaag.gov", path: "/", office: "AlabamaAG" },
+  { host: "oag.state.va.us", path: "/", office: "VirginiaAG" },
+  { host: "ag.state.la.us", path: "/", office: "LouisianaAG" },
+  { host: "in.gov", path: "/attorneygeneral/", office: "IndianaAG" },
+  { host: "ago.mo.gov", path: "/", office: "MissouriAG" },
+  { host: "tn.gov", path: "/attorneygeneral/", office: "TennesseeAG" },
+  { host: "iowaattorneygeneral.gov", path: "/", office: "IowaAG" },
+];
+
+/** The STATE_OFFICIAL_SOURCES entry a URL belongs to, else null. */
+export function stateOfficialSource(url) {
+  if (!/^https:\/\//i.test(String(url || ""))) return null;
+  let u;
+  try {
+    u = new URL(url);
+  } catch {
+    return null;
+  }
+  const h = u.hostname.toLowerCase().replace(/^www\./, "");
+  const path = u.pathname.toLowerCase();
+  return STATE_OFFICIAL_SOURCES.find((s) => h === s.host && path.startsWith(s.path)) || null;
+}
+
+export function isStateOfficialUrl(url) {
+  return Boolean(stateOfficialSource(url));
+}
+
+/** Live via a state newsroom (state cases only; never used for photos). */
+export function isStateOfficialRow(row) {
+  return urlsIn(row?.sourceUrl).some(isStateOfficialUrl);
+}
+
 export function nameKeysOf(row) {
   const akas = Array.isArray(row?.aka) ? row.aka : [row?.aka];
   return [row?.name, ...akas].map(nameKey).filter(Boolean);
+}
+
+/**
+ * A roundup's short form of a name already listed: "avila gomez" for "fredy avila gomez" (OPA Sept 18, 2026, which
+ * printed only the surname), "monica carzoli" for "monica ivette carzoli carillo", "paulo silva" for "paulo jorge silva".
+ * Keys from nameKey(). Two words at least, so a lone surname never matches anyone.
+ */
+export function isShortFormOf(short, full) {
+  const a = String(short || "").split(" ").filter(Boolean);
+  const b = String(full || "").split(" ").filter(Boolean);
+  if (a.length < 2 || a.length >= b.length) return false;
+  if (b.slice(-a.length).join(" ") === a.join(" ")) return true;
+  return a.length === 2 && a[0] === b[0] && b.slice(1).includes(a[1]);
 }
 
 export function nameKey(name) {
@@ -90,7 +158,7 @@ export function isTrustedXPostUrl(url) {
 }
 
 export function isLiveSourceRow(row) {
-  return urlsIn(row?.sourceUrl).some((u) => isOfficialUrl(u) || isOfficialXPostUrl(u) || isTrustedXPostUrl(u));
+  return urlsIn(row?.sourceUrl).some((u) => isOfficialUrl(u) || isStateOfficialUrl(u) || isOfficialXPostUrl(u) || isTrustedXPostUrl(u));
 }
 
 /** Live = at least one official federal source link on the row. */
@@ -118,7 +186,7 @@ export function routeRows(rows) {
   const review = [];
   for (const r of rows) {
     if (!r || typeof r !== "object" || typeof r.name !== "string" || !r.name.trim()) continue;
-    if (isOfficialRow(r)) live.push(noPhoto(r));
+    if (isOfficialRow(r) || isStateOfficialRow(r)) live.push(noPhoto(r));
     else review.push({ ...noPhoto(r), reviewReason: reviewReason(r) });
   }
   return { live, review };

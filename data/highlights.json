@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-20",
   "windowDays": 7,
-  "total": 202,
+  "total": 209,
   "rows": [
     {
       "id": "dhs-20261016-jaime-velasquez-orozco",
@@ -295,6 +295,16 @@
       "severityCrimes": [
         "Weapons",
         "Drug trafficking"
+      ]
+    },
+    {
+      "id": "ice-20261019-robson-martins-da-silva",
+      "name": "Robson Martins Da Silva",
+      "when": "19 Oct 2026",
+      "severity": 101,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
       ]
     },
     {

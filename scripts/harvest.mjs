@@ -22,9 +22,12 @@
  */
 import { uniqueId as makeUniqueId, rowIdBase } from "./ids.mjs";
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { resolve as resolvePath } from "node:path";
 import { scrubVictimNames } from "./victims.mjs";
 import { extractPeople, htmlBlocks, decode, toRow } from "./parse.mjs";
-import { nameKey, nameKeysOf, routeRows, isOfficialUrl } from "./rules.mjs";
+import { nameKey, nameKeysOf, routeRows, isOfficialUrl, isShortFormOf, stateOfficialSource } from "./rules.mjs";
+import { readStateSources, stateDefendants, stateGeo, BROWSER_UA } from "./state-sources.mjs";
 import { holdReasons, holdReasonsForRow } from "./guards.mjs";
 
 const HARVEST = process.env.HARVEST_FILE || "data/harvest.json";
@@ -144,6 +147,42 @@ async function dojReleases(errors) {
   return out;
 }
 
+/**
+ * State election-crime newsrooms (scripts/state-sources.mjs): state AGs, FDLE, secretaries of state. Only official
+ * state pages (rules.mjs STATE_OFFICIAL_SOURCES), only releases about an election crime, inside the same MAX_AGE_DAYS
+ * window. People are found by extractPeople exactly as for federal releases (so the release must state the person's
+ * non-citizen status), and every guard in guards.mjs runs unchanged. Fails soft: any error is logged, never thrown.
+ */
+const STATE_BUDGET_MS = Number(process.env.STATE_BUDGET_MS || 180000);
+const CITY_GEO = JSON.parse(readFileSync(new URL("./city-geo.json", import.meta.url), "utf8"));
+async function fetchState(url) {
+  const res = await fetch(url, { headers: { "user-agent": BROWSER_UA, accept: "text/html,application/xhtml+xml,application/xml,application/json,*/*" }, redirect: "follow", signal: AbortSignal.timeout(20000) });
+  if (!res.ok) throw new Error(`${res.status} ${url}`);
+  return res.text();
+}
+/** A state release as a harvest rel: blocks with "Name , 24," spacing fixed (the Florida AG list). */
+export function stateRel(r) {
+  if (!stateOfficialSource(r?.url)) return null;
+  return { office: r.office, state: r.state, url: r.url, date: r.date, title: r.title, blocks: (r.blocks || []).map((b) => b.replace(/\s+,/g, ",")), stateCase: true };
+}
+/** Home town (else dateline) the state release prints for this person, as "City, ST"; "" when none maps. */
+export function stateCityFor(hit, rel) {
+  const p = stateDefendants(rel).find((d) => nameKey(d.name) === nameKey(hit.name)) || {};
+  return stateGeo(p, rel, CITY_GEO)?.city || "";
+}
+async function stateReleases(errors) {
+  if (process.env.STATE_SOURCES === "0") return [];
+  try {
+    const since = new Date(Date.now() - MAX_AGE_DAYS * 86400000).toISOString().slice(0, 10);
+    const { releases, log } = await readStateSources(fetchState, { since, budgetMs: STATE_BUDGET_MS });
+    for (const line of log) console.error(`state: ${line}`);
+    return releases.filter((r) => recent(r.date)).map(stateRel).filter(Boolean);
+  } catch (e) {
+    errors.push(`state sources: ${String(e?.message || e)}`);
+    return [];
+  }
+}
+
 async function main() {
   const harvest = readJson(HARVEST, []);
   const review = readJson(REVIEW, []);
@@ -189,6 +228,7 @@ async function main() {
     }
   }
   rels.push(...(await dojReleases(errors)));
+  rels.push(...(await stateReleases(errors)));
 
   const fresh = [];
   for (const rel of rels) {
@@ -196,8 +236,13 @@ async function main() {
     for (const hit of extractPeople(rel.blocks, { title: rel.title })) {
       const k = nameKey(hit.name);
       if (!k || have.has(k)) continue;
+      // A roundup that shortens a listed name ("Avila Gomez" = "Fredy Avila Gomez") is the same person.
+      if ([...have].some((h) => isShortFormOf(k, h))) continue;
       have.add(k);
+      if (rel.stateCase && !hit.city) hit.city = stateCityFor(hit, rel);
       const row = toRow(hit, rel);
+      // Every state-source release is an election-crime release (isElectionCase), so its rows are voting rows.
+      if (rel.stateCase) row.voting = true;
       const label = row.crime.slice(0, row.crime.indexOf(":"));
       const reasons = holdReasons({ name: hit.name, sentence: hit.sentence, title: rel.title, releaseText: rel.blocks.join(" "), label });
       const gated = gate({ ...row, id: uniqueId(row.id, row) }, reasons);
@@ -222,13 +267,16 @@ async function main() {
     scannedReleases: scanned,
     error: errors.length ? errors.slice(0, 6).join(" | ") : null,
     note: added.length ? `Added ${added.length} as ${NEW_STATUS}: ${added.join(", ")}` : "No new named people in official releases this run.",
-    sources: ["dhs.gov/news-releases/press-releases", "ice.gov/newsroom", "cbp.gov/newsroom", "justice.gov press-release API"],
+    sources: ["dhs.gov/news-releases/press-releases", "ice.gov/newsroom", "cbp.gov/newsroom", "justice.gov press-release API", "state election-crime newsrooms (scripts/state-sources.mjs)"],
     writer: "scripts/harvest.mjs (GitHub Actions, krennic212/invasionupdate-data)",
   });
   console.log(JSON.stringify({ added: added.length, names: added, heldPending: held, sentToReview: toReview, scannedReleases: scanned, errors }, null, 2));
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+// Run only as a script (tests import stateRel / stateCityFor without harvesting).
+if (process.argv[1] && fileURLToPath(import.meta.url) === resolvePath(process.argv[1])) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}
