@@ -1,22 +1,16 @@
 {
-  "checkedAt": 1792513381207,
-  "checkedAtIso": "2026-10-20T16:23:01.207Z",
+  "checkedAt": 1792513549717,
+  "checkedAtIso": "2026-10-20T16:25:49.717Z",
   "added": [
-    "Robson Martins Da Silva",
-    "Ronan Rodrigues Dos Santos",
-    "Raphael De Oliveira Batista",
-    "Joao Manuel Matos Ferreira",
-    "Cristopher Paul Augui Cajas",
-    "Marlon Alexis Portillo-Garcia",
-    "Ricardo Faustin"
+    "Eustaquio Espinosa-Hernández"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 83,
-  "error": "503 https://www.dhs.gov/news/2026/10/19/dhs-highlights-worst-illegal-aliens-criminal-histories-state-kansas",
-  "note": "Added 7 as approved: Robson Martins Da Silva, Ronan Rodrigues Dos Santos, Raphael De Oliveira Batista, Joao Manuel Matos Ferreira, Cristopher Paul Augui Cajas, Marlon Alexis Portillo-Garcia, Ricardo Faustin",
+  "scannedReleases": 86,
+  "error": null,
+  "note": "Added 1 as approved: Eustaquio Espinosa-Hernández",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

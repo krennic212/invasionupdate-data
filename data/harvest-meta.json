@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-10-20T15:40:55Z",
-  "rows": 564,
-  "approved": 558,
+  "updatedAt": "2026-10-20T16:25:54Z",
+  "rows": 654,
+  "approved": 648,
   "pending": 6,
   "photos": 143,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-20T15:40:55Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-10-20T16:25:49Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Maria Victoria Borja-Avila",
-    "Juan Menendez Lamas"
+    "Eustaquio Espinosa-Hernández"
   ],
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

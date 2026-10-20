@@ -1,5 +1,32 @@
 [
   {
+    "name": "Eustaquio Espinosa-Hernández",
+    "city": "Wisconsin",
+    "crime": "Charged: Miguel Ángel Campos-Barragán, Giovanni Vidrio-López, and Eustaquio Espinosa-Hernández, all Mexican citizens, were extradited from Costa Rica after being indicted in the Eastern District of Wisconsin in May 2025 for alleged violations of the Maritime Drug Law Enforcement Act (MDLEA).",
+    "usa": "DOJ release Oct 20, 2026: Mexican Nationals of U.S.-Flagged Vessel Extradited to Face Maritime Narcotics Trafficking Charges Following a Homeland Security Task Force Initiative",
+    "foreign": "Not stated in post",
+    "picked": "10/20/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261020-eustaquio-espinosa-hernandez",
+    "when": "20 Oct 2026",
+    "severity": 27,
+    "severityReason": "Drug possession",
+    "severityCrimes": [
+      "Drug possession"
+    ],
+    "text": "DOJ Oct 20, 2026, as posted: Miguel Ángel Campos-Barragán, Giovanni Vidrio-López, and Eustaquio Espinosa-Hernández, all Mexican citizens, were extradited from Costa Rica after being indicted in the Eastern District of Wisconsin in May 2025 for alleged violations of the Maritime Drug Law Enforcement Act (MDLEA).",
+    "photo": "",
+    "via": "justice.gov/usao-edwi/pr/mexican-nationals-us-flagged-vessel-extradited-face-maritime-narcotics-trafficking",
+    "sourceUrl": "https://www.justice.gov/usao-edwi/pr/mexican-nationals-us-flagged-vessel-extradited-face-maritime-narcotics-trafficking",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "DOJ",
+    "lat": 43.7844,
+    "lon": -88.7879,
+    "status": "approved"
+  },
+  {
     "name": "Robson Martins Da Silva",
     "city": "Not stated",
     "crime": "Convicted: Robson Martins Da Silva, a criminal illegal alien from Brazil who was convicted of two counts of indecent assault and battery on a child under 14.",
