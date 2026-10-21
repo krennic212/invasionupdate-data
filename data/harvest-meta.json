@@ -1,15 +1,19 @@
 {
-  "updatedAt": "2026-10-21T19:57:56Z",
-  "rows": 694,
-  "approved": 687,
+  "updatedAt": "2026-10-21T23:55:54Z",
+  "rows": 699,
+  "approved": 692,
   "pending": 7,
   "photos": 171,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-21T19:57:55Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-10-21T23:55:53Z",
+  "lastAddedCount": 5,
   "lastAdded": [
-    "NURSULTON IZZATULLOEVICH KHAYDAROV"
+    "Omar Roberto Martinez",
+    "Jose Manuel Munoz Ramos",
+    "Marvin Jonathan Ignacio Lopez-Portuguez",
+    "Elias Izquiero Manuel",
+    "Enrique Balcazar-Arias"
   ],
-  "harvestSha256": "d3e685593ca87ce28bc5a8c2464bccdda9d9d5d1a3008650f5184436b7476885",
+  "harvestSha256": "612db4fac4d857493f2f1e88f6c38e51f506759312da91954fc9cfecf5f65446",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

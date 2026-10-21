@@ -1,16 +1,20 @@
 {
-  "checkedAt": 1792612675695,
-  "checkedAtIso": "2026-10-21T19:57:55.695Z",
+  "checkedAt": 1792626953072,
+  "checkedAtIso": "2026-10-21T23:55:53.072Z",
   "added": [
-    "NURSULTON IZZATULLOEVICH KHAYDAROV"
+    "Omar Roberto Martinez",
+    "Jose Manuel Munoz Ramos",
+    "Marvin Jonathan Ignacio Lopez-Portuguez",
+    "Elias Izquiero Manuel",
+    "Enrique Balcazar-Arias"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 92,
+  "scannedReleases": 91,
   "error": null,
-  "note": "Added 1 as approved: NURSULTON IZZATULLOEVICH KHAYDAROV",
+  "note": "Added 5 as approved: Omar Roberto Martinez, Jose Manuel Munoz Ramos, Marvin Jonathan Ignacio Lopez-Portuguez, Elias Izquiero Manuel, Enrique Balcazar-Arias",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
