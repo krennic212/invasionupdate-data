@@ -1,16 +1,20 @@
 {
-  "checkedAt": 1792539648994,
-  "checkedAtIso": "2026-10-20T23:40:48.994Z",
+  "checkedAt": 1792601316293,
+  "checkedAtIso": "2026-10-21T16:48:36.293Z",
   "added": [
-    "Manuel Seberiano Garcia-Munoz"
+    "Elizabeth Povea Rodriguez",
+    "Rubstony Junior Theodore",
+    "Wilbert Jean Baptiste",
+    "Louis Jean",
+    "Jhensly Charles"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 95,
+  "scannedReleases": 90,
   "error": null,
-  "note": "Added 1 as approved: Manuel Seberiano Garcia-Munoz",
+  "note": "Added 5 as approved: Elizabeth Povea Rodriguez, Rubstony Junior Theodore, Wilbert Jean Baptiste, Louis Jean, Jhensly Charles",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

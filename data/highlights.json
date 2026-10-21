@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-10-20",
+  "asOf": "2026-10-21",
   "windowDays": 7,
-  "total": 226,
+  "total": 198,
   "rows": [
     {
       "id": "dhs-20261016-jaime-velasquez-orozco",
@@ -93,18 +93,6 @@
       ]
     },
     {
-      "id": "x-2110461000453619967-eprain-gonzalez-sanchez",
-      "name": "Eprain Gonzalez Sanchez",
-      "when": "14 Oct 2026",
-      "severity": 155,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Assault / battery",
-        "DUI"
-      ]
-    },
-    {
       "id": "x-2110718652127285708-salvador-javiquer-sotolongo",
       "name": "Salvador Javiquer Sotolongo",
       "when": "15 Oct 2026",
@@ -126,17 +114,6 @@
         "Kidnapping / human trafficking",
         "Armed robbery / aggravated assault",
         "Illegal entry / reentry"
-      ]
-    },
-    {
-      "id": "x-2110461005742604476-francsico-delfino-martinez-perez",
-      "name": "Francsico Delfino Martinez Perez",
-      "when": "14 Oct 2026",
-      "severity": 140,
-      "severityReason": "Attempted murder",
-      "severityCrimes": [
-        "Attempted murder",
-        "Weapons"
       ]
     },
     {
@@ -208,17 +185,6 @@
         "Armed robbery / aggravated assault",
         "Assault / battery",
         "Drug possession"
-      ]
-    },
-    {
-      "id": "x-2110460986750586887-denis-sabastian-baca-lopes",
-      "name": "Denis Sabastian Baca-Lopes",
-      "when": "14 Oct 2026",
-      "severity": 125,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons"
       ]
     },
     {
@@ -308,6 +274,28 @@
       "severityCrimes": [
         "Child sex crime",
         "DUI"
+      ]
+    },
+    {
+      "id": "x-2112267614667911511-sergio-de-anda-rodriguez",
+      "name": "Sergio De Anda-Rodriguez",
+      "when": "19 Oct 2026",
+      "severity": 105,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Burglary / theft"
+      ]
+    },
+    {
+      "id": "x-2110830172635079157-william-benjamin-diaz-jacinto",
+      "name": "William Benjamin Diaz Jacinto",
+      "when": "15 Oct 2026",
+      "severity": 105,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Drug trafficking"
       ]
     },
     {
@@ -442,26 +430,6 @@
       ]
     },
     {
-      "id": "x-2110460995080749103-jesus-modesto-sanchez",
-      "name": "Jesus Modesto Sanchez",
-      "when": "14 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "ice-20261014-luis-antonio-alejandro-ramos",
-      "name": "Luis Antonio Alejandro-Ramos",
-      "when": "14 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
       "id": "x-2112613236386222222-gustavo-cardenas-arreola",
       "name": "Gustavo Cardenas Arreola",
       "when": "20 Oct 2026",
@@ -505,16 +473,6 @@
       "id": "x-2110689822792966222-juan-carlos-izaguirre-membreno",
       "name": "Juan Carlos Izaguirre Membreno",
       "when": "15 Oct 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2110425877238669559-clemente-vasquez",
-      "name": "Clemente Vasquez",
-      "when": "14 Oct 2026",
       "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [

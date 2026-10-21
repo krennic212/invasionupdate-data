@@ -1,15 +1,19 @@
 {
-  "updatedAt": "2026-10-20T23:40:50Z",
-  "rows": 671,
-  "approved": 665,
+  "updatedAt": "2026-10-21T16:48:37Z",
+  "rows": 676,
+  "approved": 670,
   "pending": 6,
   "photos": 171,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-20T23:40:48Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-10-21T16:48:36Z",
+  "lastAddedCount": 5,
   "lastAdded": [
-    "Manuel Seberiano Garcia-Munoz"
+    "Elizabeth Povea Rodriguez",
+    "Rubstony Junior Theodore",
+    "Wilbert Jean Baptiste",
+    "Louis Jean",
+    "Jhensly Charles"
   ],
-  "harvestSha256": "51e3d9b6a42219017536a5a9f4ae03dc4e4d5d3656d8d1b6f9b00711fad1a8e6",
+  "harvestSha256": "5c415445339cb2bb19c4bbf2707ec75ad7765e53194fe1c3a4dfff7f88b58411",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
