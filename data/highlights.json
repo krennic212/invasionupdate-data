@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-21",
   "windowDays": 7,
-  "total": 198,
+  "total": 206,
   "rows": [
     {
       "id": "dhs-20261016-jaime-velasquez-orozco",
@@ -54,6 +54,17 @@
         "Child sex crime",
         "Fraud (incl. voter fraud)",
         "Assault / battery"
+      ]
+    },
+    {
+      "id": "x-2112698882157060102-farmon-farmonbekov",
+      "name": "Farmon Farmonbekov",
+      "when": "21 Oct 2026",
+      "severity": 182,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Rape / sexual assault"
       ]
     },
     {
@@ -288,14 +299,23 @@
       ]
     },
     {
-      "id": "x-2110830172635079157-william-benjamin-diaz-jacinto",
-      "name": "William Benjamin Diaz Jacinto",
-      "when": "15 Oct 2026",
-      "severity": 105,
-      "severityReason": "Weapons",
+      "id": "x-2112773624683737595-carlos-ayon-cisneros",
+      "name": "Carlos Ayon-Cisneros",
+      "when": "21 Oct 2026",
+      "severity": 101,
+      "severityReason": "Child sex crime",
       "severityCrimes": [
-        "Weapons",
-        "Drug trafficking"
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2112711968536555924-guadalupe-vergara",
+      "name": "Guadalupe Vergara",
+      "when": "21 Oct 2026",
+      "severity": 101,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
       ]
     },
     {

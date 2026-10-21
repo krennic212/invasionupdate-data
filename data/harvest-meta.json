@@ -1,19 +1,22 @@
 {
-  "updatedAt": "2026-10-21T16:48:37Z",
-  "rows": 676,
-  "approved": 670,
+  "updatedAt": "2026-10-21T19:24:08Z",
+  "rows": 684,
+  "approved": 678,
   "pending": 6,
   "photos": 171,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-21T16:48:36Z",
-  "lastAddedCount": 5,
+  "lastAddedAt": "2026-10-21T19:24:08Z",
+  "lastAddedCount": 8,
   "lastAdded": [
-    "Elizabeth Povea Rodriguez",
-    "Rubstony Junior Theodore",
-    "Wilbert Jean Baptiste",
-    "Louis Jean",
-    "Jhensly Charles"
+    "Christian Saul Galindo Hernandez",
+    "Daniel Cervantes Moctezuma",
+    "Thaislaine Oliveira Silva",
+    "Carlos Ayon-Cisneros",
+    "Jose Manuel Ruiz Gonzalez",
+    "Guadalupe Vergara",
+    "Fidel Leon-Hernandez",
+    "Farmon Farmonbekov"
   ],
-  "harvestSha256": "5c415445339cb2bb19c4bbf2707ec75ad7765e53194fe1c3a4dfff7f88b58411",
+  "harvestSha256": "fe84f662a70c378b4e3af54c39f17afda6cb3d77210f29623580fb1d7e86ca2c",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -1,26 +1,25 @@
 {
-  "checkedAt": 1792601316293,
-  "checkedAtIso": "2026-10-21T16:48:36.293Z",
+  "checkedAt": 1792610648279,
+  "checkedAtIso": "2026-10-21T19:24:08Z",
   "added": [
-    "Elizabeth Povea Rodriguez",
-    "Rubstony Junior Theodore",
-    "Wilbert Jean Baptiste",
-    "Louis Jean",
-    "Jhensly Charles"
+    "Christian Saul Galindo Hernandez",
+    "Daniel Cervantes Moctezuma",
+    "Thaislaine Oliveira Silva",
+    "Carlos Ayon-Cisneros",
+    "Jose Manuel Ruiz Gonzalez",
+    "Guadalupe Vergara",
+    "Fidel Leon-Hernandez",
+    "Farmon Farmonbekov"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 90,
+  "scannedReleases": 0,
   "error": null,
-  "note": "Added 5 as approved: Elizabeth Povea Rodriguez, Rubstony Junior Theodore, Wilbert Jean Baptiste, Louis Jean, Jhensly Charles",
+  "note": "Added 8 as approved from official X posts since 16:48Z: Christian Saul Galindo Hernandez, Daniel Cervantes Moctezuma, Thaislaine Oliveira Silva, Carlos Ayon-Cisneros, Jose Manuel Ruiz Gonzalez, Guadalupe Vergara, Fidel Leon-Hernandez, Farmon Farmonbekov",
   "sources": [
-    "dhs.gov/news-releases/press-releases",
-    "ice.gov/newsroom",
-    "cbp.gov/newsroom",
-    "justice.gov press-release API",
-    "state election-crime newsrooms (scripts/state-sources.mjs)"
+    "official X: EROSanFrancisco, ICEgov, EROBoston, EROLosAngeles, EROBuffalo"
   ],
-  "writer": "scripts/harvest.mjs (GitHub Actions, krennic212/invasionupdate-data)"
+  "writer": "manual catch-up (official agency X posts)"
 }
