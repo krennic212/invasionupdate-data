@@ -1,25 +1,25 @@
 {
-  "checkedAt": 1792610648279,
-  "checkedAtIso": "2026-10-21T19:24:08Z",
+  "checkedAt": 1792610811778,
+  "checkedAtIso": "2026-10-21T19:26:51.778Z",
   "added": [
-    "Christian Saul Galindo Hernandez",
-    "Daniel Cervantes Moctezuma",
-    "Thaislaine Oliveira Silva",
-    "Carlos Ayon-Cisneros",
-    "Jose Manuel Ruiz Gonzalez",
-    "Guadalupe Vergara",
-    "Fidel Leon-Hernandez",
-    "Farmon Farmonbekov"
+    "Ahmed Al Hamami",
+    "Rodolfo Armando Fernandez Guzman"
   ],
   "addedStatus": "approved",
-  "heldPending": [],
+  "heldPending": [
+    "Rodolfo Armando Fernandez Guzman (not stated to be a non-citizen)"
+  ],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 0,
+  "scannedReleases": 92,
   "error": null,
-  "note": "Added 8 as approved from official X posts since 16:48Z: Christian Saul Galindo Hernandez, Daniel Cervantes Moctezuma, Thaislaine Oliveira Silva, Carlos Ayon-Cisneros, Jose Manuel Ruiz Gonzalez, Guadalupe Vergara, Fidel Leon-Hernandez, Farmon Farmonbekov",
+  "note": "Added 2 as approved: Ahmed Al Hamami, Rodolfo Armando Fernandez Guzman",
   "sources": [
-    "official X: EROSanFrancisco, ICEgov, EROBoston, EROLosAngeles, EROBuffalo"
+    "dhs.gov/news-releases/press-releases",
+    "ice.gov/newsroom",
+    "cbp.gov/newsroom",
+    "justice.gov press-release API",
+    "state election-crime newsrooms (scripts/state-sources.mjs)"
   ],
-  "writer": "manual catch-up (official agency X posts)"
+  "writer": "scripts/harvest.mjs (GitHub Actions, krennic212/invasionupdate-data)"
 }

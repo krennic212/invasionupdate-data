@@ -1,22 +1,15 @@
 {
-  "updatedAt": "2026-10-21T19:24:08Z",
-  "rows": 684,
-  "approved": 678,
-  "pending": 6,
+  "updatedAt": "2026-10-21T19:26:53Z",
+  "rows": 686,
+  "approved": 679,
+  "pending": 7,
   "photos": 171,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-21T19:24:08Z",
-  "lastAddedCount": 8,
+  "lastAddedAt": "2026-10-21T19:26:51Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Christian Saul Galindo Hernandez",
-    "Daniel Cervantes Moctezuma",
-    "Thaislaine Oliveira Silva",
-    "Carlos Ayon-Cisneros",
-    "Jose Manuel Ruiz Gonzalez",
-    "Guadalupe Vergara",
-    "Fidel Leon-Hernandez",
-    "Farmon Farmonbekov"
+    "Ahmed Al Hamami"
   ],
-  "harvestSha256": "fe84f662a70c378b4e3af54c39f17afda6cb3d77210f29623580fb1d7e86ca2c",
+  "harvestSha256": "24dc79de13cef873425caa678b540248eb479fd968331a9793567c5a7594da84",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
