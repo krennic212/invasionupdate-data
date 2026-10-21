@@ -30,6 +30,8 @@ import { nameKey, nameKeysOf, routeRows, isOfficialUrl, isShortFormOf, stateOffi
 import { readStateSources, stateDefendants, stateGeo, BROWSER_UA } from "./state-sources.mjs";
 import { holdReasons, holdReasonsForRow } from "./guards.mjs";
 import { operationsFor } from "./operations.mjs";
+import { fillCity } from "./office-city.mjs";
+import { latLonFor } from "./parse.mjs";
 
 const HARVEST = process.env.HARVEST_FILE || "data/harvest.json";
 const REVIEW = process.env.REVIEW_FILE || "data/review.json";
@@ -250,8 +252,13 @@ async function main() {
       const label = row.crime.slice(0, row.crime.indexOf(":"));
       const reasons = holdReasons({ name: hit.name, sentence: hit.sentence, title: rel.title, releaseText: rel.blocks.join(" "), label });
       const gated = gate({ ...row, id: uniqueId(row.id, row) }, reasons);
-      if (gated.status === "pending") held.push(`${hit.name} (${gated.holdReason || "approval gate"})`);
-      fresh.push(scrubVictimNames(gated).row);
+      const placed = fillCity(gated);
+      if (placed.city && placed.city !== "Not stated" && (placed.lat == null || placed.lon == null)) {
+        const geo = latLonFor(placed.city);
+        if (geo.lat != null) { placed.lat = geo.lat; placed.lon = geo.lon; }
+      }
+      if (placed.status === "pending") held.push(`${hit.name} (${placed.holdReason || "approval gate"})`);
+      fresh.push(scrubVictimNames(placed).row);
       added.push(hit.name);
     }
     opReleases.push({ ...rel, namedThisRun });

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T19:44:34Z",
+  "updatedAt": "2026-10-21T19:56:54Z",
   "rows": 693,
   "approved": 686,
   "pending": 7,
@@ -14,6 +14,6 @@
     "Bernabe Catalan-Rayo",
     "Francisco Salazar-Arriaga"
   ],
-  "harvestSha256": "a0f83165592aa75cfd0afdfac45b98f3482f5b94271bb168ae7f90e723ee10d7",
+  "harvestSha256": "04fb6196c4dbdb5ec020ca8891251118f498563289eaf04aa154b12f4d884043",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
