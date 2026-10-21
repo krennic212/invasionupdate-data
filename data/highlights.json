@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-21",
   "windowDays": 7,
-  "total": 207,
+  "total": 212,
   "rows": [
     {
       "id": "dhs-20261016-jaime-velasquez-orozco",
@@ -176,6 +176,17 @@
       ]
     },
     {
+      "id": "dhs-20261021-dennis-solares-garcia",
+      "name": "Dennis Solares-Garcia",
+      "when": "21 Oct 2026",
+      "severity": 128,
+      "severityReason": "Attack on police officer",
+      "severityCrimes": [
+        "Attack on police officer",
+        "Assault / battery"
+      ]
+    },
+    {
       "id": "x-2112627626602799184-hernaldo-beltran-perea",
       "name": "Hernaldo Beltran-Perea",
       "when": "20 Oct 2026",
@@ -285,17 +296,6 @@
       "severityCrimes": [
         "Child sex crime",
         "DUI"
-      ]
-    },
-    {
-      "id": "x-2112267614667911511-sergio-de-anda-rodriguez",
-      "name": "Sergio De Anda-Rodriguez",
-      "when": "19 Oct 2026",
-      "severity": 105,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Burglary / theft"
       ]
     },
     {

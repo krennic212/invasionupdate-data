@@ -1,19 +1,20 @@
 {
-  "checkedAt": 1792610811778,
-  "checkedAtIso": "2026-10-21T19:26:51.778Z",
+  "checkedAt": 1792611872827,
+  "checkedAtIso": "2026-10-21T19:44:32.827Z",
   "added": [
-    "Ahmed Al Hamami",
-    "Rodolfo Armando Fernandez Guzman"
+    "Carlos Orozco-Rodriguez",
+    "Wilson Rene Ixpanel-Aguilar",
+    "Dennis Solares-Garcia",
+    "Bernabe Catalan-Rayo",
+    "Francisco Salazar-Arriaga"
   ],
   "addedStatus": "approved",
-  "heldPending": [
-    "Rodolfo Armando Fernandez Guzman (not stated to be a non-citizen)"
-  ],
+  "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 92,
+  "scannedReleases": 99,
   "error": null,
-  "note": "Added 2 as approved: Ahmed Al Hamami, Rodolfo Armando Fernandez Guzman",
+  "note": "Added 5 as approved: Carlos Orozco-Rodriguez, Wilson Rene Ixpanel-Aguilar, Dennis Solares-Garcia, Bernabe Catalan-Rayo, Francisco Salazar-Arriaga",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
