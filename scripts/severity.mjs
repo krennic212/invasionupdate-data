@@ -215,7 +215,10 @@ const FIELDS = ["severity", "severityReason", "severityCrimes"];
 /** Same row with severity fields placed right after `when` (or at the end). Nothing else changes. */
 export function withSeverity(row, table = TABLE, opts = {}) {
   if (!row || typeof row !== "object") return row;
-  const s = scoreRow(row, table, opts);
+  // An unnamed operation row (heads > 1) is a count, not a person. No highlights score.
+  const s = Number(row.heads) > 1
+    ? { severity: 0, severityReason: "", severityCrimes: [] }
+    : scoreRow(row, table, opts);
   const add = { severity: s.severity, severityReason: s.severityReason, severityCrimes: s.severityCrimes };
   const out = {};
   let placed = false;

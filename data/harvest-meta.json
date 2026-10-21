@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-21T19:26:53Z",
-  "rows": 686,
-  "approved": 679,
+  "updatedAt": "2026-10-21T19:43:48Z",
+  "rows": 688,
+  "approved": 681,
   "pending": 7,
   "photos": 171,
   "reviewRows": 762,
@@ -10,6 +10,6 @@
   "lastAdded": [
     "Ahmed Al Hamami"
   ],
-  "harvestSha256": "24dc79de13cef873425caa678b540248eb479fd968331a9793567c5a7594da84",
+  "harvestSha256": "d237bd8d92f2339446f250ca2ef9746371efeff45ff3bd21e1df05536e93f28c",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

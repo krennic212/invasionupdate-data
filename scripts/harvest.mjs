@@ -29,6 +29,7 @@ import { extractPeople, htmlBlocks, decode, toRow } from "./parse.mjs";
 import { nameKey, nameKeysOf, routeRows, isOfficialUrl, isShortFormOf, stateOfficialSource } from "./rules.mjs";
 import { readStateSources, stateDefendants, stateGeo, BROWSER_UA } from "./state-sources.mjs";
 import { holdReasons, holdReasonsForRow } from "./guards.mjs";
+import { operationsFor } from "./operations.mjs";
 
 const HARVEST = process.env.HARVEST_FILE || "data/harvest.json";
 const REVIEW = process.env.REVIEW_FILE || "data/review.json";
@@ -231,14 +232,17 @@ async function main() {
   rels.push(...(await stateReleases(errors)));
 
   const fresh = [];
+  const opReleases = [];
   for (const rel of rels) {
     scanned += 1;
+    let namedThisRun = 0;
     for (const hit of extractPeople(rel.blocks, { title: rel.title })) {
       const k = nameKey(hit.name);
       if (!k || have.has(k)) continue;
       // A roundup that shortens a listed name ("Avila Gomez" = "Fredy Avila Gomez") is the same person.
       if ([...have].some((h) => isShortFormOf(k, h))) continue;
       have.add(k);
+      namedThisRun += 1;
       if (rel.stateCase && !hit.city) hit.city = stateCityFor(hit, rel);
       const row = toRow(hit, rel);
       // Every state-source release is an election-crime release (isElectionCase), so its rows are voting rows.
@@ -250,6 +254,13 @@ async function main() {
       fresh.push(scrubVictimNames(gated).row);
       added.push(hit.name);
     }
+    opReleases.push({ ...rel, namedThisRun });
+  }
+  // Unnamed group counts ("arrested 82 illegal aliens"). heads = total - named, so the ticker does not count anyone twice.
+  const ops = operationsFor(opReleases, [...harvest, ...fresh]);
+  for (const op of ops) {
+    fresh.push(op);
+    added.push(`${op.name} (heads ${op.heads})`);
   }
   // Newest first, ahead of existing rows.
   harvest.unshift(...fresh);

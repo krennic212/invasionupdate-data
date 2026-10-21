@@ -1,0 +1,44 @@
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { extractOperation, operationRow } from "./operations.mjs";
+
+test("extracts an arrest total and ignores a sentence count", () => {
+  const found = extractOperation("Authorities arrested 82 illegal aliens during the three-day operation. He was convicted of two counts of assault.");
+  assert.equal(found.total, 82);
+  assert.match(found.sentence, /82 illegal aliens/);
+});
+
+test("extracts a 'were arrested' total", () => {
+  const found = extractOperation("In total, 118 illegal aliens were arrested during the four-day operation.");
+  assert.equal(found.total, 118);
+});
+
+test("ignores a small number and a years sentence", () => {
+  assert.equal(extractOperation("He was sentenced to 22 years. ICE arrested 2 illegal aliens."), null);
+});
+
+test("builds a heads row for the unnamed remainder and skips a known release", () => {
+  const rel = {
+    url: "https://www.ice.gov/news/releases/ice-boston-arrests-82-illegal-aliens-during-3-day-operation-massachusetts",
+    title: "ICE Boston arrests 82 illegal aliens during 3-day operation in Massachusetts",
+    date: "2026-10-19",
+    office: "ICEgov",
+    blocks: ["Authorities arrested 82 illegal aliens during the three-day operation in southeastern Massachusetts."],
+  };
+  const row = operationRow(rel, 7, []);
+  assert.equal(row.heads, 75);
+  assert.equal(row.photo, "");
+  assert.match(row.name, /operation/);
+  assert.equal(operationRow(rel, 7, [row]), null);
+});
+
+test("skips a release that names almost everyone", () => {
+  const rel = {
+    url: "https://www.ice.gov/news/releases/example",
+    title: "ICE arrests 12",
+    date: "2026-10-19",
+    office: "ICEgov",
+    blocks: ["ICE arrested 12 illegal aliens during the operation."],
+  };
+  assert.equal(operationRow(rel, 11, []), null);
+});
