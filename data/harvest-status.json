@@ -1,20 +1,16 @@
 {
-  "checkedAt": 1792611872827,
-  "checkedAtIso": "2026-10-21T19:44:32.827Z",
+  "checkedAt": 1792612675695,
+  "checkedAtIso": "2026-10-21T19:57:55.695Z",
   "added": [
-    "Carlos Orozco-Rodriguez",
-    "Wilson Rene Ixpanel-Aguilar",
-    "Dennis Solares-Garcia",
-    "Bernabe Catalan-Rayo",
-    "Francisco Salazar-Arriaga"
+    "NURSULTON IZZATULLOEVICH KHAYDAROV"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 99,
+  "scannedReleases": 92,
   "error": null,
-  "note": "Added 5 as approved: Carlos Orozco-Rodriguez, Wilson Rene Ixpanel-Aguilar, Dennis Solares-Garcia, Bernabe Catalan-Rayo, Francisco Salazar-Arriaga",
+  "note": "Added 1 as approved: NURSULTON IZZATULLOEVICH KHAYDAROV",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

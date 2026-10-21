@@ -1,19 +1,15 @@
 {
-  "updatedAt": "2026-10-21T19:56:54Z",
-  "rows": 693,
-  "approved": 686,
+  "updatedAt": "2026-10-21T19:57:56Z",
+  "rows": 694,
+  "approved": 687,
   "pending": 7,
   "photos": 171,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-21T19:44:32Z",
-  "lastAddedCount": 5,
+  "lastAddedAt": "2026-10-21T19:57:55Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Carlos Orozco-Rodriguez",
-    "Wilson Rene Ixpanel-Aguilar",
-    "Dennis Solares-Garcia",
-    "Bernabe Catalan-Rayo",
-    "Francisco Salazar-Arriaga"
+    "NURSULTON IZZATULLOEVICH KHAYDAROV"
   ],
-  "harvestSha256": "04fb6196c4dbdb5ec020ca8891251118f498563289eaf04aa154b12f4d884043",
+  "harvestSha256": "d3e685593ca87ce28bc5a8c2464bccdda9d9d5d1a3008650f5184436b7476885",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
