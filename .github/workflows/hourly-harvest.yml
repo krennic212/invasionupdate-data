@@ -2,8 +2,9 @@ name: Hourly harvest
 
 on:
   schedule:
-    # Hourly, Mon-Fri, 7:02 AM - 6:02 PM Central (CDT = UTC-5). After DST ends Nov 1, change to 13-23 + 0.
-    - cron: "2 12-23 * * 1-5"
+    # 3x daily, Mon-Fri, ~9 AM, 12 PM, 5 PM Central (Krennic 2026-10-22). CDT = UTC-5.
+    # After DST ends Nov 1 (CST = UTC-6), change to "2 15,18,23 * * 1-5".
+    - cron: "2 14,17,22 * * 1-5"
   workflow_dispatch:
     inputs:
       approve:
