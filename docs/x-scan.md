@@ -15,7 +15,12 @@ exists, the official URL is used as `sourceUrl`. Photos stay official-only: his 
 (no photo candidates, `x-photo.mjs` refuses them). All other reporter / news / activist handles
 (`NOT_OFFICIAL_X_HANDLES`) still go to review.json only.
 
-## Every scheduled run (hourly, 7:39 AM - 5:39 PM CT)
+## Every scheduled run (3 times a day, every day: 9 AM, 12 PM, 5 PM CT)
+
+Schedule (Krennic, Oct 22, 2026): cron `0 9,12,17 * * *` America/Chicago, flexible by up to 15 min.
+Each run reads everything since the saved `lastSeenId`; the 9 AM run covers overnight.
+The daily photo job stays at 1:03 PM CT.
+
 
 0. `cd /workspace/invasionupdate-data && git pull --rebase`
 1. Read the state: `cat data/x-scan-state.json` -> `lastSeenId` (highest post id already read).
@@ -23,9 +28,8 @@ exists, the official URL is used as `sourceUrl`. Photos stay official-only: his 
 3. For each query (and each further page while `meta.next_token` is present):
    - Reserve first: `node scripts/x-usage.mjs reserve 1 "batch N page M"`. **Exit code 1 = stop the run now**
      (cap would pass 999). Do not make the call.
-   - Window (Krennic 2026-10-09): `node scripts/x-queries.mjs --window` prints `{since_id}` or `{start_time}`.
-     Every scan covers at least the last 75 minutes: it starts from whichever is EARLIER, the post after lastSeenId
-     or now - 75 min (so the first run of the day still catches overnight posts). Dedupe handles any overlap.
+   - Window: `node scripts/x-queries.mjs --window` prints `{since_id}`. Each run reads everything since the saved
+     lastSeenId (no fixed lookback); the 9 AM run covers overnight. Dedupe handles any overlap.
    - Call `search_recent_posts`/`search_posts_all` with: `query`, the window from above (`since_id` or `start_time`), `max_results` 25+,
      `sort_order` recency, `post.fields` "created_at,author_id,attachments,note_tweet",
      `expansions` "author_id,attachments.media_keys", `user.fields` "username", `media.fields` "type,url".
@@ -66,8 +70,8 @@ exists, the official URL is used as `sourceUrl`. Photos stay official-only: his 
    `https://krennic212.github.io/invasionupdate-data/harvest.json` and `harvest-meta.json` (retry; Pages lags).
 10. Report the run's X call count (`node scripts/x-usage.mjs status`).
 
-Typical quiet 30-minute run: 5 calls (one per query, no second page) + 0-1 refetch = ~6 calls,
-~288/day at 48 runs. Stop paging early once results reach lastSeenId.
+Typical quiet run: 5 calls (one per query, no second page) + 0-1 refetch = ~6 calls,
+~18/day at 3 runs (the 9 AM run may page more). Stop paging early once results reach lastSeenId.
 
 ## Denaturalized people: Krennic decision 2026-10-16
 
