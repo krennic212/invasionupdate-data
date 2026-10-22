@@ -2409,5 +2409,482 @@
     "name": "Ketan Kamdar",
     "result": "none",
     "why": "no single person-specific image in the release"
+  },
+  "x.com/erodallas/status/2113292040926830944": {
+    "checkedAt": "2026-10-22T18:13:39.602Z",
+    "name": "Oscar Nava-Flores",
+    "result": "none",
+    "why": "post has only a video, no still image"
+  },
+  "x.com/eroboston/status/2113220195061989585": {
+    "checkedAt": "2026-10-22T18:13:40.653Z",
+    "name": "Bryan Rafael Gomez",
+    "result": "none",
+    "why": "Viewed both post images: removal-flight scenes with several officers around him (one officer's helmeted head beside him, others on the stairs); no plain single-person headshot"
+  },
+  "x.com/ero__phoenix/status/2113012449985077315": {
+    "checkedAt": "2026-10-22T18:13:41.596Z",
+    "name": "Ariel Valdez-Garcia",
+    "result": "none",
+    "why": "Viewed image: ICE 'ARRESTED / FACING REMOVAL, PHOENIX, AZ' graphic card (text banners, logo) of a man in a car seat; text card, not a plain booking photo"
+  },
+  "x.com/usao_ndok/status/2112929852688892154": {
+    "checkedAt": "2026-10-22T18:13:44.066Z",
+    "name": "Toan Chu",
+    "result": "none",
+    "why": "post has no image"
+  },
+  "x.com/fbi/status/2112891847898972245": {
+    "checkedAt": "2026-10-22T18:13:44.221Z",
+    "name": "Milan Tanovic",
+    "result": "none",
+    "why": "Viewed image: FBI 'CASE UPDATE SENTENCING' graphic of a badge; no image of the person"
+  },
+  "x.com/usao_wdmo/status/2112641297182028216": {
+    "checkedAt": "2026-10-22T18:13:46.716Z",
+    "name": "Jorge Mendez-Romero",
+    "result": "none",
+    "why": "post has no image"
+  },
+  "x.com/icegov/status/2112908015510667587": {
+    "checkedAt": "2026-10-22T18:13:47.048Z",
+    "name": "Daniel Cervantes Moctezuma",
+    "result": "none",
+    "why": "post has only a video, no still image"
+  },
+  "x.com/erolosangeles/status/2112773624683737595": {
+    "checkedAt": "2026-10-22T18:13:47.386Z",
+    "name": "Carlos Ayon-Cisneros",
+    "result": "none",
+    "why": "Viewed image: booking-style photo but other people are visible through the window behind him; second person in frame"
+  },
+  "x.com/erolosangeles/status/2112711968536555924": {
+    "checkedAt": "2026-10-22T18:13:47.739Z",
+    "name": "Guadalupe Vergara",
+    "result": "none",
+    "why": "Viewed image: booking-style photo but the window behind him shows other people with blurred faces; second faces in frame"
+  },
+  "x.com/erophiladelphia/status/2112629332979933428": {
+    "checkedAt": "2026-10-22T18:13:47.903Z",
+    "name": "Alemo Makesi Sampson",
+    "result": "none",
+    "why": "Viewed image: street arrest scene with three people (two officers in POLICE vests and the arrestee); not a headshot"
+  },
+  "x.com/erowashington/status/2112627626602799184": {
+    "checkedAt": "2026-10-22T18:13:48.061Z",
+    "name": "Hernaldo Beltran-Perea",
+    "result": "none",
+    "why": "Viewed image: graphic card with text panel (MEXICO, CRIMES, ARRESTED, NAME) beside his photo; text card, not a plain booking photo"
+  },
+  "x.com/usao_wdmo/status/2112623972994978295": {
+    "checkedAt": "2026-10-22T18:13:48.391Z",
+    "name": "Hanlie Venter",
+    "result": "none",
+    "why": "post has no image"
+  },
+  "x.com/icegov/status/2113317011602153731": {
+    "checkedAt": "2026-10-22T18:14:06.218Z",
+    "name": "Alejandro Martinez Martinez",
+    "result": "photo",
+    "file": "x-2113317011602153731-alejandro-martinez-martinez.jpg",
+    "image": "https://pbs.twimg.com/media/HVQCn5aXUAAHJBd.png",
+    "bytes": 8007,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Alejandro Martinez Martinez, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/eroharlingen/status/2113283239028945202": {
+    "checkedAt": "2026-10-22T18:14:06.589Z",
+    "name": "Ruben Lopez",
+    "result": "photo",
+    "file": "x-2113283239028945202-ruben-lopez.jpg",
+    "image": "https://pbs.twimg.com/media/HVPjy8lWIAEhhCP.jpg",
+    "bytes": 4859,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Ruben Lopez, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/erosanantonio/status/2113274849523359967": {
+    "checkedAt": "2026-10-22T18:14:07.098Z",
+    "name": "Miguel Ramirez Rivas",
+    "result": "photo",
+    "file": "x-2113274849523359967-miguel-ramirez-rivas.jpg",
+    "image": "https://pbs.twimg.com/media/HVPcQ2vWEAAIm3A.png",
+    "bytes": 5279,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Miguel Ramirez Rivas, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/erosanantonio/status/2113274002924057035": {
+    "checkedAt": "2026-10-22T18:14:07.598Z",
+    "name": "Miguel Brizuela-Rosales",
+    "result": "photo",
+    "file": "x-2113274002924057035-miguel-brizuela-rosales.jpg",
+    "image": "https://pbs.twimg.com/media/HVPbfnlWkAATVF7.png",
+    "bytes": 6565,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Miguel Brizuela-Rosales, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2113255352074457492": {
+    "checkedAt": "2026-10-22T18:14:08.083Z",
+    "name": "Eli Hernandez-Sandoval",
+    "result": "photo",
+    "file": "x-2113255352074457492-eli-hernandez-sandoval.jpg",
+    "image": "https://pbs.twimg.com/media/HVPKi17XkAAVq2-.png",
+    "bytes": 4859,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Eli Hernandez-Sandoval, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/eromiami/status/2113238958838571247": {
+    "checkedAt": "2026-10-22T18:14:08.560Z",
+    "name": "Oscar Gonzalez",
+    "result": "photo",
+    "file": "x-2113238958838571247-oscar-gonzalez.jpg",
+    "image": "https://pbs.twimg.com/media/HVGbof2WAAAPmr3.png",
+    "bytes": 10333,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Oscar Gonzalez, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/erolosangeles/status/2113121416229101695": {
+    "checkedAt": "2026-10-22T18:14:08.942Z",
+    "name": "Jose Ignacio Monzon",
+    "result": "photo",
+    "file": "x-2113121416229101695-jose-ignacio-monzon.jpg",
+    "image": "https://pbs.twimg.com/media/HVL-axIaUAAQeTM.png",
+    "bytes": 8290,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Jose Ignacio Monzon, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/erolosangeles/status/2113090714011570644": {
+    "checkedAt": "2026-10-22T18:14:09.339Z",
+    "name": "Amilcar Casia",
+    "result": "photo",
+    "file": "x-2113090714011570644-amilcar-casia.jpg",
+    "image": "https://pbs.twimg.com/media/HVL-DYbasAAdjnt.png",
+    "bytes": 8596,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Amilcar Casia, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/erolosangeles/status/2113060011731751090": {
+    "checkedAt": "2026-10-22T18:14:09.762Z",
+    "name": "Tomas Cavas-Sanchez",
+    "result": "photo",
+    "file": "x-2113060011731751090-tomas-cavas-sanchez.jpg",
+    "image": "https://pbs.twimg.com/media/HVL9m3JakAAA1xH.png",
+    "bytes": 7753,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Tomas Cavas-Sanchez, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/erolosangeles/status/2113029820171124802": {
+    "checkedAt": "2026-10-22T18:14:10.202Z",
+    "name": "Phoung Thanh NGUYEN",
+    "result": "photo",
+    "file": "x-2113029820171124802-phoung-thanh-nguyen.jpg",
+    "image": "https://pbs.twimg.com/media/HVL9YYpacAA1SIG.png",
+    "bytes": 10172,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Phoung Thanh NGUYEN, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2113011020981833964": {
+    "checkedAt": "2026-10-22T18:14:10.610Z",
+    "name": "Jose Alberto Portillo Gaspar",
+    "result": "photo",
+    "file": "x-2113011020981833964-jose-alberto-portillo-gaspar.jpg",
+    "image": "https://pbs.twimg.com/media/HVLsRamWQAAwTkN.jpg",
+    "bytes": 9094,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Jose Alberto Portillo Gaspar, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2113011018498486515": {
+    "checkedAt": "2026-10-22T18:14:10.997Z",
+    "name": "Joseph Alejandro De Leon-Brito",
+    "result": "photo",
+    "file": "x-2113011018498486515-joseph-alejandro-de-leon-brito.jpg",
+    "image": "https://pbs.twimg.com/media/HVLsPIJXUAESx9c.jpg",
+    "bytes": 6113,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Joseph Alejandro De Leon-Brito, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2113011016313253933": {
+    "checkedAt": "2026-10-22T18:14:11.523Z",
+    "name": "Victor Reyes Martinez",
+    "result": "photo",
+    "file": "x-2113011016313253933-victor-reyes-martinez.jpg",
+    "image": "https://pbs.twimg.com/media/HVLsLu6W0AA_Eov.jpg",
+    "bytes": 18063,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Victor Reyes Martinez, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2113011013662785763": {
+    "checkedAt": "2026-10-22T18:14:11.911Z",
+    "name": "Carlos Santiago Guzman Javier",
+    "result": "photo",
+    "file": "x-2113011013662785763-carlos-santiago-guzman-javier.jpg",
+    "image": "https://pbs.twimg.com/media/HVLsJwrXsAA1MD_.jpg",
+    "bytes": 8962,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Carlos Santiago Guzman Javier, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2113011010324082779": {
+    "checkedAt": "2026-10-22T18:14:12.418Z",
+    "name": "Jesus Duran Suarez",
+    "result": "photo",
+    "file": "x-2113011010324082779-jesus-duran-suarez.jpg",
+    "image": "https://pbs.twimg.com/media/HVLsH8xXYAE0pBX.jpg",
+    "bytes": 7751,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Jesus Duran Suarez, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2113011006939210172": {
+    "checkedAt": "2026-10-22T18:14:12.872Z",
+    "name": "Eugenio Espina",
+    "result": "photo",
+    "file": "x-2113011006939210172-eugenio-espina.jpg",
+    "image": "https://pbs.twimg.com/media/HVLsFQiWoAAgcL5.jpg",
+    "bytes": 5027,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Eugenio Espina, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2113011003617312780": {
+    "checkedAt": "2026-10-22T18:14:13.393Z",
+    "name": "Alex De Los Santos Sanchez",
+    "result": "photo",
+    "file": "x-2113011003617312780-alex-de-los-santos-sanchez.jpg",
+    "image": "https://pbs.twimg.com/media/HVLsDaRXQAAJPk-.jpg",
+    "bytes": 11739,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Alex De Los Santos Sanchez, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2113011000744014039": {
+    "checkedAt": "2026-10-22T18:14:13.794Z",
+    "name": "Juan Carlos Nunez-Rodriguez",
+    "result": "photo",
+    "file": "x-2113011000744014039-juan-carlos-nunez-rodriguez.jpg",
+    "image": "https://pbs.twimg.com/media/HVLsBdCWAAAVNYI.jpg",
+    "bytes": 9679,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Juan Carlos Nunez-Rodriguez, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2113010998294745545": {
+    "checkedAt": "2026-10-22T18:14:14.293Z",
+    "name": "Javier Avila Monge",
+    "result": "photo",
+    "file": "x-2113010998294745545-javier-avila-monge.jpg",
+    "image": "https://pbs.twimg.com/media/HVLr_g_XAAApvV1.jpg",
+    "bytes": 13540,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Javier Avila Monge, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2113010994935153003": {
+    "checkedAt": "2026-10-22T18:14:14.685Z",
+    "name": "Osvaldo Texis-Garita",
+    "result": "photo",
+    "file": "x-2113010994935153003-osvaldo-texis-garita.jpg",
+    "image": "https://pbs.twimg.com/media/HVLr9LmWwAEz1Mh.jpg",
+    "bytes": 12531,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Osvaldo Texis-Garita, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2113010991659204995": {
+    "checkedAt": "2026-10-22T18:14:15.079Z",
+    "name": "Marco Antonio Ponce Aguilar",
+    "result": "photo",
+    "file": "x-2113010991659204995-marco-antonio-ponce-aguilar.jpg",
+    "image": "https://pbs.twimg.com/media/HVLr7MsXgAAd1o3.jpg",
+    "bytes": 15114,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Marco Antonio Ponce Aguilar, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2112995372679266811": {
+    "checkedAt": "2026-10-22T18:14:15.578Z",
+    "name": "Walvin Victor Hugo Garcia",
+    "result": "photo",
+    "file": "x-2112995372679266811-walvin-victor-hugo-garcia.jpg",
+    "image": "https://pbs.twimg.com/media/HVLdnbDW0AAT3pN.jpg",
+    "bytes": 9472,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Walvin Victor Hugo Garcia, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2112995370514985349": {
+    "checkedAt": "2026-10-22T18:14:16.049Z",
+    "name": "Moises Domingo Rico Rosales",
+    "result": "photo",
+    "file": "x-2112995370514985349-moises-domingo-rico-rosales.jpg",
+    "image": "https://pbs.twimg.com/media/HVLdlIBW0AEtTgF.jpg",
+    "bytes": 28358,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Moises Domingo Rico Rosales, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2112740710801629235": {
+    "checkedAt": "2026-10-22T18:14:16.435Z",
+    "name": "Victor Manuel Cervantes-Santillanes",
+    "result": "photo",
+    "file": "x-2112740710801629235-victor-manuel-cervantes-santillanes.jpg",
+    "image": "https://pbs.twimg.com/media/HVH2eyEWoAAOTZm.png",
+    "bytes": 8849,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Victor Manuel Cervantes-Santillanes, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/erolosangeles/status/2112680511852179903": {
+    "checkedAt": "2026-10-22T18:14:16.858Z",
+    "name": "Juan Francisco Leon Campos",
+    "result": "photo",
+    "file": "x-2112680511852179903-juan-francisco-leon-campos.jpg",
+    "image": "https://pbs.twimg.com/media/HVGkYb4WAAEh01B.png",
+    "bytes": 6754,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Juan Francisco Leon Campos, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2112654512825700835": {
+    "checkedAt": "2026-10-22T18:14:17.244Z",
+    "name": "Jose Rubio-Avila",
+    "result": "photo",
+    "file": "x-2112654512825700835-jose-rubio-avila.jpg",
+    "image": "https://pbs.twimg.com/media/HVGn6wLXUAEM2Ik.jpg",
+    "bytes": 12519,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Jose Rubio-Avila, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2112654510120473009": {
+    "checkedAt": "2026-10-22T18:14:17.734Z",
+    "name": "Feliciano Luna-Rosas",
+    "result": "photo",
+    "file": "x-2112654510120473009-feliciano-luna-rosas.jpg",
+    "image": "https://pbs.twimg.com/media/HVGn4xxWoAAX4Yv.jpg",
+    "bytes": 11529,
+    "reviewed": "Viewed image: one adult man, orange polo, booking room with doors behind; a dark object (hat or hood, no face) at the left edge; no text, no other visible face, no child"
+  },
+  "x.com/icegov/status/2112654506823713227": {
+    "checkedAt": "2026-10-22T18:14:18.190Z",
+    "name": "Ernesto Cota-Flores",
+    "result": "photo",
+    "file": "x-2112654506823713227-ernesto-cota-flores.jpg",
+    "image": "https://pbs.twimg.com/media/HVGn2z3XIAEc9zr.jpg",
+    "bytes": 8192,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Ernesto Cota-Flores, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2112654503946424822": {
+    "checkedAt": "2026-10-22T18:14:18.797Z",
+    "name": "Ludwig Criss Zelaya Romero",
+    "result": "photo",
+    "file": "x-2112654503946424822-ludwig-criss-zelaya-romero.jpg",
+    "image": "https://pbs.twimg.com/media/HVGn0n3W4AEQfeU.jpg",
+    "bytes": 14510,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Ludwig Criss Zelaya Romero, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2112654501153010050": {
+    "checkedAt": "2026-10-22T18:14:19.251Z",
+    "name": "Jaime Torres-Vega",
+    "result": "photo",
+    "file": "x-2112654501153010050-jaime-torres-vega.jpg",
+    "image": "https://pbs.twimg.com/media/HVGnyVJWUAAQiK9.jpg",
+    "bytes": 30860,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Jaime Torres-Vega, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2112654498464505986": {
+    "checkedAt": "2026-10-22T18:14:19.735Z",
+    "name": "Jesus Roel Villanueva Ramos",
+    "result": "photo",
+    "file": "x-2112654498464505986-jesus-roel-villanueva-ramos.jpg",
+    "image": "https://pbs.twimg.com/media/HVGnwJtXAAANKCq.jpg",
+    "bytes": 14644,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Jesus Roel Villanueva Ramos, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2112654495746527494": {
+    "checkedAt": "2026-10-22T18:14:20.314Z",
+    "name": "Francisco Antonio Valencia De La Luz",
+    "result": "photo",
+    "file": "x-2112654495746527494-francisco-antonio-valencia-de-la-luz.jpg",
+    "image": "https://pbs.twimg.com/media/HVGnuGNWsAAccoj.jpg",
+    "bytes": 28276,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Francisco Antonio Valencia De La Luz, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2112654492428853530": {
+    "checkedAt": "2026-10-22T18:14:20.778Z",
+    "name": "Jose Daniel Burgos-Lainez",
+    "result": "photo",
+    "file": "x-2112654492428853530-jose-daniel-burgos-lainez.jpg",
+    "image": "https://pbs.twimg.com/media/HVGnr9lWYAAFmkf.jpg",
+    "bytes": 12789,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Jose Daniel Burgos-Lainez, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2112654487353708801": {
+    "checkedAt": "2026-10-22T18:14:21.275Z",
+    "name": "Jesus Moises Rochin-Huerta",
+    "result": "photo",
+    "file": "x-2112654487353708801-jesus-moises-rochin-huerta.jpg",
+    "image": "https://pbs.twimg.com/media/HVGnnPJWUAAQQ09.jpg",
+    "bytes": 7321,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Jesus Moises Rochin-Huerta, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2112654484791054486": {
+    "checkedAt": "2026-10-22T18:14:21.655Z",
+    "name": "Victor Manuel Zelaya Garcia",
+    "result": "photo",
+    "file": "x-2112654484791054486-victor-manuel-zelaya-garcia.jpg",
+    "image": "https://pbs.twimg.com/media/HVGnlB7WEAApuht.jpg",
+    "bytes": 19394,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Victor Manuel Zelaya Garcia, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2112654481834029435": {
+    "checkedAt": "2026-10-22T18:14:22.040Z",
+    "name": "Victor Manuel Franco-Alvares",
+    "result": "photo",
+    "file": "x-2112654481834029435-victor-manuel-franco-alvares.jpg",
+    "image": "https://pbs.twimg.com/media/HVGnhL7WIAE__od.jpg",
+    "bytes": 13694,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Victor Manuel Franco-Alvares, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/erosanfrancisco/status/2112959272929956071": {
+    "checkedAt": "2026-10-22T18:14:22.707Z",
+    "name": "Christian Saul Galindo Hernandez",
+    "result": "photo",
+    "file": "x-2112959272929956071-christian-saul-galindo-hernandez.jpg",
+    "image": "https://pbs.twimg.com/media/HVK9Kx2WwAAgvIP.png",
+    "bytes": 23972,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Christian Saul Galindo Hernandez, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/eroboston/status/2112857587964125437": {
+    "checkedAt": "2026-10-22T18:14:23.203Z",
+    "name": "Thaislaine Oliveira Silva",
+    "result": "photo",
+    "file": "x-2112857587964125437-thaislaine-oliveira-silva.jpg",
+    "image": "https://pbs.twimg.com/media/HVJgHknXcAArjKi.png",
+    "bytes": 12784,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Thaislaine Oliveira Silva, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/erolosangeles/status/2112742922433233025": {
+    "checkedAt": "2026-10-22T18:14:23.663Z",
+    "name": "Jose Manuel Ruiz Gonzalez",
+    "result": "photo",
+    "file": "x-2112742922433233025-jose-manuel-ruiz-gonzalez.jpg",
+    "image": "https://pbs.twimg.com/media/HVGmQkpWoAAfgSi.png",
+    "bytes": 9936,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Jose Manuel Ruiz Gonzalez, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/icegov/status/2112626278742233166": {
+    "checkedAt": "2026-10-22T18:14:24.122Z",
+    "name": "Oscar Gerardo Solorzano-Garcia",
+    "result": "photo",
+    "file": "x-2112626278742233166-oscar-gerardo-solorzano-garcia.jpg",
+    "image": "https://pbs.twimg.com/media/HVGOMDnX0AARSkl.jpg",
+    "bytes": 5160,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Oscar Gerardo Solorzano-Garcia, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/dhsgov/status/2112613244515074331": {
+    "checkedAt": "2026-10-22T18:14:24.595Z",
+    "name": "Francis Martinez Alvarez",
+    "result": "photo",
+    "file": "x-2112613244515074331-francis-martinez-alvarez.jpg",
+    "image": "https://pbs.twimg.com/media/HVGCiCCXcAEaBMF.jpg",
+    "bytes": 5001,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Francis Martinez Alvarez, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/dhsgov/status/2112613242111438906": {
+    "checkedAt": "2026-10-22T18:14:25.005Z",
+    "name": "Thong Vilaiphone",
+    "result": "photo",
+    "file": "x-2112613242111438906-thong-vilaiphone.jpg",
+    "image": "https://pbs.twimg.com/media/HVGCdN0WkAAtGrT.jpg",
+    "bytes": 5716,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Thong Vilaiphone, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/dhsgov/status/2112613239582527890": {
+    "checkedAt": "2026-10-22T18:14:25.496Z",
+    "name": "Isidro Flores Rodriguez",
+    "result": "photo",
+    "file": "x-2112613239582527890-isidro-flores-rodriguez.jpg",
+    "image": "https://pbs.twimg.com/media/HVGCXH1XAAAR6An.jpg",
+    "bytes": 3757,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Isidro Flores Rodriguez, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/dhsgov/status/2112613236386222222": {
+    "checkedAt": "2026-10-22T18:14:25.986Z",
+    "name": "Gustavo Cardenas Arreola",
+    "result": "photo",
+    "file": "x-2112613236386222222-gustavo-cardenas-arreola.jpg",
+    "image": "https://pbs.twimg.com/media/HVGCTFYWMAE8L68.jpg",
+    "bytes": 4270,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Gustavo Cardenas Arreola, named in the post), plain custody background, no text card, no other visible face, no child"
+  },
+  "x.com/dhsgov/status/2112613234196799885": {
+    "checkedAt": "2026-10-22T18:14:26.453Z",
+    "name": "Nelson Alexander Chay",
+    "result": "photo",
+    "file": "x-2112613234196799885-nelson-alexander-chay.jpg",
+    "image": "https://pbs.twimg.com/media/HVGCPVWWwAAVcs_.jpg",
+    "bytes": 4532,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Nelson Alexander Chay, named in the post), plain custody background, no text card, no other visible face, no child"
   }
 }

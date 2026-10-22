@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-10-22T17:52:09Z",
+  "updatedAt": "2026-10-22T18:14:34Z",
   "rows": 748,
   "approved": 741,
   "pending": 7,
-  "photos": 171,
+  "photos": 216,
   "reviewRows": 762,
   "lastAddedAt": "2026-10-22T17:51:14Z",
   "lastAddedCount": 5,
@@ -14,6 +14,6 @@
     "Jefri Cap Villagran",
     "Sidney Pino-Becque"
   ],
-  "harvestSha256": "7b46b022e162446bcd60034da558db5fd20397fb76c7b21d4f0cb3857c2f7aa7",
+  "harvestSha256": "03cd25c05c050bb7020f494fb2d2dee7445e1d4df39831df6401dc7c1fcbe5cc",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
