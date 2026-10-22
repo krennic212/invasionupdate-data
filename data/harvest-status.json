@@ -1,26 +1,27 @@
 {
-  "checkedAt": 1792672407228,
-  "checkedAtIso": "2026-10-22T17:51:14Z",
+  "checkedAt": 1792692965858,
+  "checkedAtIso": "2026-10-22T18:16:05.858Z",
   "added": [
-    "Amilcar Perz-Morfin",
-    "Axel Sanchez Torres",
-    "Cristian Sneider Garcia-Salas",
-    "Jefri Cap Villagran",
-    "Sidney Pino-Becque"
+    "Jose Esteban Nunez-Ortega",
+    "Aldo Casares",
+    "Ivan Padilla-Carrillo",
+    "Juan Jose Jurado-Gonzalez",
+    "Abdul Lopez-Lujan"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 92,
+  "scannedReleases": 89,
   "error": null,
-  "note": "Added 5 Daily Signal Iowa exclusive names",
+  "note": "Added 5 as approved: Jose Esteban Nunez-Ortega, Aldo Casares, Ivan Padilla-Carrillo, Juan Jose Jurado-Gonzalez, Abdul Lopez-Lujan",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
     "cbp.gov/newsroom",
     "justice.gov press-release API",
-    "state election-crime newsrooms (scripts/state-sources.mjs)"
+    "state election-crime newsrooms (scripts/state-sources.mjs)",
+    "Daily Signal ICE-arrest exclusives (scripts/daily-signal.mjs)"
   ],
   "writer": "scripts/harvest.mjs (GitHub Actions, krennic212/invasionupdate-data)"
 }
