@@ -1,20 +1,21 @@
 {
-  "checkedAt": 1792692965858,
-  "checkedAtIso": "2026-10-22T18:16:05.858Z",
+  "checkedAt": 1792707100469,
+  "checkedAtIso": "2026-10-22T22:11:40.469Z",
   "added": [
-    "Jose Esteban Nunez-Ortega",
-    "Aldo Casares",
-    "Ivan Padilla-Carrillo",
-    "Juan Jose Jurado-Gonzalez",
-    "Abdul Lopez-Lujan"
+    "Jamie Orlando Sosa Sardina",
+    "Martha Haydee Desantis",
+    "Lise Marie Johnson",
+    "Luis Manuel Perez",
+    "Diane Wendy Curley",
+    "Pedro Igor A. Franco"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 89,
+  "scannedReleases": 86,
   "error": null,
-  "note": "Added 5 as approved: Jose Esteban Nunez-Ortega, Aldo Casares, Ivan Padilla-Carrillo, Juan Jose Jurado-Gonzalez, Abdul Lopez-Lujan",
+  "note": "Added 6 as approved: Jamie Orlando Sosa Sardina, Martha Haydee Desantis, Lise Marie Johnson, Luis Manuel Perez, Diane Wendy Curley, Pedro Igor A. Franco",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
