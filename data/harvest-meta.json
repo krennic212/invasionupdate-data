@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-10-22T18:16:07Z",
-  "rows": 753,
-  "approved": 746,
+  "updatedAt": "2026-10-22T22:10:10Z",
+  "rows": 758,
+  "approved": 751,
   "pending": 7,
   "photos": 216,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-22T18:16:05Z",
+  "lastAddedAt": "2026-10-22T22:10:03Z",
   "lastAddedCount": 5,
   "lastAdded": [
-    "Jose Esteban Nunez-Ortega",
-    "Aldo Casares",
-    "Ivan Padilla-Carrillo",
-    "Juan Jose Jurado-Gonzalez",
-    "Abdul Lopez-Lujan"
+    "Pedro Ortiz Rivera",
+    "Ahlan Aguirre-Gonzalez",
+    "Jose Albeiro Arrigui-Jimenez",
+    "Erick Eduardo Vega-Munoz",
+    "Jesus Martinez Garcia"
   ],
-  "harvestSha256": "45d222168b0a2cb8f8abcc050e26ae88b2832d82527647db722fff897e6847d2",
+  "harvestSha256": "643422751ef28659fed9feb1ee8155056bc7e60b7d529fd4312248cfe9f8b0af",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
