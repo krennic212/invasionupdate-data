@@ -157,8 +157,17 @@ export function isTrustedXPostUrl(url) {
   return Boolean(trustedXHandle(url));
 }
 
+/** News hosts the harvest is allowed to publish from. Daily Signal ICE-arrest exclusives
+ *  (scripts/daily-signal.mjs) name the person, origin, and charge. Not a federal source. */
+const TRUSTED_NEWS_HOSTS = ["dailysignal.com"];
+
+export function isTrustedNewsUrl(url) {
+  const h = hostOf(url);
+  return /^https:\/\//i.test(url) && TRUSTED_NEWS_HOSTS.some((o) => h === o || h.endsWith(`.${o}`));
+}
+
 export function isLiveSourceRow(row) {
-  return urlsIn(row?.sourceUrl).some((u) => isOfficialUrl(u) || isStateOfficialUrl(u) || isOfficialXPostUrl(u) || isTrustedXPostUrl(u));
+  return urlsIn(row?.sourceUrl).some((u) => isOfficialUrl(u) || isStateOfficialUrl(u) || isOfficialXPostUrl(u) || isTrustedXPostUrl(u) || isTrustedNewsUrl(u));
 }
 
 /** Live = at least one official federal source link on the row. */

@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-22",
   "windowDays": 7,
-  "total": 209,
+  "total": 214,
   "rows": [
     {
       "id": "dhs-20261016-jaime-velasquez-orozco",
@@ -407,6 +407,16 @@
       "name": "Mario Hernandez Sanchez",
       "when": "16 Oct 2026",
       "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "ds-20261022-amilcar-perz-morfin",
+      "name": "Amilcar Perz-Morfin",
+      "when": "22 Oct 2026",
+      "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"

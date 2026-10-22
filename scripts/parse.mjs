@@ -650,6 +650,7 @@ const AGENCY = {
   ICEgov: { label: "ICE", confirmedBy: "ICE" },
   TheJusticeDept: { label: "DOJ", confirmedBy: "DOJ" },
   CBP: { label: "CBP", confirmedBy: "DHS" },
+  DailySignal: { label: "Daily Signal", tag: "ds", confirmedBy: "White House via Daily Signal" },
   // State election-crime newsrooms (state cases; scripts/state-sources.mjs). label = the agency, tag = id prefix.
   FloridaAG: { label: "Florida Attorney General", tag: "fl-ag", confirmedBy: "Florida Attorney General" },
   FDLE: { label: "Florida Department of Law Enforcement", tag: "fdle", confirmedBy: "Florida Department of Law Enforcement" },

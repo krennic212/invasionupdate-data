@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-10-22T17:17:17Z",
-  "rows": 743,
-  "approved": 736,
+  "updatedAt": "2026-10-22T17:52:09Z",
+  "rows": 748,
+  "approved": 741,
   "pending": 7,
   "photos": 171,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-22T17:17:05Z",
+  "lastAddedAt": "2026-10-22T17:51:14Z",
   "lastAddedCount": 5,
   "lastAdded": [
-    "Alejandro Martinez Martinez",
-    "Oscar Nava-Flores",
-    "Ruben Lopez",
-    "Miguel Ramirez Rivas",
-    "Miguel Brizuela-Rosales"
+    "Amilcar Perz-Morfin",
+    "Axel Sanchez Torres",
+    "Cristian Sneider Garcia-Salas",
+    "Jefri Cap Villagran",
+    "Sidney Pino-Becque"
   ],
-  "harvestSha256": "6c148c1b4161a995a08d49a275b15f8597a510519dec4a2ad08ea9fdfafbfaec",
+  "harvestSha256": "7b46b022e162446bcd60034da558db5fd20397fb76c7b21d4f0cb3857c2f7aa7",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

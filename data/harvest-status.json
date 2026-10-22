@@ -1,9 +1,12 @@
 {
   "checkedAt": 1792672407228,
-  "checkedAtIso": "2026-10-22T12:33:27.228Z",
+  "checkedAtIso": "2026-10-22T17:51:14Z",
   "added": [
-    "FERNANDO GONCALVES DOS SANTOS",
-    "Ketan Kamdar"
+    "Amilcar Perz-Morfin",
+    "Axel Sanchez Torres",
+    "Cristian Sneider Garcia-Salas",
+    "Jefri Cap Villagran",
+    "Sidney Pino-Becque"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -11,7 +14,7 @@
   "sentToReview": [],
   "scannedReleases": 92,
   "error": null,
-  "note": "Added 2 as approved: FERNANDO GONCALVES DOS SANTOS, Ketan Kamdar",
+  "note": "Added 5 Daily Signal Iowa exclusive names",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

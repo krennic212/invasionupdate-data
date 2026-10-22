@@ -32,6 +32,7 @@ import { holdReasons, holdReasonsForRow } from "./guards.mjs";
 import { operationsFor } from "./operations.mjs";
 import { fillCity } from "./office-city.mjs";
 import { latLonFor } from "./parse.mjs";
+import { dailySignalReleases } from "./daily-signal.mjs";
 
 const HARVEST = process.env.HARVEST_FILE || "data/harvest.json";
 const REVIEW = process.env.REVIEW_FILE || "data/review.json";
@@ -186,6 +187,27 @@ async function stateReleases(errors) {
   }
 }
 
+/** Daily Signal exclusives that name ICE-arrested aliens. Off with DAILY_SIGNAL=0. */
+async function dailySignalHits(errors) {
+  if (process.env.DAILY_SIGNAL === "0") return [];
+  try {
+    const sinceMs = Date.now() - MAX_AGE_DAYS * 86400000;
+    const releases = await dailySignalReleases(fetchText, { sinceMs });
+    const hits = [];
+    for (const rel of releases) {
+      const iso = rel.date ? new Date(rel.date).toISOString().slice(0, 10) : new Date().toISOString().slice(0, 10);
+      for (const person of rel.people) {
+        hits.push({ ...person, url: rel.url, title: rel.title, date: iso });
+      }
+    }
+    console.error(`daily-signal: ${releases.length} exclusives, ${hits.length} named`);
+    return hits;
+  } catch (e) {
+    errors.push(`daily signal: ${String(e?.message || e)}`);
+    return [];
+  }
+}
+
 async function main() {
   const harvest = readJson(HARVEST, []);
   const review = readJson(REVIEW, []);
@@ -232,6 +254,7 @@ async function main() {
   }
   rels.push(...(await dojReleases(errors)));
   rels.push(...(await stateReleases(errors)));
+  const signal = await dailySignalHits(errors);
 
   const fresh = [];
   const opReleases = [];
@@ -263,6 +286,24 @@ async function main() {
     }
     opReleases.push({ ...rel, namedThisRun });
   }
+  for (const hit of signal) {
+    scanned += 1;
+    const k = nameKey(hit.name);
+    if (!k || have.has(k)) continue;
+    if ([...have].some((h) => isShortFormOf(k, h))) continue;
+    have.add(k);
+    const row = toRow(hit, { office: "DailySignal", url: hit.url, title: hit.title, date: hit.date });
+    const reasons = holdReasons({ name: hit.name, sentence: hit.sentence, title: hit.title, releaseText: hit.sentence, label: row.crime.slice(0, row.crime.indexOf(":")) });
+    const gated = gate({ ...row, id: uniqueId(row.id, row) }, reasons);
+    const placed = fillCity(gated);
+    if (placed.city && placed.city !== "Not stated" && (placed.lat == null || placed.lon == null)) {
+      const geo = latLonFor(placed.city);
+      if (geo.lat != null) { placed.lat = geo.lat; placed.lon = geo.lon; }
+    }
+    if (placed.status === "pending") held.push(`${hit.name} (${placed.holdReason || "approval gate"})`);
+    fresh.push(scrubVictimNames(placed).row);
+    added.push(hit.name);
+  }
   // Unnamed group counts ("arrested 82 illegal aliens"). heads = total - named, so the ticker does not count anyone twice.
   const ops = operationsFor(opReleases, [...harvest, ...fresh]);
   for (const op of ops) {
@@ -285,7 +326,7 @@ async function main() {
     scannedReleases: scanned,
     error: errors.length ? errors.slice(0, 6).join(" | ") : null,
     note: added.length ? `Added ${added.length} as ${NEW_STATUS}: ${added.join(", ")}` : "No new named people in official releases this run.",
-    sources: ["dhs.gov/news-releases/press-releases", "ice.gov/newsroom", "cbp.gov/newsroom", "justice.gov press-release API", "state election-crime newsrooms (scripts/state-sources.mjs)"],
+    sources: ["dhs.gov/news-releases/press-releases", "ice.gov/newsroom", "cbp.gov/newsroom", "justice.gov press-release API", "state election-crime newsrooms (scripts/state-sources.mjs)", "Daily Signal ICE-arrest exclusives (scripts/daily-signal.mjs)"],
     writer: "scripts/harvest.mjs (GitHub Actions, krennic212/invasionupdate-data)",
   });
   console.log(JSON.stringify({ added: added.length, names: added, heldPending: held, sentToReview: toReview, scannedReleases: scanned, errors }, null, 2));
