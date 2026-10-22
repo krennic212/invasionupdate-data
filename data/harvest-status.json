@@ -1,20 +1,17 @@
 {
-  "checkedAt": 1792626953072,
-  "checkedAtIso": "2026-10-21T23:55:53.072Z",
+  "checkedAt": 1792672407228,
+  "checkedAtIso": "2026-10-22T12:33:27.228Z",
   "added": [
-    "Omar Roberto Martinez",
-    "Jose Manuel Munoz Ramos",
-    "Marvin Jonathan Ignacio Lopez-Portuguez",
-    "Elias Izquiero Manuel",
-    "Enrique Balcazar-Arias"
+    "FERNANDO GONCALVES DOS SANTOS",
+    "Ketan Kamdar"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 91,
+  "scannedReleases": 92,
   "error": null,
-  "note": "Added 5 as approved: Omar Roberto Martinez, Jose Manuel Munoz Ramos, Marvin Jonathan Ignacio Lopez-Portuguez, Elias Izquiero Manuel, Enrique Balcazar-Arias",
+  "note": "Added 2 as approved: FERNANDO GONCALVES DOS SANTOS, Ketan Kamdar",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

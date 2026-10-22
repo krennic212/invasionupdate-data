@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-10-21",
+  "asOf": "2026-10-22",
   "windowDays": 7,
-  "total": 213,
+  "total": 169,
   "rows": [
     {
       "id": "dhs-20261016-jaime-velasquez-orozco",
@@ -79,35 +79,10 @@
       ]
     },
     {
-      "id": "dhs-20261015-david-antonio-aviles-perez",
-      "name": "David Antonio Aviles Perez",
-      "when": "15 Oct 2026",
-      "severity": 180,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "Assault / battery",
-        "Burglary / theft",
-        "Drug possession"
-      ]
-    },
-    {
       "id": "x-2112267610163175525-frankie-miller",
       "name": "Frankie Miller",
       "when": "19 Oct 2026",
       "severity": 171,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons",
-        "Burglary / theft"
-      ]
-    },
-    {
-      "id": "x-2110718652127285708-salvador-javiquer-sotolongo",
-      "name": "Salvador Javiquer Sotolongo",
-      "when": "15 Oct 2026",
-      "severity": 144,
       "severityReason": "Armed robbery / aggravated assault",
       "severityCrimes": [
         "Armed robbery / aggravated assault",
@@ -221,17 +196,6 @@
       ]
     },
     {
-      "id": "dhs-20261015-ricardo-curbelo-aguilar",
-      "name": "Ricardo Curbelo-Aguilar",
-      "when": "15 Oct 2026",
-      "severity": 120,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "DUI"
-      ]
-    },
-    {
       "id": "doj-20261019-raul-reyes-hernandez",
       "name": "Raul Reyes-Hernandez",
       "when": "19 Oct 2026",
@@ -266,17 +230,6 @@
       ]
     },
     {
-      "id": "x-2110761428525240505-reynaldo-chamizo-zayas",
-      "name": "Reynaldo Chamizo Zayas",
-      "when": "15 Oct 2026",
-      "severity": 108,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Drug trafficking"
-      ]
-    },
-    {
       "id": "x-2111087267460653341-jose-angel-quesada-ponce",
       "name": "Jose Angel Quesada-Ponce",
       "when": "16 Oct 2026",
@@ -296,6 +249,17 @@
       "severityCrimes": [
         "Child sex crime",
         "DUI"
+      ]
+    },
+    {
+      "id": "x-2112267614667911511-sergio-de-anda-rodriguez",
+      "name": "Sergio De Anda-Rodriguez",
+      "when": "19 Oct 2026",
+      "severity": 105,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Burglary / theft"
       ]
     },
     {
@@ -400,56 +364,6 @@
       ]
     },
     {
-      "id": "dhs-20261015-jaime-marques-orellana",
-      "name": "Jaime Marques-Orellana",
-      "when": "15 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2110830170663731606-juan-gutierrez-garcia",
-      "name": "Juan Gutierrez-Garcia",
-      "when": "15 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261015-julio-eduardo-ortega-diaz",
-      "name": "Julio Eduardo Ortega-Diaz",
-      "when": "15 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2110830186690212309-luis-hernandez-flores",
-      "name": "Luis Hernandez Flores",
-      "when": "15 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261015-rafael-calderon-vierya",
-      "name": "Rafael Calderon-Vierya",
-      "when": "15 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
       "id": "x-2112613236386222222-gustavo-cardenas-arreola",
       "name": "Gustavo Cardenas Arreola",
       "when": "20 Oct 2026",
@@ -483,16 +397,6 @@
       "id": "x-2111141118049947761-cheng-saephan",
       "name": "Cheng Saephan",
       "when": "16 Oct 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2110689822792966222-juan-carlos-izaguirre-membreno",
-      "name": "Juan Carlos Izaguirre Membreno",
-      "when": "15 Oct 2026",
       "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
