@@ -1,14 +1,17 @@
 {
-  "checkedAt": 1792714811818,
-  "checkedAtIso": "2026-10-23T00:20:11.818Z",
-  "added": [],
+  "checkedAt": 1792764869072,
+  "checkedAtIso": "2026-10-23T14:14:29.072Z",
+  "added": [
+    "Artemio Martin-Perez",
+    "Sergio Mendez-Tuxtla"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 85,
+  "scannedReleases": 79,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 2 as approved: Artemio Martin-Perez, Sergio Mendez-Tuxtla",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
