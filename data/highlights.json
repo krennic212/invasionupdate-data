@@ -1,36 +1,8 @@
 {
   "asOf": "2026-10-22",
   "windowDays": 7,
-  "total": 230,
+  "total": 185,
   "rows": [
-    {
-      "id": "dhs-20261016-jaime-velasquez-orozco",
-      "name": "Jaime Velasquez Orozco",
-      "when": "16 Oct 2026",
-      "severity": 312,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Rape / sexual assault",
-        "Assault / battery",
-        "Burglary / theft",
-        "Drug possession",
-        "DUI"
-      ]
-    },
-    {
-      "id": "dhs-20261016-noe-ochoa-torres",
-      "name": "Noe Ochoa Torres",
-      "when": "16 Oct 2026",
-      "severity": 283,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Child sex crime",
-        "Violent crime against a child",
-        "Drug possession"
-      ]
-    },
     {
       "id": "x-2112929852688892154-toan-chu",
       "name": "Toan Chu",
@@ -56,31 +28,6 @@
       ]
     },
     {
-      "id": "dhs-20261016-jiovany-baray-acosta",
-      "name": "Jiovany Baray-Acosta",
-      "when": "16 Oct 2026",
-      "severity": 204,
-      "severityReason": "Kidnapping / human trafficking",
-      "severityCrimes": [
-        "Kidnapping / human trafficking",
-        "Weapons",
-        "Drug trafficking",
-        "DUI"
-      ]
-    },
-    {
-      "id": "x-2111148670829957349-leo-robert-jackson",
-      "name": "Leo Robert Jackson",
-      "when": "16 Oct 2026",
-      "severity": 192,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Fraud (incl. voter fraud)",
-        "Assault / battery"
-      ]
-    },
-    {
       "id": "x-2112698882157060102-farmon-farmonbekov",
       "name": "Farmon Farmonbekov",
       "when": "21 Oct 2026",
@@ -95,17 +42,6 @@
       "id": "x-2112654481834029435-victor-manuel-franco-alvares",
       "name": "Victor Manuel Franco-Alvares",
       "when": "20 Oct 2026",
-      "severity": 182,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Rape / sexual assault"
-      ]
-    },
-    {
-      "id": "dhs-20261016-rene-flores-lue",
-      "name": "Rene Flores-Lue",
-      "when": "16 Oct 2026",
       "severity": 182,
       "severityReason": "Child sex crime",
       "severityCrimes": [
@@ -265,17 +201,6 @@
       ]
     },
     {
-      "id": "dhs-20261016-german-garcia-ordonez",
-      "name": "German Garcia-Ordonez",
-      "when": "16 Oct 2026",
-      "severity": 120,
-      "severityReason": "Violent crime against a child",
-      "severityCrimes": [
-        "Violent crime against a child",
-        "Assault / battery"
-      ]
-    },
-    {
       "id": "x-2113090714011570644-amilcar-casia",
       "name": "Amilcar Casia",
       "when": "21 Oct 2026",
@@ -301,6 +226,17 @@
       ]
     },
     {
+      "id": "x-2112654503946424822-ludwig-criss-zelaya-romero",
+      "name": "Ludwig Criss Zelaya Romero",
+      "when": "20 Oct 2026",
+      "severity": 105,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Drug trafficking"
+      ]
+    },
+    {
       "id": "x-2112319633269112918-florentino-ortiz-vivar",
       "name": "Florentino Ortiz Vivar",
       "when": "19 Oct 2026",
@@ -308,6 +244,28 @@
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime",
+        "DUI"
+      ]
+    },
+    {
+      "id": "x-2112267614667911511-sergio-de-anda-rodriguez",
+      "name": "Sergio De Anda-Rodriguez",
+      "when": "19 Oct 2026",
+      "severity": 105,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Burglary / theft"
+      ]
+    },
+    {
+      "id": "x-2113317011602153731-alejandro-martinez-martinez",
+      "name": "Alejandro Martinez Martinez",
+      "when": "22 Oct 2026",
+      "severity": 104,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
         "DUI"
       ]
     },
@@ -383,36 +341,6 @@
       ]
     },
     {
-      "id": "dhs-20261016-hernan-marcelo-tamayo-fernandez",
-      "name": "Hernan Marcelo Tamayo-Fernandez",
-      "when": "16 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261016-luis-antonio-vasquez-encinas",
-      "name": "Luis Antonio Vasquez Encinas",
-      "when": "16 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2111201537850786264-mario-hernandez-sanchez",
-      "name": "Mario Hernandez Sanchez",
-      "when": "16 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
       "id": "ds-20261022-amilcar-perz-morfin",
       "name": "Amilcar Perz-Morfin",
       "when": "22 Oct 2026",
@@ -456,16 +384,6 @@
       "id": "x-2112596708794445950-octavio-fragoso",
       "name": "Octavio Fragoso",
       "when": "20 Oct 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2111141118049947761-cheng-saephan",
-      "name": "Cheng Saephan",
-      "when": "16 Oct 2026",
       "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [

@@ -1,21 +1,14 @@
 {
-  "checkedAt": 1792707100469,
-  "checkedAtIso": "2026-10-22T22:11:40.469Z",
-  "added": [
-    "Jamie Orlando Sosa Sardina",
-    "Martha Haydee Desantis",
-    "Lise Marie Johnson",
-    "Luis Manuel Perez",
-    "Diane Wendy Curley",
-    "Pedro Igor A. Franco"
-  ],
+  "checkedAt": 1792714811818,
+  "checkedAtIso": "2026-10-23T00:20:11.818Z",
+  "added": [],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 86,
+  "scannedReleases": 85,
   "error": null,
-  "note": "Added 6 as approved: Jamie Orlando Sosa Sardina, Martha Haydee Desantis, Lise Marie Johnson, Luis Manuel Perez, Diane Wendy Curley, Pedro Igor A. Franco",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
