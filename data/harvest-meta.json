@@ -1,20 +1,17 @@
 {
-  "updatedAt": "2026-10-22T22:11:41Z",
-  "rows": 764,
-  "approved": 757,
+  "updatedAt": "2026-10-23T14:13:22Z",
+  "rows": 767,
+  "approved": 760,
   "pending": 7,
   "photos": 216,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-22T22:11:40Z",
-  "lastAddedCount": 6,
+  "lastAddedAt": "2026-10-23T14:13:08Z",
+  "lastAddedCount": 3,
   "lastAdded": [
-    "Jamie Orlando Sosa Sardina",
-    "Martha Haydee Desantis",
-    "Lise Marie Johnson",
-    "Luis Manuel Perez",
-    "Diane Wendy Curley",
-    "Pedro Igor A. Franco"
+    "Miguel Maldonado Soriano",
+    "Francilien Fernand",
+    "Jeffry Gardy Pharel-Joseph"
   ],
-  "harvestSha256": "b01432775ecfa7b7a35d8075bdeeb5fd43d6f6d2963db3370aa89453e0178b67",
+  "harvestSha256": "3d18b0eef4a0e15c249cd37c324f8286a8461ffff8e0ad2a820f45f521e8dbc5",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
