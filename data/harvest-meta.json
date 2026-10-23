@@ -1,17 +1,15 @@
 {
-  "updatedAt": "2026-10-23T17:15:30Z",
-  "rows": 775,
-  "approved": 766,
+  "updatedAt": "2026-10-23T18:03:58Z",
+  "rows": 776,
+  "approved": 767,
   "pending": 9,
   "photos": 216,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-23T17:15:29Z",
-  "lastAddedCount": 3,
+  "lastAddedAt": "2026-10-23T18:03:57Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Marina Viviana Gary",
-    "Tulio Perez-Bolbito",
-    "Omar Tovar-Rodriguez"
+    "Miguel Alonso Maldonado Soriano"
   ],
-  "harvestSha256": "0886624a308c09b078cbb4fba24b5265fa904909ed2692480a38dfb090ab5d7e",
+  "harvestSha256": "a4fb7c277706b75fa97c0a53433f0c2caf4c2f48b060b786504483d1d2572518",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

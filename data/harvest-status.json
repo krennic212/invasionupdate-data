@@ -1,23 +1,16 @@
 {
-  "checkedAt": 1792775729579,
-  "checkedAtIso": "2026-10-23T17:15:29.579Z",
+  "checkedAt": 1792778637401,
+  "checkedAtIso": "2026-10-23T18:03:57.401Z",
   "added": [
-    "Cristian Jonathan Cortes",
-    "Marina Viviana Gary",
-    "Benjamin Galindo",
-    "Tulio Perez-Bolbito",
-    "Omar Tovar-Rodriguez"
+    "Miguel Alonso Maldonado Soriano"
   ],
   "addedStatus": "approved",
-  "heldPending": [
-    "Cristian Jonathan Cortes (not stated to be a non-citizen)",
-    "Benjamin Galindo (not stated to be a non-citizen)"
-  ],
+  "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 79,
+  "scannedReleases": 75,
   "error": null,
-  "note": "Added 5 as approved: Cristian Jonathan Cortes, Marina Viviana Gary, Benjamin Galindo, Tulio Perez-Bolbito, Omar Tovar-Rodriguez",
+  "note": "Added 1 as approved: Miguel Alonso Maldonado Soriano",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
