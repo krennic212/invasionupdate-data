@@ -1,8 +1,22 @@
 {
   "asOf": "2026-10-23",
   "windowDays": 7,
-  "total": 208,
+  "total": 216,
   "rows": [
+    {
+      "id": "dhs-20261023-anthony-tyrone-higgs",
+      "name": "Anthony Tyrone Higgs",
+      "when": "23 Oct 2026",
+      "severity": 277,
+      "severityReason": "Attack on police officer",
+      "severityCrimes": [
+        "Attack on police officer",
+        "Armed robbery / aggravated assault",
+        "Fraud (incl. voter fraud)",
+        "Weapons",
+        "Burglary / theft"
+      ]
+    },
     {
       "id": "x-2112929852688892154-toan-chu",
       "name": "Toan Chu",

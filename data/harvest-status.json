@@ -1,16 +1,23 @@
 {
-  "checkedAt": 1792778637401,
-  "checkedAtIso": "2026-10-23T18:03:57.401Z",
+  "checkedAt": 1792793626178,
+  "checkedAtIso": "2026-10-23T22:13:46.178Z",
   "added": [
-    "Miguel Alonso Maldonado Soriano"
+    "Edduard Omar Majano-Sosa",
+    "Karl Paul Fout",
+    "Lawton Caswell Broomfield E McKenzie",
+    "Andres Garcia",
+    "Anthony Tyrone Higgs",
+    "Eoin Cranney",
+    "Ronald Sheldon Baird",
+    "Karlene Daniels Samuels"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 75,
+  "scannedReleases": 76,
   "error": null,
-  "note": "Added 1 as approved: Miguel Alonso Maldonado Soriano",
+  "note": "Added 8 as approved: Edduard Omar Majano-Sosa, Karl Paul Fout, Lawton Caswell Broomfield E McKenzie, Andres Garcia, Anthony Tyrone Higgs, Eoin Cranney, Ronald Sheldon Baird, Karlene Daniels Samuels",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
