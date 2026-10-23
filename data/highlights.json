@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-23",
   "windowDays": 7,
-  "total": 191,
+  "total": 208,
   "rows": [
     {
       "id": "x-2112929852688892154-toan-chu",
@@ -83,6 +83,18 @@
         "Kidnapping / human trafficking",
         "Armed robbery / aggravated assault",
         "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "x-2113712401560592790-serferino-trinidad-ortega",
+      "name": "Serferino Trinidad Ortega",
+      "when": "23 Oct 2026",
+      "severity": 138,
+      "severityReason": "Attack on police officer",
+      "severityCrimes": [
+        "Attack on police officer",
+        "Assault / battery",
+        "DUI"
       ]
     },
     {
@@ -201,6 +213,28 @@
       ]
     },
     {
+      "id": "x-2113734889891840350-pantaleon-chacon-madrid",
+      "name": "Pantaleon Chacon Madrid",
+      "when": "23 Oct 2026",
+      "severity": 119,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Assault / battery"
+      ]
+    },
+    {
+      "id": "x-2113727322167603425-juan-carlos-vasquez-vasaldua",
+      "name": "Juan Carlos Vasquez-Vasaldua",
+      "when": "23 Oct 2026",
+      "severity": 117,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "DUI"
+      ]
+    },
+    {
       "id": "x-2113090714011570644-amilcar-casia",
       "name": "Amilcar Casia",
       "when": "21 Oct 2026",
@@ -226,6 +260,17 @@
       ]
     },
     {
+      "id": "x-2113727308687118469-eduardo-miguel-ramirez-jimenez",
+      "name": "Eduardo Miguel Ramirez Jimenez",
+      "when": "23 Oct 2026",
+      "severity": 105,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Burglary / theft"
+      ]
+    },
+    {
       "id": "x-2112654503946424822-ludwig-criss-zelaya-romero",
       "name": "Ludwig Criss Zelaya Romero",
       "when": "20 Oct 2026",
@@ -248,25 +293,13 @@
       ]
     },
     {
-      "id": "x-2112267614667911511-sergio-de-anda-rodriguez",
-      "name": "Sergio De Anda-Rodriguez",
-      "when": "19 Oct 2026",
-      "severity": 105,
-      "severityReason": "Armed robbery / aggravated assault",
+      "id": "x-2113723722662051889-francisco-cortez-perez",
+      "name": "Francisco Cortez-Perez",
+      "when": "23 Oct 2026",
+      "severity": 101,
+      "severityReason": "Child sex crime",
       "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Burglary / theft"
-      ]
-    },
-    {
-      "id": "x-2113317011602153731-alejandro-martinez-martinez",
-      "name": "Alejandro Martinez Martinez",
-      "when": "22 Oct 2026",
-      "severity": 104,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "DUI"
+        "Child sex crime"
       ]
     },
     {
@@ -308,6 +341,46 @@
       "severityCrimes": [
         "Violent crime against a child",
         "DUI"
+      ]
+    },
+    {
+      "id": "x-2113723720607125628-fredy-adeli-cuxum-orellana",
+      "name": "Fredy Adeli Cuxum-Orellana",
+      "when": "23 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2113723714739056924-luis-enrique-nucamendi-molina",
+      "name": "Luis Enrique Nucamendi-Molina",
+      "when": "23 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2113727317319295265-santiago-miguel-miguel-ignacio",
+      "name": "Santiago Miguel Miguel Ignacio",
+      "when": "23 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2113727300533633122-victor-perez-perez",
+      "name": "Victor Perez-Perez",
+      "when": "23 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
       ]
     },
     {
