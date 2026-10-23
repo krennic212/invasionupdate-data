@@ -1,16 +1,15 @@
 {
-  "updatedAt": "2026-10-23T14:14:30Z",
-  "rows": 769,
-  "approved": 762,
+  "updatedAt": "2026-10-23T17:14:35Z",
+  "rows": 770,
+  "approved": 763,
   "pending": 7,
   "photos": 216,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-23T14:14:29Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-10-23T17:14:35Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Artemio Martin-Perez",
-    "Sergio Mendez-Tuxtla"
+    "Jose Portillo-Gifaro"
   ],
-  "harvestSha256": "a6c75dba3e9ee1573baf72ff1013addd68b5be2170e86bce7ff5139b8001d4eb",
+  "harvestSha256": "687cd83c261e4d62836b4bf6dc17475a9f8f2cb762ef5e6387fc06483af0695f",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -1,5 +1,32 @@
 [
   {
+    "name": "Jose Portillo-Gifaro",
+    "city": "Not stated",
+    "crime": "Convicted: ERO New Orleans arrested Jose Portillo-Gifaro, a criminal illegal alien from Honduras convicted of felony assault.",
+    "usa": "ICE X post Oct 23, 2026 (@ERONewOrleans)",
+    "foreign": "Not stated in post",
+    "picked": "10/23/2026 (@ERONewOrleans post)",
+    "entered": "Not stated",
+    "office": "ERONewOrleans",
+    "id": "x-2113643859137998894-jose-portillo-gifaro",
+    "when": "23 Oct 2026",
+    "severity": 40,
+    "severityReason": "Assault / battery",
+    "severityCrimes": [
+      "Assault / battery"
+    ],
+    "text": "@ERONewOrleans Oct 23, 2026, as posted: ERO New Orleans arrested Jose Portillo-Gifaro, a criminal illegal alien from Honduras convicted of felony assault. Orleans Parish Sheriff's Office released Portillo from custody and did not notify ICE, despite an active detainer. On October 15, 2026, ERO New Orleans Fugitive Operations Team officers conducted a targeted operation and arrested Portillo. He is in ICE custody pending removal proceedings. If you come into our country illegally and break our laws, we will find you, we will arrest you, and we will deport you-even in sanctuary cities.",
+    "photo": "",
+    "via": "@ERONewOrleans 2113643859137998894",
+    "sourceUrl": "https://x.com/ERONewOrleans/status/2113643859137998894",
+    "voting": false,
+    "origin": "Honduras",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved"
+  },
+  {
     "name": "Artemio Martin-Perez",
     "city": "Georgia",
     "crime": "Convicted: Artemio Martin-Perez, 30, a citizen of Guatemala, was sentenced to time served followed by immediate deportation after pleading guilty to Illegal Re-entry after Removal or Deportation.",
