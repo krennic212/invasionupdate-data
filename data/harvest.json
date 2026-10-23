@@ -283,7 +283,7 @@
       "Drug possession"
     ],
     "text": "@EROMiami Oct 23, 2026, as posted: ICE arrested Francilien Fernand, a criminal illegal alien from Haiti who was previously removed & has a final order of removal. His convictions include cocaine & marijuana possession, probation violations, resisting an officer, and possessing stolen property.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2113601335673172242-francilien-fernand.jpg",
     "via": "@EROMiami 2113601335673172242",
     "sourceUrl": "https://x.com/EROMiami/status/2113601335673172242",
     "voting": false,
@@ -291,7 +291,8 @@
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HVRLsVIW8AAxEb4.png"
   },
   {
     "name": "Jeffry Gardy Pharel-Joseph",
@@ -308,7 +309,7 @@
     "severityReason": "",
     "severityCrimes": [],
     "text": "@EROBoston Oct 23, 2026, as posted: On Oct. 22, ICE Boston arrested Jeffry Gardy Pharel-Joseph, an illegal alien and former TPS recipient from Haiti, during Operation Ballot Shield in Burlington, Mass.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2113580568306667985-jeffry-gardy-pharel-joseph.jpg",
     "via": "@EROBoston 2113580568306667985",
     "sourceUrl": "https://x.com/EROBoston/status/2113580568306667985",
     "voting": false,
@@ -316,7 +317,8 @@
     "confirmedBy": "ICE",
     "lat": 42.5089,
     "lon": -71.2004,
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HVTx5tZWcAAuMXQ.png"
   },
   {
     "name": "Jamie Orlando Sosa Sardina",
@@ -551,7 +553,7 @@
       "Drug trafficking"
     ],
     "text": "@ERONewOrleans Oct 22, 2026, as posted: ICE New Orleans arrested Jose Albeiro Arrigui-Jimenez, an illegal alien from Colombia. Criminal history includes a conviction for conspiracy to manufacture and distribute cocaine intending, knowing, and with reasonable cause to believe that the cocaine will be unlawfully",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2113338809043526126-jose-albeiro-arrigui-jimenez.jpg",
     "via": "@ERONewOrleans 2113338809043526126",
     "sourceUrl": "https://x.com/ERONewOrleans/status/2113338809043526126",
     "voting": false,
@@ -559,7 +561,8 @@
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HVQWOa0XIAAPErU.png"
   },
   {
     "name": "Erick Eduardo Vega-Munoz",
@@ -578,7 +581,7 @@
       "Assault / battery"
     ],
     "text": "@EROChicago Oct 22, 2026, as posted: @EROChicago removed Erick Eduardo Vega-Munoz, a known & suspected terrorist, gang member, & criminal illegal alien, to El Salvador. Munoz has nine convictions, including terroristic threat offenses, obstructing police, & assault. He was ordered removed from the U.S. in 2012.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2113327111478059338-erick-eduardo-vega-munoz.jpg",
     "via": "@EROChicago 2113327111478059338",
     "sourceUrl": "https://x.com/EROChicago/status/2113327111478059338",
     "voting": false,
@@ -586,7 +589,8 @@
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HVQLtk3WQAAYEHr.png"
   },
   {
     "name": "Jesus Martinez Garcia",
@@ -605,7 +609,7 @@
       "DUI"
     ],
     "text": "@EROSanFrancisco Oct 22, 2026, as posted: ICE San Francisco arrested criminal alien Jesus Martinez Garcia, 39, of Mexico, in Stockton. His criminal history includes an arrest for DUI, using false citizenship documents and driving without a license. He is in ICE custody and requested and was granted voluntary return.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2113319974555320594-jesus-martinez-garcia.jpg",
     "via": "@EROSanFrancisco 2113319974555320594",
     "sourceUrl": "https://x.com/EROSanFrancisco/status/2113319974555320594",
     "voting": false,
@@ -613,7 +617,8 @@
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HVGZ3BmW4AAdzJr.png"
   },
   {
     "name": "Jose Esteban Nunez-Ortega",

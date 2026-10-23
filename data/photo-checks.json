@@ -2892,5 +2892,74 @@
     "name": "Miguel Alonso Maldonado Soriano",
     "result": "none",
     "why": "no single person-specific image in the release"
+  },
+  "x.com/eroneworleans/status/2113643859137998894": {
+    "checkedAt": "2026-10-23T18:07:31.060Z",
+    "name": "Jose Portillo-Gifaro",
+    "result": "none",
+    "why": "Viewed image: street arrest scene with three people (two officers in vests and the arrestee by an SUV); not a headshot"
+  },
+  "x.com/ndalnews/status/2113623556735004852": {
+    "checkedAt": "2026-10-23T18:07:31.246Z",
+    "name": "Miguel Maldonado Soriano",
+    "result": "none",
+    "why": "post has only a video, no still image"
+  },
+  "x.com/eromiami/status/2113601335673172242": {
+    "checkedAt": "2026-10-23T18:07:31.669Z",
+    "name": "Francilien Fernand",
+    "result": "photo",
+    "file": "x-2113601335673172242-francilien-fernand.jpg",
+    "image": "https://pbs.twimg.com/media/HVRLsVIW8AAxEb4.png",
+    "bytes": 17625,
+    "reviewed": "Viewed image: one adult man in a white sweater in a processing room; wall monitor and doors behind show no visible face; no text, no child"
+  },
+  "x.com/eroboston/status/2113580568306667985": {
+    "checkedAt": "2026-10-23T18:07:32.069Z",
+    "name": "Jeffry Gardy Pharel-Joseph",
+    "result": "photo",
+    "file": "x-2113580568306667985-jeffry-gardy-pharel-joseph.jpg",
+    "image": "https://pbs.twimg.com/media/HVTx5tZWcAAuMXQ.png",
+    "bytes": 6730,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Jeffry Gardy Pharel-Joseph, named in the post), plain background, no text card, no other visible face, no child"
+  },
+  "x.com/hsi_dallas/status/2113391445906239545": {
+    "checkedAt": "2026-10-23T18:07:32.335Z",
+    "name": "Pedro Ortiz Rivera",
+    "result": "none",
+    "why": "post has only a video, no still image"
+  },
+  "x.com/ero__phoenix/status/2113359744530604280": {
+    "checkedAt": "2026-10-23T18:07:32.550Z",
+    "name": "Ahlan Aguirre-Gonzalez",
+    "result": "none",
+    "why": "Viewed image: ICE 'ARRESTED / FACING REMOVAL, PHOENIX, AZ' graphic card with text banners and DHS logo; text card, not a plain booking photo"
+  },
+  "x.com/eroneworleans/status/2113338809043526126": {
+    "checkedAt": "2026-10-23T18:07:32.912Z",
+    "name": "Jose Albeiro Arrigui-Jimenez",
+    "result": "photo",
+    "file": "x-2113338809043526126-jose-albeiro-arrigui-jimenez.jpg",
+    "image": "https://pbs.twimg.com/media/HVQWOa0XIAAPErU.png",
+    "bytes": 6771,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Jose Albeiro Arrigui-Jimenez, named in the post), plain background, no text card, no other visible face, no child"
+  },
+  "x.com/erochicago/status/2113327111478059338": {
+    "checkedAt": "2026-10-23T18:07:33.367Z",
+    "name": "Erick Eduardo Vega-Munoz",
+    "result": "photo",
+    "file": "x-2113327111478059338-erick-eduardo-vega-munoz.jpg",
+    "image": "https://pbs.twimg.com/media/HVQLtk3WQAAYEHr.png",
+    "bytes": 7579,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Erick Eduardo Vega-Munoz, named in the post), plain background, no text card, no other visible face, no child"
+  },
+  "x.com/erosanfrancisco/status/2113319974555320594": {
+    "checkedAt": "2026-10-23T18:07:33.787Z",
+    "name": "Jesus Martinez Garcia",
+    "result": "photo",
+    "file": "x-2113319974555320594-jesus-martinez-garcia.jpg",
+    "image": "https://pbs.twimg.com/media/HVGZ3BmW4AAdzJr.png",
+    "bytes": 13840,
+    "reviewed": "Viewed image: single booking-style headshot of one adult (Jesus Martinez Garcia, named in the post), plain background, no text card, no other visible face, no child"
   }
 }

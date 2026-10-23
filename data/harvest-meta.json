@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-10-23T18:03:58Z",
+  "updatedAt": "2026-10-23T18:07:40Z",
   "rows": 776,
   "approved": 767,
   "pending": 9,
-  "photos": 216,
+  "photos": 221,
   "reviewRows": 762,
   "lastAddedAt": "2026-10-23T18:03:57Z",
   "lastAddedCount": 1,
   "lastAdded": [
     "Miguel Alonso Maldonado Soriano"
   ],
-  "harvestSha256": "a4fb7c277706b75fa97c0a53433f0c2caf4c2f48b060b786504483d1d2572518",
+  "harvestSha256": "36954d9fd2a0d039b347dc46fcd4c5855007b6619b4f236d85a3cdad48191d79",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
