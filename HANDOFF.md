@@ -1,3 +1,23 @@
+# HANDOFF: 2026-10-23 (8:30 PM CDT) 11 missed official rows via data/pending.json (Krennic approved)
+
+- Added through data/pending.json intake (AUTO_APPROVE=true, live scan off: MAX_LINKS=0 DOJ_PAGES=0 STATE_SOURCES=0
+  DAILY_SIGNAL=0), rows built with parse.mjs toRow from the release text (verbatim sentences), guards on, none held. No photos
+  (no official photo in any of the releases; the PA release is multi-defendant). All Charged.
+  - usao-mdpa "Nine Pennsylvania Non-Citizens Charged with Illegally Voting" (Oct 23): Artur Kopacz, Osmal Loy, Yehuda Peer,
+    Alfredo Santiesteban, Joyce Donovan, Inna Henry, Nourten Kuruju, Nina Nyawara, Joyce Pitts (charged by information, voting by
+    an alien; town and country per release). lat/lon set by hand for Fountain Hill, Merion Station, Luzerne, Effort.
+  - usao-ndny Marva Cook (Oct 22): "a German national ... appeared on a charge of voting by an alien. Cook is a lawful permanent
+    resident." Label Charged (criminal complaint; toRow read "Arrested" from the title). The complaint sentence ("... not a United
+    States citizen ...") is in text only, because its "United States citizen" words trip the citizen override in the label.
+  - usao-ma Juana Milagros Peña Peña (Oct 22): Dominican national, SNAP fraud / theft of government money / aggravated identity
+    theft, charged by complaint; "over $11,000 in SNAP benefits" in text.
+- Why missed: extractPeople has no pattern for "Name, 50, of Town, was charged ... The information alleges that the defendant, a
+  citizen of X ..." (status in the next sentence as "the defendant") or "a German national of Syracuse ... appeared on a charge".
+  Parser not changed.
+- Pre-existing, NOT changed: voting-place.test.mjs fails on 4 DHS rows the 2026-10-23 22:13Z run added from
+  dhs.gov/news/2026/10/23/hsi-and-fbi-arrest-ten-aliens-voter-fraud-north-carolina (city "Not stated"; same people as the EDNC
+  rows: Majano-Sosa, Fout, McKenzie, plus Andres Garcia). The workflow's Tests step fails until Krennic decides on those rows.
+
 # HANDOFF: 2026-10-20 (11:50 AM CDT) harvest-meta.json always matches harvest.json (Krennic approved)
 
 - Same latent bug as fraudtracker-data (meta stamped only when the job's own run changed data): counts were correct today
