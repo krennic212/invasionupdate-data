@@ -309,87 +309,6 @@
     "status": "approved"
   },
   {
-    "name": "Edduard Omar Majano-Sosa",
-    "city": "Not stated",
-    "crime": "Charged: Edduard Omar Majano-Sosa, an illegal alien from El Salvador, charged with false claim to citizenship for illegally registering to vote in 2024 and voting by an alien.",
-    "usa": "DHS release Oct 23, 2026: HSI and FBI Arrest Ten Aliens for Voter Fraud in North Carolina | Homeland Security",
-    "foreign": "Not stated in post",
-    "picked": "10/23/2026 (DHS release)",
-    "entered": "Not stated",
-    "office": "DHSgov",
-    "id": "dhs-20261023-edduard-omar-majano-sosa",
-    "when": "23 Oct 2026",
-    "severity": 54,
-    "severityReason": "Fraud (incl. voter fraud)",
-    "severityCrimes": [
-      "Fraud (incl. voter fraud)"
-    ],
-    "text": "DHS Oct 23, 2026, as posted: Edduard Omar Majano-Sosa, an illegal alien from El Salvador, charged with false claim to citizenship for illegally registering to vote in 2024 and voting by an alien.",
-    "photo": "",
-    "via": "dhs.gov/news/2026/10/23/hsi-and-fbi-arrest-ten-aliens-voter-fraud-north-carolina",
-    "sourceUrl": "https://www.dhs.gov/news/2026/10/23/hsi-and-fbi-arrest-ten-aliens-voter-fraud-north-carolina",
-    "voting": true,
-    "origin": "El Salvador",
-    "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
-    "status": "approved"
-  },
-  {
-    "name": "Karl Paul Fout",
-    "city": "Not stated",
-    "crime": "Charged: Karl Paul Fout, an alien from Germany, charged with false claim to citizenship for illegally registering to vote in 2008 and voting by an alien.",
-    "usa": "DHS release Oct 23, 2026: HSI and FBI Arrest Ten Aliens for Voter Fraud in North Carolina | Homeland Security",
-    "foreign": "Not stated in post",
-    "picked": "10/23/2026 (DHS release)",
-    "entered": "Not stated",
-    "office": "DHSgov",
-    "id": "dhs-20261023-karl-paul-fout",
-    "when": "23 Oct 2026",
-    "severity": 54,
-    "severityReason": "Fraud (incl. voter fraud)",
-    "severityCrimes": [
-      "Fraud (incl. voter fraud)"
-    ],
-    "text": "DHS Oct 23, 2026, as posted: Karl Paul Fout, an alien from Germany, charged with false claim to citizenship for illegally registering to vote in 2008 and voting by an alien.",
-    "photo": "",
-    "via": "dhs.gov/news/2026/10/23/hsi-and-fbi-arrest-ten-aliens-voter-fraud-north-carolina",
-    "sourceUrl": "https://www.dhs.gov/news/2026/10/23/hsi-and-fbi-arrest-ten-aliens-voter-fraud-north-carolina",
-    "voting": true,
-    "origin": "Germany",
-    "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
-    "status": "approved"
-  },
-  {
-    "name": "Lawton Caswell Broomfield E McKenzie",
-    "city": "Not stated",
-    "crime": "Charged: Lawton Caswell Broomfield E McKenzie, an alien from Jamaica, charged with false claim to citizenship for registering to vote in 2007 and 2012 and voting by an alien.",
-    "usa": "DHS release Oct 23, 2026: HSI and FBI Arrest Ten Aliens for Voter Fraud in North Carolina | Homeland Security",
-    "foreign": "Not stated in post",
-    "picked": "10/23/2026 (DHS release)",
-    "entered": "Not stated",
-    "office": "DHSgov",
-    "id": "dhs-20261023-lawton-caswell-broomfield-e-mckenzie",
-    "when": "23 Oct 2026",
-    "severity": 54,
-    "severityReason": "Fraud (incl. voter fraud)",
-    "severityCrimes": [
-      "Fraud (incl. voter fraud)"
-    ],
-    "text": "DHS Oct 23, 2026, as posted: Lawton Caswell Broomfield E McKenzie, an alien from Jamaica, charged with false claim to citizenship for registering to vote in 2007 and 2012 and voting by an alien.",
-    "photo": "",
-    "via": "dhs.gov/news/2026/10/23/hsi-and-fbi-arrest-ten-aliens-voter-fraud-north-carolina",
-    "sourceUrl": "https://www.dhs.gov/news/2026/10/23/hsi-and-fbi-arrest-ten-aliens-voter-fraud-north-carolina",
-    "voting": true,
-    "origin": "Jamaica",
-    "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
-    "status": "approved"
-  },
-  {
     "name": "Andres Garcia",
     "city": "Not stated",
     "crime": "Arrested: In October, HSI arrested Andres Garcia, an alien from Cuba, who registered to vote and then illegally voted in 2022 and 2024 in Missouri.",
@@ -414,7 +333,8 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "approved"
+    "status": "pending",
+    "holdReason": "Krennic 2026-10-23: held (not shown) pending review; city not stated"
   },
   {
     "name": "Anthony Tyrone Higgs",

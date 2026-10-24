@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-24T01:25:53Z",
-  "rows": 817,
-  "approved": 808,
-  "pending": 9,
+  "updatedAt": "2026-10-24T01:57:23Z",
+  "rows": 814,
+  "approved": 804,
+  "pending": 10,
   "photos": 221,
-  "reviewRows": 762,
+  "reviewRows": 765,
   "lastAddedAt": "2026-10-24T01:25:52Z",
   "lastAddedCount": 11,
   "lastAdded": [
@@ -20,6 +20,6 @@
     "Marva Cook",
     "Juana Milagros Peña Peña"
   ],
-  "harvestSha256": "cbd4b1dcd024b249c5cbd4f9dbe7a81253617d1769e5214474a63b541e60eee5",
+  "harvestSha256": "8ce3c3dd8bf67be9562c78265523d213898c3a47a6745a606f88f741b21a1217",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
