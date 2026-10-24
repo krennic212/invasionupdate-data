@@ -2961,5 +2961,23 @@
     "image": "https://pbs.twimg.com/media/HVGZ3BmW4AAdzJr.png",
     "bytes": 13840,
     "reviewed": "Viewed image: single booking-style headshot of one adult (Jesus Martinez Garcia, named in the post), plain background, no text card, no other visible face, no child"
+  },
+  "justice.gov/opa/pr/chinese-national-extradited-alleged-role-multimillion-dollar-cryptocurrency-scam-targeting": {
+    "checkedAt": "2026-10-24T14:13:14.277Z",
+    "name": "Zheng Zhao",
+    "result": "none",
+    "why": "release names 2 people"
+  },
+  "justice.gov/usao-ma/pr/illegal-alien-arrested-identity-theft-and-federal-assistance-benefit-fraud": {
+    "checkedAt": "2026-10-24T14:13:14.327Z",
+    "name": "Juana Milagros Peña Peña",
+    "result": "none",
+    "why": "no single person-specific image in the release"
+  },
+  "justice.gov/usao-ndny/pr/syracuse-woman-and-german-national-arrested-voter-fraud": {
+    "checkedAt": "2026-10-24T14:13:14.373Z",
+    "name": "Marva Cook",
+    "result": "none",
+    "why": "no single person-specific image in the release"
   }
 }

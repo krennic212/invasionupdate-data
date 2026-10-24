@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-24",
   "windowDays": 7,
-  "total": 223,
+  "total": 226,
   "rows": [
     {
       "id": "dhs-20261023-anthony-tyrone-higgs",
@@ -234,6 +234,18 @@
       "severityCrimes": [
         "Child sex crime",
         "DUI"
+      ]
+    },
+    {
+      "id": "doj-20261023-oscar-david-hernandez-gonzalez",
+      "name": "Oscar David Hernandez-Gonzalez",
+      "when": "23 Oct 2026",
+      "severity": 117,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Burglary / theft",
+        "Illegal entry / reentry"
       ]
     },
     {

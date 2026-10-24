@@ -1,19 +1,20 @@
 {
-  "updatedAt": "2026-10-24T14:12:15Z",
-  "rows": 819,
-  "approved": 809,
+  "updatedAt": "2026-10-24T14:13:14Z",
+  "rows": 825,
+  "approved": 815,
   "pending": 10,
   "photos": 221,
   "reviewRows": 766,
-  "lastAddedAt": "2026-10-24T14:11:39Z",
-  "lastAddedCount": 5,
+  "lastAddedAt": "2026-10-24T14:13:13Z",
+  "lastAddedCount": 6,
   "lastAdded": [
-    "Nelson Jose Martinez Ramirez",
-    "Jorge Toledo",
-    "Carlos Lara-Escobar",
-    "Benito Mares-Robles",
-    "Luciano Gabriel Rodriguez-Ortiz"
+    "Raul Azahel Zubia-Alvidrez",
+    "Juan Jose Aguilar-Gonzalez",
+    "Ruben Salazar-Lopez",
+    "Oscar David Hernandez-Gonzalez",
+    "Galdino Cortes-Cortes",
+    "Zheng Zhao"
   ],
-  "harvestSha256": "60222c201bc9d83ed09f3a753af19992089588115378aa4621b845f79fd5ac07",
+  "harvestSha256": "ec03692705471c62007f97958dc4208c9f2448e19b5badd5a9b55fc75b669df2",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
