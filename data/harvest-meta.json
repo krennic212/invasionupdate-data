@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-10-24T17:10:42Z",
+  "updatedAt": "2026-10-24T18:12:03Z",
   "rows": 832,
   "approved": 822,
   "pending": 10,
-  "photos": 221,
+  "photos": 245,
   "reviewRows": 766,
   "lastAddedAt": "2026-10-24T17:10:41Z",
   "lastAddedCount": 5,
@@ -14,6 +14,6 @@
     "Selvin Cruz Gallo",
     "Hector Gutierrez Espinoza"
   ],
-  "harvestSha256": "7af860592b30424a21afdf4a986b1c8b441171a58da77a06c04e34b6ac1d6411",
+  "harvestSha256": "11fe3b161c13b488eab50acc86e7bf6f2f5104b0fbd18e70c847b8c823f18aa8",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
