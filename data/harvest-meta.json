@@ -1,16 +1,19 @@
 {
-  "updatedAt": "2026-10-24T17:09:27Z",
-  "rows": 827,
-  "approved": 817,
+  "updatedAt": "2026-10-24T17:10:42Z",
+  "rows": 832,
+  "approved": 822,
   "pending": 10,
   "photos": 221,
   "reviewRows": 766,
-  "lastAddedAt": "2026-10-24T17:09:26Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-10-24T17:10:41Z",
+  "lastAddedCount": 5,
   "lastAdded": [
-    "Jai Dong",
-    "Edgar Michicoj-Perez"
+    "Olbin Omar Lopez-Orellana",
+    "Jorge Chipoco",
+    "Rigoberto Gabriel Toj",
+    "Selvin Cruz Gallo",
+    "Hector Gutierrez Espinoza"
   ],
-  "harvestSha256": "2785e04233903d3086f87018ba629eb38649f16035e326b9a0c89dfb7c804998",
+  "harvestSha256": "7af860592b30424a21afdf4a986b1c8b441171a58da77a06c04e34b6ac1d6411",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

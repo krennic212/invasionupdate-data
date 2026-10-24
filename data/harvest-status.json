@@ -1,13 +1,12 @@
 {
-  "checkedAt": 1792851193428,
-  "checkedAtIso": "2026-10-24T14:13:13.428Z",
+  "checkedAt": 1792861841061,
+  "checkedAtIso": "2026-10-24T17:10:41.061Z",
   "added": [
-    "Raul Azahel Zubia-Alvidrez",
-    "Juan Jose Aguilar-Gonzalez",
-    "Ruben Salazar-Lopez",
-    "Oscar David Hernandez-Gonzalez",
-    "Galdino Cortes-Cortes",
-    "Zheng Zhao"
+    "Olbin Omar Lopez-Orellana",
+    "Jorge Chipoco",
+    "Rigoberto Gabriel Toj",
+    "Selvin Cruz Gallo",
+    "Hector Gutierrez Espinoza"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -15,7 +14,7 @@
   "sentToReview": [],
   "scannedReleases": 75,
   "error": null,
-  "note": "Added 6 as approved: Raul Azahel Zubia-Alvidrez, Juan Jose Aguilar-Gonzalez, Ruben Salazar-Lopez, Oscar David Hernandez-Gonzalez, Galdino Cortes-Cortes, Zheng Zhao",
+  "note": "Added 5 as approved: Olbin Omar Lopez-Orellana, Jorge Chipoco, Rigoberto Gabriel Toj, Selvin Cruz Gallo, Hector Gutierrez Espinoza",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
