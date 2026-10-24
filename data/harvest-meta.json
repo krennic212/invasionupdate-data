@@ -1,25 +1,19 @@
 {
-  "updatedAt": "2026-10-24T01:57:23Z",
-  "rows": 814,
-  "approved": 804,
+  "updatedAt": "2026-10-24T14:12:15Z",
+  "rows": 819,
+  "approved": 809,
   "pending": 10,
   "photos": 221,
-  "reviewRows": 765,
-  "lastAddedAt": "2026-10-24T01:25:52Z",
-  "lastAddedCount": 11,
+  "reviewRows": 766,
+  "lastAddedAt": "2026-10-24T14:11:39Z",
+  "lastAddedCount": 5,
   "lastAdded": [
-    "Artur Kopacz",
-    "Osmal Loy",
-    "Yehuda Peer",
-    "Alfredo Santiesteban",
-    "Joyce Donovan",
-    "Inna Henry",
-    "Nourten Kuruju",
-    "Nina Nyawara",
-    "Joyce Pitts",
-    "Marva Cook",
-    "Juana Milagros Peña Peña"
+    "Nelson Jose Martinez Ramirez",
+    "Jorge Toledo",
+    "Carlos Lara-Escobar",
+    "Benito Mares-Robles",
+    "Luciano Gabriel Rodriguez-Ortiz"
   ],
-  "harvestSha256": "8ce3c3dd8bf67be9562c78265523d213898c3a47a6745a606f88f741b21a1217",
+  "harvestSha256": "60222c201bc9d83ed09f3a753af19992089588115378aa4621b845f79fd5ac07",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
