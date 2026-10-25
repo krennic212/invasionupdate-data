@@ -1,15 +1,18 @@
 {
-  "updatedAt": "2026-10-25T18:09:55Z",
-  "rows": 839,
-  "approved": 829,
+  "updatedAt": "2026-10-25T22:11:28Z",
+  "rows": 843,
+  "approved": 833,
   "pending": 10,
   "photos": 249,
   "reviewRows": 766,
-  "lastAddedAt": "2026-10-25T17:09:05Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-10-25T22:11:14Z",
+  "lastAddedCount": 4,
   "lastAdded": [
-    "Wilber Leonidas Ibarra"
+    "Rafael Uriel Duerte",
+    "MAXIME PHARILIEN",
+    "FATOUMATA NIANG",
+    "Ernesto Calderon-Ramirez"
   ],
-  "harvestSha256": "68ebd84564f3ba9ef606866a72a0f49a7c959dcb0f2bf9f7dbb3237052c365d4",
+  "harvestSha256": "ed3e0780d8729410880b83291b380f3696ee2fe54dc3d6607607ce744d01e2ff",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
