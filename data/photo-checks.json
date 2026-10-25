@@ -3225,5 +3225,59 @@
     "name": "Serferino Trinidad Ortega",
     "result": "none",
     "why": "no image in post"
+  },
+  "x.com/erosanfrancisco/status/2114043492330848346": {
+    "checkedAt": "2026-10-25T18:09:45.668Z",
+    "name": "Martin Hernandez Altamirano",
+    "result": "photo",
+    "file": "x-2114043492330848346-martin-hernandez-altamirano.jpg",
+    "image": "https://pbs.twimg.com/media/HVGaM9xW0AAJaol?format=png&name=orig",
+    "bytes": 12698,
+    "reviewed": "Viewed image: one adult man in glasses and black graphic T-shirt against a block wall, booking-style photo, no other people"
+  },
+  "x.com/erosaltlakecity/status/2114112446432735344": {
+    "checkedAt": "2026-10-25T18:09:46.294Z",
+    "name": "Jose Eduardo Tomas",
+    "result": "photo",
+    "file": "x-2114112446432735344-jose-eduardo-tomas.jpg",
+    "image": "https://pbs.twimg.com/media/HVV-2xeXEAAHUJc?format=png&name=orig",
+    "bytes": 10990,
+    "reviewed": "Viewed image: one adult man in gray T-shirt in front of a door, booking-style photo, no other faces"
+  },
+  "x.com/erolosangeles/status/2114137362230137129": {
+    "checkedAt": "2026-10-25T18:09:46.744Z",
+    "name": "Luis Manuel Santiesteban de la Mora",
+    "result": "photo",
+    "file": "x-2114137362230137129-luis-manuel-santiesteban-de-la-mora.jpg",
+    "image": "https://pbs.twimg.com/media/HVVr76AasAAxnxz?format=png&name=orig",
+    "bytes": 6678,
+    "reviewed": "Viewed image: one adult gray-haired bearded man, head-and-shoulders photo in an office, no other people"
+  },
+  "x.com/erolosangeles/status/2114144916255158641": {
+    "checkedAt": "2026-10-25T18:09:47.012Z",
+    "name": "Maria Rosa Rodriguez-Cortez",
+    "result": "none",
+    "why": "arrest scene: ICE officer standing beside her (back turned), not a plain headshot"
+  },
+  "x.com/erolosangeles/status/2114160011626598824": {
+    "checkedAt": "2026-10-25T18:09:47.205Z",
+    "name": "Karla Alejandra Robles Lopez",
+    "result": "none",
+    "why": "arrest scene: seated in transport van in restraints, not a headshot or booking photo"
+  },
+  "x.com/icegov/status/2114160066441933148": {
+    "checkedAt": "2026-10-25T18:09:47.409Z",
+    "name": "Reinieri De Jesus Licona Amador",
+    "result": "none",
+    "why": "both images are body-camera stills of the incident with several people, no headshot"
+  },
+  "x.com/eroneworleans/status/2114384741491232867": {
+    "checkedAt": "2026-10-25T18:09:47.974Z",
+    "name": "Wilber Leonidas Ibarra",
+    "result": "photo",
+    "file": "x-2114384741491232867-wilber-leonidas-ibarra.jpg",
+    "image": "https://pbs.twimg.com/media/HVQabAaWUAANVmX?format=png&name=orig",
+    "bytes": 11947,
+    "reviewed": "Viewed image: one adult man in striped shirt, booking photo with DHS seal on wall, no other people"
   }
 }
