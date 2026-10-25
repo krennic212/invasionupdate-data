@@ -1,18 +1,15 @@
 {
-  "updatedAt": "2026-10-25T14:16:54Z",
-  "rows": 838,
-  "approved": 828,
+  "updatedAt": "2026-10-25T17:09:09Z",
+  "rows": 839,
+  "approved": 829,
   "pending": 10,
   "photos": 245,
   "reviewRows": 766,
-  "lastAddedAt": "2026-10-25T14:16:40Z",
-  "lastAddedCount": 4,
+  "lastAddedAt": "2026-10-25T17:09:05Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Reinieri De Jesus Licona Amador",
-    "Karla Alejandra Robles Lopez",
-    "Maria Rosa Rodriguez-Cortez",
-    "Luis Manuel Santiesteban de la Mora"
+    "Wilber Leonidas Ibarra"
   ],
-  "harvestSha256": "7e4e3cc988951d30554b5511600da298816d99cb11dafa27ce8d0b35e9b4482b",
+  "harvestSha256": "340a41dac47716a947b1ab0ba5db4fcd9bb2ad9cf75eb3647ecebf24fb730933",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

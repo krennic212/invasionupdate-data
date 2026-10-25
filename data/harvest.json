@@ -1,5 +1,32 @@
 [
   {
+    "name": "Wilber Leonidas Ibarra",
+    "city": "Not stated",
+    "crime": "Arrested: ICE New Orleans arrested Wilber Leonidas Ibarra, an illegal alien from Nicaragua.",
+    "usa": "ICE X post Oct 25, 2026 (@ERONewOrleans)",
+    "foreign": "Not stated in post",
+    "picked": "10/25/2026 (@ERONewOrleans post)",
+    "entered": "Not stated",
+    "office": "ERONewOrleans",
+    "id": "x-2114384741491232867-wilber-leonidas-ibarra",
+    "when": "25 Oct 2026",
+    "severity": 63,
+    "severityReason": "Armed robbery / aggravated assault",
+    "severityCrimes": [
+      "Armed robbery / aggravated assault"
+    ],
+    "text": "@ERONewOrleans Oct 25, 2026, as posted: ICE New Orleans arrested Wilber Leonidas Ibarra, an illegal alien from Nicaragua. Criminal history includes a conviction for domestic battery in Little Rock, Arkansas.",
+    "photo": "",
+    "via": "@ERONewOrleans 2114384741491232867",
+    "sourceUrl": "https://x.com/ERONewOrleans/status/2114384741491232867",
+    "voting": false,
+    "origin": "Nicaragua",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved"
+  },
+  {
     "name": "Reinieri De Jesus Licona Amador",
     "city": "Camden County, NJ",
     "crime": "Charged: Reinieri De Jesus Licona Amador, an illegal alien from Honduras, faces federal charges following this attack on ICE Enforcement and Removal Operations officers in Camden County, N.J., Oct. 4.",
