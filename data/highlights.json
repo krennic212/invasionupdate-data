@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-10-25",
+  "asOf": "2026-10-26",
   "windowDays": 7,
-  "total": 236,
+  "total": 158,
   "rows": [
     {
       "id": "dhs-20261023-anthony-tyrone-higgs",
@@ -78,18 +78,6 @@
       ]
     },
     {
-      "id": "x-2112267610163175525-frankie-miller",
-      "name": "Frankie Miller",
-      "when": "19 Oct 2026",
-      "severity": 171,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons",
-        "Burglary / theft"
-      ]
-    },
-    {
       "id": "x-2113011000744014039-juan-carlos-nunez-rodriguez",
       "name": "Juan Carlos Nunez-Rodriguez",
       "when": "21 Oct 2026",
@@ -126,19 +114,6 @@
       ]
     },
     {
-      "id": "doj-20261019-melvin-acosta-martinez",
-      "name": "Melvin Acosta-Martinez",
-      "when": "19 Oct 2026",
-      "severity": 138,
-      "severityReason": "Attack on police officer",
-      "severityCrimes": [
-        "Attack on police officer",
-        "Burglary / theft",
-        "DUI",
-        "Illegal entry / reentry"
-      ]
-    },
-    {
       "id": "x-2112629332979933428-alemo-makesi-sampson",
       "name": "Alemo Makesi Sampson",
       "when": "20 Oct 2026",
@@ -147,17 +122,6 @@
       "severityCrimes": [
         "Armed robbery / aggravated assault",
         "Assault / battery",
-        "Burglary / theft"
-      ]
-    },
-    {
-      "id": "x-2112267387831570806-yusniel-gonzalez",
-      "name": "Yusniel Gonzalez",
-      "when": "19 Oct 2026",
-      "severity": 130,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
         "Burglary / theft"
       ]
     },
@@ -203,18 +167,6 @@
       "severityCrimes": [
         "Child sex crime",
         "Drug trafficking"
-      ]
-    },
-    {
-      "id": "x-2112395633940382179-juan-pablo-arellano-calderon",
-      "name": "Juan Pablo Arellano Calderon",
-      "when": "19 Oct 2026",
-      "severity": 126,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Assault / battery",
-        "Drug possession"
       ]
     },
     {
@@ -288,25 +240,35 @@
       ]
     },
     {
-      "id": "doj-20261019-raul-reyes-hernandez",
-      "name": "Raul Reyes-Hernandez",
-      "when": "19 Oct 2026",
-      "severity": 117,
-      "severityReason": "Alien smuggling",
+      "id": "x-2113727308687118469-eduardo-miguel-ramirez-jimenez",
+      "name": "Eduardo Miguel Ramirez Jimenez",
+      "when": "23 Oct 2026",
+      "severity": 105,
+      "severityReason": "Armed robbery / aggravated assault",
       "severityCrimes": [
-        "Alien smuggling",
-        "Fraud (incl. voter fraud)",
-        "Illegal entry / reentry"
+        "Armed robbery / aggravated assault",
+        "Burglary / theft"
       ]
     },
     {
-      "id": "x-2112319633269112918-florentino-ortiz-vivar",
-      "name": "Florentino Ortiz Vivar",
-      "when": "19 Oct 2026",
+      "id": "x-2112654503946424822-ludwig-criss-zelaya-romero",
+      "name": "Ludwig Criss Zelaya Romero",
+      "when": "20 Oct 2026",
       "severity": 105,
-      "severityReason": "Child sex crime",
+      "severityReason": "Weapons",
       "severityCrimes": [
-        "Child sex crime",
+        "Weapons",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "x-2113317011602153731-alejandro-martinez-martinez",
+      "name": "Alejandro Martinez Martinez",
+      "when": "22 Oct 2026",
+      "severity": 104,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
         "DUI"
       ]
     },
@@ -338,27 +300,6 @@
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"
-      ]
-    },
-    {
-      "id": "ice-20261019-robson-martins-da-silva",
-      "name": "Robson Martins Da Silva",
-      "when": "19 Oct 2026",
-      "severity": 101,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2112212456797880328-juan-carlos-plascencia-torres",
-      "name": "Juan Carlos Plascencia-Torres",
-      "when": "19 Oct 2026",
-      "severity": 95,
-      "severityReason": "Violent crime against a child",
-      "severityCrimes": [
-        "Violent crime against a child",
-        "DUI"
       ]
     },
     {
@@ -405,16 +346,6 @@
       "id": "dhs-20261020-vong-vongviset",
       "name": "Vong Vongviset",
       "when": "20 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2112267579226018224-ricardo-rafael-bugarin-carrion",
-      "name": "Ricardo Rafael Bugarin-Carrion",
-      "when": "19 Oct 2026",
       "severity": 92,
       "severityReason": "Child sex crime",
       "severityCrimes": [

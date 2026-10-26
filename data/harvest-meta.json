@@ -1,18 +1,16 @@
 {
-  "updatedAt": "2026-10-25T22:11:28Z",
-  "rows": 843,
-  "approved": 833,
+  "updatedAt": "2026-10-26T14:25:31Z",
+  "rows": 845,
+  "approved": 835,
   "pending": 10,
   "photos": 249,
   "reviewRows": 766,
-  "lastAddedAt": "2026-10-25T22:11:14Z",
-  "lastAddedCount": 4,
+  "lastAddedAt": "2026-10-26T14:25:30Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Rafael Uriel Duerte",
-    "MAXIME PHARILIEN",
-    "FATOUMATA NIANG",
-    "Ernesto Calderon-Ramirez"
+    "Kanand Ojha",
+    "Jullie Ann Sumalinog Moore"
   ],
-  "harvestSha256": "ed3e0780d8729410880b83291b380f3696ee2fe54dc3d6607607ce744d01e2ff",
+  "harvestSha256": "7dffdab878fe1298eb6e8af5d56220c9c5cd02062e16a9b438c4388bf33f5a8a",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

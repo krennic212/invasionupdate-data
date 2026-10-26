@@ -3279,5 +3279,17 @@
     "image": "https://pbs.twimg.com/media/HVQabAaWUAANVmX?format=png&name=orig",
     "bytes": 11947,
     "reviewed": "Viewed image: one adult man in striped shirt, booking photo with DHS seal on wall, no other people"
+  },
+  "ice.gov/news/releases/ice-removes-accused-violent-fugitive-face-homicide-charges-native-guyana": {
+    "checkedAt": "2026-10-26T14:25:30.955Z",
+    "name": "Kanand Ojha",
+    "result": "none",
+    "why": "no single person-specific image in the release"
+  },
+  "justice.gov/opa/pr/justice-department-announces-charges-involving-48-aliens-election-related-crimes": {
+    "checkedAt": "2026-10-26T14:25:31.140Z",
+    "name": "Jullie Ann Sumalinog Moore",
+    "result": "none",
+    "why": "release title describes several people"
   }
 }

@@ -1,20 +1,17 @@
 {
-  "checkedAt": 1792861841061,
-  "checkedAtIso": "2026-10-24T17:10:41.061Z",
+  "checkedAt": 1793024730185,
+  "checkedAtIso": "2026-10-26T14:25:30.185Z",
   "added": [
-    "Olbin Omar Lopez-Orellana",
-    "Jorge Chipoco",
-    "Rigoberto Gabriel Toj",
-    "Selvin Cruz Gallo",
-    "Hector Gutierrez Espinoza"
+    "Kanand Ojha",
+    "Jullie Ann Sumalinog Moore"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 75,
+  "scannedReleases": 78,
   "error": null,
-  "note": "Added 5 as approved: Olbin Omar Lopez-Orellana, Jorge Chipoco, Rigoberto Gabriel Toj, Selvin Cruz Gallo, Hector Gutierrez Espinoza",
+  "note": "Added 2 as approved: Kanand Ojha, Jullie Ann Sumalinog Moore",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
