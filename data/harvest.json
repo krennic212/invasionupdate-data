@@ -16,7 +16,7 @@
       "Assault / battery"
     ],
     "text": "@EROSanFrancisco Oct 26, 2026, as posted: ICE San Francisco arrested criminal alien Antoniell Flores-Blanco, 20, of Mexico, in San Francisco. He has an arrest for child endangerment and felony assault with a firearm on person. He is in ICE custody pending immigration proceedings.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2114767009733120462-antoniell-flores-blanco.jpg",
     "via": "@EROSanFrancisco 2114767009733120462",
     "sourceUrl": "https://x.com/EROSanFrancisco/status/2114767009733120462",
     "voting": false,
@@ -24,7 +24,8 @@
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HVWDoEQXUAE28qB?format=png&name=orig"
   },
   {
     "name": "LUIS ALFONSO ROMERO-GUIJADA",
@@ -70,7 +71,7 @@
       "Fraud (incl. voter fraud)"
     ],
     "text": "@ICEgov Oct 26, 2026, as posted: ANOTHER SUSPECTED SNAP FRAUDSTER ARRESTED! ICE arrested Alfredo Jose Castillo-Tejera, an illegal alien from Venezuela suspected of illegally obtaining SNAP benefits in Ohio. He has had a final order of removal since 2025 and is now in ICE custody. ICE is cracking down on SNAP",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2114745990850760860-alfredo-jose-castillo-tejera.jpg",
     "via": "@ICEgov 2114745990850760860",
     "sourceUrl": "https://x.com/ICEgov/status/2114745990850760860",
     "voting": false,
@@ -78,7 +79,8 @@
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HVkWHzCWcAApMJY?format=jpg&name=orig"
   },
   {
     "name": "Jose Vasquez-Mendoza",
@@ -249,7 +251,7 @@
       "Assault / battery"
     ],
     "text": "@EROBoston Oct 26, 2026, as posted: On Oct. 22, ICE Boston arrested Evince Jean Baptiste, a criminal illegal alien and former TPS recipient from Haiti, during targeted operations in Marlborough, Mass. Jean Baptiste’s criminal history includes arrest for assault and battery on a family/household member.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2114665418547753456-evince-jean-baptiste.jpg",
     "via": "@EROBoston 2114665418547753456",
     "sourceUrl": "https://x.com/EROBoston/status/2114665418547753456",
     "voting": false,
@@ -257,7 +259,8 @@
     "confirmedBy": "ICE",
     "lat": 42.3509,
     "lon": -71.5434,
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HVjMZeMXIAAXz9v?format=png&name=orig"
   },
   {
     "name": "Moussa Diawara",
@@ -432,7 +435,7 @@
     "severityReason": "",
     "severityCrimes": [],
     "text": "@EROSanFrancisco Oct 25, 2026, as posted: ICE San Francisco arrested illegal alien Ernesto Calderon-Ramirez, 30, of Guatemala, in San Francisco. He has pending charges for inflicting corporal injury on spouse and corporal punishment/injury on a child. He is in ICE custody pending immigration proceedings.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2114408899717775827-ernesto-calderon-ramirez.jpg",
     "via": "@EROSanFrancisco 2114408899717775827",
     "sourceUrl": "https://x.com/EROSanFrancisco/status/2114408899717775827",
     "voting": false,
@@ -440,7 +443,8 @@
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "approved"
+    "status": "approved",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HVGaVHLXYAIzxcZ?format=png&name=orig"
   },
   {
     "name": "Wilber Leonidas Ibarra",

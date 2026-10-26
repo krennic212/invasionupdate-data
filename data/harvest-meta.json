@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-10-26T17:17:27Z",
+  "updatedAt": "2026-10-26T18:13:48Z",
   "rows": 856,
   "approved": 846,
   "pending": 10,
-  "photos": 249,
+  "photos": 253,
   "reviewRows": 766,
   "lastAddedAt": "2026-10-26T17:17:14Z",
   "lastAddedCount": 4,
@@ -13,6 +13,6 @@
     "Alfredo Jose Castillo-Tejera",
     "Jose Vasquez-Mendoza"
   ],
-  "harvestSha256": "4c00c84f24721de5b36f2414ab0e833e22a7e5fc75acaa0ff0c81ee4eed0448d",
+  "harvestSha256": "cbf5076d7c81e9a8763d086d577403f883fb00da203299227b17c8d69e869d2c",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
