@@ -1,16 +1,19 @@
 {
-  "updatedAt": "2026-10-26T14:26:40Z",
-  "rows": 847,
-  "approved": 837,
+  "updatedAt": "2026-10-26T14:27:35Z",
+  "rows": 852,
+  "approved": 842,
   "pending": 10,
   "photos": 249,
   "reviewRows": 766,
-  "lastAddedAt": "2026-10-26T14:25:53Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-10-26T14:27:33Z",
+  "lastAddedCount": 5,
   "lastAdded": [
-    "Evince Jean Baptiste",
-    "Moussa Diawara"
+    "Amilcar Jose Suarez Barreto",
+    "Sarah Jane Hulbert",
+    "Kelvin Ramon Castillo Rodriguez",
+    "Elmer Domingo Lopez Tomas",
+    "Anderson Jesus Rosales Ramos"
   ],
-  "harvestSha256": "a86c03dccec6db3a4a3f3ee244164f6402f81e1ccccaf9653651efb00c392ef2",
+  "harvestSha256": "45c38d7d9485d9eccc45a71fb6393fa2b60b46d9315abdea68f694f87ad4e030",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

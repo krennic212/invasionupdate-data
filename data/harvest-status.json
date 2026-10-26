@@ -1,9 +1,12 @@
 {
-  "checkedAt": 1793024730185,
-  "checkedAtIso": "2026-10-26T14:25:30.185Z",
+  "checkedAt": 1793024853640,
+  "checkedAtIso": "2026-10-26T14:27:33.640Z",
   "added": [
-    "Kanand Ojha",
-    "Jullie Ann Sumalinog Moore"
+    "Amilcar Jose Suarez Barreto",
+    "Sarah Jane Hulbert",
+    "Kelvin Ramon Castillo Rodriguez",
+    "Elmer Domingo Lopez Tomas",
+    "Anderson Jesus Rosales Ramos"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -11,7 +14,7 @@
   "sentToReview": [],
   "scannedReleases": 78,
   "error": null,
-  "note": "Added 2 as approved: Kanand Ojha, Jullie Ann Sumalinog Moore",
+  "note": "Added 5 as approved: Amilcar Jose Suarez Barreto, Sarah Jane Hulbert, Kelvin Ramon Castillo Rodriguez, Elmer Domingo Lopez Tomas, Anderson Jesus Rosales Ramos",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
