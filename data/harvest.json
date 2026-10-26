@@ -739,10 +739,10 @@
     "office": "ICEgov",
     "id": "x-2114834873060061670-luis-hernandez-depaz",
     "when": "26 Oct 2026",
-    "severity": 90,
-    "severityReason": "Rape / sexual assault",
+    "severity": 92,
+    "severityReason": "Child sex crime",
     "severityCrimes": [
-      "Rape / sexual assault"
+      "Child sex crime"
     ],
     "text": "@ICEgov Oct 26, 2026, as posted: Luis Hernandez-Depaz, an illegal alien from Mexico, convicted of predatory criminal sexual assault/victim under 13 years old and aggravated criminal sexual abuse/victim under 13 years old.",
     "photo": "",
@@ -2796,8 +2796,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 39.009,
+    "lon": -94.346,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HVV0f8gXQAAhLHP?format=jpg&name=orig"
   },
@@ -2840,9 +2840,11 @@
     "office": "DHSgov",
     "id": "x-2113723717364920634-rahjai-ornardo-suckoo",
     "when": "23 Oct 2026",
-    "severity": 0,
-    "severityReason": "",
-    "severityCrimes": [],
+    "severity": 92,
+    "severityReason": "Child sex crime",
+    "severityCrimes": [
+      "Child sex crime"
+    ],
     "text": "@DHSgov Oct 23, 2026, as posted: Rahjai Ornardo Suckoo, a criminal illegal alien from Jamaica, convicted for enticing a minor in Moab, Utah.",
     "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2113723717364920634-rahjai-ornardo-suckoo.jpg",
     "via": "@DHSgov 2113723717364920634",
@@ -2878,8 +2880,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 39.536,
+    "lon": -76.348,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HVV0UomXsAAV8SJ?format=jpg&name=orig"
   },
@@ -4633,9 +4635,10 @@
     "office": "USAO_NDOK",
     "id": "x-2112929852688892154-toan-chu",
     "when": "21 Oct 2026",
-    "severity": 212,
-    "severityReason": "Rape / sexual assault",
+    "severity": 304,
+    "severityReason": "Child sex crime",
     "severityCrimes": [
+      "Child sex crime",
       "Rape / sexual assault",
       "Kidnapping / human trafficking",
       "Assault / battery"
@@ -9997,10 +10000,10 @@
     "office": "EROLosAngeles",
     "id": "x-2112284417175716172-nestor-javier-banda-casa",
     "when": "19 Oct 2026",
-    "severity": 81,
-    "severityReason": "Rape / sexual assault",
+    "severity": 83,
+    "severityReason": "Child sex crime",
     "severityCrimes": [
-      "Rape / sexual assault"
+      "Child sex crime"
     ],
     "text": "@EROLosAngeles Oct 19, 2026, as posted: 🚨🎥 ICE Los Angeles arrested criminal illegal alien Nestor Javier Banda Casa, 37, of Ecuador, Oct. 15. Banda is wanted by Ecuadorian authorities for raping a 12-year-old child. He remains in ICE custody pending removal to Ecuador.",
     "photo": "",
@@ -11577,8 +11580,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 34.179,
+    "lon": -118.763,
     "status": "approved",
     "approvalNote": "Krennic approved live 2026-10-19: deported counts as non-citizen wording.",
     "photoSourceUrl": "https://pbs.twimg.com/media/HVAWCT-WQAIUdrz.png"
@@ -15814,9 +15817,11 @@
     "office": "DHSgov",
     "id": "dhs-20261014-wilver-ever-albayero",
     "when": "14 Oct 2026",
-    "severity": 0,
-    "severityReason": "",
-    "severityCrimes": [],
+    "severity": 92,
+    "severityReason": "Child sex crime",
+    "severityCrimes": [
+      "Child sex crime"
+    ],
     "text": "DHS Oct 14, 2026, as posted: Wilver Ever Albayero, a criminal illegal alien from El Salvador, convicted for sex with a minor three years younger in Signal Hill, California.",
     "photo": "",
     "via": "dhs.gov/news/2026/10/14/worst-worst-ice-arrests-pedophiles-sexual-predators-and-domestic-assailants",
@@ -22745,9 +22750,10 @@
     "office": "DHSgov",
     "id": "dhs-2026-09-21-wow-8",
     "when": "20 Sep 2026",
-    "severity": 40,
-    "severityReason": "Assault / battery",
+    "severity": 132,
+    "severityReason": "Child sex crime",
     "severityCrimes": [
+      "Child sex crime",
       "Assault / battery"
     ],
     "text": "DHS: Leeroy Latior, a criminal illegal alien from Marshall Islands, convicted of possession of sexually explicit material involving a child, and battery in Benton County, AR. ICE arrested over the weekend. Convicted, not Removed. No mugshot URL on the release. uniqueByName.",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T22:14:41Z",
+  "updatedAt": "2026-10-26T23:22:03Z",
   "rows": 886,
   "approved": 876,
   "pending": 10,
@@ -25,6 +25,6 @@
     "Andrey Aleman-Cordero",
     "Adrian Alonso-Aguirre"
   ],
-  "harvestSha256": "2e4ba94deaaca6557439c620962a4abf57c7a6b5ed65e44ad4cb9161075e4509",
+  "harvestSha256": "53bef2fe381d2d02683126b8100ecc0263172e303d996397fe44e74656e1ac63",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

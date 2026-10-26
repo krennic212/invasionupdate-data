@@ -337,3 +337,29 @@ test("DUIs / DWIs / driving while intoxicated are DUI; drug possession is not tr
   assert.deepEqual(scoreRow(conv("convicted of firearms trafficking.")).severityCrimes, [L.weapons]);
   assert.deepEqual(scoreRow(conv("convicted of distribution of child pornography.")).severityCrimes, [L.childSex]);
 });
+
+test("enticing / enticement of a minor, child or juvenile is a child sex crime (Suckoo, Calix-Sarmiento, 2026-10-26)", () => {
+  const crimes = (r) => scoreRow(r).severityCrimes;
+  assert.deepEqual(crimes(conv("Rahjai Ornardo Suckoo, a criminal illegal alien from Jamaica, convicted for enticing a minor in Moab, Utah.")), [L.childSex]);
+  assert.equal(score(conv("convicted for enticing a minor in Moab, Utah.")), P.childSex);
+  assert.deepEqual(crimes(conv("convicted of enticement of a minor.")), [L.childSex]);
+  assert.deepEqual(crimes(chg("charged with attempted enticement of a minor.")), [L.childSex]);
+  assert.deepEqual(crimes(chg("charged in a two-count indictment with attempted coercion and enticement of a minor, and illegal reentry of a removed alien.")), [L.childSex, L.immigration]);
+  assert.deepEqual(crimes(conv("convicted of attempting to entice a child to engage in sexual activity.")), [L.childSex]);
+  assert.deepEqual(crimes(conv("convicted of enticing a juvenile.")), [L.childSex]);
+  // "raping a 12-year-old child" is a child sex crime, not adult rape (Nestor Javier Banda Casa).
+  assert.deepEqual(crimes(chg("Banda is wanted by Ecuadorian authorities for raping a 12-year-old child.")), [L.childSex]);
+  // enticement with no child named is not a child sex crime
+  assert.deepEqual(crimes(conv("convicted of enticing customers with false offers and fraud.")), [L.fraud]);
+});
+
+test("more child sex wording: victim under 13, oral copulation of a minor, sex with a minor, explicit material of a child (2026-10-26)", () => {
+  const crimes = (r) => scoreRow(r).severityCrimes;
+  assert.deepEqual(crimes(conv("convicted of predatory criminal sexual assault/victim under 13 years old and aggravated criminal sexual abuse/victim under 13 years old.")), [L.childSex]);
+  assert.deepEqual(crimes(conv("convicted for sex with a minor three years younger in Signal Hill, California.")), [L.childSex]);
+  assert.deepEqual(crimes(conv("convicted of possession of sexually explicit material involving a child, and battery.")), [L.childSex, L.assault]);
+  assert.ok(crimes(conv("convictions for Rape by Force in Concert with Another, Forcible Oral Copulation of a Minor in Commission of Kidnapping.")).includes(L.childSex));
+  // adult wording stays adult
+  assert.deepEqual(crimes(conv("convicted of sexual assault/victim over 18.")), [L.rape]);
+  assert.deepEqual(crimes(conv("convicted of sexual battery.")), [L.rape]);
+});

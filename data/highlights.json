@@ -1,8 +1,21 @@
 {
   "asOf": "2026-10-26",
   "windowDays": 7,
-  "total": 191,
+  "total": 192,
   "rows": [
+    {
+      "id": "x-2112929852688892154-toan-chu",
+      "name": "Toan Chu",
+      "when": "21 Oct 2026",
+      "severity": 304,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Rape / sexual assault",
+        "Kidnapping / human trafficking",
+        "Assault / battery"
+      ]
+    },
     {
       "id": "dhs-20261023-anthony-tyrone-higgs",
       "name": "Anthony Tyrone Higgs",
@@ -15,18 +28,6 @@
         "Fraud (incl. voter fraud)",
         "Weapons",
         "Burglary / theft"
-      ]
-    },
-    {
-      "id": "x-2112929852688892154-toan-chu",
-      "name": "Toan Chu",
-      "when": "21 Oct 2026",
-      "severity": 212,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Kidnapping / human trafficking",
-        "Assault / battery"
       ]
     },
     {
@@ -363,6 +364,16 @@
       ]
     },
     {
+      "id": "x-2114834873060061670-luis-hernandez-depaz",
+      "name": "Luis Hernandez-Depaz",
+      "when": "26 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
       "id": "x-2113723720607125628-fredy-adeli-cuxum-orellana",
       "name": "Fredy Adeli Cuxum-Orellana",
       "when": "23 Oct 2026",
@@ -375,6 +386,16 @@
     {
       "id": "x-2113723714739056924-luis-enrique-nucamendi-molina",
       "name": "Luis Enrique Nucamendi-Molina",
+      "when": "23 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2113723717364920634-rahjai-ornardo-suckoo",
+      "name": "Rahjai Ornardo Suckoo",
       "when": "23 Oct 2026",
       "severity": 92,
       "severityReason": "Child sex crime",
