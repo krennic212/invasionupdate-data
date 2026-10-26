@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-26",
   "windowDays": 7,
-  "total": 163,
+  "total": 177,
   "rows": [
     {
       "id": "dhs-20261023-anthony-tyrone-higgs",
@@ -170,6 +170,17 @@
       ]
     },
     {
+      "id": "x-2114834889925386509-juan-cruz-del-cid",
+      "name": "Juan Cruz Del Cid",
+      "when": "26 Oct 2026",
+      "severity": 125,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons"
+      ]
+    },
+    {
       "id": "x-2112654492428853530-jose-daniel-burgos-lainez",
       "name": "Jose Daniel Burgos-Lainez",
       "when": "20 Oct 2026",
@@ -303,6 +314,16 @@
       ]
     },
     {
+      "id": "x-2114834876415590635-joel-salvador-juarez",
+      "name": "Joel Salvador Juarez",
+      "when": "26 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
       "id": "x-2113723720607125628-fredy-adeli-cuxum-orellana",
       "name": "Fredy Adeli Cuxum-Orellana",
       "when": "23 Oct 2026",
@@ -350,6 +371,17 @@
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2114803701558952294-lesli-joel-calix-sarmiento",
+      "name": "LESLI JOEL CALIX-SARMIENTO",
+      "when": "26 Oct 2026",
+      "severity": 87,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Illegal entry / reentry"
       ]
     },
     {
