@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-26",
   "windowDays": 7,
-  "total": 177,
+  "total": 191,
   "rows": [
     {
       "id": "dhs-20261023-anthony-tyrone-higgs",
@@ -75,6 +75,17 @@
         "Assault / battery",
         "Burglary / theft",
         "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "dhs-20261026-david-orlando-sanchez",
+      "name": "David Orlando Sanchez",
+      "when": "26 Oct 2026",
+      "severity": 152,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Armed robbery / aggravated assault"
       ]
     },
     {
@@ -192,6 +203,26 @@
       ]
     },
     {
+      "id": "dhs-20261026-mario-garcia",
+      "name": "Mario Garcia",
+      "when": "26 Oct 2026",
+      "severity": 120,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261026-nevada-mario-garcia",
+      "name": "Nevada.Mario Garcia",
+      "when": "26 Oct 2026",
+      "severity": 120,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
       "id": "x-2113734889891840350-pantaleon-chacon-madrid",
       "name": "Pantaleon Chacon Madrid",
       "when": "23 Oct 2026",
@@ -262,28 +293,6 @@
       ]
     },
     {
-      "id": "x-2112654503946424822-ludwig-criss-zelaya-romero",
-      "name": "Ludwig Criss Zelaya Romero",
-      "when": "20 Oct 2026",
-      "severity": 105,
-      "severityReason": "Weapons",
-      "severityCrimes": [
-        "Weapons",
-        "Drug trafficking"
-      ]
-    },
-    {
-      "id": "x-2113317011602153731-alejandro-martinez-martinez",
-      "name": "Alejandro Martinez Martinez",
-      "when": "22 Oct 2026",
-      "severity": 104,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "DUI"
-      ]
-    },
-    {
       "id": "x-2113723722662051889-francisco-cortez-perez",
       "name": "Francisco Cortez-Perez",
       "when": "23 Oct 2026",
@@ -314,8 +323,38 @@
       ]
     },
     {
+      "id": "dhs-20261026-angel-isaias-anavisca-pacheco",
+      "name": "Angel Isaias Anavisca-Pacheco",
+      "when": "26 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261026-hannyel-jimenez",
+      "name": "Hannyel Jimenez",
+      "when": "26 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
       "id": "x-2114834876415590635-joel-salvador-juarez",
       "name": "Joel Salvador Juarez",
+      "when": "26 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261026-josem-guzman",
+      "name": "Josem Guzman",
       "when": "26 Oct 2026",
       "severity": 92,
       "severityReason": "Child sex crime",
