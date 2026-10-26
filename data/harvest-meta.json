@@ -1,19 +1,18 @@
 {
-  "updatedAt": "2026-10-26T14:27:35Z",
-  "rows": 852,
-  "approved": 842,
+  "updatedAt": "2026-10-26T17:17:27Z",
+  "rows": 856,
+  "approved": 846,
   "pending": 10,
   "photos": 249,
   "reviewRows": 766,
-  "lastAddedAt": "2026-10-26T14:27:33Z",
-  "lastAddedCount": 5,
+  "lastAddedAt": "2026-10-26T17:17:14Z",
+  "lastAddedCount": 4,
   "lastAdded": [
-    "Amilcar Jose Suarez Barreto",
-    "Sarah Jane Hulbert",
-    "Kelvin Ramon Castillo Rodriguez",
-    "Elmer Domingo Lopez Tomas",
-    "Anderson Jesus Rosales Ramos"
+    "Antoniell Flores-Blanco",
+    "LUIS ALFONSO ROMERO-GUIJADA",
+    "Alfredo Jose Castillo-Tejera",
+    "Jose Vasquez-Mendoza"
   ],
-  "harvestSha256": "45c38d7d9485d9eccc45a71fb6393fa2b60b46d9315abdea68f694f87ad4e030",
+  "harvestSha256": "4c00c84f24721de5b36f2414ab0e833e22a7e5fc75acaa0ff0c81ee4eed0448d",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
