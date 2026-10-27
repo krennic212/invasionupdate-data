@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-27",
   "windowDays": 7,
-  "total": 173,
+  "total": 183,
   "rows": [
     {
       "id": "x-2112929852688892154-toan-chu",
@@ -31,6 +31,31 @@
       ]
     },
     {
+      "id": "x-2115145798833066022-roberto-mosquera-del-peral",
+      "name": "Roberto Mosquera-Del Peral",
+      "when": "27 Oct 2026",
+      "severity": 259,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Attack on police officer",
+        "Armed robbery / aggravated assault",
+        "Burglary / theft"
+      ]
+    },
+    {
+      "id": "x-2115145798833066022-thongxay-nilakout",
+      "name": "Thongxay Nilakout",
+      "when": "27 Oct 2026",
+      "severity": 225,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Attempted murder",
+        "Armed robbery / aggravated assault"
+      ]
+    },
+    {
       "id": "x-2112698882157060102-farmon-farmonbekov",
       "name": "Farmon Farmonbekov",
       "when": "21 Oct 2026",
@@ -39,6 +64,30 @@
       "severityCrimes": [
         "Child sex crime",
         "Rape / sexual assault"
+      ]
+    },
+    {
+      "id": "x-2115145798833066022-jose-manuel-rodriguez-quinones",
+      "name": "Jose Manuel Rodriguez-Quinones",
+      "when": "27 Oct 2026",
+      "severity": 180,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Weapons",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "x-2115145798833066022-orville-isaac-etoria",
+      "name": "Orville Isaac Etoria",
+      "when": "27 Oct 2026",
+      "severity": 180,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Armed robbery / aggravated assault",
+        "Burglary / theft"
       ]
     },
     {
@@ -53,6 +102,28 @@
         "Assault / battery",
         "Burglary / theft",
         "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "x-2115145798833066022-dung-tien-nguyen",
+      "name": "Dung Tien Nguyen",
+      "when": "27 Oct 2026",
+      "severity": 164,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Rape / sexual assault"
+      ]
+    },
+    {
+      "id": "x-2115145798833066022-luis-vieira-andrade",
+      "name": "Luis Vieira Andrade",
+      "when": "27 Oct 2026",
+      "severity": 155,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Violent crime against a child"
       ]
     },
     {
@@ -158,6 +229,17 @@
       ]
     },
     {
+      "id": "x-2115145798833066022-tuan-thanh-phan",
+      "name": "Tuan Thanh Phan",
+      "when": "27 Oct 2026",
+      "severity": 122,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Assault / battery"
+      ]
+    },
+    {
       "id": "dhs-20261026-mario-garcia",
       "name": "Mario Garcia",
       "when": "26 Oct 2026",
@@ -176,6 +258,17 @@
       "severityCrimes": [
         "Child sex crime",
         "Assault / battery"
+      ]
+    },
+    {
+      "id": "x-2115145798833066022-zakaria-farah-abdi",
+      "name": "Zakaria Farah Abdi",
+      "when": "27 Oct 2026",
+      "severity": 117,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Burglary / theft"
       ]
     },
     {
@@ -198,65 +291,6 @@
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime",
-        "DUI"
-      ]
-    },
-    {
-      "id": "doj-20261023-oscar-david-hernandez-gonzalez",
-      "name": "Oscar David Hernandez-Gonzalez",
-      "when": "23 Oct 2026",
-      "severity": 117,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Burglary / theft",
-        "Illegal entry / reentry"
-      ]
-    },
-    {
-      "id": "x-2113090714011570644-amilcar-casia",
-      "name": "Amilcar Casia",
-      "when": "21 Oct 2026",
-      "severity": 117,
-      "severityReason": "Assault / battery",
-      "severityCrimes": [
-        "Assault / battery",
-        "Burglary / theft",
-        "Drug possession",
-        "DUI"
-      ]
-    },
-    {
-      "id": "x-2115120425587867919-orlando-manuel-ventura",
-      "name": "Orlando Manuel Ventura",
-      "when": "27 Oct 2026",
-      "severity": 115,
-      "severityReason": "Fraud (incl. voter fraud)",
-      "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Drug possession",
-        "DUI"
-      ]
-    },
-    {
-      "id": "x-2113727308687118469-eduardo-miguel-ramirez-jimenez",
-      "name": "Eduardo Miguel Ramirez Jimenez",
-      "when": "23 Oct 2026",
-      "severity": 105,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Burglary / theft"
-      ]
-    },
-    {
-      "id": "x-2113317011602153731-alejandro-martinez-martinez",
-      "name": "Alejandro Martinez Martinez",
-      "when": "22 Oct 2026",
-      "severity": 104,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
         "DUI"
       ]
     },

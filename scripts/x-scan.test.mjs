@@ -252,3 +252,14 @@ test("x-scan photos: a multi-person post lists every row as a flagged candidate"
   assert.equal(photoCandidates.find((c) => c.name === "Mario Lopez Diaz").pick, "https://pbs.twimg.com/media/a1?format=jpg&name=orig");
   assert.equal(photoCandidates.find((c) => c.name === "Pedro Gomez Ruiz").pick, null);
 });
+
+test("x-scan: a list post gives each person only their own paragraph as text (no one else's crimes)", async () => {
+  const { rowsForPost } = await import("./x-scan.mjs");
+  const text = "NEW: DHS has released a list of illegal aliens removed to third countries. Via DHS, some include:\n\nJohn Alpha Doe, an illegal alien from Cuba, deported on August 15, 2025. His criminal history includes convictions for murder in Florida.\n\nJane Beta Roe, an illegal alien from Laos, deported on May 20, 2025. His criminal history includes convictions for theft in California.";
+  const rows = rowsForPost({ id: "2115145798833066022", username: "BillMelugin_", created_at: "2026-10-27T18:17:10.000Z", text, referenced: [], media: [] });
+  assert.equal(rows.length, 2);
+  const jane = rows.find((r) => r.row.name === "Jane Beta Roe").row;
+  assert.match(jane.text, /theft in California/);
+  assert.doesNotMatch(jane.text, /murder/);
+  assert.equal(jane.crime, "Removed: Jane Beta Roe, an illegal alien from Laos, deported on May 20, 2025.");
+});

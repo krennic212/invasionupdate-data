@@ -1,17 +1,24 @@
 {
-  "updatedAt": "2026-10-27T18:07:10Z",
-  "rows": 905,
-  "approved": 895,
+  "updatedAt": "2026-10-27T18:23:06Z",
+  "rows": 915,
+  "approved": 905,
   "pending": 10,
   "photos": 279,
-  "reviewRows": 762,
-  "lastAddedAt": "2026-10-27T18:07:08Z",
-  "lastAddedCount": 3,
+  "reviewRows": 760,
+  "lastAddedAt": "2026-10-27T18:23:06Z",
+  "lastAddedCount": 10,
   "lastAdded": [
-    "Artem Stryzhak",
-    "Danexi Mendoza Licona",
-    "Mario Sevilla Artiaga"
+    "Zakaria Farah Abdi",
+    "Dung Tien Nguyen",
+    "Luis Vieira Andrade",
+    "Orville Isaac Etoria",
+    "Jose Manuel Rodriguez-Quinones",
+    "Jesus Munoz-Gutierrez",
+    "Tuan Thanh Phan",
+    "Thongxay Nilakout",
+    "Roberto Mosquera-Del Peral",
+    "Yosmel Luis Palomino Galan"
   ],
-  "harvestSha256": "ec834a1443e1bc5ca9c5f5aaad8b24a00a645747c40b477ae0fbf859620026c9",
+  "harvestSha256": "95403638ead1ddd225175394bcd3e90a75fbfebb6e982a85cd85da922f9db2a9",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -122,6 +122,10 @@ export function rowsForPost(post, picks = []) {
     else hits.push({ name: p.name, origin: p.origin || "", sentence, city: cityFrom(sentence), hold: p.hold ? String(p.hold) : "" });
   }
   const url = `https://x.com/${handle}/status/${post.id}`;
+  // A post that names several people (a list): each row's text is that person's own paragraph, verbatim, so the
+  // row (and its severity score) never carries the other people's crimes. One-person posts keep the whole post.
+  const blocks = blocksOf(post.text);
+  const ownBlock = (sentence) => (hits.length > 1 ? blocks.find((b) => b.includes(sentence)) || "" : "");
   return hits.map((hit) => {
     const label = xLabel(hit.sentence);
     const reasons = holdReasons({ name: hit.name, sentence: hit.sentence, title: "", releaseText: clean, label });
@@ -138,7 +142,7 @@ export function rowsForPost(post, picks = []) {
       office: handle,
       id: `x-${post.id}-${slug(hit.name)}`,
       when: d.when,
-      text: `@${handle} ${d.long}, as posted: ${clean}`,
+      text: `@${handle} ${d.long}, as posted: ${ownBlock(hit.sentence) || clean}`,
       photo: "",
       via: `@${handle} ${post.id}`,
       sourceUrl: url,
