@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-10-27T17:17:42Z",
+  "updatedAt": "2026-10-27T18:05:55Z",
   "rows": 902,
   "approved": 892,
   "pending": 10,
-  "photos": 253,
+  "photos": 279,
   "reviewRows": 762,
   "lastAddedAt": "2026-10-27T17:17:41Z",
   "lastAddedCount": 1,
   "lastAdded": [
     "James Sutherland"
   ],
-  "harvestSha256": "63a54e81282f50f1e6f8558e591d728a1bf44f90ff34fb50fe171995f88e5aa9",
+  "harvestSha256": "65f455b5b1f100f912eac9580fb4376534b27b8fff233bc9f9cd1517a9f8be2c",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
