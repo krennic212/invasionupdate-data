@@ -1,3 +1,12 @@
+# HANDOFF: 2026-10-27 (9:40 AM CDT) Krennic decisions on the 3 open items
+
+- Deleted held duplicate "Nevada.Mario Garcia" (dhs-20261026-nevada-mario-garcia); one-time approval recorded in
+  scripts/approved-deletions.json, which validate.mjs reads to exempt that id only from the never-shrink check.
+  Real Mario Garcia row (dhs-20261026-mario-garcia) untouched.
+- city-geo.json: Bonney Lake, WA + alias "Bonny Lake, WA"; alias "Hillsboro, NH"; "Hillsborough, NH" corrected to the
+  town (43.115, -71.8949; the old 42.825, -71.655 was not the town, no row used it). Row place text unchanged.
+- Palacios Luviano: city San Francisco, CA (field-office placeholder) -> Marysville, CA (39.1417, -121.5225).
+
 # HANDOFF: 2026-10-27 (CDT) name parser, map points, review cleanup, meta auto-stamp (Krennic approved)
 
 - Names: scripts/names.mjs (cleanPersonName strips trailing month / weekday / date words and "Place.Name" joins;

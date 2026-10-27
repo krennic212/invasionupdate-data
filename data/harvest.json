@@ -291,35 +291,6 @@
     "status": "approved"
   },
   {
-    "name": "Nevada.Mario Garcia",
-    "city": "Las Vegas, NV",
-    "crime": "Convicted: Mario Garcia, a criminal illegal alien from Guatemala, convicted for 12 COUNTS of sexual assault of minors under 14 years old in Las Vegas, Nevada.Mario Garcia, a criminal illegal alien from Guatemala, convicted for 12 COUNTS of sexual assault of minors under 14 years old in Las Vegas, Nevada.",
-    "usa": "DHS release Oct 26, 2026: WORST OF THE WORST: Over the Weekend, ICE Arrests Murderers, Pedophiles, and Sexual Predators | Homeland Security",
-    "foreign": "Not stated in post",
-    "picked": "10/26/2026 (DHS release)",
-    "entered": "Not stated",
-    "office": "DHSgov",
-    "id": "dhs-20261026-nevada-mario-garcia",
-    "when": "26 Oct 2026",
-    "severity": 120,
-    "severityReason": "Child sex crime",
-    "severityCrimes": [
-      "Child sex crime"
-    ],
-    "text": "DHS Oct 26, 2026, as posted: Mario Garcia, a criminal illegal alien from Guatemala, convicted for 12 COUNTS of sexual assault of minors under 14 years old in Las Vegas, Nevada.Mario Garcia, a criminal illegal alien from Guatemala, convicted for 12 COUNTS of sexual assault of minors under 14 years old in Las Vegas, Nevada.",
-    "photo": "",
-    "via": "dhs.gov/news/2026/10/26/worst-worst-over-weekend-ice-arrests-murderers-pedophiles-and-sexual-predators",
-    "sourceUrl": "https://www.dhs.gov/news/2026/10/26/worst-worst-over-weekend-ice-arrests-murderers-pedophiles-and-sexual-predators",
-    "voting": false,
-    "origin": "Guatemala",
-    "confirmedBy": "DHS",
-    "lat": 36.17,
-    "lon": -115.14,
-    "status": "pending",
-    "holdReason": "suspicious name: period inside the name (\"Nevada.\" from the end of the previous sentence joined to \"Mario Garcia\"); same person and same DHS release as live row dhs-20261026-mario-garcia (parser slip, Krennic decision needed: keep held or remove)",
-    "duplicateOf": "dhs-20261026-mario-garcia"
-  },
-  {
     "name": "Harny Dosalua",
     "city": "Buena Vista County, IA",
     "crime": "Convicted: Harny Dosalua, a criminal illegal alien from Micronesia, convicted for TWO counts of lascivious acts with a child and operating vehicle while intoxicated in Buena Vista County, Iowa.",
@@ -11039,7 +11010,7 @@
   },
   {
     "name": "Luis Antonio Palacios Luviano",
-    "city": "San Francisco, CA",
+    "city": "Marysville, CA",
     "crime": "Arrested: ICE San Francisco arrested criminal alien Luis Antonio Palacios Luviano, 22, of Mexico, in Marysville.",
     "usa": "ICE X post Oct 19, 2026 (@EROSanFrancisco)",
     "foreign": "Not stated in post",
@@ -11061,8 +11032,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "ICE",
-    "lat": 37.6219,
-    "lon": -122.3819,
+    "lat": 39.1417,
+    "lon": -121.5225,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HUyIH92XkAAYwWJ.png"
   },
@@ -16945,8 +16916,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 47.187,
+    "lon": -122.1702,
     "status": "approved"
   },
   {
@@ -17272,8 +17243,8 @@
     "voting": false,
     "origin": "Dominican Republic",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 43.115,
+    "lon": -71.8949,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HUghwxFXsAAExGq?format=png&name=orig"
   },

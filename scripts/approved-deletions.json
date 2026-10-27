@@ -1,0 +1,9 @@
+[
+  {
+    "id": "dhs-20261026-nevada-mario-garcia",
+    "name": "Nevada.Mario Garcia",
+    "approvedBy": "Krennic",
+    "approvedAt": "2026-10-27T09:31:00-05:00",
+    "reason": "Parser slip: second copy of live row dhs-20261026-mario-garcia (same person, same DHS Oct 26, 2026 release) with \"Nevada.\" from the previous sentence joined to the name. One-time approved deletion; the never-delete rule still applies to every other row."
+  }
+]

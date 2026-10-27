@@ -35,3 +35,14 @@ test("meta: npm test re-stamps harvest-meta.json first (pretest)", () => {
   assert.match(pkg.scripts.pretest, /write-meta\.mjs/);
   assert.match(pkg.scripts.harvest, /write-meta\.mjs/);
 });
+
+test("validate: approved deletions are explicit, one entry per Krennic-approved row id, and the row is really gone", () => {
+  const list = JSON.parse(readFileSync(new URL("./approved-deletions.json", import.meta.url), "utf8"));
+  const feed = JSON.parse(readFileSync(new URL("../data/harvest.json", import.meta.url), "utf8"));
+  const ids = new Set(feed.map((r) => r.id));
+  for (const d of list) {
+    assert.ok(d.id && d.approvedBy === "Krennic" && d.approvedAt && d.reason, JSON.stringify(d));
+    assert.ok(!ids.has(d.id), `${d.id} is still in harvest.json`);
+  }
+  assert.ok(ids.has("dhs-20261026-mario-garcia"), "the real Mario Garcia row stays");
+});
