@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-27",
   "windowDays": 7,
-  "total": 162,
+  "total": 169,
   "rows": [
     {
       "id": "x-2112929852688892154-toan-chu",
@@ -88,6 +88,29 @@
         "Attack on police officer",
         "Assault / battery",
         "DUI"
+      ]
+    },
+    {
+      "id": "x-2115120414825615692-juan-flores-ruvalcaba",
+      "name": "Juan Flores-Ruvalcaba",
+      "when": "27 Oct 2026",
+      "severity": 135,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Assault / battery"
+      ]
+    },
+    {
+      "id": "x-2115098797810262141-amaury-jose-monsalve-figuera",
+      "name": "Amaury Jose Monsalve Figuera",
+      "when": "27 Oct 2026",
+      "severity": 131,
+      "severityReason": "Fraud (incl. voter fraud)",
+      "severityCrimes": [
+        "Fraud (incl. voter fraud)",
+        "Weapons",
+        "Drug possession"
       ]
     },
     {
@@ -204,6 +227,18 @@
       ]
     },
     {
+      "id": "x-2115120425587867919-orlando-manuel-ventura",
+      "name": "Orlando Manuel Ventura",
+      "when": "27 Oct 2026",
+      "severity": 115,
+      "severityReason": "Fraud (incl. voter fraud)",
+      "severityCrimes": [
+        "Fraud (incl. voter fraud)",
+        "Drug possession",
+        "DUI"
+      ]
+    },
+    {
       "id": "x-2113727308687118469-eduardo-miguel-ramirez-jimenez",
       "name": "Eduardo Miguel Ramirez Jimenez",
       "when": "23 Oct 2026",
@@ -256,34 +291,23 @@
       ]
     },
     {
-      "id": "x-2114808533023871487-humberto-efren-sanchez-medina",
-      "name": "Humberto Efren Sanchez-Medina",
-      "when": "26 Oct 2026",
-      "severity": 95,
-      "severityReason": "Weapons",
+      "id": "x-2115120418067812434-jose-manuel-gasca-hernandez",
+      "name": "Jose Manuel Gasca-Hernandez",
+      "when": "27 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
       "severityCrimes": [
-        "Weapons",
-        "Drug trafficking"
+        "Child sex crime"
       ]
     },
     {
-      "id": "dhs-20261026-rafael-godinez-mancilla",
-      "name": "Rafael Godinez Mancilla",
-      "when": "26 Oct 2026",
-      "severity": 95,
-      "severityReason": "Murder / manslaughter",
+      "id": "x-2115120420785365364-nicholas-pastrana-salinas",
+      "name": "Nicholas Pastrana-Salinas",
+      "when": "27 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
       "severityCrimes": [
-        "Murder / manslaughter"
-      ]
-    },
-    {
-      "id": "x-2113723712604381435-luc-quy-tran",
-      "name": "Luc Quy Tran",
-      "when": "23 Oct 2026",
-      "severity": 95,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter"
+        "Child sex crime"
       ]
     },
     {
