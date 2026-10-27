@@ -22,7 +22,7 @@
  */
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
-import { nameKey, urlsIn } from "./rules.mjs";
+import { nameKey, urlsIn, pruneReviewOfLive } from "./rules.mjs";
 import { PHOTO_PREFIX } from "./photo-rules.mjs";
 import { scrubVictimNames } from "./victims.mjs";
 
@@ -178,6 +178,17 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     if (after !== before) writeFileSync(file, after);
     rowsByFile.push({ file, rows });
     console.log(JSON.stringify({ file, rows: rows.length, merged, changed: after !== before }));
+  }
+  // A person live in the feed is taken out of review.json (same name keys as intake: name + aka).
+  const feed = rowsByFile.find((f) => /(^|[\\/])harvest\.json$/.test(f.file));
+  const rev = rowsByFile.find((f) => /(^|[\\/])review\.json$/.test(f.file));
+  if (feed && rev) {
+    const { review, removed, kept } = pruneReviewOfLive(feed.rows, rev.rows);
+    if (removed.length) {
+      writeFileSync(rev.file, `${JSON.stringify(review, null, 2)}\n`);
+      rev.rows = review;
+    }
+    if (removed.length || kept.length) console.log(JSON.stringify({ reviewRemovedBecauseLive: removed, reviewKept: kept }));
   }
   const likelyDuplicates = findLikelyDuplicates(rowsByFile);
   if (likelyDuplicates.length) {

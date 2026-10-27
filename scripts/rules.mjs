@@ -200,3 +200,27 @@ export function routeRows(rows) {
   }
   return { live, review };
 }
+
+/**
+ * Krennic 2026-10-27: a person who is live in data/harvest.json (status "approved") is taken out of data/review.json,
+ * matched on the same name keys dedupe and intake use (nameKeysOf: name + aka, normalized by nameKey). Only review
+ * rows are removed, never a harvest row. A review row with an approvalNote is a recorded decision and is kept.
+ * Returns { review, removed: [{ id, name, liveId }], kept: [{ id, name, liveId, why }] }.
+ */
+export function pruneReviewOfLive(harvest, review) {
+  const live = new Map();
+  for (const r of Array.isArray(harvest) ? harvest : []) {
+    if (r?.status !== "approved") continue;
+    for (const k of nameKeysOf(r)) if (!live.has(k)) live.set(k, r);
+  }
+  const out = [];
+  const removed = [];
+  const kept = [];
+  for (const r of Array.isArray(review) ? review : []) {
+    const hit = nameKeysOf(r).map((k) => live.get(k)).find(Boolean);
+    if (!hit) { out.push(r); continue; }
+    if (r?.approvalNote) { kept.push({ id: r.id, name: r.name, liveId: hit.id, why: "review row has an approvalNote" }); out.push(r); continue; }
+    removed.push({ id: r.id, name: r.name, liveId: hit.id });
+  }
+  return { review: out, removed, kept };
+}

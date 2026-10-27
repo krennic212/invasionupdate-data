@@ -81,17 +81,26 @@ function changedAt(file) {
 
 // Safe to run on every job run: with harvest.json unchanged (same sha256) updatedAt stays; a pushed harvest.json edit
 // that was never stamped gets its commit time; a change made by this run gets now.
-if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  const text = existsSync("data/harvest.json") ? readFileSync("data/harvest.json", "utf8") : "[]";
+// Also runs as npm "pretest" and at the end of every writer (harvest, x-scan --write, approve, severity), so the meta
+// test can never fail on a stale harvest-meta.json (Krennic 2026-10-27).
+export function writeMetaFile({ dir = "data", now = null } = {}) {
+  const H = `${dir}/harvest.json`;
+  const M = `${dir}/harvest-meta.json`;
+  const text = existsSync(H) ? readFileSync(H, "utf8") : "[]";
   const meta = buildMeta({
     rows: JSON.parse(text),
-    review: readJson("data/review.json", []),
-    status: readJson("data/harvest-status.json", null),
-    prev: readJson("data/harvest-meta.json", null),
-    now: process.argv[2] || changedAt("data/harvest.json"),
+    review: readJson(`${dir}/review.json`, []),
+    status: readJson(`${dir}/harvest-status.json`, null),
+    prev: readJson(M, null),
+    now: now || changedAt(H),
     text,
   });
   const out = `${JSON.stringify(meta, null, 2)}\n`;
-  if (!existsSync("data/harvest-meta.json") || readFileSync("data/harvest-meta.json", "utf8") !== out) writeFileSync("data/harvest-meta.json", out);
-  console.log(JSON.stringify(meta));
+  const changed = !existsSync(M) || readFileSync(M, "utf8") !== out;
+  if (changed) writeFileSync(M, out);
+  return { meta, changed };
+}
+
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  console.log(JSON.stringify(writeMetaFile({ now: process.argv[2] || null }).meta));
 }

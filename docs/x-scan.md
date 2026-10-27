@@ -48,6 +48,11 @@ The daily photo job stays at 1:03 PM CT.
    data/review.json (held or non-official), updates data/harvest-meta.json (`lastAddedAt`, `lastAddedCount`,
    `lastAdded` when live rows were added) and writes data/x-scan-state.json (new `lastSeenId`).
    If nothing new was read, still update the state file only when lastSeenId changed.
+   `--write` also (Krennic 2026-10-27, no extra steps needed): fills map points for every row with a stated place and
+   no point (`scripts/geo.mjs`: city-geo.json, then the free Nominatim geocoder at 1 request/second, hits cached in
+   city-geo.json; `GEOCODE=0` = offline), takes anyone who is now live out of review.json (name + aka keys), and
+   re-stamps harvest-meta.json. Suspicious names (trailing month word, "Place.Name", single word, all-caps headline
+   text) are held by the guards, never published.
 6. Photos: save the `--write` output to `<run>/write.json`. `photoCandidates` lists EVERY live official-post row whose
    post has any photo, with ALL of the post's images (`images[]`: original-size URL, alt text, `namesPerson`) and
    `pick` = the image whose alt text names the person. Review every candidate; none may be left undecided.
@@ -63,7 +68,8 @@ The daily photo job stays at 1:03 PM CT.
    - Then `node scripts/write-meta.mjs` to refresh the photo count (keeps lastAdded; lastAdded only lists
      rows that are approved right now).
    - Gate: `node scripts/x-photo.mjs --todo <run>/write.json` must print `"undecided": 0` (exit 0) before committing.
-7. Check: `npm test && node scripts/validate.mjs && node scripts/dedupe.mjs data/harvest.json data/review.json`
+7. Check: `node scripts/dedupe.mjs data/harvest.json data/review.json && npm test && node scripts/validate.mjs`
+   (`npm test` re-stamps harvest-meta.json first via `pretest`, so a hand edit can no longer leave it stale.)
 8. Commit only if something changed (`git status --short`), `git pull --rebase`, then
    `git -c credential.helper='!gh auth git-credential' push`.
 9. `gh workflow run hourly-harvest.yml -R krennic212/invasionupdate-data`, `gh run watch <id>`, then curl

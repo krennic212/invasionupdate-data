@@ -1,3 +1,31 @@
+# HANDOFF: 2026-10-27 (CDT) name parser, map points, review cleanup, meta auto-stamp (Krennic approved)
+
+- Names: scripts/names.mjs (cleanPersonName strips trailing month / weekday / date words and "Place.Name" joins;
+  suspiciousName flags trailing month words, a period inside a name, digits, single word, all-caps headline text).
+  parse.mjs sentences() breaks on "Nevada.Mario" (no space after the period); extractPeople / linkedPeople clean names;
+  guards.mjs holdReasons holds any suspicious name ("suspicious name: ..."). daily-signal.mjs: a body sentence that cuts
+  the hyphenated surname short takes the numbered heading's full name, body spelling kept as aka (harvest.mjs dedupes on it).
+  Data: Sidney Pino-Becque -> Sidney Pino-Becquer (heading of the Daily Signal Oct 22 article; aka "Sidney Pino-Becque";
+  charge text unchanged). "Nevada.Mario Garcia" (dhs-20261026-nevada-mario-garcia, a second copy of live row
+  dhs-20261026-mario-garcia from the same DHS release) held pending with duplicateOf; NOT deleted (Krennic to decide).
+  Augui Cajas NOT changed: the ICE Boston Oct 19 release itself prints "Augui Cajas". Pantaleon Chacon Madrid was
+  already correct in the feed.
+- Map points: lat/lon was only set when a row was written, so rows placed before their city was in city-geo.json, cities
+  filled in by hand, and "City, Statename" spellings never got a point. New scripts/geo.mjs (normalized lookup, state
+  center for a bare state, then OpenStreetMap Nominatim: no key, real User-Agent, 1 req/s, same state + same name only;
+  hits cached in city-geo.json, misses in city-geo-misses.json for 30 days). Runs in the workflow, `npm run harvest` and
+  x-scan --write. Backfill: 74 of 76 live rows with a stated place got a point (40 new city-geo entries, 45 geocoder
+  calls). Still missing: Bonny Lake, WA (source spelling; the city is "Bonney Lake") and Hillsboro, NH (OSM has the town
+  as "Hillsborough"); not guessed. 319 live rows have no stated place and stay off the map. Palacios Luviano: his
+  @EROSanFrancisco post says only "in Marysville." (no state), so his city was NOT changed.
+- review.json: rules.mjs pruneReviewOfLive (name + aka keys, approved rows only; review rows with an approvalNote kept),
+  run by dedupe.mjs (harvest + review) and x-scan --write. Removed 7 review copies of live people: Arellano-Alba, Avila
+  Gomez, Velasquez Orozco, Englestad (aka of Engelstad), Carzoli Carrillo, Moralez Diaz, Kantrozyan. Nothing removed
+  from harvest.json.
+- Meta: write-meta exported writeMetaFile(); npm "pretest", `npm run harvest`, `npm run severity`, approve.mjs and
+  x-scan --write all re-stamp it.
+- Tests: names.test.mjs, geo.test.mjs, review-prune.test.mjs. 215/215.
+
 # HANDOFF: 2026-10-23 (8:30 PM CDT) 11 missed official rows via data/pending.json (Krennic approved)
 
 - Added through data/pending.json intake (AUTO_APPROVE=true, live scan off: MAX_LINKS=0 DOJ_PAGES=0 STATE_SOURCES=0

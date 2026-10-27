@@ -107,7 +107,30 @@ export function peopleFromArticle(text, { title = "" } = {}) {
     const flat = body.replace(/^#{0,3}\s*\d+\.\s+.*$/gm, " ").replace(/\n/g, " ");
     while ((m = re.exec(flat))) add(m[1], m[2], m[0]);
   }
-  return found.filter((p) => /\b(?:arrested|detained|taken into custody)\b/i.test(p.sentence));
+  // The numbered heading is the canonical spelling. When the body sentence prints the same name with its last
+  // (hyphenated) surname cut short ("## 2. Sidney Pino-Becquer" / "Sidney Pino-Becque, an illegal alien ..."), the row
+  // takes the heading's full name and keeps the body spelling as aka (dedupe matches both). Charge text stays verbatim.
+  const headings = found.filter((p) => !/\b(?:arrested|detained|taken into custody)\b/i.test(p.sentence));
+  for (const p of found) {
+    const full = headings.find((h) => h !== p && truncatedSurname(p.name, h.name));
+    if (full) {
+      p.aka = p.name;
+      p.name = full.name;
+      full.merged = true;
+    }
+  }
+  return found.filter((p) => !p.merged && /\b(?:arrested|detained|taken into custody)\b/i.test(p.sentence));
+}
+
+/** "Sidney Pino-Becque" is "Sidney Pino-Becquer" with the last surname cut short (same other words, 1-3 letters missing). */
+export function truncatedSurname(short, full) {
+  const a = String(short || "").trim().split(/\s+/);
+  const b = String(full || "").trim().split(/\s+/);
+  if (a.length !== b.length || a.length < 2) return false;
+  if (a.slice(0, -1).join(" ").toLowerCase() !== b.slice(0, -1).join(" ").toLowerCase()) return false;
+  const x = a[a.length - 1].toLowerCase();
+  const y = b[b.length - 1].toLowerCase();
+  return y.length > x.length && y.length - x.length <= 3 && y.startsWith(x) && x.length >= 3;
 }
 
 function sentenceFor(body, name) {

@@ -8,16 +8,52 @@
 
 import { countryFor, cleanOrigin, DEMONYMS, COUNTRIES } from "./country.mjs";
 import { readFileSync } from "node:fs";
+import { cleanPersonName } from "./names.mjs";
 
 /** "City, ST" -> [lat, lon], same keys as the app's CITY_GEO (src/data/city-geo.ts). */
 const CITY_GEO = JSON.parse(readFileSync(new URL("./city-geo.json", import.meta.url), "utf8"));
 const CITY_GEO_CI = new Map(Object.keys(CITY_GEO).map((k) => [k.toLowerCase(), k]));
 
+/** Table key for a place: exact, case-insensitive, or the normalized "City, ST" form ("Chicago, Illinois" -> "Chicago, IL"). */
+export function cityGeoKey(city, table = CITY_GEO) {
+  const c = String(city || "").trim();
+  if (!c) return "";
+  const ci = table === CITY_GEO ? CITY_GEO_CI : new Map(Object.keys(table).map((k) => [k.toLowerCase(), k]));
+  for (const cand of [c, normalizePlace(c)]) {
+    if (!cand) continue;
+    if (table[cand]) return cand;
+    const k = ci.get(cand.toLowerCase());
+    if (k) return k;
+  }
+  return "";
+}
+
 /** { lat, lon } from the city table, or nulls when the city is not stated / not in the table. */
 export function latLonFor(city) {
-  const c = String(city || "").trim();
-  const key = CITY_GEO[c] ? c : CITY_GEO_CI.get(c.toLowerCase());
+  const key = cityGeoKey(city);
   return key ? { lat: CITY_GEO[key][0], lon: CITY_GEO[key][1] } : { lat: null, lon: null };
+}
+
+/** Add entries to the in-memory table (scripts/geo.mjs writes them to city-geo.json as the cache). */
+export function rememberCityGeo(key, lat, lon) {
+  CITY_GEO[key] = [lat, lon];
+  CITY_GEO_CI.set(key.toLowerCase(), key);
+}
+
+/**
+ * One spelling for a place: "Chicago, Illinois" / "Chicago, Ill." / "Chicago, IL." / "chicago,  il" -> "Chicago, IL";
+ * "Washington, D.C." -> "Washington, DC"; a bare state name stays as written. "" for "Not stated".
+ */
+export function normalizePlace(city) {
+  let c = String(city || "").replace(/\s+/g, " ").trim();
+  if (!c || /^(?:not stated|unknown|n\/a|none)$/i.test(c)) return "";
+  const m = c.match(/^(.+?),\s*([A-Za-z. ]+?)\.?$/);
+  if (!m) return c;
+  const place = m[1].trim();
+  const stRaw = m[2].trim();
+  const st = STATE_OF(stRaw) || STATE_OF(`${stRaw}.`) || STATE_OF(stRaw.toUpperCase()) ||
+    STATES[Object.keys(STATES).find((k) => k.toLowerCase() === stRaw.toLowerCase())] || "";
+  return st ? `${place}, ${st}` : c;
 }
 
 const ENT = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " ", rsquo: "’", lsquo: "‘", rdquo: "”", ldquo: "“", ndash: "–", mdash: "—", hellip: "…", eacute: "é", aacute: "á", iacute: "í", oacute: "ó", uacute: "ú", ntilde: "ñ", Eacute: "É", Aacute: "Á", Iacute: "Í", Oacute: "Ó", Uacute: "Ú", Ntilde: "Ñ", uuml: "ü" };
@@ -50,7 +86,9 @@ const ABBR = /(?:\b(?:U\.S|U\.S\.A|Mr|Mrs|Ms|Dr|Jr|Sr|St|Ft|Mt|No|Co|Inc|Corp|Lt
 export function sentences(block) {
   const out = [];
   let start = 0;
-  const re = /[.!?]["”’)]?\s+(?=["“(]?[A-Z0-9])/g;
+  // Also a period with no space before the next sentence ("... in Las Vegas, Nevada.Mario Garcia, a criminal ...",
+  // DHS Oct 26, 2026): a word of 2+ lowercase letters, ".", then a capitalized word. "St.Louis" / "U.S." stay whole (ABBR).
+  const re = /[.!?]["”’)]?\s+(?=["“(]?[A-Z0-9])|(?<=[a-z]{2})\.(?=[A-ZÁÉÍÓÚÑÜ][a-záéíóúñü]+[\s,])/g;
   let m;
   while ((m = re.exec(block))) {
     const before = block.slice(start, m.index);
@@ -178,6 +216,7 @@ export function placeFromDistrict(sentence, url) {
 }
 
 /** { lat, lon } for a city from the table, or the state's center for a bare state name. */
+export { STATES, STATE_CENTER };
 export function geoForPlace(place) {
   const ll = latLonFor(place);
   if (ll.lat != null) return ll;
@@ -325,7 +364,8 @@ export function extractPeople(blocks, { title = "" } = {}) {
               : [{ n: re === PATTERNS[3] && m[2] ? `${m[1]} ${m[2]}` : m[1], origin: re === PATTERNS[0] ? originFrom(m[2], m[3] || "", m[4]) : "" }];
           for (const { n, origin } of people) {
           // "... alien Zinzun Bautista." -> no sentence period in the name (Jr. / Sr. keep theirs).
-          const name = n.replace(/\s+/g, " ").trim().replace(/(?<!\b(?:Jr|Sr|[A-Z]))\.$/, "");
+          // Date words stuck on ("... Madrid Oct. 21") and place text joined by a period ("Nevada.Mario Garcia") are cut.
+          const name = cleanPersonName(n).replace(/(?<!\b(?:Jr|Sr|[A-Z]))\.$/, "");
           const toks = name.split(" ");
           if (toks.length < 2 || toks.length > 6 || name.length > 60) continue;
           if (NOT_NAME.test(name)) continue;
@@ -389,7 +429,7 @@ const ALL_FROM = new RegExp(`\\bAll\\s+of\\s+the\\s+(?:illegal\\s+)?aliens\\b[^.
 const STATUS_COUNTRY = new RegExp(`\\b(?:from|of)\\s+(?:the\\s+)?(${COUNTRY_ALT})(?![A-Za-z])`);
 
 function cleanName(n) {
-  return String(n || "").replace(/\s+/g, " ").trim().replace(/^(?:Co-?conspirator|Co-?defendant|Defendant|Suspect)\s+/i, "").replace(/(?<!\b(?:Jr|Sr|[A-Z]))\.$/, "").replace(/[’']s$/, "");
+  return cleanPersonName(String(n || "").replace(/\s+/g, " ").trim()).replace(/^(?:Co-?conspirator|Co-?defendant|Defendant|Suspect)\s+/i, "").replace(/(?<!\b(?:Jr|Sr|[A-Z]))\.$/, "").replace(/[’']s$/, "");
 }
 function okName(name, title) {
   const toks = name.split(" ");

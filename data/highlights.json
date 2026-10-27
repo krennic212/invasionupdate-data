@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-10-26",
+  "asOf": "2026-10-27",
   "windowDays": 7,
-  "total": 158,
+  "total": 157,
   "rows": [
     {
       "id": "x-2112929852688892154-toan-chu",
@@ -145,16 +145,6 @@
       ]
     },
     {
-      "id": "dhs-20261026-nevada-mario-garcia",
-      "name": "Nevada.Mario Garcia",
-      "when": "26 Oct 2026",
-      "severity": 120,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
       "id": "x-2113734889891840350-pantaleon-chacon-madrid",
       "name": "Pantaleon Chacon Madrid",
       "when": "23 Oct 2026",
@@ -280,6 +270,16 @@
       "id": "dhs-20261026-rafael-godinez-mancilla",
       "name": "Rafael Godinez Mancilla",
       "when": "26 Oct 2026",
+      "severity": 95,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter"
+      ]
+    },
+    {
+      "id": "x-2113723712604381435-luc-quy-tran",
+      "name": "Luc Quy Tran",
+      "when": "23 Oct 2026",
       "severity": 95,
       "severityReason": "Murder / manslaughter",
       "severityCrimes": [

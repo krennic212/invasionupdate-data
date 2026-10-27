@@ -14,6 +14,7 @@
  *                 harvest, X scan picks, pending intake).
  */
 import { stripPriors, CONVICT_WORDS, CHARGE_WORDS, isPlaceName } from "./parse.mjs";
+import { suspiciousName } from "./names.mjs";
 
 const esc = (s) => String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
@@ -154,6 +155,8 @@ export function nonCitizenStatedFor(name, sentence) {
 export function holdReasons({ name, sentence, title = "", releaseText = "", label = "" }) {
   const out = [];
   if (String(name || "").trim().split(/\s+/).length < 2 || isPlaceName(name, { title })) out.push("not a person: name is a place name or a single word");
+  // Parser slips (Krennic 2026-10-27): "Pantaleon Chacon Madrid Oct", "Nevada.Mario Garcia", all-caps headline text.
+  for (const r of suspiciousName(name)) if (r !== "single word" && r !== "empty name") out.push(`suspicious name: ${r}`);
   if (isMinor(name, sentence, title)) out.push("possible minor / juvenile");
   if (!stageOk(label, sentence, title)) out.push(`stage: label "${label}" is later than the source wording`);
   if (atLarge(sentence, releaseText)) out.push("suspect described as still at large");

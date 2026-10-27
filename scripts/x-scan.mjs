@@ -37,7 +37,9 @@ import { extractPeople, statusFrom, stripPriors, dateParts, slug, cityFrom, latL
 import { holdReasons, denaturalizedStated } from "./guards.mjs";
 import { nameKey } from "./rules.mjs";
 import { LIVE_X_HANDLES, TRUSTED_REPORTER_X_HANDLES } from "./x-handles.mjs";
-import { buildMeta } from "./write-meta.mjs";
+import { buildMeta, writeMetaFile } from "./write-meta.mjs";
+import { fillGeoFile } from "./geo.mjs";
+import { pruneReviewOfLive } from "./rules.mjs";
 import { writeSeverityFiles } from "./severity.mjs";
 import { scrubVictimNames } from "./victims.mjs";
 import { countryFor, cleanOrigin } from "./country.mjs";
@@ -273,10 +275,18 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const picks = picksFile ? JSON.parse(readFileSync(picksFile, "utf8")) : {};
   const res = scan(posts, { existing: [...harvest, ...review], picks });
   const state = existsSync(stateFile) ? JSON.parse(readFileSync(stateFile, "utf8")) : {};
+  let geo = null;
+  let reviewRemoved = [];
   if (write) {
     if (res.live.length) writeFileSync(HARVEST, `${JSON.stringify([...res.live.reverse(), ...harvest], null, 2)}\n`);
     if (res.review.length) writeFileSync(REVIEW, `${JSON.stringify([...res.review.reverse(), ...review], null, 2)}\n`);
-    if (res.live.length) writeSeverityFiles(HARVEST, HARVEST.replace(/[^/\\]*$/, "highlights.json")); // severity on new live rows + data/highlights.json
+    // Map points for every row with a stated place and no point (city-geo.json, then the free geocoder; GEOCODE=0 = offline).
+    geo = await fillGeoFile(HARVEST);
+    // A person who is live is never also left in review.json (same name keys as dedupe: name + aka).
+    const pruned = pruneReviewOfLive(JSON.parse(readFileSync(HARVEST, "utf8")), JSON.parse(readFileSync(REVIEW, "utf8")));
+    if (pruned.removed.length) writeFileSync(REVIEW, `${JSON.stringify(pruned.review, null, 2)}\n`);
+    reviewRemoved = pruned.removed;
+    if (res.live.length || geo.changed) writeSeverityFiles(HARVEST, HARVEST.replace(/[^/\\]*$/, "highlights.json")); // severity on new live rows + data/highlights.json
     const prev = BigInt(state.lastSeenId || 0);
     const next = res.maxId && BigInt(res.maxId) > prev ? res.maxId : String(state.lastSeenId || "");
     if (res.live.length || res.review.length) {
@@ -292,7 +302,9 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       });
       writeFileSync(META, `${JSON.stringify(meta, null, 2)}\n`);
     }
+    // harvest-meta.json always matches harvest.json after a write (rows, approvals, geo, review count).
+    if (HARVEST === "data/harvest.json") writeMetaFile();
     writeFileSync(stateFile, `${JSON.stringify({ lastSeenId: next, lastRunAt: new Date().toISOString(), postsRead: collapseById(posts).length, addedLive: res.live.map((r) => r.name), addedReview: res.review.map((r) => r.name) }, null, 2)}\n`);
   }
-  console.log(JSON.stringify({ write, postsRead: collapseById(posts).length, live: res.live.map((r) => ({ name: r.name, crime: r.crime, sourceUrl: r.sourceUrl })), review: res.review.map((r) => ({ name: r.name, why: r.reviewReason, sourceUrl: r.sourceUrl })), skipped: res.skipped, photoCandidates: res.photoCandidates, maxId: res.maxId }, null, 2));
+  console.log(JSON.stringify({ write, geo: geo && { fromTable: geo.fromTable.length, fromState: geo.fromState.length, fromGeocoder: geo.fromGeocoder.length, stillMissing: geo.stillMissing }, reviewRemovedBecauseLive: reviewRemoved, postsRead: collapseById(posts).length, live: res.live.map((r) => ({ name: r.name, crime: r.crime, sourceUrl: r.sourceUrl })), review: res.review.map((r) => ({ name: r.name, why: r.reviewReason, sourceUrl: r.sourceUrl })), skipped: res.skipped, photoCandidates: res.photoCandidates, maxId: res.maxId }, null, 2));
 }

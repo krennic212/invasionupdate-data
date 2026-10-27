@@ -105,7 +105,9 @@
     "confirmedBy": "DHS",
     "lat": 36.17,
     "lon": -115.14,
-    "status": "approved"
+    "status": "pending",
+    "holdReason": "suspicious name: period inside the name (\"Nevada.\" from the end of the previous sentence joined to \"Mario Garcia\"); same person and same DHS release as live row dhs-20261026-mario-garcia (parser slip, Krennic decision needed: keep held or remove)",
+    "duplicateOf": "dhs-20261026-mario-garcia"
   },
   {
     "name": "Harny Dosalua",
@@ -128,8 +130,8 @@
     "voting": false,
     "origin": "Micronesia",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 42.7446,
+    "lon": -95.1128,
     "status": "approved"
   },
   {
@@ -234,8 +236,8 @@
     "voting": false,
     "origin": "Dominican Republic",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 41.7001,
+    "lon": -71.6828,
     "status": "approved"
   },
   {
@@ -1176,8 +1178,8 @@
     "voting": true,
     "origin": "Philippines",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 38.8026,
+    "lon": -116.4194,
     "status": "approved"
   },
   {
@@ -1336,8 +1338,8 @@
     "voting": false,
     "origin": "Honduras",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 39.8015,
+    "lon": -74.9686,
     "status": "approved"
   },
   {
@@ -1501,8 +1503,8 @@
     "voting": false,
     "origin": "Honduras",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 33.3267,
+    "lon": -83.3885,
     "status": "approved"
   },
   {
@@ -2437,8 +2439,8 @@
     "voting": false,
     "origin": "Not stated",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 42.9446,
+    "lon": -112.8383,
     "status": "approved"
   },
   {
@@ -3693,8 +3695,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 28.0653,
+    "lon": -81.7889,
     "status": "approved"
   },
   {
@@ -3891,7 +3893,7 @@
     "status": "approved"
   },
   {
-    "name": "Sidney Pino-Becque",
+    "name": "Sidney Pino-Becquer",
     "city": "Iowa",
     "crime": "As posted: Sidney Pino-Becque, an illegal alien from Cuba, was arrested by immigration enforcement agents on Oct. 1. His criminal history includes convictions for child endangerment and assault causing serious injury—without intent,child endangerment—torture or cruelty, and an arrest for battery.",
     "usa": "Daily Signal release Oct 22, 2026: Meet the Worst Criminal Aliens Arrested in Iowa Ahead of Trump’s Midterm Rally",
@@ -3916,7 +3918,7 @@
     "lat": 41.878,
     "lon": -93.0977,
     "status": "approved",
-    "aka": "Sidney Pino-Becquer"
+    "aka": "Sidney Pino-Becque"
   },
   {
     "name": "Alejandro Martinez Martinez",
@@ -4677,8 +4679,8 @@
     "voting": false,
     "origin": "Not stated",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 37.609,
+    "lon": -121.8991,
     "status": "approved"
   },
   {
@@ -5390,8 +5392,8 @@
     "voting": false,
     "origin": "Guatemala",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 37.2393,
+    "lon": -113.5258,
     "status": "approved"
   },
   {
@@ -5417,8 +5419,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 34.9327,
+    "lon": -95.7626,
     "status": "approved"
   },
   {
@@ -6005,8 +6007,8 @@
     "voting": false,
     "origin": "Dominican Republic",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 41.6613,
+    "lon": -111.2124,
     "status": "approved"
   },
   {
@@ -6225,8 +6227,8 @@
     "voting": false,
     "origin": "Honduras",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 34.2751,
+    "lon": -77.8819,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HVGCiCCXcAEaBMF.jpg"
   },
@@ -6253,8 +6255,8 @@
     "voting": false,
     "origin": "Laos",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 35.5693,
+    "lon": -80.5817,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HVGCdN0WkAAtGrT.jpg"
   },
@@ -9987,8 +9989,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 39.023,
+    "lon": -94.7145,
     "status": "approved"
   },
   {
@@ -10066,8 +10068,8 @@
     "voting": true,
     "origin": "Mexico",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 38.2326,
+    "lon": -122.6365,
     "aka": "Verónica Hernández Martínez",
     "status": "approved"
   },
@@ -10121,8 +10123,8 @@
     "voting": false,
     "origin": "Honduras",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 40.6632,
+    "lon": -111.9103,
     "status": "approved"
   },
   {
@@ -10175,8 +10177,8 @@
     "voting": false,
     "origin": "Honduras",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 40.6632,
+    "lon": -111.9103,
     "status": "approved"
   },
   {
@@ -10258,8 +10260,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 26.2334,
+    "lon": -98.3709,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HVBIM6YWcAAlMue.png"
   },
@@ -10288,8 +10290,8 @@
     "voting": false,
     "origin": "Liberia",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 42.0378,
+    "lon": -92.9916,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HVBIMnYWYAAj9ZU.png"
   },
@@ -12264,8 +12266,8 @@
     "voting": true,
     "origin": "Canada",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 44.0682,
+    "lon": -114.742,
     "status": "approved"
   },
   {
@@ -12291,8 +12293,8 @@
     "voting": true,
     "origin": "Canada",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 42.6525,
+    "lon": -73.7566,
     "status": "approved"
   },
   {
@@ -12318,8 +12320,8 @@
     "voting": true,
     "origin": "Canada",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 44.224,
+    "lon": -74.4643,
     "status": "approved"
   },
   {
@@ -12345,8 +12347,8 @@
     "voting": true,
     "origin": "Bosnia",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 42.863,
+    "lon": -73.7748,
     "status": "approved"
   },
   {
@@ -12372,8 +12374,8 @@
     "voting": true,
     "origin": "United Kingdom",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 43.3099,
+    "lon": -73.6444,
     "status": "approved"
   },
   {
@@ -12399,8 +12401,8 @@
     "voting": true,
     "origin": "United Kingdom",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 43.005,
+    "lon": -73.8486,
     "status": "approved"
   },
   {
@@ -13672,8 +13674,8 @@
     "voting": false,
     "origin": "Vietnam",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 34.1216,
+    "lon": -118.1057,
     "status": "approved"
   },
   {
@@ -13751,8 +13753,8 @@
     "voting": false,
     "origin": "India",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 43.8195,
+    "lon": -121.167,
     "status": "approved"
   },
   {
@@ -13833,8 +13835,8 @@
     "voting": false,
     "origin": "El Salvador",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 41.2954,
+    "lon": -96.1416,
     "status": "approved"
   },
   {
@@ -13939,8 +13941,8 @@
     "voting": true,
     "origin": "Canada",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 35.79,
+    "lon": -78.65,
     "status": "approved"
   },
   {
@@ -13966,8 +13968,8 @@
     "voting": true,
     "origin": "Germany",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 35.0462,
+    "lon": -78.8394,
     "status": "approved"
   },
   {
@@ -13991,8 +13993,8 @@
     "voting": true,
     "origin": "Jamaica",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 35.3881,
+    "lon": -78.8625,
     "status": "approved",
     "statusSourceUrl": "https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-16-aliens-illegal-voting"
   },
@@ -14019,8 +14021,8 @@
     "voting": true,
     "origin": "Panama",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 35.0462,
+    "lon": -78.8394,
     "status": "approved"
   },
   {
@@ -14046,8 +14048,8 @@
     "voting": true,
     "origin": "Haiti",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 36.321,
+    "lon": -78.6594,
     "status": "approved"
   },
   {
@@ -14073,8 +14075,8 @@
     "voting": true,
     "origin": "Jamaica",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 35.3546,
+    "lon": -78.0149,
     "status": "approved"
   },
   {
@@ -14100,8 +14102,8 @@
     "voting": true,
     "origin": "Germany",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 35.0462,
+    "lon": -78.8394,
     "status": "approved"
   },
   {
@@ -14127,8 +14129,8 @@
     "voting": true,
     "origin": "Germany",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 35.0462,
+    "lon": -78.8394,
     "status": "approved"
   },
   {
@@ -14154,8 +14156,8 @@
     "voting": true,
     "origin": "Former Yugoslavia",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 34.6485,
+    "lon": -79.0955,
     "status": "approved"
   },
   {
@@ -14181,8 +14183,8 @@
     "voting": true,
     "origin": "El Salvador",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 35.0462,
+    "lon": -78.8394,
     "status": "approved"
   },
   {
@@ -14513,8 +14515,8 @@
     "voting": false,
     "origin": "Micronesia",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 44.9969,
+    "lon": -123.0266,
     "status": "approved"
   },
   {
@@ -15856,8 +15858,8 @@
     "voting": false,
     "origin": "El Salvador",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 33.8048,
+    "lon": -118.1683,
     "status": "approved"
   },
   {
@@ -15883,8 +15885,8 @@
     "voting": false,
     "origin": "Guatemala",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 42.8263,
+    "lon": -72.1831,
     "status": "approved"
   },
   {
@@ -16017,8 +16019,8 @@
     "voting": false,
     "origin": "Romania",
     "confirmedBy": "DOJ",
-    "lat": null,
-    "lon": null,
+    "lat": 47.7623,
+    "lon": -122.2054,
     "status": "approved"
   },
   {
@@ -16457,8 +16459,8 @@
     "voting": false,
     "origin": "Guatemala",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 33.3488,
+    "lon": -112.4912,
     "status": "approved"
   },
   {
@@ -16569,8 +16571,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 37.7652,
+    "lon": -122.2416,
     "status": "approved"
   },
   {
@@ -16623,8 +16625,8 @@
     "voting": false,
     "origin": "Ecuador",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 41.1763,
+    "lon": -73.7908,
     "status": "approved"
   },
   {
@@ -16650,8 +16652,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 38.9723,
+    "lon": -76.5735,
     "status": "approved"
   },
   {
@@ -16704,8 +16706,8 @@
     "voting": false,
     "origin": "Guatemala",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 35.0078,
+    "lon": -78.361,
     "status": "approved"
   },
   {
@@ -16761,8 +16763,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 45.4868,
+    "lon": -111.1968,
     "status": "approved"
   },
   {
@@ -16788,8 +16790,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 43.3336,
+    "lon": -113.8808,
     "status": "approved"
   },
   {
@@ -16952,8 +16954,8 @@
     "voting": false,
     "origin": "Afghanistan",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 32.7479,
+    "lon": -96.4719,
     "status": "approved"
   },
   {
@@ -18491,8 +18493,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 40.71,
+    "lon": -74.01,
     "status": "approved"
   },
   {
@@ -18601,8 +18603,8 @@
     "voting": false,
     "origin": "Venezuela",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 40.71,
+    "lon": -74.01,
     "status": "approved"
   },
   {
@@ -19085,8 +19087,8 @@
     "voting": false,
     "origin": "Not stated",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 30.1579,
+    "lon": -95.198,
     "status": "approved"
   },
   {
@@ -19308,8 +19310,8 @@
     "voting": false,
     "origin": "Togo",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 41.7777,
+    "lon": -72.5244,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HUGYJ2yXEAAGu-f.jpg"
   },
@@ -19705,8 +19707,8 @@
     "voting": false,
     "origin": "South Korea",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 39.632,
+    "lon": -77.7372,
     "status": "approved"
   },
   {
@@ -20694,8 +20696,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 42.9929,
+    "lon": -71.4633,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HTsxfVpWEAAohQR.jpg"
   },
@@ -21283,8 +21285,8 @@
     "voting": false,
     "origin": "Cuba",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 25.76,
+    "lon": -80.19,
     "status": "approved"
   },
   {
@@ -21447,8 +21449,8 @@
     "voting": false,
     "origin": "Honduras",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 40.9262,
+    "lon": -72.652,
     "status": "approved"
   },
   {
@@ -21475,8 +21477,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 41.86,
+    "lon": -87.65,
     "status": "approved"
   },
   {
@@ -21503,8 +21505,8 @@
     "voting": false,
     "origin": "El Salvador",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 38.8871,
+    "lon": -77.0932,
     "status": "approved"
   },
   {
@@ -21530,8 +21532,8 @@
     "voting": false,
     "origin": "Guatemala",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 29.6442,
+    "lon": -98.3128,
     "status": "approved"
   },
   {
@@ -21585,8 +21587,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 29.6442,
+    "lon": -98.3128,
     "status": "approved"
   },
   {
@@ -21613,8 +21615,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 29.6442,
+    "lon": -98.3128,
     "status": "approved"
   },
   {
@@ -21643,8 +21645,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 29.6442,
+    "lon": -98.3128,
     "status": "approved"
   },
   {
@@ -21670,8 +21672,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 39.5238,
+    "lon": -122.1992,
     "status": "approved"
   },
   {
@@ -21698,8 +21700,8 @@
     "voting": false,
     "origin": "South Korea",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 42.3576,
+    "lon": -71.0684,
     "status": "approved"
   },
   {
@@ -21725,8 +21727,8 @@
     "voting": false,
     "origin": "Dominican Republic",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 42.54,
+    "lon": -71.65,
     "status": "approved"
   },
   {
@@ -21752,8 +21754,8 @@
     "voting": false,
     "origin": "Colombia",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 29.76,
+    "lon": -95.37,
     "status": "approved"
   },
   {
@@ -21779,8 +21781,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 43.387,
+    "lon": -111.616,
     "status": "approved"
   },
   {
@@ -21864,8 +21866,8 @@
     "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 41.26,
+    "lon": -95.94,
     "status": "approved"
   },
   {
@@ -21891,8 +21893,8 @@
     "voting": false,
     "origin": "Burma",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 41.26,
+    "lon": -95.94,
     "status": "approved"
   },
   {
@@ -21918,8 +21920,8 @@
     "voting": false,
     "origin": "Guatemala",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 40.8169,
+    "lon": -96.7103,
     "status": "approved"
   },
   {
@@ -21943,8 +21945,8 @@
     "voting": false,
     "origin": "Kenya",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 40.8169,
+    "lon": -96.7103,
     "status": "approved"
   },
   {
@@ -24381,8 +24383,8 @@
     "voting": false,
     "origin": "Armenia",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 34.05,
+    "lon": -118.25,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HUx5AVXXAAAKtrs.jpg"
   }

@@ -290,8 +290,10 @@ async function main() {
     scanned += 1;
     const k = nameKey(hit.name);
     if (!k || have.has(k)) continue;
+    if (hit.aka && have.has(nameKey(hit.aka))) continue; // body spelling of a heading name ("Pino-Becque")
     if ([...have].some((h) => isShortFormOf(k, h))) continue;
     have.add(k);
+    if (hit.aka) have.add(nameKey(hit.aka));
     const row = toRow(hit, { office: "DailySignal", url: hit.url, title: hit.title, date: hit.date });
     const reasons = holdReasons({ name: hit.name, sentence: hit.sentence, title: hit.title, releaseText: hit.sentence, label: row.crime.slice(0, row.crime.indexOf(":")) });
     const gated = gate({ ...row, id: uniqueId(row.id, row) }, reasons);
