@@ -1,5 +1,32 @@
 [
   {
+    "name": "Donelfert Monterroso Vasquez",
+    "city": "Not stated",
+    "crime": "Pleaded guilty: Donelfert Monterroso Vasquez, 51, a Guatemalan national, pleaded guilty today to conspiring to import more than 450 kilograms of cocaine into the United States.",
+    "usa": "DOJ release Oct 27, 2026: Guatemalan National Pleads Guilty to Conspiracy to Commit Narcotics Trafficking",
+    "foreign": "Not stated in post",
+    "picked": "10/27/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261027-donelfert-monterroso-vasquez",
+    "when": "27 Oct 2026",
+    "severity": 50,
+    "severityReason": "Drug trafficking",
+    "severityCrimes": [
+      "Drug trafficking"
+    ],
+    "text": "DOJ Oct 27, 2026, as posted: Donelfert Monterroso Vasquez, 51, a Guatemalan national, pleaded guilty today to conspiring to import more than 450 kilograms of cocaine into the United States.",
+    "photo": "",
+    "via": "justice.gov/opa/pr/guatemalan-national-pleads-guilty-conspiracy-commit-narcotics-trafficking",
+    "sourceUrl": "https://www.justice.gov/opa/pr/guatemalan-national-pleads-guilty-conspiracy-commit-narcotics-trafficking",
+    "voting": false,
+    "origin": "Guatemala",
+    "confirmedBy": "DOJ",
+    "lat": null,
+    "lon": null,
+    "status": "approved"
+  },
+  {
     "name": "Zakaria Farah Abdi",
     "city": "Not stated",
     "crime": "Removed: Zakaria Farah Abdi, an illegal alien from Somalia, deported on August 15, 2025.",

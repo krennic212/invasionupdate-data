@@ -1,18 +1,16 @@
 {
-  "checkedAt": 1793124428357,
-  "checkedAtIso": "2026-10-27T18:07:08.357Z",
+  "checkedAt": 1793128222407,
+  "checkedAtIso": "2026-10-27T19:10:22.407Z",
   "added": [
-    "Artem Stryzhak",
-    "Danexi Mendoza Licona",
-    "Mario Sevilla Artiaga"
+    "Donelfert Monterroso Vasquez"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 82,
+  "scannedReleases": 87,
   "error": null,
-  "note": "Added 3 as approved: Artem Stryzhak, Danexi Mendoza Licona, Mario Sevilla Artiaga",
+  "note": "Added 1 as approved: Donelfert Monterroso Vasquez",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
