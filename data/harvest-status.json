@@ -1,16 +1,16 @@
 {
-  "checkedAt": 1793110993329,
-  "checkedAtIso": "2026-10-27T14:23:13.329Z",
+  "checkedAt": 1793121461568,
+  "checkedAtIso": "2026-10-27T17:17:41.568Z",
   "added": [
-    "Akinade Adedeji Raheem"
+    "James Sutherland"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 81,
+  "scannedReleases": 80,
   "error": null,
-  "note": "Added 1 as approved: Akinade Adedeji Raheem",
+  "note": "Added 1 as approved: James Sutherland",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

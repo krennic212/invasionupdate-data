@@ -1,5 +1,32 @@
 [
   {
+    "name": "James Sutherland",
+    "city": "California",
+    "crime": "Charged: SACRAMENTO, Calif. — James Sutherland, 77, a citizen of the United Kingdom, made his initial appearance on an indictment on Monday, U.S. Attorney Eric Grant announced.",
+    "usa": "DOJ release Oct 27, 2026: UK Citizen and Chairman of Zetland Fiduciary Group Arrested on a Money Laundering Indictment",
+    "foreign": "Not stated in post",
+    "picked": "10/27/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261027-james-sutherland",
+    "when": "27 Oct 2026",
+    "severity": 54,
+    "severityReason": "Fraud (incl. voter fraud)",
+    "severityCrimes": [
+      "Fraud (incl. voter fraud)"
+    ],
+    "text": "DOJ Oct 27, 2026, as posted: SACRAMENTO, Calif. — James Sutherland, 77, a citizen of the United Kingdom, made his initial appearance on an indictment on Monday, U.S. Attorney Eric Grant announced.",
+    "photo": "",
+    "via": "justice.gov/usao-edca/pr/uk-citizen-and-chairman-zetland-fiduciary-group-arrested-money-laundering-indictment",
+    "sourceUrl": "https://www.justice.gov/usao-edca/pr/uk-citizen-and-chairman-zetland-fiduciary-group-arrested-money-laundering-indictment",
+    "voting": false,
+    "origin": "United Kingdom",
+    "confirmedBy": "DOJ",
+    "lat": 36.7783,
+    "lon": -119.4179,
+    "status": "approved"
+  },
+  {
     "name": "Jerinson Guzman-David",
     "city": "Not stated",
     "crime": "Arrested: ICE New Orleans arrested Jerinson Guzman-David, an illegal alien from the Dominican Republic.",
