@@ -1,5 +1,32 @@
 [
   {
+    "name": "Akinade Adedeji Raheem",
+    "city": "Georgia",
+    "crime": "Charged: ATLANTA - Akinade Adedeji Raheem, a Nigerian citizen who allegedly conspired to file fraudulent tax returns seeking over $100 million in refunds using stolen identities, was arraigned yesterday on federal fraud, money laundering, and aggravated identity theft charges after his extradition from Benin.",
+    "usa": "DOJ release Oct 27, 2026: Nigerian Man Extradited from Benin to Face Federal Charges in $100 Million Stolen Identity Tax Scheme",
+    "foreign": "Not stated in post",
+    "picked": "10/27/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261027-akinade-adedeji-raheem",
+    "when": "27 Oct 2026",
+    "severity": 54,
+    "severityReason": "Fraud (incl. voter fraud)",
+    "severityCrimes": [
+      "Fraud (incl. voter fraud)"
+    ],
+    "text": "DOJ Oct 27, 2026, as posted: ATLANTA - Akinade Adedeji Raheem, a Nigerian citizen who allegedly conspired to file fraudulent tax returns seeking over $100 million in refunds using stolen identities, was arraigned yesterday on federal fraud, money laundering, and aggravated identity theft charges after his extradition from Benin.",
+    "photo": "",
+    "via": "justice.gov/usao-ndga/pr/nigerian-man-extradited-benin-face-federal-charges-100-million-stolen-identity-tax",
+    "sourceUrl": "https://www.justice.gov/usao-ndga/pr/nigerian-man-extradited-benin-face-federal-charges-100-million-stolen-identity-tax",
+    "voting": false,
+    "origin": "Nigeria",
+    "confirmedBy": "DOJ",
+    "lat": 32.1656,
+    "lon": -82.9001,
+    "status": "approved"
+  },
+  {
     "name": "Marcel Jordan Lopes Da Silva",
     "city": "Not stated",
     "crime": "As posted: Meet Marcel Jordan Lopes Da Silva, a three-time previously removed criminal illegal alien from Brazil.",
