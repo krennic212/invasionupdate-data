@@ -1,5 +1,32 @@
 [
   {
+    "name": "Haotian Zhang",
+    "city": "California",
+    "crime": "As posted: Haotian Zhang, a Chinese national, was remanded into custody by U.S. District Judge Todd W. Robinson following his guilty plea.",
+    "usa": "DOJ release Oct 26, 2026: Final Defendants Plead Guilty in $65 Million Multinational Fraud Ring Targeting Thousands of Seniors",
+    "foreign": "Not stated in post",
+    "picked": "10/26/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261026-haotian-zhang",
+    "when": "26 Oct 2026",
+    "severity": 54,
+    "severityReason": "Fraud (incl. voter fraud)",
+    "severityCrimes": [
+      "Fraud (incl. voter fraud)"
+    ],
+    "text": "DOJ Oct 26, 2026, as posted: Haotian Zhang, a Chinese national, was remanded into custody by U.S. District Judge Todd W. Robinson following his guilty plea.",
+    "photo": "",
+    "via": "justice.gov/usao-sdca/pr/final-defendants-plead-guilty-65-million-multinational-fraud-ring-targeting-thousands",
+    "sourceUrl": "https://www.justice.gov/usao-sdca/pr/final-defendants-plead-guilty-65-million-multinational-fraud-ring-targeting-thousands",
+    "voting": false,
+    "origin": "China",
+    "confirmedBy": "DOJ",
+    "lat": 36.7783,
+    "lon": -119.4179,
+    "status": "approved"
+  },
+  {
     "name": "Rafael Godinez Mancilla",
     "city": "Los Angeles, CA",
     "crime": "Convicted: Rafael Godinez Mancilla, a criminal illegal alien from Mexico, convicted for murder in Los Angeles, California.",

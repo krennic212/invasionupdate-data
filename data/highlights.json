@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-26",
   "windowDays": 7,
-  "total": 192,
+  "total": 158,
   "rows": [
     {
       "id": "x-2112929852688892154-toan-chu",
@@ -31,32 +31,9 @@
       ]
     },
     {
-      "id": "x-2112740710801629235-victor-manuel-cervantes-santillanes",
-      "name": "Victor Manuel Cervantes-Santillanes",
-      "when": "20 Oct 2026",
-      "severity": 212,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "Attempted murder",
-        "Weapons"
-      ]
-    },
-    {
       "id": "x-2112698882157060102-farmon-farmonbekov",
       "name": "Farmon Farmonbekov",
       "when": "21 Oct 2026",
-      "severity": 182,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Rape / sexual assault"
-      ]
-    },
-    {
-      "id": "x-2112654481834029435-victor-manuel-franco-alvares",
-      "name": "Victor Manuel Franco-Alvares",
-      "when": "20 Oct 2026",
       "severity": 182,
       "severityReason": "Child sex crime",
       "severityCrimes": [
@@ -102,18 +79,6 @@
       ]
     },
     {
-      "id": "x-2112613244515074331-francis-martinez-alvarez",
-      "name": "Francis Martinez Alvarez",
-      "when": "20 Oct 2026",
-      "severity": 141,
-      "severityReason": "Kidnapping / human trafficking",
-      "severityCrimes": [
-        "Kidnapping / human trafficking",
-        "Armed robbery / aggravated assault",
-        "Illegal entry / reentry"
-      ]
-    },
-    {
       "id": "x-2113712401560592790-serferino-trinidad-ortega",
       "name": "Serferino Trinidad Ortega",
       "when": "23 Oct 2026",
@@ -123,18 +88,6 @@
         "Attack on police officer",
         "Assault / battery",
         "DUI"
-      ]
-    },
-    {
-      "id": "x-2112629332979933428-alemo-makesi-sampson",
-      "name": "Alemo Makesi Sampson",
-      "when": "20 Oct 2026",
-      "severity": 131,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Assault / battery",
-        "Burglary / theft"
       ]
     },
     {
@@ -171,31 +124,9 @@
       ]
     },
     {
-      "id": "x-2112627626602799184-hernaldo-beltran-perea",
-      "name": "Hernaldo Beltran-Perea",
-      "when": "20 Oct 2026",
-      "severity": 128,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Drug trafficking"
-      ]
-    },
-    {
       "id": "x-2114834889925386509-juan-cruz-del-cid",
       "name": "Juan Cruz Del Cid",
       "when": "26 Oct 2026",
-      "severity": 125,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons"
-      ]
-    },
-    {
-      "id": "x-2112654492428853530-jose-daniel-burgos-lainez",
-      "name": "Jose Daniel Burgos-Lainez",
-      "when": "20 Oct 2026",
       "severity": 125,
       "severityReason": "Armed robbery / aggravated assault",
       "severityCrimes": [
@@ -294,6 +225,17 @@
       ]
     },
     {
+      "id": "x-2113317011602153731-alejandro-martinez-martinez",
+      "name": "Alejandro Martinez Martinez",
+      "when": "22 Oct 2026",
+      "severity": 104,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "DUI"
+      ]
+    },
+    {
       "id": "x-2113723722662051889-francisco-cortez-perez",
       "name": "Francisco Cortez-Perez",
       "when": "23 Oct 2026",
@@ -321,6 +263,27 @@
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2114808533023871487-humberto-efren-sanchez-medina",
+      "name": "Humberto Efren Sanchez-Medina",
+      "when": "26 Oct 2026",
+      "severity": 95,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "dhs-20261026-rafael-godinez-mancilla",
+      "name": "Rafael Godinez Mancilla",
+      "when": "26 Oct 2026",
+      "severity": 95,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter"
       ]
     },
     {
@@ -424,16 +387,6 @@
       ]
     },
     {
-      "id": "dhs-20261020-vong-vongviset",
-      "name": "Vong Vongviset",
-      "when": "20 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
       "id": "x-2114803701558952294-lesli-joel-calix-sarmiento",
       "name": "LESLI JOEL CALIX-SARMIENTO",
       "when": "26 Oct 2026",
@@ -482,46 +435,6 @@
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2112613236386222222-gustavo-cardenas-arreola",
-      "name": "Gustavo Cardenas Arreola",
-      "when": "20 Oct 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2112613234196799885-nelson-alexander-chay",
-      "name": "Nelson Alexander Chay",
-      "when": "20 Oct 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2112596708794445950-octavio-fragoso",
-      "name": "Octavio Fragoso",
-      "when": "20 Oct 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2112613239582527890-isidro-flores-rodriguez",
-      "name": "Isidro Flores Rodriguez",
-      "when": "20 Oct 2026",
-      "severity": 72,
-      "severityReason": "Violent crime against a child",
-      "severityCrimes": [
-        "Violent crime against a child"
       ]
     }
   ]
