@@ -1,15 +1,21 @@
 {
-  "updatedAt": "2026-10-27T14:15:55Z",
-  "rows": 887,
-  "approved": 876,
+  "updatedAt": "2026-10-27T14:22:15Z",
+  "rows": 894,
+  "approved": 883,
   "pending": 11,
   "photos": 253,
-  "reviewRows": 759,
-  "lastAddedAt": "2026-10-27T01:03:07Z",
-  "lastAddedCount": 1,
+  "reviewRows": 762,
+  "lastAddedAt": "2026-10-27T14:22:15Z",
+  "lastAddedCount": 7,
   "lastAdded": [
-    "Haotian Zhang"
+    "Marcel Jordan Lopes Da Silva",
+    "Maksat Amanturov",
+    "Jheyson Montano Fernandez",
+    "Noel Celestino Lopez Martinez",
+    "Jesus Aguilar-Sanjuan",
+    "Marcos Alvarez-Crespo",
+    "Jose Vasquez-Lopez"
   ],
-  "harvestSha256": "ac6f10d00a7dbdde371778d2abe326c2de087033dabb6a2ff6950daa3d805988",
+  "harvestSha256": "0e39307554a3c81610a6d9b9e66e4683a85e1829ac020323f273d7d5a74e92c6",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
