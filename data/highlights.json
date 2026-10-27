@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-27",
   "windowDays": 7,
-  "total": 184,
+  "total": 195,
   "rows": [
     {
       "id": "x-2112929852688892154-toan-chu",
@@ -240,6 +240,17 @@
       ]
     },
     {
+      "id": "x-2115159452764811508-luis-obispo-hernandez",
+      "name": "Luis Obispo-Hernandez",
+      "when": "27 Oct 2026",
+      "severity": 120,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "DUI"
+      ]
+    },
+    {
       "id": "dhs-20261026-mario-garcia",
       "name": "Mario Garcia",
       "when": "26 Oct 2026",
@@ -295,6 +306,16 @@
       ]
     },
     {
+      "id": "x-2115159442916266452-gerson-roldan-irias-villafranca",
+      "name": "Gerson Roldan Irias Villafranca",
+      "when": "27 Oct 2026",
+      "severity": 101,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
       "id": "x-2113723722662051889-francisco-cortez-perez",
       "name": "Francisco Cortez-Perez",
       "when": "23 Oct 2026",
@@ -337,6 +358,16 @@
     {
       "id": "x-2115120420785365364-nicholas-pastrana-salinas",
       "name": "Nicholas Pastrana-Salinas",
+      "when": "27 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2115159450289861029-raul-gerardo-mora-vazquez",
+      "name": "Raul Gerardo Mora Vazquez",
       "when": "27 Oct 2026",
       "severity": 92,
       "severityReason": "Child sex crime",
@@ -453,6 +484,16 @@
       "severityCrimes": [
         "Child sex crime",
         "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "x-2115130656044769329-heiner-antony-tuy-sop",
+      "name": "Heiner Antony Tuy-Sop",
+      "when": "27 Oct 2026",
+      "severity": 83,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
       ]
     },
     {
