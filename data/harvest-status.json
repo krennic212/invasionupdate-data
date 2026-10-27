@@ -1,16 +1,18 @@
 {
-  "checkedAt": 1793121461568,
-  "checkedAtIso": "2026-10-27T17:17:41.568Z",
+  "checkedAt": 1793124428357,
+  "checkedAtIso": "2026-10-27T18:07:08.357Z",
   "added": [
-    "James Sutherland"
+    "Artem Stryzhak",
+    "Danexi Mendoza Licona",
+    "Mario Sevilla Artiaga"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 80,
+  "scannedReleases": 82,
   "error": null,
-  "note": "Added 1 as approved: James Sutherland",
+  "note": "Added 3 as approved: Artem Stryzhak, Danexi Mendoza Licona, Mario Sevilla Artiaga",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
