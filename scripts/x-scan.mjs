@@ -270,6 +270,7 @@ export function scan(posts, { existing = [], picks = {} } = {}) {
   }
   const operations = [];
   const seenOp = new Set();
+  const seenOpNames = new Set();
   for (const p of sorted) {
     if (isRetweet(p)) continue;
     const iso = ctIso(p.created_at);
@@ -280,8 +281,10 @@ export function scan(posts, { existing = [], picks = {} } = {}) {
     const url = `https://x.com/${p.username}/status/${p.id}`;
     const named = (made.get(p.id) || []).length;
     const row = operationRow({ url, title: found.name || clean.slice(0, 140), date: iso, office: p.username, blocks: [clean] }, named, operations);
-    if (!row || seenOp.has(row.sourceUrl)) continue;
+    const nk = String(row?.name || "").toLowerCase();
+    if (!row || seenOp.has(row.sourceUrl) || (nk && seenOpNames.has(nk))) continue;
     seenOp.add(row.sourceUrl);
+    if (nk) seenOpNames.add(nk);
     operations.push(row);
   }
   return { live, review, skipped, photoCandidates, operations, maxId: maxId ? String(maxId) : "" };
@@ -327,10 +330,13 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       const OPS = "data/operations.json";
       const book = existsSync(OPS) ? JSON.parse(readFileSync(OPS, "utf8")) : [];
       const have = new Set(book.map((o) => o.sourceUrl));
+      const haveNames = new Set(book.map((o) => String(o.name || "").toLowerCase()));
       for (const op of res.operations) {
-        if (have.has(op.sourceUrl)) continue;
-        book.push({ id: op.id, name: op.name, when: op.when, place: op.city, posted: op.heads || null, sourceUrl: op.sourceUrl, text: op.text, heads: op.heads, operation: true, people: [] });
+        const nk = String(op.name || "").toLowerCase();
+        if (have.has(op.sourceUrl) || (nk && haveNames.has(nk))) continue;
+        book.push({ id: op.id, name: op.name, when: op.when, place: op.city, posted: typeof op.posted === "number" ? op.posted : null, unnamed: op.heads || undefined, sourceUrl: op.sourceUrl, text: op.text, heads: op.heads, operation: true, people: [] });
         have.add(op.sourceUrl);
+        if (nk) haveNames.add(nk);
       }
       writeFileSync(OPS, `${JSON.stringify(book, null, 2)}\n`);
     }

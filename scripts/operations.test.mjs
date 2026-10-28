@@ -27,6 +27,7 @@ test("builds a heads row for the unnamed remainder and skips a known release", (
   };
   const row = operationRow(rel, 7, []);
   assert.equal(row.heads, 75);
+  assert.equal(row.posted, 82);
   assert.equal(row.photo, "");
   assert.match(row.name, /operation/);
   assert.equal(operationRow(rel, 7, [row]), null);
@@ -39,6 +40,15 @@ test("catches a noncitizen count, a have-been count, and a named operation", () 
   assert.equal(named.namedOnly, true);
   assert.equal(named.name, "Operation Southbound Takedown");
   assert.equal(named.total, 0);
+  assert.equal(extractOperation("notifications via the Joint Intake Operation Center."), null);
+  assert.equal(extractOperation("Joint Intake Operation Center."), null);
+  const take = extractOperation("This case is part of Operation Take Back America. This case continues.");
+  assert.equal(take.name, "Operation Take Back America");
+  const glued = extractOperation("Operation Take Back America This case is part of Operation Take Back America, a nationwide initiative.");
+  assert.equal(glued.name, "Operation Take Back America");
+  const tios = extractOperation("Operation Los Tíos sends a clear message.");
+  assert.equal(tios.name, "Operation Los Tíos");
+  assert.equal(extractOperation("these cryptocurrency seizure matters are handled by the Global Investigative Operation Center and Field Offices."), null);
 });
 test("skips a release that names almost everyone", () => {
   const rel = {

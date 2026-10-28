@@ -1,14 +1,15 @@
 /**
- * Unnamed group arrest counts from official releases ("ICE Boston arrested 82
- * illegal aliens during a 3-day operation"). These become heads rows so the
- * site counts the unnamed remainder without inventing names.
+ * Operations are not people. Two kinds, both from the source text only:
+ * 1. A stated arrest total of at least 10 aliens / individuals, with more than
+ *    one person left unnamed. heads = total - named, so a named row is not
+ *    counted twice. posted is that stated total, never a sum across releases.
+ * 2. A named "Operation X" (Operation Southbound Takedown, Operation Los Tíos).
+ *    No count is invented when the text does not state one.
  *
- * A release is an operation only when it states a total of at least 10 arrests
- * of aliens / individuals and more than one person is left unnamed after the
- * people the release itself names are subtracted. Named rows keep their own
- * count. A heads row already on the feed for the same release is not added again.
- *
- * The row carries heads = total - named, so the ticker does not count anyone twice.
+ * Not an operation: an office ("Joint Intake Operation Center", "Global
+ * Investigative Operation Center"). A glued sentence word is not part of the
+ * name ("Operation Take Back America. This" stays "Operation Take Back America").
+ * One card per operation name. The X scan calls extractOperation.
  */
 import { urlsIn } from "./rules.mjs";
 import { latLonFor, slug } from "./parse.mjs";
@@ -23,7 +24,22 @@ const COUNT_PATTERNS = [
   /(\d{2,4})\s+(?:(?:criminal\s+)?illegal\s+aliens?|gang[- ]affiliated\s+individuals?|non-?citizens?|individuals?|aliens?)\s+(?:have\s+been\s+|were\s+|was\s+)?arrested/i,
 ];
 
-const NAMED_OP = /\bOperation\s+([A-Z][A-Za-z0-9'’-]{2,}(?:\s+[A-Z][A-Za-z0-9'’-]{2,}){0,4})/;
+const OP_WORD = "[A-ZÁÉÍÓÚÑÜ][A-Za-zÁÉÍÓÚÑÜáéíóúñü0-9'’.-]*";
+const NAMED_OP = new RegExp(`\\bOperation\\s+(${OP_WORD}(?:\\s+${OP_WORD}){0,4})`);
+const OP_TRAIL = /^(?:This|These|That|The|A|An|It|In|On|At|For|And|Or)$/;
+const OP_OFFICE = /^(?:Center|Office|Offices|Division|Field|Room|Plan|Orders|Order)$/i;
+
+function cleanOpName(raw) {
+  const words = String(raw || "")
+    .replace(/[.,;:]+$/g, "")
+    .split(/\s+/)
+    .map((w) => w.replace(/[.,;:]+$/g, ""))
+    .filter(Boolean);
+  while (words.length && OP_TRAIL.test(words[words.length - 1])) words.pop();
+  if (!words.length) return "";
+  if (words.length === 1 && OP_OFFICE.test(words[0])) return "";
+  return words.join(" ");
+}
 
 const PLACE = /\b(?:in|around|across)\s+([A-Z][A-Za-z .'-]{2,40}?)(?=,|\.| during| the week| on\b)/;
 
@@ -54,16 +70,17 @@ export function extractOperation(text) {
     }
   }
   const named = src.match(NAMED_OP);
+  const opName = named ? cleanOpName(named[1]) : "";
   if (best) {
-    best.name = named ? `Operation ${named[1]}` : "";
+    best.name = opName ? `Operation ${opName}` : "";
     return best;
   }
-  if (named) {
+  if (opName) {
     const at = named.index;
     const start = Math.max(0, src.lastIndexOf(".", at - 1) + 1);
     const end = src.indexOf(".", at + named[0].length);
     const sentence = src.slice(start, end === -1 ? src.length : end + 1).trim();
-    return { total: 0, sentence, name: `Operation ${named[1]}`, namedOnly: true };
+    return { total: 0, sentence, name: `Operation ${opName}`, namedOnly: true };
   }
   return best;
 }
@@ -126,7 +143,9 @@ export function operationRow(rel, namedCount, existingRows = []) {
     confirmedBy: office === "DHSgov" ? "DHS" : "ICE",
     lat: geo.lat,
     lon: geo.lon,
-    ...(namedOnly ? { operation: true } : { heads: unnamed, operation: true }),
+    operation: true,
+    posted: namedOnly ? null : found.total,
+    ...(namedOnly ? {} : { heads: unnamed }),
     status: "approved",
   };
 }
@@ -134,17 +153,22 @@ export function operationRow(rel, namedCount, existingRows = []) {
 /** New operation rows for a set of releases. Existing heads rows for the same URL are skipped. */
 export function operationsFor(releases, existingRows = []) {
   const out = [];
-  const seen = new Set(existingRows.filter((r) => Number(r?.heads) > 1).flatMap(rowUrls));
+  const seen = new Set(existingRows.filter((r) => Number(r?.heads) > 1 || r?.operation === true).flatMap(rowUrls));
+  const seenNames = new Set(
+    existingRows.filter((r) => r?.operation === true || Number(r?.heads) > 1).map((r) => String(r.name || "").toLowerCase()),
+  );
   for (const rel of releases) {
     const key = urlKey(rel?.url);
     if (!key || seen.has(key)) continue;
-    const named = existingRows.filter((r) => !(Number(r?.heads) > 1) && rowUrls(r).includes(key)).length
+    const named = existingRows.filter((r) => !(Number(r?.heads) > 1) && !r?.operation && rowUrls(r).includes(key)).length
       + (rel.namedThisRun || 0);
     const row = operationRow(rel, named, [...existingRows, ...out]);
-    if (row) {
-      out.push(row);
-      seen.add(key);
-    }
+    if (!row) continue;
+    const nk = String(row.name || "").toLowerCase();
+    if (seenNames.has(nk)) continue;
+    out.push(row);
+    seen.add(key);
+    seenNames.add(nk);
   }
   return out;
 }
