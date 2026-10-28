@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-10-28T17:57:19Z",
+  "updatedAt": "2026-10-28T18:05:05Z",
   "rows": 983,
   "approved": 960,
   "pending": 23,
-  "photos": 279,
+  "photos": 287,
   "reviewRows": 762,
   "lastAddedAt": "2026-10-28T17:57:18Z",
   "lastAddedCount": 1,
   "lastAdded": [
     "Manuel Alejandro Melendez-Cereceres"
   ],
-  "harvestSha256": "a42cb632eeafb59666e05458a4661ff9a033190de418a176968a4349e19eb956",
+  "harvestSha256": "44ae749fedbf5829d7dca7f8e7c0e543ea1403951d57f92dd701f9799b7a2438",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
