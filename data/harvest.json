@@ -1,5 +1,33 @@
 [
   {
+    "name": "Manuel Alejandro Melendez-Cereceres",
+    "city": "El Paso, TX",
+    "crime": "Convicted: An illegal alien from Mexico was sentenced in a federal court in El Paso to 110 months in prison for conspiracy to transport aliens resulting in serious bodily injury, announced U.S. Attorney Justin R. Simmons for the Western District of Texas. According to court documents, Manuel Alejandro Melendez-Cereceres aka “Monstro,” 42, was a member of an alien smuggling organization. On June 11, 2026, he pleaded guilty to one count of conspiracy to transport aliens resulting in serious bodily injury. In addition to the nine-year federal prison sentence, U.S. District Judge Kathleen Cardone also ordered a money judgement in the amount of $672,101.",
+    "usa": "DOJ release Oct 27, 2026: Alien Smuggling Facilitator Sentenced in El Paso to 9 Years in Federal Prison",
+    "foreign": "Not stated in post",
+    "picked": "10/27/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261027-manuel-alejandro-melendez-cereceres",
+    "when": "27 Oct 2026",
+    "severity": 65,
+    "severityReason": "Alien smuggling",
+    "severityCrimes": [
+      "Alien smuggling"
+    ],
+    "text": "DOJ Oct 27, 2026, as posted: An illegal alien from Mexico was sentenced in a federal court in El Paso to 110 months in prison for conspiracy to transport aliens resulting in serious bodily injury, announced U.S. Attorney Justin R. Simmons for the Western District of Texas. According to court documents, Manuel Alejandro Melendez-Cereceres aka “Monstro,” 42, was a member of an alien smuggling organization. On June 11, 2026, he pleaded guilty to one count of conspiracy to transport aliens resulting in serious bodily injury. In addition to the nine-year federal prison sentence, U.S. District Judge Kathleen Cardone also ordered a money judgement in the amount of $672,101.",
+    "photo": "",
+    "via": "justice.gov/usao-wdtx/pr/alien-smuggling-facilitator-sentenced-el-paso-9-years-federal-prison",
+    "sourceUrl": "https://www.justice.gov/usao-wdtx/pr/alien-smuggling-facilitator-sentenced-el-paso-9-years-federal-prison",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "DOJ",
+    "lat": 31.7584,
+    "lon": -106.4783,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Santos Gonzales Villa",
     "city": "Not stated",
     "crime": "Convicted: 🚨ICE @EROHouston arrested Santos Gonzales Villa, a previously deported criminal alien from Mexico, Oct. 23 who has been convicted of drug trafficking, evading arrest, 3x for driving while his license was suspended, and received deferred adjudication for felony drug possession.",

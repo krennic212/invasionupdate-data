@@ -1,18 +1,15 @@
 {
-  "updatedAt": "2026-10-28T17:18:57Z",
-  "rows": 982,
-  "approved": 959,
+  "updatedAt": "2026-10-28T17:57:19Z",
+  "rows": 983,
+  "approved": 960,
   "pending": 23,
   "photos": 279,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-28T17:13:12Z",
-  "lastAddedCount": 4,
+  "lastAddedAt": "2026-10-28T17:57:18Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Santos Gonzales Villa",
-    "Victor Hassiel Bonilla Oliva",
-    "Glen Madric Reyes",
-    "Nolberto Valdez-Ruiz"
+    "Manuel Alejandro Melendez-Cereceres"
   ],
-  "harvestSha256": "cde6d13336b4a16a31564bd85f46146afec5c1e84b9641cc6de56a7afd66352b",
+  "harvestSha256": "a42cb632eeafb59666e05458a4661ff9a033190de418a176968a4349e19eb956",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -1,3 +1,17 @@
+# HANDOFF: 2026-10-28 (1:00 PM CDT) Melendez-Cereceres via data/pending.json (Krennic approved)
+
+- Added 1 row through data/pending.json intake (AUTO_APPROVE=true, live scan off: MAX_LINKS=0 DOJ_PAGES=0 STATE_SOURCES=0
+  DAILY_SIGNAL=0), guards on, not held: Manuel Alejandro Melendez-Cereceres (doj-20261027-manuel-alejandro-melendez-cereceres),
+  usao-wdtx Oct 27, 2026 "Alien Smuggling Facilitator Sentenced in El Paso to 9 Years in Federal Prison" (read through the DOJ
+  press-release API). crime/text = the release's own sentences, verbatim ("An illegal alien from Mexico was sentenced ... 110
+  months ... conspiracy to transport aliens resulting in serious bodily injury"; "... Melendez-Cereceres aka “Monstro,” 42, ...";
+  the June 11, 2026 guilty plea; the $672,101 money judgement). Label Convicted (house label for a sentence; there is no
+  "Sentenced" label). Origin Mexico, city El Paso, TX. No photo (the release has no image). "Monstro" kept in the text only,
+  not as `aka` (a nickname, not a name).
+- Why missed: extractPeople / linkedPeople found nobody in this release (pattern E did not link the "An illegal alien from
+  Mexico was sentenced" sentence to the next sentence's name). Parser not changed.
+- Checks: node --test 226/226; validate OK. Live rows 982 -> 983 (approved 959 -> 960).
+
 # HANDOFF: 2026-10-28 (12:00 PM CDT) DHS Texas thread + recent voting posts (Krennic asked)
 
 - DHS X 2115482690329911417 (Texas thread) = dhs.gov/news/2026/10/28/dhs-highlights-worst-illegal-aliens-arrested-texas: all 5 named
