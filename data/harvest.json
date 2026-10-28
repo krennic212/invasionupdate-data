@@ -24,8 +24,9 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "approved",
-    "tags": []
+    "status": "pending",
+    "tags": [],
+    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
   },
   {
     "name": "Aden Hassan Aden",
@@ -52,8 +53,9 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "approved",
-    "tags": []
+    "status": "pending",
+    "tags": [],
+    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
   },
   {
     "name": "Arturo Salazar Garcia",
@@ -80,8 +82,9 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "approved",
-    "tags": []
+    "status": "pending",
+    "tags": [],
+    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
   },
   {
     "name": "Jaimie Sosa-Sardina",
@@ -108,8 +111,10 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "approved",
-    "tags": []
+    "status": "pending",
+    "tags": [],
+    "duplicateOf": "doj-20261022-jamie-orlando-sosa-sardina",
+    "holdReason": "duplicate of doj-20261022-jamie-orlando-sosa-sardina (same person: Cuban national, voted 2024, MDFL indictment; live row is Charged, Florida (OPA 48-aliens release spells him Jamie Orlando Sosa Sardina)). Held 2026-10-28 bill-voting-add; not deleted, Krennic to decide"
   },
   {
     "name": "Marva Marie Cook",
@@ -136,8 +141,10 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "approved",
-    "tags": []
+    "status": "pending",
+    "tags": [],
+    "duplicateOf": "doj-20261022-marva-cook",
+    "holdReason": "duplicate of doj-20261022-marva-cook (same person: German national, NDNY voting-by-an-alien case; live row is Charged, Syracuse, NY). Held 2026-10-28 bill-voting-add; not deleted, Krennic to decide"
   },
   {
     "name": "Braulio Osiel Zapata Perez",
@@ -164,8 +171,9 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "approved",
-    "tags": []
+    "status": "pending",
+    "tags": [],
+    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
   },
   {
     "name": "Mai Tran",
@@ -192,8 +200,9 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "approved",
-    "tags": []
+    "status": "pending",
+    "tags": [],
+    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
   },
   {
     "name": "Jose Luis Matute Chaviel",
@@ -220,8 +229,9 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "approved",
-    "tags": []
+    "status": "pending",
+    "tags": [],
+    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
   },
   {
     "name": "Phath Vorn",
@@ -248,8 +258,9 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "approved",
-    "tags": []
+    "status": "pending",
+    "tags": [],
+    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
   },
   {
     "name": "Axel Bemjarmin Alarcon Duarte",
@@ -276,8 +287,9 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "approved",
-    "tags": []
+    "status": "pending",
+    "tags": [],
+    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
   },
   {
     "name": "Darwin Yoel Zelaya-Orellana",
@@ -304,8 +316,9 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "approved",
-    "tags": []
+    "status": "pending",
+    "tags": [],
+    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
   },
   {
     "name": "Servando Alejandro-Torres",
@@ -332,8 +345,9 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "approved",
-    "tags": []
+    "status": "pending",
+    "tags": [],
+    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
   },
   {
     "name": "Jairo Ivan Vazquez Montano",
@@ -360,8 +374,9 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "approved",
-    "tags": []
+    "status": "pending",
+    "tags": [],
+    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
   },
   {
     "name": "Rolex Augustin",
@@ -26422,31 +26437,33 @@
   },
   {
     "name": "Khalwinder Singh Bhengura",
-    "city": "Dallas, TX",
-    "crime": "Charged (not convicted): voting by an alien in a federal election and false statement of citizenship in order to register to vote. India national; lawful permanent resident since 2022. Do not invent illegally present. LPR ≠ illegally present.",
-    "usa": "Northern District of Texas. Named on the Sep 18, 2026 DOJ 16-person illegal-voting roundup. Alleged = Charged, never Convicted from this presser.",
+    "city": "Arlington, TX",
+    "crime": "Convicted: United States Attorney for the Northern District of Texas Ryan Raybould announced that a federal jury convicted Indian national Khalwinder Singh Bhengura of voting by an alien in a federal election and making a false claim of U.S. citizenship to register to vote.",
+    "usa": "DOJ release Oct 28, 2026: Federal jury finds Indian national guilty of unlawfully voting in 2024 Presidential Election (Northern District of Texas)",
     "foreign": "Not stated in post",
-    "picked": "9/19/2026 (date of X post)",
+    "picked": "10/28/2026 (DOJ release)",
     "entered": "LPR since 2022, as posted. LPR is not illegally present.",
     "office": "TheJusticeDept",
     "id": "x-2101379658272874808-khalwinder-singh-bhengura",
-    "when": "19 Sep 2026",
-    "severity": 54,
+    "when": "28 Oct 2026",
+    "severity": 60,
     "severityReason": "Fraud (incl. voter fraud)",
     "severityCrimes": [
       "Fraud (incl. voter fraud)"
     ],
-    "text": "DOJ OPA: Khalwinder Singh Bhengura, 69, India national, lawful permanent resident since 2022, Northern District of Texas — voting by an alien in a federal election and false statement of citizenship in order to register to vote. LPR as posted, not illegally present. Charged, never Convicted. No mugshot on the DOJ graphic. uniqueByName.",
+    "text": "DOJ Oct 28, 2026, as posted: United States Attorney for the Northern District of Texas Ryan Raybould announced that a federal jury convicted Indian national Khalwinder Singh Bhengura of voting by an alien in a federal election and making a false claim of U.S. citizenship to register to vote. According to evidence presented at trial, Bhengura, a citizen of India, became a lawful permanent resident of the United States on June 29, 2022. He is not a U.S. citizen and has never applied for citizenship. On Nov. 5, 2024, the defendant voted in person at the East Library and Recreation Center in Arlington, Texas, in a general election that included races for President, Vice President, U.S. Senate and U.S. House of Representatives. Sentencing is set for Feb. 11, 2027.",
     "photo": "",
-    "via": "@TheJusticeDept 2101379658272874808 · justice.gov OPA 16 illegal-voting PR · @HSI_HQ 2102382657715728801 @HSI_Dallas",
-    "sourceUrl": "https://www.justice.gov/opa/pr/department-justice-charges-16-individuals-illegal-voting-and-related-election-crimes",
+    "via": "justice.gov/usao-ndtx/pr/federal-jury-finds-indian-national-guilty-unlawfully-voting-2024-presidential-election",
+    "sourceUrl": "https://www.justice.gov/usao-ndtx/pr/federal-jury-finds-indian-national-guilty-unlawfully-voting-2024-presidential-election",
     "voting": true,
     "origin": "India",
     "confirmedBy": "DOJ",
-    "lat": 32.78,
-    "lon": -96.8,
+    "lat": 32.6336,
+    "lon": -97.1469,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "statusSourceUrl": "https://www.justice.gov/usao-ndtx/pr/federal-jury-finds-indian-national-guilty-unlawfully-voting-2024-presidential-election",
+    "sourceNote": "2026-10-28 bill-voting-add: stage Charged -> Convicted from the NDTX release (jury verdict Oct 27). Earlier source: https://www.justice.gov/opa/pr/department-justice-charges-16-individuals-illegal-voting-and-related-election-crimes and @TheJusticeDept 2101379658272874808."
   },
   {
     "name": "Celestin Katubadi",

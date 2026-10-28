@@ -1,3 +1,19 @@
+# HANDOFF: 2026-10-28 (12:00 PM CDT) DHS Texas thread + recent voting posts (Krennic asked)
+
+- DHS X 2115482690329911417 (Texas thread) = dhs.gov/news/2026/10/28/dhs-highlights-worst-illegal-aliens-arrested-texas: all 5 named
+  (Falfan, Falfan Acosta, Lopez Ibarra, Zavala Soto, De La Cruz Lira) were already live from the 16:38Z hourly run. Nothing added.
+- Recent official voting posts / DOJ API (7 days): every named person already present (48-aliens OPA, MDFL 6, EDNY 3, MDPA 9, NV
+  Moore, MD Rahman, ICE Boston Pharel-Joseph, DHS recap list incl. Migliore = doj-20260615 row). Posts naming nobody skipped.
+- Bhengura (x-2101379658272874808-...) Charged -> Convicted: usao-ndtx Oct 28 release (jury verdict Oct 27); city Dallas -> Arlington, TX
+  (where he voted, per release); sourceUrl/statusSourceUrl = NDTX, sourceNote keeps the OPA + X source.
+- Held pending in harvest.json (not deleted; holdReason on each), from the 16:38Z run's DHS "dozens ... voter fraud crackdown" release:
+  - duplicates (duplicateOf): Marva Marie Cook -> doj-20261022-marva-cook; Jaimie Sosa-Sardina -> doj-20261022-jamie-orlando-sosa-sardina.
+  - 11 voting rows with no place anywhere in the release (voting-place test failed on them): Matute-Hernandez, Aden Hassan Aden,
+    Salazar Garcia, Zapata Perez, Mai Tran, Matute Chaviel, Phath Vorn, Alarcon Duarte, Zelaya-Orellana, Alejandro-Torres, Vazquez Montano.
+    Approve with a place if one is published. Gap: harvest.mjs auto-approves DHS voting rows with city "Not stated" (same as Oct 23).
+- Not changed: Evelyn Miller stays "Pleaded guilty" (DHS recap says "led to the conviction"; EDPA says pleaded guilty, no sentence).
+  Lizabeth Almonte Rosa stays held (DHS: "a naturalized U.S. citizen").
+
 # HANDOFF: 2026-10-28 (11:40 AM CDT) Entered U.S. backfill on live rows (Krennic, one-time enrich)
 
 - Scope: 935 live rows with entered "Not stated". Filled 249 (step 1 row text 157, step 2 own source URL 90, step 3 release
