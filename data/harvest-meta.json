@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-10-28T20:52:51Z",
-  "rows": 991,
-  "approved": 968,
-  "pending": 23,
+  "updatedAt": "2026-10-28T22:19:27Z",
+  "rows": 997,
+  "approved": 973,
+  "pending": 24,
   "photos": 287,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-28T20:49:22Z",
+  "lastAddedAt": "2026-10-28T22:19:15Z",
   "lastAddedCount": 5,
   "lastAdded": [
-    "Rony Izaguirre-Henriquez",
-    "Francisco Chapas-Sanchez",
-    "Jaime Ramirez-Almaraz",
-    "Rafael Limber Leon-Garcia",
-    "Fabiola Vega"
+    "Kelvin Lopez-Leonardo",
+    "Yana Leonova",
+    "XIAOQIN YAN",
+    "Oscar Salvador Pelayo-Guzman",
+    "Jorge Steve Zepeda Irias"
   ],
-  "harvestSha256": "7f81db4f9720c6b3c1b96868a68a6addfc051c001fb6a5b1ce77111899c3b195",
+  "harvestSha256": "fc20e00eb492fa66e06ff08cddda7ee6a0af953f80969a2c79e0a96cff368c65",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

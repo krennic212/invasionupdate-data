@@ -1,14 +1,23 @@
 {
-  "checkedAt": 1793220752034,
-  "checkedAtIso": "2026-10-28T20:52:32.034Z",
-  "added": [],
+  "checkedAt": 1793225955276,
+  "checkedAtIso": "2026-10-28T22:19:15.276Z",
+  "added": [
+    "Kelvin Lopez-Leonardo",
+    "Yana Leonova",
+    "XIAOQIN YAN",
+    "Deiber Jorhen Castillo Rodriguez",
+    "Oscar Salvador Pelayo-Guzman",
+    "Jorge Steve Zepeda Irias"
+  ],
   "addedStatus": "approved",
-  "heldPending": [],
+  "heldPending": [
+    "Deiber Jorhen Castillo Rodriguez (suspect described as still at large)"
+  ],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 91,
+  "scannedReleases": 92,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 6 as approved: Kelvin Lopez-Leonardo, Yana Leonova, XIAOQIN YAN, Deiber Jorhen Castillo Rodriguez, Oscar Salvador Pelayo-Guzman, Jorge Steve Zepeda Irias",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

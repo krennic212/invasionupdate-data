@@ -1,5 +1,170 @@
 [
   {
+    "name": "Kelvin Lopez-Leonardo",
+    "city": "Missouri",
+    "crime": "Pleaded guilty: Kelvin Lopez-Leonardo, 32, pleaded guilty to being an alien in possession of a firearm and unlawfully reentering the United States.",
+    "usa": "DOJ release Oct 28, 2026: Illegal Alien from Honduras Sentenced for Illegally Possessing a Firearm and Unlawfully Reentering the United States",
+    "foreign": "Not stated in post",
+    "picked": "10/28/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261028-kelvin-lopez-leonardo",
+    "when": "28 Oct 2026",
+    "severity": 55,
+    "severityReason": "Weapons",
+    "severityCrimes": [
+      "Weapons"
+    ],
+    "text": "DOJ Oct 28, 2026, as posted: Kelvin Lopez-Leonardo, 32, pleaded guilty to being an alien in possession of a firearm and unlawfully reentering the United States.",
+    "photo": "",
+    "via": "justice.gov/usao-wdmo/pr/illegal-alien-honduras-sentenced-illegally-possessing-firearm-and-unlawfully",
+    "sourceUrl": "https://www.justice.gov/usao-wdmo/pr/illegal-alien-honduras-sentenced-illegally-possessing-firearm-and-unlawfully",
+    "voting": false,
+    "origin": "Not stated",
+    "confirmedBy": "DOJ",
+    "lat": 37.9643,
+    "lon": -91.8318,
+    "status": "approved",
+    "tags": []
+  },
+  {
+    "name": "Yana Leonova",
+    "city": "District of Columbia",
+    "crime": "Convicted: WASHINGTON — Yana Leonova, 34, a Belarusian citizen most recently residing in Russia, was sentenced today in U.S. District Court to 12 months and one day in federal prison in connection with unlawfully exporting numerous avionics and other aircraft equipment from the United States to Russia, announced U.S. Attorney Jeanine Ferris Pirro.",
+    "usa": "DOJ release Oct 28, 2026: Belarusian Woman Sentenced in D.C. for Illegally Exporting U.S.-Sourced Aviation Components to Russia",
+    "foreign": "Not stated in post",
+    "picked": "10/28/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261028-yana-leonova",
+    "when": "28 Oct 2026",
+    "severity": 0,
+    "severityReason": "",
+    "severityCrimes": [],
+    "text": "DOJ Oct 28, 2026, as posted: WASHINGTON — Yana Leonova, 34, a Belarusian citizen most recently residing in Russia, was sentenced today in U.S. District Court to 12 months and one day in federal prison in connection with unlawfully exporting numerous avionics and other aircraft equipment from the United States to Russia, announced U.S. Attorney Jeanine Ferris Pirro.",
+    "photo": "",
+    "via": "justice.gov/usao-dc/pr/belarusian-woman-sentenced-dc-illegally-exporting-us-sourced-aviation-components-russia",
+    "sourceUrl": "https://www.justice.gov/usao-dc/pr/belarusian-woman-sentenced-dc-illegally-exporting-us-sourced-aviation-components-russia",
+    "voting": false,
+    "origin": "Belarus",
+    "confirmedBy": "DOJ",
+    "lat": 38.9072,
+    "lon": -77.0369,
+    "status": "approved",
+    "tags": []
+  },
+  {
+    "name": "XIAOQIN YAN",
+    "city": "Connecticut",
+    "crime": "Convicted: David X. Sullivan, United States Attorney for the District of Connecticut, announced that XIAOQIN YAN, 32, a citizen of China, was sentenced today by U.S. District Judge Kari A. Dooley in Bridgeport to 10 months of additional imprisonment for escaping from the Federal Correctional Institution in Danbury (FCI Danbury).",
+    "usa": "DOJ release Oct 28, 2026: Chinese National Sentenced to Additional Prison Time for Escaping from FCI Danbury",
+    "foreign": "Not stated in post",
+    "picked": "10/28/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261028-xiaoqin-yan",
+    "when": "28 Oct 2026",
+    "severity": 0,
+    "severityReason": "",
+    "severityCrimes": [],
+    "text": "DOJ Oct 28, 2026, as posted: David X. Sullivan, United States Attorney for the District of Connecticut, announced that XIAOQIN YAN, 32, a citizen of China, was sentenced today by U.S. District Judge Kari A. Dooley in Bridgeport to 10 months of additional imprisonment for escaping from the Federal Correctional Institution in Danbury (FCI Danbury).",
+    "photo": "",
+    "via": "justice.gov/usao-ct/pr/chinese-national-sentenced-additional-prison-time-escaping-fci-danbury",
+    "sourceUrl": "https://www.justice.gov/usao-ct/pr/chinese-national-sentenced-additional-prison-time-escaping-fci-danbury",
+    "voting": false,
+    "origin": "China",
+    "confirmedBy": "DOJ",
+    "lat": 41.6032,
+    "lon": -73.0877,
+    "status": "approved",
+    "tags": []
+  },
+  {
+    "name": "Deiber Jorhen Castillo Rodriguez",
+    "city": "Alabama",
+    "crime": "Charged: Moreno’s co-defendant, Deiber Jorhen Castillo Rodriguez, 26, a citizen of Venezuela, was charged with conspiracy and attempt to access a protected computer in furtherance of fraud.",
+    "usa": "DOJ release Oct 28, 2026: Venezuelan National Pleads Guilty to Jackpotting Conspiracy and to Possessing Child Sexual Abuse Material",
+    "foreign": "Not stated in post",
+    "picked": "10/28/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261028-deiber-jorhen-castillo-rodriguez",
+    "when": "28 Oct 2026",
+    "severity": 54,
+    "severityReason": "Fraud (incl. voter fraud)",
+    "severityCrimes": [
+      "Fraud (incl. voter fraud)"
+    ],
+    "text": "DOJ Oct 28, 2026, as posted: Moreno’s co-defendant, Deiber Jorhen Castillo Rodriguez, 26, a citizen of Venezuela, was charged with conspiracy and attempt to access a protected computer in furtherance of fraud.",
+    "photo": "",
+    "via": "justice.gov/usao-ndal/pr/venezuelan-national-pleads-guilty-jackpotting-conspiracy-and-possessing-child-sexual",
+    "sourceUrl": "https://www.justice.gov/usao-ndal/pr/venezuelan-national-pleads-guilty-jackpotting-conspiracy-and-possessing-child-sexual",
+    "voting": false,
+    "origin": "Venezuela",
+    "confirmedBy": "DOJ",
+    "lat": 32.8067,
+    "lon": -86.7911,
+    "status": "pending",
+    "holdReason": "suspect described as still at large",
+    "tags": []
+  },
+  {
+    "name": "Oscar Salvador Pelayo-Guzman",
+    "city": "New Jersey",
+    "crime": "Pleaded guilty: Oscar Salvador Pelayo-Guzman, 55, a Mexican national and most recently of Kansas, pleaded guilty today before U.S. District Judge Jamel K. Semper in Newark federal court to a one-count Indictment charging him with conspiracy to distribute controlled substances.",
+    "usa": "DOJ release Oct 28, 2026: Illegal Alien Associated with Mexican Cartel Pleads Guilty to Drug Trafficking Conspiracy",
+    "foreign": "Not stated in post",
+    "picked": "10/28/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261028-oscar-salvador-pelayo-guzman",
+    "when": "28 Oct 2026",
+    "severity": 45,
+    "severityReason": "Drug trafficking",
+    "severityCrimes": [
+      "Drug trafficking"
+    ],
+    "text": "DOJ Oct 28, 2026, as posted: Oscar Salvador Pelayo-Guzman, 55, a Mexican national and most recently of Kansas, pleaded guilty today before U.S. District Judge Jamel K. Semper in Newark federal court to a one-count Indictment charging him with conspiracy to distribute controlled substances.",
+    "photo": "",
+    "via": "justice.gov/usao-nj/pr/illegal-alien-associated-mexican-cartel-pleads-guilty-drug-trafficking-conspiracy",
+    "sourceUrl": "https://www.justice.gov/usao-nj/pr/illegal-alien-associated-mexican-cartel-pleads-guilty-drug-trafficking-conspiracy",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "DOJ",
+    "lat": 40.0583,
+    "lon": -74.4057,
+    "status": "approved",
+    "tags": []
+  },
+  {
+    "name": "Jorge Steve Zepeda Irias",
+    "city": "Virginia",
+    "crime": "Convicted: According to court documents, from July 2024 to January 2026, Enriquez Cerritos; Jorge Steve Zepeda Irias, 43, an illegal alien from Honduras; and Jenifer Icela Romero Fabian, 25, a lawful permanent resident from El Salvador, sold dozens of firearms from the Haymarket ranch leased by Enriquez Cerritos as well as from the Chantilly residence shared by Zepeda and Romero Fabian.",
+    "usa": "DOJ release Oct 28, 2026: Eight defendants sentenced to prison for their roles in a cocaine and firearms trafficking conspiracy",
+    "foreign": "Not stated in post",
+    "picked": "10/28/2026 (DOJ release)",
+    "entered": "LPR as posted. LPR is not illegally present.",
+    "office": "TheJusticeDept",
+    "id": "doj-20261028-jorge-steve-zepeda-irias",
+    "when": "28 Oct 2026",
+    "severity": 55,
+    "severityReason": "Weapons",
+    "severityCrimes": [
+      "Weapons"
+    ],
+    "text": "DOJ Oct 28, 2026, as posted: According to court documents, from July 2024 to January 2026, Enriquez Cerritos; Jorge Steve Zepeda Irias, 43, an illegal alien from Honduras; and Jenifer Icela Romero Fabian, 25, a lawful permanent resident from El Salvador, sold dozens of firearms from the Haymarket ranch leased by Enriquez Cerritos as well as from the Chantilly residence shared by Zepeda and Romero Fabian.",
+    "photo": "",
+    "via": "justice.gov/usao-edva/pr/eight-defendants-sentenced-prison-their-roles-cocaine-and-firearms-trafficking",
+    "sourceUrl": "https://www.justice.gov/usao-edva/pr/eight-defendants-sentenced-prison-their-roles-cocaine-and-firearms-trafficking",
+    "voting": false,
+    "origin": "Honduras",
+    "confirmedBy": "DOJ",
+    "lat": 37.5,
+    "lon": -78.6,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Rony Izaguirre-Henriquez",
     "city": "Prince George's County, MD",
     "crime": "Convicted: Rony Izaguirre-Henriquez, a criminal illegal alien from Honduras, convicted for murder, participating in gang activity resulting in death, and assault in Prince George's County, Maryland.",
@@ -15360,7 +15525,8 @@
       "MS-13"
     ],
     "enteredSource": "Arrested: Gustavo Adolfo Flores-Ramirez, an illegal alien from El Salvador and MS-13 member, arrested by ICE ERO in Las Vegas on October 14.",
-    "operationId": "op-icegov-20261020-131"
+    "operationId": "op-icegov-20261020-131",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Jose Luis Perez-Arrias",
@@ -15390,7 +15556,8 @@
       "Gang",
       "TdA"
     ],
-    "operationId": "op-icegov-20261020-131"
+    "operationId": "op-icegov-20261020-131",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Emerson Jossiel Calderon-Hernandez",
@@ -15420,7 +15587,8 @@
       "Gang",
       "MS-13"
     ],
-    "operationId": "op-icegov-20261020-131"
+    "operationId": "op-icegov-20261020-131",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Hector Castro-Lopez",
@@ -15938,7 +16106,8 @@
     "lon": -73.7566,
     "status": "approved",
     "tags": [],
-    "enteredSource": "Charged: Canadian national Paula Stitt, 57, a lawful permanent resident, has been charged with voting by an alien."
+    "enteredSource": "Charged: Canadian national Paula Stitt, 57, a lawful permanent resident, has been charged with voting by an alien.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Jacques Patry",
@@ -15967,7 +16136,8 @@
     "lon": -74.4643,
     "status": "approved",
     "tags": [],
-    "enteredSource": "Charged: Canadian national Jacques Patry, 64, a lawful permanent resident, has been charged with voting by an alien."
+    "enteredSource": "Charged: Canadian national Jacques Patry, 64, a lawful permanent resident, has been charged with voting by an alien.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Suad Sasic",
@@ -15996,7 +16166,8 @@
     "lon": -73.7748,
     "status": "approved",
     "tags": [],
-    "enteredSource": "Charged: Bosnian national Suad Sasic, 30, a lawful permanent resident, has been charged with voting by an alien."
+    "enteredSource": "Charged: Bosnian national Suad Sasic, 30, a lawful permanent resident, has been charged with voting by an alien.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Samantha Merkle",
@@ -16025,7 +16196,8 @@
     "lon": -73.6444,
     "status": "approved",
     "tags": [],
-    "enteredSource": "Charged: British national Samantha Merkle, 55, a lawful permanent resident, has been charged with voting by an alien."
+    "enteredSource": "Charged: British national Samantha Merkle, 55, a lawful permanent resident, has been charged with voting by an alien.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Vikki Bradt",
@@ -16054,7 +16226,8 @@
     "lon": -73.8486,
     "status": "approved",
     "tags": [],
-    "enteredSource": "Charged: British national Vikki Bradt, 51, a lawful permanent resident, has been charged with voting by an alien."
+    "enteredSource": "Charged: British national Vikki Bradt, 51, a lawful permanent resident, has been charged with voting by an alien.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Jose Morales Hernandez",
