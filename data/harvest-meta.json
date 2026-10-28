@@ -1,16 +1,18 @@
 {
-  "updatedAt": "2026-10-28T16:59:36Z",
-  "rows": 978,
-  "approved": 955,
+  "updatedAt": "2026-10-28T17:13:12Z",
+  "rows": 982,
+  "approved": 959,
   "pending": 23,
   "photos": 279,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-28T16:38:42Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-10-28T17:13:12Z",
+  "lastAddedCount": 4,
   "lastAdded": [
-    "Rolex Augustin",
-    "DIMITRI BEIX"
+    "Santos Gonzales Villa",
+    "Victor Hassiel Bonilla Oliva",
+    "Glen Madric Reyes",
+    "Nolberto Valdez-Ruiz"
   ],
-  "harvestSha256": "6fcf58cf3be11647e308924f15081e7fe9eaa493509edea975ce240601fb8e82",
+  "harvestSha256": "cde6d13336b4a16a31564bd85f46146afec5c1e84b9641cc6de56a7afd66352b",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
