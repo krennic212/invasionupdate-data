@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T20:49:35Z",
+  "updatedAt": "2026-10-28T20:52:51Z",
   "rows": 991,
   "approved": 968,
   "pending": 23,
@@ -14,6 +14,6 @@
     "Rafael Limber Leon-Garcia",
     "Fabiola Vega"
   ],
-  "harvestSha256": "afa4f6e022d0c07e298eddc777fe487098b65c62cd9e3f14491bda8e5434c0fd",
+  "harvestSha256": "7f81db4f9720c6b3c1b96868a68a6addfc051c001fb6a5b1ce77111899c3b195",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -1,22 +1,14 @@
 {
-  "checkedAt": 1793220562812,
-  "checkedAtIso": "2026-10-28T20:49:22.812Z",
-  "added": [
-    "Rony Izaguirre-Henriquez",
-    "Francisco Chapas-Sanchez",
-    "Jaime Ramirez-Almaraz",
-    "Rafael Limber Leon-Garcia",
-    "Fabiola Vega",
-    "Operation Center ICE (operation, not a person)",
-    "Operation No Doze (operation, not a person)"
-  ],
+  "checkedAt": 1793220752034,
+  "checkedAtIso": "2026-10-28T20:52:32.034Z",
+  "added": [],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
   "scannedReleases": 91,
   "error": null,
-  "note": "Added 7 as approved: Rony Izaguirre-Henriquez, Francisco Chapas-Sanchez, Jaime Ramirez-Almaraz, Rafael Limber Leon-Garcia, Fabiola Vega, Operation Center ICE (operation, not a person), Operation No Doze (operation, not a person)",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

@@ -9734,7 +9734,8 @@
     "lon": null,
     "status": "approved",
     "tags": [],
-    "operationId": "op-eroboston-20261019-82"
+    "operationId": "op-eroboston-20261019-82",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Ronan Rodrigues Dos Santos",
@@ -9763,7 +9764,8 @@
     "lon": null,
     "status": "approved",
     "tags": [],
-    "operationId": "op-eroboston-20261019-82"
+    "operationId": "op-eroboston-20261019-82",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Raphael De Oliveira Batista",
@@ -9793,7 +9795,8 @@
     "status": "approved",
     "tags": [],
     "enteredSource": "Arrested: Raphael De Oliveira Batista, a previously removed criminal illegal alien from Brazil who was arrested for assault and battery on a family or household member, threat to commit a crime, and strangulation or suffocation.",
-    "operationId": "op-eroboston-20261019-82"
+    "operationId": "op-eroboston-20261019-82",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Joao Manuel Matos Ferreira",
@@ -9822,7 +9825,8 @@
     "lon": null,
     "status": "approved",
     "tags": [],
-    "operationId": "op-eroboston-20261019-82"
+    "operationId": "op-eroboston-20261019-82",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Cristopher Paul Augui Cajas",
@@ -9851,7 +9855,8 @@
     "lon": null,
     "status": "approved",
     "tags": [],
-    "operationId": "op-eroboston-20261019-82"
+    "operationId": "op-eroboston-20261019-82",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Marlon Alexis Portillo-Garcia",
@@ -9880,7 +9885,8 @@
     "lon": null,
     "status": "approved",
     "tags": [],
-    "operationId": "op-eroboston-20261019-82"
+    "operationId": "op-eroboston-20261019-82",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Ricardo Faustin",
@@ -9909,7 +9915,8 @@
     "lon": null,
     "status": "approved",
     "tags": [],
-    "operationId": "op-eroboston-20261019-82"
+    "operationId": "op-eroboston-20261019-82",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Moises Anwar Arellano-Alba",
@@ -10822,7 +10829,8 @@
     "statusSourceUrl": "https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-16-aliens-election-crimes",
     "status": "approved",
     "tags": [],
-    "enteredSource": "Charged: Nicaraguan national Dudley Francisco Zeledon, 56, a lawful permanent resident has been charged in a two-count indictment for illegal voting in an election."
+    "enteredSource": "Charged: Nicaraguan national Dudley Francisco Zeledon, 56, a lawful permanent resident has been charged in a two-count indictment for illegal voting in an election.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Zianya Yllaly Zamorano",
@@ -10852,7 +10860,8 @@
     "statusSourceUrl": "https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-16-aliens-election-crimes",
     "status": "approved",
     "tags": [],
-    "enteredSource": "Charged: Mexican national Zianya Yllaly Zamorano, 34, a lawful permanent resident has been indicted for illegal voting in an election."
+    "enteredSource": "Charged: Mexican national Zianya Yllaly Zamorano, 34, a lawful permanent resident has been indicted for illegal voting in an election.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Pedro Pablo Ruiz",
@@ -10882,7 +10891,8 @@
     "statusSourceUrl": "https://www.justice.gov/opa/pr/justice-department-announces-charges-involving-16-aliens-election-crimes",
     "status": "approved",
     "tags": [],
-    "enteredSource": "Charged: Cuban national Pedro Pablo Ruiz, 68, a lawful permanent resident, has been indicted for illegal voting in a federal election."
+    "enteredSource": "Charged: Cuban national Pedro Pablo Ruiz, 68, a lawful permanent resident, has been indicted for illegal voting in a federal election.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Nighat Jamil",
@@ -12512,7 +12522,8 @@
     "lat": 44.0682,
     "lon": -114.742,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Rolando Carbajal Villegas",
@@ -12541,7 +12552,8 @@
     "lat": 31.9686,
     "lon": -99.9018,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Jose Cruz Estrada",
@@ -12570,7 +12582,8 @@
     "lat": 31.9686,
     "lon": -99.9018,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Filiberto Preciado-Gamboa",
@@ -12602,7 +12615,8 @@
     "status": "approved",
     "tags": [
       "Gang"
-    ]
+    ],
+    "photoHold": "needs visual check"
   },
   {
     "name": "German Garcia-Ordonez",
@@ -12631,7 +12645,8 @@
     "lat": 35.0078,
     "lon": -97.0929,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Luis Antonio Vasquez Encinas",
@@ -12659,7 +12674,8 @@
     "lat": 34.0489,
     "lon": -111.0937,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Noe Ochoa Torres",
@@ -12690,7 +12706,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Jaime Velasquez Orozco",
@@ -12725,7 +12742,8 @@
     "status": "approved",
     "approvalNote": "Krennic approved 2026-10-20: named in the official DHS deportation-flight release. The same name was only in review.json (X post 2100272235965555079, not an official page), which blocked intake by name; the review row stays unpublished.",
     "tags": [],
-    "enteredSource": "Removed: Among the illegal aliens who were deported are: Jaime Velasquez Orozco, whose criminal history includes convictions for lewd or lascivious acts with a child under 14, assault with intent to rape, inflict corporal injury: spouse/cohabitant, first-degree burglary, battery, driving under the influence of alcohol/drugs, hit-and-run with property damage, and possession of a controlled substance in California."
+    "enteredSource": "Removed: Among the illegal aliens who were deported are: Jaime Velasquez Orozco, whose criminal history includes convictions for lewd or lascivious acts with a child under 14, assault with intent to rape, inflict corporal injury: spouse/cohabitant, first-degree burglary, battery, driving under the influence of alcohol/drugs, hit-and-run with property damage, and possession of a controlled substance in California.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Jiovany Baray-Acosta",
@@ -12756,7 +12774,8 @@
     "lat": 34.0489,
     "lon": -111.0937,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Abdallah Mohamad Alhussni",
