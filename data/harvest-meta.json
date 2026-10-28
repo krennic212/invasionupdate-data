@@ -1,19 +1,16 @@
 {
-  "updatedAt": "2026-10-28T14:16:52Z",
-  "rows": 961,
-  "approved": 951,
+  "updatedAt": "2026-10-28T14:20:56Z",
+  "rows": 963,
+  "approved": 953,
   "pending": 10,
   "photos": 279,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-28T14:16:50Z",
-  "lastAddedCount": 5,
+  "lastAddedAt": "2026-10-28T14:20:56Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Victor Falfan",
-    "Alejandro Falfan Acosta",
-    "Vanesa Lopez Ibarra",
-    "Miguel Zavala Soto",
-    "Francisco De La Cruz Lira"
+    "Oscar Daniel Isaya Corrales",
+    "Jose Perez-Antonio"
   ],
-  "harvestSha256": "a289f88bbf30dbe8371ab2249274abffa0deab76aeab23577eff7b6e468efacc",
+  "harvestSha256": "2f112395981c307b693ad9d9367e60814ebe4f6e55df67c31a6ea530b67b0234",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

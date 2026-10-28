@@ -1,5 +1,65 @@
 [
   {
+    "name": "Oscar Daniel Isaya Corrales",
+    "city": "Not stated",
+    "crime": "Arrested: Oscar Daniel Isaya Corrales is a criminal illegal alien from Venezuela with previous arrests for domestic violence, criminal damage to property, felony retail theft, driving with an expired license, marijuana possession, and several traffic misdemeanors.",
+    "usa": "DHS X post Oct 28, 2026 (@DHSgov)",
+    "foreign": "Not stated in post",
+    "picked": "10/28/2026 (@DHSgov post)",
+    "entered": "Not stated",
+    "office": "DHSgov",
+    "id": "x-2115426482117869659-oscar-daniel-isaya-corrales",
+    "when": "28 Oct 2026",
+    "severity": 122,
+    "severityReason": "Armed robbery / aggravated assault",
+    "severityCrimes": [
+      "Armed robbery / aggravated assault",
+      "Burglary / theft",
+      "Drug possession"
+    ],
+    "text": "@DHSgov Oct 28, 2026, as posted: This monster, who was seen shooting into a homeless encampment, was RELEASED by the Biden administration into our country, completely unvetted. Oscar Daniel Isaya Corrales is a criminal illegal alien from Venezuela with previous arrests for domestic violence, criminal damage to property, felony retail theft, driving with an expired license, marijuana possession, and several traffic misdemeanors. Isaya Corrales illegally entered the United States through the southern border in October 2023. In December 2025, ICE lodged a detainer against Isaya Corrales. Sanctuary officials in Blue Island, Illinois, IGNORED ICE’s detainer and released this criminal illegal alien back into the community to reoffend. God bless this FBI agent for their heroic action.",
+    "photo": "",
+    "via": "@DHSgov 2115426482117869659",
+    "sourceUrl": "https://x.com/DHSgov/status/2115426482117869659",
+    "voting": false,
+    "origin": "Not stated",
+    "confirmedBy": "DHS",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "tags": [
+      "Entered under Biden"
+    ]
+  },
+  {
+    "name": "Jose Perez-Antonio",
+    "city": "Not stated",
+    "crime": "Arrested: ICE Boston arrested Jose Perez-Antonio, a three-time previously removed criminal illegal alien from the Dominican Republic, following his release from Massachusetts DOC custody.",
+    "usa": "ICE X post Oct 28, 2026 (@EROBoston)",
+    "foreign": "Not stated in post",
+    "picked": "10/28/2026 (@EROBoston post)",
+    "entered": "Not stated",
+    "office": "EROBoston",
+    "id": "x-2115409996817256611-jose-perez-antonio",
+    "when": "28 Oct 2026",
+    "severity": 45,
+    "severityReason": "Drug trafficking",
+    "severityCrimes": [
+      "Drug trafficking"
+    ],
+    "text": "@EROBoston Oct 28, 2026, as posted: ICE Boston arrested Jose Perez-Antonio, a three-time previously removed criminal illegal alien from the Dominican Republic, following his release from Massachusetts DOC custody. Perez-Antonio’s criminal history includes convictions for trafficking cocaine, conspiracy,...",
+    "photo": "",
+    "via": "@EROBoston 2115409996817256611",
+    "sourceUrl": "https://x.com/EROBoston/status/2115409996817256611",
+    "voting": false,
+    "origin": "Dominican Republic",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Victor Falfan",
     "city": "Corpus Christi, TX",
     "crime": "Arrested: Victor Falfan, an illegal alien from Mexico and Tango Houstone gang member, arrested by ICE in Corpus Christi, Texas, on September 10.",

@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-28",
   "windowDays": 7,
-  "total": 160,
+  "total": 162,
   "rows": [
     {
       "id": "dhs-20261023-anthony-tyrone-higgs",
@@ -160,6 +160,18 @@
       ]
     },
     {
+      "id": "x-2115426482117869659-oscar-daniel-isaya-corrales",
+      "name": "Oscar Daniel Isaya Corrales",
+      "when": "28 Oct 2026",
+      "severity": 122,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Burglary / theft",
+        "Drug possession"
+      ]
+    },
+    {
       "id": "x-2115145798833066022-tuan-thanh-phan",
       "name": "Tuan Thanh Phan",
       "when": "27 Oct 2026",
@@ -280,17 +292,6 @@
       "severityCrimes": [
         "Armed robbery / aggravated assault",
         "Assault / battery"
-      ]
-    },
-    {
-      "id": "x-2113727308687118469-eduardo-miguel-ramirez-jimenez",
-      "name": "Eduardo Miguel Ramirez Jimenez",
-      "when": "23 Oct 2026",
-      "severity": 105,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Burglary / theft"
       ]
     },
     {
