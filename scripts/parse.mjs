@@ -7,6 +7,7 @@
  */
 
 import { countryFor, cleanOrigin, DEMONYMS, COUNTRIES } from "./country.mjs";
+import { enteredFromText } from "./entered.mjs";
 import { readFileSync } from "node:fs";
 import { cleanPersonName } from "./names.mjs";
 
@@ -735,7 +736,7 @@ export function toRow(hit, rel) {
     usa: `${a.label} release ${d.long}: ${rel.title}`,
     foreign: "Not stated in post",
     picked: `${d.picked} (${a.label} release)`,
-    entered: "Not stated",
+    entered: enteredFromText(hit.sentence),
     office: rel.office,
     id: `${a.tag || a.label.toLowerCase()}-${d.compact}-${slug(hit.name)}`,
     when: d.when,

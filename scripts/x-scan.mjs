@@ -34,6 +34,7 @@
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { extractPeople, statusFrom, stripPriors, dateParts, slug, cityFrom, latLonFor } from "./parse.mjs";
+import { enteredFromText } from "./entered.mjs";
 import { holdReasons, denaturalizedStated } from "./guards.mjs";
 import { nameKey } from "./rules.mjs";
 import { LIVE_X_HANDLES, TRUSTED_REPORTER_X_HANDLES } from "./x-handles.mjs";
@@ -139,7 +140,7 @@ export function rowsForPost(post, picks = []) {
       usa: `${a.label} X post ${d.long} (@${handle})`,
       foreign: "Not stated in post",
       picked: `${d.picked} (@${handle} post)`,
-      entered: "Not stated",
+      entered: enteredFromText(`${hit.sentence} ${clean}`),
       office: handle,
       id: `x-${post.id}-${slug(hit.name)}`,
       when: d.when,
