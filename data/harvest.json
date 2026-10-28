@@ -1,5 +1,32 @@
 [
   {
+    "name": "Maksim Sergeevich Shakirov",
+    "city": "Rawlins, WY",
+    "crime": "Pleaded guilty: CHEYENNE, Wyo. — Maksim Sergeevich Shakirov, 29, a citizen of Uzbekistan residing in Rawlins, Wyoming, pleaded guilty in federal court to one count of voting by an alien, in violation of 18 U.S.C. § 611.",
+    "usa": "DOJ release Oct 27, 2026: Non-citizen pleads guilty to unlawful voting in federal election",
+    "foreign": "Not stated in post",
+    "picked": "10/27/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261027-maksim-sergeevich-shakirov",
+    "when": "27 Oct 2026",
+    "severity": 60,
+    "severityReason": "Fraud (incl. voter fraud)",
+    "severityCrimes": [
+      "Fraud (incl. voter fraud)"
+    ],
+    "text": "DOJ Oct 27, 2026, as posted: CHEYENNE, Wyo. — Maksim Sergeevich Shakirov, 29, a citizen of Uzbekistan residing in Rawlins, Wyoming, pleaded guilty in federal court to one count of voting by an alien, in violation of 18 U.S.C. § 611.",
+    "photo": "",
+    "via": "justice.gov/usao-wy/pr/non-citizen-pleads-guilty-unlawful-voting-federal-election",
+    "sourceUrl": "https://www.justice.gov/usao-wy/pr/non-citizen-pleads-guilty-unlawful-voting-federal-election",
+    "voting": true,
+    "origin": "Uzbekistan",
+    "confirmedBy": "DOJ",
+    "lat": 41.7951,
+    "lon": -107.2349,
+    "status": "approved"
+  },
+  {
     "name": "Phone Chomsavanh",
     "city": "Not stated",
     "crime": "Removed: Phone Chomsavanh, an illegal alien from Laos, deported on July 14, 2025.",
