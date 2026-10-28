@@ -1,3 +1,12 @@
+# HANDOFF: 2026-10-28 (11:40 AM CDT) Entered U.S. backfill on live rows (Krennic, one-time enrich)
+
+- Scope: 935 live rows with entered "Not stated". Filled 249 (step 1 row text 157, step 2 own source URL 90, step 3 release
+  linked from the X post 2); 686 left "Not stated". Only `entered` changed; tags re-derived (16 live rows gained a tag:
+  Entered under Biden 10, Entered under Obama 5, DACA 1). Every filled row with step + source URL: docs/entered-backfill-2026-10-28.md.
+- Step 4 (official-site web search per name) stopped after 3 consecutive misses; search.usa.gov 403 / DuckDuckGo 202 not used.
+- justice.gov HTML is behind an Akamai interstitial; releases were read through the DOJ press-release API (by title).
+  6 justice.gov releases could not be matched in the API (left Not stated).
+
 # HANDOFF: 2026-10-28 (CDT) row tags: CHNV / DACA / Entered under Biden / Entered under Obama (Krennic asked)
 
 - No tags mechanism existed in this repo (the Gang / Transgender tags from the Oct 15 Grok Build prompt are site-side
