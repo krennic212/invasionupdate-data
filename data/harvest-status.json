@@ -1,14 +1,20 @@
 {
-  "checkedAt": 1793193140839,
-  "checkedAtIso": "2026-10-28T13:12:20.839Z",
-  "added": [],
+  "checkedAt": 1793197010179,
+  "checkedAtIso": "2026-10-28T14:16:50.179Z",
+  "added": [
+    "Victor Falfan",
+    "Alejandro Falfan Acosta",
+    "Vanesa Lopez Ibarra",
+    "Miguel Zavala Soto",
+    "Francisco De La Cruz Lira"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 76,
+  "scannedReleases": 86,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 5 as approved: Victor Falfan, Alejandro Falfan Acosta, Vanesa Lopez Ibarra, Miguel Zavala Soto, Francisco De La Cruz Lira",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

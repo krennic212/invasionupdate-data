@@ -1,15 +1,19 @@
 {
-  "updatedAt": "2026-10-28T13:10:27Z",
-  "rows": 956,
-  "approved": 946,
+  "updatedAt": "2026-10-28T14:16:52Z",
+  "rows": 961,
+  "approved": 951,
   "pending": 10,
   "photos": 279,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-28T00:52:44Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-10-28T14:16:50Z",
+  "lastAddedCount": 5,
   "lastAdded": [
-    "Maksim Sergeevich Shakirov"
+    "Victor Falfan",
+    "Alejandro Falfan Acosta",
+    "Vanesa Lopez Ibarra",
+    "Miguel Zavala Soto",
+    "Francisco De La Cruz Lira"
   ],
-  "harvestSha256": "a2de40a29a1e71f666a5a9ab81d1052b8ad23da6a047c5757b12ec6cf751dfcf",
+  "harvestSha256": "a289f88bbf30dbe8371ab2249274abffa0deab76aeab23577eff7b6e468efacc",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
