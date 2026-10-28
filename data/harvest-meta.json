@@ -1,15 +1,19 @@
 {
-  "updatedAt": "2026-10-28T18:05:05Z",
-  "rows": 983,
-  "approved": 960,
+  "updatedAt": "2026-10-28T19:14:50Z",
+  "rows": 988,
+  "approved": 965,
   "pending": 23,
   "photos": 287,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-28T17:57:18Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-10-28T19:14:46Z",
+  "lastAddedCount": 5,
   "lastAdded": [
-    "Manuel Alejandro Melendez-Cereceres"
+    "Julio Cesar Perez Alvarez",
+    "Isidoro Cruz Bernal",
+    "Sebastian Alejandro De Leon",
+    "Sardor Tirkashev",
+    "Christopher Antonio Rodriguez Molina"
   ],
-  "harvestSha256": "44ae749fedbf5829d7dca7f8e7c0e543ea1403951d57f92dd701f9799b7a2438",
+  "harvestSha256": "49f2d314cc0fa2b8bd9282076a33eac28df3879be12ebf55b25a92c3e6bc0fb1",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

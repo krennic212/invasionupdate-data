@@ -1,14 +1,20 @@
 {
-  "checkedAt": 1793210696514,
-  "checkedAtIso": "2026-10-28T18:04:56.514Z",
-  "added": [],
+  "checkedAt": 1793214886067,
+  "checkedAtIso": "2026-10-28T19:14:46.067Z",
+  "added": [
+    "Julio Cesar Perez Alvarez",
+    "Isidoro Cruz Bernal",
+    "Sebastian Alejandro De Leon",
+    "Sardor Tirkashev",
+    "Christopher Antonio Rodriguez Molina"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 86,
+  "scannedReleases": 85,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 5 as approved: Julio Cesar Perez Alvarez, Isidoro Cruz Bernal, Sebastian Alejandro De Leon, Sardor Tirkashev, Christopher Antonio Rodriguez Molina",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
