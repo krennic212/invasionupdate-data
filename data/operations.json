@@ -1,0 +1,38 @@
+[
+  {
+    "id": "op-eroboston-20261019-82",
+    "name": "ERO Boston Massachusetts operation",
+    "when": "19 Oct 2026",
+    "place": "Boston, MA",
+    "posted": 82,
+    "unnamed": 75,
+    "sourceUrl": "https://www.ice.gov/news/releases/ice-boston-arrests-82-illegal-aliens-during-3-day-operation-massachusetts",
+    "people": [
+      "ice-20261019-robson-martins-da-silva",
+      "ice-20261019-ronan-rodrigues-dos-santos",
+      "ice-20261019-raphael-de-oliveira-batista",
+      "ice-20261019-joao-manuel-matos-ferreira",
+      "ice-20261019-cristopher-paul-augui-cajas",
+      "ice-20261019-marlon-alexis-portillo-garcia",
+      "ice-20261019-ricardo-faustin"
+    ],
+    "text": "ICE Boston 19 Oct 2026, as posted: Authorities arrested 82 illegal aliens during the three-day operation in southeastern Massachusetts the week of Sept. 21. 82 total, 7 named on their own rows, 75 unnamed counted here. Unnamed cluster, heads=75.",
+    "operation": true
+  },
+  {
+    "id": "op-icegov-20261020-131",
+    "name": "ICE gang-member arrests operation",
+    "when": "20 Oct 2026",
+    "place": "Not stated",
+    "posted": 131,
+    "unnamed": 128,
+    "sourceUrl": "https://www.dhs.gov/news/2026/10/19/ice-arrests-more-100-gang-members-less-week",
+    "people": [
+      "dhs-20261019-gustavo-adolfo-flores-ramirez",
+      "dhs-20261019-jose-luis-perez-arrias",
+      "dhs-20261019-emerson-jossiel-calderon-hernandez"
+    ],
+    "text": "ICE 20 Oct 2026, as posted: From October 4 to October 10, ICE arrested 131 gang-affiliated individuals, including 129 by ERO and 2 by HSI. 131 total, 3 named on their own rows, 128 unnamed counted here. Unnamed cluster, heads=128. Also posted: https://www.ice.gov/news/releases/ice-arrests-more-100-gang-members-less-week",
+    "operation": true
+  }
+]

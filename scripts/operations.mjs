@@ -11,17 +11,19 @@
  * The row carries heads = total - named, so the ticker does not count anyone twice.
  */
 import { urlsIn } from "./rules.mjs";
-import { latLonFor } from "./parse.mjs";
+import { latLonFor, slug } from "./parse.mjs";
 
 const MIN_TOTAL = 10;
 const MIN_UNNAMED = 2;
 
 const COUNT_PATTERNS = [
-  // "arrested 82 illegal aliens" / "arrested 131 gang-affiliated individuals"
-  /(?:arrested|arrests)\s+(\d{2,4})\s+(?:(?:criminal\s+)?illegal\s+aliens?|gang[- ]affiliated\s+individuals?|individuals?|aliens?)/i,
-  // "82 illegal aliens were arrested" / "118 illegal aliens were arrested during"
-  /(\d{2,4})\s+(?:(?:criminal\s+)?illegal\s+aliens?|gang[- ]affiliated\s+individuals?|individuals?|aliens?)\s+(?:were\s+|was\s+)?arrested/i,
+  // "arrested 82 illegal aliens" / "arrested 13 noncitizens" / "arrested 131 gang-affiliated individuals"
+  /(?:arrested|arrests)\s+(\d{2,4})\s+(?:(?:criminal\s+)?illegal\s+aliens?|gang[- ]affiliated\s+individuals?|non-?citizens?|individuals?|aliens?)/i,
+  // "82 illegal aliens were arrested" / "13 individuals have been arrested"
+  /(\d{2,4})\s+(?:(?:criminal\s+)?illegal\s+aliens?|gang[- ]affiliated\s+individuals?|non-?citizens?|individuals?|aliens?)\s+(?:have\s+been\s+|were\s+|was\s+)?arrested/i,
 ];
+
+const NAMED_OP = /\bOperation\s+([A-Z][A-Za-z0-9'’-]{2,}(?:\s+[A-Z][A-Za-z0-9'’-]{2,}){0,4})/;
 
 const PLACE = /\b(?:in|around|across)\s+([A-Z][A-Za-z .'-]{2,40}?)(?=,|\.| during| the week| on\b)/;
 
@@ -48,8 +50,20 @@ export function extractOperation(text) {
       const start = Math.max(0, src.lastIndexOf(".", at - 1) + 1);
       const end = src.indexOf(".", at + m[0].length);
       const sentence = src.slice(start, end === -1 ? src.length : end + 1).trim();
-      if (!best || total > best.total) best = { total, sentence };
+      if (!best || total > best.total) best = { total, sentence, namedOnly: false };
     }
+  }
+  const named = src.match(NAMED_OP);
+  if (best) {
+    best.name = named ? `Operation ${named[1]}` : "";
+    return best;
+  }
+  if (named) {
+    const at = named.index;
+    const start = Math.max(0, src.lastIndexOf(".", at - 1) + 1);
+    const end = src.indexOf(".", at + named[0].length);
+    const sentence = src.slice(start, end === -1 ? src.length : end + 1).trim();
+    return { total: 0, sentence, name: `Operation ${named[1]}`, namedOnly: true };
   }
   return best;
 }
@@ -77,28 +91,33 @@ function placeOf(sentence, title) {
 export function operationRow(rel, namedCount, existingRows = []) {
   const found = extractOperation([rel?.title, ...(rel?.blocks || [])].join(" "));
   if (!found) return null;
-  const unnamed = found.total - Math.max(0, namedCount);
-  if (unnamed < MIN_UNNAMED) return null;
+  const namedOnly = Boolean(found.namedOnly);
+  const unnamed = namedOnly ? 0 : found.total - Math.max(0, namedCount);
+  if (!namedOnly && unnamed < MIN_UNNAMED) return null;
   const key = urlKey(rel.url);
   if (!key) return null;
-  if (existingRows.some((r) => Number(r?.heads) > 1 && rowUrls(r).includes(key))) return null;
+  if (existingRows.some((r) => (Number(r?.heads) > 1 || r?.operation === true) && rowUrls(r).includes(key))) return null;
   const place = placeOf(found.sentence, rel.title) || "Not stated";
   const geo = latLonFor(place.includes(",") ? place : "");
   const office = rel.office || "ICEgov";
   const when = whenOf(rel.date);
   const named = Math.max(0, namedCount);
+  const title = found.name || `${office} ${place} operation`.replace(/\s+/g, " ").trim();
+  const countLine = namedOnly
+    ? "Named operation. Posted count not stated in this text. Do not invent one."
+    : `${found.total} total, ${named} named on their own rows, ${unnamed} unnamed counted here.`;
   return {
-    name: `${office} ${place} operation`.replace(/\s+/g, " ").trim(),
+    name: title,
     city: place.includes(",") ? place : "Not stated",
-    crime: `Arrested: ${found.sentence} Unnamed cluster. ${named} named on their own rows; this row counts the other ${unnamed}. Do not invent names.`,
+    crime: `Posted count: ${found.sentence} ${namedOnly ? countLine : `Unnamed cluster. ${named} named on their own rows; this row counts the other ${unnamed}. Do not invent names.`}`,
     usa: `${office} release ${when || rel.date}: ${rel.title}`,
     foreign: "Not stated in post",
     picked: `${when || rel.date} (${office} release)`,
     entered: "Not stated",
     office,
-    id: `op-${office.toLowerCase()}-${(rel.date || "nodate").replace(/-/g, "")}-${found.total}`,
+    id: `op-${office.toLowerCase()}-${(rel.date || "nodate").replace(/-/g, "")}-${found.total || slug(found.name || "named")}`,
     when,
-    text: `${office} ${when || rel.date}, as posted: ${found.sentence} ${found.total} total, ${named} named on their own rows, ${unnamed} unnamed counted here. Unnamed cluster, heads=${unnamed}.`,
+    text: `${office} ${when || rel.date}, as posted: ${found.sentence} ${countLine}`,
     photo: "",
     via: String(rel.url || "").replace(/^https:\/\/(www\.)?/, ""),
     sourceUrl: rel.url,
@@ -107,7 +126,7 @@ export function operationRow(rel, namedCount, existingRows = []) {
     confirmedBy: office === "DHSgov" ? "DHS" : "ICE",
     lat: geo.lat,
     lon: geo.lon,
-    heads: unnamed,
+    ...(namedOnly ? { operation: true } : { heads: unnamed, operation: true }),
     status: "approved",
   };
 }

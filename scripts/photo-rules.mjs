@@ -8,7 +8,11 @@
  *  - the image sits in the release's own uploaded content (not theme / chrome), is not a seal, logo,
  *    banner, flag, icon, social or generic image, and its alt / title / caption / file name names
  *    the person (first + last name) or says booking / mugshot.
- * The image is copied into data/photos/ and served from GitHub Pages; the feed never hotlinks.
+ * On a release that names two or more people, do not skip the page: match a photo only
+ * when that person's own paragraph or the image alt text names them. Crop a headshot
+ * from an ICE "Arrested" or "Worst of the Worst" graphic only when it is one face.
+ * Leave photo blank when the official source has none, or when a second face is in
+ * the frame. Do not use a news-site still. Do not delete an unused photo until told.
  *
  * Visual check (every photo, release or X): no child, and no second person whose face can be seen.
  * This cannot be checked reliably by code, so scripts/photos.mjs never publishes a new release photo
@@ -117,7 +121,7 @@ function attr(tag, name) {
  * Pick the one person-specific image in an official release, or "" if there is none
  * (or more than one distinct candidate, which means the photo is ambiguous).
  */
-export function pickImage(html, pageUrl, name) {
+export function pickImage(html, pageUrl, name, { requireName = false } = {}) {
   const src = String(html || "").replace(/<(script|style|noscript|header|nav|footer)\b[\s\S]*?<\/\1>/gi, " ");
   const found = new Map();
   const consider = (rawUrl, label, caption) => {
@@ -135,7 +139,7 @@ export function pickImage(html, pageUrl, name) {
     const file = decodeURIComponent(safe(path.split("/").pop() || ""));
     const text = `${label} ${caption}`;
     if (GENERIC.test(file) || GENERIC.test(text)) return;
-    const specific = namesPerson(`${text} ${file}`, name) || BOOKING.test(`${text} ${file}`);
+    const specific = namesPerson(`${text} ${file}`, name) || (!requireName && BOOKING.test(`${text} ${file}`));
     if (!specific) return;
     // Same picture in different sizes (styles/large/...) counts once.
     const k = file.replace(/\.webp$/i, "").replace(/_\d+(?=\.)/, "").toLowerCase();
@@ -182,11 +186,15 @@ export function photoProblem(row, ctx) {
   const rel = photoReleaseOf(row);
   if (!rel) return "photo on a row without an official source";
   const viaX = !isOfficialUrl(rel);
-  if ((ctx.counts.get(urlKey(rel)) || 0) !== 1) return "photo on a row whose release has more than one row";
+  const nRows = ctx.counts.get(urlKey(rel)) || 0;
+  const personKey = `${urlKey(rel)}|${nameKey(row.name)}`;
+  const chk = nRows === 1 ? ctx.checks[urlKey(rel)] : ctx.checks[personKey];
+  if (nRows !== 1 && (!chk || chk.result !== "photo" || chk.file !== file || !String(chk.reviewed || "").trim())) {
+    return "photo on a row whose release has more than one row";
+  }
   if (viaX) {
     if (!isXMediaUrl(row.photoSourceUrl)) return "photoSourceUrl is not the official X post's own image (pbs.twimg.com/media)";
   } else if (!isOfficialUrl(String(row.photoSourceUrl || ""))) return "photoSourceUrl is not an official federal URL";
-  const chk = ctx.checks[urlKey(rel)];
   if (!chk || chk.result !== "photo" || chk.file !== file) return "no single-person photo check on record for this release";
   if (viaX && (chk.image !== row.photoSourceUrl || !chk.reviewed)) return "no reviewed single-person photo check on record for this X post";
   if (!viaX && !String(chk.reviewed || "").trim()) return "needs visual check (no reviewed note on record: no child, no second visible face)";

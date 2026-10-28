@@ -255,3 +255,12 @@ test("'twice-deported' is prior history, not Removed", async () => {
   assert.equal(xLabel(s), "Arrested");
   assert.notEqual(statusFrom("He was twice-deported and arrested again."), "Removed");
 });
+
+test("date before the name, a 4-time deported alien, and the arrest of a name", () => {
+  const dated = extractPeople(["On October 21, 2026, ICE arrested Juan Silva, a criminal illegal alien from Mexico, in Houston."]);
+  assert.equal(dated[0]?.name, "Juan Silva");
+  const four = extractPeople(["ICE deported Glen Madric Reyes, a 4-time previously deported criminal alien from Honduras."]);
+  assert.equal(four[0]?.name, "Glen Madric Reyes");
+  const arrestOf = extractPeople(["DHS confirmed the arrest of Luis Valdez-Ruiz, an illegal alien from Mexico."]);
+  assert.equal(arrestOf[0]?.name, "Luis Valdez-Ruiz");
+});

@@ -81,7 +81,15 @@ export function countryKey(row) {
   return o;
 }
 
-/** True when either row's duplicateOf names the other row's id. */
+function foldApostrophe(name) {
+  return String(name || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/['’`]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
 export function alreadyLinked(a, b) {
   const da = String(a?.duplicateOf || "").trim();
   const db = String(b?.duplicateOf || "").trim();
@@ -116,6 +124,8 @@ export function findLikelyDuplicates(rowsByFile) {
         if (srcKey(a.row) && srcKey(a.row) === srcKey(b.row)) continue;
         if (a.country && b.country && a.country !== b.country) continue;
         reason = "exact name match; different sources";
+      } else if (foldApostrophe(a.row.name) && foldApostrophe(a.row.name) === foldApostrophe(b.row.name)) {
+        reason = "apostrophe or accent variant; flag only, do not merge";
       } else {
         if (!a.country || a.country !== b.country) continue;
         if (!leadingGivenNameVariant(a.row.name, b.row.name)) continue;

@@ -1,0 +1,43 @@
+[
+  {
+    "a": {
+      "id": "dhs-20261023-andres-garcia",
+      "name": "Andres Garcia",
+      "origin": "Cuba",
+      "file": "data/harvest.json"
+    },
+    "b": {
+      "id": "x-2107579277432758721-andre-s-garcia",
+      "name": "Andre’s Garcia",
+      "origin": "Cuba",
+      "file": "data/harvest.json"
+    },
+    "reason": "apostrophe or accent variant; flag only, do not merge"
+  },
+  {
+    "a": {
+      "id": "dhs-20261023-miguel-alonso-maldonado-soriano",
+      "name": "Miguel Alonso Maldonado Soriano",
+      "file": "data/harvest.json"
+    },
+    "b": {
+      "id": "x-2113623556735004852-miguel-maldonado-soriano",
+      "name": "Miguel Maldonado Soriano",
+      "file": "data/harvest.json"
+    },
+    "reason": "same Iwo Jima attack; flag only, do not merge"
+  },
+  {
+    "a": {
+      "id": "doj-20261022-marva-cook",
+      "name": "Marva Cook",
+      "file": "data/harvest.json"
+    },
+    "b": {
+      "id": "dhs-20261028-marva-marie-cook",
+      "name": "Marva Marie Cook",
+      "file": "data/harvest.json"
+    },
+    "reason": "Marva Cook pair; flag only, do not merge"
+  }
+]

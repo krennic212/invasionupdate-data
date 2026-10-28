@@ -2,9 +2,10 @@ name: Hourly harvest
 
 on:
   schedule:
-    # 3x daily, Mon-Fri, ~9 AM, 12 PM, 5 PM Central (Krennic 2026-10-22). CDT = UTC-5.
-    # After DST ends Nov 1 (CST = UTC-6), change to "2 15,18,23 * * 1-5".
-    - cron: "2 14,17,22 * * 1-5"
+    # 3x daily, every day, ~9 AM, 12 PM, 5 PM Central (Krennic 2026-10-28). CDT = UTC-5.
+    # After DST ends Nov 1 (CST = UTC-6), change to "2 15,18,23 * * *".
+    # Government-site harvest runs Saturday and Sunday too. Not weekdays only.
+    - cron: "2 14,17,22 * * *"
   workflow_dispatch:
     inputs:
       approve:
@@ -87,7 +88,7 @@ jobs:
           git pull --rebase --quiet && git push
       - name: Stage public files
         if: steps.diff.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
-        run: mkdir -p _site/photos && cp data/harvest.json data/harvest-meta.json data/harvest-status.json data/highlights.json _site/ && cp -r data/photos/. _site/photos/
+        run: mkdir -p _site/photos && cp data/harvest.json data/harvest-meta.json data/harvest-status.json data/highlights.json data/operations.json _site/ && cp -r data/photos/. _site/photos/
       - uses: actions/upload-pages-artifact@v3
         if: steps.diff.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
         with:

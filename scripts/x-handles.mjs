@@ -25,6 +25,7 @@ export const OFFICIAL_X_HANDLES = [
   "USAO_LosAngeles", "USAO_NV", "USAO_AZ", "StateDept", "SecRubio", "TravelGov", "USAttorneys",
   "USAO_MDAL", "NDALnews", "USAO_SDAL", "USAO_AK", "USAO_EDAR", "WDARnews", "EDCAnews", "USAO_NDCA",
   "SDCAnews", "usao_co", "USAO_CT", "USAO_DC", "USAO_DE", "USAO_MDFL", "NDFLnews", "USAO_SDFL",
+  "USCIS",
   "USAO_MDGA", "NDGAnews", "SDGAnews", "USAO_GU", "USAO_HI", "USAO_NDIA", "USAO_SDIA", "USAO_CDIL",
   "NDILnews", "SDILnews", "USAO_NDIN", "SDINnews", "USAO_Kansas", "USAO_EDKY", "WDKYnews", "EDLAnews",
   "MDLAnews", "USAO_WDLA", "USAO_ME", "DMAnews1", "USAO_MD", "USAO_MIE", "usao_wdmi", "DMNnews",

@@ -32,6 +32,14 @@ test("builds a heads row for the unnamed remainder and skips a known release", (
   assert.equal(operationRow(rel, 7, [row]), null);
 });
 
+test("catches a noncitizen count, a have-been count, and a named operation", () => {
+  assert.equal(extractOperation("Officers arrested 13 noncitizens during the action.").total, 13);
+  assert.equal(extractOperation("13 individuals have been arrested in the last week.").total, 13);
+  const named = extractOperation("DHS announced Operation Southbound Takedown on October 26.");
+  assert.equal(named.namedOnly, true);
+  assert.equal(named.name, "Operation Southbound Takedown");
+  assert.equal(named.total, 0);
+});
 test("skips a release that names almost everyone", () => {
   const rel = {
     url: "https://www.ice.gov/news/releases/example",

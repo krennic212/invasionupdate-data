@@ -270,7 +270,9 @@
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
     "approvalNote": "Krennic kept held 2026-10-19",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Pedro Guzman-Hernandez",
@@ -322,7 +324,9 @@
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
     "approvalNote": "Krennic kept held 2026-10-19",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Manuel Ceja-Melchor",
@@ -347,7 +351,9 @@
     "status": "pending",
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Gerardo Alatorre Quintero",
@@ -873,7 +879,9 @@
     "status": "pending",
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Pedro LARA-Torrez",
@@ -898,7 +906,9 @@
     "status": "pending",
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Jorge Luis MOLINA Vides",
@@ -923,7 +933,9 @@
     "status": "pending",
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Fredy Alberto Hernandez",
@@ -948,7 +960,9 @@
     "status": "pending",
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Moussa Diarrassouba",
@@ -1373,7 +1387,9 @@
     "status": "pending",
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Oddry Arnoldo Cabrera Torrealba",
@@ -1597,7 +1613,10 @@
     "lon": -95.9345,
     "aka": "Anibal Canelon-Aguirre",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "TdA"
+    ]
   },
   {
     "name": "Kevin Leonel Gonzalez",
@@ -1873,7 +1892,9 @@
     "lat": null,
     "lon": null,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Jose Manchame-Morales",
@@ -3773,7 +3794,10 @@
     "lon": -96.9942,
     "heads": 121,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "TdA"
+    ]
   },
   {
     "name": "Fortunato Ortiz-Ramirez",
@@ -3912,7 +3936,9 @@
     "lat": 33.7879,
     "lon": -117.8531,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Claudia Maria Aispuro Garcia",
@@ -5750,7 +5776,9 @@
     "lat": 38.91,
     "lon": -77.04,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Harwinder Singh",
@@ -6581,7 +6609,9 @@
     "via": "@EROWashington 2022374006473511331",
     "sourceUrl": "https://x.com/EROWashington/status/2022374006473511331",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Norlan Jose Carrasco-Lopez",
@@ -6650,7 +6680,10 @@
     "via": "@EROWashington 2012223801568694711",
     "sourceUrl": "https://x.com/EROWashington/status/2012223801568694711",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "MS-13"
+    ]
   },
   {
     "name": "Anita Fodor",
@@ -7340,7 +7373,10 @@
     "via": "@EROBaltimore 1905326765028897059",
     "sourceUrl": "https://x.com/EROBaltimore/status/1905326765028897059",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "TdA"
+    ]
   },
   {
     "name": "Juan Carlos Vasquez-Natera",
@@ -7478,7 +7514,10 @@
     "via": "@EROBaltimore 1934650725474226547",
     "sourceUrl": "https://x.com/EROBaltimore/status/1934650725474226547",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "MS-13"
+    ]
   },
   {
     "name": "Antonio Jimenez Barrios",
@@ -8214,7 +8253,10 @@
     "via": "@EROSaltLakeCity 1965237637415059941",
     "sourceUrl": "https://x.com/EROSaltLakeCity/status/1965237637415059941",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "TdA"
+    ]
   },
   {
     "name": "Iker Vasquez-Moreno",
@@ -8400,7 +8442,10 @@
     "via": "@EROSanAntonio 1906812837143482465",
     "sourceUrl": "https://x.com/EROSanAntonio/status/1906812837143482465",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "TdA"
+    ]
   },
   {
     "name": "Edwin Eli Maldonado-Paredes",
@@ -9115,7 +9160,10 @@
     "via": "@EROSaintPaul 1929620743010374080",
     "sourceUrl": "https://x.com/EROSaintPaul/status/1929620743010374080",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "TdA"
+    ]
   },
   {
     "name": "Wilder Recinos-Carpio",
@@ -9322,7 +9370,9 @@
     "via": "@EROElPaso 1905350443741429859",
     "sourceUrl": "https://x.com/EROElPaso/status/1905350443741429859",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Jorge Vazquez-Ramirez",
@@ -9805,7 +9855,10 @@
     "via": "@EROBuffalo 1938962590736228367",
     "sourceUrl": "https://x.com/EROBuffalo/status/1938962590736228367",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "MS-13"
+    ]
   },
   {
     "name": "Josue Waldemar Chun-Orellana",
@@ -9989,7 +10042,10 @@
     "via": "@ERONewOrleans 1939353169273774219",
     "sourceUrl": "https://x.com/ERONewOrleans/status/1939353169273774219",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "MS-13"
+    ]
   },
   {
     "name": "Rafael Ojeda-Acosta",
@@ -10035,7 +10091,10 @@
     "via": "@ERONewOrleans 1938990777062900164",
     "sourceUrl": "https://x.com/ERONewOrleans/status/1938990777062900164",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "MS-13"
+    ]
   },
   {
     "name": "Francisco Choc-Chocoj",
@@ -10173,7 +10232,10 @@
     "via": "@EROPhiladelphia 1884681164494909462",
     "sourceUrl": "https://x.com/EROPhiladelphia/status/1884681164494909462",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "TdA"
+    ]
   },
   {
     "name": "Joel Rodriguez-Carmona",
@@ -10380,7 +10442,10 @@
     "via": "@DHSgov 1983578080963658111",
     "sourceUrl": "https://x.com/DHSgov/status/1983578080963658111",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "MS-13"
+    ]
   },
   {
     "name": "Chanthila Souvannarath",
@@ -10518,7 +10583,9 @@
     "via": "@ICEgov 1984017160197505393",
     "sourceUrl": "https://x.com/ICEgov/status/1984017160197505393",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Jose Carlos Velasquez-Real",
@@ -10564,7 +10631,9 @@
     "via": "@ICEgov 1984017154665279843",
     "sourceUrl": "https://x.com/ICEgov/status/1984017154665279843",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Jose Hernandez-Hernandez",
@@ -10656,7 +10725,10 @@
     "via": "@ICEgov 1883243739885298114",
     "sourceUrl": "https://x.com/ICEgov/status/1883243739885298114",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "MS-13"
+    ]
   },
   {
     "name": "Adan Pablo-Ramirez",
@@ -10863,7 +10935,10 @@
     "via": "@ICEgov 1900728709432438828",
     "sourceUrl": "https://x.com/ICEgov/status/1900728709432438828",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "TdA"
+    ]
   },
   {
     "name": "Jairo Ivan Paredes-Cota",
@@ -10955,7 +11030,9 @@
     "via": "@EROWashington 1905963452918542456",
     "sourceUrl": "https://x.com/EROWashington/status/1905963452918542456",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Silvia Lorena Bonilla-De Jandres",
@@ -10978,7 +11055,10 @@
     "via": "@EROWashington 1909243255604003061",
     "sourceUrl": "https://x.com/EROWashington/status/1909243255604003061",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "MS-13"
+    ]
   },
   {
     "name": "Ander Cortez-Mendez",
@@ -11300,7 +11380,9 @@
     "via": "@ICEgov 1913680296123187329",
     "sourceUrl": "https://x.com/ICEgov/status/1913680296123187329",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Hilary Gilbert Smith",
@@ -11392,7 +11474,9 @@
     "via": "@DHSgov 1924618016748110281",
     "sourceUrl": "https://x.com/DHSgov/status/1924618016748110281",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Marco Quizhpi Granda",
@@ -12105,7 +12189,10 @@
     "via": "@ICEgov 1947038863467106697",
     "sourceUrl": "https://x.com/ICEgov/status/1947038863467106697",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "MS-13"
+    ]
   },
   {
     "name": "Aurelio Lopez-Vasquez",
@@ -12588,7 +12675,10 @@
     "via": "@ICEgov 1957382148744192075",
     "sourceUrl": "https://x.com/ICEgov/status/1957382148744192075",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "MS-13"
+    ]
   },
   {
     "name": "Jose Fredi Rivera-Mejia",
@@ -13071,7 +13161,9 @@
     "via": "@EROMiami 1933174180872159452",
     "sourceUrl": "https://x.com/EROMiami/status/1933174180872159452",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Juan Carlos Montiel-Ceron",
@@ -13117,7 +13209,10 @@
     "via": "@EROMiami 1929614768996077897",
     "sourceUrl": "https://x.com/EROMiami/status/1929614768996077897",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "TdA"
+    ]
   },
   {
     "name": "Omar Gonsalez",
@@ -13140,7 +13235,10 @@
     "via": "@EROMiami 1922644248404398138",
     "sourceUrl": "https://x.com/EROMiami/status/1922644248404398138",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "MS-13"
+    ]
   },
   {
     "name": "Emilio Neftaly Pineda",
@@ -13186,7 +13284,9 @@
     "via": "@EROBoston 1933978270057333022",
     "sourceUrl": "https://x.com/EROBoston/status/1933978270057333022",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Boonphet Keovongsavang",
@@ -13232,7 +13332,9 @@
     "via": "@EROBoston 1932790223483617627",
     "sourceUrl": "https://x.com/EROBoston/status/1932790223483617627",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Joshua Lopez-Reyez",
@@ -13301,7 +13403,9 @@
     "via": "@ERONewYork 1920832627512406191",
     "sourceUrl": "https://x.com/ERONewYork/status/1920832627512406191",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Merwil Gutierrez",
@@ -13324,7 +13428,10 @@
     "via": "@ERONewYork 1922305881296797728",
     "sourceUrl": "https://x.com/ERONewYork/status/1922305881296797728",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "TdA"
+    ]
   },
   {
     "name": "Castillo-Torres",
@@ -13348,7 +13455,9 @@
     "sourceUrl": "https://x.com/ERONewYork/status/1925959302155469043",
     "reviewReason": "X post (not an official .gov page)",
     "tags": [
-      "Entered under Biden"
+      "Entered under Biden",
+      "Gang",
+      "TdA"
     ]
   },
   {
@@ -13395,7 +13504,9 @@
     "via": "@EROAtlanta 1922436743434846572",
     "sourceUrl": "https://x.com/EROAtlanta/status/1922436743434846572",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Kevin Errol Lewis",
@@ -14315,7 +14426,10 @@
     "via": "@EROSanDiego 1907516230564786213",
     "sourceUrl": "https://x.com/EROSanDiego/status/1907516230564786213",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "TdA"
+    ]
   },
   {
     "name": "Jorge Fuentes-Aguirre",
@@ -14338,7 +14452,9 @@
     "via": "@EroHarlingen 1939794599653806370",
     "sourceUrl": "https://x.com/EroHarlingen/status/1939794599653806370",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Hector Rosvel Torres-Mendoza",
@@ -14568,7 +14684,10 @@
     "via": "@ERONewark 1939738082917642396",
     "sourceUrl": "https://x.com/ERONewark/status/1939738082917642396",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "TdA"
+    ]
   },
   {
     "name": "Oscar Ivan Baquedano Martinez",
@@ -14637,7 +14756,10 @@
     "via": "@ERONewark 1932188414398628095",
     "sourceUrl": "https://x.com/ERONewark/status/1932188414398628095",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "MS-13"
+    ]
   },
   {
     "name": "Efrian Santiago-Rodriguez",
@@ -14844,7 +14966,10 @@
     "via": "@HSINewark 1960345349245010026",
     "sourceUrl": "https://x.com/HSINewark/status/1960345349245010026",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "MS-13"
+    ]
   },
   {
     "name": "Nigel Alexander",
@@ -15120,7 +15245,9 @@
     "via": "@EROPhiladelphia 2090783435174375839",
     "sourceUrl": "https://x.com/EROPhiladelphia/status/2090783435174375839",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang"
+    ]
   },
   {
     "name": "Josue Heliodoro Tzunun-Solis",
@@ -15442,7 +15569,10 @@
     "via": "@EROWashington 2047289830946595199",
     "sourceUrl": "https://x.com/EROWashington/status/2047289830946595199",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "MS-13"
+    ]
   },
   {
     "name": "Efri Juarez",
@@ -15511,7 +15641,10 @@
     "via": "@EROWashington 2042666003104964622",
     "sourceUrl": "https://x.com/EROWashington/status/2042666003104964622",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "MS-13"
+    ]
   },
   {
     "name": "Jacinto Caal-Caal",
@@ -15603,7 +15736,10 @@
     "via": "@EROWashington 2036864022063059404",
     "sourceUrl": "https://x.com/EROWashington/status/2036864022063059404",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "MS-13"
+    ]
   },
   {
     "name": "Rudy Velazco-Reyes",
@@ -17432,7 +17568,10 @@
     "lon": -118.25,
     "aka": "Turko; Adrian Rafael Gamez Finol",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [
+      "Gang",
+      "TdA"
+    ]
   },
   {
     "name": "Yachua Mauricio Flores",

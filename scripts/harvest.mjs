@@ -281,7 +281,15 @@ async function main() {
         const geo = latLonFor(placed.city);
         if (geo.lat != null) { placed.lat = geo.lat; placed.lon = geo.lon; }
       }
+      if (placed.voting && /not stated/i.test(String(placed.city || "Not stated"))) {
+        placed.status = "pending";
+        placed.holdReason = [placed.holdReason, "voting row with no city"].filter(Boolean).join("; ");
+      }
       if (placed.status === "pending") held.push(`${hit.name} (${placed.holdReason || "approval gate"})`);
+      // Standing rule: this row is written only after readRelease opened the page
+      // and extractPeople found the name in it. A page that 404s or never loads
+      // does not become a row. X posts are checked in x-scan.mjs --write
+      // (scripts/link-check.mjs). 403 is blocked, not a dead link.
       fresh.push(scrubVictimNames(placed).row);
       added.push(hit.name);
     }
@@ -303,16 +311,43 @@ async function main() {
       const geo = latLonFor(placed.city);
       if (geo.lat != null) { placed.lat = geo.lat; placed.lon = geo.lon; }
     }
+    if (placed.voting && /not stated/i.test(String(placed.city || "Not stated"))) {
+      placed.status = "pending";
+      placed.holdReason = [placed.holdReason, "voting row with no city"].filter(Boolean).join("; ");
+    }
     if (placed.status === "pending") held.push(`${hit.name} (${placed.holdReason || "approval gate"})`);
     fresh.push(scrubVictimNames(placed).row);
     added.push(hit.name);
   }
-  // Unnamed group counts ("arrested 82 illegal aliens"). heads = total - named, so the ticker does not count anyone twice.
-  const ops = operationsFor(opReleases, [...harvest, ...fresh]);
+  // Operations are not people. A posted count goes to data/operations.json, not the named ledger.
+  const OPS_FILE = "data/operations.json";
+  const opBook = readJson(OPS_FILE, []);
+  const ops = operationsFor(opReleases, [...harvest, ...fresh, ...opBook]);
   for (const op of ops) {
-    fresh.push(op);
-    added.push(`${op.name} (heads ${op.heads})`);
+    const key = String(op.sourceUrl || "").replace(/^https?:\/\/(www\.)?/i, "").toLowerCase();
+    const people = [];
+    for (const row of fresh) {
+      const urls = String(row.sourceUrl || "").toLowerCase();
+      if (key && urls.includes(key.replace(/\/$/, ""))) {
+        row.operationId = op.id;
+        if (row.id) people.push(row.id);
+      }
+    }
+    opBook.push({
+      id: op.id,
+      name: op.name,
+      when: op.when,
+      place: op.city,
+      posted: op.heads || null,
+      sourceUrl: op.sourceUrl,
+      people,
+      text: op.text,
+      heads: op.heads,
+      operation: true,
+    });
+    added.push(`${op.name} (operation, not a person)`);
   }
+  if (opBook.length) writeJson(OPS_FILE, opBook);
   // Newest first, ahead of existing rows.
   harvest.unshift(...fresh);
   // Tags (CHNV / DACA / Entered under Biden / Obama) from each row's own words (scripts/tags.mjs).

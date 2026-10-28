@@ -26,7 +26,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 
-export const TAGS = ["CHNV", "DACA", "Entered under Biden", "Entered under Obama"];
+export const TAGS = ["CHNV", "DACA", "Entered under Biden", "Entered under Obama", "Gang", "MS-13", "TdA"];
 
 const ADMINS = {
   "Entered under Biden": { who: "Biden", from: Date.UTC(2021, 0, 20), to: Date.UTC(2025, 0, 19) },
@@ -160,6 +160,10 @@ export function tagsFor(row, others = []) {
     if (dates.some((d) => inside(d, a)) || sents.some((s) => adminWording(s, a.who))) tags.add(tag);
   }
   if (tags.has("CHNV")) tags.add("Entered under Biden");
+  const gangBlob = pieces.join(" ");
+  if (/\b(MS-13|MS13|Mara Salvatrucha)\b/i.test(gangBlob)) tags.add("MS-13");
+  if (/\b(Tren de Aragua|TdA)\b/i.test(gangBlob)) tags.add("TdA");
+  if (/\b(gang member|street gang|gang affiliation|Tango (?:Blast|Corpito)|18th Street|Barrio 18|Latin Kings|Sureños|Surenos|MS-13|Mara Salvatrucha|Tren de Aragua|TdA)\b/i.test(gangBlob)) tags.add("Gang");
   return TAGS.filter((t) => tags.has(t));
 }
 

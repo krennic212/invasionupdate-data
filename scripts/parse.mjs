@@ -108,7 +108,7 @@ const NAME = `(${PART}(?:\\s+(?:${PARTICLE}\\s+)?${PART}){1,5})`;
 const AGE = "(?:\\d{1,3},\\s+)?";
 // "of Omaha, Nebraska, " or (state releases) "of Fort Myers (Lee County), " / "of Tampa, ".
 const OF_PLACE = "(?:(?:of|from)\\s+[A-Z][A-Za-z .'-]+,\\s+(?:[A-Z][A-Za-z.]+\\s?){1,3},\\s+|(?:of|from)\\s+[A-Z][A-Za-z.'-]+(?:\\s[A-Z][A-Za-z.'-]+){0,2}(?:\\s\\([A-Z][A-Za-z .'-]+\\))?,\\s+)?";
-const DESC = "(?:an?\\s+)?((?:[A-Za-z-]+\\s+){0,4}?)";
+const DESC = "(?:an?\\s+)?(?:\\d+-time\\s+)?((?:[A-Za-z-]+\\s+){0,6}?)";
 const TYPE = "(alien|national|citizen|noncitizen|non-citizen|native and citizen)s?";
 const COUNTRY = "(?:the\\s+)?([A-Z][A-Za-z'’.-]+(?:\\s+(?:and|of|the|[A-Z][A-Za-z'’.-]+)){0,4})";
 
@@ -130,6 +130,13 @@ const PATTERNS = [
   // "Nigerian national, Helen Sayen Adams, 67, ..." / "Democratic Republic of Congo National, Celestin Katubadi , 20, ...".
   // Sentence start only, and the name must be followed by an age, so a headline or official never matches.
   new RegExp(`^(?:[A-Z][A-Za-z .'’-]{0,40}[:–—]\\s+)?((?:[A-Z][a-z]+\\s+(?:of\\s+)?){0,3}[A-Z][a-z]+)\\s+[Nn]ational,?\\s+${NAME}\\s?,\\s+\\d{1,3},`, "g"),
+  // Date before the name: "On October 21, 2026, ICE arrested Juan Silva, a criminal alien from Mexico."
+  // The same sentence must name the person as an alien / non-citizen / citizen of / national of.
+  // A date plus "charged <Name>" whose status is in the next paragraph stays with linkedPeople.
+  new RegExp(`\\b(?:On\\s+)?(?:\\d{1,2}/\\d{1,2}/(?:19|20)\\d{2}|(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|June?|July?|Aug(?:ust)?|Sept?(?:ember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\\.?\\s+\\d{1,2}(?:st|nd|rd|th)?,?\\s+(?:19|20)\\d{2})\\b[^.]{0,140}?\\b(?:arrested|deported|removed|charged|indicted)\\s+(?:an?\\s+)?(?:criminal\\s+)?(?:illegal\\s+)?(?:alien\\s+)?${NAME}(?=[^.]{0,180}\\b(?:illegal\\s+alien|alien|non-?citizen|citizen\\s+of|national\\s+of)\\b)`, "g"),
+  // "a 4-time previously deported criminal alien" after the name, and "the arrest of [Name]".
+  new RegExp(`\\b(?:deported|removed|arrested)\\s+${NAME},\\s+${AGE}(?:an?\\s+)?(?:\\d+-time\\s+)?previously\\s+deported\\s+criminal\\s+alien`, "g"),
+  new RegExp(`\\bthe arrest of\\s+${NAME}(?=[^.]{0,100}\\b(?:alien|non-?citizen|national)\\b)`, "g"),
 ];
 
 const NOT_NAME = /\b(ICE|DHS|HSI|ERO|CBP|USCIS|FBI|DEA|ATF|DOJ|U\.S|United|States|America|American|Department|Justice|Attorney|Attorneys|Office|Offices|Secretary|President|Homeland|Security|Immigration|Customs|Enforcement|Border|Patrol|County|Court|District|Federal|Judge|Agent|Agents|Special|Officers|Officer|Police|Sheriff|Government|Administration|Trump|Biden|Obama|Act|Operation|Task|Force|Division|Bureau|Service|Services|Today|Yesterday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|January|February|March|April|May|June|July|August|September|October|November|December|The|This|These|Those|His|Her|Their|According|Under|Assistant|Acting|Chief|Director|Deputy|Senior|Prosecutor)\b/;
@@ -378,7 +385,11 @@ export function extractPeople(blocks, { title = "" } = {}) {
           // Verbatim label: the naming sentence, plus the next sentence in the same
           // paragraph when the first has no charge / conviction / removal verb.
           let sentence = s;
-          if (!VERB.test(s) && sents[i + 1] && VERB.test(sents[i + 1])) sentence = `${s} ${sents[i + 1]}`;
+          const next = sents[i + 1] || "";
+          const saysStatus = /\b(?:alien|non-?citizen|citizen of|national of|national\b)/i;
+          if (next && ((!VERB.test(s) && VERB.test(next)) || (VERB.test(s) && !saysStatus.test(s) && saysStatus.test(next)))) {
+            sentence = `${s} ${next}`;
+          }
           // Country only from wording tied to this person ("<Name>, 36, of Guatemala", "Honduran national <Name>").
           found.push({ name, origin: cleanOrigin(origin) || countryFor(name, s), sentence, city: cityFrom(s) || cityFrom(sentence) });
           }

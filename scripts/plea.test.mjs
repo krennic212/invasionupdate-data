@@ -43,15 +43,17 @@ test("severity still scores a guilty plea at the conviction stage (unchanged)", 
 
 // Checked against each release / official post on 2026-10-20: plea only, no sentence yet.
 const RELABELED = ["doj-20261014-jamil-ahmad", "doj-20261019-gaye-tyndale-simpson", "doj-20261015-celstino-patishtan", "x-2110095656564244908-fredy-rolando-rivera-gonzalez", "x-2108301525097550278-juan-carlos-paxtor-chay", "x-2107516840700195194-binghui-liu", "doj-20261008-oleg-korniev"];
-// Release says sentenced / convicted, so these stay Convicted.
-const STAY = ["dhs-20260623-felix-jeronimo-rojas", "doj-20261019-yoirlan-tome-rojas", "x-2110862085991117154-javier-marrero-pando"];
+// Release says sentenced. Stage is Sentenced, not Convicted (Krennic 2026-10-28).
+const STAY = ["dhs-20260623-felix-jeronimo-rojas", "doj-20261019-yoirlan-tome-rojas"];
+const STAY_CONVICTED = ["x-2110862085991117154-javier-marrero-pando"];
 
-test("live feed: plea-only rows read Pleaded guilty; sentenced rows stay Convicted", () => {
+test("live feed: plea-only rows read Pleaded guilty; a sentence in the source is Sentenced", () => {
   const feed = JSON.parse(readFileSync(new URL("../data/harvest.json", import.meta.url), "utf8"));
   const byId = new Map(feed.map((r) => [r.id, r]));
   for (const id of RELABELED) assert.match(byId.get(id).crime, /^Pleaded guilty: /, id);
-  for (const id of STAY) assert.match(byId.get(id).crime, /^Convicted: /, id);
-  assert.match(feed.find((r) => r.name === "Lara Gonzalez").crime, /^Convicted: /, "Lara Gonzalez: pleaded guilty and was sentenced");
+  for (const id of STAY) assert.match(byId.get(id).crime, /^Sentenced: /, id);
+  for (const id of STAY_CONVICTED) assert.match(byId.get(id).crime, /^Convicted: /, id);
+  assert.match(feed.find((r) => r.name === "Lara Gonzalez").crime, /^Convicted: /, "Lara Gonzalez");
   // A row Krennic approved by id over a stage hold carries the release wording in approvalNote (Samuel James Hall: "also
   // entered a plea in May ... admitted to illegally voting"); the guard itself is unchanged and still holds it on intake.
   for (const r of feed.filter((r) => /^Pleaded guilty: /.test(r.crime) && !/guard held "stage:/.test(r.approvalNote || ""))) assert.deepEqual(holdReasonsForRow(r).filter((x) => x.startsWith("stage")), [], r.name);

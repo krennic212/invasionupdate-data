@@ -4,7 +4,9 @@
  * Rules live in scripts/photo-rules.mjs. Per run:
  *  - rows that no longer qualify (held, not approved, release now has 2+ rows) lose their photo;
  *  - each eligible row whose release has not been checked yet is checked once: fetch the official
- *    release page, require that it names exactly one person and the title is not multi-defendant,
+ *    release page. A one-person release is checked once. A multi-person release is not skipped:
+ *    an image is kept only when that person's paragraph or the image alt text names them
+ *    (pickImage requireName). A second face, or no official photo, stays blank. No news stills.
  *    pick the single person-specific image, download it, resize to <= 300 KB JPEG, and save it as
  *    data/photos/<key>.jpg. The result is recorded in data/photo-checks.json so it is not refetched.
  *  - network errors are not recorded, so the release is retried next run.
@@ -16,7 +18,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync, statSync } from "node:fs";
 import sharp from "sharp";
 import { extractPeople, htmlBlocks, decode } from "./parse.mjs";
-import { isOfficialRow, isOfficialUrl } from "./rules.mjs";
+import { isOfficialRow, isOfficialUrl, nameKey } from "./rules.mjs";
 import { holdReasonsForRow } from "./guards.mjs";
 import {
   MAX_PHOTO_BYTES, PHOTO_PREFIX, officialUrlOf, pickImage, photoKey, releaseCounts, shapeOk, titleIsMulti, urlKey, photoProblem,
@@ -87,8 +89,9 @@ async function main() {
     if (r.photo || r.photoHold || r.status !== "approved" || r.holdReason || !isOfficialRow(r)) continue;
     const rel = officialUrlOf(r);
     const k = urlKey(rel);
-    if ((counts.get(k) || 0) !== 1) continue;
-    if (checks[k]) continue;
+    const multi = (counts.get(k) || 0) !== 1;
+    const checkKey = multi ? `${k}|${nameKey(r.name)}` : k;
+    if (checks[checkKey]) continue;
     const guard = holdReasonsForRow(r);
     if (guard.length) { log.none.push(`${r.name}: guard (${guard.join("; ")})`); continue; } // not recorded: re-checked if the row changes
     if (fetched >= MAX_FETCH) break;
@@ -101,14 +104,17 @@ async function main() {
       continue; // retry next run
     }
     const record = (result, extra = {}) => {
-      checks[k] = { checkedAt: new Date().toISOString(), name: r.name, result, ...extra };
+      checks[checkKey] = { checkedAt: new Date().toISOString(), name: r.name, result, ...extra };
     };
     const title = titleOf(html);
     const people = extractPeople(htmlBlocks(html), { title }).map((p) => p.name);
-    if (titleIsMulti(title)) { record("none", { why: "release title describes several people" }); log.none.push(`${r.name}: multi-person title`); continue; }
-    if (people.length > 1) { record("none", { why: `release names ${people.length} people` }); log.none.push(`${r.name}: release names ${people.length} people`); continue; }
-    const img = pickImage(html, rel, r.name);
-    if (!img) { record("none", { why: "no single person-specific image in the release" }); log.none.push(`${r.name}: no person-specific image`); continue; }
+    const namedOnly = multi || titleIsMulti(title) || people.length > 1;
+    const img = pickImage(html, rel, r.name, { requireName: namedOnly });
+    if (!img) {
+      record("none", { why: namedOnly ? "multi-person release: no image names this person" : "no single person-specific image in the release" });
+      log.none.push(`${r.name}: ${namedOnly ? "no image names this person" : "no person-specific image"}`);
+      continue;
+    }
     let buf;
     try {
       const res = await get(img, "image/*");

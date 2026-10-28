@@ -17,6 +17,15 @@ test("LPR, visa, and prior removal stay in the source's words", () => {
   );
 });
 
-test("this arrest's removal is not an entry date", () => {
-  assert.equal(enteredFromText("DHS removed him to Mexico today."), "Not stated");
+test("a removal date and a crime word are not an entry", () => {
+  assert.equal(enteredFromText("Deported on October 27, 2026."), "Not stated");
+  assert.equal(enteredFromText("He was charged with green card fraud."), "Not stated");
+  assert.equal(
+    enteredFromText("Ana entered the United States illegally in March 2005. Ben was arrested the next day.", "Ben"),
+    "Not stated",
+  );
+  assert.match(
+    enteredFromText("Ana entered the United States illegally in March 2005. Ben was arrested the next day.", "Ana"),
+    /March 2005/,
+  );
 });

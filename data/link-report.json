@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-28T20:40:00Z",
+  "checked": 876,
+  "note": "401, 403, 429, and Akamai challenge pages are blocked, not broken. A page that names the person after accent folding is not broken. About, footer, and the not-yet-published operations file are not row sources.",
+  "broken": [
+    {
+      "name": "Jose Vasquez-Mendoza",
+      "id": "x-2114733504256983497-jose-vasquez-mendoza",
+      "url": "https://x.com/HSI_SanAntonio/status/2114733504256983497",
+      "status": "404",
+      "action": "Left the old URL. No replacement confirmed."
+    }
+  ],
+  "notBroken": [
+    "https://www.dhs.gov/wow loads (About). The name check does not apply to a catalog page.",
+    "https://github.com/krennic212/invasionupdate-data/issues loads (footer).",
+    "https://www.ice.gov/newsroom, https://www.justice.gov/, and https://www.uscis.gov/ load.",
+    "https://krennic212.github.io/invasionupdate-data/operations.json is 404 until the data publisher runs. The file is in the repo.",
+    "FDLE James Ross Wightman and the U.S. Marshals page for Sneider Mejia Bautista answered 403 on a retry. Not marked broken.",
+    "Verónica Bullene's justice.gov page names her. Not broken."
+  ]
+}

@@ -35,6 +35,8 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { extractPeople, statusFrom, stripPriors, dateParts, slug, cityFrom, latLonFor } from "./parse.mjs";
 import { enteredFromText } from "./entered.mjs";
+import { extractOperation, operationRow } from "./operations.mjs";
+import { deadSourceReason } from "./link-check.mjs";
 import { holdReasons, denaturalizedStated } from "./guards.mjs";
 import { nameKey } from "./rules.mjs";
 import { LIVE_X_HANDLES, TRUSTED_REPORTER_X_HANDLES } from "./x-handles.mjs";
@@ -131,6 +133,9 @@ export function rowsForPost(post, picks = []) {
   return hits.map((hit) => {
     const label = xLabel(hit.sentence);
     const reasons = holdReasons({ name: hit.name, sentence: hit.sentence, title: "", releaseText: clean, label });
+    if (/\b(illegal(ly)? vot|unlawful(ly)? vot|voting (as|by)|voted in|vote in|registered to vote)/i.test(hit.sentence) && !String(hit.city || "").trim()) {
+      reasons.push("voting row with no city");
+    }
     // A pick can only ADD a hold (e.g. the sentence's non-citizen wording describes a co-defendant, not this person).
     if (hit.hold) reasons.push(`reviewer hold: ${hit.hold}`);
     const base = scrubVictimNames({
@@ -140,7 +145,7 @@ export function rowsForPost(post, picks = []) {
       usa: `${a.label} X post ${d.long} (@${handle})`,
       foreign: "Not stated in post",
       picked: `${d.picked} (@${handle} post)`,
-      entered: enteredFromText(`${hit.sentence} ${clean}`),
+      entered: enteredFromText(hit.sentence, hit.name),
       office: handle,
       id: `x-${post.id}-${slug(hit.name)}`,
       when: d.when,
@@ -263,7 +268,23 @@ export function scan(posts, { existing = [], picks = {} } = {}) {
       if (isLive && c) photoCandidates.push(c);
     }
   }
-  return { live, review, skipped, photoCandidates, maxId: maxId ? String(maxId) : "" };
+  const operations = [];
+  const seenOp = new Set();
+  for (const p of sorted) {
+    if (isRetweet(p)) continue;
+    const iso = ctIso(p.created_at);
+    if (!iso) continue;
+    const clean = stripLinks(p.text).replace(/\s+/g, " ");
+    const found = extractOperation(clean);
+    if (!found) continue;
+    const url = `https://x.com/${p.username}/status/${p.id}`;
+    const named = (made.get(p.id) || []).length;
+    const row = operationRow({ url, title: found.name || clean.slice(0, 140), date: iso, office: p.username, blocks: [clean] }, named, operations);
+    if (!row || seenOp.has(row.sourceUrl)) continue;
+    seenOp.add(row.sourceUrl);
+    operations.push(row);
+  }
+  return { live, review, skipped, photoCandidates, operations, maxId: maxId ? String(maxId) : "" };
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
@@ -284,6 +305,35 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   let geo = null;
   let reviewRemoved = [];
   if (write) {
+    const heldForLink = [];
+    const stillLive = [];
+    for (const row of res.live) {
+      const why = await deadSourceReason(row.sourceUrl, row.name);
+      if (why) heldForLink.push({ ...row, status: "pending", holdReason: why, reviewReason: why });
+      else stillLive.push(row);
+    }
+    res.live = stillLive;
+    res.review.push(...heldForLink);
+    if (res.operations?.length) {
+      const kept = [];
+      for (const op of res.operations) {
+        const why = await deadSourceReason(op.sourceUrl, op.name);
+        if (why) heldForLink.push({ name: op.name, sourceUrl: op.sourceUrl, why });
+        else kept.push(op);
+      }
+      res.operations = kept;
+    }
+    if (res.operations?.length) {
+      const OPS = "data/operations.json";
+      const book = existsSync(OPS) ? JSON.parse(readFileSync(OPS, "utf8")) : [];
+      const have = new Set(book.map((o) => o.sourceUrl));
+      for (const op of res.operations) {
+        if (have.has(op.sourceUrl)) continue;
+        book.push({ id: op.id, name: op.name, when: op.when, place: op.city, posted: op.heads || null, sourceUrl: op.sourceUrl, text: op.text, heads: op.heads, operation: true, people: [] });
+        have.add(op.sourceUrl);
+      }
+      writeFileSync(OPS, `${JSON.stringify(book, null, 2)}\n`);
+    }
     if (res.live.length) writeFileSync(HARVEST, `${JSON.stringify([...res.live.reverse(), ...harvest], null, 2)}\n`);
     if (res.review.length) writeFileSync(REVIEW, `${JSON.stringify([...res.review.reverse(), ...review], null, 2)}\n`);
     // Map points for every row with a stated place and no point (city-geo.json, then the free geocoder; GEOCODE=0 = offline).

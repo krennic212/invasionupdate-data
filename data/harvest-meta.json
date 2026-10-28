@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-28T19:14:50Z",
-  "rows": 988,
-  "approved": 965,
+  "updatedAt": "2026-10-28T20:29:39Z",
+  "rows": 986,
+  "approved": 963,
   "pending": 23,
   "photos": 287,
   "reviewRows": 762,
@@ -14,6 +14,6 @@
     "Sardor Tirkashev",
     "Christopher Antonio Rodriguez Molina"
   ],
-  "harvestSha256": "49f2d314cc0fa2b8bd9282076a33eac28df3879be12ebf55b25a92c3e6bc0fb1",
+  "harvestSha256": "a225a628d143c6f5582cd2a10946fb5180d6444ffaf8e773d8083edb7f4a1cca",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

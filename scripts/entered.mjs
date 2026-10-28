@@ -17,8 +17,12 @@
  * Do not switch to a browser unless told to.
  *
  * "Illegal alien from [country]" is not an entry fact.
- * This arrest's own removal is not an entry date unless the source states a
- * prior removal or a reentry.
+ * A removal or deportation date is not an entry date. "Deported on October 27, 2026"
+ * must not become "Previously removed October 27, 2026."
+ * A crime is not a status. "Green card fraud" must not become "LPR as posted."
+ * On a post that names several people, pass the person's name so one person's
+ * entry fact is not copied onto another. If it is not in that person's own
+ * text, return "Not stated."
  */
 import { entryDates } from "./tags.mjs";
 
@@ -37,9 +41,54 @@ function asPosted(phrase) {
 
 const DATE = "(?:\\d{1,2}/\\d{1,2}/(?:19|20)\\d{2}|(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|June?|July?|Aug(?:ust)?|Sept?(?:ember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\\.?\\s+\\d{1,2}(?:st|nd|rd|th)?,?\\s+(?:19|20)\\d{2}|(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|June?|July?|Aug(?:ust)?|Sept?(?:ember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\\.?,?\\s+(?:of\\s+)?(?:19|20)\\d{2}|(?:19|20)\\d{2})";
 
-/** Short entered string from source text already in hand, or "Not stated". */
-export function enteredFromText(text) {
+function personText(text, name) {
   const s = tidy(text);
+  const who = tidy(name);
+  if (!s || !who) return s;
+  const parts = s.split(/(?<=[.!?])\s+/);
+  if (parts.length < 2) return s;
+  const last = who.split(" ").pop();
+  for (let i = 0; i < parts.length; i++) {
+    const hit = parts[i].includes(who) || (last && last.length > 3 && parts[i].includes(last));
+    if (!hit) continue;
+    const next = parts[i + 1] || "";
+    // The next sentence is this person's only when it does not name someone else.
+    const other = next && !next.includes(who) && /\b[A-Z][a-z]+\s+[A-Z][a-z]+\b/.test(next);
+    return tidy(other ? parts[i] : `${parts[i]} ${next}`.trim());
+  }
+  return s;
+}
+
+/** Exact sentence in this person's text that contains the entered fact, or "". */
+export function enteredSourceSentence(text, name, entered) {
+  const value = tidy(entered);
+  if (!value || /^not stated$/i.test(value)) return "";
+  const s = personText(text, name);
+  const years = value.match(/\b(?:19|20)\d{2}\b/g) || [];
+  const parts = s.split(/(?<=[.!?])\s+/).filter(Boolean);
+  const scored = parts.filter((p) => years.every((y) => p.includes(y)));
+  const pool = scored.length ? scored : parts;
+  if (/\bLPR\b|permanent resident|green card holder/i.test(value)) {
+    const hit = pool.find((p) => /\b(?:lawful|legal)\s+permanent\s+resident|\bLPRs?\b|green card holder\b/i.test(p));
+    return hit || "";
+  }
+  if (/previously|prior removal|re-?entr|deported/i.test(value)) {
+    const hit = pool.find((p) => /\b(?:previously|prior\s+removal|re-?entr|deported\s+\d+\s+times|\d+-time)\b/i.test(p));
+    if (hit) return hit;
+  }
+  if (years.length && !scored.length) return "";
+  const token = value.split(/[,.]/).map((x) => x.trim()).find((x) => x.length > 12 && !/as posted|not illegally/i.test(x));
+  if (token) {
+    const bit = token.replace(/^(Entered illegally|Previously removed|LPR since)\s+/i, "").slice(0, 24);
+    const hit = pool.find((p) => bit && p.toLowerCase().includes(bit.toLowerCase()));
+    if (hit) return hit;
+  }
+  return years.length ? scored[0] || "" : pool[0] && pool[0].length < 400 ? pool[0] : "";
+}
+
+/** Short entered string from source text already in hand, or "Not stated". */
+export function enteredFromText(text, name = "") {
+  const s = personText(text, name);
   if (!s) return ENTERED_BLANK;
 
   const dates = entryDates(s);
@@ -57,7 +106,10 @@ export function enteredFromText(text) {
     return asPosted(bit.charAt(0).toUpperCase() + bit.slice(1));
   }
 
-  if (/\b(lawful permanent resident|legal permanent resident|green card|\bLPRs?\b)/i.test(s)) {
+  // A crime is not a status. "Green card fraud" is not LPR.
+  const lpr = /\b(?:lawful permanent resident|legal permanent resident|\bLPRs?\b|green card holder)\b/i.test(s)
+    || (/\bgreen card\b/i.test(s) && !/\bgreen card fraud\b/i.test(s));
+  if (lpr) {
     const since = s.match(new RegExp(`\\b(?:since|in)\\s+(${DATE})\\b`, "i"));
     return since
       ? `LPR since ${since[1]}, as posted. LPR is not illegally present.`
@@ -84,8 +136,11 @@ export function enteredFromText(text) {
     return "Entered illegally, as posted; date not stated.";
   }
 
-  const prior = s.match(new RegExp(`\\b(?:previously\\s+(?:removed|deported)|prior\\s+removal|removal\\s+order|ordered\\s+(?:removed|deported)|(?:removed|deported)\\s+(?:in|on)\\s+)(?:[^.]{0,40}?)(${DATE})`, "i"));
-  if (prior) return `Previously removed ${prior[1]}; reentry date not stated, as posted.`;
+  // A removal date is not an entry. Only a stated prior removal or reentry.
+  const prior = s.match(new RegExp(`\\b(?:previously\\s+(?:removed|deported)|prior\\s+removal|ordered\\s+(?:\\w+\\s+){0,3}(?:removed|deported))(?:[^.]{0,40}?)(${DATE})`, "i"));
+  if (prior && !/\b(?:deported|removed)\s+on\s+[A-Z][a-z]+\s+\d{1,2},?\s+2026\b/i.test(s)) {
+    return `Previously removed ${prior[1]}; reentry date not stated, as posted.`;
+  }
   if (/\bpreviously\s+(?:removed|deported)\b|\bprior\s+removal\b|\billegal(?:ly)?\s+re-?entr/i.test(s)) {
     return "Previously removed; reentry date not stated, as posted.";
   }

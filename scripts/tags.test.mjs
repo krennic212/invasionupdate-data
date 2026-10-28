@@ -67,6 +67,13 @@ test("Entered under Obama: wording tied to entry / release, or an entry date Jan
   assert.deepEqual(tags({ entered: "Illegal entry in 2010" }), ["Entered under Obama"]);
 });
 
+test("Gang, MS-13, and TdA only when the source names that gang", () => {
+  assert.deepEqual(tags({ text: "Jane Roe, a Tango Corpito gang member, was arrested." }), ["Gang"]);
+  assert.deepEqual(tags({ text: "Jane Roe is an MS-13 gang member." }), ["Gang", "MS-13"]);
+  assert.deepEqual(tags({ text: "Jane Roe belongs to Tren de Aragua." }), ["Gang", "TdA"]);
+  assert.deepEqual(tags({ text: "Jane Roe was charged with robbery." }), []);
+});
+
 test("negatives: dates of other events, other administrations' actions, other people in the same post", () => {
   // removal / order / conviction / plea / vote dates are not entry dates
   assert.deepEqual(tags({ entered: "Illegally entered through Texas in March 2006; illegally re-entered after 2009, 2016, and 2024 removals (as posted)" }), []);
@@ -102,7 +109,7 @@ test("helpers: date spans and entry-date extraction", () => {
 });
 
 test("tag order is fixed and only known tags are used", () => {
-  assert.deepEqual(TAGS, ["CHNV", "DACA", "Entered under Biden", "Entered under Obama"]);
+  assert.deepEqual(TAGS, ["CHNV", "DACA", "Entered under Biden", "Entered under Obama", "Gang", "MS-13", "TdA"]);
   assert.deepEqual(tags({ crime: "Charged: Jane Roe, a DACA recipient, came in through CHNV parole." }), ["CHNV", "DACA", "Entered under Biden"]);
 });
 
@@ -121,8 +128,8 @@ test("known live rows keep their tags", () => {
   const by = (n) => feed.find((r) => r.name === n)?.tags;
   assert.deepEqual(by("Mary Angelica Landeros-Quen"), ["DACA"]);
   assert.deepEqual(by("Analiea Milliscent Eccles"), ["DACA"]);
-  assert.deepEqual(by("MAXIME PHARILIEN"), ["Entered under Biden"]);
-  assert.deepEqual(by("FATOUMATA NIANG"), []);
+  assert.deepEqual(by("Maxime Pharilien"), ["Entered under Biden"]);
+  assert.deepEqual(by("Fatoumata Niang"), []);
   assert.deepEqual(by("Jacinto Gonzalez-Perez"), ["Entered under Obama"]);
-  assert.deepEqual(by("URIEL SANTIAGO PEREZ"), []);
+  assert.deepEqual(by("Uriel Santiago Perez"), []);
 });
