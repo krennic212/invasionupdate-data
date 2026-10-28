@@ -1,16 +1,29 @@
 {
-  "updatedAt": "2026-10-28T16:37:23Z",
-  "rows": 963,
-  "approved": 953,
+  "updatedAt": "2026-10-28T16:38:45Z",
+  "rows": 978,
+  "approved": 968,
   "pending": 10,
   "photos": 279,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-28T14:20:56Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-10-28T16:38:42Z",
+  "lastAddedCount": 15,
   "lastAdded": [
-    "Oscar Daniel Isaya Corrales",
-    "Jose Perez-Antonio"
+    "Juan Carlos Matute-Hernandez",
+    "Aden Hassan Aden",
+    "Arturo Salazar Garcia",
+    "Jaimie Sosa-Sardina",
+    "Marva Marie Cook",
+    "Braulio Osiel Zapata Perez",
+    "Mai Tran",
+    "Jose Luis Matute Chaviel",
+    "Phath Vorn",
+    "Axel Bemjarmin Alarcon Duarte",
+    "Darwin Yoel Zelaya-Orellana",
+    "Servando Alejandro-Torres",
+    "Jairo Ivan Vazquez Montano",
+    "Rolex Augustin",
+    "DIMITRI BEIX"
   ],
-  "harvestSha256": "0f933bc8385f83ecd82f01ae3149a7fe982b333663b31b30283e51c191f5b16a",
+  "harvestSha256": "707735907f22b16352ec4f275557f98201790552de20681bd5146d465ab9b88a",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

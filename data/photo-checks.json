@@ -3627,5 +3627,20 @@
     "name": "Maksim Sergeevich Shakirov",
     "result": "none",
     "why": "no single person-specific image in the release"
+  },
+  "ice.gov/news/releases/time-runs-out-rolex": {
+    "checkedAt": "2026-10-28T16:38:43.911Z",
+    "name": "Rolex Augustin",
+    "result": "held",
+    "file": "ice-20261028-rolex-augustin.jpg",
+    "image": "https://www.ice.gov/sites/default/files/2026-10/261028dc.png",
+    "bytes": 12413,
+    "why": "needs visual check"
+  },
+  "justice.gov/usao-ct/pr/homeland-security-task-force-dual-dominican-and-french-national-sentenced-more-5-years": {
+    "checkedAt": "2026-10-28T16:38:44.073Z",
+    "name": "DIMITRI BEIX",
+    "result": "none",
+    "why": "no single person-specific image in the release"
   }
 }
