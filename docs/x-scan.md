@@ -51,7 +51,7 @@ The daily photo job stays at 1:03 PM CT.
    `--write` also (Krennic 2026-10-27, no extra steps needed): fills map points for every row with a stated place and
    no point (`scripts/geo.mjs`: city-geo.json, then the free Nominatim geocoder at 1 request/second, hits cached in
    city-geo.json; `GEOCODE=0` = offline), takes anyone who is now live out of review.json (name + aka keys), and
-   re-stamps harvest-meta.json. Suspicious names (trailing month word, "Place.Name", single word, all-caps headline
+   re-stamps harvest-meta.json, and sets `tags` on every row (`scripts/tags.mjs`, rules below). Suspicious names (trailing month word, "Place.Name", single word, all-caps headline
    text) are held by the guards, never published.
 6. Photos: save the `--write` output to `<run>/write.json`. `photoCandidates` lists EVERY live official-post row whose
    post has any photo, with ALL of the post's images (`images[]`: original-size URL, alt text, `namesPerson`) and
@@ -78,6 +78,34 @@ The daily photo job stays at 1:03 PM CT.
 
 Typical quiet run: 5 calls (one per query, no second page) + 0-1 refetch = ~6 calls,
 ~18/day at 3 runs (the 9 AM run may page more). Stop paging early once results reach lastSeenId.
+
+## Tags: CHNV / DACA / Entered under Biden / Entered under Obama: Krennic decision 2026-10-28
+
+Every row in harvest.json and review.json has `tags` (array, often `[]`), set by `scripts/tags.mjs` (`tagsFor`) from the
+row's own words only (`crime`, `usa`, `entered`, and the person's own part of `text`). It never reads `foreign`,
+`approvalNote` or `reviewReason`, and it never guesses. Values, in this order: `CHNV`, `DACA`, `Entered under Biden`, `Entered under Obama`.
+- **CHNV**: "CHNV", or the Cuba, Haiti, Nicaragua (and) Venezuela parole program (incl. "Biden's CHNV flights").
+  CHNV always also gets **Entered under Biden** (the program only ran under Biden, 2022-2025).
+- **DACA**: DACA / Deferred Action for Childhood Arrivals stated as the person's status, current or former ("DACA
+  recipient", "granted DACA in 2015", "DACA 2013", "former DACA"). A denial, an application, policy news, or another
+  kind of "deferred action" is not DACA.
+- **Entered under Biden / Obama**: entry, crossing, arrival, release or parole wording tied to "Biden" / "Obama" in the
+  same sentence ("released ... by the Biden administration", "Obama-released"), OR a date of the entry itself that
+  falls entirely inside Jan 20, 2021 - Jan 19, 2025 (Biden) or Jan 20, 2009 - Jan 19, 2017 (Obama), inclusive.
+  "Entered in 2023", "re-entered 2023", "Aug 2022", "12/21/2023", "a 2015 entry" count. A bare year or a January that
+  straddles an inauguration (2009, 2017, 2021, 2025) does not. Dates of removals, orders, convictions, pleas, votes or
+  LPR status ("lawful permanent resident since 2022") are not entry dates; "since 2007" is not an entry date.
+  "Illegal reentry, March 2015" / "convicted of illegal entry in 2015" are charges, not entry dates.
+  "Not stated" / "unknown date" = no entry tag. The administration's name must belong to the entry verb ("ignored by
+  the Obama administration", "deported under Obama" do not count).
+- Multi-person post (rows that share a sourceUrl or the same text): only the sentences from this person's name to
+  the next person's name count, so a co-defendant's wording never tags them.
+- Tags are additive metadata: they are also set on approvalNote / Krennic-final rows; nothing else on a row changes.
+
+Pipelines: `x-scan.mjs --write`, `harvest.mjs` (press releases, pending.json, DOJ / state sources), `approve.mjs`, the
+workflow step "Tags" and `npm run harvest` all (re)tag. After a hand edit: `node scripts/tags.mjs` (`--check` = report only).
+`validate.mjs` and `scripts/tags.test.mjs` fail if any row's tags differ from `tagsFor()`.
+Site: Grok Build prompt in `docs/grok-build-tags-prompt.md` (badges + filter chips from the feed's `tags`).
 
 ## Denaturalized people: Krennic decision 2026-10-16
 

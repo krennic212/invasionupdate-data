@@ -1,3 +1,23 @@
+# HANDOFF: 2026-10-28 (CDT) row tags: CHNV / DACA / Entered under Biden / Entered under Obama (Krennic asked)
+
+- No tags mechanism existed in this repo (the Gang / Transgender tags from the Oct 15 Grok Build prompt are site-side
+  regex categories in krennic212/invasionupdate `src/lib/categories.ts`; no groups.json here). New field: `tags`
+  (string array, often `[]`) on every row of data/harvest.json and data/review.json, from scripts/tags.mjs `tagsFor()`.
+- Rules (full text in docs/x-scan.md "Tags"): only the row's own words (`crime`, `usa`, `entered`, the person's own part of
+  `text`); CHNV = "CHNV" / the Cuba-Haiti-Nicaragua-Venezuela parole program, and CHNV also = Entered under Biden; DACA =
+  stated as the person's status; Entered under Biden / Obama = entry / release / parole wording tied to the name, or an
+  entry date wholly inside Jan 20, 2021 - Jan 19, 2025 / Jan 20, 2009 - Jan 19, 2017. Straddling years (2009, 2017, 2021,
+  2025), "Not stated", removal / order / conviction / LPR-since dates never count. Multi-person posts: own sentences only.
+- Wired in: x-scan.mjs --write (applyTagsFiles), harvest.mjs (before writing), approve.mjs, workflow step "Tags", npm
+  run harvest / npm run tags. validate.mjs fails on missing / unknown / stale tags. After a hand edit: node scripts/tags.mjs.
+- Backfill (nothing else on any row changed; verified row-by-row): live CHNV 0, DACA 2, Biden 3, Obama 4; review CHNV 1,
+  DACA 0, Biden 11, Obama 5. Not tagged on purpose: Fatoumata Niang (the Biden sentence is Pharilien's, same post),
+  Uriel Santiago Perez ("ignored by the Obama administration", not an entry), Armando Vladimir Salgado / Edan Yoel
+  Gomez-Rodriguez (re-entry dates not stated, only removal years), Aurelio Roldan Roldan / Bayardo Padilla-Flores /
+  Josue Tzunun-Solis ("2021" straddles), Yinke Chen ("2017"), LPR-since dates, Chukwunonso Eze's "deferred action" (not DACA).
+- Tests: scripts/tags.test.mjs (rules, boundary dates, negatives, every row's tags == tagsFor()).
+- Site: docs/grok-build-tags-prompt.md (badges + filter chips from `tags`); the site itself was not touched.
+
 # HANDOFF: 2026-10-27 (9:40 AM CDT) Krennic decisions on the 3 open items
 
 - Deleted held duplicate "Nevada.Mario Garcia" (dhs-20261026-nevada-mario-garcia); one-time approval recorded in

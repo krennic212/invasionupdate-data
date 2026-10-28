@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T00:52:46Z",
+  "updatedAt": "2026-10-28T13:10:27Z",
   "rows": 956,
   "approved": 946,
   "pending": 10,
@@ -10,6 +10,6 @@
   "lastAdded": [
     "Maksim Sergeevich Shakirov"
   ],
-  "harvestSha256": "e1ad17ac81023248a577ca6cc443323265281a3317fbd67df8a3dc1cb83a9b38",
+  "harvestSha256": "a2de40a29a1e71f666a5a9ab81d1052b8ad23da6a047c5757b12ec6cf751dfcf",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

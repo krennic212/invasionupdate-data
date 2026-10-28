@@ -4,10 +4,11 @@
   "type": "module",
   "description": "Public data feed for Invasion Update (official-source harvest with an approval gate).",
   "scripts": {
-    "harvest": "node scripts/harvest.mjs && node scripts/geo.mjs && node scripts/dedupe.mjs data/harvest.json data/review.json && node scripts/severity.mjs && node scripts/write-meta.mjs && node scripts/validate.mjs",
+    "harvest": "node scripts/harvest.mjs && node scripts/geo.mjs && node scripts/dedupe.mjs data/harvest.json data/review.json && node scripts/severity.mjs && node scripts/tags.mjs && node scripts/write-meta.mjs && node scripts/validate.mjs",
     "geo": "node scripts/geo.mjs",
     "severity": "node scripts/severity.mjs && node scripts/write-meta.mjs",
     "approve": "node scripts/approve.mjs",
+    "tags": "node scripts/tags.mjs",
     "meta": "node scripts/write-meta.mjs",
     "validate": "node scripts/validate.mjs",
     "pretest": "node scripts/write-meta.mjs",

@@ -60,6 +60,8 @@ jobs:
         run: node scripts/photos.mjs
       - name: Severity scores (severity / severityReason / severityCrimes on every row) + data/highlights.json
         run: node scripts/severity.mjs
+      - name: Tags (CHNV / DACA / Entered under Biden / Entered under Obama) from each row's own words
+        run: node scripts/tags.mjs
       - name: Guardrail check (official source, date, status, photo rules, never shrinks)
         run: node scripts/validate.mjs data/harvest.json
       # write-meta.mjs runs every time: updatedAt stays while harvest.json is unchanged (same sha256) and is re-stamped

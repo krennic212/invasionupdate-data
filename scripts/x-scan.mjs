@@ -41,6 +41,7 @@ import { buildMeta, writeMetaFile } from "./write-meta.mjs";
 import { fillGeoFile } from "./geo.mjs";
 import { pruneReviewOfLive } from "./rules.mjs";
 import { writeSeverityFiles } from "./severity.mjs";
+import { applyTagsFiles } from "./tags.mjs";
 import { scrubVictimNames } from "./victims.mjs";
 import { countryFor, cleanOrigin } from "./country.mjs";
 import { uniqueId as makeUniqueId, rowIdBase } from "./ids.mjs";
@@ -290,7 +291,9 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     const pruned = pruneReviewOfLive(JSON.parse(readFileSync(HARVEST, "utf8")), JSON.parse(readFileSync(REVIEW, "utf8")));
     if (pruned.removed.length) writeFileSync(REVIEW, `${JSON.stringify(pruned.review, null, 2)}\n`);
     reviewRemoved = pruned.removed;
-    if (res.live.length || geo.changed) writeSeverityFiles(HARVEST, HARVEST.replace(/[^/\\]*$/, "highlights.json")); // severity on new live rows + data/highlights.json
+    // Tags (CHNV / DACA / Entered under Biden / Obama) on new and existing rows, from their own words (scripts/tags.mjs).
+    const tagged = applyTagsFiles({ harvest: HARVEST, review: REVIEW });
+    if (res.live.length || geo.changed || tagged.harvestChanged) writeSeverityFiles(HARVEST, HARVEST.replace(/[^/\\]*$/, "highlights.json")); // severity on new live rows + data/highlights.json
     const prev = BigInt(state.lastSeenId || 0);
     const next = res.maxId && BigInt(res.maxId) > prev ? res.maxId : String(state.lastSeenId || "");
     if (res.live.length || res.review.length) {

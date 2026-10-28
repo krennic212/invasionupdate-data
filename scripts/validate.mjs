@@ -20,6 +20,7 @@ import { isLiveSourceRow, nameKey } from "./rules.mjs";
 import { photoProblem, releaseCounts } from "./photo-rules.mjs";
 import { victimNamesIn } from "./victims.mjs";
 import { idProblems } from "./ids.mjs";
+import { TAGS, tagsFor, siblingsIndex } from "./tags.mjs";
 
 const FILE = process.argv[2] || "data/harvest.json";
 const rows = JSON.parse(readFileSync(FILE, "utf8"));
@@ -36,6 +37,18 @@ for (const r of [...(Array.isArray(rows) ? rows : []), ...review]) {
 if (!Array.isArray(rows) || rows.length === 0) problems.push("feed is empty or not an array");
 // Every row needs its own id (approve.mjs, photos and highlights look rows up by id).
 problems.push(...idProblems({ [FILE]: Array.isArray(rows) ? rows : [], "data/review.json": review }));
+// Tags (scripts/tags.mjs): every row (feed and review) carries `tags`, only known values, equal to tagsFor().
+{
+  const all = [...(Array.isArray(rows) ? rows : []), ...review].filter((r) => r && typeof r === "object");
+  const others = siblingsIndex(all);
+  for (const r of all) {
+    if (!Array.isArray(r.tags)) { problems.push(`row (${r.name}): no tags array; run node scripts/tags.mjs`); continue; }
+    const bad = r.tags.filter((t) => !TAGS.includes(t));
+    if (bad.length) problems.push(`row (${r.name}): unknown tag(s) ${bad.join(", ")}`);
+    const want = tagsFor(r, others(r));
+    if (JSON.stringify(r.tags) !== JSON.stringify(want)) problems.push(`row (${r.name}): tags ${JSON.stringify(r.tags)} != ${JSON.stringify(want)}; run node scripts/tags.mjs`);
+  }
+}
 for (const [i, r] of (Array.isArray(rows) ? rows : []).entries()) {
   const tag = `row ${i} (${r?.name ?? "?"})`;
   if (!r || typeof r !== "object") { problems.push(`${tag}: not an object`); continue; }

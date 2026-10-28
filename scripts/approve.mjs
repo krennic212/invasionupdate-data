@@ -13,6 +13,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { writeMetaFile } from "./write-meta.mjs";
+import { applyTagsFiles } from "./tags.mjs";
 
 export function approveRows(rows, spec) {
   const want = String(spec || "").trim();
@@ -41,6 +42,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     process.exit(1);
   }
   if (approved.length) writeFileSync(file, `${JSON.stringify(out, null, 2)}\n`);
+  if (approved.length && file === "data/harvest.json") applyTagsFiles(); // tags come from the row text (scripts/tags.mjs)
   if (approved.length && file === "data/harvest.json") writeMetaFile(); // meta never lags an approval
   console.log(JSON.stringify({ approved: approved.length, ids: approved, stillPending: out.filter((r) => r?.status === "pending").length }));
 }

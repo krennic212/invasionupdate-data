@@ -33,6 +33,7 @@ import { operationsFor } from "./operations.mjs";
 import { fillCity } from "./office-city.mjs";
 import { latLonFor } from "./parse.mjs";
 import { dailySignalReleases } from "./daily-signal.mjs";
+import { applyTags } from "./tags.mjs";
 
 const HARVEST = process.env.HARVEST_FILE || "data/harvest.json";
 const REVIEW = process.env.REVIEW_FILE || "data/review.json";
@@ -314,6 +315,9 @@ async function main() {
   }
   // Newest first, ahead of existing rows.
   harvest.unshift(...fresh);
+  // Tags (CHNV / DACA / Entered under Biden / Obama) from each row's own words (scripts/tags.mjs).
+  applyTags(harvest, [...harvest, ...review]);
+  applyTags(review, [...harvest, ...review]);
 
   writeJson(HARVEST, harvest);
   writeJson(REVIEW, review);
