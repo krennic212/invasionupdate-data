@@ -3756,5 +3756,425 @@
     "name": "Nolberto Valdez-Ruiz",
     "result": "none",
     "why": "graphic card with ARRESTED/FACING REMOVAL text overlays and ICE seal"
+  },
+  "dhs.gov/news/2026/10/28/dhs-highlights-worst-illegal-aliens-arrested-ohio|julio cesar perez alvarez": {
+    "checkedAt": "2026-10-28T20:33:30.305Z",
+    "name": "Julio Cesar Perez Alvarez",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/28/dhs-highlights-worst-illegal-aliens-arrested-ohio|isidoro cruz bernal": {
+    "checkedAt": "2026-10-28T20:33:30.394Z",
+    "name": "Isidoro Cruz Bernal",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/28/dhs-highlights-worst-illegal-aliens-arrested-ohio|sebastian alejandro de leon": {
+    "checkedAt": "2026-10-28T20:33:30.469Z",
+    "name": "Sebastian Alejandro De Leon",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/28/dhs-highlights-worst-illegal-aliens-arrested-ohio|sardor tirkashev": {
+    "checkedAt": "2026-10-28T20:33:30.517Z",
+    "name": "Sardor Tirkashev",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/28/dhs-highlights-worst-illegal-aliens-arrested-ohio|christopher antonio rodriguez molina": {
+    "checkedAt": "2026-10-28T20:33:30.634Z",
+    "name": "Christopher Antonio Rodriguez Molina",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/28/dhs-highlights-worst-illegal-aliens-arrested-texas|victor falfan": {
+    "checkedAt": "2026-10-28T20:33:30.922Z",
+    "name": "Victor Falfan",
+    "result": "held",
+    "file": "dhs-20261028-victor-falfan.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/TX1_0.png",
+    "bytes": 18144,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/28/dhs-highlights-worst-illegal-aliens-arrested-texas|alejandro falfan acosta": {
+    "checkedAt": "2026-10-28T20:33:31.201Z",
+    "name": "Alejandro Falfan Acosta",
+    "result": "held",
+    "file": "dhs-20261028-alejandro-falfan-acosta.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/TX2_0.png",
+    "bytes": 13461,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/28/dhs-highlights-worst-illegal-aliens-arrested-texas|vanesa lopez ibarra": {
+    "checkedAt": "2026-10-28T20:33:31.450Z",
+    "name": "Vanesa Lopez Ibarra",
+    "result": "held",
+    "file": "dhs-20261028-vanesa-lopez-ibarra.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/TX3_0.png",
+    "bytes": 8955,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/28/dhs-highlights-worst-illegal-aliens-arrested-texas|miguel zavala soto": {
+    "checkedAt": "2026-10-28T20:33:31.683Z",
+    "name": "Miguel Zavala Soto",
+    "result": "held",
+    "file": "dhs-20261028-miguel-zavala-soto.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/TX4_0.png",
+    "bytes": 16410,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/28/dhs-highlights-worst-illegal-aliens-arrested-texas|francisco de la cruz lira": {
+    "checkedAt": "2026-10-28T20:33:31.943Z",
+    "name": "Francisco De La Cruz Lira",
+    "result": "held",
+    "file": "dhs-20261028-francisco-de-la-cruz-lira.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/TX5_0.png",
+    "bytes": 11192,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-most-barbaric-illegal-aliens-deported-third-countries-because-their|phone chomsavanh": {
+    "checkedAt": "2026-10-28T20:33:32.164Z",
+    "name": "Phone Chomsavanh",
+    "result": "held",
+    "file": "dhs-20261027-phone-chomsavanh.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/10.27wtc8.png",
+    "bytes": 9579,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-most-barbaric-illegal-aliens-deported-third-countries-because-their|kassim saleh wasil": {
+    "checkedAt": "2026-10-28T20:33:32.402Z",
+    "name": "Kassim Saleh Wasil",
+    "result": "held",
+    "file": "dhs-20261027-kassim-saleh-wasil.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/10.27wtc10.png",
+    "bytes": 6094,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-most-barbaric-illegal-aliens-deported-third-countries-because-their|jhanmay molina perez": {
+    "checkedAt": "2026-10-28T20:33:32.647Z",
+    "name": "Jhanmay Molina Perez",
+    "result": "held",
+    "file": "dhs-20261027-jhanmay-molina-perez.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/10.27wtc11.png",
+    "bytes": 10362,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-most-barbaric-illegal-aliens-deported-third-countries-because-their|eugenio douquesne millet": {
+    "checkedAt": "2026-10-28T20:33:32.846Z",
+    "name": "Eugenio Douquesne-Millet",
+    "result": "held",
+    "file": "dhs-20261027-eugenio-douquesne-millet.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/10.27wtc14.png",
+    "bytes": 9985,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-most-barbaric-illegal-aliens-deported-third-countries-because-their|phetnakhone sisounthone": {
+    "checkedAt": "2026-10-28T20:33:33.132Z",
+    "name": "Phetnakhone Sisounthone",
+    "result": "held",
+    "file": "dhs-20261027-phetnakhone-sisounthone.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/10.27wtc15.png",
+    "bytes": 18362,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-most-barbaric-illegal-aliens-deported-third-countries-because-their|foday philip kanu": {
+    "checkedAt": "2026-10-28T20:33:33.338Z",
+    "name": "Foday Philip Kanu",
+    "result": "held",
+    "file": "dhs-20261027-foday-philip-kanu.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/10.27wtc16.png",
+    "bytes": 8890,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-most-barbaric-illegal-aliens-deported-third-countries-because-their|kawsu sillah": {
+    "checkedAt": "2026-10-28T20:33:33.546Z",
+    "name": "Kawsu Sillah",
+    "result": "held",
+    "file": "dhs-20261027-kawsu-sillah.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/10.27wtc18.png",
+    "bytes": 9500,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-most-barbaric-illegal-aliens-deported-third-countries-because-their|prince david nwabueze": {
+    "checkedAt": "2026-10-28T20:33:33.726Z",
+    "name": "Prince David Nwabueze",
+    "result": "held",
+    "file": "dhs-20261027-prince-david-nwabueze.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/10.27wtc19.png",
+    "bytes": 20568,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-most-barbaric-illegal-aliens-deported-third-countries-because-their|pheap rom": {
+    "checkedAt": "2026-10-28T20:33:33.983Z",
+    "name": "Pheap Rom",
+    "result": "held",
+    "file": "dhs-20261027-pheap-rom.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/10.27wtc20.png",
+    "bytes": 11321,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-worst-arrests-illegal-aliens-including-murderers-child-abusers|thanh van nguyen": {
+    "checkedAt": "2026-10-28T20:33:34.026Z",
+    "name": "Thanh Van Nguyen",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-worst-arrests-illegal-aliens-including-murderers-child-abusers|quang minh tran": {
+    "checkedAt": "2026-10-28T20:33:34.081Z",
+    "name": "Quang Minh Tran",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-worst-arrests-illegal-aliens-including-murderers-child-abusers|leonel david vazquez saavedra": {
+    "checkedAt": "2026-10-28T20:33:34.120Z",
+    "name": "Leonel David Vazquez Saavedra",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-worst-arrests-illegal-aliens-including-murderers-child-abusers|osbert marion otien owuor": {
+    "checkedAt": "2026-10-28T20:33:34.176Z",
+    "name": "Osbert Marion Otien Owuor",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-worst-arrests-illegal-aliens-including-murderers-child-abusers|juan jose ramos": {
+    "checkedAt": "2026-10-28T20:33:34.219Z",
+    "name": "Juan Jose Ramos",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-worst-arrests-illegal-aliens-including-murderers-child-abusers|marco antonio lucas martinez": {
+    "checkedAt": "2026-10-28T20:33:34.419Z",
+    "name": "Marco Antonio Lucas Martinez",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-worst-arrests-illegal-aliens-including-murderers-child-abusers|ricardo iglesias martinez": {
+    "checkedAt": "2026-10-28T20:33:34.460Z",
+    "name": "Ricardo Iglesias-Martinez",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-worst-arrests-illegal-aliens-including-murderers-child-abusers|guillermo medina reyes": {
+    "checkedAt": "2026-10-28T20:33:34.512Z",
+    "name": "Guillermo Medina-Reyes",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-worst-arrests-illegal-aliens-including-murderers-child-abusers|elmer enrique arriola": {
+    "checkedAt": "2026-10-28T20:33:34.554Z",
+    "name": "Elmer Enrique Arriola",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-worst-arrests-illegal-aliens-including-murderers-child-abusers|alejandro mendiola escutia": {
+    "checkedAt": "2026-10-28T20:33:34.599Z",
+    "name": "Alejandro Mendiola Escutia",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-worst-arrests-illegal-aliens-including-murderers-child-abusers|byron hernandez estrada": {
+    "checkedAt": "2026-10-28T20:33:34.639Z",
+    "name": "Byron Hernandez-Estrada",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-worst-arrests-illegal-aliens-including-murderers-child-abusers|cesar enrique lopez": {
+    "checkedAt": "2026-10-28T20:33:34.683Z",
+    "name": "Cesar Enrique Lopez",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-worst-arrests-illegal-aliens-including-murderers-child-abusers|binh huynh": {
+    "checkedAt": "2026-10-28T20:33:34.728Z",
+    "name": "Binh Huynh",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-worst-arrests-illegal-aliens-including-murderers-child-abusers|vu trong nguyen": {
+    "checkedAt": "2026-10-28T20:33:34.769Z",
+    "name": "Vu Trong Nguyen",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-worst-arrests-illegal-aliens-including-murderers-child-abusers|erick alexander henriquez granado": {
+    "checkedAt": "2026-10-28T20:33:34.820Z",
+    "name": "Erick Alexander Henriquez Granado",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-worst-arrests-illegal-aliens-including-murderers-child-abusers|cesar efrain hernandez lopez": {
+    "checkedAt": "2026-10-28T20:33:34.862Z",
+    "name": "Cesar Efrain Hernandez-Lopez",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-worst-arrests-illegal-aliens-including-murderers-child-abusers|luis alonso rodriguez angel": {
+    "checkedAt": "2026-10-28T20:33:34.902Z",
+    "name": "Luis Alonso Rodriguez-Angel",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/27/dhs-highlights-worst-arrests-illegal-aliens-including-murderers-child-abusers|melvin edenilson melendez ramos": {
+    "checkedAt": "2026-10-28T20:33:34.945Z",
+    "name": "Melvin Edenilson Melendez Ramos",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "justice.gov/usao-ndca/pr/two-honduran-men-sentenced-each-seven-years-prison-selling-fentanyl|danexi mendoza licona": {
+    "checkedAt": "2026-10-28T20:33:35.053Z",
+    "name": "Danexi Mendoza Licona",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "justice.gov/usao-ndca/pr/two-honduran-men-sentenced-each-seven-years-prison-selling-fentanyl|mario sevilla artiaga": {
+    "checkedAt": "2026-10-28T20:33:35.122Z",
+    "name": "Mario Sevilla Artiaga",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/26/worst-worst-over-weekend-ice-arrests-murderers-pedophiles-and-sexual-predators|rafael godinez mancilla": {
+    "checkedAt": "2026-10-28T20:33:35.812Z",
+    "name": "Rafael Godinez Mancilla",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/26/worst-worst-over-weekend-ice-arrests-murderers-pedophiles-and-sexual-predators|mario garcia": {
+    "checkedAt": "2026-10-28T20:33:35.874Z",
+    "name": "Mario Garcia",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/26/worst-worst-over-weekend-ice-arrests-murderers-pedophiles-and-sexual-predators|harny dosalua": {
+    "checkedAt": "2026-10-28T20:33:35.947Z",
+    "name": "Harny Dosalua",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/26/worst-worst-over-weekend-ice-arrests-murderers-pedophiles-and-sexual-predators|jaime roca": {
+    "checkedAt": "2026-10-28T20:33:36.071Z",
+    "name": "Jaime Roca",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/26/worst-worst-over-weekend-ice-arrests-murderers-pedophiles-and-sexual-predators|josem guzman": {
+    "checkedAt": "2026-10-28T20:33:36.127Z",
+    "name": "Josem Guzman",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/26/worst-worst-over-weekend-ice-arrests-murderers-pedophiles-and-sexual-predators|angel isaias anavisca pacheco": {
+    "checkedAt": "2026-10-28T20:33:36.180Z",
+    "name": "Angel Isaias Anavisca-Pacheco",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/26/worst-worst-over-weekend-ice-arrests-murderers-pedophiles-and-sexual-predators|hannyel jimenez": {
+    "checkedAt": "2026-10-28T20:33:36.248Z",
+    "name": "Hannyel Jimenez",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/26/worst-worst-over-weekend-ice-arrests-murderers-pedophiles-and-sexual-predators|gerardo rivera rivera": {
+    "checkedAt": "2026-10-28T20:33:36.291Z",
+    "name": "Gerardo Rivera-Rivera",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/26/worst-worst-over-weekend-ice-arrests-murderers-pedophiles-and-sexual-predators|alexander perez gonzalez": {
+    "checkedAt": "2026-10-28T20:33:36.350Z",
+    "name": "Alexander Perez-Gonzalez",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/26/worst-worst-over-weekend-ice-arrests-murderers-pedophiles-and-sexual-predators|alejandro galvan magana": {
+    "checkedAt": "2026-10-28T20:33:36.394Z",
+    "name": "Alejandro Galvan-Magana",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/26/worst-worst-over-weekend-ice-arrests-murderers-pedophiles-and-sexual-predators|jorge alberto montes banda": {
+    "checkedAt": "2026-10-28T20:33:36.434Z",
+    "name": "Jorge Alberto Montes-Banda",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/26/worst-worst-over-weekend-ice-arrests-murderers-pedophiles-and-sexual-predators|david orlando sanchez": {
+    "checkedAt": "2026-10-28T20:33:36.479Z",
+    "name": "David Orlando Sanchez",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/26/worst-worst-over-weekend-ice-arrests-murderers-pedophiles-and-sexual-predators|rolando torres vega": {
+    "checkedAt": "2026-10-28T20:33:36.519Z",
+    "name": "Rolando Torres-Vega",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/26/worst-worst-over-weekend-ice-arrests-murderers-pedophiles-and-sexual-predators|andrey aleman cordero": {
+    "checkedAt": "2026-10-28T20:33:36.577Z",
+    "name": "Andrey Aleman-Cordero",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/26/worst-worst-over-weekend-ice-arrests-murderers-pedophiles-and-sexual-predators|adrian alonso aguirre": {
+    "checkedAt": "2026-10-28T20:33:36.617Z",
+    "name": "Adrian Alonso-Aguirre",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/10/26/dhs-highlights-worst-illegal-aliens-arrested-michigan|amilcar jose suarez barreto": {
+    "checkedAt": "2026-10-28T20:33:37.368Z",
+    "name": "Amilcar Jose Suarez Barreto",
+    "result": "held",
+    "file": "dhs-20261026-amilcar-jose-suarez-barreto.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/MI1.png",
+    "bytes": 7790,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/26/dhs-highlights-worst-illegal-aliens-arrested-michigan|sarah jane hulbert": {
+    "checkedAt": "2026-10-28T20:33:37.620Z",
+    "name": "Sarah Jane Hulbert",
+    "result": "held",
+    "file": "dhs-20261026-sarah-jane-hulbert.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/MI2.png",
+    "bytes": 7276,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/26/dhs-highlights-worst-illegal-aliens-arrested-michigan|kelvin ramon castillo rodriguez": {
+    "checkedAt": "2026-10-28T20:33:37.846Z",
+    "name": "Kelvin Ramon Castillo Rodriguez",
+    "result": "held",
+    "file": "dhs-20261026-kelvin-ramon-castillo-rodriguez.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/MI3.png",
+    "bytes": 9059,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/26/dhs-highlights-worst-illegal-aliens-arrested-michigan|elmer domingo lopez tomas": {
+    "checkedAt": "2026-10-28T20:33:38.049Z",
+    "name": "Elmer Domingo Lopez Tomas",
+    "result": "held",
+    "file": "dhs-20261026-elmer-domingo-lopez-tomas.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/MI4.png",
+    "bytes": 7187,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/26/dhs-highlights-worst-illegal-aliens-arrested-michigan|anderson jesus rosales ramos": {
+    "checkedAt": "2026-10-28T20:33:38.236Z",
+    "name": "Anderson Jesus Rosales Ramos",
+    "result": "held",
+    "file": "dhs-20261026-anderson-jesus-rosales-ramos.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/MI5.png",
+    "bytes": 6091,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/10/24/dhs-highlights-worst-illegal-aliens-arrested-georgia|olbin omar lopez orellana": {
+    "checkedAt": "2026-10-28T20:33:38.994Z",
+    "name": "Olbin Omar Lopez-Orellana",
+    "result": "held",
+    "file": "dhs-20261024-olbin-omar-lopez-orellana.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-10/GA1.png",
+    "bytes": 7728,
+    "why": "needs visual check"
   }
 }

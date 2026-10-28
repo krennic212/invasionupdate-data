@@ -1,20 +1,21 @@
 {
-  "checkedAt": 1793214886067,
-  "checkedAtIso": "2026-10-28T19:14:46.067Z",
+  "checkedAt": 1793219605516,
+  "checkedAtIso": "2026-10-28T20:33:25.516Z",
   "added": [
-    "Julio Cesar Perez Alvarez",
-    "Isidoro Cruz Bernal",
-    "Sebastian Alejandro De Leon",
-    "Sardor Tirkashev",
-    "Christopher Antonio Rodriguez Molina"
+    "Operation Center (operation, not a person)",
+    "Operation Los (operation, not a person)",
+    "Operation Flip Switch (operation, not a person)",
+    "Operation Take Back America This (operation, not a person)",
+    "Operation Center (operation, not a person)",
+    "Operation Take Back America (operation, not a person)"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 85,
+  "scannedReleases": 87,
   "error": null,
-  "note": "Added 5 as approved: Julio Cesar Perez Alvarez, Isidoro Cruz Bernal, Sebastian Alejandro De Leon, Sardor Tirkashev, Christopher Antonio Rodriguez Molina",
+  "note": "Added 6 as approved: Operation Center (operation, not a person), Operation Los (operation, not a person), Operation Flip Switch (operation, not a person), Operation Take Back America This (operation, not a person), Operation Center (operation, not a person), Operation Take Back America (operation, not a person)",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

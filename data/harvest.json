@@ -140,7 +140,7 @@
     "office": "TheJusticeDept",
     "id": "doj-20261027-manuel-alejandro-melendez-cereceres",
     "when": "27 Oct 2026",
-    "severity": 65,
+    "severity": 59,
     "severityReason": "Alien smuggling",
     "severityCrimes": [
       "Alien smuggling"
@@ -692,7 +692,7 @@
     "office": "TheJusticeDept",
     "id": "doj-20261028-dimitri-beix",
     "when": "28 Oct 2026",
-    "severity": 55,
+    "severity": 50,
     "severityReason": "Weapons",
     "severityCrimes": [
       "Weapons"
@@ -735,8 +735,8 @@
     "voting": false,
     "origin": "Venezuela",
     "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
+    "lat": 41.6573,
+    "lon": -87.6799,
     "status": "approved",
     "tags": [
       "Entered under Biden"
@@ -799,7 +799,8 @@
     "status": "approved",
     "tags": [
       "Gang"
-    ]
+    ],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Alejandro Falfan Acosta",
@@ -827,7 +828,8 @@
     "status": "approved",
     "tags": [
       "Gang"
-    ]
+    ],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Vanesa Lopez Ibarra",
@@ -853,7 +855,8 @@
     "lat": 27.7941,
     "lon": -97.403,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Miguel Zavala Soto",
@@ -879,7 +882,8 @@
     "lat": 27.7941,
     "lon": -97.403,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Francisco De La Cruz Lira",
@@ -905,7 +909,8 @@
     "lat": 33.5865,
     "lon": -101.8606,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Maksim Sergeevich Shakirov",
@@ -959,7 +964,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Kassim Saleh Wasil",
@@ -985,7 +991,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Jhanmay Molina Perez",
@@ -1011,7 +1018,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Eugenio Douquesne-Millet",
@@ -1037,7 +1045,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Phetnakhone Sisounthone",
@@ -1063,7 +1072,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Foday Philip Kanu",
@@ -1089,7 +1099,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Kawsu Sillah",
@@ -1115,7 +1126,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Prince David Nwabueze",
@@ -1141,7 +1153,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Pheap Rom",
@@ -1167,7 +1180,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Thanh Van Nguyen",
@@ -2353,7 +2367,7 @@
     "office": "TheJusticeDept",
     "id": "doj-20261027-artem-stryzhak",
     "when": "27 Oct 2026",
-    "severity": 60,
+    "severity": 54,
     "severityReason": "Fraud (incl. voter fraud)",
     "severityCrimes": [
       "Fraud (incl. voter fraud)"
@@ -2847,7 +2861,7 @@
     "office": "EROSanAntonio",
     "id": "x-2114861241319428115-marcos-alvarez-crespo",
     "when": "26 Oct 2026",
-    "severity": 40,
+    "severity": 36,
     "severityReason": "Assault / battery",
     "severityCrimes": [
       "Assault / battery"
@@ -3888,7 +3902,8 @@
     "lat": 42.96,
     "lon": -85.67,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Sarah Jane Hulbert",
@@ -3914,7 +3929,8 @@
     "lat": 42.3474,
     "lon": -83.0604,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Kelvin Ramon Castillo Rodriguez",
@@ -3940,7 +3956,8 @@
     "lat": 42.3474,
     "lon": -83.0604,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Elmer Domingo Lopez Tomas",
@@ -3966,7 +3983,8 @@
     "lat": 42.3474,
     "lon": -83.0604,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Anderson Jesus Rosales Ramos",
@@ -3992,7 +4010,8 @@
     "lat": 42.96,
     "lon": -85.67,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Evince Jean Baptiste",
@@ -4458,7 +4477,8 @@
     "lon": -83.3885,
     "status": "approved",
     "tags": [],
-    "enteredSource": "Arrested: Olbin Omar Lopez-Orellana, a previously-deported illegal alien from Honduras, was arrested by ICE in Eatonton, Georgia on October 14."
+    "enteredSource": "Arrested: Olbin Omar Lopez-Orellana, a previously-deported illegal alien from Honduras, was arrested by ICE in Eatonton, Georgia on October 14.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Jorge Chipoco",
@@ -4624,8 +4644,8 @@
     "voting": false,
     "origin": "Guatemala",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
+    "lat": 36.3712,
+    "lon": -86.71,
     "status": "approved",
     "photoSourceUrl": "https://pbs.twimg.com/media/HVQWo8lXAAAjEYE?format=png&name=orig",
     "tags": []
@@ -7801,7 +7821,7 @@
     "office": "FBI",
     "id": "x-2112891847898972245-milan-tanovic",
     "when": "21 Oct 2026",
-    "severity": 50,
+    "severity": 45,
     "severityReason": "Drug trafficking",
     "severityCrimes": [
       "Drug trafficking"
@@ -8662,7 +8682,7 @@
     "office": "EROSanFrancisco",
     "id": "x-2112959272929956071-christian-saul-galindo-hernandez",
     "when": "21 Oct 2026",
-    "severity": 70,
+    "severity": 63,
     "severityReason": "Armed robbery / aggravated assault",
     "severityCrimes": [
       "Armed robbery / aggravated assault"
@@ -8749,7 +8769,7 @@
     "office": "EROLosAngeles",
     "id": "x-2112773624683737595-carlos-ayon-cisneros",
     "when": "21 Oct 2026",
-    "severity": 101,
+    "severity": 91,
     "severityReason": "Child sex crime",
     "severityCrimes": [
       "Child sex crime"
@@ -8778,7 +8798,7 @@
     "office": "EROLosAngeles",
     "id": "x-2112742922433233025-jose-manuel-ruiz-gonzalez",
     "when": "21 Oct 2026",
-    "severity": 90,
+    "severity": 81,
     "severityReason": "Rape / sexual assault",
     "severityCrimes": [
       "Rape / sexual assault"
@@ -8809,7 +8829,7 @@
     "office": "EROLosAngeles",
     "id": "x-2112711968536555924-guadalupe-vergara",
     "when": "21 Oct 2026",
-    "severity": 101,
+    "severity": 91,
     "severityReason": "Child sex crime",
     "severityCrimes": [
       "Child sex crime"
@@ -8838,7 +8858,7 @@
     "office": "EROBuffalo",
     "id": "x-2112702911402700807-fidel-leon-hernandez",
     "when": "21 Oct 2026",
-    "severity": 70,
+    "severity": 63,
     "severityReason": "Armed robbery / aggravated assault",
     "severityCrimes": [
       "Armed robbery / aggravated assault"
@@ -8868,7 +8888,7 @@
     "office": "EROBuffalo",
     "id": "x-2112698882157060102-farmon-farmonbekov",
     "when": "21 Oct 2026",
-    "severity": 182,
+    "severity": 164,
     "severityReason": "Child sex crime",
     "severityCrimes": [
       "Child sex crime",
@@ -10397,7 +10417,7 @@
     "office": "TheJusticeDept",
     "id": "doj-20250115-angelica-maria-francisco",
     "when": "15 Jan 2025",
-    "severity": 60,
+    "severity": 54,
     "severityReason": "Fraud (incl. voter fraud)",
     "severityCrimes": [
       "Fraud (incl. voter fraud)"
@@ -11311,7 +11331,7 @@
     "office": "TheJusticeDept",
     "id": "doj-20260709-jose-maria-hernandez-bautista",
     "when": "9 Jul 2026",
-    "severity": 60,
+    "severity": 54,
     "severityReason": "Fraud (incl. voter fraud)",
     "severityCrimes": [
       "Fraud (incl. voter fraud)"
@@ -11399,7 +11419,7 @@
     "office": "TheJusticeDept",
     "id": "doj-20260622-gordon-louis",
     "when": "22 Jun 2026",
-    "severity": 60,
+    "severity": 54,
     "severityReason": "Fraud (incl. voter fraud)",
     "severityCrimes": [
       "Fraud (incl. voter fraud)"
@@ -11959,7 +11979,7 @@
     "office": "TheJusticeDept",
     "id": "doj-20260529-lina-maria-orovio-hernandez",
     "when": "29 May 2026",
-    "severity": 60,
+    "severity": 54,
     "severityReason": "Fraud (incl. voter fraud)",
     "severityCrimes": [
       "Fraud (incl. voter fraud)"
@@ -12143,7 +12163,7 @@
     "office": "TheJusticeDept",
     "id": "doj-20260917-dmitry-shushlebin",
     "when": "17 Sep 2026",
-    "severity": 60,
+    "severity": 54,
     "severityReason": "Fraud (incl. voter fraud)",
     "severityCrimes": [
       "Fraud (incl. voter fraud)"
@@ -13001,7 +13021,7 @@
     "office": "TheJusticeDept",
     "id": "doj-20261016-mory-kante",
     "when": "16 Oct 2026",
-    "severity": 70,
+    "severity": 63,
     "severityReason": "Armed robbery / aggravated assault",
     "severityCrimes": [
       "Armed robbery / aggravated assault"
@@ -15032,7 +15052,7 @@
     "office": "USAO_NDIN",
     "id": "x-2112180783431463009-angel-antonio-penaloza-rojo",
     "when": "19 Oct 2026",
-    "severity": 50,
+    "severity": 45,
     "severityReason": "Drug trafficking",
     "severityCrimes": [
       "Drug trafficking"
@@ -15125,7 +15145,7 @@
     "office": "USAO_WDTX",
     "id": "doj-20261019-yoirlan-tome-rojas",
     "when": "19 Oct 2026",
-    "severity": 98,
+    "severity": 89,
     "severityReason": "Kidnapping / human trafficking",
     "severityCrimes": [
       "Kidnapping / human trafficking"
@@ -16053,7 +16073,7 @@
     "office": "TheJusticeDept",
     "id": "doj-20261016-ygor-fokin-saviolli",
     "when": "16 Oct 2026",
-    "severity": 110,
+    "severity": 99,
     "severityReason": "Fraud (incl. voter fraud)",
     "severityCrimes": [
       "Fraud (incl. voter fraud)",
@@ -18258,7 +18278,7 @@
     "office": "TheJusticeDept",
     "id": "doj-20261015-edgar-sanchez-solis",
     "when": "15 Oct 2026",
-    "severity": 65,
+    "severity": 59,
     "severityReason": "Alien smuggling",
     "severityCrimes": [
       "Alien smuggling"
@@ -19460,7 +19480,7 @@
     "office": "TheJusticeDept",
     "id": "doj-20261014-ephantus-mwangi",
     "when": "14 Oct 2026",
-    "severity": 60,
+    "severity": 54,
     "severityReason": "Fraud (incl. voter fraud)",
     "severityCrimes": [
       "Fraud (incl. voter fraud)"
@@ -22242,7 +22262,7 @@
     "office": "TheJusticeDept",
     "id": "doj-20261009-gabriel-aguilar-benitez",
     "when": "9 Oct 2026",
-    "severity": 105,
+    "severity": 95,
     "severityReason": "Weapons",
     "severityCrimes": [
       "Weapons",
@@ -22272,7 +22292,7 @@
     "office": "DHSgov",
     "id": "dhs-20260623-felix-jeronimo-rojas",
     "when": "23 Jun 2026",
-    "severity": 160,
+    "severity": 144,
     "severityReason": "Rape / sexual assault",
     "severityCrimes": [
       "Rape / sexual assault",
@@ -22302,7 +22322,7 @@
     "office": "TheJusticeDept",
     "id": "doj-20261005-miguel-francisco-mora-nunez",
     "when": "5 Oct 2026",
-    "severity": 228,
+    "severity": 205,
     "severityReason": "Attack on police officer",
     "severityCrimes": [
       "Attack on police officer",
@@ -22334,7 +22354,7 @@
     "office": "TheJusticeDept",
     "id": "doj-20261005-christhian-aybar-berroa",
     "when": "5 Oct 2026",
-    "severity": 228,
+    "severity": 205,
     "severityReason": "Attack on police officer",
     "severityCrimes": [
       "Attack on police officer",
@@ -22839,7 +22859,7 @@
     "office": "EROSeattle",
     "id": "x-2108301407023444186-zoulin-cai",
     "when": "8 Oct 2026",
-    "severity": 60,
+    "severity": 54,
     "severityReason": "Fraud (incl. voter fraud)",
     "severityCrimes": [
       "Fraud (incl. voter fraud)"
@@ -23371,7 +23391,7 @@
     "office": "EROSeattle",
     "id": "x-2107935515685380503-miguel-lizarraga-saucedo",
     "when": "7 Oct 2026",
-    "severity": 30,
+    "severity": 27,
     "severityReason": "Drug possession",
     "severityCrimes": [
       "Drug possession"
@@ -23668,7 +23688,7 @@
     "office": "USAO_WDMO",
     "id": "x-2107591515270701093-edilberto-gonzalez-barrera",
     "when": "6 Oct 2026",
-    "severity": 60,
+    "severity": 54,
     "severityReason": "Weapons",
     "severityCrimes": [
       "Weapons",
@@ -24731,7 +24751,7 @@
     "office": "ATFHQ",
     "id": "x-2106036668251717926-jesus-soto-parada",
     "when": "2 Oct 2026",
-    "severity": 70,
+    "severity": 63,
     "severityReason": "Armed robbery / aggravated assault",
     "severityCrimes": [
       "Armed robbery / aggravated assault"
@@ -25331,7 +25351,7 @@
     "office": "DHSgov",
     "id": "dhs-20261008-jose-luis-mata-cedillo",
     "when": "8 Oct 2026",
-    "severity": 110,
+    "severity": 99,
     "severityReason": "Weapons",
     "severityCrimes": [
       "Weapons",
@@ -27183,7 +27203,7 @@
     "office": "ICEgov",
     "id": "ice-2026-09-18-jaramillo",
     "when": "18 Sep 2026",
-    "severity": 60,
+    "severity": 54,
     "severityReason": "Fraud (incl. voter fraud)",
     "severityCrimes": [
       "Fraud (incl. voter fraud)"
@@ -27917,7 +27937,7 @@
     "office": "EROBaltimore",
     "id": "1927519118237774037",
     "when": "28 May 2025",
-    "severity": 90,
+    "severity": 81,
     "severityReason": "Rape / sexual assault",
     "severityCrimes": [
       "Rape / sexual assault"
@@ -27947,7 +27967,7 @@
     "office": "EROBaltimore",
     "id": "ice-20250403-edvin-giovanni-ceron-reyes",
     "when": "3 Apr 2025",
-    "severity": 94,
+    "severity": 84,
     "severityReason": "Attempted murder",
     "severityCrimes": [
       "Attempted murder"
@@ -28476,7 +28496,7 @@
     "office": "HSIMaryland",
     "id": "doj-20260910-jose-adan-lopez-guevara",
     "when": "10 Sep 2026",
-    "severity": 92,
+    "severity": 83,
     "severityReason": "Child sex crime",
     "severityCrimes": [
       "Child sex crime"

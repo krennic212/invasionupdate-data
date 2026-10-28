@@ -34,5 +34,71 @@
     ],
     "text": "ICE 20 Oct 2026, as posted: From October 4 to October 10, ICE arrested 131 gang-affiliated individuals, including 129 by ERO and 2 by HSI. 131 total, 3 named on their own rows, 128 unnamed counted here. Unnamed cluster, heads=128. Also posted: https://www.ice.gov/news/releases/ice-arrests-more-100-gang-members-less-week",
     "operation": true
+  },
+  {
+    "id": "op-icegov-20261024-operation-center",
+    "name": "Operation Center",
+    "when": "24 Oct 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.ice.gov/news/releases/criminal-alien-el-salvador-dies-ice-custody-georgia",
+    "people": [],
+    "text": "ICEgov 24 Oct 2026, as posted: Consistent with ICE policy, Enforcement and Removal Operations has completed all required notifications to the Department of Homeland Security, the ICE Office of Inspector General and the ICE Office of Professional Responsibility via the Joint Intake Operation Center. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
+  },
+  {
+    "id": "op-thejusticedept-20261028-operation-los",
+    "name": "Operation Los",
+    "when": "28 Oct 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/usao-pr/pr/17-members-drug-trafficking-organization-charged-drug-trafficking-and-firearms",
+    "people": [],
+    "text": "TheJusticeDept 28 Oct 2026, as posted: ” “Operation Los Tíos sends a clear message: the DEA’s mission extends throughout Puerto Rico. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
+  },
+  {
+    "id": "op-thejusticedept-20261028-operation-flip-switch",
+    "name": "Operation Flip Switch",
+    "when": "28 Oct 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/usao-ednc/pr/robeson-county-tienda-caught-selling-over-19-pounds-cocaine-and-heroin-leads-12-years",
+    "people": [],
+    "text": "TheJusticeDept 28 Oct 2026, as posted: ” This prosecution is part of Operation Flip Switch, a component of the Homeland Security Task Force (HSTF) established under Executive Order 14159, Protecting the American People Against Invasion. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
+  },
+  {
+    "id": "op-thejusticedept-20261028-operation-take-back-america-this",
+    "name": "Operation Take Back America This",
+    "when": "28 Oct 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/usao-wdmo/pr/kansas-city-woman-receives-24-months-over-destructive-devices-linked-planned-ice",
+    "people": [],
+    "text": "TheJusticeDept 28 Oct 2026, as posted: Operation Take Back America This case is part of Operation Take Back America, a nationwide initiative that marshals the full resources of the Department of Justice to repel the invasion of illegal immigration, achieve the total elimination of cartels and transnational criminal organizations (TCOs), and protect our communities from the perpetrators of violent crime. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
+  },
+  {
+    "id": "op-thejusticedept-20261027-operation-center",
+    "name": "Operation Center",
+    "when": "27 Oct 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/usao-dc/pr/scam-center-strike-force-expands-reach-target-global-crime-syndicates-charges-scammers",
+    "people": [],
+    "text": "TheJusticeDept 27 Oct 2026, as posted: Secret Service, these cryptocurrency seizure matters are handled by the Global Investigative Operation Center and Field Offices in San Francisco, San Diego, Memphis, Washington D. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
+  },
+  {
+    "id": "op-thejusticedept-20261026-operation-take-back-america",
+    "name": "Operation Take Back America",
+    "when": "26 Oct 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/usao-cdca/pr/terrorism-linked-colombian-drug-trafficker-pleads-guilty-conspiring-import-nearly-62",
+    "people": [],
+    "text": "TheJusticeDept 26 Oct 2026, as posted: This case is part of Operation Take Back America, a nationwide initiative that marshals the full resources of the Department of Justice to repel the invasion of illegal immigration, achieve the total elimination of cartels and transnational criminal organizations (TCOs), and protect our communities from the perpetrators of violent crime. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
   }
 ]
