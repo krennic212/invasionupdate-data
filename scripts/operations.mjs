@@ -7,8 +7,10 @@
  *    No count is invented when the text does not state one.
  *
  * Not an operation: an office ("Joint Intake Operation Center", "Global
- * Investigative Operation Center"). A glued sentence word is not part of the
- * name ("Operation Take Back America. This" stays "Operation Take Back America").
+ * Investigative Operation Center"). A period ends the name, so
+ * "Operation Center. ICE makes…" is not "Operation Center ICE."
+ * A glued sentence word is not part of the name ("Operation Take Back America. This"
+ * stays "Operation Take Back America").
  * One card per operation name. The X scan calls extractOperation.
  */
 import { urlsIn } from "./rules.mjs";
@@ -24,10 +26,11 @@ const COUNT_PATTERNS = [
   /(\d{2,4})\s+(?:(?:criminal\s+)?illegal\s+aliens?|gang[- ]affiliated\s+individuals?|non-?citizens?|individuals?|aliens?)\s+(?:have\s+been\s+|were\s+|was\s+)?arrested/i,
 ];
 
-const OP_WORD = "[A-ZÁÉÍÓÚÑÜ][A-Za-zÁÉÍÓÚÑÜáéíóúñü0-9'’.-]*";
+const OP_WORD = "[A-ZÁÉÍÓÚÑÜ][A-Za-zÁÉÍÓÚÑÜáéíóúñü0-9'’-]*";
 const NAMED_OP = new RegExp(`\\bOperation\\s+(${OP_WORD}(?:\\s+${OP_WORD}){0,4})`);
 const OP_TRAIL = /^(?:This|These|That|The|A|An|It|In|On|At|For|And|Or)$/;
 const OP_OFFICE = /^(?:Center|Office|Offices|Division|Field|Room|Plan|Orders|Order)$/i;
+const OP_AGENCY = /^(?:ICE|DHS|DOJ|ERO|HSI|CBP|USCIS|FBI|DEA)$/i;
 
 function cleanOpName(raw) {
   const words = String(raw || "")
@@ -38,6 +41,7 @@ function cleanOpName(raw) {
   while (words.length && OP_TRAIL.test(words[words.length - 1])) words.pop();
   if (!words.length) return "";
   if (words.length === 1 && OP_OFFICE.test(words[0])) return "";
+  if (words.every((w) => OP_OFFICE.test(w) || OP_AGENCY.test(w))) return "";
   return words.join(" ");
 }
 

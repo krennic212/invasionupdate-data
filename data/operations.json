@@ -69,17 +69,6 @@
     "operation": true
   },
   {
-    "id": "op-icegov-20261024-operation-center-ice",
-    "name": "Operation Center ICE",
-    "when": "24 Oct 2026",
-    "place": "Not stated",
-    "posted": null,
-    "sourceUrl": "https://www.ice.gov/news/releases/criminal-alien-el-salvador-dies-ice-custody-georgia",
-    "people": [],
-    "text": "ICEgov 24 Oct 2026, as posted: Consistent with ICE policy, Enforcement and Removal Operations has completed all required notifications to the Department of Homeland Security, the ICE Office of Inspector General and the ICE Office of Professional Responsibility via the Joint Intake Operation Center. ICE makes official notifications to Congress, non-governmental organization stakeholders and the media upon reports of in-custody deaths and posts news releases with relevant details on its public website. Named operation. Posted count not stated in this text. Do not invent one.",
-    "operation": true
-  },
-  {
     "id": "op-thejusticedept-20261027-operation-no-doze",
     "name": "Operation No Doze",
     "when": "27 Oct 2026",

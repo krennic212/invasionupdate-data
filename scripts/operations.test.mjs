@@ -42,12 +42,15 @@ test("catches a noncitizen count, a have-been count, and a named operation", () 
   assert.equal(named.total, 0);
   assert.equal(extractOperation("notifications via the Joint Intake Operation Center."), null);
   assert.equal(extractOperation("Joint Intake Operation Center."), null);
+  assert.equal(extractOperation("via the Joint Intake Operation Center. ICE makes official notifications to Congress."), null);
   const take = extractOperation("This case is part of Operation Take Back America. This case continues.");
   assert.equal(take.name, "Operation Take Back America");
   const glued = extractOperation("Operation Take Back America This case is part of Operation Take Back America, a nationwide initiative.");
   assert.equal(glued.name, "Operation Take Back America");
   const tios = extractOperation("Operation Los Tíos sends a clear message.");
   assert.equal(tios.name, "Operation Los Tíos");
+  const doze = extractOperation("This case is a result of “Operation No Doze” a nationwide enforcement action.");
+  assert.equal(doze.name, "Operation No Doze");
   assert.equal(extractOperation("these cryptocurrency seizure matters are handled by the Global Investigative Operation Center and Field Offices."), null);
 });
 test("skips a release that names almost everyone", () => {
