@@ -1,5 +1,147 @@
 [
   {
+    "name": "Rony Izaguirre-Henriquez",
+    "city": "Prince George's County, MD",
+    "crime": "Convicted: Rony Izaguirre-Henriquez, a criminal illegal alien from Honduras, convicted for murder, participating in gang activity resulting in death, and assault in Prince George's County, Maryland.",
+    "usa": "DHS release Oct 28, 2026: WORST OF THE WORST: ICE Arrests Murderers, Pedophiles, and Violent Assailants | Homeland Security",
+    "foreign": "Not stated in post",
+    "picked": "10/28/2026 (DHS release)",
+    "entered": "Not stated",
+    "office": "DHSgov",
+    "id": "dhs-20261028-rony-izaguirre-henriquez",
+    "when": "28 Oct 2026",
+    "severity": 135,
+    "severityReason": "Murder / manslaughter",
+    "severityCrimes": [
+      "Murder / manslaughter",
+      "Assault / battery"
+    ],
+    "text": "DHS Oct 28, 2026, as posted: Rony Izaguirre-Henriquez, a criminal illegal alien from Honduras, convicted for murder, participating in gang activity resulting in death, and assault in Prince George's County, Maryland.",
+    "photo": "",
+    "via": "dhs.gov/news/2026/10/28/worst-worst-ice-arrests-murderers-pedophiles-and-violent-assailants",
+    "sourceUrl": "https://www.dhs.gov/news/2026/10/28/worst-worst-ice-arrests-murderers-pedophiles-and-violent-assailants",
+    "voting": false,
+    "origin": "Honduras",
+    "confirmedBy": "DHS",
+    "lat": 38.7849,
+    "lon": -76.8721,
+    "status": "approved",
+    "tags": []
+  },
+  {
+    "name": "Francisco Chapas-Sanchez",
+    "city": "Chicago, IL",
+    "crime": "Convicted: Francisco Chapas-Sanchez, a criminal illegal alien from Mexico, convicted for predatory criminal sexual assault of a child in Chicago, Illinois.",
+    "usa": "DHS release Oct 28, 2026: WORST OF THE WORST: ICE Arrests Murderers, Pedophiles, and Violent Assailants | Homeland Security",
+    "foreign": "Not stated in post",
+    "picked": "10/28/2026 (DHS release)",
+    "entered": "Not stated",
+    "office": "DHSgov",
+    "id": "dhs-20261028-francisco-chapas-sanchez",
+    "when": "28 Oct 2026",
+    "severity": 92,
+    "severityReason": "Child sex crime",
+    "severityCrimes": [
+      "Child sex crime"
+    ],
+    "text": "DHS Oct 28, 2026, as posted: Francisco Chapas-Sanchez, a criminal illegal alien from Mexico, convicted for predatory criminal sexual assault of a child in Chicago, Illinois.",
+    "photo": "",
+    "via": "dhs.gov/news/2026/10/28/worst-worst-ice-arrests-murderers-pedophiles-and-violent-assailants",
+    "sourceUrl": "https://www.dhs.gov/news/2026/10/28/worst-worst-ice-arrests-murderers-pedophiles-and-violent-assailants",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "DHS",
+    "lat": 41.86,
+    "lon": -87.65,
+    "status": "approved",
+    "tags": []
+  },
+  {
+    "name": "Jaime Ramirez-Almaraz",
+    "city": "Salt Lake City, UT",
+    "crime": "Convicted: Jaime Ramirez-Almaraz, a criminal illegal alien from Mexico, convicted for aggravated assault and burglary in Salt Lake City, Utah.",
+    "usa": "DHS release Oct 28, 2026: WORST OF THE WORST: ICE Arrests Murderers, Pedophiles, and Violent Assailants | Homeland Security",
+    "foreign": "Not stated in post",
+    "picked": "10/28/2026 (DHS release)",
+    "entered": "Not stated",
+    "office": "DHSgov",
+    "id": "dhs-20261028-jaime-ramirez-almaraz",
+    "when": "28 Oct 2026",
+    "severity": 105,
+    "severityReason": "Armed robbery / aggravated assault",
+    "severityCrimes": [
+      "Armed robbery / aggravated assault",
+      "Burglary / theft"
+    ],
+    "text": "DHS Oct 28, 2026, as posted: Jaime Ramirez-Almaraz, a criminal illegal alien from Mexico, convicted for aggravated assault and burglary in Salt Lake City, Utah.",
+    "photo": "",
+    "via": "dhs.gov/news/2026/10/28/worst-worst-ice-arrests-murderers-pedophiles-and-violent-assailants",
+    "sourceUrl": "https://www.dhs.gov/news/2026/10/28/worst-worst-ice-arrests-murderers-pedophiles-and-violent-assailants",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "DHS",
+    "lat": 40.7559,
+    "lon": -111.8967,
+    "status": "approved",
+    "tags": []
+  },
+  {
+    "name": "Rafael Limber Leon-Garcia",
+    "city": "Not stated",
+    "crime": "Convicted: Rafael Limber Leon-Garcia, a criminal illegal alien from Ecuador, convicted for conspiracy to possess with intent to distribute 5 kilograms or more of cocaine in the Southern District of Florida.",
+    "usa": "DHS release Oct 28, 2026: WORST OF THE WORST: ICE Arrests Murderers, Pedophiles, and Violent Assailants | Homeland Security",
+    "foreign": "Not stated in post",
+    "picked": "10/28/2026 (DHS release)",
+    "entered": "Not stated",
+    "office": "DHSgov",
+    "id": "dhs-20261028-rafael-limber-leon-garcia",
+    "when": "28 Oct 2026",
+    "severity": 50,
+    "severityReason": "Drug trafficking",
+    "severityCrimes": [
+      "Drug trafficking"
+    ],
+    "text": "DHS Oct 28, 2026, as posted: Rafael Limber Leon-Garcia, a criminal illegal alien from Ecuador, convicted for conspiracy to possess with intent to distribute 5 kilograms or more of cocaine in the Southern District of Florida.",
+    "photo": "",
+    "via": "dhs.gov/news/2026/10/28/worst-worst-ice-arrests-murderers-pedophiles-and-violent-assailants",
+    "sourceUrl": "https://www.dhs.gov/news/2026/10/28/worst-worst-ice-arrests-murderers-pedophiles-and-violent-assailants",
+    "voting": false,
+    "origin": "Ecuador",
+    "confirmedBy": "DHS",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "tags": []
+  },
+  {
+    "name": "Fabiola Vega",
+    "city": "Waseca, MN",
+    "crime": "Convicted: Fabiola Vega, a criminal illegal alien from Mexico, convicted for conspiracy to distribute and possession with intent to distribute heroin in Waseca, Minnesota.",
+    "usa": "DHS release Oct 28, 2026: WORST OF THE WORST: ICE Arrests Murderers, Pedophiles, and Violent Assailants | Homeland Security",
+    "foreign": "Not stated in post",
+    "picked": "10/28/2026 (DHS release)",
+    "entered": "Not stated",
+    "office": "DHSgov",
+    "id": "dhs-20261028-fabiola-vega",
+    "when": "28 Oct 2026",
+    "severity": 50,
+    "severityReason": "Drug trafficking",
+    "severityCrimes": [
+      "Drug trafficking"
+    ],
+    "text": "DHS Oct 28, 2026, as posted: Fabiola Vega, a criminal illegal alien from Mexico, convicted for conspiracy to distribute and possession with intent to distribute heroin in Waseca, Minnesota.",
+    "photo": "",
+    "via": "dhs.gov/news/2026/10/28/worst-worst-ice-arrests-murderers-pedophiles-and-violent-assailants",
+    "sourceUrl": "https://www.dhs.gov/news/2026/10/28/worst-worst-ice-arrests-murderers-pedophiles-and-violent-assailants",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "DHS",
+    "lat": 44.0834,
+    "lon": -93.5108,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Julio Cesar Perez Alvarez",
     "city": "Columbus, OH",
     "crime": "Arrested: Julio Cesar Perez Alvarez, an illegal alien from Mexico, arrested by ICE in Columbus, Ohio, on October 15.",
@@ -4505,7 +4647,8 @@
     "lon": -83.9643,
     "status": "approved",
     "tags": [],
-    "enteredSource": "Arrested: Jorge Chipoco, an illegal alien from Peru, was arrested by ICE in Lawrenceville, Georgia on October 13."
+    "enteredSource": "Arrested: Jorge Chipoco, an illegal alien from Peru, was arrested by ICE in Lawrenceville, Georgia on October 13.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Rigoberto Gabriel Toj",
@@ -4532,7 +4675,8 @@
     "lon": -84.295,
     "status": "approved",
     "tags": [],
-    "enteredSource": "Arrested: Rigoberto Gabriel Toj, an illegal alien from Guatemala, was arrested by ICE in Decatur, Georgia on October 18."
+    "enteredSource": "Arrested: Rigoberto Gabriel Toj, an illegal alien from Guatemala, was arrested by ICE in Decatur, Georgia on October 18.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Selvin Cruz Gallo",
@@ -4559,7 +4703,8 @@
     "lon": -84.5825,
     "status": "approved",
     "tags": [],
-    "enteredSource": "Arrested: Selvin Cruz Gallo, an illegal alien from Honduras, was arrested by ICE in Mableton, Georgia on October 13."
+    "enteredSource": "Arrested: Selvin Cruz Gallo, an illegal alien from Honduras, was arrested by ICE in Mableton, Georgia on October 13.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Hector Gutierrez Espinoza",
@@ -4586,7 +4731,8 @@
     "lon": -84.295,
     "status": "approved",
     "tags": [],
-    "enteredSource": "Arrested: Hector Gutierrez Espinoza, an illegal alien from Mexico, was arrested by ICE in Decatur, Georgia on October 14."
+    "enteredSource": "Arrested: Hector Gutierrez Espinoza, an illegal alien from Mexico, was arrested by ICE in Decatur, Georgia on October 14.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Jai Dong",
@@ -8363,7 +8509,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Marvin Jonathan Ignacio Lopez-Portuguez",
@@ -8389,7 +8536,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Elias Izquiero Manuel",
@@ -8416,7 +8564,8 @@
     "lon": null,
     "status": "approved",
     "tags": [],
-    "enteredSource": "Arrested: Elias Izquiero Manuel, an illegal alien from Mexico, arrested by ICE on October 18."
+    "enteredSource": "Arrested: Elias Izquiero Manuel, an illegal alien from Mexico, arrested by ICE on October 18.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Enrique Balcazar-Arias",

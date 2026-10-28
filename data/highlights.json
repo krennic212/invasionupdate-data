@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-28",
   "windowDays": 7,
-  "total": 169,
+  "total": 174,
   "rows": [
     {
       "id": "dhs-20261023-anthony-tyrone-higgs",
@@ -123,6 +123,17 @@
         "Attack on police officer",
         "Assault / battery",
         "DUI"
+      ]
+    },
+    {
+      "id": "dhs-20261028-rony-izaguirre-henriquez",
+      "name": "Rony Izaguirre-Henriquez",
+      "when": "28 Oct 2026",
+      "severity": 135,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Assault / battery"
       ]
     },
     {
@@ -285,17 +296,6 @@
       ]
     },
     {
-      "id": "x-2115159447735861546-fredis-omar-archaga-ponce",
-      "name": "Fredis Omar Archaga Ponce",
-      "when": "27 Oct 2026",
-      "severity": 110,
-      "severityReason": "Fraud (incl. voter fraud)",
-      "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Drug trafficking"
-      ]
-    },
-    {
       "id": "x-2115159442916266452-gerson-roldan-irias-villafranca",
       "name": "Gerson Roldan Irias Villafranca",
       "when": "27 Oct 2026",
@@ -310,6 +310,16 @@
       "name": "Francisco Cortez-Perez",
       "when": "23 Oct 2026",
       "severity": 101,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261028-francisco-chapas-sanchez",
+      "name": "Francisco Chapas-Sanchez",
+      "when": "28 Oct 2026",
+      "severity": 92,
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"

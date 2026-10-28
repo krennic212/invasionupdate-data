@@ -67,5 +67,27 @@
     "people": [],
     "text": "TheJusticeDept 26 Oct 2026, as posted: This case is part of Operation Take Back America, a nationwide initiative that marshals the full resources of the Department of Justice to repel the invasion of illegal immigration, achieve the total elimination of cartels and transnational criminal organizations (TCOs), and protect our communities from the perpetrators of violent crime. Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true
+  },
+  {
+    "id": "op-icegov-20261024-operation-center-ice",
+    "name": "Operation Center ICE",
+    "when": "24 Oct 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.ice.gov/news/releases/criminal-alien-el-salvador-dies-ice-custody-georgia",
+    "people": [],
+    "text": "ICEgov 24 Oct 2026, as posted: Consistent with ICE policy, Enforcement and Removal Operations has completed all required notifications to the Department of Homeland Security, the ICE Office of Inspector General and the ICE Office of Professional Responsibility via the Joint Intake Operation Center. ICE makes official notifications to Congress, non-governmental organization stakeholders and the media upon reports of in-custody deaths and posts news releases with relevant details on its public website. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
+  },
+  {
+    "id": "op-thejusticedept-20261027-operation-no-doze",
+    "name": "Operation No Doze",
+    "when": "27 Oct 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/usao-wdmo/pr/kansas-city-woman-pleads-guilty-paycheck-protection-plan-fraud",
+    "people": [],
+    "text": "TheJusticeDept 27 Oct 2026, as posted: This case is a result of “Operation No Doze” a nationwide enforcement action led by the Justice Department’s National Fraud Enforcement Division, the Small Business Administration (SBA), and the SBA Office of Inspector General (SBA-OIG), targeting fraud in the SBA’s Paycheck Protection Program (PPP). Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
   }
 ]

@@ -1,21 +1,22 @@
 {
-  "checkedAt": 1793219605516,
-  "checkedAtIso": "2026-10-28T20:33:25.516Z",
+  "checkedAt": 1793220562812,
+  "checkedAtIso": "2026-10-28T20:49:22.812Z",
   "added": [
-    "Operation Center (operation, not a person)",
-    "Operation Los (operation, not a person)",
-    "Operation Flip Switch (operation, not a person)",
-    "Operation Take Back America This (operation, not a person)",
-    "Operation Center (operation, not a person)",
-    "Operation Take Back America (operation, not a person)"
+    "Rony Izaguirre-Henriquez",
+    "Francisco Chapas-Sanchez",
+    "Jaime Ramirez-Almaraz",
+    "Rafael Limber Leon-Garcia",
+    "Fabiola Vega",
+    "Operation Center ICE (operation, not a person)",
+    "Operation No Doze (operation, not a person)"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 87,
+  "scannedReleases": 91,
   "error": null,
-  "note": "Added 6 as approved: Operation Center (operation, not a person), Operation Los (operation, not a person), Operation Flip Switch (operation, not a person), Operation Take Back America This (operation, not a person), Operation Center (operation, not a person), Operation Take Back America (operation, not a person)",
+  "note": "Added 7 as approved: Rony Izaguirre-Henriquez, Francisco Chapas-Sanchez, Jaime Ramirez-Almaraz, Rafael Limber Leon-Garcia, Fabiola Vega, Operation Center ICE (operation, not a person), Operation No Doze (operation, not a person)",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
