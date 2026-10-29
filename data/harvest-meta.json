@@ -5,13 +5,9 @@
   "pending": 26,
   "photos": 287,
   "reviewRows": 764,
-  "lastAddedAt": "2026-10-29T17:14:48Z",
-  "lastAddedCount": 3,
-  "lastAdded": [
-    "LUIS ALBERTO ARREGUIN-VILLA",
-    "Omar Guadalupe Rostro-Gamez",
-    "Juan Romualdo Martinez Baldivia"
-  ],
+  "lastAddedAt": "2026-10-29T17:16:27Z",
+  "lastAddedCount": 0,
+  "lastAdded": [],
   "harvestSha256": "924bf5889a6948e62926cffb6124a22dff7cac9bd33bac98a7e3978070e8c73f",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

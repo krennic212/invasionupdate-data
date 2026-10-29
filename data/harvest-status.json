@@ -1,30 +1,16 @@
 {
-  "checkedAt": 1793293933729,
-  "checkedAtIso": "2026-10-29T17:12:13.729Z",
+  "checkedAt": 1793294187796,
+  "checkedAtIso": "2026-10-29T17:16:27.796Z",
   "added": [
-    "Florencio Magana-Sarabia",
-    "Selvin Porfidio Gonzalez Escobar",
-    "Adrianus Marinus Van Der Staak",
-    "Saida Adali Hirachete Olivarez",
-    "Juan Florencio Ramos",
-    "Yamila Avalos",
-    "Michael Agah",
-    "Luis Alberto DeJesus",
-    "Edread Ray Stanley",
-    "Operation Ghostbusters (operation, not a person)",
-    "Operation No Doze Launches (operation, not a person)",
-    "Operation Silver Sentinel (operation, not a person)"
+    "Operation Gate Keeper (operation, not a person)"
   ],
   "addedStatus": "approved",
-  "heldPending": [
-    "Michael Agah (voting row with no city)",
-    "Edread Ray Stanley (voting row with no city)"
-  ],
+  "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 92,
+  "scannedReleases": 98,
   "error": null,
-  "note": "Added 12 as approved: Florencio Magana-Sarabia, Selvin Porfidio Gonzalez Escobar, Adrianus Marinus Van Der Staak, Saida Adali Hirachete Olivarez, Juan Florencio Ramos, Yamila Avalos, Michael Agah, Luis Alberto DeJesus, Edread Ray Stanley, Operation Ghostbusters (operation, not a person), Operation No Doze Launches (operation, not a person), Operation Silver Sentinel (operation, not a person)",
+  "note": "Added 1 as approved: Operation Gate Keeper (operation, not a person)",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
