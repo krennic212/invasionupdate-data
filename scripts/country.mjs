@@ -44,7 +44,7 @@ export const DEMONYMS = {
 };
 const EXTRA = ["El Salvador", "Dominican Republic", "Trinidad and Tobago", "Costa Rica", "South Korea", "North Korea", "Cape Verde",
   "Central African Republic", "Democratic Republic of the Congo", "Republic of the Congo", "Bahamas", "Burma", "Myanmar", "Ivory Coast",
-  "Cote d'Ivoire", "Hong Kong", "St. Lucia", "St. Kitts and Nevis", "Guinea-Bissau", "Equatorial Guinea", "Timor-Leste", "Brunei", "Singapore",
+  "Cote d'Ivoire", "Hong Kong", "St. Lucia", "St. Kitts and Nevis", "Guinea-Bissau", "Equatorial Guinea", "Timor-Leste", "Brunei", "Singapore", "Bermuda",
   "Bhutan", "Maldives", "Iceland", "Luxembourg", "Malta", "Cyprus", "Slovenia", "Montenegro", "Andorra", "Monaco", "Liechtenstein",
   "Djibouti", "Somaliland", "South Sudan", "Gabon", "Lesotho", "Eswatini", "Swaziland", "Madagascar", "Mauritius", "Comoros", "Seychelles",
   "Dominica", "Haiti", "Korea", "Vanuatu", "Kiribati", "Tuvalu", "Nauru", "Solomon Islands", "Papua New Guinea", "Puerto Rico"];

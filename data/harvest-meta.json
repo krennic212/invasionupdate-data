@@ -1,21 +1,24 @@
 {
-  "updatedAt": "2026-10-29T19:31:13Z",
-  "rows": 1039,
-  "approved": 1013,
-  "pending": 26,
+  "updatedAt": "2026-10-29T19:51:06Z",
+  "rows": 1049,
+  "approved": 1025,
+  "pending": 24,
   "photos": 304,
   "reviewRows": 764,
-  "lastAddedAt": "2026-10-29T19:31:09Z",
-  "lastAddedCount": 7,
+  "lastAddedAt": "2026-10-29T19:51:03Z",
+  "lastAddedCount": 10,
   "lastAdded": [
-    "Juan Jose Leonardo De Leon",
-    "Estela Ruiz-Gomez",
-    "Juan Gomez Santiago",
-    "Raulier Lopez-Rivas",
-    "Luis Osorio",
-    "Juan Bravo",
-    "Mohamed Sabry Soliman"
+    "Serge Christian Dupont",
+    "Amerigo Di Nolfi",
+    "Elizabeth Margaret Crudup",
+    "Gregory Eugene Wade",
+    "Jacqueline Yvonne Papandreou Brown",
+    "Karl Anthony Wilkins",
+    "Patricia Elena Valencia Cardona",
+    "Richard John Reid",
+    "Taso Gretes",
+    "Phillip Alexander Carter"
   ],
-  "harvestSha256": "84aa93874544a4a7dc5a613fbc9a0279217c58fdcc807d8a277454a0f42f074a",
+  "harvestSha256": "33bc262457636909a7af448a5db1592327f6e89c83d0cc40d65d45c523a98851",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

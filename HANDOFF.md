@@ -1,3 +1,39 @@
+# HANDOFF: 2026-10-29 (2:55 PM CDT) OPA NC "Charges 18 More ... Illegally Voting" via data/pending.json + parser rule I (Krennic approved 2:43 PM CT)
+
+- Source: OPA Oct 29, 2026 "Justice Department Charges 18 More in North Carolina with Illegally Voting in 2024 Election"
+  https://www.justice.gov/opa/pr/justice-department-charges-18-more-north-carolina-illegally-voting-2024-election (DOJ
+  press-release API, uuid fb80125b-...; @TheJusticeDept X post 2115854639950119267). Copies: usao-ednc (963b014c-...) and
+  usao-wdnc (96471178-..., created 2:24 PM CT). No image in any copy (X graphics not used): photo "".
+- Before: 8 of 18 on the feed (6 live; Michael Agah + Edread Ray Stanley pending, holdReason "voting row with no city").
+  Missing 10: the 8 EDNC "a native of ..." people after Gonzalez Escobar, Phillip Alexander Carter (MDNC), Serge Christian Dupont (WDNC).
+- Added 10 rows through data/pending.json intake (AUTO_APPROVE=true, live scan off: MAX_LINKS=0 DOJ_PAGES=0 STATE_SOURCES=0
+  DAILY_SIGNAL=0), rows built by harvest.mjs rowsFromRelease / parse.mjs toRow from the release's own sentences, guards on,
+  none held: Dupont, Di Nolfi, Crudup, Wade, Papandreou Brown, Wilkins, Valencia Cardona, Reid, Gretes, Carter. All Charged,
+  voting=true, tags [] (same as existing voting rows). Every one is stated as a lawful permanent resident (non-citizen);
+  no minors, nobody at large.
+- Agah + Stanley: held only for "voting row with no city". The release lists them under "Western District of North Carolina"
+  and says "residing in Charlotte", so the place guard now passes: city "Charlotte, NC" (pin from city-geo), approved,
+  holdReason removed. Stanley origin "St. Kitts" -> "St. Kitts and Nevis" (the release: "a national of St. Kitts and Nevis").
+  Rebuilt row sentence/text identical to the held row before changing (checked in the intake script).
+- Place: where the release says they voted, else where it says they live (house rule, same as the 6 live rows):
+  Di Nolfi "voted in the 2024 general election in New Hanover County, North Carolina" (lives in Hampden County, MA);
+  Wilkins "the 2020 primary election in Wake County, North Carolina" (lives in Fulton County, GA). Duplin County, NC was
+  geocoded by geo.mjs (city-geo.json +1).
+- Origin: citizenship country when stated, else native country (Di Nolfi / Papandreou Brown United Kingdom, Gretes Canada;
+  Wade Bermuda, now in country.mjs EXTRA). Full wording ("a native of Italy, citizen of the United Kingdom, ...") stays in crime/text.
+- Parser fix (scripts/parse.mjs): rule I / NATIVE_STATUS "<Name>, [age,] a native of <Country>[, (a) citizen of <Country>,]
+  and (a) lawful|legal permanent resident" (+ the next sentence only when it is "He/She registered to vote ... voted ..." and
+  that sentence's "in X, State" becomes the place); PATTERNS[0] accepts "Dupont, 57,a" / "Dupont,57," spacing; AND_COUNTRIES
+  keeps "St. Kitts and Nevis" / "St. Vincent and the Grenadines"; extractPeople tags each hit with the state of the
+  "<X> District of <State>" heading block it sits under (sectionState), used by placeFromDistrict only when the URL has no
+  usao- office. Quoted officials (McCotter, Boyle, Bishop, Ferguson, Davis, Zito) are never names. Guards unchanged.
+  Old vs new parser on the last 400 DOJ API releases + "illegally voting" / "voting by an alien" title searches: 4 differ,
+  the 3 NC copies (18 names) and OPA "48 aliens election-related crimes" (same names, place "Not stated" -> the heading's
+  state; those people are already on the feed, rows unchanged).
+- Tests: scripts/voting-nc-roundup.test.mjs (real text: fixtures/opa-2026-10-29-nc-18-illegal-voting.json +
+  wdnc-2026-10-29-nc-18-illegal-voting.json; 18 exact names/origins/places, guards pass, officials excluded, negatives).
+  node --test 255/255; validate OK. Live rows 1039 -> 1049 (approved 1013 -> 1025).
+
 # HANDOFF: 2026-10-28 (11:59 PM CDT) X scan follows official release links from agency posts that name nobody (Krennic approved 11:32 PM CT)
 
 - Gap: @USAO_NV 2115536771094311377 (Oct 28, 3:10 PM CT) is only "Two Aliens From Sudan & Afghanistan Charged for Illegal

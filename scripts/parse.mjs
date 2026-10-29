@@ -116,7 +116,9 @@ const PATTERNS = [
   // "Ian Clive Burton, a criminal illegal alien from Jamaica, convicted for ..."
   // "John Doe, 45, a Mexican national, was charged ..."
   // "Jane Doe, 39, of Omaha, Nebraska, a citizen of Honduras, ..."
-  new RegExp(`(?:^|[—–-]\\s+|,\\s+|;\\s+(?:and\\s+)?|\\band\\s+|\\b(?:that|is)\\s+|\\b(?:arrested|removed|deported|charged|sentenced|indicted|convicted|apprehended|detained)\\s+)${NAME},\\s+${AGE}${OF_PLACE}${DESC}${TYPE}(?:\\s+(?:from|of)\\s+${COUNTRY})?`, "g"),
+  // "Serge Christian Dupont, 57,a French national ..." / "Dupont,57, a French national" (OPA / usao-wdnc Oct 29, 2026:
+  // a missing space on either side of the age)
+  new RegExp(`(?:^|[—–-]\\s+|,\\s+|;\\s+(?:and\\s+)?|\\band\\s+|\\b(?:that|is)\\s+|\\b(?:arrested|removed|deported|charged|sentenced|indicted|convicted|apprehended|detained)\\s+)${NAME},(?:\\s+|(?=\\d{1,3},))(?:\\d{1,3},\\s*)?${OF_PLACE}${DESC}${TYPE}(?:\\s+(?:from|of)\\s+${COUNTRY})?`, "g"),
   // "Jane Roe and John Doe, both illegal aliens from the Dominican Republic" (two people, two rows)
   // "Rudi Lacatusu and Mirabela Lacatusu, illegal aliens from Romania" (plural wording, no "both"; DHS Oct 13 2026)
   new RegExp(`(?:^|:\\s+|,\\s+|;\\s+(?:and\\s+)?|\\b(?:arrested|identified|charged|indicted|removed|deported)\\s+)${NAME}(?:,\\s+\\d{1,3},)?\\s+and\\s+${NAME},\\s+${AGE}(?:(?:both|each)\\s+${DESC}${TYPE}|${DESC}(alien|national|citizen|noncitizen|non-citizen)s)(?:\\s+(?:from|of)\\s+${COUNTRY})?`, "g"),
@@ -207,8 +209,10 @@ export function stateFromUsao(url) {
  * County") with the USAO district's state, when that city is in the map table or is a county; otherwise
  * the district's state name. The USAO district counts as the state. Empty when there is no district.
  */
-export function placeFromDistrict(sentence, url) {
-  const st = stateFromUsao(url);
+export function placeFromDistrict(sentence, url, sectionState = "") {
+  // sectionState: the "<X> District of <State>" heading the person is listed under in an OPA multi-district roundup
+  // (OPA Oct 29, 2026 NC: "residing in Charlotte" under "Western District of North Carolina"); the URL has no usao- office.
+  const st = stateFromUsao(url) || (CODES.has(sectionState) ? sectionState : "");
   if (!st) return "";
   const text = String(sentence || "");
   const loc =
@@ -313,7 +317,7 @@ export function isPlaceName(name, { title = "" } = {}) {
   return false;
 }
 
-const AND_COUNTRIES = /^(Antigua and Barbuda|Trinidad and Tobago|Bosnia and Herzegovina|Saint Kitts and Nevis|Sao Tome and Principe|Saint Vincent and the Grenadines)\b/;
+const AND_COUNTRIES = /^(Antigua and Barbuda|Trinidad and Tobago|Bosnia and Herzegovina|Saint Kitts and Nevis|St\. Kitts and Nevis|Sao Tome and Principe|Saint Vincent and the Grenadines|St\. Vincent and the Grenadines)\b/;
 
 function cleanCountry(c) {
   if (!c) return "";
@@ -343,6 +347,7 @@ function originFrom(desc, type, country) {
   return "";
 }
 
+const SECTION_HEAD = /^(?:(?:Central|Eastern|Northern|Southern|Western|Middle)\s+)?District\s+of\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)$/;
 const VERB = /\b(charged|indicted|convicted|sentenced|pleaded|pled|found guilty|arrested|removed|deported|accused|alleged|wanted|detained|apprehended)\b/i;
 
 /**
@@ -406,6 +411,21 @@ export function extractPeople(blocks, { title = "" } = {}) {
   // A linked hit never borrows the headline's stage: the headline may be about someone else ("Restaurant Owner
   // Pleads Guilty" is not the co-conspirator's plea). Its label comes from its own verbatim sentences only.
   for (const h of found) if (h.linked) h.noTitleStage = true;
+  // OPA multi-district roundups list people under "<X> District of <State>" headings: each hit keeps its heading's state
+  // (toRow -> placeFromDistrict fallback when the sentence names only a town, "residing in Charlotte"). Never a city.
+  const heads = [];
+  blocks.forEach((b, bi) => {
+    const hm = String(b).trim().match(SECTION_HEAD);
+    if (hm && STATES[hm[1]]) heads.push([bi, STATES[hm[1]]]);
+  });
+  if (heads.length) {
+    for (const h of found) {
+      const probe = String(h.sentence || "").slice(0, 60);
+      const bi = blocks.findIndex((b) => b.replace(/[\u2010\u2011]/g, "-").includes(probe));
+      const head = bi >= 0 ? heads.filter(([hi]) => hi < bi).pop() : null;
+      if (head) h.sectionState = head[1];
+    }
+  }
   return found;
 }
 
@@ -442,6 +462,12 @@ const ALL_FROM = new RegExp(`\\bAll\\s+of\\s+the\\s+(?:illegal\\s+)?aliens\\b[^.
 // lawful permanent resident, voted in an election ..." The status is in the naming sentence; the charge is in a later
 // sentence that names the surname ("Yousif and Safi are each charged with one count of voting by an alien.").
 const FROM_STATUS = new RegExp(`(?:^|,\\s+)${NAME},\\s+(?:\\d{1,3},\\s+)?(?:from|of)\\s+(?:the\\s+)?(${COUNTRY_ALT})\\s+and\\s+(?:an?\\s+)?(?:(?:lawful|legal)\\s+permanent\\s+resident|(?:illegal\\s+)?alien|non-?citizen)\\b`, "g");
+// I (OPA Oct 29, 2026 NC roundup): "<Name>, [age,] a native of Kenya and a lawful permanent resident residing in ..." /
+// "<Name>, 53, a native of Italy, citizen of the United Kingdom, and lawful permanent resident of the United States ...".
+// The status ("lawful permanent resident") is in the naming sentence; origin = the citizenship country when the sentence
+// states one, else the native country. The next sentence is added (verbatim) only when it says where the person voted.
+const NATIVE_STATUS = new RegExp(`(?:^|,\\s+)${NAME},\\s+(?:\\d{1,3},\\s*)?an?\\s+native\\s+of\\s+(?:the\\s+)?(${COUNTRY_ALT})(?:,\\s+(?:an?\\s+)?citizen\\s+of\\s+(?:the\\s+)?(${COUNTRY_ALT}),?)?\\s+and\\s+(?:an?\\s+)?(?:lawful|legal)\\s+permanent\\s+resident\\b`, "g");
+const VOTED_IN = /^(?:He|She)\s+registered\s+to\s+vote\b[^.]*\bvoted\b/;
 const STATUS_COUNTRY = new RegExp(`\\b(?:from|of)\\s+(?:the\\s+)?(${COUNTRY_ALT})(?![A-Za-z])`);
 
 function cleanName(n) {
@@ -544,6 +570,13 @@ export function linkedPeople(blocks, { title = "", seen = [] } = {}) {
         const surRe = new RegExp(`(?<![A-Za-z'’-])${escRe(sur)}(?![A-Za-z'’-])`);
         const charge = flat.slice(flat.indexOf(s) + 1).find((x) => surRe.test(x) && /\b(?:charged|indicted)\b/i.test(x));
         push({ name, origin: m[2], sentence: charge ? `${s} ${charge}` : withNowCharge(sents, i) });
+      }
+      // I: "<Name>, [age,] a native of <Country>[, citizen of <Country>,] and (a) lawful permanent resident ..." (OPA NC roundup).
+      NATIVE_STATUS.lastIndex = 0;
+      while ((m = NATIVE_STATUS.exec(s))) {
+        const next = sents[i + 1] || "";
+        const voted = VOTED_IN.test(next) ? cityFrom(next) : "";
+        push({ name: cleanName(m[1]), origin: m[3] || m[2], sentence: voted ? `${s} ${next}` : withNowCharge(sents, i), city: voted || cityFrom(s) });
       }
       // G: case paragraph (USAO Arizona weekly roundup).
       const det = s.match(/^(.*?)\b(?:who|which)\s+(?:were|was)\s+determined\s+to\s+be\s+(?:citizens?|nationals?)\s+of\b/);
@@ -751,7 +784,7 @@ export function toRow(hit, rel) {
   const a = AGENCY[rel.office] || { label: rel.office, confirmedBy: "DHS" };
   const d = dateParts(rel.date);
   const status = releaseLabel(hit.sentence, hit.noTitleStage ? "" : rel.title);
-  const city = hit.city || placeFromDistrict(hit.sentence, rel.url) || "Not stated";
+  const city = hit.city || placeFromDistrict(hit.sentence, rel.url, hit.sectionState) || "Not stated";
   return {
     name: hit.name,
     ...(hit.aka ? { aka: hit.aka } : {}),
