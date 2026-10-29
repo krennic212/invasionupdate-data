@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T03:56:42Z",
+  "updatedAt": "2026-10-29T03:58:07Z",
   "rows": 1000,
   "approved": 976,
   "pending": 24,
@@ -11,6 +11,6 @@
     "Moneir Elzobier Ali Yousif",
     "Khalida Safi"
   ],
-  "harvestSha256": "768888130d1a381a82e86c6571999c19f0e6690c4b85b2cf01f544ebfe0ca039",
+  "harvestSha256": "4840721257edfad390703554e26658320a6746dc2c4c99726c18dc1441e99a20",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

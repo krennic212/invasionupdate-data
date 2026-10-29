@@ -1,17 +1,14 @@
 {
-  "checkedAt": 1793246198929,
-  "checkedAtIso": "2026-10-29T03:56:38.929Z",
-  "added": [
-    "Moneir Elzobier Ali Yousif",
-    "Khalida Safi"
-  ],
+  "checkedAt": 1793246274624,
+  "checkedAtIso": "2026-10-29T03:57:54.624Z",
+  "added": [],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 0,
+  "scannedReleases": 90,
   "error": null,
-  "note": "Added 2 as approved: Moneir Elzobier Ali Yousif, Khalida Safi",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

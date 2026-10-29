@@ -22356,7 +22356,8 @@
     "tags": [
       "Gang"
     ],
-    "enteredSource": "Removed: Arturo Moises Urzua Yanez, a criminal illegal alien from Mexico and Surenos gang member, deported on October 2."
+    "enteredSource": "Removed: Arturo Moises Urzua Yanez, a criminal illegal alien from Mexico and Surenos gang member, deported on October 2.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Juan Jose Zavala Romero",
@@ -22385,7 +22386,8 @@
     "tags": [
       "Gang"
     ],
-    "enteredSource": "Image Juan Jose Zavala Romero, a criminal illegal alien from Honduras and Tango Blast gang member , deported on October 3."
+    "enteredSource": "Image Juan Jose Zavala Romero, a criminal illegal alien from Honduras and Tango Blast gang member , deported on October 3.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Yair de Jesus Trejo-Mendoza",
@@ -22413,7 +22415,8 @@
     "status": "approved",
     "tags": [
       "Gang"
-    ]
+    ],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Everardo Hernandez-Huizar",
@@ -22441,7 +22444,8 @@
     "status": "approved",
     "tags": [
       "Gang"
-    ]
+    ],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Antonio de Jesus Jimenez Martinez",
@@ -22470,7 +22474,8 @@
     "tags": [
       "Gang"
     ],
-    "enteredSource": "Image Antonio de Jesus Jimenez Martinez, a criminal illegal alien from Mexico and Paisas gang member , deported on October 2."
+    "enteredSource": "Image Antonio de Jesus Jimenez Martinez, a criminal illegal alien from Mexico and Paisas gang member , deported on October 2.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Josue Emmanuel Garcia-Ramirez",
@@ -22498,7 +22503,8 @@
     "status": "approved",
     "tags": [
       "Gang"
-    ]
+    ],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Juan Carlos Munoz-Aguilera",
@@ -22527,7 +22533,8 @@
     "tags": [
       "Gang"
     ],
-    "enteredSource": "Removed: Juan Carlos Munoz-Aguilera, a criminal illegal alien from Mexico and La Sierra Brown Knights gang member, deported on September 29."
+    "enteredSource": "Removed: Juan Carlos Munoz-Aguilera, a criminal illegal alien from Mexico and La Sierra Brown Knights gang member, deported on September 29.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Pedro Barajas-Garcia",
@@ -22555,7 +22562,8 @@
     "status": "approved",
     "tags": [
       "Gang"
-    ]
+    ],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Fidel Espinoza-Olvera",
@@ -22584,7 +22592,8 @@
     "tags": [
       "Gang"
     ],
-    "enteredSource": "Image Fidel Espinoza-Olvera, a criminal illegal alien from Mexico and Paisas gang member , deported on October 2."
+    "enteredSource": "Image Fidel Espinoza-Olvera, a criminal illegal alien from Mexico and Paisas gang member , deported on October 2.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Bryan David Tasiguano Leon",
@@ -25364,7 +25373,8 @@
       "Gang",
       "MS-13"
     ],
-    "enteredSource": "Removed: Manuel Barahona-Rivera, a criminal illegal alien from Honduras and MS-13 gang member, was deported on September 30."
+    "enteredSource": "Removed: Manuel Barahona-Rivera, a criminal illegal alien from Honduras and MS-13 gang member, was deported on September 30.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Jose Balmory Ramirez Rodriguez",
@@ -25393,7 +25403,8 @@
     "tags": [
       "Gang",
       "MS-13"
-    ]
+    ],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Jorge Andres Chirinos",
@@ -25421,7 +25432,8 @@
     "status": "approved",
     "tags": [
       "Gang"
-    ]
+    ],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Jose Refugio Rangel Machuca",
@@ -25447,7 +25459,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Jaime Ramirez-Diaz",
@@ -25474,7 +25487,8 @@
     "lon": null,
     "status": "approved",
     "tags": [],
-    "enteredSource": "Removed: Jaime Ramirez-Diaz, a criminal illegal alien from Mexico and suspected member of the Sinaloa Cartel, was deported on September 29."
+    "enteredSource": "Removed: Jaime Ramirez-Diaz, a criminal illegal alien from Mexico and suspected member of the Sinaloa Cartel, was deported on September 29.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Ever Magdiel Mejia-Vasquez",
@@ -25501,7 +25515,8 @@
     "lon": null,
     "status": "approved",
     "tags": [],
-    "enteredSource": "Removed: Ever Magdiel Mejia-Vasquez, a criminal illegal alien from Honduras and suspected member of the Maravilla Salva Trucha gang, was deported on October 2."
+    "enteredSource": "Removed: Ever Magdiel Mejia-Vasquez, a criminal illegal alien from Honduras and suspected member of the Maravilla Salva Trucha gang, was deported on October 2.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Pedro Ruiz-Cisneros",
@@ -25535,7 +25550,8 @@
     "tags": [
       "Gang"
     ],
-    "enteredSource": "Image Pedro Ruiz-Cisneros, a criminal illegal alien from Mexico and Barrio Azteca gang member , was deported on October 2, 2026."
+    "enteredSource": "Image Pedro Ruiz-Cisneros, a criminal illegal alien from Mexico and Barrio Azteca gang member , was deported on October 2, 2026.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Maria Solis-Iriqui",
@@ -25563,7 +25579,8 @@
     "status": "approved",
     "tags": [
       "Gang"
-    ]
+    ],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Marvin Ernesto Leon-Ceron",
@@ -25593,7 +25610,8 @@
       "Gang",
       "MS-13"
     ],
-    "enteredSource": "Removed: Marvin Ernesto Leon-Ceron, a criminal illegal alien from El Salvador and MS-13 gang member, was deported on September 29."
+    "enteredSource": "Removed: Marvin Ernesto Leon-Ceron, a criminal illegal alien from El Salvador and MS-13 gang member, was deported on September 29.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Isidro Cruz-Estefina",
@@ -25621,7 +25639,8 @@
     "status": "approved",
     "tags": [
       "Gang"
-    ]
+    ],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Ian Clive Burton",
