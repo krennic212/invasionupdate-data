@@ -1,21 +1,29 @@
 {
-  "checkedAt": 1793303722450,
-  "checkedAtIso": "2026-10-29T19:55:22.450Z",
+  "checkedAt": 1793311974722,
+  "checkedAtIso": "2026-10-29T22:12:54.722Z",
   "added": [
-    "Gerald King",
-    "Victor Carmona-Hernandez",
-    "Armando Suarez",
-    "Jonathan Jerry De Araujo-Lima",
-    "Margarito Martinez-Rebollar",
-    "Operation Baltimore (operation, not a person)"
+    "Javier Hernandez Alcon",
+    "Orlando Aguilar",
+    "Ramon Antonio Martinez",
+    "Gerardo Daniel Rivera-Rivera",
+    "Victor Manuel Macias-Castro",
+    "Contreras Hernandez",
+    "Ahmed Maqbul Syed",
+    "Emanuel Martinez Gonzalez",
+    "Marianny Lucia Lopez-Torres",
+    "Wenshen Xu",
+    "Operation Loaded Dice (operation, not a person)"
   ],
   "addedStatus": "approved",
-  "heldPending": [],
+  "heldPending": [
+    "Emanuel Martinez Gonzalez (suspect described as still at large)",
+    "Marianny Lucia Lopez-Torres (suspect described as still at large)"
+  ],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 96,
+  "scannedReleases": 95,
   "error": null,
-  "note": "Added 6 as approved: Gerald King, Victor Carmona-Hernandez, Armando Suarez, Jonathan Jerry De Araujo-Lima, Margarito Martinez-Rebollar, Operation Baltimore (operation, not a person)",
+  "note": "Added 11 as approved: Javier Hernandez Alcon, Orlando Aguilar, Ramon Antonio Martinez, Gerardo Daniel Rivera-Rivera, Victor Manuel Macias-Castro, Contreras Hernandez, Ahmed Maqbul Syed, Emanuel Martinez Gonzalez, Marianny Lucia Lopez-Torres, Wenshen Xu, Operation Loaded Dice (operation, not a person)",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

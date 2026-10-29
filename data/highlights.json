@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-29",
   "windowDays": 7,
-  "total": 210,
+  "total": 213,
   "rows": [
     {
       "id": "dhs-20261023-anthony-tyrone-higgs",
@@ -40,6 +40,18 @@
         "Murder / manslaughter",
         "Attempted murder",
         "Armed robbery / aggravated assault"
+      ]
+    },
+    {
+      "id": "doj-20261029-wenshen-xu",
+      "name": "Wenshen Xu",
+      "when": "29 Oct 2026",
+      "severity": 195,
+      "severityReason": "Material support to a cartel",
+      "severityCrimes": [
+        "Material support to a cartel",
+        "Fraud (incl. voter fraud)",
+        "Drug trafficking"
       ]
     },
     {
@@ -286,17 +298,6 @@
       "severityCrimes": [
         "Murder / manslaughter",
         "Assault / battery"
-      ]
-    },
-    {
-      "id": "x-2115159452764811508-luis-obispo-hernandez",
-      "name": "Luis Obispo-Hernandez",
-      "when": "27 Oct 2026",
-      "severity": 120,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "DUI"
       ]
     },
     {

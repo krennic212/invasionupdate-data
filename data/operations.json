@@ -145,5 +145,16 @@
     "people": [],
     "text": "TheJusticeDept 29 Oct 2026, as posted: Federal Jury Convicts California Man and Maryland Woman in Cross-Country Cocaine Trafficking Operation Baltimore, Maryland – A federal jury convicted a California man and Maryland woman of crimes connected to a bi-coastal drug-trafficking organization (DTO). Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true
+  },
+  {
+    "id": "op-icegov-20261029-operation-loaded-dice",
+    "name": "Operation Loaded Dice",
+    "when": "29 Oct 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.ice.gov/news/releases/144-suspects-arrested-following-las-vegas-homeland-security-task-force-investigations",
+    "people": [],
+    "text": "ICEgov 29 Oct 2026, as posted: 144 suspects arrested following Las Vegas Homeland Security Task Force investigations October 29, 2026Las Vegas, NV, United StatesTransnational Gangs 144 suspects arrested following Las Vegas Homeland Security Task Force investigations HSTF’s Operation Loaded Dice disrupts criminal organizations operating across the greater Las Vegas metropolitan area LAS VEGAS — Homeland Security Task Force Core 8 launched Operation Loaded Dice in July 2026. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
   }
 ]
