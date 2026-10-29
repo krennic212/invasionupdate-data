@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-29",
   "windowDays": 7,
-  "total": 174,
+  "total": 177,
   "rows": [
     {
       "id": "dhs-20261023-anthony-tyrone-higgs",
@@ -135,6 +135,19 @@
       "severityCrimes": [
         "Kidnapping / human trafficking",
         "Armed robbery / aggravated assault"
+      ]
+    },
+    {
+      "id": "x-2115851586622906642-luis-alberto-arreguin-villa",
+      "name": "LUIS ALBERTO ARREGUIN-VILLA",
+      "when": "29 Oct 2026",
+      "severity": 140,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons",
+        "DUI",
+        "Illegal entry / reentry"
       ]
     },
     {
@@ -282,18 +295,6 @@
       "severityCrimes": [
         "Murder / manslaughter",
         "Burglary / theft"
-      ]
-    },
-    {
-      "id": "x-2114043492330848346-martin-hernandez-altamirano",
-      "name": "Martin Hernandez Altamirano",
-      "when": "24 Oct 2026",
-      "severity": 117,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Burglary / theft",
-        "DUI"
       ]
     },
     {

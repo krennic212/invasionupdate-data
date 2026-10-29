@@ -1,21 +1,17 @@
 {
-  "updatedAt": "2026-10-29T17:12:19Z",
-  "rows": 1029,
-  "approved": 1003,
+  "updatedAt": "2026-10-29T17:14:48Z",
+  "rows": 1032,
+  "approved": 1006,
   "pending": 26,
   "photos": 287,
-  "reviewRows": 763,
-  "lastAddedAt": "2026-10-29T17:12:13Z",
-  "lastAddedCount": 7,
+  "reviewRows": 764,
+  "lastAddedAt": "2026-10-29T17:14:48Z",
+  "lastAddedCount": 3,
   "lastAdded": [
-    "Florencio Magana-Sarabia",
-    "Selvin Porfidio Gonzalez Escobar",
-    "Adrianus Marinus Van Der Staak",
-    "Saida Adali Hirachete Olivarez",
-    "Juan Florencio Ramos",
-    "Yamila Avalos",
-    "Luis Alberto DeJesus"
+    "LUIS ALBERTO ARREGUIN-VILLA",
+    "Omar Guadalupe Rostro-Gamez",
+    "Juan Romualdo Martinez Baldivia"
   ],
-  "harvestSha256": "6d8d3dc9ca26a129be3a4edcb6d4719c1e2bccb577932fe8cfb980b907b78e33",
+  "harvestSha256": "924bf5889a6948e62926cffb6124a22dff7cac9bd33bac98a7e3978070e8c73f",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
