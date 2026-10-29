@@ -31,9 +31,10 @@ The daily photo job stays at 1:03 PM CT.
    - Window: `node scripts/x-queries.mjs --window` prints `{since_id}`. Each run reads everything since the saved
      lastSeenId (no fixed lookback); the 9 AM run covers overnight. Dedupe handles any overlap.
    - Call `search_recent_posts`/`search_posts_all` with: `query`, the window from above (`since_id` or `start_time`), `max_results` 25+,
-     `sort_order` recency, `post.fields` "created_at,author_id,attachments,note_tweet",
+     `sort_order` recency, `post.fields` "created_at,author_id,attachments,note_tweet,entities",
      `expansions` "author_id,attachments.media_keys", `user.fields` "username", `media.fields` "type,url".
-     (`note_tweet` carries the full text of long posts; without it text is cut at 280 chars.)
+     (`note_tweet` carries the full text of long posts; without it text is cut at 280 chars. `entities` carries the
+     posts' linked URLs (`entities.urls[].expanded_url` / `unwound_url`) for step 5b; it costs no extra call.)
    - Save the response verbatim to `/workspace/invasionupdate-xscan/run-<date>-<time>/pN.json`
      (raw API JSON is accepted as-is, or a plain array of {id, username, created_at, text, media}).
    - A 429 still counts; wait for the reset and retry with a fresh reservation.
@@ -53,6 +54,22 @@ The daily photo job stays at 1:03 PM CT.
    city-geo.json; `GEOCODE=0` = offline), takes anyone who is now live out of review.json (name + aka keys), and
    re-stamps harvest-meta.json, and sets `tags` on every row (`scripts/tags.mjs`, rules below). Suspicious names (trailing month word, "Place.Name", single word, all-caps headline
    text) are held by the guards, never published.
+5b. Linked official releases (Krennic 2026-10-28, "capture with X post only if official"): save the `--write` output
+   to `<run>/write.json` first (step 6 uses the same file), then
+   - dry run: `node scripts/x-linked.mjs <run>/write.json`
+   - write:   `node scripts/x-linked.mjs <run>/write.json --write`
+   The scan output's `linkedReleases` lists official federal release links (justice.gov `/pr/` pages, ice.gov, dhs.gov,
+   cbp.gov, uscis.gov, state.gov, fbi.gov, usmarshals.gov, dea.gov, atf.gov; `rules.mjs officialReleaseLink`) from posts
+   by OFFICIAL_X_HANDLES agency accounts whose own text names nobody (e.g. @USAO_NV "Two Aliens From Sudan &
+   Afghanistan Charged for Illegal Voting" + link). Trusted-reporter (@BillMelugin_), NOT_OFFICIAL and unknown accounts'
+   links are never followed; news / non-.gov links are ignored. x-linked.mjs reads each release from the agency site
+   (justice.gov through the DOJ press-release API, never X) and runs it through the press-release harvester's parser and
+   every guard (`harvest.mjs rowsFromRelease`: non-citizen status stated, minors / at large held, stage never
+   overstated, quoted officials never names, dedupe on name + aka against harvest.json + review.json). Rows:
+   `sourceUrl` = the release, `via` = "@Handle <postId>", `xPost` = the post URL, `photo` "" (the daily photo job applies
+   the single-person official-release rule; X graphics never supply a photo and x-photo.mjs refuses these rows).
+   Read every added row like a step-4 row before committing. No extra X calls. If `linkedMissingEntities` is not empty,
+   the saved responses lack `entities`: fix post.fields next run (do not refetch just for this).
 6. Photos: save the `--write` output to `<run>/write.json`. `photoCandidates` lists EVERY live official-post row whose
    post has any photo, with ALL of the post's images (`images[]`: original-size URL, alt text, `namesPerson`) and
    `pick` = the image whose alt text names the person. Review every candidate; none may be left undecided.

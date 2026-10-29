@@ -224,3 +224,29 @@ export function pruneReviewOfLive(harvest, review) {
   }
   return { review: out, removed, kept };
 }
+
+/**
+ * Krennic 2026-10-28: an official agency X post that names nobody in its own text but links an official release
+ * ("Two Aliens From Sudan & Afghanistan Charged for Illegal Voting" + a justice.gov link). Only these links are ever
+ * followed (scripts/x-linked.mjs): https, a federal agency host in OFFICIAL_HOSTS (justice.gov, ice.gov, dhs.gov,
+ * cbp.gov, uscis.gov, state.gov, fbi.gov, usmarshals.gov, dea.gov, atf.gov), a page path (not the home page, not a
+ * file), and for justice.gov a press-release path (/pr/<slug>, read through the DOJ press-release API). Returns the
+ * clean URL (no query / fragment) or "". Anything else (news sites, shorteners that never unwound, x.com, other .gov
+ * sites whose rows could not go live) is ignored.
+ */
+export function officialReleaseLink(url) {
+  const raw = String(url || "").trim();
+  if (!/^https:\/\//i.test(raw) || !isOfficialUrl(raw)) return "";
+  let u;
+  try {
+    u = new URL(raw);
+  } catch {
+    return "";
+  }
+  const path = u.pathname.replace(/\/+$/, "");
+  if (!path || path.split("/").filter(Boolean).length < 2) return "";
+  if (/\.(pdf|jpe?g|png|gif|webp|mp4|zip|docx?|xlsx?)$/i.test(path)) return "";
+  const host = u.hostname.toLowerCase();
+  if ((host === "justice.gov" || host.endsWith(".justice.gov")) && !/\/pr\/[^/]+$/i.test(path)) return "";
+  return `https://${host}${path}`;
+}

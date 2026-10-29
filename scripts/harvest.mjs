@@ -52,9 +52,9 @@ function gate(row, reasons) {
 }
 const MAX_AGE_DAYS = Number(process.env.MAX_AGE_DAYS || 30);
 
-const DOJ_API = "https://www.justice.gov/api/v1/press_releases.json?pagesize=40&sort=created&direction=DESC";
+export const DOJ_API = "https://www.justice.gov/api/v1/press_releases.json?pagesize=40&sort=created&direction=DESC";
 const DOJ_PAGES = Number(process.env.DOJ_PAGES || 4);
-const IMMIGRATION = /illegal(ly)?\s+(alien|present|reent|re-ent|immigrant)|\balien\b|\baliens\b|reentry|re-entry|unlawfully present|citizen of|national of|\bnationals?\b|deport|removal|removed from the united states|noncitizen|non-citizen/i;
+export const IMMIGRATION = /illegal(ly)?\s+(alien|present|reent|re-ent|immigrant)|\balien\b|\baliens\b|reentry|re-entry|unlawfully present|citizen of|national of|\bnationals?\b|deport|removal|removed from the united states|noncitizen|non-citizen/i;
 
 const LISTS = [
   { office: "DHSgov", url: "https://www.dhs.gov/news-releases/press-releases", link: /^\/news\/20\d{2}\/\d{2}\/\d{2}\/[^"'#?]+$/ },
@@ -65,32 +65,32 @@ const LISTS = [
 const readJson = (f, dflt) => (existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : dflt);
 const writeJson = (f, v) => writeFileSync(f, `${JSON.stringify(v, null, 2)}\n`);
 
-async function fetchText(url, accept = "text/html,*/*") {
+export async function fetchText(url, accept = "text/html,*/*") {
   const res = await fetch(url, { headers: { "user-agent": UA, accept }, redirect: "follow", signal: AbortSignal.timeout(25000) });
   if (!res.ok) throw new Error(`${res.status} ${url}`);
   return res.text();
 }
 
-function titleOf(html) {
+export function titleOf(html) {
   const og = html.match(/<meta[^>]+property="og:title"[^>]+content="([^"]+)"/i);
   const h1 = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
   return decode((og?.[1] || h1?.[1] || "").replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
 }
 
 /** Release date (YYYY-MM-DD) from the URL path or the page's own published-time metadata. */
-function dateOf(url, html) {
+export function dateOf(url, html) {
   const p = url.match(/\/(20\d{2})\/(\d{2})\/(\d{2})\//);
   if (p) return `${p[1]}-${p[2]}-${p[3]}`;
   const meta = html.match(/article:published_time"\s+content="(\d{4}-\d{2}-\d{2})/i) || html.match(/<time[^>]+datetime="(\d{4}-\d{2}-\d{2})/i);
   return meta ? meta[1] : "";
 }
 
-function recent(iso) {
+export function recent(iso) {
   const t = Date.parse(`${iso}T12:00:00Z`);
   return Number.isFinite(t) && Date.now() - t < MAX_AGE_DAYS * 86400000;
 }
 
-function bodyOnly(html) {
+export function bodyOnly(html) {
   // Prefer the main content region when the page marks one.
   const main = html.match(/<main\b[\s\S]*?<\/main>/i);
   return main ? main[0] : html;
@@ -209,6 +209,47 @@ async function dailySignalHits(errors) {
   }
 }
 
+/**
+ * Rows for one official release (shared by the hourly harvest and scripts/x-linked.mjs, so a release reached from an
+ * official X post goes through exactly the same parser and guards). `have` = name keys already in feed + review (+ this
+ * run); it is updated in place. Standing rule: a row is built only from a release that was actually read (rel.blocks)
+ * and whose text names the person (extractPeople); quoted officials are never names (parse.mjs).
+ * Returns { rows, held: ["Name (reason)"] }.
+ */
+export function rowsFromRelease(rel, { have, uniqueId, gate: gateFn = gate }) {
+  const rows = [];
+  const held = [];
+  for (const hit of extractPeople(rel.blocks, { title: rel.title })) {
+    const k = nameKey(hit.name);
+    if (!k || have.has(k)) continue;
+    // A roundup that shortens a listed name ("Avila Gomez" = "Fredy Avila Gomez") is the same person.
+    if ([...have].some((h) => isShortFormOf(k, h))) continue;
+    have.add(k);
+    if (rel.stateCase && !hit.city) hit.city = stateCityFor(hit, rel);
+    const row = toRow(hit, rel);
+    // Every state-source release is an election-crime release (isElectionCase), so its rows are voting rows.
+    if (rel.stateCase) row.voting = true;
+    const label = row.crime.slice(0, row.crime.indexOf(":"));
+    const reasons = holdReasons({ name: hit.name, sentence: hit.sentence, title: rel.title, releaseText: rel.blocks.join(" "), label });
+    const gated = gateFn({ ...row, id: uniqueId(row.id, row) }, reasons);
+    const placed = fillCity(gated);
+    if (placed.city && placed.city !== "Not stated" && (placed.lat == null || placed.lon == null)) {
+      const geo = latLonFor(placed.city);
+      if (geo.lat != null) { placed.lat = geo.lat; placed.lon = geo.lon; }
+    }
+    if (placed.voting && /not stated/i.test(String(placed.city || "Not stated"))) {
+      placed.status = "pending";
+      placed.holdReason = [placed.holdReason, "voting row with no city"].filter(Boolean).join("; ");
+    }
+    if (placed.status === "pending") held.push(`${hit.name} (${placed.holdReason || "approval gate"})`);
+    // Standing rule: this row is written only after the release was opened and extractPeople found the name in it.
+    // A page that 404s or never loads does not become a row. X posts are checked in x-scan.mjs --write
+    // (scripts/link-check.mjs). 403 is blocked, not a dead link.
+    rows.push(scrubVictimNames(placed).row);
+  }
+  return { rows, held };
+}
+
 async function main() {
   const harvest = readJson(HARVEST, []);
   const review = readJson(REVIEW, []);
@@ -261,39 +302,11 @@ async function main() {
   const opReleases = [];
   for (const rel of rels) {
     scanned += 1;
-    let namedThisRun = 0;
-    for (const hit of extractPeople(rel.blocks, { title: rel.title })) {
-      const k = nameKey(hit.name);
-      if (!k || have.has(k)) continue;
-      // A roundup that shortens a listed name ("Avila Gomez" = "Fredy Avila Gomez") is the same person.
-      if ([...have].some((h) => isShortFormOf(k, h))) continue;
-      have.add(k);
-      namedThisRun += 1;
-      if (rel.stateCase && !hit.city) hit.city = stateCityFor(hit, rel);
-      const row = toRow(hit, rel);
-      // Every state-source release is an election-crime release (isElectionCase), so its rows are voting rows.
-      if (rel.stateCase) row.voting = true;
-      const label = row.crime.slice(0, row.crime.indexOf(":"));
-      const reasons = holdReasons({ name: hit.name, sentence: hit.sentence, title: rel.title, releaseText: rel.blocks.join(" "), label });
-      const gated = gate({ ...row, id: uniqueId(row.id, row) }, reasons);
-      const placed = fillCity(gated);
-      if (placed.city && placed.city !== "Not stated" && (placed.lat == null || placed.lon == null)) {
-        const geo = latLonFor(placed.city);
-        if (geo.lat != null) { placed.lat = geo.lat; placed.lon = geo.lon; }
-      }
-      if (placed.voting && /not stated/i.test(String(placed.city || "Not stated"))) {
-        placed.status = "pending";
-        placed.holdReason = [placed.holdReason, "voting row with no city"].filter(Boolean).join("; ");
-      }
-      if (placed.status === "pending") held.push(`${hit.name} (${placed.holdReason || "approval gate"})`);
-      // Standing rule: this row is written only after readRelease opened the page
-      // and extractPeople found the name in it. A page that 404s or never loads
-      // does not become a row. X posts are checked in x-scan.mjs --write
-      // (scripts/link-check.mjs). 403 is blocked, not a dead link.
-      fresh.push(scrubVictimNames(placed).row);
-      added.push(hit.name);
-    }
-    opReleases.push({ ...rel, namedThisRun });
+    const { rows, held: heldHere } = rowsFromRelease(rel, { have, uniqueId, gate });
+    fresh.push(...rows);
+    added.push(...rows.map((r) => r.name));
+    held.push(...heldHere);
+    opReleases.push({ ...rel, namedThisRun: rows.length });
   }
   for (const hit of signal) {
     scanned += 1;

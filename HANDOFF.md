@@ -1,3 +1,30 @@
+# HANDOFF: 2026-10-28 (11:59 PM CDT) X scan follows official release links from agency posts that name nobody (Krennic approved 11:32 PM CT)
+
+- Gap: @USAO_NV 2115536771094311377 (Oct 28, 3:10 PM CT) is only "Two Aliens From Sudan & Afghanistan Charged for Illegal
+  Voting @HSI_HQ @FBILasVegas" + a t.co link to justice.gov/usao-nv/pr/two-aliens-sudan-and-afghanistan-charged-illegal-voting;
+  the names are only in the release (and the post graphics), so x-scan found nobody. Many USAO / agency posts are headline + link.
+- x-scan.mjs: normalizePosts keeps `entities.urls` (unwound_url, else expanded_url; note_tweet entities too). New
+  `linkedReleasesFor`: posts by OFFICIAL_X_HANDLES agency accounts only (never TRUSTED_REPORTER / NOT_OFFICIAL / unknown),
+  not retweets, that produced no row (no pattern hit, no pick); keeps only `rules.mjs officialReleaseLink` URLs (https,
+  OFFICIAL_HOSTS federal agency host, a page path, justice.gov only /pr/<slug>; query/fragment dropped). Output fields
+  `linkedReleases` and `linkedMissingEntities` (official nameless posts with a t.co link but no entities saved) in dry run and --write.
+- New scripts/x-linked.mjs (`node scripts/x-linked.mjs <run>/write.json [--write]`): reads each release (justice.gov through
+  the DOJ press-release API: recent listing, then title search with the X card title / slug words, exact URL match; other
+  hosts as HTML like the harvester), then harvest.mjs `rowsFromRelease` (the harvester's per-release loop, extracted
+  unchanged and now shared): same parser + all guards + name/aka/short-form dedupe, MAX_AGE_DAYS window, IMMIGRATION
+  filter. Rows: sourceUrl = release, via "@Handle <postId>", xPost = post URL, photo "". --write prepends to harvest.json
+  (approved, or pending + holdReason), then geo, review prune, tags, severity, meta.
+- docs/x-scan.md: post.fields adds `entities`; new step 5b (x-linked dry run + --write on <run>/write.json).
+- Checks: live dry run on the real NV post shape: link followed via the DOJ API, 0 new rows (pair already live). On a copy
+  without the pair, --write rebuilt the same two rows (same ids, Charged, Nevada, approved). No existing row changed.
+- Tests: scripts/x-linked.test.mjs (official post followed; reporter / trusted reporter / news / unknown not followed;
+  non-.gov and non-release links ignored; DOJ API exact-URL match; NV dedupes to zero; guards hold at-large / minor and
+  drop citizen / no-status people).
+- Bill's Oct 28 5 PM CT run: did not complete. /workspace/invasionupdate-xscan/run-2026-10-28-1710 was created at 5:10 PM CT
+  and is empty; usage-2026-10-28.json has no search calls after 12:12 PM CT (only "classifier check, no X call" at 5:14 PM CT);
+  data/x-scan-state.json still lastRunAt 17:13Z (12:13 PM CT), lastSeenId 2115489198543360243; no x-scan commit after 12:13 PM CT.
+  The next run reads from that lastSeenId, so nothing is lost, only delayed.
+
 # HANDOFF: 2026-10-28 (11:00 PM CDT) USAO-NV Yousif + Safi (illegal voting) via data/pending.json + parser pattern H (Krennic approved)
 
 - Source: usao-nv Oct 28, 2026 "Two Aliens From Sudan and Afghanistan Charged for Illegal Voting"

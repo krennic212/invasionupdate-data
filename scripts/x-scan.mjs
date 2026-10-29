@@ -38,8 +38,8 @@ import { enteredFromText } from "./entered.mjs";
 import { extractOperation, operationRow } from "./operations.mjs";
 import { deadSourceReason } from "./link-check.mjs";
 import { holdReasons, denaturalizedStated } from "./guards.mjs";
-import { nameKey } from "./rules.mjs";
-import { LIVE_X_HANDLES, TRUSTED_REPORTER_X_HANDLES } from "./x-handles.mjs";
+import { nameKey, officialReleaseLink } from "./rules.mjs";
+import { LIVE_X_HANDLES, TRUSTED_REPORTER_X_HANDLES, OFFICIAL_X_HANDLES, NOT_OFFICIAL_X_HANDLES } from "./x-handles.mjs";
 import { buildMeta, writeMetaFile } from "./write-meta.mjs";
 import { fillGeoFile } from "./geo.mjs";
 import { pruneReviewOfLive } from "./rules.mjs";
@@ -51,6 +51,9 @@ import { uniqueId as makeUniqueId, rowIdBase } from "./ids.mjs";
 
 const OFFICIAL = new Map(LIVE_X_HANDLES.map((h) => [h.toLowerCase(), h]));
 const TRUSTED = new Set(TRUSTED_REPORTER_X_HANDLES.map((h) => h.toLowerCase()));
+const NOT_OFFICIAL = new Set(NOT_OFFICIAL_X_HANDLES.map((h) => h.toLowerCase()));
+/** Agency accounts only (no trusted reporter, no reporter / news / activist account): the only posts whose links are followed. */
+const AGENCY = new Map(OFFICIAL_X_HANDLES.map((h) => [h.toLowerCase(), h]).filter(([k]) => !TRUSTED.has(k) && !NOT_OFFICIAL.has(k)));
 
 export function agencyOf(handle) {
   const h = String(handle).toLowerCase();
@@ -86,7 +89,13 @@ export function normalizePosts(payload) {
     if (!p || !p.id || typeof p.text !== "string") continue;
     const fromUrl = String(p.url || "").match(/(?:x|twitter)\.com\/([A-Za-z0-9_]{1,15})\/status\//)?.[1];
     const username = p.username || p.author?.username || users.get(String(p.author_id)) || fromUrl || "";
-    out.push({ id: String(p.id), text: p.note_tweet?.text || p.text, created_at: p.created_at || "", username, referenced: p.referenced_tweets || [],
+    // Linked URLs from the saved response (post.fields "entities"): unwound_url first, then expanded_url. note_tweet
+    // (long posts) carries its own entities. Never fetched here; x-linked.mjs follows only official release links.
+    const links = [...(p.entities?.urls || []), ...(p.note_tweet?.entities?.urls || [])]
+      .map((u) => ({ url: String(u?.unwound_url || u?.expanded_url || ""), title: String(u?.title || "") }))
+      .filter((u) => u.url);
+    out.push({ id: String(p.id), text: p.note_tweet?.text || p.text, created_at: p.created_at || "", username, referenced: p.referenced_tweets || [], links,
+      hasEntities: Boolean(p.entities || p.note_tweet?.entities),
       media: Array.isArray(p.media) ? p.media : (p.attachments?.media_keys || []).map((k) => media.get(String(k))).filter(Boolean).map((m) => ({ type: m.type, url: m.url || "", alt: m.alt_text || "" })) });
   }
   return out;
@@ -182,7 +191,8 @@ export function collapseById(posts) {
     const longer = String(p.text || "").length > String(cur.text || "").length ? p : cur;
     const other = longer === p ? cur : p;
     const media = (longer.media || []).length ? longer.media : (other.media || []);
-    byId.set(id, { ...longer, media });
+    const links = (longer.links || []).length ? longer.links : (other.links || []);
+    byId.set(id, { ...longer, media, links, hasEntities: Boolean(longer.hasEntities || other.hasEntities) });
   }
   return [...byId.values()];
 }
@@ -241,6 +251,8 @@ export function scan(posts, { existing = [], picks = {} } = {}) {
     if (BigInt(p.id) > maxId) maxId = BigInt(p.id);
     made.set(p.id, rowsForPost(p, picks[p.id] || []));
   }
+  // Posts that named nobody (no pattern hit, no pick): candidates for following an official release link.
+  const nameless = new Set([...made].filter(([, list]) => !list.length).map(([id]) => id));
   // Same person in several posts this run: keep the earliest post that can go live, else the earliest post.
   const best = new Map();
   for (const list of made.values()) for (const m of list) {
@@ -287,7 +299,41 @@ export function scan(posts, { existing = [], picks = {} } = {}) {
     if (nk) seenOpNames.add(nk);
     operations.push(row);
   }
-  return { live, review, skipped, photoCandidates, operations, maxId: maxId ? String(maxId) : "" };
+  const { linkedReleases, linkedMissingEntities } = linkedReleasesFor(sorted, nameless);
+  return { live, review, skipped, photoCandidates, operations, linkedReleases, linkedMissingEntities, maxId: maxId ? String(maxId) : "" };
+}
+
+/**
+ * Krennic 2026-10-28: official releases linked from agency X posts that name nobody in their own text.
+ * Only posts by OFFICIAL_X_HANDLES agency accounts (never a trusted reporter or a NOT_OFFICIAL handle), only when the
+ * post produced no row (no named person, no pick), and only links that pass rules.mjs officialReleaseLink (federal
+ * agency release pages). Retweets are skipped. One entry per release URL (first post wins). scripts/x-linked.mjs
+ * reads this list and runs each release through the press-release harvester's parser and guards.
+ * linkedMissingEntities: such posts that have a t.co link but no `entities` in the saved response (runbook must ask
+ * for post.fields entities).
+ */
+export function linkedReleasesFor(posts, nameless = null) {
+  const linkedReleases = [];
+  const linkedMissingEntities = [];
+  const seen = new Set();
+  for (const p of posts) {
+    if (!p || isRetweet(p)) continue;
+    const handle = AGENCY.get(String(p.username || "").toLowerCase());
+    if (!handle) continue;
+    if (nameless ? !nameless.has(p.id) : rowsForPost(p).length) continue;
+    const postUrl = `https://x.com/${handle}/status/${p.id}`;
+    if (!(p.links || []).length) {
+      if (!p.hasEntities && /https:\/\/t\.co\//.test(p.text)) linkedMissingEntities.push(postUrl);
+      continue;
+    }
+    for (const l of p.links) {
+      const url = officialReleaseLink(l.url);
+      if (!url || seen.has(url)) continue;
+      seen.add(url);
+      linkedReleases.push({ url, title: l.title || "", postId: p.id, handle, postUrl, created_at: p.created_at || "", postText: stripLinks(p.text).replace(/\s+/g, " ") });
+    }
+  }
+  return { linkedReleases, linkedMissingEntities };
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
@@ -370,5 +416,5 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     if (HARVEST === "data/harvest.json") writeMetaFile();
     writeFileSync(stateFile, `${JSON.stringify({ lastSeenId: next, lastRunAt: new Date().toISOString(), postsRead: collapseById(posts).length, addedLive: res.live.map((r) => r.name), addedReview: res.review.map((r) => r.name) }, null, 2)}\n`);
   }
-  console.log(JSON.stringify({ write, geo: geo && { fromTable: geo.fromTable.length, fromState: geo.fromState.length, fromGeocoder: geo.fromGeocoder.length, stillMissing: geo.stillMissing }, reviewRemovedBecauseLive: reviewRemoved, postsRead: collapseById(posts).length, live: res.live.map((r) => ({ name: r.name, crime: r.crime, sourceUrl: r.sourceUrl })), review: res.review.map((r) => ({ name: r.name, why: r.reviewReason, sourceUrl: r.sourceUrl })), skipped: res.skipped, photoCandidates: res.photoCandidates, maxId: res.maxId }, null, 2));
+  console.log(JSON.stringify({ write, geo: geo && { fromTable: geo.fromTable.length, fromState: geo.fromState.length, fromGeocoder: geo.fromGeocoder.length, stillMissing: geo.stillMissing }, reviewRemovedBecauseLive: reviewRemoved, postsRead: collapseById(posts).length, live: res.live.map((r) => ({ name: r.name, crime: r.crime, sourceUrl: r.sourceUrl })), review: res.review.map((r) => ({ name: r.name, why: r.reviewReason, sourceUrl: r.sourceUrl })), skipped: res.skipped, photoCandidates: res.photoCandidates, linkedReleases: res.linkedReleases, linkedMissingEntities: res.linkedMissingEntities, maxId: res.maxId }, null, 2));
 }
