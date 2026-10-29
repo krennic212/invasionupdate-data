@@ -134,5 +134,16 @@
     "people": [],
     "text": "TheJusticeDept 26 Oct 2026, as posted: \" This prosecution is part of Operation Gate Keeper, a component of the Homeland Security Task Force (HSTF) established under Executive Order 14159, Protecting the American People Against Invasion. Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true
+  },
+  {
+    "id": "op-thejusticedept-20261029-operation-baltimore",
+    "name": "Operation Baltimore",
+    "when": "29 Oct 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/usao-md/pr/federal-jury-convicts-california-man-and-maryland-woman-cross-country-cocaine",
+    "people": [],
+    "text": "TheJusticeDept 29 Oct 2026, as posted: Federal Jury Convicts California Man and Maryland Woman in Cross-Country Cocaine Trafficking Operation Baltimore, Maryland – A federal jury convicted a California man and Maryland woman of crimes connected to a bi-coastal drug-trafficking organization (DTO). Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
   }
 ]

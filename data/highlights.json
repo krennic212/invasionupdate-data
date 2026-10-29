@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-29",
   "windowDays": 7,
-  "total": 190,
+  "total": 195,
   "rows": [
     {
       "id": "dhs-20261023-anthony-tyrone-higgs",
@@ -135,6 +135,18 @@
       "severityCrimes": [
         "Kidnapping / human trafficking",
         "Armed robbery / aggravated assault"
+      ]
+    },
+    {
+      "id": "dhs-20261029-armando-suarez",
+      "name": "Armando Suarez",
+      "when": "29 Oct 2026",
+      "severity": 145,
+      "severityReason": "Fraud (incl. voter fraud)",
+      "severityCrimes": [
+        "Fraud (incl. voter fraud)",
+        "Drug trafficking",
+        "Burglary / theft"
       ]
     },
     {
@@ -284,17 +296,6 @@
       "severityCrimes": [
         "Child sex crime",
         "Assault / battery"
-      ]
-    },
-    {
-      "id": "x-2115145798833066022-zakaria-farah-abdi",
-      "name": "Zakaria Farah Abdi",
-      "when": "27 Oct 2026",
-      "severity": 117,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "Burglary / theft"
       ]
     },
     {
