@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-10-28",
+  "asOf": "2026-10-29",
   "windowDays": 7,
-  "total": 150,
+  "total": 167,
   "rows": [
     {
       "id": "dhs-20261023-anthony-tyrone-higgs",
@@ -40,6 +40,18 @@
         "Murder / manslaughter",
         "Attempted murder",
         "Armed robbery / aggravated assault"
+      ]
+    },
+    {
+      "id": "x-2115547775056445899-oscar-gonzalez-hernandez",
+      "name": "Oscar Gonzalez-Hernandez",
+      "when": "28 Oct 2026",
+      "severity": 190,
+      "severityReason": "Violent crime against a child",
+      "severityCrimes": [
+        "Violent crime against a child",
+        "Armed robbery / aggravated assault",
+        "Assault / battery"
       ]
     },
     {
@@ -89,6 +101,18 @@
       "severityCrimes": [
         "Child sex crime",
         "Rape / sexual assault"
+      ]
+    },
+    {
+      "id": "x-2115547799836144057-josue-antonio-vasquez-martinez",
+      "name": "Josue Antonio Vasquez Martinez",
+      "when": "28 Oct 2026",
+      "severity": 160,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons",
+        "Burglary / theft"
       ]
     },
     {
@@ -183,6 +207,18 @@
       ]
     },
     {
+      "id": "x-2115534568044585410-salvador-vargas-silva",
+      "name": "Salvador Vargas-Silva",
+      "when": "28 Oct 2026",
+      "severity": 124,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Assault / battery",
+        "DUI"
+      ]
+    },
+    {
       "id": "x-2115426482117869659-oscar-daniel-isaya-corrales",
       "name": "Oscar Daniel Isaya Corrales",
       "when": "28 Oct 2026",
@@ -272,30 +308,6 @@
       ]
     },
     {
-      "id": "doj-20261023-oscar-david-hernandez-gonzalez",
-      "name": "Oscar David Hernandez-Gonzalez",
-      "when": "23 Oct 2026",
-      "severity": 117,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Burglary / theft",
-        "Illegal entry / reentry"
-      ]
-    },
-    {
-      "id": "x-2115120425587867919-orlando-manuel-ventura",
-      "name": "Orlando Manuel Ventura",
-      "when": "27 Oct 2026",
-      "severity": 115,
-      "severityReason": "Fraud (incl. voter fraud)",
-      "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Drug possession",
-        "DUI"
-      ]
-    },
-    {
       "id": "x-2115159442916266452-gerson-roldan-irias-villafranca",
       "name": "Gerson Roldan Irias Villafranca",
       "when": "27 Oct 2026",
@@ -318,6 +330,16 @@
     {
       "id": "dhs-20261028-francisco-chapas-sanchez",
       "name": "Francisco Chapas-Sanchez",
+      "when": "28 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2115547772317282678-hector-santos-rauda",
+      "name": "Hector Santos-Rauda",
       "when": "28 Oct 2026",
       "severity": 92,
       "severityReason": "Child sex crime",
