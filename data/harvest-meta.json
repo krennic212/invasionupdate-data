@@ -1,15 +1,16 @@
 {
-  "updatedAt": "2026-10-29T01:43:28Z",
-  "rows": 998,
-  "approved": 974,
+  "updatedAt": "2026-10-29T03:56:42Z",
+  "rows": 1000,
+  "approved": 976,
   "pending": 24,
   "photos": 287,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-29T01:43:18Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-10-29T03:56:38Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Andres Carrillo-Hernandez"
+    "Moneir Elzobier Ali Yousif",
+    "Khalida Safi"
   ],
-  "harvestSha256": "aa5fef742b2aaa1444574ea561ea4d1119c51511fdd3d92a712e0fed4979ac7b",
+  "harvestSha256": "768888130d1a381a82e86c6571999c19f0e6690c4b85b2cf01f544ebfe0ca039",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

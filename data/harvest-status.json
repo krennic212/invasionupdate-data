@@ -1,16 +1,17 @@
 {
-  "checkedAt": 1793238198991,
-  "checkedAtIso": "2026-10-29T01:43:18.991Z",
+  "checkedAt": 1793246198929,
+  "checkedAtIso": "2026-10-29T03:56:38.929Z",
   "added": [
-    "Andres Carrillo-Hernandez"
+    "Moneir Elzobier Ali Yousif",
+    "Khalida Safi"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 96,
+  "scannedReleases": 0,
   "error": null,
-  "note": "Added 1 as approved: Andres Carrillo-Hernandez",
+  "note": "Added 2 as approved: Moneir Elzobier Ali Yousif, Khalida Safi",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

@@ -438,6 +438,10 @@ const NEXT_NAME = new RegExp(`^(?:[A-Z][^,]{0,60}?\\b(?:alleges|alleged|says|sta
 const LIST_INTRO = /\b(?:illegal\s+aliens?|aliens?|non-?citizens?)\b[^:]*\b(?:deported|removed|arrested|convicted|charged|sentenced)\b[^:]*:\s*$|\b(?:deported|removed|arrested)\b[^:]*\b(?:illegal\s+aliens?|aliens?)\b[^:]*:\s*$/i;
 const LIST_ITEM = new RegExp(`^${NAME},\\s+(?:whose|who|an?)\\s`);
 const ALL_FROM = new RegExp(`\\bAll\\s+of\\s+the\\s+(?:illegal\\s+)?aliens\\b[^.]*?\\bwere\\s+from\\s+(?:the\\s+)?(${COUNTRY_ALT})\\b`);
+// H (USAO-NV Oct 28, 2026): "According to the criminal information, on or about October 29, 2024, <Name>, from Sudan and a
+// lawful permanent resident, voted in an election ..." The status is in the naming sentence; the charge is in a later
+// sentence that names the surname ("Yousif and Safi are each charged with one count of voting by an alien.").
+const FROM_STATUS = new RegExp(`(?:^|,\\s+)${NAME},\\s+(?:\\d{1,3},\\s+)?(?:from|of)\\s+(?:the\\s+)?(${COUNTRY_ALT})\\s+and\\s+(?:an?\\s+)?(?:(?:lawful|legal)\\s+permanent\\s+resident|(?:illegal\\s+)?alien|non-?citizen)\\b`, "g");
 const STATUS_COUNTRY = new RegExp(`\\b(?:from|of)\\s+(?:the\\s+)?(${COUNTRY_ALT})(?![A-Za-z])`);
 
 function cleanName(n) {
@@ -531,6 +535,15 @@ export function linkedPeople(blocks, { title = "", seen = [] } = {}) {
         const next = sents[i + 1] ?? (i === sents.length - 1 ? all[bi + 1]?.[0] : undefined);
         const n = next && next.match(NEXT_NAME);
         if (n) push({ name: cleanName(n[1] || n[2]), origin: countryIn(s), sentence: `${s} ${next}` });
+      }
+      // H: "<Name>, from <Country> and a lawful permanent resident, voted ..." + the later charge sentence for the surname.
+      FROM_STATUS.lastIndex = 0;
+      while ((m = FROM_STATUS.exec(s))) {
+        const name = cleanName(m[1]);
+        const sur = name.split(" ").slice(-1)[0];
+        const surRe = new RegExp(`(?<![A-Za-z'’-])${escRe(sur)}(?![A-Za-z'’-])`);
+        const charge = flat.slice(flat.indexOf(s) + 1).find((x) => surRe.test(x) && /\b(?:charged|indicted)\b/i.test(x));
+        push({ name, origin: m[2], sentence: charge ? `${s} ${charge}` : withNowCharge(sents, i) });
       }
       // G: case paragraph (USAO Arizona weekly roundup).
       const det = s.match(/^(.*?)\b(?:who|which)\s+(?:were|was)\s+determined\s+to\s+be\s+(?:citizens?|nationals?)\s+of\b/);

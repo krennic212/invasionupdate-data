@@ -1,3 +1,30 @@
+# HANDOFF: 2026-10-28 (11:00 PM CDT) USAO-NV Yousif + Safi (illegal voting) via data/pending.json + parser pattern H (Krennic approved)
+
+- Source: usao-nv Oct 28, 2026 "Two Aliens From Sudan and Afghanistan Charged for Illegal Voting"
+  https://www.justice.gov/usao-nv/pr/two-aliens-sudan-and-afghanistan-charged-illegal-voting (read through the DOJ
+  press-release API, uuid dc1cc4ca-...; @USAO_NV X post 2115536771094311377 links it). No photo in the release (X post
+  images are graphics, not used).
+- Added 2 rows through data/pending.json intake (AUTO_APPROVE=true, live scan off: MAX_LINKS=0 DOJ_PAGES=0 STATE_SOURCES=0
+  DAILY_SIGNAL=0), rows built by parse.mjs toRow from the release's own sentences, guards on, none held:
+  - Moneir Elzobier Ali Yousif (doj-20261028-moneir-elzobier-ali-yousif): "from Sudan and a lawful permanent resident", voted on
+    or about October 29, 2024. Origin Sudan.
+  - Khalida Safi (doj-20261028-khalida-safi): "from Afghanistan and a lawful permanent resident", voted on or about November 5,
+    2024. Origin Afghanistan.
+  - Both: Charged ("Yousif and Safi are each charged with one count of voting by an alien"; criminal information), voting=true,
+    tags [], city "Nevada" (the release's only place for the vote: "a federal election in Nevada"; LAS VEGAS is the office
+    dateline, not where they voted or live), state-center pin (same as the Oct 26 Moore row). No photo.
+- Why missed: the release WAS in the DOJ API listing the 22:18Z and 01:42Z runs read (page 1 of sort=created) and passed the
+  IMMIGRATION filter ("aliens"), but extractPeople found nobody: each name is "<Name>, from <Country> and a lawful permanent
+  resident, voted ..." (no TYPE word after the comma, "from Sudan and" not "from Sudan,"), and the charge is a later sentence.
+- Fix (scripts/parse.mjs linkedPeople, new rule H / FROM_STATUS): "<Name>, [age,] from|of <Country> and a lawful/legal
+  permanent resident | (illegal) alien | non-citizen" -> the person, origin = that country; label = naming sentence + the next
+  sentence in the release that names the surname with charged/indicted (verbatim), else withNowCharge. Linked rule, so no
+  title stage. Quoted officials (Chattah, Burke, Delzotto) are never names. Guards unchanged.
+  Old vs new parser on the last 400 DOJ API releases + 54 "illegal voting" titles: the only difference is this release.
+- Tests: scripts/voting-from-status.test.mjs (real release text in scripts/fixtures/usao-nv-2026-10-28-two-aliens-illegal-voting.json;
+  plus negatives and a defendant sharing a quoted official's surname). node --test 237/237; validate OK. Live rows 998 -> 1000
+  (approved 974 -> 976).
+
 # HANDOFF: 2026-10-28 (1:00 PM CDT) Melendez-Cereceres via data/pending.json (Krennic approved)
 
 - Added 1 row through data/pending.json intake (AUTO_APPROVE=true, live scan off: MAX_LINKS=0 DOJ_PAGES=0 STATE_SOURCES=0
