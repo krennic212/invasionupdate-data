@@ -27006,7 +27006,8 @@
     "tags": [
       "Gang",
       "TdA"
-    ]
+    ],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Edwin Josue Cabrera-Zelaya",
@@ -28260,7 +28261,8 @@
     "lon": -72.662,
     "status": "approved",
     "tags": [],
-    "enteredSource": "DHS: Jose Noel Avelar-Velasquez, an illegal alien from El Salvador, was deported Sept."
+    "enteredSource": "DHS: Jose Noel Avelar-Velasquez, an illegal alien from El Salvador, was deported Sept.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Jacinto Gonzalez-Perez",
@@ -28289,7 +28291,8 @@
     "tags": [
       "Entered under Obama"
     ],
-    "enteredSource": "Entered through California in December 2015 while under 18 and was released."
+    "enteredSource": "Entered through California in December 2015 while under 18 and was released.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Edan Yoel Gomez-Rodriguez",
@@ -28319,7 +28322,8 @@
     "lon": -92,
     "status": "approved",
     "tags": [],
-    "enteredSource": "Final removal order April 16, 2008; deported April 21, 2008 and again January 17, 2014; illegally re-entered a third time."
+    "enteredSource": "Final removal order April 16, 2008; deported April 21, 2008 and again January 17, 2014; illegally re-entered a third time.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Armando Vladimir Salgado",
@@ -28352,7 +28356,8 @@
     "lon": -78.6,
     "status": "approved",
     "tags": [],
-    "enteredSource": "Entered through Texas in March 2006."
+    "enteredSource": "Entered through Texas in March 2006.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Mary Angelica Landeros-Quen",
@@ -28383,7 +28388,8 @@
     "tags": [
       "DACA"
     ],
-    "enteredSource": "Granted DACA in March 2015."
+    "enteredSource": "Granted DACA in March 2015.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Pauline Lewis",
@@ -28558,7 +28564,8 @@
     "lat": 35.0337,
     "lon": -89.9343,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Maryari Pamela Lopez Urivina",
@@ -28586,7 +28593,8 @@
     "lat": 35.0337,
     "lon": -89.9343,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Sergio Vieyra Torres",
@@ -28614,7 +28622,8 @@
     "lat": 35.0337,
     "lon": -89.9343,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Ricardo N Rodriguez Arteaga",
@@ -28642,7 +28651,8 @@
     "lat": 35.0337,
     "lon": -89.9343,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Pingxiang Li",
@@ -29056,7 +29066,8 @@
     "via": "ICE newsroom",
     "sourceUrl": "https://www.ice.gov/news/releases/ice-arrests-guatemalan-alien-charged-girlfriends-murder-uncle-illegal-alien-charged",
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Rolvin Eduardo Barrera-Barrera",
@@ -29084,7 +29095,8 @@
     "via": "ICE newsroom",
     "sourceUrl": "https://www.ice.gov/news/releases/ice-arrests-guatemalan-alien-charged-girlfriends-murder-uncle-illegal-alien-charged",
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Yeferson Jose Canamo-Jordan",

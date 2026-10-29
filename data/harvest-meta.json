@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T14:14:13Z",
+  "updatedAt": "2026-10-29T14:16:01Z",
   "rows": 1020,
   "approved": 996,
   "pending": 24,
@@ -29,6 +29,6 @@
     "Fredy Salmeron Velasquez",
     "Denis Josue Arteaga"
   ],
-  "harvestSha256": "491c8dd21c3508590c0b9c889951da49928e66f4fd3f9672af92989a3ea6a2a6",
+  "harvestSha256": "c48614602807a588fbb7a0b991d9950275aae1edfe094182aade4c400221cf89",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
