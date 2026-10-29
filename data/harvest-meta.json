@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-10-29T17:14:48Z",
+  "updatedAt": "2026-10-29T18:08:04Z",
   "rows": 1032,
   "approved": 1006,
   "pending": 26,
-  "photos": 287,
+  "photos": 304,
   "reviewRows": 764,
   "lastAddedAt": "2026-10-29T17:16:27Z",
   "lastAddedCount": 0,
   "lastAdded": [],
-  "harvestSha256": "924bf5889a6948e62926cffb6124a22dff7cac9bd33bac98a7e3978070e8c73f",
+  "harvestSha256": "babb22c9a519b4a009e1b5281b061b74b5cc7bd404a63e39314d9887c27fb63d",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -3631,11 +3631,12 @@
   "ice.gov/news/releases/time-runs-out-rolex": {
     "checkedAt": "2026-10-28T16:38:43.911Z",
     "name": "Rolex Augustin",
-    "result": "held",
+    "result": "photo",
     "file": "ice-20261028-rolex-augustin.jpg",
     "image": "https://www.ice.gov/sites/default/files/2026-10/261028dc.png",
     "bytes": 12413,
-    "why": "needs visual check"
+    "reviewed": "Viewed image: booking photo, one adult man in orange jail top, plain background, no other faces",
+    "reviewedAt": "2026-10-29T18:08:04.360Z"
   },
   "justice.gov/usao-ct/pr/homeland-security-task-force-dual-dominican-and-french-national-sentenced-more-5-years": {
     "checkedAt": "2026-10-28T16:38:44.073Z",
@@ -6564,5 +6565,173 @@
     "name": "Luis Alberto DeJesus",
     "result": "none",
     "why": "multi-person release: no image names this person"
+  },
+  "x.com/erosanfrancisco/status/2115494805388038379": {
+    "checkedAt": "2026-10-29T18:07:50.039Z",
+    "name": "Denis Josue Arteaga",
+    "result": "photo",
+    "file": "x-2115494805388038379-denis-josue-arteaga.jpg",
+    "image": "https://pbs.twimg.com/media/HVWD-HDXYAA1HNV?format=png&name=orig",
+    "bytes": 20224,
+    "reviewed": "Viewed image: close headshot, one adult man, red shirt, garage background, no other people, no text"
+  },
+  "x.com/erowashington/status/2115503623497236902": {
+    "checkedAt": "2026-10-29T18:07:50.158Z",
+    "name": "Fredy Salmeron Velasquez",
+    "result": "none",
+    "why": "graphic card with text panel (country, crimes, name)"
+  },
+  "x.com/eroneworleans/status/2115534568044585410": {
+    "checkedAt": "2026-10-29T18:07:50.419Z",
+    "name": "Salvador Vargas-Silva",
+    "result": "photo",
+    "file": "x-2115534568044585410-salvador-vargas-silva.jpg",
+    "image": "https://pbs.twimg.com/media/HVQcGTwXYAE4_zm?format=png&name=orig",
+    "bytes": 18072,
+    "reviewed": "Viewed image: booking-room photo, one adult man, black shirt, no other people, no text overlay"
+  },
+  "x.com/hsisanjuan/status/2115536535764226105": {
+    "checkedAt": "2026-10-29T18:07:50.542Z",
+    "name": "Wilquin Melo Marte",
+    "result": "none",
+    "why": "From the Archives graphic card, arrest scene with several officers"
+  },
+  "x.com/icegov/status/2115547772317282678": {
+    "checkedAt": "2026-10-29T18:07:51.004Z",
+    "name": "Hector Santos-Rauda",
+    "result": "photo",
+    "file": "x-2115547772317282678-hector-santos-rauda.jpg",
+    "image": "https://pbs.twimg.com/media/HVvuUVHXIAAu60A?format=jpg&name=orig",
+    "bytes": 13392,
+    "reviewed": "Viewed image: booking photo against height chart, one adult man, no other people"
+  },
+  "x.com/icegov/status/2115547775056445899": {
+    "checkedAt": "2026-10-29T18:07:51.517Z",
+    "name": "Oscar Gonzalez-Hernandez",
+    "result": "photo",
+    "file": "x-2115547775056445899-oscar-gonzalez-hernandez.jpg",
+    "image": "https://pbs.twimg.com/media/HVvuWSkW4AAaDaA?format=jpg&name=orig",
+    "bytes": 13294,
+    "reviewed": "Viewed image: booking photo against height chart, one adult man, no other people"
+  },
+  "x.com/icegov/status/2115547778453831961": {
+    "checkedAt": "2026-10-29T18:07:51.782Z",
+    "name": "Guillermo Antonio Sosa-Hernandez",
+    "result": "photo",
+    "file": "x-2115547778453831961-guillermo-antonio-sosa-hernandez.jpg",
+    "image": "https://pbs.twimg.com/media/HVvuYRIXQAAplfk?format=jpg&name=orig",
+    "bytes": 14815,
+    "reviewed": "Viewed image: booking-room photo, one adult man, green shirt, no other people"
+  },
+  "x.com/icegov/status/2115547781477851243": {
+    "checkedAt": "2026-10-29T18:07:55.628Z",
+    "name": "Gabriel Paz",
+    "result": "photo",
+    "file": "x-2115547781477851243-gabriel-paz.jpg",
+    "image": "https://pbs.twimg.com/media/HVvuaYWXQAAYDQk?format=jpg&name=orig",
+    "bytes": 5163,
+    "reviewed": "Viewed image: close booking headshot, one adult man, plain background"
+  },
+  "x.com/icegov/status/2115547783943901611": {
+    "checkedAt": "2026-10-29T18:07:55.929Z",
+    "name": "San Juana Montenegro Ochoa",
+    "result": "photo",
+    "file": "x-2115547783943901611-san-juana-montenegro-ochoa.jpg",
+    "image": "https://pbs.twimg.com/media/HVvucgkXYAA_IhA?format=jpg&name=orig",
+    "bytes": 12817,
+    "reviewed": "Viewed image: plain headshot, one adult woman, white background, no other people"
+  },
+  "x.com/icegov/status/2115547787018559499": {
+    "checkedAt": "2026-10-29T18:07:56.271Z",
+    "name": "Carlos Uriel Campos-Perez",
+    "result": "photo",
+    "file": "x-2115547787018559499-carlos-uriel-campos-perez.jpg",
+    "image": "https://pbs.twimg.com/media/HVvueNvWUAAlIBG?format=jpg&name=orig",
+    "bytes": 11715,
+    "reviewed": "Viewed image: booking-room photo, one adult man, grey sweatshirt, no other people"
+  },
+  "x.com/icegov/status/2115547789849411760": {
+    "checkedAt": "2026-10-29T18:07:56.544Z",
+    "name": "Angeli Germania Chavez Redondo",
+    "result": "photo",
+    "file": "x-2115547789849411760-angeli-germania-chavez-redondo.jpg",
+    "image": "https://pbs.twimg.com/media/HVvugLHXAAEAYeJ?format=jpg&name=orig",
+    "bytes": 15204,
+    "reviewed": "Viewed image: booking photo, one adult woman in red jail top, no other people"
+  },
+  "x.com/icegov/status/2115547791707546052": {
+    "checkedAt": "2026-10-29T18:07:56.869Z",
+    "name": "Porfirio Torres Rivas",
+    "result": "photo",
+    "file": "x-2115547791707546052-porfirio-torres-rivas.jpg",
+    "image": "https://pbs.twimg.com/media/HVvuiNaWwAAS_R6?format=jpg&name=orig",
+    "bytes": 11884,
+    "reviewed": "Viewed image: booking-room photo, one older adult man, grey sweatshirt, no other people"
+  },
+  "x.com/icegov/status/2115547793678889350": {
+    "checkedAt": "2026-10-29T18:07:57.159Z",
+    "name": "Edwin Jose Ordaz",
+    "result": "photo",
+    "file": "x-2115547793678889350-edwin-jose-ordaz.jpg",
+    "image": "https://pbs.twimg.com/media/HVvukORWQAEpiIO?format=jpg&name=orig",
+    "bytes": 10959,
+    "reviewed": "Viewed image: booking-room photo, one adult man, grey sweatshirt, no other people"
+  },
+  "x.com/icegov/status/2115547795897676077": {
+    "checkedAt": "2026-10-29T18:07:57.417Z",
+    "name": "Domingo Alfredo Nunez-Perdomo",
+    "result": "photo",
+    "file": "x-2115547795897676077-domingo-alfredo-nunez-perdomo.jpg",
+    "image": "https://pbs.twimg.com/media/HVvusESW0AAUHZF?format=jpg&name=orig",
+    "bytes": 10844,
+    "reviewed": "Viewed image: booking-room photo, one adult man, no other people"
+  },
+  "x.com/icegov/status/2115547799836144057": {
+    "checkedAt": "2026-10-29T18:07:57.905Z",
+    "name": "Josue Antonio Vasquez Martinez",
+    "result": "photo",
+    "file": "x-2115547799836144057-josue-antonio-vasquez-martinez.jpg",
+    "image": "https://pbs.twimg.com/media/HVvuwLfXwAEaECH?format=jpg&name=orig",
+    "bytes": 12015,
+    "reviewed": "Viewed image: jail booking photo, one adult man in orange, plain grey background"
+  },
+  "x.com/icegov/status/2115547802671755446": {
+    "checkedAt": "2026-10-29T18:07:58.259Z",
+    "name": "Agustin Gamino Sanchez",
+    "result": "photo",
+    "file": "x-2115547802671755446-agustin-gamino-sanchez.jpg",
+    "image": "https://pbs.twimg.com/media/HVvuya8WEAEDhJv?format=jpg&name=orig",
+    "bytes": 14089,
+    "reviewed": "Viewed image: booking-room photo, one adult man, grey shirt, no other people"
+  },
+  "x.com/icegov/status/2115547806501142532": {
+    "checkedAt": "2026-10-29T18:07:58.511Z",
+    "name": "Hector Ferneli Pichardo Restituyo",
+    "result": "photo",
+    "file": "x-2115547806501142532-hector-ferneli-pichardo-restituyo.jpg",
+    "image": "https://pbs.twimg.com/media/HVvu0PJW0AAes34?format=jpg&name=orig",
+    "bytes": 10828,
+    "reviewed": "Viewed image: booking photo, one adult man, white shirt, plain grey backdrop"
+  },
+  "x.com/eroboston/status/2115753951920529796": {
+    "checkedAt": "2026-10-29T18:07:58.758Z",
+    "name": "Jimmy Kimera",
+    "result": "photo",
+    "file": "x-2115753951920529796-jimmy-kimera.jpg",
+    "image": "https://pbs.twimg.com/media/HVyqsxcXEAAtIw2?format=png&name=orig",
+    "bytes": 9191,
+    "reviewed": "Viewed image: image 1 of 2: plain headshot, one adult man, grey hoodie, plain background; image 2 is an arrest scene with officers' bodies at the edges, not used"
+  },
+  "x.com/ero__phoenix/status/2115820971017855176": {
+    "checkedAt": "2026-10-29T18:07:58.869Z",
+    "name": "Juan Romualdo Martinez Baldivia",
+    "result": "none",
+    "why": "ARRESTED FACING REMOVAL graphic card with text overlay"
+  },
+  "x.com/hsi_sanantonio/status/2115831623815942575": {
+    "checkedAt": "2026-10-29T18:07:58.965Z",
+    "name": "Omar Guadalupe Rostro-Gamez",
+    "result": "none",
+    "why": "evidence photo only (drugs and cash), no image of the person"
   }
 }
