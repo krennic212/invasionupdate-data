@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-29",
   "windowDays": 7,
-  "total": 195,
+  "total": 210,
   "rows": [
     {
       "id": "dhs-20261023-anthony-tyrone-higgs",
@@ -116,6 +116,17 @@
       ]
     },
     {
+      "id": "x-2115879833615921573-guiyang-xu",
+      "name": "Guiyang Xu",
+      "when": "29 Oct 2026",
+      "severity": 155,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Kidnapping / human trafficking"
+      ]
+    },
+    {
       "id": "x-2115145798833066022-luis-vieira-andrade",
       "name": "Luis Vieira Andrade",
       "when": "27 Oct 2026",
@@ -206,6 +217,17 @@
         "Fraud (incl. voter fraud)",
         "Weapons",
         "Drug possession"
+      ]
+    },
+    {
+      "id": "x-2115865263300387043-yosmar-adolfo-castro-cardona",
+      "name": "Yosmar Adolfo Castro Cardona",
+      "when": "29 Oct 2026",
+      "severity": 125,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons"
       ]
     },
     {
@@ -324,6 +346,16 @@
       "name": "Francisco Cortez-Perez",
       "when": "23 Oct 2026",
       "severity": 101,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2115865252609061285-alejandro-gonzalez-garcia",
+      "name": "Alejandro Gonzalez-Garcia",
+      "when": "29 Oct 2026",
+      "severity": 92,
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"
@@ -498,6 +530,16 @@
       "severityCrimes": [
         "Child sex crime",
         "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "x-2115885851771310297-aureliano-antonio-melendez-reyes",
+      "name": "Aureliano Antonio Melendez Reyes",
+      "when": "29 Oct 2026",
+      "severity": 83,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
       ]
     },
     {
