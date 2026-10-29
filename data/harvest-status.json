@@ -1,16 +1,22 @@
 {
-  "checkedAt": 1793294187796,
-  "checkedAtIso": "2026-10-29T17:16:27.796Z",
+  "checkedAt": 1793302269136,
+  "checkedAtIso": "2026-10-29T19:31:09.136Z",
   "added": [
-    "Operation Gate Keeper (operation, not a person)"
+    "Juan Jose Leonardo De Leon",
+    "Estela Ruiz-Gomez",
+    "Juan Gomez Santiago",
+    "Raulier Lopez-Rivas",
+    "Luis Osorio",
+    "Juan Bravo",
+    "Mohamed Sabry Soliman"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 98,
+  "scannedReleases": 97,
   "error": null,
-  "note": "Added 1 as approved: Operation Gate Keeper (operation, not a person)",
+  "note": "Added 7 as approved: Juan Jose Leonardo De Leon, Estela Ruiz-Gomez, Juan Gomez Santiago, Raulier Lopez-Rivas, Luis Osorio, Juan Bravo, Mohamed Sabry Soliman",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
