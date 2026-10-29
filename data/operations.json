@@ -90,5 +90,38 @@
     "people": [],
     "text": "TheJusticeDept 27 Oct 2026, as posted: This case is a result of “Operation No Doze” a nationwide enforcement action led by the Justice Department’s National Fraud Enforcement Division, the Small Business Administration (SBA), and the SBA Office of Inspector General (SBA-OIG), targeting fraud in the SBA’s Paycheck Protection Program (PPP). Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true
+  },
+  {
+    "id": "op-thejusticedept-20261029-operation-ghostbusters",
+    "name": "Operation Ghostbusters",
+    "when": "29 Oct 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/opa/pr/justice-department-unveils-indictments-nationwide-ghost-student-fraud-scam-linked-kenyan",
+    "people": [],
+    "text": "TheJusticeDept 29 Oct 2026, as posted: Attorney’s Offices for the Eastern District of Virginia, Nebraska, and New Jersey announced indictments resulting from Operation Ghostbusters. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
+  },
+  {
+    "id": "op-thejusticedept-20261028-operation-no-doze-launches",
+    "name": "Operation No Doze Launches",
+    "when": "28 Oct 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/usao-or/pr/us-attorneys-office-and-sba-office-inspector-general-announce-major-criminal-and-civil",
+    "people": [],
+    "text": "TheJusticeDept 28 Oct 2026, as posted: Attorney’s Office and SBA Office of Inspector General Announce Major Criminal and Civil Actions as Operation No Doze Launches in Oregon PORTLAND, Ore. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
+  },
+  {
+    "id": "op-thejusticedept-20261029-operation-silver-sentinel",
+    "name": "Operation Silver Sentinel",
+    "when": "29 Oct 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/usao-md/pr/maryland-law-enforcement-partners-raise-awareness-about-elder-fraud",
+    "people": [],
+    "text": "TheJusticeDept 29 Oct 2026, as posted: Attorney’s Office for the District of Maryland recently used the game as an innovative tool to educate seniors about common fraud scams as part of Operation Silver Sentinel. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
   }
 ]
