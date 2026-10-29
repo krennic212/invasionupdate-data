@@ -1,5 +1,33 @@
 [
   {
+    "name": "Andres Carrillo-Hernandez",
+    "city": "New York",
+    "crime": "Pleaded guilty: BUFFALO, N.Y. - U.S. Attorney Michael DiGiacomo announced today that Andres Carrillo-Hernandez, 27, a citizen of Mexico, pleaded guilty before U.S. District Judge Richard J. Arcara to alien smuggling for commercial advantage and private financial gain, which carries a mandatory minimum penalty of three years in prison, a maximum of 10 years, and a fine of $250,000.",
+    "usa": "DOJ release Oct 28, 2026: Illegal alien from Mexico pleads guilty to smuggling three other aliens into the United States",
+    "foreign": "Not stated in post",
+    "picked": "10/28/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261028-andres-carrillo-hernandez",
+    "when": "28 Oct 2026",
+    "severity": 65,
+    "severityReason": "Alien smuggling",
+    "severityCrimes": [
+      "Alien smuggling"
+    ],
+    "text": "DOJ Oct 28, 2026, as posted: BUFFALO, N.Y. - U.S. Attorney Michael DiGiacomo announced today that Andres Carrillo-Hernandez, 27, a citizen of Mexico, pleaded guilty before U.S. District Judge Richard J. Arcara to alien smuggling for commercial advantage and private financial gain, which carries a mandatory minimum penalty of three years in prison, a maximum of 10 years, and a fine of $250,000.",
+    "photo": "",
+    "via": "justice.gov/usao-wdny/pr/illegal-alien-mexico-pleads-guilty-smuggling-three-other-aliens-united-states",
+    "sourceUrl": "https://www.justice.gov/usao-wdny/pr/illegal-alien-mexico-pleads-guilty-smuggling-three-other-aliens-united-states",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "DOJ",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Kelvin Lopez-Leonardo",
     "city": "Missouri",
     "crime": "Pleaded guilty: Kelvin Lopez-Leonardo, 32, pleaded guilty to being an alien in possession of a firearm and unlawfully reentering the United States.",
@@ -17491,7 +17519,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoHold": "needs visual check"
   },
   {
     "name": "Aman Kumar",
@@ -20324,7 +20353,8 @@
     "lon": -73.5594,
     "status": "approved",
     "tags": [],
-    "enteredSource": "Charged: According to local reporting, police in Nassau County, New York arrested Rudi Lacatusu and Mirabela Lacatusu, illegal aliens from Romania, on October 5, and charged them each with THREE counts of grand larceny after a series of jewelry thefts."
+    "enteredSource": "Charged: According to local reporting, police in Nassau County, New York arrested Rudi Lacatusu and Mirabela Lacatusu, illegal aliens from Romania, on October 5, and charged them each with THREE counts of grand larceny after a series of jewelry thefts.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Rudi Lacatusu",
@@ -20353,7 +20383,8 @@
     "lon": -73.5594,
     "status": "approved",
     "tags": [],
-    "enteredSource": "Charged: According to local reporting, police in Nassau County, New York arrested Rudi Lacatusu and Mirabela Lacatusu, illegal aliens from Romania, on October 5, and charged them each with THREE counts of grand larceny after a series of jewelry thefts."
+    "enteredSource": "Charged: According to local reporting, police in Nassau County, New York arrested Rudi Lacatusu and Mirabela Lacatusu, illegal aliens from Romania, on October 5, and charged them each with THREE counts of grand larceny after a series of jewelry thefts.",
+    "photoHold": "needs visual check"
   },
   {
     "name": "Simranpal Singh",

@@ -1,19 +1,15 @@
 {
-  "updatedAt": "2026-10-28T22:19:27Z",
-  "rows": 997,
-  "approved": 973,
+  "updatedAt": "2026-10-29T01:43:28Z",
+  "rows": 998,
+  "approved": 974,
   "pending": 24,
   "photos": 287,
   "reviewRows": 762,
-  "lastAddedAt": "2026-10-28T22:19:15Z",
-  "lastAddedCount": 5,
+  "lastAddedAt": "2026-10-29T01:43:18Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Kelvin Lopez-Leonardo",
-    "Yana Leonova",
-    "XIAOQIN YAN",
-    "Oscar Salvador Pelayo-Guzman",
-    "Jorge Steve Zepeda Irias"
+    "Andres Carrillo-Hernandez"
   ],
-  "harvestSha256": "fc20e00eb492fa66e06ff08cddda7ee6a0af953f80969a2c79e0a96cff368c65",
+  "harvestSha256": "aa5fef742b2aaa1444574ea561ea4d1119c51511fdd3d92a712e0fed4979ac7b",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
