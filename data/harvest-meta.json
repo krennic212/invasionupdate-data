@@ -1,15 +1,16 @@
 {
-  "updatedAt": "2026-10-30T14:18:10Z",
-  "rows": 1096,
-  "approved": 1066,
+  "updatedAt": "2026-10-30T17:13:15Z",
+  "rows": 1098,
+  "approved": 1068,
   "pending": 30,
   "photos": 304,
   "reviewRows": 764,
-  "lastAddedAt": "2026-10-30T14:18:09Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-10-30T17:13:15Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Jose Jamie Serrano-Santa Maria"
+    "Guillermo Carmona-Lopez",
+    "Ernesto Antonio Gonzalez-Anzora"
   ],
-  "harvestSha256": "9a6454bc3a261dcff9382b8a0bd2d15650b3e565724acc94e63053a86ae288c2",
+  "harvestSha256": "d381cc7af5f37e21facfc986d2781b2e90c41c759b1a9dbd903495e956c5e0ec",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
