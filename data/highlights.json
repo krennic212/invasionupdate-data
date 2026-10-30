@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-10-29",
+  "asOf": "2026-10-30",
   "windowDays": 7,
-  "total": 173,
+  "total": 178,
   "rows": [
     {
       "id": "x-2115145798833066022-roberto-mosquera-del-peral",
@@ -26,6 +26,18 @@
         "Murder / manslaughter",
         "Attempted murder",
         "Armed robbery / aggravated assault"
+      ]
+    },
+    {
+      "id": "ice-20261030-carlos-javier-alamo-sorino",
+      "name": "Carlos Javier Alamo-Sorino",
+      "when": "30 Oct 2026",
+      "severity": 195,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Armed robbery / aggravated assault",
+        "Burglary / theft"
       ]
     },
     {

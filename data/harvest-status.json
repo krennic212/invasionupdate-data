@@ -1,14 +1,31 @@
 {
-  "checkedAt": 1793327705815,
-  "checkedAtIso": "2026-10-30T02:35:05.815Z",
-  "added": [],
+  "checkedAt": 1793369723682,
+  "checkedAtIso": "2026-10-30T14:15:23.682Z",
+  "added": [
+    "Jose Zapete-Quinonez",
+    "Lawrence Cole",
+    "Carlos Javier Alamo-Sorino",
+    "Ramiro Daniel Cuarezma Aleman",
+    "Cliff Medgy Sanon",
+    "Karl Stephen Branzon Pau",
+    "Gabriel Mendoza Vicente",
+    "Omar Ponce-Juarez",
+    "Julio De La Rosa",
+    "Gerardo Nieves-Borja",
+    "Jose Luis Guerrero Nunez"
+  ],
   "addedStatus": "approved",
-  "heldPending": [],
+  "heldPending": [
+    "Ramiro Daniel Cuarezma Aleman (voting row with no city)",
+    "Omar Ponce-Juarez (voting row with no city)",
+    "Julio De La Rosa (voting row with no city)",
+    "Gerardo Nieves-Borja (voting row with no city)"
+  ],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 90,
+  "scannedReleases": 94,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 11 as approved: Jose Zapete-Quinonez, Lawrence Cole, Carlos Javier Alamo-Sorino, Ramiro Daniel Cuarezma Aleman, Cliff Medgy Sanon, Karl Stephen Branzon Pau, Gabriel Mendoza Vicente, Omar Ponce-Juarez, Julio De La Rosa, Gerardo Nieves-Borja, Jose Luis Guerrero Nunez",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
