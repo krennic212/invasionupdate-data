@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T17:13:15Z",
+  "updatedAt": "2026-10-30T17:14:04Z",
   "rows": 1098,
   "approved": 1068,
   "pending": 30,
@@ -11,6 +11,6 @@
     "Guillermo Carmona-Lopez",
     "Ernesto Antonio Gonzalez-Anzora"
   ],
-  "harvestSha256": "d381cc7af5f37e21facfc986d2781b2e90c41c759b1a9dbd903495e956c5e0ec",
+  "harvestSha256": "2ed7dd7c2d5c7bd890a8ea689c494ae13a77e00052f098a9e7e21aebfdf7b7e7",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
