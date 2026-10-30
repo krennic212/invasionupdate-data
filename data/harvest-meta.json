@@ -1,21 +1,15 @@
 {
-  "updatedAt": "2026-10-30T14:15:29Z",
-  "rows": 1095,
-  "approved": 1065,
+  "updatedAt": "2026-10-30T14:18:10Z",
+  "rows": 1096,
+  "approved": 1066,
   "pending": 30,
   "photos": 304,
   "reviewRows": 764,
-  "lastAddedAt": "2026-10-30T14:15:23Z",
-  "lastAddedCount": 7,
+  "lastAddedAt": "2026-10-30T14:18:09Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Jose Zapete-Quinonez",
-    "Lawrence Cole",
-    "Carlos Javier Alamo-Sorino",
-    "Cliff Medgy Sanon",
-    "Karl Stephen Branzon Pau",
-    "Gabriel Mendoza Vicente",
-    "Jose Luis Guerrero Nunez"
+    "Jose Jamie Serrano-Santa Maria"
   ],
-  "harvestSha256": "1db874a28f90ce31a1fd22ec722e804ce0f7c4d51b22954bde0042793aba044c",
+  "harvestSha256": "9a6454bc3a261dcff9382b8a0bd2d15650b3e565724acc94e63053a86ae288c2",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
