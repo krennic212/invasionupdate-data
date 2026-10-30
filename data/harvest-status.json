@@ -1,18 +1,14 @@
 {
-  "checkedAt": 1793327522593,
-  "checkedAtIso": "2026-10-30T02:32:02.593Z",
-  "added": [
-    "Pedro Ramos Hernandez",
-    "Ramiro Cisneros Hernandez",
-    "Gadiel Mondragon Ramirez"
-  ],
+  "checkedAt": 1793327705815,
+  "checkedAtIso": "2026-10-30T02:35:05.815Z",
+  "added": [],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 0,
+  "scannedReleases": 90,
   "error": null,
-  "note": "Added 3 as approved: Pedro Ramos Hernandez, Ramiro Cisneros Hernandez, Gadiel Mondragon Ramirez",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
