@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-30",
   "windowDays": 7,
-  "total": 179,
+  "total": 185,
   "rows": [
     {
       "id": "x-2115145798833066022-roberto-mosquera-del-peral",
@@ -170,6 +170,17 @@
       ]
     },
     {
+      "id": "dhs-20261030-ottmar-johnson",
+      "name": "Ottmar Johnson",
+      "when": "30 Oct 2026",
+      "severity": 150,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Weapons"
+      ]
+    },
+    {
       "id": "dhs-20261029-armando-suarez",
       "name": "Armando Suarez",
       "when": "29 Oct 2026",
@@ -287,17 +298,6 @@
       ]
     },
     {
-      "id": "x-2115145798833066022-tuan-thanh-phan",
-      "name": "Tuan Thanh Phan",
-      "when": "27 Oct 2026",
-      "severity": 122,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "Assault / battery"
-      ]
-    },
-    {
       "id": "dhs-20261026-mario-garcia",
       "name": "Mario Garcia",
       "when": "26 Oct 2026",
@@ -312,6 +312,26 @@
       "name": "Gerson Roldan Irias Villafranca",
       "when": "27 Oct 2026",
       "severity": 101,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261030-marco-julio-sandoval",
+      "name": "Marco Julio Sandoval",
+      "when": "30 Oct 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261030-matheus-abner-de-souza-soares",
+      "name": "Matheus Abner De Souza-Soares",
+      "when": "30 Oct 2026",
+      "severity": 92,
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"

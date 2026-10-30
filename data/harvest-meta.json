@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-10-30T18:13:14Z",
-  "rows": 1107,
-  "approved": 1077,
+  "updatedAt": "2026-10-30T18:14:34Z",
+  "rows": 1116,
+  "approved": 1086,
   "pending": 30,
   "photos": 317,
   "reviewRows": 764,
-  "lastAddedAt": "2026-10-30T17:16:09Z",
+  "lastAddedAt": "2026-10-30T18:14:28Z",
   "lastAddedCount": 9,
   "lastAdded": [
-    "Djina Christelle Maurice",
-    "Tai Ngoc Ly",
-    "Jean Joel Joseph",
-    "Dinh Doan",
-    "Pedro Alvarez Rodriguez",
-    "Abubakarr Barrie",
-    "Mohammed Omar Hassan",
-    "Karen Hinojosa-Martinez",
-    "Jose Vazquez-Mendoza"
+    "Ottmar Johnson",
+    "Apolinar Meza-Ponce",
+    "Francisco Roman-Mencias",
+    "Marco Julio Sandoval",
+    "Matheus Abner De Souza-Soares",
+    "RUDY ANTONYS BARRIENTOS-AVILA",
+    "Garfield St. Vincent Bruce",
+    "Mariela Elizabeth Avila Ortiz",
+    "Allison Melissa Wilkes"
   ],
-  "harvestSha256": "645fcc72ba9eedda1a461ecd77aaac55b36782b2badaf2de456beceb798ab487",
+  "harvestSha256": "2a3e26badeed8d5e6a287b9f3d71bbb575bcf1cd8227f50b81a309764d11067f",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
