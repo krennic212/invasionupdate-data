@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-30",
   "windowDays": 7,
-  "total": 185,
+  "total": 198,
   "rows": [
     {
       "id": "x-2115145798833066022-roberto-mosquera-del-peral",
@@ -62,6 +62,18 @@
         "Violent crime against a child",
         "Armed robbery / aggravated assault",
         "Assault / battery"
+      ]
+    },
+    {
+      "id": "x-2116241227087851638-jorge-cisneros-martinez",
+      "name": "Jorge Cisneros-Martinez",
+      "when": "30 Oct 2026",
+      "severity": 185,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Armed robbery / aggravated assault",
+        "DUI"
       ]
     },
     {
@@ -240,6 +252,17 @@
       ]
     },
     {
+      "id": "x-2116241234209735025-carlos-orlando-sainz-zulueta",
+      "name": "Carlos Orlando Sainz Zulueta",
+      "when": "30 Oct 2026",
+      "severity": 125,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons"
+      ]
+    },
+    {
       "id": "x-2115865263300387043-yosmar-adolfo-castro-cardona",
       "name": "Yosmar Adolfo Castro Cardona",
       "when": "29 Oct 2026",
@@ -274,30 +297,6 @@
       ]
     },
     {
-      "id": "x-2115534568044585410-salvador-vargas-silva",
-      "name": "Salvador Vargas-Silva",
-      "when": "28 Oct 2026",
-      "severity": 124,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Assault / battery",
-        "DUI"
-      ]
-    },
-    {
-      "id": "x-2115426482117869659-oscar-daniel-isaya-corrales",
-      "name": "Oscar Daniel Isaya Corrales",
-      "when": "28 Oct 2026",
-      "severity": 122,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Burglary / theft",
-        "Drug possession"
-      ]
-    },
-    {
       "id": "dhs-20261026-mario-garcia",
       "name": "Mario Garcia",
       "when": "26 Oct 2026",
@@ -315,6 +314,17 @@
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2116217819415372277-juan-antonio-perdomo-rivas",
+      "name": "Juan Antonio Perdomo-Rivas",
+      "when": "30 Oct 2026",
+      "severity": 95,
+      "severityReason": "Violent crime against a child",
+      "severityCrimes": [
+        "Violent crime against a child",
+        "DUI"
       ]
     },
     {
