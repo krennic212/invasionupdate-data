@@ -1,22 +1,8 @@
 {
   "asOf": "2026-10-29",
   "windowDays": 7,
-  "total": 213,
+  "total": 170,
   "rows": [
-    {
-      "id": "dhs-20261023-anthony-tyrone-higgs",
-      "name": "Anthony Tyrone Higgs",
-      "when": "23 Oct 2026",
-      "severity": 277,
-      "severityReason": "Attack on police officer",
-      "severityCrimes": [
-        "Attack on police officer",
-        "Armed robbery / aggravated assault",
-        "Fraud (incl. voter fraud)",
-        "Weapons",
-        "Burglary / theft"
-      ]
-    },
     {
       "id": "x-2115145798833066022-roberto-mosquera-del-peral",
       "name": "Roberto Mosquera-Del Peral",
@@ -186,18 +172,6 @@
       ]
     },
     {
-      "id": "x-2113712401560592790-serferino-trinidad-ortega",
-      "name": "Serferino Trinidad Ortega",
-      "when": "23 Oct 2026",
-      "severity": 138,
-      "severityReason": "Attack on police officer",
-      "severityCrimes": [
-        "Attack on police officer",
-        "Assault / battery",
-        "DUI"
-      ]
-    },
-    {
       "id": "dhs-20261028-rony-izaguirre-henriquez",
       "name": "Rony Izaguirre-Henriquez",
       "when": "28 Oct 2026",
@@ -301,6 +275,17 @@
       ]
     },
     {
+      "id": "x-2115159452764811508-luis-obispo-hernandez",
+      "name": "Luis Obispo-Hernandez",
+      "when": "27 Oct 2026",
+      "severity": 120,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "DUI"
+      ]
+    },
+    {
       "id": "dhs-20261026-mario-garcia",
       "name": "Mario Garcia",
       "when": "26 Oct 2026",
@@ -311,41 +296,9 @@
       ]
     },
     {
-      "id": "x-2113734889891840350-pantaleon-chacon-madrid",
-      "name": "Pantaleon Chacon Madrid",
-      "when": "23 Oct 2026",
-      "severity": 119,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Assault / battery"
-      ]
-    },
-    {
-      "id": "x-2113727322167603425-juan-carlos-vasquez-vasaldua",
-      "name": "Juan Carlos Vasquez-Vasaldua",
-      "when": "23 Oct 2026",
-      "severity": 117,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "DUI"
-      ]
-    },
-    {
       "id": "x-2115159442916266452-gerson-roldan-irias-villafranca",
       "name": "Gerson Roldan Irias Villafranca",
       "when": "27 Oct 2026",
-      "severity": 101,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2113723722662051889-francisco-cortez-perez",
-      "name": "Francisco Cortez-Perez",
-      "when": "23 Oct 2026",
       "severity": 101,
       "severityReason": "Child sex crime",
       "severityCrimes": [
@@ -473,56 +426,6 @@
       ]
     },
     {
-      "id": "x-2113723720607125628-fredy-adeli-cuxum-orellana",
-      "name": "Fredy Adeli Cuxum-Orellana",
-      "when": "23 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2113723714739056924-luis-enrique-nucamendi-molina",
-      "name": "Luis Enrique Nucamendi-Molina",
-      "when": "23 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2113723717364920634-rahjai-ornardo-suckoo",
-      "name": "Rahjai Ornardo Suckoo",
-      "when": "23 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2113727317319295265-santiago-miguel-miguel-ignacio",
-      "name": "Santiago Miguel Miguel Ignacio",
-      "when": "23 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2113727300533633122-victor-perez-perez",
-      "name": "Victor Perez-Perez",
-      "when": "23 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
       "id": "x-2114803701558952294-lesli-joel-calix-sarmiento",
       "name": "Lesli Joel Calix-Sarmiento",
       "when": "26 Oct 2026",
@@ -557,16 +460,6 @@
       "id": "x-2114033677495926910-edgar-michicoj-perez",
       "name": "Edgar Michicoj-Perez",
       "when": "24 Oct 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2113798934288064816-carlos-lara-escobar",
-      "name": "Carlos Lara-Escobar",
-      "when": "23 Oct 2026",
       "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
