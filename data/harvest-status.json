@@ -1,19 +1,25 @@
 {
-  "checkedAt": 1793387329126,
-  "checkedAtIso": "2026-10-30T19:08:49.126Z",
+  "checkedAt": 1793398266266,
+  "checkedAtIso": "2026-10-30T22:11:06.266Z",
   "added": [
-    "Abraham Gallegos Mendez",
-    "Operation Cold SNAP (operation, not a person)"
+    "Mariela Delia Mendoza",
+    "Syed Murtuza Kablazada",
+    "Alexander Gurevich",
+    "Mark Adwar Odisho",
+    "Frederic Jean Rene Sicard",
+    "Omar Lorenzo Olivas-Chavez",
+    "Alvaro Lopez Ayala",
+    "Roberto Espinoza-Ponce",
+    "Selvin Noe Santos-Umana",
+    "Jose Elmer Argueta-Argueta"
   ],
   "addedStatus": "approved",
-  "heldPending": [
-    "Abraham Gallegos Mendez (suspect described as still at large)"
-  ],
+  "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 94,
+  "scannedReleases": 102,
   "error": null,
-  "note": "Added 2 as approved: Abraham Gallegos Mendez, Operation Cold SNAP (operation, not a person)",
+  "note": "Added 10 as approved: Mariela Delia Mendoza, Syed Murtuza Kablazada, Alexander Gurevich, Mark Adwar Odisho, Frederic Jean Rene Sicard, Omar Lorenzo Olivas-Chavez, Alvaro Lopez Ayala, Roberto Espinoza-Ponce, Selvin Noe Santos-Umana, Jose Elmer Argueta-Argueta",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
