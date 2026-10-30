@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-30",
   "windowDays": 7,
-  "total": 178,
+  "total": 179,
   "rows": [
     {
       "id": "x-2115145798833066022-roberto-mosquera-del-peral",
@@ -159,6 +159,17 @@
       ]
     },
     {
+      "id": "dhs-20261030-abubakarr-barrie",
+      "name": "Abubakarr Barrie",
+      "when": "30 Oct 2026",
+      "severity": 150,
+      "severityReason": "Attempted murder",
+      "severityCrimes": [
+        "Attempted murder",
+        "Kidnapping / human trafficking"
+      ]
+    },
+    {
       "id": "dhs-20261029-armando-suarez",
       "name": "Armando Suarez",
       "when": "29 Oct 2026",
@@ -284,17 +295,6 @@
       "severityCrimes": [
         "Murder / manslaughter",
         "Assault / battery"
-      ]
-    },
-    {
-      "id": "x-2115159452764811508-luis-obispo-hernandez",
-      "name": "Luis Obispo-Hernandez",
-      "when": "27 Oct 2026",
-      "severity": 120,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "DUI"
       ]
     },
     {
