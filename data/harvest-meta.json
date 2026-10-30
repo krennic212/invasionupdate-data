@@ -1,22 +1,17 @@
 {
-  "updatedAt": "2026-10-29T22:12:58Z",
-  "rows": 1081,
-  "approved": 1055,
+  "updatedAt": "2026-10-30T02:32:05Z",
+  "rows": 1084,
+  "approved": 1058,
   "pending": 26,
   "photos": 304,
   "reviewRows": 764,
-  "lastAddedAt": "2026-10-29T22:12:54Z",
-  "lastAddedCount": 8,
+  "lastAddedAt": "2026-10-30T02:32:02Z",
+  "lastAddedCount": 3,
   "lastAdded": [
-    "Javier Hernandez Alcon",
-    "Orlando Aguilar",
-    "Ramon Antonio Martinez",
-    "Gerardo Daniel Rivera-Rivera",
-    "Victor Manuel Macias-Castro",
-    "Contreras Hernandez",
-    "Ahmed Maqbul Syed",
-    "Wenshen Xu"
+    "Pedro Ramos Hernandez",
+    "Ramiro Cisneros Hernandez",
+    "Gadiel Mondragon Ramirez"
   ],
-  "harvestSha256": "28c69921cfd39a0190076c9a8525a2281a98ae4d93796d579abcfb4d1c2011ca",
+  "harvestSha256": "ffa0b6203ca2a65071faeccb8ad7149e776e4425c30d932dfe864756bdc9466a",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

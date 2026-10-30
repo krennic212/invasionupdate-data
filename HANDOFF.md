@@ -1,3 +1,25 @@
+# HANDOFF: 2026-10-29 (9:35 PM CDT) 3 DOJ releases via data/pending.json (Krennic asked 6:10 PM + 9:26 PM CT)
+
+- Read through the DOJ press-release API (/workspace/doj4/fetch.mjs, exact URL match). No image in any release: photo "".
+  - usao-edok Oct 29 "Illegal Alien Sentenced For Unlawful Reentry" (uuid 086f595e-...): Pedro Ramos Hernandez (a/k/a list
+    copied verbatim into aka), "age 63, a Mexican national unlawfully present in Sallisaw, Oklahoma, was sentenced to time
+    served for one count of Unlawful Reentry of Removed Alien." Convicted (sentenced), Sallisaw, OK.
+  - usao-wdpa Oct 29 "Illegal Alien from Mexico Pleads Guilty to Fentanyl Trafficking Charges" (cdb80641-...): Ramiro
+    Cisneros Hernandez, 48, Pleaded guilty (sentencing Mar 16, 2027; in USMS custody). Status is the lead sentence "A citizen
+    of Mexico illegally present in the United States ...", kept in crime/text with the naming sentence. City "Pennsylvania"
+    (district state, parser rule; the stop was "on the Pennsylvania Turnpike in Somerset County").
+  - usao-mt Oct 28 "Mexican national sentenced for illegally reentering U.S." (9540fb70-...): Gadiel Mondragon Ramirez, 42,
+    Convicted (sentenced to time served, remanded to ICE). Lead "A Mexican citizen who illegally reentered ..." + naming
+    sentence. City "Montana" (district state, parser rule).
+- Why missed: extractPeople has no pattern for these shapes (status in a separate lead sentence / long a/k/a list), so the
+  rows were built with parse.mjs toRow from the releases' own sentences (scripts in /workspace/doj4/iu-intake.mjs), then fed
+  through data/pending.json (AUTO_APPROVE=true, MAX_LINKS=0 DOJ_PAGES=0 STATE_SOURCES=0 DAILY_SIGNAL=0, npm run harvest).
+  holdReasons + holdReasonsForRow pass for all three (adult, stage not later than wording, in custody, non-citizen stated).
+  No guard or parser change. Live rows 1055 -> 1058. node --test 255/255; validate OK.
+- B (@ICEgov 2115946443202543963, Oct 29 6:18 PM CT; links only Daily Caller): no dhs.gov / ice.gov / justice.gov page lists the
+  17 names. Official pages name 5 of them, all already live here: Anthony Tyrone Higgs + Mariana Alexandra Dewey (DHS), Cliff
+  Sanon (usao-edpa), Joshua Frederick Kofi Edzie (usao-mn), Lise Marie Johnson (usao-mdfl). The other 12 added: none.
+
 # HANDOFF: 2026-10-29 (2:55 PM CDT) OPA NC "Charges 18 More ... Illegally Voting" via data/pending.json + parser rule I (Krennic approved 2:43 PM CT)
 
 - Source: OPA Oct 29, 2026 "Justice Department Charges 18 More in North Carolina with Illegally Voting in 2024 Election"
