@@ -1,25 +1,19 @@
 {
-  "checkedAt": 1793384068959,
-  "checkedAtIso": "2026-10-30T18:14:28.959Z",
+  "checkedAt": 1793387329126,
+  "checkedAtIso": "2026-10-30T19:08:49.126Z",
   "added": [
-    "Ottmar Johnson",
-    "Apolinar Meza-Ponce",
-    "Francisco Roman-Mencias",
-    "Marco Julio Sandoval",
-    "Matheus Abner De Souza-Soares",
-    "RUDY ANTONYS BARRIENTOS-AVILA",
-    "Garfield St. Vincent Bruce",
-    "Mariela Elizabeth Avila Ortiz",
-    "Allison Melissa Wilkes",
-    "Operation Fly City’ DAYTON (operation, not a person)"
+    "Abraham Gallegos Mendez",
+    "Operation Cold SNAP (operation, not a person)"
   ],
   "addedStatus": "approved",
-  "heldPending": [],
+  "heldPending": [
+    "Abraham Gallegos Mendez (suspect described as still at large)"
+  ],
   "autoApprove": true,
   "sentToReview": [],
   "scannedReleases": 94,
   "error": null,
-  "note": "Added 10 as approved: Ottmar Johnson, Apolinar Meza-Ponce, Francisco Roman-Mencias, Marco Julio Sandoval, Matheus Abner De Souza-Soares, RUDY ANTONYS BARRIENTOS-AVILA, Garfield St. Vincent Bruce, Mariela Elizabeth Avila Ortiz, Allison Melissa Wilkes, Operation Fly City’ DAYTON (operation, not a person)",
+  "note": "Added 2 as approved: Abraham Gallegos Mendez, Operation Cold SNAP (operation, not a person)",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

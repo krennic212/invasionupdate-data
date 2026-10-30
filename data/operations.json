@@ -178,5 +178,16 @@
     "people": [],
     "text": "TheJusticeDept 30 Oct 2026, as posted: 2 Dayton men plead guilty to drug & gun charges as part of ‘Operation Fly City’ DAYTON, Ohio – Two of the 47 defendants charged this summer as part of the “Operation Fly City” Homeland Security Task Force enforcement operation pleaded guilty in U. Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true
+  },
+  {
+    "id": "op-thejusticedept-20261030-operation-cold-snap",
+    "name": "Operation Cold SNAP",
+    "when": "30 Oct 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/opa/pr/dojs-fraud-division-and-us-attorneys-office-district-minnesota-uncover-voter-fraud-and",
+    "people": [],
+    "text": "TheJusticeDept 30 Oct 2026, as posted: The charges resulted from joint USDA‑OIG and Homeland Security Operation Cold SNAP, which identified local businesses engaged in fraudulent use and trafficking of SNAP benefits, during which AK Tobacco LLC was identified as a location involved in cash trafficking of EBT benefits. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
   }
 ]

@@ -1,5 +1,34 @@
 [
   {
+    "name": "Abraham Gallegos Mendez",
+    "city": "Texas",
+    "crime": "Arrested: Abraham Gallegos Mendez, an illegal alien from Mexico, was stopped by DPS in February. He fled on foot and was eventually detained.",
+    "usa": "DOJ release Oct 30, 2026: U.S. Attorney Announces Influx of Federal Gun Crime Prosecutions in San Antonio",
+    "foreign": "Not stated in post",
+    "picked": "10/30/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261030-abraham-gallegos-mendez",
+    "when": "30 Oct 2026",
+    "severity": 50,
+    "severityReason": "Weapons",
+    "severityCrimes": [
+      "Weapons"
+    ],
+    "text": "DOJ Oct 30, 2026, as posted: Abraham Gallegos Mendez, an illegal alien from Mexico, was stopped by DPS in February. He fled on foot and was eventually detained.",
+    "photo": "",
+    "via": "justice.gov/usao-wdtx/pr/us-attorney-announces-influx-federal-gun-crime-prosecutions-san-antonio",
+    "sourceUrl": "https://www.justice.gov/usao-wdtx/pr/us-attorney-announces-influx-federal-gun-crime-prosecutions-san-antonio",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "DOJ",
+    "lat": 31.9686,
+    "lon": -99.9018,
+    "status": "pending",
+    "holdReason": "suspect described as still at large",
+    "tags": []
+  },
+  {
     "name": "Ottmar Johnson",
     "city": "Prince George’s County, MD",
     "crime": "Convicted: Ottmar Johnson, a criminal illegal alien from Jamaica, convicted for homicide and weapons offense in Prince George’s County, Maryland.",

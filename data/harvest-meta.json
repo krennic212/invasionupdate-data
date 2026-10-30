@@ -1,23 +1,13 @@
 {
-  "updatedAt": "2026-10-30T18:14:34Z",
-  "rows": 1116,
+  "updatedAt": "2026-10-30T19:08:54Z",
+  "rows": 1117,
   "approved": 1086,
-  "pending": 30,
+  "pending": 31,
   "photos": 317,
   "reviewRows": 764,
-  "lastAddedAt": "2026-10-30T18:14:28Z",
-  "lastAddedCount": 9,
-  "lastAdded": [
-    "Ottmar Johnson",
-    "Apolinar Meza-Ponce",
-    "Francisco Roman-Mencias",
-    "Marco Julio Sandoval",
-    "Matheus Abner De Souza-Soares",
-    "RUDY ANTONYS BARRIENTOS-AVILA",
-    "Garfield St. Vincent Bruce",
-    "Mariela Elizabeth Avila Ortiz",
-    "Allison Melissa Wilkes"
-  ],
-  "harvestSha256": "2a3e26badeed8d5e6a287b9f3d71bbb575bcf1cd8227f50b81a309764d11067f",
+  "lastAddedAt": "2026-10-30T19:08:49Z",
+  "lastAddedCount": 0,
+  "lastAdded": [],
+  "harvestSha256": "e3b1aa9d57e574a957fdfdbdb6c86bb12ee0df2fe0a69b9aef5074a1eb05dc8a",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
