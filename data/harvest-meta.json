@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-10-30T17:16:15Z",
+  "updatedAt": "2026-10-30T18:13:14Z",
   "rows": 1107,
   "approved": 1077,
   "pending": 30,
-  "photos": 304,
+  "photos": 317,
   "reviewRows": 764,
   "lastAddedAt": "2026-10-30T17:16:09Z",
   "lastAddedCount": 9,
@@ -18,6 +18,6 @@
     "Karen Hinojosa-Martinez",
     "Jose Vazquez-Mendoza"
   ],
-  "harvestSha256": "c401628a6411a0b0c7c743ab4051950ba08739806a0e3409c9fce4e4f8251c77",
+  "harvestSha256": "645fcc72ba9eedda1a461ecd77aaac55b36782b2badaf2de456beceb798ab487",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

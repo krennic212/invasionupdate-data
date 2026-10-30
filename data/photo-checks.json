@@ -6923,11 +6923,12 @@
   "justice.gov/opa/pr/chinese-national-sentenced-12-years-prison-narcotics-trafficking-money-laundering-and": {
     "checkedAt": "2026-10-29T22:12:57.510Z",
     "name": "Wenshen Xu",
-    "result": "held",
+    "result": "dropped",
     "file": "doj-20261029-wenshen-xu.jpg",
     "image": "https://www.justice.gov/sites/default/files/2026-10/image_credit_u.s._v._wenshen_xu_125-cr-231.png",
     "bytes": 32486,
-    "why": "needs visual check"
+    "why": "court evidence surveillance still (holding a bundle of cash, credit caption), not a headshot or booking photo",
+    "reviewedAt": "2026-10-30T18:13:14.683Z"
   },
   "justice.gov/usao-nj/pr/aliens-charged-illegally-voting-federal-elections-unlawfully-attempting-procure": {
     "checkedAt": "2026-10-29T22:12:57.563Z",
@@ -7048,5 +7049,152 @@
     "name": "Jose Vazquez-Mendoza",
     "result": "none",
     "why": "multi-person release: no image names this person"
+  },
+  "x.com/ero__phoenix/status/2116183372573573538": {
+    "checkedAt": "2026-10-30T18:12:36.767Z",
+    "name": "Ernesto Antonio Gonzalez-Anzora",
+    "result": "none",
+    "why": "ARRESTED FACING REMOVAL graphic card (text overlay), not a plain booking photo"
+  },
+  "x.com/dhsgov/status/2116209531608772972": {
+    "checkedAt": "2026-10-30T18:12:36.935Z",
+    "name": "Guillermo Carmona-Lopez",
+    "result": "none",
+    "why": "memorial graphic of the victim with text, no image of the named person"
+  },
+  "x.com/eroboston/status/2116118529518993690": {
+    "checkedAt": "2026-10-30T18:12:37.428Z",
+    "name": "Jose Jamie Serrano-Santa Maria",
+    "result": "photo",
+    "file": "x-2116118529518993690-jose-jamie-serrano-santa-maria.jpg",
+    "image": "https://pbs.twimg.com/media/HV32AahXUAEUvcK?format=jpg&name=orig",
+    "bytes": 66861,
+    "reviewed": "Viewed image: single booking-style photo of one adult man in a black hoodie against a white wall, no other people, no text"
+  },
+  "x.com/erosanfrancisco/status/2115854676503712003": {
+    "checkedAt": "2026-10-30T18:12:37.892Z",
+    "name": "Jimy Arteaga",
+    "result": "photo",
+    "file": "x-2115854676503712003-jimy-arteaga.jpg",
+    "image": "https://pbs.twimg.com/media/HVWEHqwXgAArYNX?format=png&name=orig",
+    "bytes": 20421,
+    "reviewed": "Viewed image: close-up booking photo of one adult man, no other people, no text"
+  },
+  "x.com/icegov/status/2115865252609061285": {
+    "checkedAt": "2026-10-30T18:12:38.330Z",
+    "name": "Alejandro Gonzalez-Garcia",
+    "result": "photo",
+    "file": "x-2115865252609061285-alejandro-gonzalez-garcia.jpg",
+    "image": "https://pbs.twimg.com/media/HV0PYoVXUAAXZWI?format=jpg&name=orig",
+    "bytes": 32794,
+    "reviewed": "Viewed image: plain mugshot of one adult man on gray background, no other people, no text"
+  },
+  "x.com/icegov/status/2115865255389855938": {
+    "checkedAt": "2026-10-30T18:12:38.639Z",
+    "name": "Ramirez Dumitru",
+    "result": "photo",
+    "file": "x-2115865255389855938-ramirez-dumitru.jpg",
+    "image": "https://pbs.twimg.com/media/HV0Pf88WcAAJxW3?format=jpg&name=orig",
+    "bytes": 11155,
+    "reviewed": "Viewed image: booking photo of one adult man; a background figure at far left is cut off by a doorframe with no face visible; no text"
+  },
+  "x.com/icegov/status/2115865257977753802": {
+    "checkedAt": "2026-10-30T18:12:39.011Z",
+    "name": "Francisco Sandoval Baez",
+    "result": "photo",
+    "file": "x-2115865257977753802-francisco-sandoval-baez.jpg",
+    "image": "https://pbs.twimg.com/media/HV0PjGQXQAIIDpj?format=jpg&name=orig",
+    "bytes": 9822,
+    "reviewed": "Viewed image: booking photo of one adult man against a wall, no other people, no text"
+  },
+  "x.com/icegov/status/2115865260574036267": {
+    "checkedAt": "2026-10-30T18:12:39.385Z",
+    "name": "Jose Alberto Vera Palacio",
+    "result": "photo",
+    "file": "x-2115865260574036267-jose-alberto-vera-palacio.jpg",
+    "image": "https://pbs.twimg.com/media/HV0PmXTXUAENKpH?format=jpg&name=orig",
+    "bytes": 30577,
+    "reviewed": "Viewed image: plain mugshot of one adult man on gray background, no other people, no text"
+  },
+  "x.com/icegov/status/2115865263300387043": {
+    "checkedAt": "2026-10-30T18:12:39.791Z",
+    "name": "Yosmar Adolfo Castro Cardona",
+    "result": "photo",
+    "file": "x-2115865263300387043-yosmar-adolfo-castro-cardona.jpg",
+    "image": "https://pbs.twimg.com/media/HV0Po8LWsAAa4xq?format=jpg&name=orig",
+    "bytes": 15364,
+    "reviewed": "Viewed image: ICE booking photo of one adult man in a gray sweatshirt in a processing room, no other people, no text"
+  },
+  "x.com/icegov/status/2115865266592829749": {
+    "checkedAt": "2026-10-30T18:12:40.166Z",
+    "name": "Luis Fernando Fernandez",
+    "result": "photo",
+    "file": "x-2115865266592829749-luis-fernando-fernandez.jpg",
+    "image": "https://pbs.twimg.com/media/HV0Prg5XcAAcXes?format=jpg&name=orig",
+    "bytes": 11544,
+    "reviewed": "Viewed image: booking photo of one adult man in tan uniform in a processing room, no other people, no text"
+  },
+  "x.com/icegov/status/2115865269335896185": {
+    "checkedAt": "2026-10-30T18:12:40.589Z",
+    "name": "Israel Castro-Adame",
+    "result": "photo",
+    "file": "x-2115865269335896185-israel-castro-adame.jpg",
+    "image": "https://pbs.twimg.com/media/HV0PuurWkAE2gZI?format=jpg&name=orig",
+    "bytes": 10260,
+    "reviewed": "Viewed image: booking photo of one adult bearded man in a processing room, no other people, no text"
+  },
+  "x.com/icegov/status/2115865271944831349": {
+    "checkedAt": "2026-10-30T18:12:41.019Z",
+    "name": "Juan Carlo Cruz-Robles",
+    "result": "photo",
+    "file": "x-2115865271944831349-juan-carlo-cruz-robles.jpg",
+    "image": "https://pbs.twimg.com/media/HV0Px-iXoAAFVDZ?format=jpg&name=orig",
+    "bytes": 8944,
+    "reviewed": "Viewed image: booking photo of one adult man in orange jail uniform, no other people, no text"
+  },
+  "x.com/erobuffalo/status/2115881592929542540": {
+    "checkedAt": "2026-10-30T18:12:41.320Z",
+    "name": "Mayk Rolando Garcia Roque",
+    "result": "photo",
+    "file": "x-2115881592929542540-mayk-rolando-garcia-roque.jpg",
+    "image": "https://pbs.twimg.com/media/HV0fASoXMAARERq?format=jpg&name=orig",
+    "bytes": 16969,
+    "reviewed": "Viewed image: booking photo of one adult bearded man standing before a roll-up door, no other people, no text"
+  },
+  "x.com/icegov/status/2115885851771310297": {
+    "checkedAt": "2026-10-30T18:12:41.755Z",
+    "name": "Aureliano Antonio Melendez Reyes",
+    "result": "photo",
+    "file": "x-2115885851771310297-aureliano-antonio-melendez-reyes.jpg",
+    "image": "https://pbs.twimg.com/media/HV0gcDgWIAAdLyM?format=jpg&name=orig",
+    "bytes": 12685,
+    "reviewed": "Viewed image: plain mugshot of one adult man on gray background, no other people, no text"
+  },
+  "x.com/icegov/status/2115885854979944873": {
+    "checkedAt": "2026-10-30T18:12:42.126Z",
+    "name": "Roman Ceron Amatitla",
+    "result": "photo",
+    "file": "x-2115885854979944873-roman-ceron-amatitla.jpg",
+    "image": "https://pbs.twimg.com/media/HV0gei4WoAABie5?format=jpg&name=orig",
+    "bytes": 6398,
+    "reviewed": "Viewed image: plain mugshot of one adult man on gray background, no other people, no text"
+  },
+  "x.com/erobuffalo/status/2115879833615921573": {
+    "checkedAt": "2026-10-30T18:12:42.284Z",
+    "name": "Guiyang Xu",
+    "result": "none",
+    "why": "second people with visible faces in the background window"
+  },
+  "x.com/icegov/status/2115885860826775856": {
+    "checkedAt": "2026-10-30T18:12:42.442Z",
+    "name": "Bairon Posada-Hernandez",
+    "result": "none",
+    "why": "other people with visible faces in the background"
+  },
+  "x.com/eroseattle/status/2115901622530482630": {
+    "checkedAt": "2026-10-30T18:12:42.569Z",
+    "name": "Tayron Suazo-Martinez",
+    "result": "none",
+    "why": "WORST OF THE WORST / ARRESTED graphic card with text"
   }
 }
