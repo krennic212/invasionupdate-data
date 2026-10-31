@@ -1,14 +1,20 @@
 {
-  "checkedAt": 1793410187285,
-  "checkedAtIso": "2026-10-31T01:29:47.285Z",
-  "added": [],
+  "checkedAt": 1793468837663,
+  "checkedAtIso": "2026-10-31T17:47:17.663Z",
+  "added": [
+    "Francis Mogambi",
+    "Ashanie M. Campbell",
+    "Aaron Nieves-Carrillo",
+    "Fernando Geron-Lopez",
+    "Liannys Yaiselys Vega-Perez"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 98,
+  "scannedReleases": 0,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 5 as approved: Francis Mogambi, Ashanie M. Campbell, Aaron Nieves-Carrillo, Fernando Geron-Lopez, Liannys Yaiselys Vega-Perez",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
