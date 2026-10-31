@@ -1,20 +1,15 @@
 {
-  "updatedAt": "2026-10-31T14:18:06Z",
-  "rows": 1146,
-  "approved": 1115,
+  "updatedAt": "2026-10-31T17:18:37Z",
+  "rows": 1147,
+  "approved": 1116,
   "pending": 31,
   "photos": 317,
   "reviewRows": 770,
-  "lastAddedAt": "2026-10-31T14:18:06Z",
-  "lastAddedCount": 6,
+  "lastAddedAt": "2026-10-31T17:18:37Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Pedro Serafin-Salgado",
-    "Mario Lucio Lucas",
-    "Christian Ruvalcaba-Salas",
-    "Yolanda Del Carmen Acicon",
-    "Miguel Angel Delgado-Guzman",
-    "Omar Ruiz"
+    "Felix Medina Nieto"
   ],
-  "harvestSha256": "106b44215295813352d5c5ea5aa2b7db2d8a38fe5131e57ba5c77c33771faf7e",
+  "harvestSha256": "1b04b36e9b0f648262b0636a023806934920b6491f44225eed36a8efbe6a83dd",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

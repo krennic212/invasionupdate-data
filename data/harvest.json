@@ -1,5 +1,33 @@
 [
   {
+    "name": "Felix Medina Nieto",
+    "city": "Not stated",
+    "crime": "Arrested: ICE San Francisco arrested illegal alien Felix Medina Nieto, 42, of Mexico, in Orinda.",
+    "usa": "ICE X post Oct 31, 2026 (@EROSanFrancisco)",
+    "foreign": "Not stated in post",
+    "picked": "10/31/2026 (@EROSanFrancisco post)",
+    "entered": "Not stated",
+    "office": "EROSanFrancisco",
+    "id": "x-2116538180203930021-felix-medina-nieto",
+    "when": "31 Oct 2026",
+    "severity": 27,
+    "severityReason": "DUI",
+    "severityCrimes": [
+      "DUI"
+    ],
+    "text": "@EROSanFrancisco Oct 31, 2026, as posted: ICE San Francisco arrested illegal alien Felix Medina Nieto, 42, of Mexico, in Orinda. He has convictions for 3 DUIs, traffic offenses and obstructing police. He is in ICE custody pending immigration proceedings.",
+    "photo": "",
+    "via": "@EROSanFrancisco 2116538180203930021",
+    "sourceUrl": "https://x.com/EROSanFrancisco/status/2116538180203930021",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Pedro Serafin-Salgado",
     "city": "Not stated",
     "crime": "Arrested: ICE New Orleans arrested Pedro Serafin-Salgado, an illegal alien from Mexico.",
