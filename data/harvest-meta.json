@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T17:47:41Z",
+  "updatedAt": "2026-10-31T17:58:15Z",
   "rows": 1152,
   "approved": 1122,
   "pending": 30,
@@ -14,6 +14,6 @@
     "Fernando Geron-Lopez",
     "Liannys Yaiselys Vega-Perez"
   ],
-  "harvestSha256": "213b0459f2bc0ecd80c55e94e6ad911b9d5b51d748cbcae698582a27d976ccbc",
+  "harvestSha256": "bac116f96a6f8ef2949d8fe864087dda65b99441a1a0227c427191153f149917",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

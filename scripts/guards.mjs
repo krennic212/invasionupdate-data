@@ -13,7 +13,7 @@
  *                 release headline's "in <Place>"), not a person. Covers every writer (release
  *                 harvest, X scan picks, pending intake).
  */
-import { stripPriors, CONVICT_WORDS, CHARGE_WORDS, isPlaceName } from "./parse.mjs";
+import { stripPriors, CONVICT_WORDS, CHARGE_WORDS, isPlaceName, NOT_NAME } from "./parse.mjs";
 import { suspiciousName } from "./names.mjs";
 
 const esc = (s) => String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -62,9 +62,32 @@ const AT_LARGE_SENTENCE = /\bon the run\b|\bescaped\b|\bfled\b/i;
 const AT_LARGE_JARGON = /\bat[- ]large\s+(?:(?:targeted\s+)?(?:enforcement\s+)?(?:arrests?|actions?|operations?|enforcement)|targeted\s+(?:enforcement|arrests?|operations?)(?:\s+(?:actions?|operations?))?)|\barrested\s+(?:him|her|them)\s+at[- ]large|\barrested(?:\s+\S+){0,6}\s+at[- ]large\b/gi;
 const dejargon = (t) => String(t || "").replace(AT_LARGE_JARGON, " ");
 
-export function atLarge(sentence, releaseText = "") {
+export function atLarge(sentence, releaseText = "", name = "") {
   sentence = dejargon(sentence); releaseText = dejargon(releaseText);
-  return AT_LARGE_STRONG.test(sentence) || AT_LARGE_SENTENCE.test(sentence) || AT_LARGE_STRONG.test(releaseText);
+  return AT_LARGE_STRONG.test(sentence) || AT_LARGE_SENTENCE.test(sentence) || releaseAtLargeFor(name, releaseText);
+}
+
+/**
+ * Krennic 2026-10-31: strong at-large wording elsewhere in the release holds THIS person only when that sentence
+ * names them (full name or surname), or names nobody else (pronoun / anonymous wording: fail-safe, holds everyone).
+ * "Marianny Lucia Lopez-Torres and Frandy Aragon-Diaz are at large." no longer holds their sentenced co-defendants.
+ * With no name (old callers) the whole release still holds everyone.
+ */
+const PERSONISH = /\b[A-ZÁÉÍÓÚÑÜ][a-záéíóúñü'’]+(?:-[A-ZÁÉÍÓÚÑÜ][a-záéíóúñü'’]+)?(?:\s+(?:(?:de|del|de la|la|los|y|van|von|da|dos)\s+)?[A-ZÁÉÍÓÚÑÜ][a-záéíóúñü'’]+(?:-[A-ZÁÉÍÓÚÑÜ][a-záéíóúñü'’]+)?){1,4}\b/g;
+function releaseAtLargeFor(name, releaseText) {
+  const n = String(name || "").trim();
+  if (!n) return AT_LARGE_STRONG.test(releaseText);
+  const last = n.split(/\s+/).slice(-1)[0];
+  const parts = [n, last, ...last.split("-").filter((x) => x.length > 2)];
+  const mine = new RegExp(`(?<![\\p{L}])(?:${parts.map(esc).join("|")})(?![\\p{L}])`, "iu");
+  const sents = String(releaseText || "").split(/(?<=[.!?])\s+(?=[“"(]?[A-Z0-9])/);
+  for (const s of sents) {
+    if (!AT_LARGE_STRONG.test(s)) continue;
+    if (mine.test(s)) return true;
+    const others = (s.match(PERSONISH) || []).filter((x) => !NOT_NAME.test(x) && !/^(?:Anyone|Any|Those|They|He|She|His|Her|Both|All|Two|Three|Four|Five|Six)\b/.test(x));
+    if (!others.length) return true;
+  }
+  return false;
 }
 
 // "undocumented immigrant(s)" / "an undocumented ..." counts like "illegal alien" (Krennic 2026-10-19).
@@ -159,7 +182,7 @@ export function holdReasons({ name, sentence, title = "", releaseText = "", labe
   for (const r of suspiciousName(name)) if (r !== "single word" && r !== "empty name") out.push(`suspicious name: ${r}`);
   if (isMinor(name, sentence, title)) out.push("possible minor / juvenile");
   if (!stageOk(label, sentence, title)) out.push(`stage: label "${label}" is later than the source wording`);
-  if (atLarge(sentence, releaseText)) out.push("suspect described as still at large");
+  if (atLarge(sentence, releaseText, name)) out.push("suspect described as still at large");
   if (!nonCitizenStatedFor(name, sentence) && !denaturalizedStated(`${sentence} ${releaseText}`) && !deportedStated(`${sentence} ${releaseText}`)) out.push("not stated to be a non-citizen");
   return out;
 }

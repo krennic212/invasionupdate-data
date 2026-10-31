@@ -141,7 +141,7 @@ const PATTERNS = [
   new RegExp(`\\bthe arrest of\\s+${NAME}(?=[^.]{0,100}\\b(?:alien|non-?citizen|national)\\b)`, "g"),
 ];
 
-const NOT_NAME = /\b(ICE|DHS|HSI|ERO|CBP|USCIS|FBI|DEA|ATF|DOJ|U\.S|United|States|America|American|Department|Justice|Attorney|Attorneys|Office|Offices|Secretary|President|Homeland|Security|Immigration|Customs|Enforcement|Border|Patrol|County|Court|District|Federal|Judge|Agent|Agents|Special|Officers|Officer|Police|Sheriff|Government|Administration|Trump|Biden|Obama|Act|Operation|Task|Force|Division|Bureau|Service|Services|Today|Yesterday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|January|February|March|April|May|June|July|August|September|October|November|December|The|This|These|Those|His|Her|Their|According|Under|Assistant|Acting|Chief|Director|Deputy|Senior|Prosecutor)\b/;
+export const NOT_NAME = /\b(ICE|DHS|HSI|ERO|CBP|USCIS|FBI|DEA|ATF|DOJ|U\.S|United|States|America|American|Department|Justice|Attorney|Attorneys|Office|Offices|Secretary|President|Homeland|Security|Immigration|Customs|Enforcement|Border|Patrol|County|Court|District|Federal|Judge|Agent|Agents|Special|Officers|Officer|Police|Sheriff|Government|Administration|Trump|Biden|Obama|Act|Operation|Task|Force|Division|Bureau|Service|Services|Today|Yesterday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|January|February|March|April|May|June|July|August|September|October|November|December|The|This|These|Those|His|Her|Their|According|Under|Assistant|Acting|Chief|Director|Deputy|Senior|Prosecutor)\b/;
 
 const DEMONYM = {
   Mexican: "Mexico", Guatemalan: "Guatemala", Honduran: "Honduras", Salvadoran: "El Salvador", Salvadorian: "El Salvador",
@@ -356,6 +356,21 @@ const VERB = /\b(charged|indicted|convicted|sentenced|pleaded|pled|found guilty|
  * A name must have 2+ words and must not be a place (isPlaceName: state, city-geo city,
  * "City, State", County / City / ..., or a place from the release title's "in <Place>").
  */
+const NAME_NC = NAME.replace(/^\(/, "(?:");
+const LIST_CHAIN = new RegExp(`(?:^|[:—–]\\s+|\\b(?:charges|charged|sentenced|indicted|defendants|are|were)\\s*:?\\s+)((?:${NAME_NC},\\s+\\d{1,3},\\s+)+)(?:and\\s+)?$`);
+const LIST_ITEM_RE = new RegExp(`${NAME},\\s+\\d{1,3},`, "g");
+const LIST_STATUS_DESC = /^(?:(?:all|both|each|are|were|criminal|illegal|undocumented|[A-Z][a-z]+)\s+)*$/;
+/** Names listed before a PATTERNS[0] hit as "<Name>, <age>, <Name>, <age>, ... and <hit>" when the tail is a plural status. */
+export function listMembersBefore(s, m) {
+  if (!m || !/s$/.test(String(m[0]).replace(/\s+(?:from|of)\s+[\s\S]*$/, "").trim())) return [];
+  if (!LIST_STATUS_DESC.test(String(m[2] || ""))) return [];
+  const nameStart = m.index + m[0].indexOf(m[1]);
+  const prefix = s.slice(0, nameStart).replace(/,?\s*and\s+$/, ", ").replace(/,\s*$/, ", ");
+  const c = prefix.match(LIST_CHAIN);
+  if (!c) return [];
+  return [...c[1].matchAll(LIST_ITEM_RE)].map((x) => x[1]);
+}
+
 export function extractPeople(blocks, { title = "" } = {}) {
   const found = [];
   const seen = new Set();
@@ -375,6 +390,11 @@ export function extractPeople(blocks, { title = "" } = {}) {
             : re === PATTERNS[4]
               ? [{ n: m[2], origin: DEMONYM[m[1]] || "" }]
               : [{ n: re === PATTERNS[3] && m[2] ? `${m[1]} ${m[2]}` : m[1], origin: re === PATTERNS[0] ? originFrom(m[2], m[3] || "", m[4]) : "" }];
+          // Krennic 2026-10-31: "A, 27, B, 31, and C, 29, all Mexican nationals, ..." - every name in the list, but ONLY
+          // when the list's shared tail is a plural status for all of them (plural TYPE, status words only before it).
+          // A status-less tail ("A, 27, ... and F, 29, conspired with others to operate an alien smuggling ...") adds
+          // nobody: no one's own status is stated there (MDFL Oct 29, 2026: "five Cuban nationals and one U.S. citizen").
+          if (re === PATTERNS[0]) people.unshift(...listMembersBefore(s, m).map((n) => ({ n, origin: people[0].origin })));
           for (const { n, origin } of people) {
           // "... alien Zinzun Bautista." -> no sentence period in the name (Jr. / Sr. keep theirs).
           // Date words stuck on ("... Madrid Oct. 21") and place text joined by a period ("Nevada.Mario Garcia") are cut.
@@ -633,6 +653,9 @@ export function stripPriors(text) {
     // "has been convicted 2x" / "convicted twice" / "convicted 3 times": a counted record is history.
     .replace(/\b((has|have|had)\s+been\s+)?convicted\s+(\d+x|\d+\s+times|twice|thrice|(two|three|four|five|multiple|several)\s+times)\b/gi, "prior-history")
     .replace(/\bprior\s+(\w+\s+){0,2}convictions?\b/gi, "prior-history")
+    // "is charged with illegally reentering the United States after being convicted of a felony crime" (usao-sdoh
+    // Oct 29, 2026): the conviction is the reentry statute's prior record, not this case's stage (Krennic 2026-10-31).
+    .replace(/\bafter\s+(?:having\s+been|being)\s+(?:previously\s+)?convicted\s+of\b/gi, "prior-history")
     // "Reyes-Hernandez was convicted in 2023 for alien smuggling ... He's now charged with illegal re-entry":
     // a conviction dated to an earlier year is past history when the same text says "now charged / now faces".
     .replace(/\b(?:was|were|been)\s+convicted\s+in\s+(?:19|20)\d{2}\b(?=[\s\S]*\bnow\s+(?:charged|faces?)\b)/gi, "prior-history")
