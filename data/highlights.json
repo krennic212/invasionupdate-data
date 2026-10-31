@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-10-30",
+  "asOf": "2026-10-31",
   "windowDays": 7,
-  "total": 196,
+  "total": 200,
   "rows": [
     {
       "id": "x-2115145798833066022-roberto-mosquera-del-peral",
@@ -98,6 +98,17 @@
         "Murder / manslaughter",
         "Armed robbery / aggravated assault",
         "Burglary / theft"
+      ]
+    },
+    {
+      "id": "x-2116360560342085848-christian-ruvalcaba-salas",
+      "name": "Christian Ruvalcaba-Salas",
+      "when": "30 Oct 2026",
+      "severity": 164,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Rape / sexual assault"
       ]
     },
     {
@@ -283,18 +294,6 @@
       ]
     },
     {
-      "id": "x-2115534568044585410-salvador-vargas-silva",
-      "name": "Salvador Vargas-Silva",
-      "when": "28 Oct 2026",
-      "severity": 124,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Assault / battery",
-        "DUI"
-      ]
-    },
-    {
       "id": "dhs-20261026-mario-garcia",
       "name": "Mario Garcia",
       "when": "26 Oct 2026",
@@ -474,6 +473,16 @@
       "severityCrimes": [
         "Child sex crime",
         "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "x-2116518550986985929-pedro-serafin-salgado",
+      "name": "Pedro Serafin-Salgado",
+      "when": "31 Oct 2026",
+      "severity": 83,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
       ]
     },
     {
