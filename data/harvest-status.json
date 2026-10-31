@@ -1,14 +1,16 @@
 {
-  "checkedAt": 1793468941045,
-  "checkedAtIso": "2026-10-31T17:49:01.045Z",
-  "added": [],
+  "checkedAt": 1793471183575,
+  "checkedAtIso": "2026-10-31T18:26:23.575Z",
+  "added": [
+    "Diego Benavides Rodriguez"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 98,
+  "scannedReleases": 99,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 1 as approved: Diego Benavides Rodriguez",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

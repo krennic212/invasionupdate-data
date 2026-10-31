@@ -1,19 +1,15 @@
 {
-  "updatedAt": "2026-10-31T18:11:56Z",
-  "rows": 1152,
-  "approved": 1122,
+  "updatedAt": "2026-10-31T18:26:30Z",
+  "rows": 1153,
+  "approved": 1123,
   "pending": 30,
   "photos": 330,
   "reviewRows": 770,
-  "lastAddedAt": "2026-10-31T17:47:17Z",
-  "lastAddedCount": 5,
+  "lastAddedAt": "2026-10-31T18:26:23Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Francis Mogambi",
-    "Ashanie M. Campbell",
-    "Aaron Nieves-Carrillo",
-    "Fernando Geron-Lopez",
-    "Liannys Yaiselys Vega-Perez"
+    "Diego Benavides Rodriguez"
   ],
-  "harvestSha256": "b547b644af2f185620ecab7c47b078e59922297b06279ad56b89bfb708d6d636",
+  "harvestSha256": "1e32b9e1f03f38020e68786454e0c8ea2ff02e8d9e4b7e69470186c576a663c9",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
