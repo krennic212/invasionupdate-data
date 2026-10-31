@@ -1,3 +1,35 @@
+# HANDOFF: 2026-10-31 (12:55 PM CDT) missed-cases check via data/pending.json (Krennic approved)
+
+- Commit 0b83ea1. Releases read through the DOJ press-release API (/workspace/doj5). No photos (none in the releases).
+  - Francis Mogambi (OPA Ghostbusters, D. Neb.): Charged, "a Kenyan citizen" + DV1 visa / Permanent Resident Card, city
+    "Nebraska" (no residence given), origin Kenya.
+  - Ashanie M. Campbell (usao-mdpa Oct 30): Charged. The status is only in the title ("Jamaican National Extradited ..."),
+    so the guard held her ("not stated to be a non-citizen"). Approved by id with an approvalNote. City "Pennsylvania": the
+    release gives only "of Panama City, Panama and Jamaica", so the court district's state is used. Cotton not added.
+  - Aaron Nieves-Carrillo (usao-edmo): Pleaded guilty, "An illegal alien from Venezuela", city "Missouri" (no residence).
+  - Fernando Geron-Lopez (usao-sdoh): Charged, Columbus, OH. toRow labelled him "Convicted" from the statute wording
+    "after being convicted of a felony crime"; the label was set to Charged by hand (indicted only).
+  - Cuban ring (MDFL Oct 29): only Emanuel Martinez Gonzalez was on the feed (pending, "still at large"; the parser took
+    only the last name of the six-name list). That hold comes from "Marianny Lucia Lopez-Torres and Frandy Aragon-Diaz are
+    at large" elsewhere in the release. His row now uses his own sentencing sentences, Hialeah, FL, and is approved.
+    Liannys Yaiselys Vega-Perez was added (Convicted, Lebanon, TN). For both, the status comes from the Sep 2025 MDFL
+    superseding-indictment release ("unlawfully residing in ..."; statusSourceUrl).
+  - NOT added: Miguel Martinez Vasconcelos, Layra Libertad Treto Santos, Luis Emmanuel Escalona-Marrero, Walbis Pozo-Dutel.
+    The Oct 29 release says "Five Cuban nationals and one U.S. citizen" but does not say who the citizen is. Neither release
+    states any of these four's own status, so one of them could be the U.S. citizen.
+  - NOT added: Luis Manuel Hernandez Victoria (usao-sdca tunnel engineer). The release says "Mexican engineer" and
+    "Guadalajara, Mexico" but never states his non-citizen status. He was arrested in Jalisco per public reports.
+  - Osmal Sanchez Loy is on the feed twice: x-2115927815589875719-osmal-sanchez-loy (ICE X post) and
+    doj-20261023-osmal-loy (MDPA). Not changed; Krennic to decide.
+  - Pending (correct): doj-20261029-marianny-lucia-lopez-torres, held at large. Its label wrongly says "Convicted".
+- Alias side effect: Pedro Ramos Hernandez's aka "Pedro Ramos" makes any future "Pedro Ramos" dedupe against him. None of
+  today's people collide.
+- GAPS (parser / guard NOT changed; proposals): (1) guards.mjs atLarge() tests AT_LARGE_STRONG on the whole releaseText.
+  It should skip sentences that name other people and not this person. (2) The parser's list rule took only the last
+  person in "A, 27, B, 31, ... and F, 29, conspired". (3) "after being convicted of a felony" should count as past record
+  (like "previously convicted").
+- node --test 255/255; validate OK. Live rows 1147 -> 1152 (approved 1116 -> 1122). Workflow run 41226295790 OK.
+
 # HANDOFF: 2026-10-29 (9:35 PM CDT) 3 DOJ releases via data/pending.json (Krennic asked 6:10 PM + 9:26 PM CT)
 
 - Read through the DOJ press-release API (/workspace/doj4/fetch.mjs, exact URL match). No image in any release: photo "".
