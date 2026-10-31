@@ -1,7 +1,7 @@
 {
   "asOf": "2026-10-30",
   "windowDays": 7,
-  "total": 206,
+  "total": 196,
   "rows": [
     {
       "id": "x-2115145798833066022-roberto-mosquera-del-peral",
@@ -98,20 +98,6 @@
         "Murder / manslaughter",
         "Armed robbery / aggravated assault",
         "Burglary / theft"
-      ]
-    },
-    {
-      "id": "x-2114040528018817156-jai-dong",
-      "name": "Jai Dong",
-      "when": "24 Oct 2026",
-      "severity": 176,
-      "severityReason": "Fraud (incl. voter fraud)",
-      "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Weapons",
-        "Assault / battery",
-        "Burglary / theft",
-        "Illegal entry / reentry"
       ]
     },
     {
@@ -294,6 +280,18 @@
       "severityCrimes": [
         "Armed robbery / aggravated assault",
         "Weapons"
+      ]
+    },
+    {
+      "id": "x-2115534568044585410-salvador-vargas-silva",
+      "name": "Salvador Vargas-Silva",
+      "when": "28 Oct 2026",
+      "severity": 124,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Assault / battery",
+        "DUI"
       ]
     },
     {
@@ -492,16 +490,6 @@
       "id": "x-2115130656044769329-heiner-antony-tuy-sop",
       "name": "Heiner Antony Tuy-Sop",
       "when": "27 Oct 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2114033677495926910-edgar-michicoj-perez",
-      "name": "Edgar Michicoj-Perez",
-      "when": "24 Oct 2026",
       "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
