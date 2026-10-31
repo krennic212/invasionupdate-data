@@ -1,3 +1,30 @@
+# HANDOFF: 2026-10-31 (1:05 PM CDT) three parser / guard fixes (Krennic approved 12:52 PM CDT)
+
+- Commit 58d3192.
+  4. guards.mjs atLarge(sentence, releaseText, name): strong at-large wording ELSEWHERE in the release holds this person
+     only if that sentence names them (full name, surname, or one part of a hyphenated surname). A sentence that names
+     nobody else (pronoun or anonymous wording) still holds everyone (fail-safe). With no name passed, the old behaviour
+     applies. holdReasons passes the name, so the release harvest, X scan and pending intake all use it. The person's
+     own sentence is checked exactly as before.
+  5. parse.mjs listMembersBefore(): with a PATTERNS[0] hit, the "<Name>, <age>, <Name>, <age>, (and)" chain before it gives
+     every name, but ONLY when the shared tail is a plural status ("..., all Mexican nationals,") made of status words
+     only. A status-less tail ("... and Emanuel Martinez Gonzalez, 29, conspired with others to operate an alien smuggling
+     organization") adds nobody. So the MDFL Cuban four are still not listed: the release has an unnamed U.S. citizen.
+  6. parse.mjs stripPriors(): "after (being|having been) (previously) convicted of" is prior record (Geron-Lopez: Charged).
+  - Marianny Lucia Lopez-Torres: label "Convicted" -> "Charged". It came from the release title ("... Sentenced ...")
+    because her own sentence has no stage word. Her text adds the release's "Twelve individuals were charged in a
+    superseding indictment ..." and "... are at large." She stays pending ("suspect described as still at large").
+- Test: scripts/rules-1031.test.mjs (fixtures mdfl-2026-10-29-cuban-smuggling-asylum-sentencing,
+  sdoh-2026-10-29-geron-lopez-reentry). node --test 263/263; validate OK.
+- Dry run (old vs new parser + guards, rowsFromRelease on the last 400 DOJ API releases, dedupe off): 55 rows each side.
+  The only difference is Emanuel Martinez Gonzalez, pending -> approved (already approved by hand today). The new
+  statusFrom changes the reading of only one live row: Geron-Lopez, already Charged. The 3 pending at-large rows were
+  re-checked against their releases: Lopez-Torres, Abraham Gallegos Mendez (WDTX) and Deiber Jorhen Castillo-Rodriguez
+  (NDAL) all stay held. Nothing was released.
+- Not changed: PATTERNS[0] DESC still lets "conspired with others to operate an alien smuggling" pass as status. That is
+  how Martinez Gonzalez was first picked up, and it should be narrowed. A title stage is still used when a co-defendant's
+  own sentence has no stage word. Workflow run 41227114392 OK; feed 1152 rows (1122 approved).
+
 # HANDOFF: 2026-10-31 (12:55 PM CDT) missed-cases check via data/pending.json (Krennic approved)
 
 - Commit 0b83ea1. Releases read through the DOJ press-release API (/workspace/doj5). No photos (none in the releases).
