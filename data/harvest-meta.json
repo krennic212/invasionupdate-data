@@ -1,15 +1,16 @@
 {
-  "updatedAt": "2026-10-31T18:26:30Z",
-  "rows": 1153,
-  "approved": 1123,
+  "updatedAt": "2026-10-31T22:12:22Z",
+  "rows": 1155,
+  "approved": 1125,
   "pending": 30,
   "photos": 330,
   "reviewRows": 770,
-  "lastAddedAt": "2026-10-31T18:26:23Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-10-31T22:12:21Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Diego Benavides Rodriguez"
+    "Lucio Sanchez-Estrada",
+    "Rubin Turcios-Castro"
   ],
-  "harvestSha256": "1e32b9e1f03f38020e68786454e0c8ea2ff02e8d9e4b7e69470186c576a663c9",
+  "harvestSha256": "5d78a1bf7c9914eab499ad029977af07e505ea98b0f6b61632d8f0e17b27c9a1",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
