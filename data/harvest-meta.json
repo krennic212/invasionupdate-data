@@ -1,16 +1,15 @@
 {
-  "updatedAt": "2026-10-31T22:12:22Z",
-  "rows": 1155,
-  "approved": 1125,
+  "updatedAt": "2026-11-01T15:13:22Z",
+  "rows": 1156,
+  "approved": 1126,
   "pending": 30,
   "photos": 330,
-  "reviewRows": 770,
-  "lastAddedAt": "2026-10-31T22:12:21Z",
-  "lastAddedCount": 2,
+  "reviewRows": 771,
+  "lastAddedAt": "2026-11-01T15:13:22Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Lucio Sanchez-Estrada",
-    "Rubin Turcios-Castro"
+    "Jose Nabor Orosco-Presa"
   ],
-  "harvestSha256": "5d78a1bf7c9914eab499ad029977af07e505ea98b0f6b61632d8f0e17b27c9a1",
+  "harvestSha256": "8e019a88c79c5319bb022140424ce9770b1008d93d1291661b59508f036e6807",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

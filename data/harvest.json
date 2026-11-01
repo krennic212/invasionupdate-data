@@ -1,5 +1,33 @@
 [
   {
+    "name": "Jose Nabor Orosco-Presa",
+    "city": "Not stated",
+    "crime": "Arrested: ICE New Orleans arrested Jose Nabor Orosco-Presa, an illegal alien from Mexico.",
+    "usa": "ICE X post Nov 1, 2026 (@ERONewOrleans)",
+    "foreign": "Not stated in post",
+    "picked": "11/1/2026 (@ERONewOrleans post)",
+    "entered": "Not stated",
+    "office": "ERONewOrleans",
+    "id": "x-2116909880233587045-jose-nabor-orosco-presa",
+    "when": "1 Nov 2026",
+    "severity": 32,
+    "severityReason": "Burglary / theft",
+    "severityCrimes": [
+      "Burglary / theft"
+    ],
+    "text": "@ERONewOrleans Nov 1, 2026, as posted: ICE New Orleans arrested Jose Nabor Orosco-Presa, an illegal alien from Mexico. Criminal history includes felony conviction for larceny in Gallatin, TN (sentenced to 4 years).",
+    "photo": "",
+    "via": "@ERONewOrleans 2116909880233587045",
+    "sourceUrl": "https://x.com/ERONewOrleans/status/2116909880233587045",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Lucio Sanchez-Estrada",
     "city": "Not stated",
     "crime": "Arrested: ICE Seattle arrested illegal alien Lucio Sanchez-Estrada, 80, of Mexico.",
