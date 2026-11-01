@@ -7493,5 +7493,38 @@
     "name": "Diego Benavides Rodriguez",
     "result": "none",
     "why": "multi-person release: no image names this person"
+  },
+  "x.com/erosanfrancisco/status/2116580458842493171": {
+    "checkedAt": "2026-11-01T19:10:20.614Z",
+    "name": "Rubin Turcios-Castro",
+    "result": "photo",
+    "file": "x-2116580458842493171-rubin-turcios-castro.jpg",
+    "image": "https://pbs.twimg.com/media/HVwQamcacAAipQO?format=png&name=orig",
+    "bytes": 16467,
+    "reviewed": "Viewed image: close-up headshot of one adult man, curly dark hair, plain background, no text, no other faces"
+  },
+  "x.com/eroseattle/status/2116636326879711509": {
+    "checkedAt": "2026-11-01T19:10:20.754Z",
+    "name": "Lucio Sanchez-Estrada",
+    "result": "none",
+    "why": "graphic card (Seattle 'Worst of the Worst' ICE text card)"
+  },
+  "x.com/eroneworleans/status/2116909880233587045": {
+    "checkedAt": "2026-11-01T19:10:21.406Z",
+    "name": "Jose Nabor Orosco-Presa",
+    "result": "photo",
+    "file": "x-2116909880233587045-jose-nabor-orosco-presa.jpg",
+    "image": "https://pbs.twimg.com/media/HVQdVcMWMAAlRq-?format=png&name=orig",
+    "bytes": 5724,
+    "reviewed": "Viewed image: booking-style photo of one adult man in green shirt against plain wall, no text, no other faces"
+  },
+  "x.com/eroboston/status/2116938413358166242": {
+    "checkedAt": "2026-11-01T19:10:22.110Z",
+    "name": "Jair Fernandes De Oliveira Junior",
+    "result": "photo",
+    "file": "x-2116938413358166242-jair-fernandes-de-oliveira-junior.jpg",
+    "image": "https://pbs.twimg.com/media/HWDf8QjWoAAvz3F?format=png&name=orig",
+    "bytes": 6386,
+    "reviewed": "Viewed image: close-up headshot of one bearded adult man, plain background, no text, no other faces"
   }
 }
