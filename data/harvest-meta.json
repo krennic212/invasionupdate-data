@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-01T15:13:22Z",
-  "rows": 1156,
-  "approved": 1126,
+  "updatedAt": "2026-11-01T18:17:30Z",
+  "rows": 1157,
+  "approved": 1127,
   "pending": 30,
   "photos": 330,
   "reviewRows": 771,
-  "lastAddedAt": "2026-11-01T15:13:22Z",
+  "lastAddedAt": "2026-11-01T18:17:30Z",
   "lastAddedCount": 1,
   "lastAdded": [
-    "Jose Nabor Orosco-Presa"
+    "Jair Fernandes De Oliveira Junior"
   ],
-  "harvestSha256": "8e019a88c79c5319bb022140424ce9770b1008d93d1291661b59508f036e6807",
+  "harvestSha256": "271a24ef2df3859c8f73bf625d4dfecce830a81e51ee79504024663f80ec164c",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
