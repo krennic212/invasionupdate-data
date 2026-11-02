@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-01T23:16:54Z",
-  "rows": 1159,
-  "approved": 1129,
+  "updatedAt": "2026-11-02T15:13:20Z",
+  "rows": 1161,
+  "approved": 1131,
   "pending": 30,
   "photos": 333,
-  "reviewRows": 771,
-  "lastAddedAt": "2026-11-01T23:16:54Z",
+  "reviewRows": 772,
+  "lastAddedAt": "2026-11-02T15:13:20Z",
   "lastAddedCount": 2,
   "lastAdded": [
-    "Rodrigo Ortega-Reyes",
-    "Juan Turcio-Almandarez"
+    "Jose Luis Rodriguez Medina",
+    "Benito Juarez-Reyes"
   ],
-  "harvestSha256": "6e901a47fd24b289afa82d1e660ff28766d72c1db088ac58903e777cd2f9bf0f",
+  "harvestSha256": "f9a75d21056607c68660b8e23615be6a4abf26b86f32be6d669b68303588bf9c",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
