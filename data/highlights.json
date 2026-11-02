@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-02",
   "windowDays": 7,
-  "total": 175,
+  "total": 178,
   "rows": [
     {
       "id": "x-2115145798833066022-roberto-mosquera-del-peral",
@@ -249,6 +249,17 @@
       ]
     },
     {
+      "id": "ice-20261102-horatio-humphrey-hutchinson",
+      "name": "Horatio Humphrey Hutchinson",
+      "when": "2 Nov 2026",
+      "severity": 130,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Assault / battery"
+      ]
+    },
+    {
       "id": "x-2116241234209735025-carlos-orlando-sainz-zulueta",
       "name": "Carlos Orlando Sainz Zulueta",
       "when": "30 Oct 2026",
@@ -279,18 +290,6 @@
       "severityCrimes": [
         "Armed robbery / aggravated assault",
         "Weapons"
-      ]
-    },
-    {
-      "id": "x-2115483594089255226-glen-madric-reyes",
-      "name": "Glen Madric Reyes",
-      "when": "28 Oct 2026",
-      "severity": 125,
-      "severityReason": "Drug trafficking",
-      "severityCrimes": [
-        "Drug trafficking",
-        "Assault / battery",
-        "Burglary / theft"
       ]
     },
     {
