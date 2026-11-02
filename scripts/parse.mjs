@@ -356,6 +356,7 @@ const VERB = /\b(charged|indicted|convicted|sentenced|pleaded|pled|found guilty|
  * A name must have 2+ words and must not be a place (isPlaceName: state, city-geo city,
  * "City, State", County / City / ..., or a place from the release title's "in <Place>").
  */
+const ACTION_DESC = /\b(?:conspir\w*|smuggl\w*|transport\w*|harbou?r\w*|operat\w*|travel\w*|arrang\w*|encourag\w*|induc\w*|recruit\w*|bring\w*|brought|mov(?:e|ed|ing)|shelter\w*|conceal\w*|employ\w*|hir(?:e|ed|ing)|help\w*|assist\w*)\b/i;
 const NAME_NC = NAME.replace(/^\(/, "(?:");
 const LIST_CHAIN = new RegExp(`(?:^|[:—–]\\s+|\\b(?:charges|charged|sentenced|indicted|defendants|are|were)\\s*:?\\s+)((?:${NAME_NC},\\s+\\d{1,3},\\s+)+)(?:and\\s+)?$`);
 const LIST_ITEM_RE = new RegExp(`${NAME},\\s+\\d{1,3},`, "g");
@@ -394,6 +395,10 @@ export function extractPeople(blocks, { title = "" } = {}) {
           // when the list's shared tail is a plural status for all of them (plural TYPE, status words only before it).
           // A status-less tail ("A, 27, ... and F, 29, conspired with others to operate an alien smuggling ...") adds
           // nobody: no one's own status is stated there (MDFL Oct 29, 2026: "five Cuban nationals and one U.S. citizen").
+          // Krennic 2026-11-02: "alien" here must be the person's status, not the object of a smuggling / conspiracy
+          // phrase ("Emanuel Martinez Gonzalez, 29, conspired with others to operate an alien smuggling organization",
+          // "codefendant, Marianny Lucia Lopez-Torres, to arrange the travel of aliens"). Such a match is no hit.
+          if (re === PATTERNS[0] && /^alien/i.test(m[3] || "") && (ACTION_DESC.test(m[2] || "") || /^s?[-\s]+(?:smuggl|traffick)/i.test(s.slice(m.index + m[0].length)))) continue;
           if (re === PATTERNS[0]) people.unshift(...listMembersBefore(s, m).map((n) => ({ n, origin: people[0].origin })));
           for (const { n, origin } of people) {
           // "... alien Zinzun Bautista." -> no sentence period in the name (Jr. / Sr. keep theirs).
@@ -431,6 +436,8 @@ export function extractPeople(blocks, { title = "" } = {}) {
   // A linked hit never borrows the headline's stage: the headline may be about someone else ("Restaurant Owner
   // Pleads Guilty" is not the co-conspirator's plea). Its label comes from its own verbatim sentences only.
   for (const h of found) if (h.linked) h.noTitleStage = true;
+  // Krennic 2026-11-02: a release naming several people never gives a co-defendant the headline's conviction stage.
+  if (new Set(found.map((h) => h.name.toLowerCase())).size > 1) for (const h of found) h.multi = true;
   // OPA multi-district roundups list people under "<X> District of <State>" headings: each hit keeps its heading's state
   // (toRow -> placeFromDistrict fallback when the sentence names only a town, "residing in Charlotte"). Never a city.
   const heads = [];
@@ -803,10 +810,27 @@ export function slug(s) {
 }
 
 /** One feed row in the app's existing CaseRecord shape. photo is always "". */
+/**
+ * Stage for a release row. Single-person releases: unchanged (own sentence, else headline). Krennic 2026-11-02, several
+ * people in one release: the person's own sentences decide; if they carry no stage word, a headline stage later than
+ * Charged ("Sentenced", "Pleads Guilty", "Convicted") is NOT borrowed. The row gets the lowest stage the release
+ * supports instead: Charged when the release has charge / conviction wording, else "As posted". Never higher.
+ * A headline Arrested / Charged / Removed stage is kept as before.
+ */
+export function rowLabel(hit, rel) {
+  if (hit.noTitleStage) return releaseLabel(hit.sentence, "");
+  const t = releaseLabel(hit.sentence, rel.title || "");
+  if (!hit.multi || !["Convicted", "Pleaded guilty"].includes(t)) return t;
+  const own = releaseLabel(hit.sentence, "");
+  if (own !== "As posted") return own;
+  const text = stripPriors(withoutHistory((rel.blocks || []).join(" ")));
+  return FORMAL_CHARGE.test(text) || CONVICT_WORDS.test(text) ? "Charged" : "As posted";
+}
+
 export function toRow(hit, rel) {
   const a = AGENCY[rel.office] || { label: rel.office, confirmedBy: "DHS" };
   const d = dateParts(rel.date);
-  const status = releaseLabel(hit.sentence, hit.noTitleStage ? "" : rel.title);
+  const status = rowLabel(hit, rel);
   const city = hit.city || placeFromDistrict(hit.sentence, rel.url, hit.sectionState) || "Not stated";
   return {
     name: hit.name,

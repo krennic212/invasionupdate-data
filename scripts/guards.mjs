@@ -93,13 +93,18 @@ function releaseAtLargeFor(name, releaseText) {
 // "undocumented immigrant(s)" / "an undocumented ..." counts like "illegal alien" (Krennic 2026-10-19).
 // "lawful / legal permanent resident" and "green card holder" are non-citizen statuses by definition (2026-10-20).
 // "<Nationality> national" ("a Brazilian national") counts through \bnationals?\b.
+const OBJECT_ALIENS = /\b(?:alien|human)[- ]smuggl\w*|\b(?:smuggl\w*|transport\w*|harbou?r\w*|conceal\w*|shield\w*|induc\w*|encourag\w*|recruit\w*|bring\w*|brought|mov(?:e|ed|ing))\s+(?:(?:or\s+\w+\s+)?(?:the|of|in|into|to|for|more|than|over|at|least|about|dozens|hundreds|thousands|\d[\d,]*|undocumented|illegal|other|several|many|multiple|groups?|[A-Z][a-z]+)\s+){0,5}aliens?\b|\b(?:travel|entry|transportation|smuggling|harbou?ring|movement)\s+of\s+(?:\w+\s+){0,2}aliens?\b/gi;
 export function nonCitizenStated(sentence) {
   const s = String(sentence || "");
   // Ignore "falsely claiming to be a U.S. citizen" so real foreign-citizen wording still counts.
   const stripped = s.replace(/\b(?:falsely\s+)?claim(?:ing|ed|s)?\s+to\s+be\s+(?:a\s+)?(?:U\.S\.|United States|American)\s+citizen\b/gi, " ");
   if (/\bdual (national|citizen)|\bnaturali[sz]ed\b|\bU\.S\. citizen\b|\bUnited States citizen\b|\bAmerican citizen\b/i.test(stripped)) return false;
+  // Krennic 2026-11-02: smuggling / conspiracy wording about OTHER people ("conspiracy to smuggle aliens", "an alien
+  // smuggling organization", "the travel of aliens", "induced thousands of Cuban aliens") is never this person's status.
+  const own = s.replace(OBJECT_ALIENS, " ");
   return (
-    /\baliens?\b|\bnon-?citizens?\b|\b(?:lawful|legal) permanent residen(?:t|ts|ce)\b|\bgreen[- ]card holders?\b|\b(illegally|unlawfully) (present|residing|in the United States|in the U\.S\.)|\bnationals?\b|\bcitizens? of\b|\bforeign national\b|\billegal (immigrant|migrant)s?\b|\bundocumented (?:immigrant|migrant|alien|noncitizen|non-citizen)s?\b|\ban undocumented\b/i.test(s) ||
+    /\baliens?\b/i.test(own) ||
+    /\bnon-?citizens?\b|\b(?:lawful|legal) permanent residen(?:t|ts|ce)\b|\bgreen[- ]card holders?\b|\b(illegally|unlawfully) (present|residing|in the United States|in the U\.S\.)|\bnationals?\b|\bcitizens? of\b|\bforeign national\b|\billegal (immigrant|migrant)s?\b|\bundocumented (?:immigrant|migrant|alien|noncitizen|non-citizen)s?\b|\ban undocumented\b/i.test(s) ||
     /\b[A-Z][a-z]+ citizens?\b/.test(s)
   );
 }
