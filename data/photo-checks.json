@@ -7724,5 +7724,53 @@
     "name": "Andreas Van Der Werf",
     "result": "none",
     "why": "multi-person release: no image names this person"
+  },
+  "x.com/erosanfrancisco/status/2116999973615149270": {
+    "checkedAt": "2026-11-02T19:07:34.632Z",
+    "name": "Juan Turcio-Almandarez",
+    "result": "photo",
+    "file": "x-2116999973615149270-juan-turcio-almandarez.jpg",
+    "image": "https://pbs.twimg.com/media/HWEYEVNa0AAd67H?format=png&name=orig",
+    "bytes": 16703,
+    "reviewed": "Viewed image: close-up headshot of one adult man with short dark hair and goatee, inside a vehicle, no text, no other people"
+  },
+  "x.com/eroseattle/status/2117013815707501052": {
+    "checkedAt": "2026-11-02T19:07:34.785Z",
+    "name": "Rodrigo Ortega-Reyes",
+    "result": "none",
+    "why": "ICE 'Worst of the Worst' graphic card with text overlay, not a plain headshot"
+  },
+  "x.com/erolosangeles/status/2117043761712922804": {
+    "checkedAt": "2026-11-02T19:07:35.132Z",
+    "name": "Benito Juarez-Reyes",
+    "result": "photo",
+    "file": "x-2117043761712922804-benito-juarez-reyes.jpg",
+    "image": "https://pbs.twimg.com/media/HV5M4z2aQAAUoQP?format=jpg&name=orig",
+    "bytes": 9356,
+    "reviewed": "Viewed image: booking-style headshot of one older adult man with white hair and mustache, gray shirt, plain room, no text, no other people"
+  },
+  "x.com/erolosangeles/status/2117058861152485851": {
+    "checkedAt": "2026-11-02T19:07:35.492Z",
+    "name": "Jose Luis Rodriguez Medina",
+    "result": "photo",
+    "file": "x-2117058861152485851-jose-luis-rodriguez-medina.jpg",
+    "image": "https://pbs.twimg.com/media/HV5M-r7aIAAj11z?format=jpg&name=orig",
+    "bytes": 9878,
+    "reviewed": "Viewed image: booking-style headshot of one adult man with short dark hair, gray sweatshirt, plain room, no text, no other people"
+  },
+  "x.com/eroboston/status/2117302563053634008": {
+    "checkedAt": "2026-11-02T19:07:35.763Z",
+    "name": "Jose Soares DaSilva",
+    "result": "photo",
+    "file": "x-2117302563053634008-jose-soares-dasilva.jpg",
+    "image": "https://pbs.twimg.com/media/HWIrTtuXoAA8Ggf?format=png&name=orig",
+    "bytes": 9087,
+    "reviewed": "Viewed image: headshot of one adult man with glasses, mustache and beard, white shirt, office background, no text, no other people"
+  },
+  "x.com/edlanews/status/2117306862831866007": {
+    "checkedAt": "2026-11-02T19:07:35.881Z",
+    "name": "MIGUEL SANTOS-MEZA",
+    "result": "none",
+    "why": "DOJ stock 'Guilty' gavel graphic, no image of the person"
   }
 }

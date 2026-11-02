@@ -701,7 +701,7 @@
     "severityReason": "",
     "severityCrimes": [],
     "text": "@EROBoston Nov 2, 2026, as posted: On Sept. 26, ICE Boston arrested Jose Soares DaSilva, a criminal illegal alien from Brazil, during targeted operations in East Boston, Mass. His criminal history includes convictions for hit and run, obstructing police, and traffic offense.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2117302563053634008-jose-soares-dasilva.jpg",
     "via": "@EROBoston 2117302563053634008",
     "sourceUrl": "https://x.com/EROBoston/status/2117302563053634008",
     "voting": false,
@@ -710,7 +710,8 @@
     "lat": 42.375,
     "lon": -71.0397,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWIrTtuXoAA8Ggf?format=png&name=orig"
   },
   {
     "name": "Daniel Cruz-Garcia",
@@ -968,7 +969,7 @@
       "Illegal entry / reentry"
     ],
     "text": "@EROLosAngeles Nov 1, 2026, as posted: L.A. ICE officers have arrested Mexican national Jose Luis Rodriguez Medina. Rodriguez has at least 2 prior removals dating back to 1994. He has served almost 13 years for cocaine sale/transportation, burglary & illegal reentry. He’ll remain in ICE custody until removed.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2117058861152485851-jose-luis-rodriguez-medina.jpg",
     "via": "@EROLosAngeles 2117058861152485851",
     "sourceUrl": "https://x.com/EROLosAngeles/status/2117058861152485851",
     "voting": false,
@@ -977,7 +978,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HV5M-r7aIAAj11z?format=jpg&name=orig"
   },
   {
     "name": "Benito Juarez-Reyes",
@@ -997,7 +999,7 @@
       "Illegal entry / reentry"
     ],
     "text": "@EROLosAngeles Nov 1, 2026, as posted: Los Angeles ICE officers arrested Mexican national Benito Juarez-Reyes. Juarez was previously removed in 2010 and 2023. He was sentenced to 7 years for possession and distribution of over 5 kilos of cocaine& illegal reentry. He’ll remain in ICE custody until removed.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2117043761712922804-benito-juarez-reyes.jpg",
     "via": "@EROLosAngeles 2117043761712922804",
     "sourceUrl": "https://x.com/EROLosAngeles/status/2117043761712922804",
     "voting": false,
@@ -1006,7 +1008,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HV5M4z2aQAAUoQP?format=jpg&name=orig"
   },
   {
     "name": "Rodrigo Ortega-Reyes",
@@ -1054,7 +1057,7 @@
       "Drug trafficking"
     ],
     "text": "@EROSanFrancisco Nov 1, 2026, as posted: ICE San Francisco arrested criminal alien Juan Turcio-Almandarez, 37, of Honduras, in Oakland. His criminal history includes an arrest for transport/sell drugs. He has been deported three times previously. He is in ICE custody pending removal from the U.S.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2116999973615149270-juan-turcio-almandarez.jpg",
     "via": "@EROSanFrancisco 2116999973615149270",
     "sourceUrl": "https://x.com/EROSanFrancisco/status/2116999973615149270",
     "voting": false,
@@ -1063,7 +1066,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWEYEVNa0AAd67H?format=png&name=orig"
   },
   {
     "name": "Jair Fernandes De Oliveira Junior",
