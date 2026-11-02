@@ -7526,5 +7526,68 @@
     "image": "https://pbs.twimg.com/media/HWDf8QjWoAAvz3F?format=png&name=orig",
     "bytes": 6386,
     "reviewed": "Viewed image: close-up headshot of one bearded adult man, plain background, no text, no other faces"
+  },
+  "dhs.gov/news/2026/11/02/dhs-highlights-worst-illegal-aliens-arrested-kansas|daniel cruz garcia": {
+    "checkedAt": "2026-11-02T15:14:54.458Z",
+    "name": "Daniel Cruz-Garcia",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/11/02/dhs-highlights-worst-illegal-aliens-arrested-kansas|juan pablo rios flores": {
+    "checkedAt": "2026-11-02T15:14:54.478Z",
+    "name": "Juan Pablo Rios-Flores",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/11/02/dhs-highlights-worst-illegal-aliens-arrested-kansas|orgel marel izaguirre valladares": {
+    "checkedAt": "2026-11-02T15:14:54.496Z",
+    "name": "Orgel Marel Izaguirre Valladares",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/11/02/dhs-highlights-worst-illegal-aliens-arrested-kansas|jesus alejandro valenzuela zamarripa": {
+    "checkedAt": "2026-11-02T15:14:54.514Z",
+    "name": "Jesus Alejandro Valenzuela Zamarripa",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/11/02/dhs-highlights-worst-illegal-aliens-arrested-kansas|javier esteffano rifo luman": {
+    "checkedAt": "2026-11-02T15:14:54.532Z",
+    "name": "Javier Esteffano Rifo Luman",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/11/02/dhs-highlights-worst-illegal-aliens-arrested-iowa|manuel avalos banderas": {
+    "checkedAt": "2026-11-02T15:14:54.715Z",
+    "name": "Manuel Avalos Banderas",
+    "result": "held",
+    "file": "dhs-20261102-manuel-avalos-banderas.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-11/IA1.png",
+    "bytes": 10103,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/11/02/dhs-highlights-worst-illegal-aliens-arrested-iowa|josue ponce ulloa": {
+    "checkedAt": "2026-11-02T15:14:54.927Z",
+    "name": "Josue Ponce-Ulloa",
+    "result": "held",
+    "file": "dhs-20261102-josue-ponce-ulloa.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-11/IA2.png",
+    "bytes": 12193,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/11/02/dhs-highlights-worst-illegal-aliens-arrested-iowa|gerzon martinez aleman": {
+    "checkedAt": "2026-11-02T15:14:55.272Z",
+    "name": "Gerzon Martinez-Aleman",
+    "result": "held",
+    "file": "dhs-20261102-gerzon-martinez-aleman.jpg",
+    "image": "https://www.dhs.gov/sites/default/files/2026-11/IA4.png",
+    "bytes": 8542,
+    "why": "needs visual check"
+  },
+  "dhs.gov/news/2026/11/02/dhs-highlights-worst-illegal-aliens-arrested-iowa|jefri hanwar abel cap villagran": {
+    "checkedAt": "2026-11-02T15:14:55.293Z",
+    "name": "Jefri Hanwar Abel Cap Villagran",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
   }
 }

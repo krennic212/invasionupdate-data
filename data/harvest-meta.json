@@ -1,16 +1,23 @@
 {
-  "updatedAt": "2026-11-02T15:13:20Z",
-  "rows": 1161,
-  "approved": 1131,
+  "updatedAt": "2026-11-02T15:14:57Z",
+  "rows": 1170,
+  "approved": 1140,
   "pending": 30,
   "photos": 333,
   "reviewRows": 772,
-  "lastAddedAt": "2026-11-02T15:13:20Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-11-02T15:14:50Z",
+  "lastAddedCount": 9,
   "lastAdded": [
-    "Jose Luis Rodriguez Medina",
-    "Benito Juarez-Reyes"
+    "Daniel Cruz-Garcia",
+    "Juan Pablo Rios-Flores",
+    "Orgel Marel Izaguirre Valladares",
+    "Jesus Alejandro Valenzuela Zamarripa",
+    "Javier Esteffano Rifo Luman",
+    "Manuel Avalos Banderas",
+    "Josue Ponce-Ulloa",
+    "Gerzon Martinez-Aleman",
+    "Jefri Hanwar Abel Cap Villagran"
   ],
-  "harvestSha256": "f9a75d21056607c68660b8e23615be6a4abf26b86f32be6d669b68303588bf9c",
+  "harvestSha256": "7f966d1a50e61df7307dbfb013f27662c7335bde97f7bf072fff028deaee1661",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
