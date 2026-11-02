@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-02",
   "windowDays": 7,
-  "total": 178,
+  "total": 213,
   "rows": [
     {
       "id": "x-2115145798833066022-roberto-mosquera-del-peral",
@@ -311,6 +311,56 @@
       "severityCrimes": [
         "Violent crime against a child",
         "DUI"
+      ]
+    },
+    {
+      "id": "dhs-20261102-andres-acosta-martinez",
+      "name": "Andres Acosta-Martinez",
+      "when": "2 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261102-hector-medina-baldovinos",
+      "name": "Hector Medina-Baldovinos",
+      "when": "2 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261102-jose-enrique-garcia-vazquez",
+      "name": "Jose Enrique Garcia-Vazquez",
+      "when": "2 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261102-salvador-leon-vasquez",
+      "name": "Salvador Leon-Vasquez",
+      "when": "2 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261102-william-gonzalez-luna",
+      "name": "William Gonzalez-Luna",
+      "when": "2 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
       ]
     },
     {

@@ -200,5 +200,33 @@
     "text": "DHSgov 2 Nov 2026, as posted: Operation Guardian’s Success WATCH: Secretary Mullin Holds Press Conference Highlighting Multi-State Operation Guardian’s Success in Removing Illegal Alien CDL Holders from America’s Roads Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true,
     "people": []
+  },
+  {
+    "id": "op-dhsgov-20261102-303",
+    "name": "Operation Guardian Crackdown",
+    "when": "2 Nov 2026",
+    "place": "Not stated",
+    "posted": 303,
+    "unnamed": 301,
+    "sourceUrl": "https://www.dhs.gov/news/2026/11/02/secretary-mullin-announces-results-operation-guardian-crackdown-illegal-aliens",
+    "people": [
+      "dhs-20261102-luis-armando-garlo-rodriguez"
+    ],
+    "text": "DHSgov 2 Nov 2026, as posted: As of October 29, ICE has arrested 303 aliens through Operation Guardrail. 303 total, 2 named on their own rows, 301 unnamed counted here.",
+    "heads": 301,
+    "operation": true
+  },
+  {
+    "id": "op-thejusticedept-20261102-operation-protect",
+    "name": "Operation Protect",
+    "when": "2 Nov 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/usao-cdca/pr/six-additional-foreign-nationals-la-county-who-registered-vote-and-voted-us-elections",
+    "people": [
+      "doj-20261102-chad-goertz"
+    ],
+    "text": "TheJusticeDept 2 Nov 2026, as posted: These additional criminal charges are a part of “Operation Protect the Vote” – an ongoing, coordinated federal effort in California to root out fraud in U. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
   }
 ]
