@@ -2,10 +2,10 @@ name: Hourly harvest
 
 on:
   schedule:
-    # 3x daily, every day, ~9 AM, 12 PM, 5 PM Central (Krennic 2026-10-28). CDT = UTC-5.
-    # After DST ends Nov 1 (CST = UTC-6), change to "2 15,18,23 * * *".
+    # 3x daily, every day, ~9 AM, 12 PM, 5 PM Central (Krennic 2026-10-28). CST = UTC-6 (shifted 2026-11-02).
+    # When DST starts in March (CDT = UTC-5), change back to "2 14,17,22 * * *".
     # Government-site harvest runs Saturday and Sunday too. Not weekdays only.
-    - cron: "2 14,17,22 * * *"
+    - cron: "2 15,18,23 * * *"
   workflow_dispatch:
     inputs:
       approve:
