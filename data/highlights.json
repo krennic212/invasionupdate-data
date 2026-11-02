@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-02",
   "windowDays": 7,
-  "total": 213,
+  "total": 229,
   "rows": [
     {
       "id": "x-2115145798833066022-roberto-mosquera-del-peral",
@@ -202,6 +202,18 @@
       ]
     },
     {
+      "id": "x-2117320585847943468-luis-bohorquez-ramos",
+      "name": "Luis Bohorquez-Ramos",
+      "when": "2 Nov 2026",
+      "severity": 140,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Drug trafficking",
+        "Burglary / theft"
+      ]
+    },
+    {
       "id": "x-2115851586622906642-luis-alberto-arreguin-villa",
       "name": "LUIS ALBERTO ARREGUIN-VILLA",
       "when": "29 Oct 2026",
@@ -279,17 +291,6 @@
       "severityCrimes": [
         "Alien smuggling",
         "Fraud (incl. voter fraud)"
-      ]
-    },
-    {
-      "id": "x-2115865263300387043-yosmar-adolfo-castro-cardona",
-      "name": "Yosmar Adolfo Castro Cardona",
-      "when": "29 Oct 2026",
-      "severity": 125,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons"
       ]
     },
     {
