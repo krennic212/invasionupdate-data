@@ -1,3 +1,12 @@
+# HANDOFF: Nov 2, 2026 — two IU parser/guard gaps fixed (Krennic approved)
+
+- Gap 1 (guards.mjs nonCitizenStated, parse.mjs extractPeople): "aliens" as the object of smuggling/transport/harboring/travel wording, and "alien smuggling", no longer count as stated non-citizen status. A list name before "conspired ... to operate an alien smuggling ..." is no longer a hit. The person's own "an alien", "illegal alien", "<Demonym> national" still count.
+- Gap 2 (parse.mjs rowLabel): in a multi-person release, a person whose own sentence has no stage word no longer borrows a Convicted / Pleaded guilty headline. Falls back to Charged (if the release has charge or conviction wording) or As posted. Single-person releases and lower headline stages unchanged.
+- Test: scripts/rules-1102.test.mjs (uses the MDFL Oct 29 Cuban fixture).
+- Dry run (last 400 DOJ API releases, Oct 26–Nov 2, old vs new, dedupe off): 0 added, 0 relabeled. No longer extracted: Emanuel Martinez Gonzalez, Marianny Lucia Lopez-Torres. Their existing rows are untouched (harvest never re-gates or deletes existing rows).
+- Live guard recheck (approved rows): 3 now read "not stated" on their own crime text — Vega-Perez, Martinez Gonzalez (status comes from the Sep 2025 MDFL "unlawfully residing" release via statusSourceUrl), and Heriberto Lopez-Trevino (dhs-2026-09-21-wow-12, already approved by override). All stay approved; no rows demoted or removed.
+- Backups of pre-change scripts: /tmp/iu-old2-parse.mjs, /tmp/iu-old2-guards.mjs on the box.
+
 # HANDOFF: 2026-10-31 (1:05 PM CDT) three parser / guard fixes (Krennic approved 12:52 PM CDT)
 
 - Commit 58d3192.
