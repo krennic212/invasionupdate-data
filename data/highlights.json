@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-01",
   "windowDays": 7,
-  "total": 209,
+  "total": 170,
   "rows": [
     {
       "id": "x-2115145798833066022-roberto-mosquera-del-peral",
@@ -168,17 +168,6 @@
       ]
     },
     {
-      "id": "dhs-20261026-david-orlando-sanchez",
-      "name": "David Orlando Sanchez",
-      "when": "26 Oct 2026",
-      "severity": 152,
-      "severityReason": "Kidnapping / human trafficking",
-      "severityCrimes": [
-        "Kidnapping / human trafficking",
-        "Armed robbery / aggravated assault"
-      ]
-    },
-    {
       "id": "dhs-20261030-abubakarr-barrie",
       "name": "Abubakarr Barrie",
       "when": "30 Oct 2026",
@@ -293,13 +282,15 @@
       ]
     },
     {
-      "id": "dhs-20261026-mario-garcia",
-      "name": "Mario Garcia",
-      "when": "26 Oct 2026",
-      "severity": 120,
-      "severityReason": "Child sex crime",
+      "id": "x-2115483594089255226-glen-madric-reyes",
+      "name": "Glen Madric Reyes",
+      "when": "28 Oct 2026",
+      "severity": 125,
+      "severityReason": "Drug trafficking",
       "severityCrimes": [
-        "Child sex crime"
+        "Drug trafficking",
+        "Assault / battery",
+        "Burglary / theft"
       ]
     },
     {
@@ -411,67 +402,6 @@
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261026-angel-isaias-anavisca-pacheco",
-      "name": "Angel Isaias Anavisca-Pacheco",
-      "when": "26 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261026-hannyel-jimenez",
-      "name": "Hannyel Jimenez",
-      "when": "26 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2114834876415590635-joel-salvador-juarez",
-      "name": "Joel Salvador Juarez",
-      "when": "26 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261026-josem-guzman",
-      "name": "Josem Guzman",
-      "when": "26 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2114834873060061670-luis-hernandez-depaz",
-      "name": "Luis Hernandez-Depaz",
-      "when": "26 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2114803701558952294-lesli-joel-calix-sarmiento",
-      "name": "Lesli Joel Calix-Sarmiento",
-      "when": "26 Oct 2026",
-      "severity": 87,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Illegal entry / reentry"
       ]
     },
     {
