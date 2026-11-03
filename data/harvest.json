@@ -52,8 +52,7 @@
     "confirmedBy": "DOJ",
     "lat": 26.7206,
     "lon": -80.0388,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen",
+    "status": "approved",
     "tags": []
   },
   {
@@ -81,8 +80,7 @@
     "confirmedBy": "DOJ",
     "lat": 26.7206,
     "lon": -80.0388,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen",
+    "status": "approved",
     "tags": []
   },
   {
@@ -194,8 +192,7 @@
     "confirmedBy": "DOJ",
     "lat": 35.8452,
     "lon": -83.5386,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen",
+    "status": "approved",
     "tags": []
   },
   {
@@ -3166,8 +3163,7 @@
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "voting row with no city",
+    "status": "approved",
     "tags": []
   },
   {
@@ -3198,7 +3194,7 @@
   },
   {
     "name": "Sheikhnoor Adbo",
-    "city": "Not stated",
+    "city": "Minnesota",
     "crime": "Arrested: Sheikhnoor Adbo, a citizen of Somalia, is a lawful permanent resident who, according to the Minnesota Secretary of State, voted in person on November 3, 2020.",
     "usa": "ICE release Nov 2, 2026: In Nationwide crackdown on voter fraud ICE arrests dozens of aliens",
     "foreign": "Not stated in post",
@@ -3217,10 +3213,9 @@
     "voting": true,
     "origin": "Somalia",
     "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
-    "status": "pending",
-    "holdReason": "voting row with no city",
+    "lat": 46.7296,
+    "lon": -94.6859,
+    "status": "approved",
     "tags": []
   },
   {
@@ -3302,8 +3297,7 @@
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "voting row with no city",
+    "status": "approved",
     "tags": []
   },
   {
@@ -3331,8 +3325,7 @@
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "voting row with no city",
+    "status": "approved",
     "tags": []
   },
   {
@@ -3441,8 +3434,7 @@
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "voting row with no city",
+    "status": "approved",
     "tags": []
   },
   {
@@ -6057,8 +6049,7 @@
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "voting row with no city",
+    "status": "approved",
     "tags": []
   },
   {
@@ -6169,8 +6160,7 @@
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "voting row with no city",
+    "status": "approved",
     "tags": []
   },
   {
@@ -6200,7 +6190,7 @@
     "lat": null,
     "lon": null,
     "status": "pending",
-    "holdReason": "voting row with no city",
+    "holdReason": "Krennic 2026-11-03 no-city rule change: still held. The ICE Oct 30 roundup labels him Convicted, but that conviction is for strangulation and other crimes, not the vote; showing a Convicted voting row would upgrade the voting case (never charged-to-convicted). Krennic to decide",
     "tags": []
   },
   {
@@ -6229,8 +6219,7 @@
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "voting row with no city",
+    "status": "approved",
     "tags": []
   },
   {
@@ -9342,9 +9331,8 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "tags": [],
-    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
+    "status": "approved",
+    "tags": []
   },
   {
     "name": "Aden Hassan Aden",
@@ -9371,9 +9359,8 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "tags": [],
-    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
+    "status": "approved",
+    "tags": []
   },
   {
     "name": "Arturo Salazar Garcia",
@@ -9400,9 +9387,8 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "tags": [],
-    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
+    "status": "approved",
+    "tags": []
   },
   {
     "name": "Jaimie Sosa-Sardina",
@@ -9489,9 +9475,8 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "tags": [],
-    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
+    "status": "approved",
+    "tags": []
   },
   {
     "name": "Mai Tran",
@@ -9518,9 +9503,8 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "tags": [],
-    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
+    "status": "approved",
+    "tags": []
   },
   {
     "name": "Jose Luis Matute Chaviel",
@@ -9547,9 +9531,8 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "tags": [],
-    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
+    "status": "approved",
+    "tags": []
   },
   {
     "name": "Phath Vorn",
@@ -9576,9 +9559,8 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "tags": [],
-    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
+    "status": "approved",
+    "tags": []
   },
   {
     "name": "Axel Bemjarmin Alarcon Duarte",
@@ -9605,9 +9587,8 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "tags": [],
-    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
+    "status": "approved",
+    "tags": []
   },
   {
     "name": "Darwin Yoel Zelaya-Orellana",
@@ -9634,9 +9615,8 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "tags": [],
-    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
+    "status": "approved",
+    "tags": []
   },
   {
     "name": "Servando Alejandro-Torres",
@@ -9663,9 +9643,8 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "tags": [],
-    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
+    "status": "approved",
+    "tags": []
   },
   {
     "name": "Jairo Ivan Vazquez Montano",
@@ -9692,9 +9671,8 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "tags": [],
-    "holdReason": "voting row with no stated place: the DHS Oct 28 release gives no city, county or state for this person (voting-place rule). Held 2026-10-28 bill-voting-add; approve with a place if one is published"
+    "status": "approved",
+    "tags": []
   },
   {
     "name": "Rolex Augustin",
@@ -14359,7 +14337,7 @@
     "lat": null,
     "lon": null,
     "status": "pending",
-    "holdReason": "Krennic 2026-10-23: held (not shown) pending review; city not stated",
+    "holdReason": "duplicate of x-2107579277432758721-andre-s-garcia (same person: Cuban national, voted 2022 and 2024 in Missouri, arrested October; live row is Cass County, MO from the WDMO release). Held 2026-11-03; not deleted",
     "tags": []
   },
   {
@@ -17716,8 +17694,7 @@
     "confirmedBy": "DOJ",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen",
+    "status": "approved",
     "tags": []
   },
   {

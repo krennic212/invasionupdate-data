@@ -139,7 +139,15 @@ const PATTERNS = [
   // "a 4-time previously deported criminal alien" after the name, and "the arrest of [Name]".
   new RegExp(`\\b(?:deported|removed|arrested)\\s+${NAME},\\s+${AGE}(?:an?\\s+)?(?:\\d+-time\\s+)?previously\\s+deported\\s+criminal\\s+alien`, "g"),
   new RegExp(`\\bthe arrest of\\s+${NAME}(?=[^.]{0,100}\\b(?:alien|non-?citizen|national)\\b)`, "g"),
+  // Krennic 2026-11-03: status before the name, at the start of the sentence (after an optional dateline):
+  // "TULSA, Okla. – A native and citizen of the Philippines, Maria Elenor Lopez Rios, 45, and a lawful permanent resident ..."
+  // (usao-ndok Nov 2, 2026). The name must be followed by an age.
+  new RegExp(`^(?:[A-Z][A-Za-z .,'’]{0,40}?\\s+[–—-]\\s+)?An?\\s+(?:native\\s+and\\s+citizen|citizen\\s+and\\s+national|citizen|national|native)\\s+of\\s+(?:the\\s+)?[A-Z][A-Za-z'’.-]+(?:\\s+[A-Z][A-Za-z'’.-]+){0,3},\\s+${NAME},\\s+\\d{1,3},`, "g"),
+  // Krennic 2026-11-03: "Christiane Vinette Young (75), a Canadian national illegally present in the United States"
+  // (usao-mdfl Sept 23, 2026): the age in parentheses right after the name, then the person's own status.
+  new RegExp(`(?:^|[—–-]\\s+|,\\s+|;\\s+)${NAME}\\s+\\(\\d{1,3}\\),\\s+an?\\s+(?:criminal\\s+)?(?:([A-Z][a-z]+)\\s+)?(?:national|citizen|alien|non-?citizen|native)\\b`, "g"),
 ];
+const PAREN_AGE = PATTERNS[PATTERNS.length - 1];
 
 const LIST_ENTRY = new RegExp(`^${NAME}\\s+[—–]\\s+(Arrested|Removed|Deported|Apprehended|Detained)\\s+(?:on\\s+)?[A-Z][a-z]{2,8}\\.?\\s+\\d{1,2},\\s+(?:19|20)\\d{2}\\.(?:\\s+[^]*?)?\\s+(?:Citizen|National|Native and citizen) of ${COUNTRY}\\.$`);
 const NATIONAL_LIST_ENTRY = /(?:^|[.!?]\s+)(?:[A-Z][a-z]+\s+(?:of\s+)?){0,3}[A-Z][a-z]+\s+[Nn]ational,?\s+[A-Z][\p{L}'’-]+(?:\s+[A-Z][\p{L}'’.-]+){0,5}\s?,\s+\d{1,3},/gu;
@@ -420,6 +428,8 @@ export function extractPeople(blocks, { title = "" } = {}) {
             ? [m[1], m[2]].map((n) => ({ n, origin: originFrom(m[3] ?? m[5], m[4] ?? m[6], m[7]) }))
             : re === PATTERNS[4]
               ? [{ n: m[2], origin: DEMONYM[m[1]] || "" }]
+              : re === PAREN_AGE
+                ? [{ n: m[1], origin: DEMONYM[m[2]] || "" }]
               : [{ n: re === PATTERNS[3] && m[2] ? `${m[1]} ${m[2]}` : m[1], origin: re === PATTERNS[0] ? originFrom(m[2], m[3] || "", m[4]) : "" }];
           // Krennic 2026-10-31: "A, 27, B, 31, and C, 29, all Mexican nationals, ..." - every name in the list, but ONLY
           // when the list's shared tail is a plural status for all of them (plural TYPE, status words only before it).

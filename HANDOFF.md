@@ -1,3 +1,18 @@
+# HANDOFF: Nov 3, 2026 (late morning) — Krennic-approved voter fixes (10:01 AM CT approval)
+
+- Name reader (scripts/parse.mjs PATTERNS): status-first sentences ("A native and citizen of the Philippines, Maria Elenor Lopez Rios, 45,")
+  and "Name (75), a Canadian national" (origin from the demonym). Dry run (400 latest DOJ + 698 voter releases): only Lopez Rios and Young newly read; both already live.
+- Non-citizen guard (scripts/guards.mjs): "no United States/U.S. citizenship" and "not a citizen of the United States" count as stated status.
+  "identity/name ... of [“X,”] an American/U.S. citizen" is the stolen identity's victim and no longer blocks (VICTIM_IDENTITY). Own U.S.-citizen wording still blocks.
+- Voting rows with no city (scripts/harvest.mjs + new scripts/voting-state.mjs): no longer held. Pinned to the one state the person's own sentence names, else shown with no pin
+  (city "Not stated", lat/lon null). x-scan.mjs X-post hold unchanged. All other guards still apply.
+- One-time data update (approved by id): Porter, Svitlana + Yelyzaveta Demydenko, Rodolfo Armando Fernandez Guzman (SNAP; was held only by the victim-citizen wording),
+  and 19 ICE/DHS roundup voters (Adbo pinned Minnesota; 18 no pin).
+- Still held: Julio De La Rosa (ICE label "Convicted" is for strangulation, not the vote), Andres Garcia (duplicate of x-2107579277432758721-andre-s-garcia,
+  Cass County MO), Jaimie Sosa-Sardina and Marva Marie Cook (duplicates, unchanged). Sanchez Loy / Doucet untouched.
+- Fraud Ledger skips rows with no pin, so of the 19 only Adbo cross-posts. Changing that needs Krennic's approval.
+- Tests: scripts/voting-fix-1103.test.mjs (9); voting-place.test.mjs live-feed test now allows "Not stated" only with no pin. Full suite 292/292.
+
 # HANDOFF: Nov 3, 2026 (mid-morning) — voter-fraud gap check (Krennic asked: "Are any examples missing?")
 
 - No rule, guard or parser changes. Rows added through data/pending.json (official .gov rows, built with parse.mjs toRow, verbatim sentences).

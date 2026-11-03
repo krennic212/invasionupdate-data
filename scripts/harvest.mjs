@@ -32,6 +32,7 @@ import { holdReasons, holdReasonsForRow } from "./guards.mjs";
 import { operationsFor } from "./operations.mjs";
 import { fillCity } from "./office-city.mjs";
 import { latLonFor } from "./parse.mjs";
+import { placeVotingByState } from "./voting-state.mjs";
 import { dailySignalReleases } from "./daily-signal.mjs";
 import { applyTags } from "./tags.mjs";
 import { xOnlyRow, resolveXReview } from "./x-review.mjs";
@@ -238,10 +239,9 @@ export function rowsFromRelease(rel, { have, uniqueId, gate: gateFn = gate }) {
       const geo = latLonFor(placed.city);
       if (geo.lat != null) { placed.lat = geo.lat; placed.lon = geo.lon; }
     }
-    if (placed.voting && /not stated/i.test(String(placed.city || "Not stated"))) {
-      placed.status = "pending";
-      placed.holdReason = [placed.holdReason, "voting row with no city"].filter(Boolean).join("; ");
-    }
+    // Krennic 2026-11-03: a voting row with no city is no longer held. It is pinned to the state its own sentence names
+    // ("according to the Minnesota Secretary of State"), else shown with no pin. Every guard above still applies.
+    if (placed.voting) placeVotingByState(placed);
     if (placed.status === "pending") held.push(`${hit.name} (${placed.holdReason || "approval gate"})`);
     // Standing rule: this row is written only after the release was opened and extractPeople found the name in it.
     // A page that 404s or never loads does not become a row. X posts are checked in x-scan.mjs --write
@@ -330,10 +330,9 @@ async function main() {
       const geo = latLonFor(placed.city);
       if (geo.lat != null) { placed.lat = geo.lat; placed.lon = geo.lon; }
     }
-    if (placed.voting && /not stated/i.test(String(placed.city || "Not stated"))) {
-      placed.status = "pending";
-      placed.holdReason = [placed.holdReason, "voting row with no city"].filter(Boolean).join("; ");
-    }
+    // Krennic 2026-11-03: a voting row with no city is no longer held. It is pinned to the state its own sentence names
+    // ("according to the Minnesota Secretary of State"), else shown with no pin. Every guard above still applies.
+    if (placed.voting) placeVotingByState(placed);
     if (placed.status === "pending") held.push(`${hit.name} (${placed.holdReason || "approval gate"})`);
     fresh.push(scrubVictimNames(placed).row);
     added.push(hit.name);

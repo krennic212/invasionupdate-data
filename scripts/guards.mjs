@@ -94,8 +94,20 @@ function releaseAtLargeFor(name, releaseText) {
 // "lawful / legal permanent resident" and "green card holder" are non-citizen statuses by definition (2026-10-20).
 // "<Nationality> national" ("a Brazilian national") counts through \bnationals?\b.
 const OBJECT_ALIENS = /\b(?:alien|human)[- ]smuggl\w*|\b(?:smuggl\w*|transport\w*|harbou?r\w*|conceal\w*|shield\w*|induc\w*|encourag\w*|recruit\w*|bring\w*|brought|mov(?:e|ed|ing))\s+(?:(?:or\s+\w+\s+)?(?:the|of|in|into|to|for|more|than|over|at|least|about|dozens|hundreds|thousands|\d[\d,]*|undocumented|illegal|other|several|many|multiple|groups?|[A-Z][a-z]+)\s+){0,5}aliens?\b|\b(?:travel|entry|transportation|smuggling|harbou?ring|movement)\s+of\s+(?:\w+\s+){0,2}aliens?\b/gi;
+/**
+ * Krennic 2026-11-03: "American citizen" / "U.S. citizen" that describes the person whose identity was stolen or assumed
+ * ("assumed the identity of “Tony Wayne Ortiz,” an American citizen", usao-edtn Oct 30, 2026) is the victim, not this
+ * defendant. Only the "identity / name / birth certificate / Social Security number of <someone>, a U.S. citizen" shape
+ * is blanked; any other U.S.-citizen wording still blocks.
+ */
+export const VICTIM_IDENTITY = /\b(?:identit(?:y|ies)|name|birth certificate|social security number|passport)\s+of\s+(?:an?\s+|another\s+)?(?:(?:“[^”]{1,60}”|"[^"]{1,60}")\s*,?\s+(?:an?\s+)?)?(?:real\s+|actual\s+|living\s+|deceased\s+)?(?:American|U\.S\.|United States)\s+citizen\b/gi;
+export const stripVictimIdentity = (s) => String(s || "").replace(VICTIM_IDENTITY, " ");
+/** Krennic 2026-11-03: "with no United States citizenship" (usao-sdfl Apr 29, 2025), "no U.S. citizenship",
+ *  "not a citizen of the United States" state non-citizen status. */
+const NO_US_CITIZENSHIP = /\bno\s+(?:United States|U\.S\.)\s+citizenship\b|\bnot\s+a\s+citizen\s+of\s+the\s+United States\b/i;
+
 export function nonCitizenStated(sentence) {
-  const s = String(sentence || "");
+  const s = stripVictimIdentity(sentence);
   // Ignore "falsely claiming to be a U.S. citizen" so real foreign-citizen wording still counts.
   const stripped = s.replace(/\b(?:falsely\s+)?claim(?:ing|ed|s)?\s+to\s+be\s+(?:a\s+)?(?:U\.S\.|United States|American)\s+citizen\b/gi, " ");
   if (/\bdual (national|citizen)|\bnaturali[sz]ed\b|\bU\.S\. citizen\b|\bUnited States citizen\b|\bAmerican citizen\b/i.test(stripped)) return false;
@@ -103,6 +115,7 @@ export function nonCitizenStated(sentence) {
   // smuggling organization", "the travel of aliens", "induced thousands of Cuban aliens") is never this person's status.
   const own = s.replace(OBJECT_ALIENS, " ");
   return (
+    NO_US_CITIZENSHIP.test(s) ||
     /\baliens?\b/i.test(own) ||
     /\bnon-?citizens?\b|\b(?:lawful|legal) permanent residen(?:t|ts|ce)\b|\bgreen[- ]card holders?\b|\b(illegally|unlawfully) (present|residing|in the United States|in the U\.S\.)|\bnationals?\b|\bcitizens? of\b|\bforeign national\b|\billegal (immigrant|migrant)s?\b|\bundocumented (?:immigrant|migrant|alien|noncitizen|non-citizen)s?\b|\ban undocumented\b/i.test(s) ||
     /\b[A-Z][a-z]+ citizens?\b/.test(s)
@@ -144,7 +157,7 @@ const CITIZEN_CLAIM = /\b(?:falsely\s+)?claim(?:ing|ed|s)?\s+to\s+be\s+(?:a\s+)?
 const CITIZEN_OVERRIDE = /\bdual (national|citizen)|\bnaturali[sz]ed\b|\bU\.S\. citizen\b|\bUnited States citizen\b|\bAmerican citizen\b/i;
 export function deportedStated(text) {
   const s = String(text || "").replace(/\s+/g, " ");
-  if (CITIZEN_OVERRIDE.test(s.replace(CITIZEN_CLAIM, " "))) return false;
+  if (CITIZEN_OVERRIDE.test(stripVictimIdentity(s).replace(CITIZEN_CLAIM, " "))) return false;
   // Blank forward-looking wording first so "will be deported" never counts.
   const t = s.replace(/\b(?:will|would|could|can|may|might|shall|to|must|should)\s+(?:also\s+|then\s+|soon\s+|likely\s+)?(?:be|get)\s+deported\b/gi, " ")
     .replace(/\b(?:faces?|facing|pending|awaiting|await|avoid(?:ed|ing)?|fight(?:ing|s)?|seek(?:s|ing)?)\s+(?:possible\s+|his\s+|her\s+)?deportation\b/gi, " ");
@@ -175,7 +188,7 @@ export function nonCitizenStatedFor(name, sentence) {
   let mine = parts.filter((p) => p.includes(n));
   if (!mine.length) mine = parts.filter((p) => new RegExp(`(?<![A-Za-z'’-])${esc(last)}(?![A-Za-z'’-])`).test(p));
   if (!mine.length) return nonCitizenStated(s);
-  if (mine.some((p) => CITIZEN_OVERRIDE.test(p.replace(CITIZEN_CLAIM, " ")))) return false;
+  if (mine.some((p) => CITIZEN_OVERRIDE.test(stripVictimIdentity(p).replace(CITIZEN_CLAIM, " ")))) return false;
   // Krennic 2026-11-03: a one-person list entry that ends with its own nameless status sentence ("... ; convicted again in
   // 2018 of ... Citizen of Mexico.", D. Or. Oct 30, 2026) states this person's status. Only that exact closing form.
   if (/^[^;]*\S\s+[—–-]\s+/.test(s) && /(?:^|\.\s+)(?:Citizen|National|Native and citizen) of [A-Z][A-Za-z .'’-]+\.$/.test(s.trim()) && !CITIZEN_OVERRIDE.test(s.replace(CITIZEN_CLAIM, " "))) return true;

@@ -47,11 +47,12 @@ test("voting wording: provisional ballot, false claim of citizenship in order to
   assert.ok(!VOTING.test("convicted of wire fraud and money laundering"));
 });
 
-test("live feed: every voting row has a place, no voter listed twice", () => {
+// Krennic 2026-11-03: a voting row with no stated place is shown with no pin (city "Not stated", no lat/lon), never a made-up place.
+test("live feed: every voting row has a place or no pin at all, no voter listed twice", () => {
   const norm = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z ]/g, "").replace(/\s+/g, " ").trim();
   const seen = new Set();
   for (const r of feed.filter((r) => r.voting && r.status === "approved")) {
-    assert.notEqual(r.city, "Not stated", r.name);
+    if (r.city === "Not stated") assert.ok(r.lat == null && r.lon == null, `${r.name}: no place but a pin`);
     const k = norm(r.name);
     assert.ok(!seen.has(k), `duplicate voter ${r.name}`);
     seen.add(k);
