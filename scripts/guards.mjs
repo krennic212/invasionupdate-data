@@ -176,13 +176,17 @@ export function nonCitizenStatedFor(name, sentence) {
   if (!mine.length) mine = parts.filter((p) => new RegExp(`(?<![A-Za-z'’-])${esc(last)}(?![A-Za-z'’-])`).test(p));
   if (!mine.length) return nonCitizenStated(s);
   if (mine.some((p) => CITIZEN_OVERRIDE.test(p.replace(CITIZEN_CLAIM, " ")))) return false;
+  // Krennic 2026-11-03: a one-person list entry that ends with its own nameless status sentence ("... ; convicted again in
+  // 2018 of ... Citizen of Mexico.", D. Or. Oct 30, 2026) states this person's status. Only that exact closing form.
+  if (/^[^;]*\S\s+[—–-]\s+/.test(s) && /(?:^|\.\s+)(?:Citizen|National|Native and citizen) of [A-Z][A-Za-z .'’-]+\.$/.test(s.trim()) && !CITIZEN_OVERRIDE.test(s.replace(CITIZEN_CLAIM, " "))) return true;
   return mine.some((p) => nonCitizenStated(p));
 }
 
 /** All reasons a row must stay pending (empty array = may be auto-approved). */
-export function holdReasons({ name, sentence, title = "", releaseText = "", label = "" }) {
+export function holdReasons({ name, sentence, title = "", releaseText = "", label = "", mononym = false }) {
   const out = [];
-  if (String(name || "").trim().split(/\s+/).length < 2 || isPlaceName(name, { title })) out.push("not a person: name is a place name or a single word");
+  // A one-word name passes only when the parser found it in a clearly structured list entry (parse.mjs MONONYM_ENTRY).
+  if ((String(name || "").trim().split(/\s+/).length < 2 && !mononym) || isPlaceName(name, { title })) out.push("not a person: name is a place name or a single word");
   // Parser slips (Krennic 2026-10-27): "Pantaleon Chacon Madrid Oct", "Nevada.Mario Garcia", all-caps headline text.
   for (const r of suspiciousName(name)) if (r !== "single word" && r !== "empty name") out.push(`suspicious name: ${r}`);
   if (isMinor(name, sentence, title)) out.push("possible minor / juvenile");

@@ -34,6 +34,7 @@ import { fillCity } from "./office-city.mjs";
 import { latLonFor } from "./parse.mjs";
 import { dailySignalReleases } from "./daily-signal.mjs";
 import { applyTags } from "./tags.mjs";
+import { xOnlyRow, resolveXReview } from "./x-review.mjs";
 
 const HARVEST = process.env.HARVEST_FILE || "data/harvest.json";
 const REVIEW = process.env.REVIEW_FILE || "data/review.json";
@@ -230,7 +231,7 @@ export function rowsFromRelease(rel, { have, uniqueId, gate: gateFn = gate }) {
     // Every state-source release is an election-crime release (isElectionCase), so its rows are voting rows.
     if (rel.stateCase) row.voting = true;
     const label = row.crime.slice(0, row.crime.indexOf(":"));
-    const reasons = holdReasons({ name: hit.name, sentence: hit.sentence, title: rel.title, releaseText: rel.blocks.join(" "), label });
+    const reasons = holdReasons({ name: hit.name, sentence: hit.sentence, title: rel.title, releaseText: rel.blocks.join(" "), label, mononym: !!hit.mononym });
     const gated = gateFn({ ...row, id: uniqueId(row.id, row) }, reasons);
     const placed = fillCity(gated);
     if (placed.city && placed.city !== "Not stated" && (placed.lat == null || placed.lon == null)) {
@@ -255,7 +256,10 @@ async function main() {
   const review = readJson(REVIEW, []);
   if (!Array.isArray(harvest) || !Array.isArray(review)) throw new Error("data files must be JSON arrays");
   // Names AND a.k.a. names, so a person is never added twice under an alias.
-  const have = new Set([...harvest, ...review].flatMap((r) => nameKeysOf(r)));
+  // Krennic 2026-11-03: an X-only review row no longer blocks an official row with the same name. After this run,
+  // resolveXReview (scripts/x-review.mjs) drops the X row when it is clearly the same person, else keeps both and flags it.
+  const have = new Set([...harvest, ...review.filter((r) => !xOnlyRow(r))].flatMap((r) => nameKeysOf(r)));
+  const xHave = new Set(review.filter((r) => xOnlyRow(r)).flatMap((r) => nameKeysOf(r)));
   // Ids are unique across feed AND review (scripts/ids.mjs); an empty id gets one in the house style.
   const ids = new Set([...harvest, ...review].map((r) => r?.id).filter(Boolean));
   const uniqueId = (id, row = {}) => makeUniqueId(String(id || "").trim() || rowIdBase(row), ids);
@@ -263,6 +267,7 @@ async function main() {
   const toReview = [];
   const held = [];
   const errors = [];
+  const officialNew = [];
   let scanned = 0;
 
   // 1) Pending intake (optional): route, never auto-publish non-official rows.
@@ -273,11 +278,12 @@ async function main() {
       if (nameKeysOf(r0).some((k) => have.has(k))) continue;
       const r = gate({ ...r0, id: uniqueId(r0.id || `pending-${nameKey(r0.name).replace(/ /g, "-")}`, r0) }, holdReasonsForRow(r0));
       harvest.unshift(r);
+      officialNew.push(r);
       for (const k of nameKeysOf(r)) have.add(k);
       added.push(r.name);
     }
     for (const r0 of rv) {
-      if (nameKeysOf(r0).some((k) => have.has(k))) continue;
+      if (nameKeysOf(r0).some((k) => have.has(k) || xHave.has(k))) continue;
       const r = { ...r0, id: uniqueId(r0.id, r0) };
       review.unshift(r);
       for (const k of nameKeysOf(r)) have.add(k);
@@ -364,6 +370,9 @@ async function main() {
   if (opBook.length) writeJson(OPS_FILE, opBook);
   // Newest first, ahead of existing rows.
   harvest.unshift(...fresh);
+  const xr = resolveXReview([...officialNew, ...fresh], review, harvest);
+  review.length = 0;
+  review.push(...xr.review);
   // Tags (CHNV / DACA / Entered under Biden / Obama) from each row's own words (scripts/tags.mjs).
   applyTags(harvest, [...harvest, ...review]);
   applyTags(review, [...harvest, ...review]);
@@ -376,6 +385,7 @@ async function main() {
     added,
     addedStatus: NEW_STATUS,
     heldPending: held,
+    sameNameReview: { replaced: xr.replaced, keptBoth: xr.keptBoth },
     autoApprove: AUTO_APPROVE,
     sentToReview: toReview,
     scannedReleases: scanned,

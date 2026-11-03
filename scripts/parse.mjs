@@ -141,6 +141,10 @@ const PATTERNS = [
   new RegExp(`\\bthe arrest of\\s+${NAME}(?=[^.]{0,100}\\b(?:alien|non-?citizen|national)\\b)`, "g"),
 ];
 
+const LIST_ENTRY = new RegExp(`^${NAME}\\s+[—–]\\s+(Arrested|Removed|Deported|Apprehended|Detained)\\s+(?:on\\s+)?[A-Z][a-z]{2,8}\\.?\\s+\\d{1,2},\\s+(?:19|20)\\d{2}\\.(?:\\s+[^]*?)?\\s+(?:Citizen|National|Native and citizen) of ${COUNTRY}\\.$`);
+const NATIONAL_LIST_ENTRY = /(?:^|[.!?]\s+)(?:[A-Z][a-z]+\s+(?:of\s+)?){0,3}[A-Z][a-z]+\s+[Nn]ational,?\s+[A-Z][\p{L}'’-]+(?:\s+[A-Z][\p{L}'’.-]+){0,5}\s?,\s+\d{1,3},/gu;
+const MONONYM_ENTRY = /^(?:[A-Z][A-Za-z .'’-]{0,40}[:–—]\s+)?((?:[A-Z][a-z]+\s+(?:of\s+)?){0,3}[A-Z][a-z]+)\s+[Nn]ational,?\s+([A-Z][a-z]{2,}),\s+\d{1,3},\s+an?\s+(?:lawful permanent resident|(?:[a-z-]+\s+){0,3}(?:alien|non-?citizen))\b[^.]*?\b(?:has been|have been|was|is|were)\s+(?:charged|indicted|sentenced|convicted|arrested)\b/;
+
 export const NOT_NAME = /\b(ICE|DHS|HSI|ERO|CBP|USCIS|FBI|DEA|ATF|DOJ|U\.S|United|States|America|American|Department|Justice|Attorney|Attorneys|Office|Offices|Secretary|President|Homeland|Security|Immigration|Customs|Enforcement|Border|Patrol|County|Court|District|Federal|Judge|Agent|Agents|Special|Officers|Officer|Police|Sheriff|Government|Administration|Trump|Biden|Obama|Act|Operation|Task|Force|Division|Bureau|Service|Services|Today|Yesterday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|January|February|March|April|May|June|July|August|September|October|November|December|The|This|These|Those|His|Her|Their|According|Under|Assistant|Acting|Chief|Director|Deputy|Senior|Prosecutor)\b/;
 
 const DEMONYM = {
@@ -375,12 +379,38 @@ export function listMembersBefore(s, m) {
 export function extractPeople(blocks, { title = "" } = {}) {
   const found = [];
   const seen = new Set();
+  const listEntries = blocks.reduce((n, b) => n + (String(b).match(NATIONAL_LIST_ENTRY) || []).length, 0);
   for (const block of blocks) {
     if (block.length < 25) continue;
+    // Krennic 2026-11-03: D. Or. Oct 30, 2026 list style, one block per person:
+    // "Jose Rodriguez-Gomez — Arrested Sept. 11, 2026. Convicted in 2016 of ... Citizen of Mexico."
+    // The whole entry is the verbatim sentence. The lead verb is this case's stage (the dated convictions are the
+    // record), and the entry must end with the person's own "Citizen of <Country>." (no status, no hit).
+    const entry = block.replace(/[\u2010\u2011]/g, "-").match(LIST_ENTRY);
+    if (entry) {
+      const name = cleanPersonName(entry[1]);
+      const key = name.toLowerCase();
+      if (name.split(" ").length >= 2 && !NOT_NAME.test(name) && !isPlaceName(name, { title }) && !seen.has(key)) {
+        seen.add(key);
+        const sentence = block.replace(/[\u2010\u2011]/g, "-");
+        found.push({ name, origin: cleanOrigin(entry[3]) || "", sentence, city: "", entryLabel: entry[2] === "Removed" || entry[2] === "Deported" ? "Removed" : "Arrested" });
+      }
+      continue;
+    }
     const sents = sentences(block);
     for (let i = 0; i < sents.length; i++) {
       // Non-breaking / figure hyphens inside names ("Arellano‑Alba", U+2011, OPA Sept 18, 2026) read as "-".
       const s = sents[i].replace(/[\u2010\u2011]/g, "-");
+      // Krennic 2026-11-03: a one-word name ("Indonesian national Widarto, 56, a lawful permanent resident, has been
+      // charged ...", OPA Nov 2, 2026) only in a clearly structured list: the entry has the roundup's exact shape, the
+      // release has at least 3 such "<Demonym> national <Name>, <age>," entries, and the next sentence starts with the
+      // same word ("Widarto allegedly voted ...").
+      const mono = listEntries >= 3 ? s.match(MONONYM_ENTRY) : null;
+      if (mono && new RegExp(`^${mono[2]}\\s+(?:allegedly|voted|registered|pleaded|was|is|has|knowingly|also)\\b`).test(sents[i + 1] || "") && !NOT_NAME.test(mono[2]) && !DEMONYM[mono[2]] && !STATES[mono[2]] && !seen.has(mono[2].toLowerCase())) {
+        seen.add(mono[2].toLowerCase());
+        found.push({ name: mono[2], origin: DEMONYM[mono[1]] || "", sentence: `${s} ${sents[i + 1]}`, city: cityFrom(s), mononym: true });
+        continue;
+      }
       for (const re of PATTERNS) {
         re.lastIndex = 0;
         let m;
@@ -671,7 +701,11 @@ export function stripPriors(text) {
     .replace(/\b(?:a\s+)?(?:previously\s+)?(?:removed|deported)\s+aliens?\b/gi, "prior-history")
     // "arrested near Comstock after just being removed from the U.S. on Sept. 11": the removal is past, not this case.
     .replace(/\b(?:after|since)\s+(?:just\s+|recently\s+|being\s+)*(?:being|having\s+been)\s+(removed|deported)\b/gi, "prior-history")
-    .replace(/\bcriminal (history|record)\b/gi, "prior-history");
+    .replace(/\bcriminal (history|record)\b/gi, "prior-history")
+    // Krennic 2026-11-03: "A federal jury has found Peter Holly, a 39-year-old lawful permanent resident, guilty of ..."
+    // (usao-mdfl Oct 30, 2026) is a conviction: the split "found <Name, description> guilty" reads as "found guilty".
+    // A jury / judge / court must be the subject, and "not guilty" (or "not" anywhere in between) never counts.
+    .replace(/\b(jury|judge|court)\s+(?:has\s+|have\s+|had\s+)?found\s+(?:(?!\bnot\b)[^.;!?]){1,160}?\s+guilty\b/gi, "$1 found guilty");
 }
 
 /**
@@ -818,6 +852,8 @@ export function slug(s) {
  * A headline Arrested / Charged / Removed stage is kept as before.
  */
 export function rowLabel(hit, rel) {
+  // A list entry's lead verb ("— Arrested Sept. 11, 2026.") is this case's stage; never higher (Krennic 2026-11-03).
+  if (hit.entryLabel) return hit.entryLabel;
   if (hit.noTitleStage) return releaseLabel(hit.sentence, "");
   const t = releaseLabel(hit.sentence, rel.title || "");
   if (!hit.multi || !["Convicted", "Pleaded guilty"].includes(t)) return t;

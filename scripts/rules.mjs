@@ -220,6 +220,8 @@ export function pruneReviewOfLive(harvest, review) {
     const hit = nameKeysOf(r).map((k) => live.get(k)).find(Boolean);
     if (!hit) { out.push(r); continue; }
     if (r?.approvalNote) { kept.push({ id: r.id, name: r.name, liveId: hit.id, why: "review row has an approvalNote" }); out.push(r); continue; }
+    // Krennic 2026-11-03 (scripts/x-review.mjs): a same-name X row judged NOT clearly the same person stays, flagged.
+    if (Array.isArray(r?.sameNameAs) && r.sameNameAs.some((f) => f?.id === hit.id)) { kept.push({ id: r.id, name: r.name, liveId: hit.id, why: "same name, not clearly the same person (sameNameAs)" }); out.push(r); continue; }
     removed.push({ id: r.id, name: r.name, liveId: hit.id });
   }
   return { review: out, removed, kept };
