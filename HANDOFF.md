@@ -1,3 +1,15 @@
+# HANDOFF: Nov 3, 2026 (mid-morning) — voter-fraud gap check (Krennic asked: "Are any examples missing?")
+
+- No rule, guard or parser changes. Rows added through data/pending.json (official .gov rows, built with parse.mjs toRow, verbatim sentences).
+- 8 rows dropped in pending.json; the harvest gate decides status:
+  - Should go live (no guard trips): Maria Elenor Lopez Rios (NDOK Nov 2, Broken Arrow OK; the case behind ICE's Nov 3 X post),
+    Christiane Vinette Young (MDFL, Fort Myers), George Olawunmi Johnson (D. Kan., Olathe), Darwin Jonathan Rivera Flores (CDCA, Winnetka),
+    Randy Pierre-Louis (ICE NY Oct 28, New York; voting set true: "false statements related to voter registration").
+  - Held by guards (pending, not shown): Gregory Allan Porter (EDTN; the release calls the stolen identity "Tony Wayne Ortiz" an American citizen,
+    which trips the U.S.-citizen guard), Svitlana and Yelyzaveta Demydenko (SDFL; "with no United States citizenship" is not a wording the guard reads).
+- Not added: Haoxiang Gao (EDMI 2025; release says he fled to China = at large).
+- Noted, not changed: Osmal Sanchez Loy (ICE, approved, no pin) and Osmal Loy (EDPA, approved, Fountain Hill PA) look like the same man.
+
 # HANDOFF: Nov 3, 2026 (morning) — three rule fixes from the Nov 2 missed-cases check (Krennic approved)
 
 - 1. Same-name X-only review rows (scripts/x-review.mjs, harvest.mjs, rules.mjs pruneReviewOfLive): an X-only review row no longer
