@@ -1,7 +1,13 @@
 {
-  "checkedAt": 1793731098529,
-  "checkedAtIso": "2026-11-03T18:38:18.529Z",
-  "added": [],
+  "checkedAt": 1793739199072,
+  "checkedAtIso": "2026-11-03T20:53:19.072Z",
+  "added": [
+    "Alejandro Villegas Garcia",
+    "Stanley Jide",
+    "Allan Joseph William Arseneault",
+    "Julio Ceser Arias Antonio",
+    "Ayan Ahmen"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "sameNameReview": {
@@ -10,9 +16,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 92,
+  "scannedReleases": 86,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 5 as approved: Alejandro Villegas Garcia, Stanley Jide, Allan Joseph William Arseneault, Julio Ceser Arias Antonio, Ayan Ahmen",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

@@ -1,16 +1,19 @@
 {
-  "updatedAt": "2026-11-03T19:07:44Z",
-  "rows": 1314,
-  "approved": 1300,
+  "updatedAt": "2026-11-03T20:53:23Z",
+  "rows": 1319,
+  "approved": 1305,
   "pending": 14,
   "photos": 353,
   "reviewRows": 771,
-  "lastAddedAt": "2026-11-03T18:16:08Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-11-03T20:53:19Z",
+  "lastAddedCount": 5,
   "lastAdded": [
-    "Jorge Figueira",
-    "Leomar Alexander Lopez Zambrano"
+    "Alejandro Villegas Garcia",
+    "Stanley Jide",
+    "Allan Joseph William Arseneault",
+    "Julio Ceser Arias Antonio",
+    "Ayan Ahmen"
   ],
-  "harvestSha256": "17d7a56c8612ea2df11d175970025ba98577de34ed4fc1f1eeed6a4e8bc00d26",
+  "harvestSha256": "be38bf42eac9804a5fde14b296ff9ee5e511d52f8a3ad98cc1eb82f82f985bfe",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
