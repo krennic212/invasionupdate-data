@@ -1,5 +1,34 @@
 [
   {
+    "name": "Jose Rodriguez-Gomez",
+    "city": "Oregon",
+    "crime": "Arrested: Jose Rodriguez‑Gomez — Arrested Sept. 11, 2026. Convicted in 2016 of first-degree unlawful sexual penetration and first-degree sexual abuse. Citizen of Mexico.",
+    "usa": "DOJ release Oct 30, 2026: Federal Law Enforcement Apprehends 14 Violent Criminal Illegal Aliens Following Court Authorization",
+    "foreign": "Not stated in post",
+    "picked": "10/30/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261030-jose-rodriguez-gomez",
+    "when": "30 Oct 2026",
+    "severity": 81,
+    "severityReason": "Rape / sexual assault",
+    "severityCrimes": [
+      "Rape / sexual assault"
+    ],
+    "text": "DOJ Oct 30, 2026, as posted: Jose Rodriguez‑Gomez — Arrested Sept. 11, 2026. Convicted in 2016 of first-degree unlawful sexual penetration and first-degree sexual abuse. Citizen of Mexico.",
+    "photo": "",
+    "via": "justice.gov/usao-or/pr/federal-law-enforcement-apprehends-14-violent-criminal-illegal-aliens-following-court",
+    "sourceUrl": "https://www.justice.gov/usao-or/pr/federal-law-enforcement-apprehends-14-violent-criminal-illegal-aliens-following-court",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "DOJ",
+    "lat": 43.8041,
+    "lon": -120.5542,
+    "status": "approved",
+    "approvalNote": "Added directly 2026-11-02 (daily missed-cases check): official release row; a same-name X-only row in review.json blocked pending intake (review row: ICEgov X post 2103228179511230929, removed Sept. 23).",
+    "tags": []
+  },
+  {
     "name": "Ursulo Montenegro Martinez",
     "city": "Not stated",
     "crime": "As posted: Ursulo Montenegro Martinez, an illegal alien from Mexico, whose criminal history includes convictions for homicide – negligent manslaughter with a weapon, possession of a narcotic controlled substance, transport/sell narcotics/controlled substance, and illegal entry.",

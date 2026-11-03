@@ -9,6 +9,7 @@
     Carbajal Sierra, Mario Ernesto Martinez, Felipe-Sarmiento were held "not stated" although each entry ends "Citizen of <Country>."; approved by id.
   - OPA Oct 30 PRC agents: Liren "Ryan" Lai (aka Ryan Lai), Yuance Chen (Convicted). SDNY Oct 30 Kalder: GOKCE GUVEN ("a citizen of Turkey", Convicted).
   - MDFL Oct 30: Peter Holly (jury verdict; guard said "Convicted later than source wording" because "found ... guilty" is split; approved by id). D. Mass. Oct 30: Erpawi Roque Collado (LPR, Pleaded guilty; approved by id).
+- Jose Rodriguez-Gomez (D. Or.) was also blocked by a same-name review row (ICEgov X post 2103228179511230929, "REMOVED Sept. 23", same convictions) and was inserted directly; dedupe moved that review row out.
 - 3 rows inserted directly into data/harvest.json (a same-name X-only row in review.json blocks pending intake and the release harvest): Pedro Gutierrez (ICE Nov 2 Alabama operation), Jasveer Singh and Gunpreet Singh (DHS Nov 2 California sanctuary release). dedupe.mjs then removed the review rows "Pedro Gutierrez" (EROLosAngeles 2025 X post, probably a different man) and "Jasveer Singh" (DHS X post).
 - Every approved-by-id row carries an approvalNote. Tests 270/270, validate OK.
 

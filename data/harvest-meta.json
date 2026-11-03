@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-03T00:03:42Z",
-  "rows": 1291,
-  "approved": 1256,
+  "updatedAt": "2026-11-03T00:05:25Z",
+  "rows": 1292,
+  "approved": 1257,
   "pending": 35,
   "photos": 337,
-  "reviewRows": 771,
+  "reviewRows": 770,
   "lastAddedAt": "2026-11-03T00:03:32Z",
   "lastAddedCount": 10,
   "lastAdded": [
@@ -19,6 +19,6 @@
     "Jose Perez Chaparro-Chaparra",
     "Wilber Ismael Ortez-Ramos"
   ],
-  "harvestSha256": "0fd183c346c713b36d28aa7fadb394828ac26d4d9b2287191cefd17ddd296d73",
+  "harvestSha256": "30c9e6f598241e5dddfaa9239c59d9b281e37c1203303d477415361f46659e55",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
