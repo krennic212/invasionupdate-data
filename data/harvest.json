@@ -6394,7 +6394,7 @@
   {
     "name": "Julio De La Rosa",
     "city": "Not stated",
-    "crime": "Convicted: Julio De La Rosa, a criminal illegal alien from Mexico with a final order of removal who illegally voted in the 2020 election. De La Rosa has been convicted of strangulation, assault, violation of a court order and a probation violation.",
+    "crime": "Convicted: Julio De La Rosa, a criminal illegal alien from Mexico with a final order of removal […]. De La Rosa has been convicted of strangulation, assault, violation of a court order and a probation violation.",
     "usa": "ICE release Oct 30, 2026: ICE continues to arrest dozens of illegal aliens in nationwide crackdown on voter fraud",
     "foreign": "Not stated in post",
     "picked": "10/30/2026 (ICE release)",
@@ -6402,29 +6402,28 @@
     "office": "ICEgov",
     "id": "ice-20261030-julio-de-la-rosa",
     "when": "30 Oct 2026",
-    "severity": 100,
-    "severityReason": "Fraud (incl. voter fraud)",
+    "severity": 40,
+    "severityReason": "Assault / battery",
     "severityCrimes": [
-      "Fraud (incl. voter fraud)",
       "Assault / battery"
     ],
-    "text": "ICE Oct 30, 2026, as posted: Julio De La Rosa, a criminal illegal alien from Mexico with a final order of removal who illegally voted in the 2020 election. De La Rosa has been convicted of strangulation, assault, violation of a court order and a probation violation.",
+    "text": "ICE Oct 30, 2026, as posted: Julio De La Rosa, a criminal illegal alien from Mexico with a final order of removal […]. De La Rosa has been convicted of strangulation, assault, violation of a court order and a probation violation.",
     "photo": "",
     "via": "ice.gov/news/releases/ice-continues-arrest-dozens-illegal-aliens-nationwide-crackdown-voter-fraud",
     "sourceUrl": "https://www.ice.gov/news/releases/ice-continues-arrest-dozens-illegal-aliens-nationwide-crackdown-voter-fraud",
-    "voting": true,
+    "voting": false,
     "origin": "Mexico",
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "Krennic 2026-11-03 no-city rule change: still held. The ICE Oct 30 roundup labels him Convicted, but that conviction is for strangulation and other crimes, not the vote; showing a Convicted voting row would upgrade the voting case (never charged-to-convicted). Krennic to decide",
-    "tags": []
+    "status": "approved",
+    "tags": [],
+    "stageCrime": "strangulation, assault, violation of a court order and a probation violation"
   },
   {
     "name": "Gerardo Nieves-Borja",
     "city": "Not stated",
-    "crime": "Charged: Gerardo Nieves-Borja, a criminal illegal alien from Mexico who illegally voted in the 2024 election. Nieves-Borja has been charged with DUI.",
+    "crime": "Charged: Gerardo Nieves-Borja, a criminal illegal alien from Mexico […]. Nieves-Borja has been charged with DUI.",
     "usa": "ICE release Oct 30, 2026: ICE continues to arrest dozens of illegal aliens in nationwide crackdown on voter fraud",
     "foreign": "Not stated in post",
     "picked": "10/30/2026 (ICE release)",
@@ -6432,23 +6431,23 @@
     "office": "ICEgov",
     "id": "ice-20261030-gerardo-nieves-borja",
     "when": "30 Oct 2026",
-    "severity": 77,
-    "severityReason": "Fraud (incl. voter fraud)",
+    "severity": 23,
+    "severityReason": "DUI",
     "severityCrimes": [
-      "Fraud (incl. voter fraud)",
       "DUI"
     ],
-    "text": "ICE Oct 30, 2026, as posted: Gerardo Nieves-Borja, a criminal illegal alien from Mexico who illegally voted in the 2024 election. Nieves-Borja has been charged with DUI.",
+    "text": "ICE Oct 30, 2026, as posted: Gerardo Nieves-Borja, a criminal illegal alien from Mexico […]. Nieves-Borja has been charged with DUI.",
     "photo": "",
     "via": "ice.gov/news/releases/ice-continues-arrest-dozens-illegal-aliens-nationwide-crackdown-voter-fraud",
     "sourceUrl": "https://www.ice.gov/news/releases/ice-continues-arrest-dozens-illegal-aliens-nationwide-crackdown-voter-fraud",
-    "voting": true,
+    "voting": false,
     "origin": "Mexico",
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "stageCrime": "DUI"
   },
   {
     "name": "Jose Luis Guerrero Nunez",
@@ -19701,7 +19700,7 @@
   {
     "name": "Juan Arturo Martinez",
     "city": "Sarasota, FL",
-    "crime": "Convicted: U.S. District Judge Merryday has sentenced Juan Arturo Martinez (62, Mexico) to four months in federal prison for one count of use of a passport secured by false statement and one count of making a false statement in a passport application. For example, Martinez illegally registered to vote, and repeatedly voted in U.S. presidential elections, despite being unlawfully present in the United States and having no right to vote.",
+    "crime": "Convicted: U.S. District Judge Merryday has sentenced Juan Arturo Martinez (62, Mexico) to four months in federal prison for one count of use of a passport secured by false statement and one count of making a false statement in a passport application. For example […], despite being unlawfully present in the United States and having no right to vote.",
     "usa": "DOJ release Jun 27, 2025: Mexican National Sentenced To Prison For Passport Fraud",
     "foreign": "Not stated in post",
     "picked": "6/27/2025 (DOJ release)",
@@ -19714,18 +19713,19 @@
     "severityCrimes": [
       "Fraud (incl. voter fraud)"
     ],
-    "text": "DOJ Jun 27, 2025, as posted: U.S. District Judge Merryday has sentenced Juan Arturo Martinez (62, Mexico) to four months in federal prison for one count of use of a passport secured by false statement and one count of making a false statement in a passport application. For example, Martinez illegally registered to vote, and repeatedly voted in U.S. presidential elections, despite being unlawfully present in the United States and having no right to vote.",
+    "text": "DOJ Jun 27, 2025, as posted: U.S. District Judge Merryday has sentenced Juan Arturo Martinez (62, Mexico) to four months in federal prison for one count of use of a passport secured by false statement and one count of making a false statement in a passport application. For example […], despite being unlawfully present in the United States and having no right to vote.",
     "photo": "",
     "via": "justice.gov/usao-mdfl/pr/mexican-national-sentenced-prison-passport-fraud",
     "sourceUrl": "https://www.justice.gov/usao-mdfl/pr/mexican-national-sentenced-prison-passport-fraud",
-    "voting": true,
+    "voting": false,
     "origin": "Mexico",
     "confirmedBy": "DOJ",
     "lat": 27.3348,
     "lon": -82.5375,
     "statusSourceUrl": "https://www.justice.gov/usao-mdfl/pr/mexican-national-sentenced-prison-passport-fraud",
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "stageCrime": "use of a passport secured by false statement; false statement in a passport application"
   },
   {
     "name": "Eliza M. Moss",

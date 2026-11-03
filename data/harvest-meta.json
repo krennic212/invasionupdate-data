@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-11-03T18:16:08Z",
+  "updatedAt": "2026-11-03T18:35:14Z",
   "rows": 1314,
-  "approved": 1299,
-  "pending": 15,
+  "approved": 1300,
+  "pending": 14,
   "photos": 337,
   "reviewRows": 771,
   "lastAddedAt": "2026-11-03T18:16:08Z",
@@ -11,6 +11,6 @@
     "Jorge Figueira",
     "Leomar Alexander Lopez Zambrano"
   ],
-  "harvestSha256": "c93d5c053bc109b20218ecfe7abbc53d823ca258efccef4ae3fb19d1965b64ec",
+  "harvestSha256": "8536d140d92d85eebb5d1d0e01a9fdd7a74d3fbbceec46ec97c37421cf4d4b47",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

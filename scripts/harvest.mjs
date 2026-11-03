@@ -33,6 +33,7 @@ import { operationsFor } from "./operations.mjs";
 import { fillCity } from "./office-city.mjs";
 import { latLonFor } from "./parse.mjs";
 import { placeVotingByState } from "./voting-state.mjs";
+import { applyStageCrime } from "./stage-crime.mjs";
 import { dailySignalReleases } from "./daily-signal.mjs";
 import { applyTags } from "./tags.mjs";
 import { xOnlyRow, resolveXReview } from "./x-review.mjs";
@@ -241,6 +242,12 @@ export function rowsFromRelease(rel, { have, uniqueId, gate: gateFn = gate }) {
     }
     // Krennic 2026-11-03: a voting row with no city is no longer held. It is pinned to the state its own sentence names
     // ("according to the Minnesota Secretary of State"), else shown with no pin. Every guard above still applies.
+    // Krennic 2026-11-03 12:29 PM: a stage for another crime (De La Rosa "convicted of strangulation") is not a voting row.
+    const sc = applyStageCrime(placed);
+    if (sc.hold) {
+      placed.status = "pending";
+      placed.holdReason = [placed.holdReason, sc.hold].filter(Boolean).join("; ");
+    }
     if (placed.voting) placeVotingByState(placed);
     if (placed.status === "pending") held.push(`${hit.name} (${placed.holdReason || "approval gate"})`);
     // Standing rule: this row is written only after the release was opened and extractPeople found the name in it.
@@ -332,6 +339,12 @@ async function main() {
     }
     // Krennic 2026-11-03: a voting row with no city is no longer held. It is pinned to the state its own sentence names
     // ("according to the Minnesota Secretary of State"), else shown with no pin. Every guard above still applies.
+    // Krennic 2026-11-03 12:29 PM: a stage for another crime (De La Rosa "convicted of strangulation") is not a voting row.
+    const sc = applyStageCrime(placed);
+    if (sc.hold) {
+      placed.status = "pending";
+      placed.holdReason = [placed.holdReason, sc.hold].filter(Boolean).join("; ");
+    }
     if (placed.voting) placeVotingByState(placed);
     if (placed.status === "pending") held.push(`${hit.name} (${placed.holdReason || "approval gate"})`);
     fresh.push(scrubVictimNames(placed).row);

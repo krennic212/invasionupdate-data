@@ -1,3 +1,18 @@
+# HANDOFF: Nov 3, 2026 (afternoon) — stage-for-another-crime rule (Krennic 12:29 PM CT)
+
+- Krennic: "If he wasn't convicted for voting but he was convicted for something else, don't list him as voting."
+- New scripts/stage-crime.mjs, wired into scripts/harvest.mjs after fillCity (both row paths). A voting row whose stage label
+  (Convicted / Sentenced / Pleaded guilty / Charged) is tied in the person's own words to a different crime gets voting: false,
+  the voting clause cut from the quote with "[…]" (rest verbatim), and stageCrime = that crime. If the stage wording is generic
+  or fraud-family (identity theft, false statement, passport) and no single-case headline ties it to the vote, the row is held.
+- Data (one-time): Julio De La Rosa: held voting row -> approved, Convicted (strangulation, assault, court-order and probation
+  violations), not voting. Gerardo Nieves-Borja: voting -> not voting, Charged (DUI). Juan Arturo Martinez (MDFL 2025): voting ->
+  not voting, Convicted (passport false statements; headline "Sentenced To Prison For Passport Fraud").
+- Kept as voting: Jose Maria Hernandez Bautista (headline "sentenced ... after using a stolen identity to vote"), Shushlebin
+  (scheme included fraudulent voter registrations). Not changed, ask Krennic: Joshua Nmelichukwu Akpom (OPA 16-person voting
+  roundup; charged only with "false statements in relation to naturalization").
+- Tests: scripts/stage-crime.test.mjs (6). Full suite 298/298.
+
 # HANDOFF: Nov 3, 2026 (late morning) — Krennic-approved voter fixes (10:01 AM CT approval)
 
 - Name reader (scripts/parse.mjs PATTERNS): status-first sentences ("A native and citizen of the Philippines, Maria Elenor Lopez Rios, 45,")
