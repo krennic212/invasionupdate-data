@@ -1,22 +1,15 @@
 {
-  "updatedAt": "2026-11-03T23:14:42Z",
-  "rows": 1340,
-  "approved": 1323,
+  "updatedAt": "2026-11-03T23:55:00Z",
+  "rows": 1341,
+  "approved": 1324,
   "pending": 17,
   "photos": 353,
   "reviewRows": 771,
-  "lastAddedAt": "2026-11-03T23:14:42Z",
-  "lastAddedCount": 8,
+  "lastAddedAt": "2026-11-03T23:54:53Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Jesus Ventura-Villafan",
-    "Jose Ayala",
-    "Jesus Moran Medel",
-    "Isidro Quinones Saaravia",
-    "Ever Anselmo Torres-Aleman",
-    "Esteve Guadalupe Mosqueda-Garcia",
-    "Jorge Anaya-Gonzalez",
-    "Victor Manuel Gomez-Ruiz"
+    "Cledis German Romero"
   ],
-  "harvestSha256": "f1528058b821d5d5e8c889d6ce1c9fed86728d34e85dacd0a2938140ec60c737",
+  "harvestSha256": "7d7f7db66f6a489e9e0617b446f65c9374089dafc776181d9618c4b5b6868eb6",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

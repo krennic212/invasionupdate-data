@@ -1,39 +1,20 @@
 {
-  "checkedAt": 1793743372528,
-  "checkedAtIso": "2026-11-03T22:02:52.528Z",
+  "checkedAt": 1793750093753,
+  "checkedAtIso": "2026-11-03T23:54:53.753Z",
   "added": [
-    "Cesar Fernando Guerrero-Casado",
-    "Pablo Gomez-Sarmiento",
-    "Leobaldo Espinoza-Hinojosa",
-    "Bryan Sixto Arias-Chicas",
-    "Josue Ivan Orozco-Becerra",
-    "Emuobosan Emmanuella Hall",
-    "Francisco Hernandez-Ramos",
-    "Carlos H. Cordero-Gutierrez",
-    "Gheorghe Nistor",
-    "Yuriana Julia Pelaez Calderón",
-    "Walter Adonai Ramirez-Campos",
-    "Walter Alexander Soto-Rodriguez",
-    "Allan Adonay Contreras-Vasquez"
+    "Cledis German Romero"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "sameNameReview": {
     "replaced": [],
-    "keptBoth": [
-      {
-        "reviewId": "x-2116251535055208567-allan-adonay-contreras-vasquez",
-        "name": "Allan Adonay Contreras-Vasquez",
-        "liveId": "dhs-20261030-allan-adonay-contreras-vasquez",
-        "why": "country not stated on both rows"
-      }
-    ]
+    "keptBoth": []
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 95,
+  "scannedReleases": 98,
   "error": null,
-  "note": "Added 13 as approved: Cesar Fernando Guerrero-Casado, Pablo Gomez-Sarmiento, Leobaldo Espinoza-Hinojosa, Bryan Sixto Arias-Chicas, Josue Ivan Orozco-Becerra, Emuobosan Emmanuella Hall, Francisco Hernandez-Ramos, Carlos H. Cordero-Gutierrez, Gheorghe Nistor, Yuriana Julia Pelaez Calderón, Walter Adonai Ramirez-Campos, Walter Alexander Soto-Rodriguez, Allan Adonay Contreras-Vasquez",
+  "note": "Added 1 as approved: Cledis German Romero",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
