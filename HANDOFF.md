@@ -532,3 +532,7 @@ Parser / guard fixes (scripts/parse.mjs, scripts/guards.mjs; tests in scripts/li
 - Krennic: "Keep Akpom as voting." `KEEP_VOTING_IDS` in scripts/stage-crime.mjs pins x-2101379658272874808-joshua-nmelichukwu-akpom; applyStageCrime never untags or holds him (test in stage-crime.test.mjs).
 - Missed-case sweep (DOJ API Oct 26–Nov 3, ice.gov, dhs.gov): 13 rows in data/pending.json (11 live, 2 held at large: Emuobosan Emmanuella Hall, Allan Adonay Contreras-Vasquez).
 - Alpha Bah set to pending: ICE Oct 30 release says he is "now on the loose". Gap: "on the loose" is not in AT_LARGE_STRONG (no rule change made).
+
+## 2026-11-03 ~5:55 PM CST — daily missed-cases check
+- Added Cledis German Romero (D. Mass. Nov 3, MassHealth fraud; release: Dominican man unlawfully residing in Salem) via data/pending.json.
+- Skipped: three people in ICE's Nov 3 Monterey County Jail release (called "suspected" illegal aliens, never taken into ICE custody, two released); Abner Estrada Cruz (EDCA, "of Honduras", extradited; release never states his citizenship).
