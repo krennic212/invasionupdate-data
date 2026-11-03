@@ -1,20 +1,16 @@
 {
-  "updatedAt": "2026-11-03T18:14:06Z",
-  "rows": 1312,
-  "approved": 1297,
+  "updatedAt": "2026-11-03T18:16:08Z",
+  "rows": 1314,
+  "approved": 1299,
   "pending": 15,
   "photos": 337,
   "reviewRows": 771,
-  "lastAddedAt": "2026-11-03T18:13:55Z",
-  "lastAddedCount": 6,
+  "lastAddedAt": "2026-11-03T18:16:08Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Abel Garcia-Flores",
-    "Domingo Trujillo-Morejon",
-    "Aepod Saysanom",
-    "Danilo Mazariegos-Maldonado",
-    "Alvaro Hernandez-Carrillo",
-    "Carlos Altunar-Rueda"
+    "Jorge Figueira",
+    "Leomar Alexander Lopez Zambrano"
   ],
-  "harvestSha256": "569be52eca627aee73701429ebe2ed7f70b2b6b7fed6f46f8f4dcc1397fe9832",
+  "harvestSha256": "c93d5c053bc109b20218ecfe7abbc53d823ca258efccef4ae3fb19d1965b64ec",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

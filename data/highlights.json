@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-03",
   "windowDays": 7,
-  "total": 262,
+  "total": 264,
   "rows": [
     {
       "id": "dhs-20261102-jose-perez-chaparro-chaparra",
@@ -314,6 +314,16 @@
     {
       "id": "dhs-20261103-abel-garcia-flores",
       "name": "Abel Garcia-Flores",
+      "when": "3 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2117671561134010819-leomar-alexander-lopez-zambrano",
+      "name": "Leomar Alexander Lopez Zambrano",
       "when": "3 Nov 2026",
       "severity": 92,
       "severityReason": "Child sex crime",
