@@ -1,24 +1,19 @@
 {
-  "updatedAt": "2026-11-03T00:05:25Z",
-  "rows": 1292,
-  "approved": 1257,
+  "updatedAt": "2026-11-03T15:11:54Z",
+  "rows": 1297,
+  "approved": 1262,
   "pending": 35,
   "photos": 337,
-  "reviewRows": 771,
-  "lastAddedAt": "2026-11-03T00:03:32Z",
-  "lastAddedCount": 10,
+  "reviewRows": 772,
+  "lastAddedAt": "2026-11-03T15:11:54Z",
+  "lastAddedCount": 5,
   "lastAdded": [
-    "Ursulo Montenegro Martinez",
-    "Taron Gorgoyan",
-    "Salvador Jesus Serpas-Hernandez",
-    "Noe Silva-Cervantes",
-    "Javier Balbuena Fernandez",
-    "Carlos Alberto Amaya-Velasquez",
-    "Samuel Darling Cruz Florino",
-    "Ahmed Elgehmbri",
-    "Jose Perez Chaparro-Chaparra",
-    "Wilber Ismael Ortez-Ramos"
+    "Andres Estrada-Aguirre",
+    "Karla Susana Weber Chavez",
+    "Omar Lopez",
+    "Ernesto Cabrera Salgado",
+    "Sang Van Nguyen"
   ],
-  "harvestSha256": "30c9e6f598241e5dddfaa9239c59d9b281e37c1203303d477415361f46659e55",
+  "harvestSha256": "e2414668cfcf3047dbce852ef702e7ac9747ae97c63c8375e1aa91e665b753a9",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
