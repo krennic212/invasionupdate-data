@@ -1,8 +1,50 @@
 {
   "asOf": "2026-11-02",
   "windowDays": 7,
-  "total": 220,
+  "total": 230,
   "rows": [
+    {
+      "id": "dhs-20261102-jose-perez-chaparro-chaparra",
+      "name": "Jose Perez Chaparro-Chaparra",
+      "when": "2 Nov 2026",
+      "severity": 288,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Armed robbery / aggravated assault",
+        "Weapons",
+        "Assault / battery",
+        "Drug possession",
+        "DUI",
+        "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "dhs-20261102-samuel-darling-cruz-florino",
+      "name": "Samuel Darling Cruz Florino",
+      "when": "2 Nov 2026",
+      "severity": 245,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Kidnapping / human trafficking",
+        "Weapons",
+        "Assault / battery"
+      ]
+    },
+    {
+      "id": "dhs-20261102-salvador-jesus-serpas-hernandez",
+      "name": "Salvador Jesus Serpas-Hernandez",
+      "when": "2 Nov 2026",
+      "severity": 243,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Violent crime against a child",
+        "Weapons",
+        "Assault / battery"
+      ]
+    },
     {
       "id": "ice-20261030-carlos-javier-alamo-sorino",
       "name": "Carlos Javier Alamo-Sorino",
@@ -76,6 +118,30 @@
       ]
     },
     {
+      "id": "dhs-20261102-taron-gorgoyan",
+      "name": "Taron Gorgoyan",
+      "when": "2 Nov 2026",
+      "severity": 176,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Fraud (incl. voter fraud)",
+        "Assault / battery"
+      ]
+    },
+    {
+      "id": "dhs-20261102-noe-silva-cervantes",
+      "name": "Noe Silva-Cervantes",
+      "when": "2 Nov 2026",
+      "severity": 171,
+      "severityReason": "Attempted murder",
+      "severityCrimes": [
+        "Attempted murder",
+        "Armed robbery / aggravated assault",
+        "Burglary / theft"
+      ]
+    },
+    {
       "id": "x-2116360560342085848-christian-ruvalcaba-salas",
       "name": "Christian Ruvalcaba-Salas",
       "when": "30 Oct 2026",
@@ -98,6 +164,18 @@
       ]
     },
     {
+      "id": "dhs-20261102-ahmed-elgehmbri",
+      "name": "Ahmed Elgehmbri",
+      "when": "2 Nov 2026",
+      "severity": 162,
+      "severityReason": "Attempted murder",
+      "severityCrimes": [
+        "Attempted murder",
+        "Weapons",
+        "Assault / battery"
+      ]
+    },
+    {
       "id": "x-2115547799836144057-josue-antonio-vasquez-martinez",
       "name": "Josue Antonio Vasquez Martinez",
       "when": "28 Oct 2026",
@@ -107,6 +185,29 @@
         "Armed robbery / aggravated assault",
         "Weapons",
         "Burglary / theft"
+      ]
+    },
+    {
+      "id": "dhs-20261102-carlos-alberto-amaya-velasquez",
+      "name": "Carlos Alberto Amaya-Velasquez",
+      "when": "2 Nov 2026",
+      "severity": 158,
+      "severityReason": "Attempted murder",
+      "severityCrimes": [
+        "Attempted murder",
+        "Weapons",
+        "Burglary / theft"
+      ]
+    },
+    {
+      "id": "dhs-20261102-wilber-ismael-ortez-ramos",
+      "name": "Wilber Ismael Ortez-Ramos",
+      "when": "2 Nov 2026",
+      "severity": 158,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Violent crime against a child"
       ]
     },
     {
@@ -196,97 +297,6 @@
       "severityCrimes": [
         "Armed robbery / aggravated assault",
         "Drug trafficking",
-        "Burglary / theft"
-      ]
-    },
-    {
-      "id": "x-2115851586622906642-luis-alberto-arreguin-villa",
-      "name": "LUIS ALBERTO ARREGUIN-VILLA",
-      "when": "29 Oct 2026",
-      "severity": 140,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons",
-        "DUI",
-        "Illegal entry / reentry"
-      ]
-    },
-    {
-      "id": "doj-20261030-adair-omar-ruiz-hernandez",
-      "name": "Adair Omar Ruiz-Hernandez",
-      "when": "30 Oct 2026",
-      "severity": 137,
-      "severityReason": "Kidnapping / human trafficking",
-      "severityCrimes": [
-        "Kidnapping / human trafficking",
-        "Armed robbery / aggravated assault"
-      ]
-    },
-    {
-      "id": "dhs-20261028-rony-izaguirre-henriquez",
-      "name": "Rony Izaguirre-Henriquez",
-      "when": "28 Oct 2026",
-      "severity": 135,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "Assault / battery"
-      ]
-    },
-    {
-      "id": "ice-20261102-horatio-humphrey-hutchinson",
-      "name": "Horatio Humphrey Hutchinson",
-      "when": "2 Nov 2026",
-      "severity": 130,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Assault / battery"
-      ]
-    },
-    {
-      "id": "x-2116241234209735025-carlos-orlando-sainz-zulueta",
-      "name": "Carlos Orlando Sainz Zulueta",
-      "when": "30 Oct 2026",
-      "severity": 125,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons"
-      ]
-    },
-    {
-      "id": "doj-20261029-liannys-yaiselys-vega-perez",
-      "name": "Liannys Yaiselys Vega-Perez",
-      "when": "29 Oct 2026",
-      "severity": 125,
-      "severityReason": "Alien smuggling",
-      "severityCrimes": [
-        "Alien smuggling",
-        "Fraud (incl. voter fraud)"
-      ]
-    },
-    {
-      "id": "x-2115865263300387043-yosmar-adolfo-castro-cardona",
-      "name": "Yosmar Adolfo Castro Cardona",
-      "when": "29 Oct 2026",
-      "severity": 125,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons"
-      ]
-    },
-    {
-      "id": "x-2115483594089255226-glen-madric-reyes",
-      "name": "Glen Madric Reyes",
-      "when": "28 Oct 2026",
-      "severity": 125,
-      "severityReason": "Drug trafficking",
-      "severityCrimes": [
-        "Drug trafficking",
-        "Assault / battery",
         "Burglary / theft"
       ]
     },
