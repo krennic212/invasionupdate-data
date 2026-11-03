@@ -1,3 +1,35 @@
+# HANDOFF: Nov 3, 2026 (morning) — three rule fixes from the Nov 2 missed-cases check (Krennic approved)
+
+- 1. Same-name X-only review rows (scripts/x-review.mjs, harvest.mjs, rules.mjs pruneReviewOfLive): an X-only review row no longer
+  blocks an official row with the same name. After the run, resolveXReview() drops the X row only when it is clearly the same
+  person: it links the official release, or both rows state the same country and share 3+ case words and 3+ case word pairs,
+  2+ of them rare (used by at most 2 other sources in feed + review; never only common crime words). Different country or anything
+  else: both are kept, the X row gets sameNameAs [{ id, decision: "kept both", why }] (prune keeps it), and the pair is listed in
+  harvest-status.json sameNameReview. On the current feed + review the rule calls 26 of 80,769 same-country pairs of DIFFERENT
+  names "same" (mostly co-defendants of one case), so with an exact name match a wrong merge needs a same-name, same-country,
+  same-case-wording stranger.
+  - Nov 2 cases: Jasveer Singh (same 300-pound cocaine semi-truck case) and Jose Rodriguez-Gomez (same convictions) = same;
+    Pedro Gutierrez = different man (Guatemala, ICE Alabama 2026 vs Mexico, ERO Los Angeles 2025). His X review row
+    (1914772010292654469), removed by dedupe on Nov 2, is restored to review.json with sameNameAs -> ice-20261102-pedro-gutierrez.
+- 2. parse.mjs: D. Or. list entries "Name — Arrested <date>. Convicted in <year> of ... Citizen of <Country>." -> one row each,
+  label = the entry's own lead verb (Arrested / Removed), never the record's Convicted; no "Citizen of" (Joya-Santana), no row.
+  guards.mjs nonCitizenStatedFor: a ";" record clause no longer hides the entry's closing "Citizen of <Country>." (Carbajal Sierra,
+  Mario Ernesto Martinez, Felipe-Sarmiento).
+- 3. parse.mjs stripPriors: "jury / judge / court (has) found <Name, description> guilty" reads as "found guilty" (Convicted;
+  stageOk passes). Never with "not". Holly's name is still not extracted by the parser ("A federal jury has found Peter Holly, a
+  39-year-old lawful permanent resident, guilty"); only the stage rule changed.
+- 4. One-word names (parse.mjs MONONYM_ENTRY, guards.mjs holdReasons mononym flag): only in a clearly structured list (3+
+  "<Demonym> national <Name>, <age>," entries in the release, the exact entry shape with status + charge verb, and the next
+  sentence starts with the same word: Widarto). Any other single word is still held.
+- Test: scripts/rules-1103.test.mjs (fixtures dor-2026-10-30-14-violent-criminal-illegal-aliens, mdfl-2026-10-30-holly-jury-verdict,
+  opa-2026-11-02-63-individuals-election, same-name-x-review-2026-11-02). node --test 283/283; validate OK.
+- Dry run (old vs new; last 400 DOJ API releases Oct 15 - Nov 3, dedupe off and on, plus a full local harvest run of every source):
+  parser now reads 14 more people (Widarto + the 13 D. Or. entries); all 14 are already on the feed, so 0 added, 0 relabeled, 0
+  removed, 0 X review rows replaced. Guard recheck of feed rows: 4 approved rows no longer trip a guard (Peter Holly; Cristobal
+  Felipe-Sarmiento, Mario Ernesto Martinez, Rosalio Carbajal Sierra); nothing newly held, no pending row released.
+- Not changed: Pedro Ramos Hernandez alias collision (held back as asked), Eagle's guards, Village Capital / Higgs blocks.
+  Pre-change backups on the box: /tmp/iu-pre1103-parse.mjs, /tmp/iu-pre1103-guards.mjs.
+
 # HANDOFF: Nov 2, 2026 (evening) daily missed-cases check (Oct 30 - Nov 2), standing order "just add"
 
 - 28 rows via data/pending.json (AUTO_APPROVE=true, live scan off), labels copied from the releases (DOJ press-release API), no photos:

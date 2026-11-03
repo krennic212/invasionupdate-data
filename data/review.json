@@ -6250,6 +6250,36 @@
     "tags": []
   },
   {
+    "name": "Pedro Gutierrez",
+    "city": "El Monte, CA",
+    "crime": "Convicted: child predator with additional convictions for possession of a controlled substance and DUI. Illegal alien from Mexico.",
+    "usa": "Convicted: child predator with additional convictions for possession of a controlled substance and DUI",
+    "picked": "4/22/2025",
+    "office": "EROLosAngeles",
+    "id": "1914772010292654469",
+    "when": "22 Apr 2025",
+    "text": "ICE Los Angeles arrested Pedro Gutierrez, an illegal alien and child predator with drug and DUI convictions, in El Monte, California. Official mugshot. Victim unnamed.",
+    "photo": "",
+    "origin": "Mexico",
+    "lat": 34.0791,
+    "lon": -118.0371,
+    "foreign": "Not stated in post",
+    "entered": "Not stated",
+    "voting": false,
+    "confirmedBy": "ICE",
+    "via": "@EROLosAngeles 1914772010292654469",
+    "sourceUrl": "https://x.com/EROLosAngeles/status/1914772010292654469",
+    "reviewReason": "X post (not an official .gov page)",
+    "tags": [],
+    "sameNameAs": [
+      {
+        "id": "ice-20261102-pedro-gutierrez",
+        "decision": "kept both",
+        "why": "different country (Guatemala vs Mexico)"
+      }
+    ]
+  },
+  {
     "name": "Javid Ahmadi",
     "city": "Not stated",
     "crime": "Convicted: second-degree assault. Illegal alien from Afghanistan.",
