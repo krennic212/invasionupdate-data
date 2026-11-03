@@ -1,7 +1,16 @@
 {
-  "checkedAt": 1793719876126,
-  "checkedAtIso": "2026-11-03T15:31:16.126Z",
-  "added": [],
+  "checkedAt": 1793721215706,
+  "checkedAtIso": "2026-11-03T15:53:35.706Z",
+  "added": [
+    "Maria Elenor Lopez Rios",
+    "Gregory Allan Porter",
+    "Christiane Vinette Young",
+    "George Olawunmi Johnson",
+    "Darwin Jonathan Rivera Flores",
+    "Svitlana Demydenko",
+    "Yelyzaveta Demydenko",
+    "Randy Pierre-Louis"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "sameNameReview": {
@@ -12,7 +21,7 @@
   "sentToReview": [],
   "scannedReleases": 95,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 8 as approved: Maria Elenor Lopez Rios, Gregory Allan Porter, Christiane Vinette Young, George Olawunmi Johnson, Darwin Jonathan Rivera Flores, Svitlana Demydenko, Yelyzaveta Demydenko, Randy Pierre-Louis",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

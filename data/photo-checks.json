@@ -8243,5 +8243,35 @@
     "name": "Rosalio Carbajal Sierra",
     "result": "none",
     "why": "multi-person release: no image names this person"
+  },
+  "ice.gov/news/releases/ice-picks-dominican-criminal-suspected-voter-fraud": {
+    "checkedAt": "2026-11-03T15:53:39.219Z",
+    "name": "Randy Pierre-Louis",
+    "result": "none",
+    "why": "no single person-specific image in the release"
+  },
+  "justice.gov/usao-cdca/pr/honduran-national-living-san-fernando-valley-arrested-federal-criminal-complaint": {
+    "checkedAt": "2026-11-03T15:53:39.287Z",
+    "name": "Darwin Jonathan Rivera Flores",
+    "result": "none",
+    "why": "no single person-specific image in the release"
+  },
+  "justice.gov/usao-ks/pr/nigerian-national-indicted-illegally-voting": {
+    "checkedAt": "2026-11-03T15:53:39.340Z",
+    "name": "George Olawunmi Johnson",
+    "result": "none",
+    "why": "no single person-specific image in the release"
+  },
+  "justice.gov/usao-mdfl/pr/illegal-alien-charged-illegally-voting-three-federal-elections": {
+    "checkedAt": "2026-11-03T15:53:39.396Z",
+    "name": "Christiane Vinette Young",
+    "result": "none",
+    "why": "no single person-specific image in the release"
+  },
+  "justice.gov/usao-ndok/pr/philippine-national-charged-voting-illegally-alien-federal-election": {
+    "checkedAt": "2026-11-03T15:53:39.448Z",
+    "name": "Maria Elenor Lopez Rios",
+    "result": "none",
+    "why": "no single person-specific image in the release"
   }
 }

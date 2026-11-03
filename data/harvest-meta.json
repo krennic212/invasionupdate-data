@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-11-03T15:31:22Z",
-  "rows": 1298,
-  "approved": 1263,
-  "pending": 35,
+  "updatedAt": "2026-11-03T15:53:41Z",
+  "rows": 1306,
+  "approved": 1268,
+  "pending": 38,
   "photos": 337,
   "reviewRows": 771,
-  "lastAddedAt": "2026-11-03T15:11:54Z",
+  "lastAddedAt": "2026-11-03T15:53:35Z",
   "lastAddedCount": 5,
   "lastAdded": [
-    "Andres Estrada-Aguirre",
-    "Karla Susana Weber Chavez",
-    "Omar Lopez",
-    "Ernesto Cabrera Salgado",
-    "Sang Van Nguyen"
+    "Maria Elenor Lopez Rios",
+    "Christiane Vinette Young",
+    "George Olawunmi Johnson",
+    "Darwin Jonathan Rivera Flores",
+    "Randy Pierre-Louis"
   ],
-  "harvestSha256": "49bb1f75cc2a892806d4a608d98c38ae3355063747543bce90b1e02b6ae81222",
+  "harvestSha256": "ad68f34dd385fa26fb70ce2311fe7bc417ac3c8d117bd9fdebcfccd2bcad8b5b",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
