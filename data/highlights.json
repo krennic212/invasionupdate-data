@@ -1,33 +1,8 @@
 {
   "asOf": "2026-11-02",
   "windowDays": 7,
-  "total": 229,
+  "total": 220,
   "rows": [
-    {
-      "id": "x-2115145798833066022-roberto-mosquera-del-peral",
-      "name": "Roberto Mosquera-Del Peral",
-      "when": "27 Oct 2026",
-      "severity": 259,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "Attack on police officer",
-        "Armed robbery / aggravated assault",
-        "Burglary / theft"
-      ]
-    },
-    {
-      "id": "x-2115145798833066022-thongxay-nilakout",
-      "name": "Thongxay Nilakout",
-      "when": "27 Oct 2026",
-      "severity": 225,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "Attempted murder",
-        "Armed robbery / aggravated assault"
-      ]
-    },
     {
       "id": "ice-20261030-carlos-javier-alamo-sorino",
       "name": "Carlos Javier Alamo-Sorino",
@@ -77,27 +52,27 @@
       ]
     },
     {
-      "id": "x-2115145798833066022-jose-manuel-rodriguez-quinones",
-      "name": "Jose Manuel Rodriguez-Quinones",
-      "when": "27 Oct 2026",
+      "id": "doj-20261030-francisco-orozco-navarro",
+      "name": "Francisco Orozco-Navarro",
+      "when": "30 Oct 2026",
       "severity": 180,
-      "severityReason": "Murder / manslaughter",
+      "severityReason": "Rape / sexual assault",
       "severityCrimes": [
-        "Murder / manslaughter",
-        "Weapons",
-        "Drug trafficking"
+        "Rape / sexual assault",
+        "Armed robbery / aggravated assault",
+        "Assault / battery"
       ]
     },
     {
-      "id": "x-2115145798833066022-orville-isaac-etoria",
-      "name": "Orville Isaac Etoria",
-      "when": "27 Oct 2026",
+      "id": "doj-20261030-mario-ernesto-martinez",
+      "name": "Mario Ernesto Martinez",
+      "when": "30 Oct 2026",
       "severity": 180,
-      "severityReason": "Murder / manslaughter",
+      "severityReason": "Rape / sexual assault",
       "severityCrimes": [
-        "Murder / manslaughter",
+        "Rape / sexual assault",
         "Armed robbery / aggravated assault",
-        "Burglary / theft"
+        "Assault / battery"
       ]
     },
     {
@@ -112,9 +87,9 @@
       ]
     },
     {
-      "id": "x-2115145798833066022-dung-tien-nguyen",
-      "name": "Dung Tien Nguyen",
-      "when": "27 Oct 2026",
+      "id": "doj-20261030-hector-carmona-saldana",
+      "name": "Hector Carmona Saldana",
+      "when": "30 Oct 2026",
       "severity": 164,
       "severityReason": "Child sex crime",
       "severityCrimes": [
@@ -157,17 +132,6 @@
       ]
     },
     {
-      "id": "x-2115145798833066022-luis-vieira-andrade",
-      "name": "Luis Vieira Andrade",
-      "when": "27 Oct 2026",
-      "severity": 155,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Violent crime against a child"
-      ]
-    },
-    {
       "id": "dhs-20261030-abubakarr-barrie",
       "name": "Abubakarr Barrie",
       "when": "30 Oct 2026",
@@ -202,6 +166,28 @@
       ]
     },
     {
+      "id": "doj-20261030-jose-mis-catzin",
+      "name": "Jose Mis-Catzin",
+      "when": "30 Oct 2026",
+      "severity": 144,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Armed robbery / aggravated assault"
+      ]
+    },
+    {
+      "id": "doj-20261030-orlando-francisco-garma-castro",
+      "name": "Orlando Francisco Garma-Castro",
+      "when": "30 Oct 2026",
+      "severity": 144,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Armed robbery / aggravated assault"
+      ]
+    },
+    {
       "id": "x-2117320585847943468-luis-bohorquez-ramos",
       "name": "Luis Bohorquez-Ramos",
       "when": "2 Nov 2026",
@@ -227,6 +213,17 @@
       ]
     },
     {
+      "id": "doj-20261030-adair-omar-ruiz-hernandez",
+      "name": "Adair Omar Ruiz-Hernandez",
+      "when": "30 Oct 2026",
+      "severity": 137,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Armed robbery / aggravated assault"
+      ]
+    },
+    {
       "id": "dhs-20261028-rony-izaguirre-henriquez",
       "name": "Rony Izaguirre-Henriquez",
       "when": "28 Oct 2026",
@@ -235,29 +232,6 @@
       "severityCrimes": [
         "Murder / manslaughter",
         "Assault / battery"
-      ]
-    },
-    {
-      "id": "x-2115120414825615692-juan-flores-ruvalcaba",
-      "name": "Juan Flores-Ruvalcaba",
-      "when": "27 Oct 2026",
-      "severity": 135,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "Assault / battery"
-      ]
-    },
-    {
-      "id": "x-2115098797810262141-amaury-jose-monsalve-figuera",
-      "name": "Amaury Jose Monsalve Figuera",
-      "when": "27 Oct 2026",
-      "severity": 131,
-      "severityReason": "Fraud (incl. voter fraud)",
-      "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Weapons",
-        "Drug possession"
       ]
     },
     {
@@ -294,13 +268,26 @@
       ]
     },
     {
-      "id": "x-2115159442916266452-gerson-roldan-irias-villafranca",
-      "name": "Gerson Roldan Irias Villafranca",
-      "when": "27 Oct 2026",
-      "severity": 101,
-      "severityReason": "Child sex crime",
+      "id": "x-2115865263300387043-yosmar-adolfo-castro-cardona",
+      "name": "Yosmar Adolfo Castro Cardona",
+      "when": "29 Oct 2026",
+      "severity": 125,
+      "severityReason": "Armed robbery / aggravated assault",
       "severityCrimes": [
-        "Child sex crime"
+        "Armed robbery / aggravated assault",
+        "Weapons"
+      ]
+    },
+    {
+      "id": "x-2115483594089255226-glen-madric-reyes",
+      "name": "Glen Madric Reyes",
+      "when": "28 Oct 2026",
+      "severity": 125,
+      "severityReason": "Drug trafficking",
+      "severityCrimes": [
+        "Drug trafficking",
+        "Assault / battery",
+        "Burglary / theft"
       ]
     },
     {
@@ -425,36 +412,6 @@
       ]
     },
     {
-      "id": "x-2115120418067812434-jose-manuel-gasca-hernandez",
-      "name": "Jose Manuel Gasca-Hernandez",
-      "when": "27 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2115120420785365364-nicholas-pastrana-salinas",
-      "name": "Nicholas Pastrana-Salinas",
-      "when": "27 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2115159450289861029-raul-gerardo-mora-vazquez",
-      "name": "Raul Gerardo Mora Vazquez",
-      "when": "27 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
       "id": "x-2116518550986985929-pedro-serafin-salgado",
       "name": "Pedro Serafin-Salgado",
       "when": "31 Oct 2026",
@@ -468,16 +425,6 @@
       "id": "x-2115885851771310297-aureliano-antonio-melendez-reyes",
       "name": "Aureliano Antonio Melendez Reyes",
       "when": "29 Oct 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2115130656044769329-heiner-antony-tuy-sop",
-      "name": "Heiner Antony Tuy-Sop",
-      "when": "27 Oct 2026",
       "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [

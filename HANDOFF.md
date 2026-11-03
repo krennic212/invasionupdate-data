@@ -1,3 +1,17 @@
+# HANDOFF: Nov 2, 2026 (evening) daily missed-cases check (Oct 30 - Nov 2), standing order "just add"
+
+- 28 rows via data/pending.json (AUTO_APPROVE=true, live scan off), labels copied from the releases (DOJ press-release API), no photos:
+  - OPA Nov 2 "63 Individuals" release: Valelia Toleafoa (Utah), Mlebinge Riziki Ramadhani (Nevada), Juan Manuel Gudino (E.D. Ark.), Widarto (E.D. Pa., mononym). The parser misses "<Long Demonym> national <Name>" lines whose next sentence has no stage verb, and single-word names.
+  - MDPA Oct 30 elderly pop-up scam: Yankun Jiang, Hanlin Yang, Lei Bao (Convicted; status only in the title "Chinese Nationals"; approved by id, Campbell precedent).
+  - SDIL Oct 30: Yalong Cao, Jianhong Hu Allbright ("two Chinese nationals", Convicted).
+  - SDAL Oct 30: Adan Ubaldo Sepulveda-Ruiz, Juan Ali Popoca-Flores ("Two illegal aliens ... both citizens of Mexico", Convicted).
+  - D. Or. Oct 30 "14 Violent Criminal Illegal Aliens": 12 rows, "Arrested" (convictions are past record), city Oregon. Victor Soseia Hachipan was already live (DHS). Marco Antonio Joya-Santana skipped: his entry gives no citizenship.
+    Carbajal Sierra, Mario Ernesto Martinez, Felipe-Sarmiento were held "not stated" although each entry ends "Citizen of <Country>."; approved by id.
+  - OPA Oct 30 PRC agents: Liren "Ryan" Lai (aka Ryan Lai), Yuance Chen (Convicted). SDNY Oct 30 Kalder: GOKCE GUVEN ("a citizen of Turkey", Convicted).
+  - MDFL Oct 30: Peter Holly (jury verdict; guard said "Convicted later than source wording" because "found ... guilty" is split; approved by id). D. Mass. Oct 30: Erpawi Roque Collado (LPR, Pleaded guilty; approved by id).
+- 3 rows inserted directly into data/harvest.json (a same-name X-only row in review.json blocks pending intake and the release harvest): Pedro Gutierrez (ICE Nov 2 Alabama operation), Jasveer Singh and Gunpreet Singh (DHS Nov 2 California sanctuary release). dedupe.mjs then removed the review rows "Pedro Gutierrez" (EROLosAngeles 2025 X post, probably a different man) and "Jasveer Singh" (DHS X post).
+- Every approved-by-id row carries an approvalNote. Tests 270/270, validate OK.
+
 # HANDOFF: Nov 2, 2026 — two IU parser/guard gaps fixed (Krennic approved)
 
 - Gap 1 (guards.mjs nonCitizenStated, parse.mjs extractPeople): "aliens" as the object of smuggling/transport/harboring/travel wording, and "alien smuggling", no longer count as stated non-citizen status. A list name before "conspired ... to operate an alien smuggling ..." is no longer a hit. The person's own "an alien", "illegal alien", "<Demonym> national" still count.
