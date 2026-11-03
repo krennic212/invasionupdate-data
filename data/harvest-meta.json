@@ -1,22 +1,20 @@
 {
-  "updatedAt": "2026-11-03T16:06:07Z",
-  "rows": 1306,
-  "approved": 1291,
+  "updatedAt": "2026-11-03T18:14:06Z",
+  "rows": 1312,
+  "approved": 1297,
   "pending": 15,
   "photos": 337,
   "reviewRows": 771,
-  "lastAddedAt": "2026-11-03T15:53:35Z",
-  "lastAddedCount": 8,
+  "lastAddedAt": "2026-11-03T18:13:55Z",
+  "lastAddedCount": 6,
   "lastAdded": [
-    "Maria Elenor Lopez Rios",
-    "Gregory Allan Porter",
-    "Christiane Vinette Young",
-    "George Olawunmi Johnson",
-    "Darwin Jonathan Rivera Flores",
-    "Svitlana Demydenko",
-    "Yelyzaveta Demydenko",
-    "Randy Pierre-Louis"
+    "Abel Garcia-Flores",
+    "Domingo Trujillo-Morejon",
+    "Aepod Saysanom",
+    "Danilo Mazariegos-Maldonado",
+    "Alvaro Hernandez-Carrillo",
+    "Carlos Altunar-Rueda"
   ],
-  "harvestSha256": "b0efeeb09668d2e250e87b1f0ce2569e6b356f6a3e22bab89f594a051ab928e8",
+  "harvestSha256": "569be52eca627aee73701429ebe2ed7f70b2b6b7fed6f46f8f4dcc1397fe9832",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

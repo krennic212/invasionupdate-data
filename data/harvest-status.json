@@ -1,7 +1,14 @@
 {
-  "checkedAt": 1793722364137,
-  "checkedAtIso": "2026-11-03T16:12:44.137Z",
-  "added": [],
+  "checkedAt": 1793729635065,
+  "checkedAtIso": "2026-11-03T18:13:55.065Z",
+  "added": [
+    "Abel Garcia-Flores",
+    "Domingo Trujillo-Morejon",
+    "Aepod Saysanom",
+    "Danilo Mazariegos-Maldonado",
+    "Alvaro Hernandez-Carrillo",
+    "Carlos Altunar-Rueda"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "sameNameReview": {
@@ -10,9 +17,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 26,
-  "error": "DOJ API: 503 https://www.justice.gov/api/v1/press_releases.json?pagesize=40&sort=created&direction=DESC&page=0",
-  "note": "No new named people in official releases this run.",
+  "scannedReleases": 94,
+  "error": null,
+  "note": "Added 6 as approved: Abel Garcia-Flores, Domingo Trujillo-Morejon, Aepod Saysanom, Danilo Mazariegos-Maldonado, Alvaro Hernandez-Carrillo, Carlos Altunar-Rueda",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

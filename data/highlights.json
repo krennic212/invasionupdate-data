@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-03",
   "windowDays": 7,
-  "total": 256,
+  "total": 262,
   "rows": [
     {
       "id": "dhs-20261102-jose-perez-chaparro-chaparra",
@@ -309,6 +309,16 @@
       "severityCrimes": [
         "Violent crime against a child",
         "DUI"
+      ]
+    },
+    {
+      "id": "dhs-20261103-abel-garcia-flores",
+      "name": "Abel Garcia-Flores",
+      "when": "3 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
       ]
     },
     {

@@ -8418,5 +8418,41 @@
     "result": "none",
     "why": "image shape 546x196 looks like a banner or icon",
     "image": "https://www.justice.gov/sites/default/files/2026-10/sna_1.png"
+  },
+  "dhs.gov/news/2026/11/03/worst-worst-ice-arrests-pedophiles-violent-assailants-and-drunk-drivers|abel garcia flores": {
+    "checkedAt": "2026-11-03T18:14:03.910Z",
+    "name": "Abel Garcia-Flores",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/11/03/worst-worst-ice-arrests-pedophiles-violent-assailants-and-drunk-drivers|domingo trujillo morejon": {
+    "checkedAt": "2026-11-03T18:14:03.932Z",
+    "name": "Domingo Trujillo-Morejon",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/11/03/worst-worst-ice-arrests-pedophiles-violent-assailants-and-drunk-drivers|aepod saysanom": {
+    "checkedAt": "2026-11-03T18:14:03.961Z",
+    "name": "Aepod Saysanom",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/11/03/worst-worst-ice-arrests-pedophiles-violent-assailants-and-drunk-drivers|danilo mazariegos maldonado": {
+    "checkedAt": "2026-11-03T18:14:03.988Z",
+    "name": "Danilo Mazariegos-Maldonado",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "dhs.gov/news/2026/11/03/worst-worst-ice-arrests-pedophiles-violent-assailants-and-drunk-drivers|alvaro hernandez carrillo": {
+    "checkedAt": "2026-11-03T18:14:04.011Z",
+    "name": "Alvaro Hernandez-Carrillo",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "justice.gov/usao-ma/pr/illegal-alien-mexico-pleads-guilty-illegal-reentry": {
+    "checkedAt": "2026-11-03T18:14:04.089Z",
+    "name": "Carlos Altunar-Rueda",
+    "result": "none",
+    "why": "no single person-specific image in the release"
   }
 }
