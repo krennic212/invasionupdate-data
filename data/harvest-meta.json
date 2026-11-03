@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-11-03T20:53:23Z",
+  "updatedAt": "2026-11-03T22:01:28Z",
   "rows": 1319,
-  "approved": 1305,
-  "pending": 14,
+  "approved": 1304,
+  "pending": 15,
   "photos": 353,
   "reviewRows": 771,
   "lastAddedAt": "2026-11-03T20:53:19Z",
@@ -14,6 +14,6 @@
     "Julio Ceser Arias Antonio",
     "Ayan Ahmen"
   ],
-  "harvestSha256": "be38bf42eac9804a5fde14b296ff9ee5e511d52f8a3ad98cc1eb82f82f985bfe",
+  "harvestSha256": "ec55eabc3ca782554f14b92e98d87332b6144e650ebaed34f29f98f440362a44",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

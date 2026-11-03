@@ -527,3 +527,8 @@ Parser / guard fixes (scripts/parse.mjs, scripts/guards.mjs; tests in scripts/li
 - Guards: "lawful/legal permanent resident" and "green card holder" count as stated non-citizen status (same as the existing LPR wording). New `nonCitizenStatedFor(name, sentence)`: in a ";"-separated multi-defendant sentence the citizen check uses the person's own clause, so a co-defendant's "U.S. citizen" no longer holds a "Brazilian national" — and the U.S. citizen himself is still never a row. "<Nationality> national" was already accepted. No guard was loosened (minors, at-large, stage, photo rules untouched).
 - ICE.gov newsroom is quiet (funding lapse); nothing depends on it — a list page with no links just adds nothing.
 - Checks: `node --test scripts/*.test.mjs` 152 pass / 0 fail; `node scripts/validate.mjs` OK; a dry harvest run on a copy of the feed added 0 rows (no duplicates of the hand-added rows).
+
+## 2026-11-03 ~4:00 PM CST — Akpom pin + latest-examples sweep
+- Krennic: "Keep Akpom as voting." `KEEP_VOTING_IDS` in scripts/stage-crime.mjs pins x-2101379658272874808-joshua-nmelichukwu-akpom; applyStageCrime never untags or holds him (test in stage-crime.test.mjs).
+- Missed-case sweep (DOJ API Oct 26–Nov 3, ice.gov, dhs.gov): 13 rows in data/pending.json (11 live, 2 held at large: Emuobosan Emmanuella Hall, Allan Adonay Contreras-Vasquez).
+- Alpha Bah set to pending: ICE Oct 30 release says he is "now on the loose". Gap: "on the loose" is not in AT_LARGE_STRONG (no rule change made).

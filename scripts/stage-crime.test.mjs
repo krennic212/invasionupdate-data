@@ -63,3 +63,26 @@ test("live feed: no voting row whose stage is for another crime; the three fixed
   }
   assert.equal(by("doj-20260709-jose-maria-hernandez-bautista").voting, true);
 });
+
+// Krennic 2026-11-03 3:51 PM CST: "Keep Akpom as voting."
+test("Akpom stays voting: pinned by row id, never untagged or held", async () => {
+  const { KEEP_VOTING_IDS } = await import("./stage-crime.mjs");
+  const id = "x-2101379658272874808-joshua-nmelichukwu-akpom";
+  assert.ok(KEEP_VOTING_IDS.has(id));
+  const feed = JSON.parse(readFileSync(new URL("../data/harvest.json", import.meta.url), "utf8"));
+  const live = (feed.rows || feed).find((r) => r.id === id);
+  assert.ok(live, "Akpom row on the feed");
+  const row = structuredClone(live);
+  const r = applyStageCrime(row);
+  assert.equal(r.changed, false);
+  assert.equal(r.hold, "");
+  assert.equal(row.voting, true);
+  assert.equal(row.crime, live.crime);
+  assert.equal(live.voting, true);
+  assert.equal(live.status, "approved");
+  assert.deepEqual(holdReasonsForRow(row).filter((h) => /voting|stage/i.test(h)), []);
+  // Even if his crime were reworded to a non-voting clause, the pin keeps him voting.
+  const reworded = { ...structuredClone(live), crime: "Charged (not convicted): fraud" };
+  assert.deepEqual(applyStageCrime(reworded), { changed: false, hold: "" });
+  assert.equal(reworded.voting, true);
+});

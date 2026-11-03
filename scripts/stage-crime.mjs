@@ -71,8 +71,12 @@ export function cutVotingClauses(text) {
  * Apply the rule to a feed row in place. Returns { changed, hold } where hold is a holdReason (or "").
  * Only voting rows are touched; a row whose stage belongs to the vote is left alone.
  */
+// Krennic 2026-11-03 3:51 PM CST: "Keep Akpom as voting." Rows pinned here are never untagged or held by this rule.
+export const KEEP_VOTING_IDS = new Set(["x-2101379658272874808-joshua-nmelichukwu-akpom"]);
+
 export function applyStageCrime(row, title = "") {
   if (!row?.voting) return { changed: false, hold: "" };
+  if (KEEP_VOTING_IDS.has(row.id)) return { changed: false, hold: "" };
   const crime = String(row.crime || "");
   const i = crime.indexOf(":");
   if (i < 0) return { changed: false, hold: "" };

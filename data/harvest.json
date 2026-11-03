@@ -8495,10 +8495,11 @@
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "approved",
+    "status": "pending",
     "tags": [
       "Entered under Biden"
-    ]
+    ],
+    "holdReason": "suspect described as still at large: ICE Oct 30, 2026 says he was released and is \"now on the loose\" (https://www.ice.gov/news/releases/illegal-alien-accused-assaulting-nypd-officer-released-now-loose). Krennic guard: hold at-large suspects."
   },
   {
     "name": "Hector Ferneli Pichardo Restituyo",
