@@ -1,14 +1,7 @@
 {
-  "checkedAt": 1793729635065,
-  "checkedAtIso": "2026-11-03T18:13:55.065Z",
-  "added": [
-    "Abel Garcia-Flores",
-    "Domingo Trujillo-Morejon",
-    "Aepod Saysanom",
-    "Danilo Mazariegos-Maldonado",
-    "Alvaro Hernandez-Carrillo",
-    "Carlos Altunar-Rueda"
-  ],
+  "checkedAt": 1793731098529,
+  "checkedAtIso": "2026-11-03T18:38:18.529Z",
+  "added": [],
   "addedStatus": "approved",
   "heldPending": [],
   "sameNameReview": {
@@ -17,9 +10,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 94,
+  "scannedReleases": 92,
   "error": null,
-  "note": "Added 6 as approved: Abel Garcia-Flores, Domingo Trujillo-Morejon, Aepod Saysanom, Danilo Mazariegos-Maldonado, Alvaro Hernandez-Carrillo, Carlos Altunar-Rueda",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
