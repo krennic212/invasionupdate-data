@@ -227,6 +227,13 @@
     "tags": [
       "Gang",
       "MS-13"
+    ],
+    "sameNameAs": [
+      {
+        "id": "dhs-20261030-allan-adonay-contreras-vasquez",
+        "decision": "kept both",
+        "why": "country not stated on both rows"
+      }
     ]
   },
   {

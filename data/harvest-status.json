@@ -1,24 +1,39 @@
 {
-  "checkedAt": 1793739199072,
-  "checkedAtIso": "2026-11-03T20:53:19.072Z",
+  "checkedAt": 1793743372528,
+  "checkedAtIso": "2026-11-03T22:02:52.528Z",
   "added": [
-    "Alejandro Villegas Garcia",
-    "Stanley Jide",
-    "Allan Joseph William Arseneault",
-    "Julio Ceser Arias Antonio",
-    "Ayan Ahmen"
+    "Cesar Fernando Guerrero-Casado",
+    "Pablo Gomez-Sarmiento",
+    "Leobaldo Espinoza-Hinojosa",
+    "Bryan Sixto Arias-Chicas",
+    "Josue Ivan Orozco-Becerra",
+    "Emuobosan Emmanuella Hall",
+    "Francisco Hernandez-Ramos",
+    "Carlos H. Cordero-Gutierrez",
+    "Gheorghe Nistor",
+    "Yuriana Julia Pelaez Calderón",
+    "Walter Adonai Ramirez-Campos",
+    "Walter Alexander Soto-Rodriguez",
+    "Allan Adonay Contreras-Vasquez"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "sameNameReview": {
     "replaced": [],
-    "keptBoth": []
+    "keptBoth": [
+      {
+        "reviewId": "x-2116251535055208567-allan-adonay-contreras-vasquez",
+        "name": "Allan Adonay Contreras-Vasquez",
+        "liveId": "dhs-20261030-allan-adonay-contreras-vasquez",
+        "why": "country not stated on both rows"
+      }
+    ]
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 86,
+  "scannedReleases": 95,
   "error": null,
-  "note": "Added 5 as approved: Alejandro Villegas Garcia, Stanley Jide, Allan Joseph William Arseneault, Julio Ceser Arias Antonio, Ayan Ahmen",
+  "note": "Added 13 as approved: Cesar Fernando Guerrero-Casado, Pablo Gomez-Sarmiento, Leobaldo Espinoza-Hinojosa, Bryan Sixto Arias-Chicas, Josue Ivan Orozco-Becerra, Emuobosan Emmanuella Hall, Francisco Hernandez-Ramos, Carlos H. Cordero-Gutierrez, Gheorghe Nistor, Yuriana Julia Pelaez Calderón, Walter Adonai Ramirez-Campos, Walter Alexander Soto-Rodriguez, Allan Adonay Contreras-Vasquez",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

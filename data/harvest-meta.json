@@ -1,19 +1,25 @@
 {
-  "updatedAt": "2026-11-03T22:01:28Z",
-  "rows": 1319,
-  "approved": 1304,
-  "pending": 15,
+  "updatedAt": "2026-11-03T22:02:58Z",
+  "rows": 1332,
+  "approved": 1315,
+  "pending": 17,
   "photos": 353,
   "reviewRows": 771,
-  "lastAddedAt": "2026-11-03T20:53:19Z",
-  "lastAddedCount": 5,
+  "lastAddedAt": "2026-11-03T22:02:52Z",
+  "lastAddedCount": 11,
   "lastAdded": [
-    "Alejandro Villegas Garcia",
-    "Stanley Jide",
-    "Allan Joseph William Arseneault",
-    "Julio Ceser Arias Antonio",
-    "Ayan Ahmen"
+    "Cesar Fernando Guerrero-Casado",
+    "Pablo Gomez-Sarmiento",
+    "Leobaldo Espinoza-Hinojosa",
+    "Bryan Sixto Arias-Chicas",
+    "Josue Ivan Orozco-Becerra",
+    "Francisco Hernandez-Ramos",
+    "Carlos H. Cordero-Gutierrez",
+    "Gheorghe Nistor",
+    "Yuriana Julia Pelaez Calderón",
+    "Walter Adonai Ramirez-Campos",
+    "Walter Alexander Soto-Rodriguez"
   ],
-  "harvestSha256": "ec55eabc3ca782554f14b92e98d87332b6144e650ebaed34f29f98f440362a44",
+  "harvestSha256": "7f3afe69e4a51a3e31cfa561e9fa4826b4b22f4f205562cf008a94b4b8d8064b",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
