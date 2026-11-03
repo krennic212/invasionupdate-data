@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-03T15:11:54Z",
-  "rows": 1297,
-  "approved": 1262,
+  "updatedAt": "2026-11-03T15:30:03Z",
+  "rows": 1298,
+  "approved": 1263,
   "pending": 35,
   "photos": 337,
-  "reviewRows": 772,
+  "reviewRows": 771,
   "lastAddedAt": "2026-11-03T15:11:54Z",
   "lastAddedCount": 5,
   "lastAdded": [
@@ -14,6 +14,6 @@
     "Ernesto Cabrera Salgado",
     "Sang Van Nguyen"
   ],
-  "harvestSha256": "e2414668cfcf3047dbce852ef702e7ac9747ae97c63c8375e1aa91e665b753a9",
+  "harvestSha256": "c1a263bb6b96abe097ebbe878c966f4950116836afd5c92bd2c64984c1a7f2b0",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
