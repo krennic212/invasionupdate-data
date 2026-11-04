@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-04",
   "windowDays": 7,
-  "total": 239,
+  "total": 258,
   "rows": [
     {
       "id": "dhs-20261102-jose-perez-chaparro-chaparra",
@@ -265,6 +265,17 @@
       ]
     },
     {
+      "id": "x-2118067891018838349-jesus-moreno-lucio",
+      "name": "Jesus Moreno-Lucio",
+      "when": "4 Nov 2026",
+      "severity": 140,
+      "severityReason": "Attempted murder",
+      "severityCrimes": [
+        "Attempted murder",
+        "Armed robbery / aggravated assault"
+      ]
+    },
+    {
       "id": "x-2117320585847943468-luis-bohorquez-ramos",
       "name": "Luis Bohorquez-Ramos",
       "when": "2 Nov 2026",
@@ -287,17 +298,6 @@
         "Weapons",
         "DUI",
         "Illegal entry / reentry"
-      ]
-    },
-    {
-      "id": "doj-20261030-adair-omar-ruiz-hernandez",
-      "name": "Adair Omar Ruiz-Hernandez",
-      "when": "30 Oct 2026",
-      "severity": 137,
-      "severityReason": "Kidnapping / human trafficking",
-      "severityCrimes": [
-        "Kidnapping / human trafficking",
-        "Armed robbery / aggravated assault"
       ]
     },
     {
@@ -416,6 +416,16 @@
       "name": "Alejandro Gonzalez-Garcia",
       "when": "29 Oct 2026",
       "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2118067909679354198-kevin-ramirez-gomez",
+      "name": "Kevin Ramirez-Gomez",
+      "when": "4 Nov 2026",
+      "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"
