@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-03",
   "windowDays": 7,
-  "total": 283,
+  "total": 233,
   "rows": [
     {
       "id": "dhs-20261102-jose-perez-chaparro-chaparra",
@@ -67,18 +67,6 @@
         "Material support to a cartel",
         "Fraud (incl. voter fraud)",
         "Drug trafficking"
-      ]
-    },
-    {
-      "id": "x-2115547775056445899-oscar-gonzalez-hernandez",
-      "name": "Oscar Gonzalez-Hernandez",
-      "when": "28 Oct 2026",
-      "severity": 190,
-      "severityReason": "Violent crime against a child",
-      "severityCrimes": [
-        "Violent crime against a child",
-        "Armed robbery / aggravated assault",
-        "Assault / battery"
       ]
     },
     {
@@ -173,18 +161,6 @@
         "Attempted murder",
         "Weapons",
         "Assault / battery"
-      ]
-    },
-    {
-      "id": "x-2115547799836144057-josue-antonio-vasquez-martinez",
-      "name": "Josue Antonio Vasquez Martinez",
-      "when": "28 Oct 2026",
-      "severity": 160,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons",
-        "Burglary / theft"
       ]
     },
     {
@@ -298,6 +274,30 @@
         "Armed robbery / aggravated assault",
         "Drug trafficking",
         "Burglary / theft"
+      ]
+    },
+    {
+      "id": "x-2115851586622906642-luis-alberto-arreguin-villa",
+      "name": "LUIS ALBERTO ARREGUIN-VILLA",
+      "when": "29 Oct 2026",
+      "severity": 140,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons",
+        "DUI",
+        "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "doj-20261030-adair-omar-ruiz-hernandez",
+      "name": "Adair Omar Ruiz-Hernandez",
+      "when": "30 Oct 2026",
+      "severity": 137,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Armed robbery / aggravated assault"
       ]
     },
     {
@@ -415,36 +415,6 @@
       "id": "x-2115865252609061285-alejandro-gonzalez-garcia",
       "name": "Alejandro Gonzalez-Garcia",
       "when": "29 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261028-francisco-chapas-sanchez",
-      "name": "Francisco Chapas-Sanchez",
-      "when": "28 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2115547772317282678-hector-santos-rauda",
-      "name": "Hector Santos-Rauda",
-      "when": "28 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2115458578798555548-nolberto-valdez-ruiz",
-      "name": "Nolberto Valdez-Ruiz",
-      "when": "28 Oct 2026",
       "severity": 92,
       "severityReason": "Child sex crime",
       "severityCrimes": [
