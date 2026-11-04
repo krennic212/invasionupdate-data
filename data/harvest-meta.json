@@ -1,15 +1,18 @@
 {
-  "updatedAt": "2026-11-04T15:18:20Z",
-  "rows": 1342,
-  "approved": 1325,
+  "updatedAt": "2026-11-04T18:16:50Z",
+  "rows": 1346,
+  "approved": 1329,
   "pending": 17,
   "photos": 353,
   "reviewRows": 772,
-  "lastAddedAt": "2026-11-04T15:18:19Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-11-04T18:16:17Z",
+  "lastAddedCount": 4,
   "lastAdded": [
-    "Artemio Perez-Corona"
+    "Hector Gomez-Rosales",
+    "Daniel Martinez-Guerrero",
+    "Juan Carlos Ortiz Carrillo",
+    "Fabiola Carrillo Mendez"
   ],
-  "harvestSha256": "8aaf5c708c6461a4226b3981d60709770c95187978ce617e295039c5fbf70beb",
+  "harvestSha256": "bb6e3806982fc40d30d2225745bdcffc1e67611f568311675c244e184462d741",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
