@@ -1,15 +1,16 @@
 {
-  "updatedAt": "2026-11-04T19:11:15Z",
-  "rows": 1347,
-  "approved": 1330,
+  "updatedAt": "2026-11-04T19:12:22Z",
+  "rows": 1349,
+  "approved": 1332,
   "pending": 17,
   "photos": 361,
   "reviewRows": 772,
-  "lastAddedAt": "2026-11-04T18:17:47Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-11-04T19:12:18Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Joshua Duggar"
+    "Jefferson Flores-Padilla",
+    "Sindi Mencias-Escobar"
   ],
-  "harvestSha256": "4c671106bbb7e07ad32bfaa2beb2bd8e961c786ea4f411b56414f65a051ba0c6",
+  "harvestSha256": "32426df0903383e4ed1a4a7a6b659f0eaffdf7fd5e12efd81ae9b1d1ecaace38",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

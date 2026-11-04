@@ -1,8 +1,9 @@
 {
-  "checkedAt": 1793816267256,
-  "checkedAtIso": "2026-11-04T18:17:47.256Z",
+  "checkedAt": 1793819538346,
+  "checkedAtIso": "2026-11-04T19:12:18.346Z",
   "added": [
-    "Joshua Duggar"
+    "Jefferson Flores-Padilla",
+    "Sindi Mencias-Escobar"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -12,9 +13,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 67,
+  "scannedReleases": 68,
   "error": "403 https://www.dhs.gov/news-releases/press-releases | 403 https://www.ice.gov/newsroom | 403 https://www.cbp.gov/newsroom/media-releases/all",
-  "note": "Added 1 as approved: Joshua Duggar",
+  "note": "Added 2 as approved: Jefferson Flores-Padilla, Sindi Mencias-Escobar",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
