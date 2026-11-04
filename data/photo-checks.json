@@ -8736,5 +8736,101 @@
     "name": "Joshua Duggar",
     "result": "none",
     "why": "no single person-specific image in the release"
+  },
+  "x.com/icegov/status/2117736765125693884": {
+    "checkedAt": "2026-11-04T19:11:13.021Z",
+    "name": "Victor Manuel Gomez-Ruiz",
+    "result": "photo",
+    "file": "x-2117736765125693884-victor-manuel-gomez-ruiz.jpg",
+    "image": "https://pbs.twimg.com/media/HWOzlAYXEAAn1Lf?format=jpg&name=orig",
+    "bytes": 12295,
+    "reviewed": "Viewed image: booking photo, one adult man in tan uniform, plain room, no other faces"
+  },
+  "x.com/icegov/status/2117736768657387601": {
+    "checkedAt": "2026-11-04T19:11:13.150Z",
+    "name": "Jorge Anaya-Gonzalez",
+    "result": "none",
+    "why": "second person's face visible at the right edge, plus posters with faces"
+  },
+  "x.com/icegov/status/2117736771123364027": {
+    "checkedAt": "2026-11-04T19:11:13.374Z",
+    "name": "Esteve Guadalupe Mosqueda-Garcia",
+    "result": "photo",
+    "file": "x-2117736771123364027-esteve-guadalupe-mosqueda-garcia.jpg",
+    "image": "https://pbs.twimg.com/media/HWOztiNWsAA-P4O?format=jpg&name=orig",
+    "bytes": 8669,
+    "reviewed": "Viewed image: grayscale booking photo, one adult man with long hair and mustache, no other faces"
+  },
+  "x.com/icegov/status/2117736773186883935": {
+    "checkedAt": "2026-11-04T19:11:13.496Z",
+    "name": "Ever Anselmo Torres-Aleman",
+    "result": "none",
+    "why": "poster with several faces visible on the wall behind him"
+  },
+  "x.com/icegov/status/2117736776143933463": {
+    "checkedAt": "2026-11-04T19:11:13.718Z",
+    "name": "Isidro Quinones Saaravia",
+    "result": "photo",
+    "file": "x-2117736776143933463-isidro-quinones-saaravia.jpg",
+    "image": "https://pbs.twimg.com/media/HWOzy8wXQAA4eBh?format=png&name=orig",
+    "bytes": 12006,
+    "reviewed": "Viewed image: headshot of one older adult man with gray mustache, white background, no other faces"
+  },
+  "x.com/icegov/status/2117736779054977043": {
+    "checkedAt": "2026-11-04T19:11:14.024Z",
+    "name": "Jesus Moran Medel",
+    "result": "photo",
+    "file": "x-2117736779054977043-jesus-moran-medel.jpg",
+    "image": "https://pbs.twimg.com/media/HWOz1loWMAA7WDW?format=jpg&name=orig",
+    "bytes": 25254,
+    "reviewed": "Viewed image: booking photo, one adult man in front of height chart, no other faces"
+  },
+  "x.com/icegov/status/2117736788081127469": {
+    "checkedAt": "2026-11-04T19:11:14.283Z",
+    "name": "Jose Ayala",
+    "result": "photo",
+    "file": "x-2117736788081127469-jose-ayala.jpg",
+    "image": "https://pbs.twimg.com/media/HWO0l9pXsAArUT7?format=jpg&name=orig",
+    "bytes": 11976,
+    "reviewed": "Viewed image: booking photo, one adult man in front of height chart, no other faces"
+  },
+  "x.com/eroseattle/status/2117738599756042522": {
+    "checkedAt": "2026-11-04T19:11:14.399Z",
+    "name": "Jesus Ventura-Villafan",
+    "result": "none",
+    "why": "graphic card (Worst of the Worst text card)"
+  },
+  "x.com/eroboston/status/2117937610115223868": {
+    "checkedAt": "2026-11-04T19:11:14.618Z",
+    "name": "Artemio Perez-Corona",
+    "result": "photo",
+    "file": "x-2117937610115223868-artemio-perez-corona.jpg",
+    "image": "https://pbs.twimg.com/media/HWRs8x8XkAA0Mdg?format=jpg&name=orig",
+    "bytes": 12202,
+    "reviewed": "Viewed image: booking photo, one adult man in gray shirt, plain room, no other faces"
+  },
+  "x.com/eroharlingen/status/2118007238539227554": {
+    "checkedAt": "2026-11-04T19:11:14.742Z",
+    "name": "Fabiola Carrillo Mendez",
+    "result": "none",
+    "why": "both images are removal scenes with officers; second image shows officers' faces"
+  },
+  "x.com/erolosangeles/status/2118023995865923970": {
+    "checkedAt": "2026-11-04T19:11:15.040Z",
+    "name": "Juan Carlos Ortiz Carrillo",
+    "result": "photo",
+    "file": "x-2118023995865923970-juan-carlos-ortiz-carrillo.jpg",
+    "image": "https://pbs.twimg.com/media/HWS69bKWoAEbzcv?format=png&name=orig",
+    "bytes": 7931,
+    "reviewed": "Viewed image: booking photo, one adult man in gray hoodie, no other faces"
+  },
+  "x.com/eroneworleans/status/2118038687858524499": {
+    "checkedAt": "2026-11-04T19:11:15.360Z",
+    "name": "Daniel Martinez-Guerrero",
+    "result": "photo",
+    "file": "x-2118038687858524499-daniel-martinez-guerrero.jpg",
+    "image": "https://pbs.twimg.com/media/HWTIWwaXgAEziZi?format=jpg&name=orig",
+    "bytes": 7399,
+    "reviewed": "Viewed image: headshot of one adult man, plain gray background, no other faces"
   }
 }
