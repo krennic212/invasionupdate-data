@@ -1,8 +1,9 @@
 {
-  "checkedAt": 1793826871090,
-  "checkedAtIso": "2026-11-04T21:14:31.090Z",
+  "checkedAt": 1793833977786,
+  "checkedAtIso": "2026-11-04T23:12:57.787Z",
   "added": [
-    "Gilberto Paz Madrid"
+    "Ernesto Gutiérrez Ruvalcaba",
+    "Xiao Yu"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -12,9 +13,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 67,
+  "scannedReleases": 76,
   "error": "403 https://www.dhs.gov/news-releases/press-releases | 403 https://www.ice.gov/newsroom | 403 https://www.cbp.gov/newsroom/media-releases/all",
-  "note": "Added 1 as approved: Gilberto Paz Madrid",
+  "note": "Added 2 as approved: Ernesto Gutiérrez Ruvalcaba, Xiao Yu",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
