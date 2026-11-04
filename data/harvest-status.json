@@ -1,7 +1,9 @@
 {
-  "checkedAt": 1793805541857,
-  "checkedAtIso": "2026-11-04T15:19:01.857Z",
-  "added": [],
+  "checkedAt": 1793816267256,
+  "checkedAtIso": "2026-11-04T18:17:47.256Z",
+  "added": [
+    "Joshua Duggar"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "sameNameReview": {
@@ -10,9 +12,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 95,
-  "error": null,
-  "note": "No new named people in official releases this run.",
+  "scannedReleases": 67,
+  "error": "403 https://www.dhs.gov/news-releases/press-releases | 403 https://www.ice.gov/newsroom | 403 https://www.cbp.gov/newsroom/media-releases/all",
+  "note": "Added 1 as approved: Joshua Duggar",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
