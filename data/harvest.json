@@ -1,5 +1,33 @@
 [
   {
+    "name": "Gilberto Paz Madrid",
+    "city": "District of Columbia",
+    "crime": "Convicted: WASHINGTON – Gilberto Paz Madrid, 41, a citizen of Mexico, was sentenced today in U.S. District Court to 97 months in federal prison for his role as a broker in a fentanyl and cocaine conspiracy while he was incarcerated in Texas for a previous heroin trafficking offense, announced U.S. Attorney Jeanine Ferris Pirro.",
+    "usa": "DOJ release Nov 4, 2026: Illegal Alien Sentenced in D.C. to 97 Months for Brokering Fentanyl and Cocaine Deals From Texas Prison",
+    "foreign": "Not stated in post",
+    "picked": "11/4/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261104-gilberto-paz-madrid",
+    "when": "4 Nov 2026",
+    "severity": 50,
+    "severityReason": "Drug trafficking",
+    "severityCrimes": [
+      "Drug trafficking"
+    ],
+    "text": "DOJ Nov 4, 2026, as posted: WASHINGTON – Gilberto Paz Madrid, 41, a citizen of Mexico, was sentenced today in U.S. District Court to 97 months in federal prison for his role as a broker in a fentanyl and cocaine conspiracy while he was incarcerated in Texas for a previous heroin trafficking offense, announced U.S. Attorney Jeanine Ferris Pirro.",
+    "photo": "",
+    "via": "justice.gov/usao-dc/pr/illegal-alien-sentenced-dc-97-months-brokering-fentanyl-and-cocaine-deals-texas-prison",
+    "sourceUrl": "https://www.justice.gov/usao-dc/pr/illegal-alien-sentenced-dc-97-months-brokering-fentanyl-and-cocaine-deals-texas-prison",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "DOJ",
+    "lat": 38.9072,
+    "lon": -77.0369,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Jefferson Flores-Padilla",
     "city": "Georgia",
     "crime": "Convicted: Jefferson Flores-Padilla, 31, a citizen of Honduras, was sentenced to 46 months in prison followed by immediate deportation after pleading guilty to Receipt of a Firearm by an Illegal Alien and Shipping Firearms by an Illegal Alien.",

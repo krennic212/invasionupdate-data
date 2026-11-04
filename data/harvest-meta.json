@@ -1,16 +1,15 @@
 {
-  "updatedAt": "2026-11-04T19:12:22Z",
-  "rows": 1349,
-  "approved": 1332,
+  "updatedAt": "2026-11-04T21:14:38Z",
+  "rows": 1350,
+  "approved": 1333,
   "pending": 17,
   "photos": 361,
   "reviewRows": 772,
-  "lastAddedAt": "2026-11-04T19:12:18Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-11-04T21:14:31Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Jefferson Flores-Padilla",
-    "Sindi Mencias-Escobar"
+    "Gilberto Paz Madrid"
   ],
-  "harvestSha256": "32426df0903383e4ed1a4a7a6b659f0eaffdf7fd5e12efd81ae9b1d1ecaace38",
+  "harvestSha256": "9b06a7e3a1985b09d87024a9cab121fc24d3143c5e3d70c43074ffb4eeeec29a",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -1,9 +1,8 @@
 {
-  "checkedAt": 1793819538346,
-  "checkedAtIso": "2026-11-04T19:12:18.346Z",
+  "checkedAt": 1793826871090,
+  "checkedAtIso": "2026-11-04T21:14:31.090Z",
   "added": [
-    "Jefferson Flores-Padilla",
-    "Sindi Mencias-Escobar"
+    "Gilberto Paz Madrid"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -13,9 +12,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 68,
+  "scannedReleases": 67,
   "error": "403 https://www.dhs.gov/news-releases/press-releases | 403 https://www.ice.gov/newsroom | 403 https://www.cbp.gov/newsroom/media-releases/all",
-  "note": "Added 2 as approved: Jefferson Flores-Padilla, Sindi Mencias-Escobar",
+  "note": "Added 1 as approved: Gilberto Paz Madrid",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
