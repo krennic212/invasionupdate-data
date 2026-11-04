@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-03T23:55:00Z",
-  "rows": 1341,
-  "approved": 1324,
+  "updatedAt": "2026-11-04T15:18:20Z",
+  "rows": 1342,
+  "approved": 1325,
   "pending": 17,
   "photos": 353,
-  "reviewRows": 771,
-  "lastAddedAt": "2026-11-03T23:54:53Z",
+  "reviewRows": 772,
+  "lastAddedAt": "2026-11-04T15:18:19Z",
   "lastAddedCount": 1,
   "lastAdded": [
-    "Cledis German Romero"
+    "Artemio Perez-Corona"
   ],
-  "harvestSha256": "7d7f7db66f6a489e9e0617b446f65c9374089dafc776181d9618c4b5b6868eb6",
+  "harvestSha256": "8aaf5c708c6461a4226b3981d60709770c95187978ce617e295039c5fbf70beb",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
