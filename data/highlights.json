@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-04",
   "windowDays": 7,
-  "total": 260,
+  "total": 210,
   "rows": [
     {
       "id": "dhs-20261102-jose-perez-chaparro-chaparra",
@@ -55,18 +55,6 @@
         "Rape / sexual assault",
         "Armed robbery / aggravated assault",
         "Burglary / theft"
-      ]
-    },
-    {
-      "id": "doj-20261029-wenshen-xu",
-      "name": "Wenshen Xu",
-      "when": "29 Oct 2026",
-      "severity": 195,
-      "severityReason": "Material support to a cartel",
-      "severityCrimes": [
-        "Material support to a cartel",
-        "Fraud (incl. voter fraud)",
-        "Drug trafficking"
       ]
     },
     {
@@ -198,17 +186,6 @@
       ]
     },
     {
-      "id": "x-2115879833615921573-guiyang-xu",
-      "name": "Guiyang Xu",
-      "when": "29 Oct 2026",
-      "severity": 155,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Kidnapping / human trafficking"
-      ]
-    },
-    {
       "id": "dhs-20261030-abubakarr-barrie",
       "name": "Abubakarr Barrie",
       "when": "30 Oct 2026",
@@ -228,18 +205,6 @@
       "severityCrimes": [
         "Murder / manslaughter",
         "Weapons"
-      ]
-    },
-    {
-      "id": "dhs-20261029-armando-suarez",
-      "name": "Armando Suarez",
-      "when": "29 Oct 2026",
-      "severity": 145,
-      "severityReason": "Fraud (incl. voter fraud)",
-      "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Drug trafficking",
-        "Burglary / theft"
       ]
     },
     {
@@ -288,16 +253,48 @@
       ]
     },
     {
-      "id": "x-2115851586622906642-luis-alberto-arreguin-villa",
-      "name": "LUIS ALBERTO ARREGUIN-VILLA",
-      "when": "29 Oct 2026",
-      "severity": 140,
+      "id": "doj-20261030-adair-omar-ruiz-hernandez",
+      "name": "Adair Omar Ruiz-Hernandez",
+      "when": "30 Oct 2026",
+      "severity": 137,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Armed robbery / aggravated assault"
+      ]
+    },
+    {
+      "id": "dhs-20261102-ursulo-montenegro-martinez",
+      "name": "Ursulo Montenegro Martinez",
+      "when": "2 Nov 2026",
+      "severity": 135,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Drug trafficking",
+        "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "ice-20261102-horatio-humphrey-hutchinson",
+      "name": "Horatio Humphrey Hutchinson",
+      "when": "2 Nov 2026",
+      "severity": 130,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Assault / battery"
+      ]
+    },
+    {
+      "id": "x-2116241234209735025-carlos-orlando-sainz-zulueta",
+      "name": "Carlos Orlando Sainz Zulueta",
+      "when": "30 Oct 2026",
+      "severity": 125,
       "severityReason": "Armed robbery / aggravated assault",
       "severityCrimes": [
         "Armed robbery / aggravated assault",
-        "Weapons",
-        "DUI",
-        "Illegal entry / reentry"
+        "Weapons"
       ]
     },
     {
@@ -412,16 +409,6 @@
       ]
     },
     {
-      "id": "x-2115865252609061285-alejandro-gonzalez-garcia",
-      "name": "Alejandro Gonzalez-Garcia",
-      "when": "29 Oct 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
       "id": "x-2118067909679354198-kevin-ramirez-gomez",
       "name": "Kevin Ramirez-Gomez",
       "when": "4 Nov 2026",
@@ -435,16 +422,6 @@
       "id": "x-2116518550986985929-pedro-serafin-salgado",
       "name": "Pedro Serafin-Salgado",
       "when": "31 Oct 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2115885851771310297-aureliano-antonio-melendez-reyes",
-      "name": "Aureliano Antonio Melendez Reyes",
-      "when": "29 Oct 2026",
       "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [

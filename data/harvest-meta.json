@@ -1,16 +1,17 @@
 {
-  "updatedAt": "2026-11-04T23:13:05Z",
-  "rows": 1371,
-  "approved": 1354,
+  "updatedAt": "2026-11-05T00:05:45Z",
+  "rows": 1374,
+  "approved": 1357,
   "pending": 17,
   "photos": 361,
   "reviewRows": 775,
-  "lastAddedAt": "2026-11-04T23:12:57Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-11-05T00:05:41Z",
+  "lastAddedCount": 3,
   "lastAdded": [
-    "Ernesto Gutiérrez Ruvalcaba",
-    "Xiao Yu"
+    "Danis Piron Lara",
+    "Argenis Alfredo Brizo-Mendoza",
+    "Liang Xiong"
   ],
-  "harvestSha256": "43e01147967a3004ec75468901553fc51b77dc26f37f64963c956dfbf0d261ea",
+  "harvestSha256": "4736580bf5028df8bacb0af8c0208f39603261134c42734f6edae7901b1bdb37",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

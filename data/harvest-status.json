@@ -1,9 +1,10 @@
 {
-  "checkedAt": 1793833977786,
-  "checkedAtIso": "2026-11-04T23:12:57.787Z",
+  "checkedAt": 1793837141419,
+  "checkedAtIso": "2026-11-05T00:05:41.419Z",
   "added": [
-    "Ernesto Gutiérrez Ruvalcaba",
-    "Xiao Yu"
+    "Danis Piron Lara",
+    "Argenis Alfredo Brizo-Mendoza",
+    "Liang Xiong"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -13,9 +14,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 76,
+  "scannedReleases": 78,
   "error": "403 https://www.dhs.gov/news-releases/press-releases | 403 https://www.ice.gov/newsroom | 403 https://www.cbp.gov/newsroom/media-releases/all",
-  "note": "Added 2 as approved: Ernesto Gutiérrez Ruvalcaba, Xiao Yu",
+  "note": "Added 3 as approved: Danis Piron Lara, Argenis Alfredo Brizo-Mendoza, Liang Xiong",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
