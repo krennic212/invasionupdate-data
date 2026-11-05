@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-05",
   "windowDays": 7,
-  "total": 222,
+  "total": 232,
   "rows": [
     {
       "id": "dhs-20261102-jose-perez-chaparro-chaparra",
@@ -241,6 +241,18 @@
       ]
     },
     {
+      "id": "x-2118466552353714315-mustafa-abdirahman-abdi",
+      "name": "Mustafa Abdirahman Abdi",
+      "when": "5 Nov 2026",
+      "severity": 140,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Drug trafficking",
+        "Burglary / theft"
+      ]
+    },
+    {
       "id": "x-2118067891018838349-jesus-moreno-lucio",
       "name": "Jesus Moreno-Lucio",
       "when": "4 Nov 2026",
@@ -284,17 +296,6 @@
         "Murder / manslaughter",
         "Drug trafficking",
         "Illegal entry / reentry"
-      ]
-    },
-    {
-      "id": "ice-20261102-horatio-humphrey-hutchinson",
-      "name": "Horatio Humphrey Hutchinson",
-      "when": "2 Nov 2026",
-      "severity": 130,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Assault / battery"
       ]
     },
     {
