@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-05T18:39:07Z",
+  "updatedAt": "2026-11-05T19:11:09Z",
   "rows": 1381,
   "approved": 1364,
   "pending": 17,
-  "photos": 361,
+  "photos": 376,
   "reviewRows": 776,
   "lastAddedAt": "2026-11-05T18:39:07Z",
   "lastAddedCount": 2,
@@ -11,6 +11,6 @@
     "Jolman David Vargas-Alvarez",
     "Santiago Cruz-Vasquez"
   ],
-  "harvestSha256": "2eb57cddb4a0e0a660ffbed4b111f0914e30f3ee4b0fd06d48eadefb6ae4a65e",
+  "harvestSha256": "e97f5c84296686ca7cdc3a079ab4d201b62a206b38eff81127fb3672d0d75fbd",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
