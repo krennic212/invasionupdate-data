@@ -1,10 +1,7 @@
 {
-  "checkedAt": 1793849147386,
-  "checkedAtIso": "2026-11-05T03:25:47.386Z",
-  "added": [
-    "Rodrigo Penaloza-Rivera",
-    "Isabel Teletor-Gutierrez"
-  ],
+  "checkedAt": 1793891888262,
+  "checkedAtIso": "2026-11-05T15:18:08.262Z",
+  "added": [],
   "addedStatus": "approved",
   "heldPending": [],
   "sameNameReview": {
@@ -13,9 +10,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 70,
+  "scannedReleases": 69,
   "error": "403 https://www.dhs.gov/news-releases/press-releases | 403 https://www.ice.gov/newsroom | 403 https://www.cbp.gov/newsroom/media-releases/all",
-  "note": "Added 2 as approved: Rodrigo Penaloza-Rivera, Isabel Teletor-Gutierrez",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
