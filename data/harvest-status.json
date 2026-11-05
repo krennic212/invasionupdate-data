@@ -1,10 +1,9 @@
 {
-  "checkedAt": 1793837141419,
-  "checkedAtIso": "2026-11-05T00:05:41.419Z",
+  "checkedAt": 1793849147386,
+  "checkedAtIso": "2026-11-05T03:25:47.386Z",
   "added": [
-    "Danis Piron Lara",
-    "Argenis Alfredo Brizo-Mendoza",
-    "Liang Xiong"
+    "Rodrigo Penaloza-Rivera",
+    "Isabel Teletor-Gutierrez"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -14,9 +13,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 78,
+  "scannedReleases": 70,
   "error": "403 https://www.dhs.gov/news-releases/press-releases | 403 https://www.ice.gov/newsroom | 403 https://www.cbp.gov/newsroom/media-releases/all",
-  "note": "Added 3 as approved: Danis Piron Lara, Argenis Alfredo Brizo-Mendoza, Liang Xiong",
+  "note": "Added 2 as approved: Rodrigo Penaloza-Rivera, Isabel Teletor-Gutierrez",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
