@@ -1,3 +1,9 @@
+## 2026-11-05 (evening) daily missed-cases check
+
+- Pending intake (AUTO_APPROVE): Joan Manuel Tavarez Bueno (D.V.I. jury, Dominican citizen, illegal reentry), Fidel Antonio Cruz Cruz (N.D. Iowa, Honduran illegal alien, sentenced reentry), Sebastian Higuera-Fuentes (D. Ariz., Mexican national, meth conspiracy sentence), Stanley Robert Kengu Muthee (ICE Seattle Nov 5, Kenyan illegal alien arrested).
+- Approved by id (wrong hold): Sukhdev Singh (dhs-20261105-sukhdev-singh). Hold was "not stated to be a non-citizen" because the sentence also said a crash "left a U.S. citizen hospitalized" (victim wording trips CITIZEN_OVERRIDE). Release calls him "an illegal alien from India". Rule fix needs Krennic yes (do not blank victim U.S.-citizen wording).
+- No parser/guard code changes.
+
 # HANDOFF: Nov 3, 2026 (afternoon) — stage-for-another-crime rule (Krennic 12:29 PM CT)
 
 - Krennic: "If he wasn't convicted for voting but he was convicted for something else, don't list him as voting."

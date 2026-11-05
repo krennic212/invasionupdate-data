@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-11-05T23:18:58Z",
+  "updatedAt": "2026-11-05T23:57:08Z",
   "rows": 1402,
-  "approved": 1384,
-  "pending": 18,
+  "approved": 1385,
+  "pending": 17,
   "photos": 376,
   "reviewRows": 776,
   "lastAddedAt": "2026-11-05T23:18:46Z",
@@ -22,6 +22,6 @@
     "Angel Jose Velazquez Bravo",
     "Kevin Alexander Azamar-Ochoa"
   ],
-  "harvestSha256": "8eaeb953991da16c0fa56648c8b817c6e090d34402335006a962d5f3baf59506",
+  "harvestSha256": "a30b8c443586f498d1b809034b0aba0d54b97ac32af45bb20a60a4c426bc03ba",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

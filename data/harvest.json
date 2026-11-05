@@ -530,8 +530,7 @@
     "confirmedBy": "DHS",
     "lat": 39.77,
     "lon": -86.16,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen",
+    "status": "approved",
     "tags": []
   },
   {
