@@ -1,5 +1,33 @@
 [
   {
+    "name": "Prakashkumar Prajapati",
+    "city": "Maine",
+    "crime": "Convicted: PORTLAND, Maine: An Indian national was sentenced yesterday in U.S. District Court in Portland for conspiring to commit wire fraud. Chief U.S. District Judge Lance E. Walker sentenced Prakashkumar Prajapati, 47, to nine years in prison and ordered him to pay $1,897,386 in restitution.",
+    "usa": "DOJ release Nov 5, 2026: Illegal Alien from India Sentenced for Fraud Scheme Targeting Elderly Victims",
+    "foreign": "Not stated in post",
+    "picked": "11/5/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261105-prakashkumar-prajapati",
+    "when": "5 Nov 2026",
+    "severity": 60,
+    "severityReason": "Fraud (incl. voter fraud)",
+    "severityCrimes": [
+      "Fraud (incl. voter fraud)"
+    ],
+    "text": "DOJ Nov 5, 2026, as posted: PORTLAND, Maine: An Indian national was sentenced yesterday in U.S. District Court in Portland for conspiring to commit wire fraud. Chief U.S. District Judge Lance E. Walker sentenced Prakashkumar Prajapati, 47, to nine years in prison and ordered him to pay $1,897,386 in restitution.",
+    "photo": "",
+    "via": "justice.gov/usao-me/pr/illegal-alien-india-sentenced-fraud-scheme-targeting-elderly-victims",
+    "sourceUrl": "https://www.justice.gov/usao-me/pr/illegal-alien-india-sentenced-fraud-scheme-targeting-elderly-victims",
+    "voting": false,
+    "origin": "Not stated",
+    "confirmedBy": "DOJ",
+    "lat": 45.2538,
+    "lon": -69.4455,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Gael Jordan Wagala",
     "city": "New Britain, CT",
     "crime": "Arrested: ICE Boston arrested Gael Jordan Wagala, a criminal illegal alien from France, during targeted operations in New Britain, Conn.",

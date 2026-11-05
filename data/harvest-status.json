@@ -1,7 +1,9 @@
 {
-  "checkedAt": 1793891888262,
-  "checkedAtIso": "2026-11-05T15:18:08.262Z",
-  "added": [],
+  "checkedAt": 1793903529829,
+  "checkedAtIso": "2026-11-05T18:32:09.829Z",
+  "added": [
+    "Prakashkumar Prajapati"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "sameNameReview": {
@@ -10,9 +12,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 69,
+  "scannedReleases": 67,
   "error": "403 https://www.dhs.gov/news-releases/press-releases | 403 https://www.ice.gov/newsroom | 403 https://www.cbp.gov/newsroom/media-releases/all",
-  "note": "No new named people in official releases this run.",
+  "note": "Added 1 as approved: Prakashkumar Prajapati",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

@@ -1,16 +1,15 @@
 {
-  "updatedAt": "2026-11-05T15:18:29Z",
-  "rows": 1378,
-  "approved": 1361,
+  "updatedAt": "2026-11-05T18:32:17Z",
+  "rows": 1379,
+  "approved": 1362,
   "pending": 17,
   "photos": 361,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-05T15:18:29Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-11-05T18:32:09Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Gael Jordan Wagala",
-    "Freddie Becerrille-Camacho"
+    "Prakashkumar Prajapati"
   ],
-  "harvestSha256": "6e6cba781d6112a3a4f57a59a2195cc7f61d6d60576c99d506d1da7da9edc3d9",
+  "harvestSha256": "5149318c7fe0af0f436882eaf33b094d9f3b8a1edf0a9f6040bed9ece8a19b9a",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
