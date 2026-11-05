@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-05T03:25:53Z",
-  "rows": 1376,
-  "approved": 1359,
+  "updatedAt": "2026-11-05T15:18:29Z",
+  "rows": 1378,
+  "approved": 1361,
   "pending": 17,
   "photos": 361,
-  "reviewRows": 775,
-  "lastAddedAt": "2026-11-05T03:25:47Z",
+  "reviewRows": 776,
+  "lastAddedAt": "2026-11-05T15:18:29Z",
   "lastAddedCount": 2,
   "lastAdded": [
-    "Rodrigo Penaloza-Rivera",
-    "Isabel Teletor-Gutierrez"
+    "Gael Jordan Wagala",
+    "Freddie Becerrille-Camacho"
   ],
-  "harvestSha256": "8d9b7bb43494f29fe27902a89e7173803564f0b74603fff2241297637a4b680a",
+  "harvestSha256": "6e6cba781d6112a3a4f57a59a2195cc7f61d6d60576c99d506d1da7da9edc3d9",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
