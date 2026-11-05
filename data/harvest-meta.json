@@ -1,16 +1,21 @@
 {
-  "updatedAt": "2026-11-05T19:11:09Z",
-  "rows": 1381,
-  "approved": 1364,
-  "pending": 17,
+  "updatedAt": "2026-11-05T23:13:56Z",
+  "rows": 1389,
+  "approved": 1371,
+  "pending": 18,
   "photos": 376,
-  "reviewRows": 776,
-  "lastAddedAt": "2026-11-05T18:39:07Z",
-  "lastAddedCount": 2,
+  "reviewRows": 775,
+  "lastAddedAt": "2026-11-05T23:13:48Z",
+  "lastAddedCount": 7,
   "lastAdded": [
-    "Jolman David Vargas-Alvarez",
-    "Santiago Cruz-Vasquez"
+    "Axel Javier Martinez-Castillo",
+    "Phaisan Pongkiatsakun",
+    "Wilber Esau Sura-Hernandez",
+    "Felipe Menchu",
+    "Anardo Batista",
+    "Anmol Anmol",
+    "Mwasi Songambele"
   ],
-  "harvestSha256": "e97f5c84296686ca7cdc3a079ab4d201b62a206b38eff81127fb3672d0d75fbd",
+  "harvestSha256": "d4318cdc0f7ec4efeabc02b1057e151017ee1392105d5aa577b256528cbf0f8f",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

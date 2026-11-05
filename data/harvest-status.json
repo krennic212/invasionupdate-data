@@ -1,20 +1,43 @@
 {
-  "checkedAt": 1793903529829,
-  "checkedAtIso": "2026-11-05T18:32:09.829Z",
+  "checkedAt": 1793920428770,
+  "checkedAtIso": "2026-11-05T23:13:48.770Z",
   "added": [
-    "Prakashkumar Prajapati"
+    "Axel Javier Martinez-Castillo",
+    "Phaisan Pongkiatsakun",
+    "Wilber Esau Sura-Hernandez",
+    "Felipe Menchu",
+    "Anardo Batista",
+    "Sukhdev Singh",
+    "Anmol Anmol",
+    "Mwasi Songambele"
   ],
   "addedStatus": "approved",
-  "heldPending": [],
+  "heldPending": [
+    "Sukhdev Singh (not stated to be a non-citizen)"
+  ],
   "sameNameReview": {
-    "replaced": [],
-    "keptBoth": []
+    "replaced": [
+      {
+        "reviewId": "2097764334826868861",
+        "name": "Sukhdev Singh",
+        "liveId": "dhs-20261105-sukhdev-singh",
+        "why": "same country (India) and same case wording: that left / left a / a u / u s / s citizen / citizen hospitalized"
+      }
+    ],
+    "keptBoth": [
+      {
+        "reviewId": "2097764345199436171",
+        "name": "Anmol Anmol",
+        "liveId": "dhs-20261105-anmol-anmol",
+        "why": "same country but too few case words in common (york)"
+      }
+    ]
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 67,
-  "error": "403 https://www.dhs.gov/news-releases/press-releases | 403 https://www.ice.gov/newsroom | 403 https://www.cbp.gov/newsroom/media-releases/all",
-  "note": "Added 1 as approved: Prakashkumar Prajapati",
+  "scannedReleases": 84,
+  "error": null,
+  "note": "Added 8 as approved: Axel Javier Martinez-Castillo, Phaisan Pongkiatsakun, Wilber Esau Sura-Hernandez, Felipe Menchu, Anardo Batista, Sukhdev Singh, Anmol Anmol, Mwasi Songambele",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

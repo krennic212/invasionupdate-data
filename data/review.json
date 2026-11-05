@@ -16554,7 +16554,14 @@
     "via": "@DHSgov 2097764345199436171",
     "sourceUrl": "https://x.com/DHSgov/status/2097764345199436171",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "sameNameAs": [
+      {
+        "id": "dhs-20261105-anmol-anmol",
+        "decision": "kept both",
+        "why": "same country but too few case words in common (york)"
+      }
+    ]
   },
   {
     "name": "Akhror Bozorov",
@@ -16622,29 +16629,6 @@
     "voting": false,
     "via": "@DHSgov 2097764336961736967",
     "sourceUrl": "https://x.com/DHSgov/status/2097764336961736967",
-    "reviewReason": "X post (not an official .gov page)",
-    "tags": []
-  },
-  {
-    "name": "Sukhdev Singh",
-    "city": "Indianapolis, IN",
-    "crime": "Driving. Crash that left a U.S. citizen hospitalized in Indiana, March 2026. Illegal alien from India. New York CDL. ICE arrested March 2026.",
-    "usa": "ICE arrested him in March 2026 after a March 2026 Indiana crash that left a U.S. citizen hospitalized. New York commercial driver’s license.",
-    "picked": "3/2026 (ICE arrest as posted); X post 9/9/2026",
-    "office": "DHSgov",
-    "id": "2097764334826868861",
-    "when": "9 Sep 2026",
-    "text": "DHS: Sukhdev Singh, an illegal alien from India, caused a crash that left a U.S. citizen hospitalized in Indiana in March 2026. New York CDL. ICE arrested him in March 2026. Official DHS card.",
-    "photo": "",
-    "origin": "India",
-    "confirmedBy": "DHS",
-    "lat": 39.77,
-    "lon": -86.16,
-    "foreign": "Not stated in post",
-    "entered": "Not stated",
-    "voting": false,
-    "via": "@DHSgov 2097764334826868861",
-    "sourceUrl": "https://x.com/DHSgov/status/2097764334826868861",
     "reviewReason": "X post (not an official .gov page)",
     "tags": []
   },

@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-05",
   "windowDays": 7,
-  "total": 216,
+  "total": 222,
   "rows": [
     {
       "id": "dhs-20261102-jose-perez-chaparro-chaparra",
@@ -67,6 +67,17 @@
         "Rape / sexual assault",
         "Armed robbery / aggravated assault",
         "DUI"
+      ]
+    },
+    {
+      "id": "dhs-20261105-axel-javier-martinez-castillo",
+      "name": "Axel Javier Martinez-Castillo",
+      "when": "5 Nov 2026",
+      "severity": 182,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Rape / sexual assault"
       ]
     },
     {
@@ -287,17 +298,6 @@
       ]
     },
     {
-      "id": "x-2116241234209735025-carlos-orlando-sainz-zulueta",
-      "name": "Carlos Orlando Sainz Zulueta",
-      "when": "30 Oct 2026",
-      "severity": 125,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons"
-      ]
-    },
-    {
       "id": "x-2116217819415372277-juan-antonio-perdomo-rivas",
       "name": "Juan Antonio Perdomo-Rivas",
       "when": "30 Oct 2026",
@@ -306,6 +306,16 @@
       "severityCrimes": [
         "Violent crime against a child",
         "DUI"
+      ]
+    },
+    {
+      "id": "dhs-20261105-phaisan-pongkiatsakun",
+      "name": "Phaisan Pongkiatsakun",
+      "when": "5 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
       ]
     },
     {
