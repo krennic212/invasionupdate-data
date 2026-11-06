@@ -1,11 +1,24 @@
 {
-  "checkedAt": 1793992134757,
-  "checkedAtIso": "2026-11-06T19:08:54.757Z",
+  "checkedAt": 1794006826750,
+  "checkedAtIso": "2026-11-06T23:13:46.750Z",
   "added": [
-    "Operation Fresh Catch (operation, not a person)"
+    "Abel Delval-Dominguez",
+    "Edgar Villanueva-Garcia",
+    "Gregorio Zamano-Ortiz",
+    "Manuel Guadalupe Armenta-Ortega",
+    "Antonio Vargas-Colindres",
+    "Jose Medardo Anariba-Cruz",
+    "Geovani Lizbeth Rodriguez-Delgado",
+    "Paulin Balderas-Mejia",
+    "Eling Francisco Briceno-Vidaurre",
+    "Ivan Darali Sierra-Moreno",
+    "Aaron Sanchez Nunez",
+    "Jonathan Juarez"
   ],
   "addedStatus": "approved",
-  "heldPending": [],
+  "heldPending": [
+    "Jonathan Juarez (not stated to be a non-citizen)"
+  ],
   "stageUpdates": [],
   "sameNameReview": {
     "replaced": [],
@@ -15,7 +28,7 @@
   "sentToReview": [],
   "scannedReleases": 158,
   "error": null,
-  "note": "Added 1 as approved: Operation Fresh Catch (operation, not a person)",
+  "note": "Added 12 as approved: Abel Delval-Dominguez, Edgar Villanueva-Garcia, Gregorio Zamano-Ortiz, Manuel Guadalupe Armenta-Ortega, Antonio Vargas-Colindres, Jose Medardo Anariba-Cruz, Geovani Lizbeth Rodriguez-Delgado, Paulin Balderas-Mejia, Eling Francisco Briceno-Vidaurre, Ivan Darali Sierra-Moreno, Aaron Sanchez Nunez, Jonathan Juarez",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
