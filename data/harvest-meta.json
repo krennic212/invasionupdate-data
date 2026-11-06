@@ -1,17 +1,16 @@
 {
-  "updatedAt": "2026-11-06T15:38:35Z",
-  "rows": 1409,
-  "approved": 1392,
+  "updatedAt": "2026-11-06T17:38:29Z",
+  "rows": 1411,
+  "approved": 1394,
   "pending": 17,
   "photos": 376,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-06T15:38:35Z",
-  "lastAddedCount": 3,
+  "lastAddedAt": "2026-11-06T17:38:23Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Geremias Cubias-Elias",
-    "Gamal Mohamed Abdeltawab Elsharkawai",
-    "Antonio Flores Cuevas"
+    "Ysidoro Martinez-Arguello",
+    "Rolando Ariel Gonzalez-Gonzalez"
   ],
-  "harvestSha256": "80056f22b5c2fc6d63b2f29a5275b83c2230895cf1f6ba24af9ea0675dc01514",
+  "harvestSha256": "7346f059540a3c06bc17ec382e176ef623800f366b38c29fc6642137464e68ce",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

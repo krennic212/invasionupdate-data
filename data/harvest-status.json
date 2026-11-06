@@ -1,18 +1,22 @@
 {
-  "checkedAt": 1793978082553,
-  "checkedAtIso": "2026-11-06T15:14:42.553Z",
-  "added": [],
+  "checkedAt": 1793986703572,
+  "checkedAtIso": "2026-11-06T17:38:23.572Z",
+  "added": [
+    "Ysidoro Martinez-Arguello",
+    "Rolando Ariel Gonzalez-Gonzalez"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
+  "stageUpdates": [],
   "sameNameReview": {
     "replaced": [],
     "keptBoth": []
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 90,
+  "scannedReleases": 167,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 2 as approved: Ysidoro Martinez-Arguello, Rolando Ariel Gonzalez-Gonzalez",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
