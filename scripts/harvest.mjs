@@ -37,13 +37,14 @@ import { applyStageCrime } from "./stage-crime.mjs";
 import { dailySignalReleases } from "./daily-signal.mjs";
 import { applyTags } from "./tags.mjs";
 import { xOnlyRow, resolveXReview } from "./x-review.mjs";
+import { upgradeStage } from "./stage-upgrade.mjs";
 
 const HARVEST = process.env.HARVEST_FILE || "data/harvest.json";
 const REVIEW = process.env.REVIEW_FILE || "data/review.json";
 const PENDING = process.env.PENDING_FILE || "data/pending.json";
 const STATUS = process.env.STATUS_FILE || "data/harvest-status.json";
 const UA = "InvasionUpdateHarvest/2.0 (+https://github.com/krennic212/invasionupdate-data)";
-const MAX_LINKS = Number(process.env.MAX_LINKS || 15);
+const MAX_LINKS = Number(process.env.MAX_LINKS || 25);
 /** Approval gate. "false" (default): new rows go in as status "pending" and the site hides them
  *  until scripts/approve.mjs marks them "approved". "true": new official rows go live at once,
  *  EXCEPT rows that trip a hard guard (scripts/guards.mjs), which always stay "pending". */
@@ -56,7 +57,9 @@ function gate(row, reasons) {
 const MAX_AGE_DAYS = Number(process.env.MAX_AGE_DAYS || 30);
 
 export const DOJ_API = "https://www.justice.gov/api/v1/press_releases.json?pagesize=40&sort=created&direction=DESC";
-const DOJ_PAGES = Number(process.env.DOJ_PAGES || 4);
+// Krennic 2026-11-06: 8 pages (320 releases) and 25 links per DHS/ICE/CBP list, so a release posted late or a busy news
+// day still falls inside the hourly window (MAX_AGE_DAYS still limits the age).
+const DOJ_PAGES = Number(process.env.DOJ_PAGES || 8);
 export const IMMIGRATION = /illegal(ly)?\s+(alien|present|reent|re-ent|immigrant)|\balien\b|\baliens\b|reentry|re-entry|unlawfully present|citizen of|national of|\bnationals?\b|deport|removal|removed from the united states|noncitizen|non-citizen/i;
 
 const LISTS = [
@@ -219,12 +222,18 @@ async function dailySignalHits(errors) {
  * and whose text names the person (extractPeople); quoted officials are never names (parse.mjs).
  * Returns { rows, held: ["Name (reason)"] }.
  */
-export function rowsFromRelease(rel, { have, uniqueId, gate: gateFn = gate }) {
+export function rowsFromRelease(rel, { have, uniqueId, gate: gateFn = gate, existing = null, staged = null }) {
   const rows = [];
   const held = [];
   for (const hit of extractPeople(rel.blocks, { title: rel.title })) {
     const k = nameKey(hit.name);
-    if (!k || have.has(k)) continue;
+    if (!k) continue;
+    if (have.has(k)) {
+      // Krennic 2026-11-06: a later plea / verdict / sentence release moves the listed row forward (stage-upgrade.mjs).
+      const up = existing ? upgradeStage(existing, hit, rel) : null;
+      if (up && staged) staged.push(up);
+      continue;
+    }
     // A roundup that shortens a listed name ("Avila Gomez" = "Fredy Avila Gomez") is the same person.
     if ([...have].some((h) => isShortFormOf(k, h))) continue;
     have.add(k);
@@ -275,6 +284,7 @@ async function main() {
   const held = [];
   const errors = [];
   const officialNew = [];
+  const staged = [];
   let scanned = 0;
 
   // 1) Pending intake (optional): route, never auto-publish non-official rows.
@@ -315,7 +325,7 @@ async function main() {
   const opReleases = [];
   for (const rel of rels) {
     scanned += 1;
-    const { rows, held: heldHere } = rowsFromRelease(rel, { have, uniqueId, gate });
+    const { rows, held: heldHere } = rowsFromRelease(rel, { have, uniqueId, gate, existing: harvest, staged });
     fresh.push(...rows);
     added.push(...rows.map((r) => r.name));
     held.push(...heldHere);
@@ -397,6 +407,7 @@ async function main() {
     added,
     addedStatus: NEW_STATUS,
     heldPending: held,
+    stageUpdates: staged,
     sameNameReview: { replaced: xr.replaced, keptBoth: xr.keptBoth },
     autoApprove: AUTO_APPROVE,
     sentToReview: toReview,

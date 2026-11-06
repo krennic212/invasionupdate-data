@@ -52,7 +52,8 @@ export function stageOk(label, sentence, title = "") {
   return true;
 }
 
-const AT_LARGE_STRONG = /\bat[- ]large\b|\bremains? (a )?fugitive\b|\bstill (being )?sought\b|\b(has|have) not (yet )?been (arrested|apprehended|located|found)\b|\bnot yet (been )?(arrested|apprehended|located)\b|\bwhereabouts (?:are|is|remain|remains) (?:still )?unknown\b|\bunknown whereabouts\b|\binformation (?:about|on|regarding) (?:his|her|their) whereabouts\b|\bdo not attempt to apprehend\b/i;
+// Krennic 2026-11-06: "on the loose" (ICE wording) holds like "at large".
+const AT_LARGE_STRONG = /\bat[- ]large\b|\bon the loose\b|\bstill on the run\b|\bremains? (a )?fugitive\b|\bstill (being )?sought\b|\b(has|have) not (yet )?been (arrested|apprehended|located|found)\b|\bnot yet (been )?(arrested|apprehended|located)\b|\bwhereabouts (?:are|is|remain|remains) (?:still )?unknown\b|\bunknown whereabouts\b|\binformation (?:about|on|regarding) (?:his|her|their) whereabouts\b|\bdo not attempt to apprehend\b/i;
 const AT_LARGE_SENTENCE = /\bon the run\b|\bescaped\b|\bfled\b/i;
 
 /** Sentence: strong or weak wording. Rest of the release: strong wording only (fail-safe: holds the whole release). */
@@ -101,7 +102,13 @@ const OBJECT_ALIENS = /\b(?:alien|human)[- ]smuggl\w*|\b(?:smuggl\w*|transport\w
  * is blanked; any other U.S.-citizen wording still blocks.
  */
 export const VICTIM_IDENTITY = /\b(?:identit(?:y|ies)|name|birth certificate|social security number|passport)\s+of\s+(?:an?\s+|another\s+)?(?:(?:“[^”]{1,60}”|"[^"]{1,60}")\s*,?\s+(?:an?\s+)?)?(?:real\s+|actual\s+|living\s+|deceased\s+)?(?:American|U\.S\.|United States)\s+citizen\b/gi;
-export const stripVictimIdentity = (s) => String(s || "").replace(VICTIM_IDENTITY, " ");
+/**
+ * Krennic 2026-11-06: a U.S. citizen the defendant harmed or targeted is a victim, not this defendant ("a crash that left a
+ * U.S. citizen hospitalized", DHS Nov 5, 2026, Sukhdev Singh). Only object shapes after a harm verb / "victim" are blanked;
+ * "<Name>, a U.S. citizen," and every other own-citizen wording still blocks.
+ */
+export const VICTIM_CITIZEN = /\b(?:left|leaving|leaves|killed|killing|kills|injur(?:ed|ing|es)|struck|striking|strikes|hit(?:ting)?|assault(?:ed|ing|s)|attack(?:ed|ing|s)|rap(?:ed|ing)|murder(?:ed|ing|s)|robb(?:ed|ing)|kidnapp?(?:ed|ing)|stabb(?:ed|ing)|shot|shooting|harm(?:ed|ing)|victimiz(?:ed|ing)|defraud(?:ed|ing)|target(?:ed|ing)|endanger(?:ed|ing)|abus(?:ed|ing)|threaten(?:ed|ing)|molest(?:ed|ing)|groom(?:ed|ing)|sexually\s+\w+|(?:the\s+)?victims?,?(?:\s+(?:was|were|is|are|who\s+(?:is|was)))?)\s+(?:(?:a|an|one|two|three|four|five|several|multiple|\d+|another|other|innocent|young|elderly|female|male|woman|man|girl|boy|child|teen(?:age)?|\d+-year-old)\s+){0,3}(?:U\.S\.|United States|American)\s+citizens?(?:\s+(?:victims?|woman|man|girl|boy|child|children))?\b|\b(?:U\.S\.|United States|American)\s+citizen\s+victims?\b/gi;
+export const stripVictimIdentity = (s) => String(s || "").replace(VICTIM_IDENTITY, " ").replace(VICTIM_CITIZEN, " ");
 /** Krennic 2026-11-03: "with no United States citizenship" (usao-sdfl Apr 29, 2025), "no U.S. citizenship",
  *  "not a citizen of the United States" state non-citizen status. */
 const NO_US_CITIZENSHIP = /\bno\s+(?:United States|U\.S\.)\s+citizenship\b|\bnot\s+a\s+citizen\s+of\s+the\s+United States\b/i;

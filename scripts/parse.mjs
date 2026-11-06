@@ -105,11 +105,20 @@ export function sentences(block) {
 const PART = "(?:[A-ZÁÉÍÓÚÑÜ][A-Za-zÁÉÍÓÚÑÜáéíóúñü'’`.-]*)";
 const PARTICLE = "(?:de|del|de la|de los|la|las|los|da|das|do|dos|van|von|y|e|bin|al|el)";
 const NAME = `(${PART}(?:\\s+(?:${PARTICLE}\\s+)?${PART}){1,5})`;
-const AGE = "(?:\\d{1,3},\\s+)?";
+// Krennic 2026-11-06: "Name, age 45, ..." reads like "Name, 45, ...".
+const AGE = "(?:(?:age\\s+)?\\d{1,3},\\s+)?";
 // "of Omaha, Nebraska, " or (state releases) "of Fort Myers (Lee County), " / "of Tampa, ".
 const OF_PLACE = "(?:(?:of|from)\\s+[A-Z][A-Za-z .'-]+,\\s+(?:[A-Z][A-Za-z.]+\\s?){1,3},\\s+|(?:of|from)\\s+[A-Z][A-Za-z.'-]+(?:\\s[A-Z][A-Za-z.'-]+){0,2}(?:\\s\\([A-Z][A-Za-z .'-]+\\))?,\\s+)?";
 const DESC = "(?:an?\\s+)?(?:\\d+-time\\s+)?((?:[A-Za-z-]+\\s+){0,6}?)";
 const TYPE = "(alien|national|citizen|noncitizen|non-citizen|native and citizen)s?";
+// Krennic 2026-11-06: "a native of Mexico" is read as a name format only; the status guard (guards.mjs) still needs the
+// release's own non-citizen wording, so a native who is not stated to be a non-citizen is held, never shown.
+const TYPE0 = "(alien|national|citizen|noncitizen|non-citizen|native and citizen|native(?=\\s+of\\s))s?";
+// A "native of" hit needs the person's own status words in the same sentence ("... a native of Mexico illegally present").
+// "a native of Kenya and a lawful permanent resident" stays with rule I (NATIVE_STATUS), which reads where they voted.
+const NATIVE_OWN_STATUS = /\b(?:illegal(?:ly)?|unlawful(?:ly)?|aliens?|non-?citizens?|undocumented|deported|reentry|re-entry|citizen of)\b/i;
+// "(pictured)" after a name in photo roundups.
+const PICTURED = "(?:\\s+\\((?:pictured|above|left|right|center|top|bottom)\\))?";
 const COUNTRY = "(?:the\\s+)?([A-Z][A-Za-z'’.-]+(?:\\s+(?:and|of|the|[A-Z][A-Za-z'’.-]+)){0,4})";
 
 const PATTERNS = [
@@ -118,7 +127,7 @@ const PATTERNS = [
   // "Jane Doe, 39, of Omaha, Nebraska, a citizen of Honduras, ..."
   // "Serge Christian Dupont, 57,a French national ..." / "Dupont,57, a French national" (OPA / usao-wdnc Oct 29, 2026:
   // a missing space on either side of the age)
-  new RegExp(`(?:^|[—–-]\\s+|,\\s+|;\\s+(?:and\\s+)?|\\band\\s+|\\b(?:that|is)\\s+|\\b(?:arrested|removed|deported|charged|sentenced|indicted|convicted|apprehended|detained)\\s+)${NAME},(?:\\s+|(?=\\d{1,3},))(?:\\d{1,3},\\s*)?${OF_PLACE}${DESC}${TYPE}(?:\\s+(?:from|of)\\s+${COUNTRY})?`, "g"),
+  new RegExp(`(?:^|[—–-]\\s+|,\\s+|;\\s+(?:and\\s+)?|\\band\\s+|\\b(?:that|is)\\s+|\\b(?:arrested|removed|deported|charged|sentenced|indicted|convicted|apprehended|detained)\\s+)${NAME}${PICTURED},(?:\\s+|(?=\\d{1,3},))(?:(?:age\\s+)?\\d{1,3},\\s*)?${OF_PLACE}${DESC}${TYPE0}(?:\\s+(?:from|of)\\s+${COUNTRY})?`, "g"),
   // "Jane Roe and John Doe, both illegal aliens from the Dominican Republic" (two people, two rows)
   // "Rudi Lacatusu and Mirabela Lacatusu, illegal aliens from Romania" (plural wording, no "both"; DHS Oct 13 2026)
   new RegExp(`(?:^|:\\s+|,\\s+|;\\s+(?:and\\s+)?|\\b(?:arrested|identified|charged|indicted|removed|deported)\\s+)${NAME}(?:,\\s+\\d{1,3},)?\\s+and\\s+${NAME},\\s+${AGE}(?:(?:both|each)\\s+${DESC}${TYPE}|${DESC}(alien|national|citizen|noncitizen|non-citizen)s)(?:\\s+(?:from|of)\\s+${COUNTRY})?`, "g"),
@@ -131,7 +140,9 @@ const PATTERNS = [
   // "Pakistani national Jamil Ahmad, 50, a lawful permanent resident, has been charged ..." /
   // "Nigerian national, Helen Sayen Adams, 67, ..." / "Democratic Republic of Congo National, Celestin Katubadi , 20, ...".
   // Sentence start only, and the name must be followed by an age, so a headline or official never matches.
-  new RegExp(`^(?:[A-Z][A-Za-z .'’-]{0,40}[:–—]\\s+)?((?:[A-Z][a-z]+\\s+(?:of\\s+)?){0,3}[A-Z][a-z]+)\\s+[Nn]ational,?\\s+${NAME}\\s?,\\s+\\d{1,3},`, "g"),
+  // Krennic 2026-11-06: also "Honduran citizen <Name>, 29," and, for a known demonym only, no age when a verb follows
+  // ("Guatemalan national <Name> was sentenced"); a dateline with a comma ("MIAMI, Fla. – ") may come first.
+  new RegExp(`^(?:[A-Z][A-Za-z .,'’-]{0,40}[:–—]\\s+)?((?:[A-Z][a-z]+\\s+(?:of\\s+)?){0,3}[A-Z][a-z]+)\\s+(?:[Nn]ational|[Cc]itizen),?\\s+${NAME}(?:\\s?,\\s+(?:age\\s+)?\\d{1,3},|(?=\\s+(?:was|has been|have been|is|pleaded|pled|admitted|faces)\\b))`, "g"),
   // Date before the name: "On October 21, 2026, ICE arrested Juan Silva, a criminal alien from Mexico."
   // The same sentence must name the person as an alien / non-citizen / citizen of / national of.
   // A date plus "charged <Name>" whose status is in the next paragraph stays with linkedPeople.
@@ -438,6 +449,9 @@ export function extractPeople(blocks, { title = "" } = {}) {
           // Krennic 2026-11-02: "alien" here must be the person's status, not the object of a smuggling / conspiracy
           // phrase ("Emanuel Martinez Gonzalez, 29, conspired with others to operate an alien smuggling organization",
           // "codefendant, Marianny Lucia Lopez-Torres, to arrange the travel of aliens"). Such a match is no hit.
+          // Krennic 2026-11-06: a "<Demonym> national/citizen <Name>" lead with no age needs a known demonym (never "American").
+          if (re === PATTERNS[4] && (/^American$/.test(m[1]) || (!/\d,$/.test(m[0]) && !DEMONYM[m[1]]))) continue;
+          if (re === PATTERNS[0] && m[3] === "native" && (STATES[cleanCountry(m[4] || "")] || !m[4] || !NATIVE_OWN_STATUS.test(s.slice(m.index)) || (NATIVE_STATUS.lastIndex = 0, NATIVE_STATUS.test(s)))) continue;
           if (re === PATTERNS[0] && /^alien/i.test(m[3] || "") && (ACTION_DESC.test(m[2] || "") || /^s?[-\s]+(?:smuggl|traffick)/i.test(s.slice(m.index + m[0].length)))) continue;
           if (re === PATTERNS[0]) people.unshift(...listMembersBefore(s, m).map((n) => ({ n, origin: people[0].origin })));
           for (const { n, origin } of people) {
@@ -516,12 +530,12 @@ export function extractPeople(blocks, { title = "" } = {}) {
 const escRe = (x) => String(x).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const COUNTRY_ALT = [...COUNTRIES].sort((a, b) => b.length - a.length).map(escRe).join("|");
 const AKA = `(?:,?\\s+(?:aka|a/k/a|a\\.k\\.a\\.)\\s+${NAME})?`;
-const LEAD = new RegExp(`(?:^|[.;:]\\s+|\\b(?:and|while)\\s+)(?:[Cc]riminal\\s+)?[Ii]llegal\\s+alien\\s+from\\s+(?:the\\s+)?(${COUNTRY_ALT})\\s+${NAME}${AKA}(?=\\s+(?:was|is|has|had|pleaded|faces|remains|allegedly)\\b)`, "g");
+const LEAD = new RegExp(`(?:^|[.;:]\\s+|\\b(?:and|while)\\s+)(?:[Cc]riminal\\s+)?[Ii]llegal\\s+alien(?:\\s+from\\s+(?:the\\s+)?(${COUNTRY_ALT}))?\\s+${NAME}${AKA}(?=\\s+(?:was|is|has|had|pleaded|faces|remains|allegedly)\\b)`, "g");
 const IDENT = new RegExp(`^(?:[A-Z][^,]{0,40},\\s+)?${NAME}\\s+(?:was|is)\\s+[^.;]{0,120}?\\b(?:identified|determined|confirmed|found)\\s+(?:to\\s+be\\s+|as\\s+)an?\\s+(?:criminal\\s+)?(?:illegal\\s+alien|citizen\\s+of|national\\s+of)(?:\\s+(?:from|of)\\s+)?(?:the\\s+)?(${COUNTRY_ALT})?`);
 const SUR = "([A-Z][A-Za-z'’-]+(?:\\s+[A-Z][A-Za-z'’-]+)?)";
 const SURNAME_STATUS = new RegExp(`(?:^|,\\s+|\\b(?:saw|that|and|when)\\s+)${SUR}(?:,\\s+an?\\s+(?:criminal\\s+)?illegal\\s+alien\\b|\\s+(?:is|was)\\s+(?:an?\\s+)?(?:criminal\\s+)?(?:illegal\\s+alien|citizen\\s+of|native\\s+and\\s+citizen\\s+of|national\\s+of)\\b|\\s+(?:is|was)\\s+an?\\s+[A-Z][a-z]+\\s+national\\b)`, "g");
 const ANON = /^(?:[A-Z][A-Za-z .,'’-]{0,40}[:–—]\s+|[A-Z][A-Za-z .,'’-]{0,40}\s+[–—-]\s+)?An?\s+(?:[A-Za-z-]+\s+){0,3}?(?:illegal\s+alien|alien|national|citizen\s+of\s+[A-Z]\w+|(?:man|woman)\s+with\s+an?\s+(?:Legal|Lawful)\s+Permanent\s+Resident(?:\s+Card)?|lawful\s+permanent\s+resident)\b/;
-const NEXT_NAME = new RegExp(`^(?:[A-Z][^,]{0,60}?\\b(?:alleges|alleged|says|states|shows)\\s+that\\s+|According\\s+to\\s+[^,]+,\\s+)?${NAME}\\s+(?:was|is|has|had|allegedly|pleaded|pled)\\b|\\b(?:sentenced|charged|indicted)\\s+${NAME},\\s+\\d{1,3}\\b`);
+const NEXT_NAME = new RegExp(`^(?:[A-Z][^,]{0,60}?\\b(?:alleges|alleged|says|states|shows)\\s+that\\s+|According\\s+to\\s+[^,]+,\\s+)?${NAME}(?:,\\s+(?:age\\s+)?\\d{1,3},(?:\\s+of\\s+[A-Z][A-Za-z .'-]{1,40},(?:\\s+[A-Z][A-Za-z.]+,)?)?)?\\s+(?:was|is|has|had|allegedly|pleaded|pled)\\b|\\b(?:sentenced|charged|indicted)\\s+${NAME},\\s+\\d{1,3}\\b`);
 const LIST_INTRO = /\b(?:illegal\s+aliens?|aliens?|non-?citizens?)\b[^:]*\b(?:deported|removed|arrested|convicted|charged|sentenced)\b[^:]*:\s*$|\b(?:deported|removed|arrested)\b[^:]*\b(?:illegal\s+aliens?|aliens?)\b[^:]*:\s*$/i;
 const LIST_ITEM = new RegExp(`^${NAME},\\s+(?:whose|who|an?)\\s`);
 const ALL_FROM = new RegExp(`\\bAll\\s+of\\s+the\\s+(?:illegal\\s+)?aliens\\b[^.]*?\\bwere\\s+from\\s+(?:the\\s+)?(${COUNTRY_ALT})\\b`);
@@ -605,7 +619,7 @@ export function linkedPeople(blocks, { title = "", seen = [] } = {}) {
       let m;
       while ((m = LEAD.exec(s))) {
         const name = cleanName(m[2]);
-        push({ name, origin: m[1], sentence: withNowCharge(sents, i), ...(m[3] ? { aka: cleanName(m[3]) } : {}) });
+        push({ name, origin: m[1] || "", sentence: withNowCharge(sents, i), ...(m[3] ? { aka: cleanName(m[3]) } : {}) });
       }
       // D: "<Name> was found ... and identified as an illegal alien from Mexico."
       const d = s.match(IDENT);

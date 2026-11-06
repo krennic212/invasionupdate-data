@@ -1,3 +1,28 @@
+## 2026-11-06 (late morning) miss-reduction rule pack (Krennic t123u: "Fix everything in the rules so less are missed in the future")
+
+- Rows before/after: 1409 / 1409 (no data change; Sukhdev Singh was already approved by id and now also passes the guard).
+- scripts/guards.mjs:
+  - VICTIM_CITIZEN: a U.S. citizen the defendant harmed or targeted ("a crash that left a U.S. citizen hospitalized", "raped a
+    14-year-old U.S. citizen girl", "the victim, a U.S. citizen") is blanked like VICTIM_IDENTITY. The defendant's own
+    "<Name>, a U.S. citizen," and "including U.S. citizen <Name>" still block.
+  - AT_LARGE_STRONG: "on the loose" and "still on the run" hold like "at large" (person-scoped as before).
+- scripts/parse.mjs name formats: "Name, age 45, a Mexican national"; "Name (pictured), 45, ..."; "Honduran citizen <Name>, 29,";
+  "Guatemalan national <Name> was ..." with no age (known demonym only, never "American"); "Illegal alien <Name> was ..." with no
+  country; "<Name>, 41, a native of Mexico illegally present ..." (native-of needs the person's own status words in the sentence,
+  never a U.S. state; "native and citizen of" and rule I unchanged); anonymous status sentence + next sentence "<Name>, 33, pleaded ...".
+  All-caps names and "Name (75), a Canadian national" were already read.
+- scripts/stage-upgrade.mjs (new, wired in harvest.mjs rowsFromRelease): Charged -> Convicted when a later official release
+  about the same approved person (same full name, same state, earlier row, other release) has a later label and passes every
+  guard. Forward only; voting rows move only when the new sentence is about the vote. Row keeps id, sourceUrl, place, photo;
+  crime = the new release's sentence verbatim; stageFrom / stageSourceUrl / stageUsa added; harvest-status.json stageUpdates.
+- harvest.mjs: DOJ_PAGES 4 -> 8, MAX_LINKS 15 -> 25 (late-posted releases). MAX_AGE_DAYS 30 unchanged.
+- Voting label rule (Nov 3) unchanged; Akpom pin tests pass.
+- Dry run (old vs new): last 400 DOJ API releases: 7 more people read (all already live, the ones added by hand earlier:
+  Brizo-Mendoza, Arias-Chicas, Cruz Cruz, Espinoza-Hinojosa, Liang Xiong, Goertz, Cristobal-Perez); 0 new rows, 0 stage
+  moves, 0 demotions; approved-row guard recheck: only Sukhdev Singh changes (hold -> pass). Full DOJ corpus (35,931 releases):
+  +721 people read (710 pass guards, spot-checked), 0 lost.
+- Tests: scripts/rules-1106.test.mjs (6). Full suite 305/305.
+
 ## 2026-11-05 (evening) daily missed-cases check
 
 - Pending intake (AUTO_APPROVE): Joan Manuel Tavarez Bueno (D.V.I. jury, Dominican citizen, illegal reentry), Fidel Antonio Cruz Cruz (N.D. Iowa, Honduran illegal alien, sentenced reentry), Sebastian Higuera-Fuentes (D. Ariz., Mexican national, meth conspiracy sentence), Stanley Robert Kengu Muthee (ICE Seattle Nov 5, Kenyan illegal alien arrested).
