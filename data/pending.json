@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "name": "Bryan Silva",
+    "city": "Albany, NY",
+    "crime": "Convicted: Bryan Silva, age 34, was sentenced on November 5, 2026, by United States District Judge Anthony J. Brindisi to 10 years’ imprisonment for attempting to persuade or entice a minor to engage in prostitution. Silva was a Brazilian citizen illegally present in the United States. After serving his sentence, Silva will be subject to deportation.",
+    "usa": "DOJ release Nov 6, 2026: Illegal Immigrant Sentenced for Attempting to Have Sex with a Minor",
+    "foreign": "Not stated in post",
+    "picked": "11/6/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261106-bryan-silva",
+    "when": "6 Nov 2026",
+    "text": "DOJ Nov 6, 2026, as posted: Bryan Silva, age 34, was sentenced on November 5, 2026, by United States District Judge Anthony J. Brindisi to 10 years’ imprisonment for attempting to persuade or entice a minor to engage in prostitution. Silva was a Brazilian citizen illegally present in the United States. Silva pled guilty to attempting to persuade or entice a minor to engage in prostitution on July 28, 2026. After serving his sentence, Silva will be subject to deportation.",
+    "photo": "",
+    "via": "justice.gov/usao-ndny/pr/illegal-immigrant-sentenced-attempting-have-sex-minor",
+    "sourceUrl": "https://www.justice.gov/usao-ndny/pr/illegal-immigrant-sentenced-attempting-have-sex-minor",
+    "voting": false,
+    "origin": "Brazil",
+    "confirmedBy": "DOJ",
+    "lat": 42.6526,
+    "lon": -73.7562
+  },
+  {
+    "name": "Luis Benítez Alcántara",
+    "city": "Mexico City, MX",
+    "crime": "Charged: Luis Benítez Alcántara, 49, of Mexico City, was arrested on Sunday in Colombia. He is charged in a second superseding indictment with nine counts of being an accessory after the fact. Benítez Alcántara was a district judge in Mexico City who allegedly accepted $2 million in exchange for granting bond to and ordering the release of Wedding’s second in command.",
+    "usa": "DOJ release Nov 5, 2026: Homeland Security Task Force Investigation Leads to Mexican Federal Judge’s Arrest on U.S. Charges",
+    "foreign": "Not stated in post",
+    "picked": "11/5/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261105-luis-benitez-alcantara",
+    "when": "5 Nov 2026",
+    "text": "DOJ Nov 5, 2026, as posted: A Mexican judge has been arrested on a nine-count federal indictment charging him with accepting a $2 million bribe in exchange for granting bond to and ordering the release of a Canadian drug trafficker. Luis Benítez Alcántara, 49, of Mexico City, was arrested on Sunday in Colombia. He is charged in a second superseding indictment with nine counts of being an accessory after the fact. The United States will request Benítez’s extradition from Colombia. Benítez Alcántara was a district judge in Mexico City who allegedly accepted $2 million in exchange for granting bond to and ordering the release of Wedding’s second in command.",
+    "photo": "",
+    "via": "justice.gov/opa/pr/homeland-security-task-force-investigation-leads-mexican-federal-judges-arrest-us-charges",
+    "sourceUrl": "https://www.justice.gov/opa/pr/homeland-security-task-force-investigation-leads-mexican-federal-judges-arrest-us-charges",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "DOJ",
+    "lat": 19.4326,
+    "lon": -99.1332
+  }
+]
