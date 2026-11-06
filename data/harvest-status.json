@@ -1,24 +1,12 @@
 {
-  "checkedAt": 1794006826750,
-  "checkedAtIso": "2026-11-06T23:13:46.750Z",
+  "checkedAt": 1794009417916,
+  "checkedAtIso": "2026-11-06T23:56:57.916Z",
   "added": [
-    "Abel Delval-Dominguez",
-    "Edgar Villanueva-Garcia",
-    "Gregorio Zamano-Ortiz",
-    "Manuel Guadalupe Armenta-Ortega",
-    "Antonio Vargas-Colindres",
-    "Jose Medardo Anariba-Cruz",
-    "Geovani Lizbeth Rodriguez-Delgado",
-    "Paulin Balderas-Mejia",
-    "Eling Francisco Briceno-Vidaurre",
-    "Ivan Darali Sierra-Moreno",
-    "Aaron Sanchez Nunez",
-    "Jonathan Juarez"
+    "Bryan Silva",
+    "Luis Benítez Alcántara"
   ],
   "addedStatus": "approved",
-  "heldPending": [
-    "Jonathan Juarez (not stated to be a non-citizen)"
-  ],
+  "heldPending": [],
   "stageUpdates": [],
   "sameNameReview": {
     "replaced": [],
@@ -28,7 +16,7 @@
   "sentToReview": [],
   "scannedReleases": 158,
   "error": null,
-  "note": "Added 12 as approved: Abel Delval-Dominguez, Edgar Villanueva-Garcia, Gregorio Zamano-Ortiz, Manuel Guadalupe Armenta-Ortega, Antonio Vargas-Colindres, Jose Medardo Anariba-Cruz, Geovani Lizbeth Rodriguez-Delgado, Paulin Balderas-Mejia, Eling Francisco Briceno-Vidaurre, Ivan Darali Sierra-Moreno, Aaron Sanchez Nunez, Jonathan Juarez",
+  "note": "Added 2 as approved: Bryan Silva, Luis Benítez Alcántara",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

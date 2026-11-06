@@ -1,25 +1,15 @@
 {
-  "updatedAt": "2026-11-06T23:13:55Z",
-  "rows": 1442,
-  "approved": 1424,
-  "pending": 18,
+  "updatedAt": "2026-11-06T23:57:05Z",
+  "rows": 1444,
+  "approved": 1425,
+  "pending": 19,
   "photos": 389,
   "reviewRows": 777,
-  "lastAddedAt": "2026-11-06T23:13:46Z",
-  "lastAddedCount": 11,
+  "lastAddedAt": "2026-11-06T23:56:57Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Abel Delval-Dominguez",
-    "Edgar Villanueva-Garcia",
-    "Gregorio Zamano-Ortiz",
-    "Manuel Guadalupe Armenta-Ortega",
-    "Antonio Vargas-Colindres",
-    "Jose Medardo Anariba-Cruz",
-    "Geovani Lizbeth Rodriguez-Delgado",
-    "Paulin Balderas-Mejia",
-    "Eling Francisco Briceno-Vidaurre",
-    "Ivan Darali Sierra-Moreno",
-    "Aaron Sanchez Nunez"
+    "Bryan Silva"
   ],
-  "harvestSha256": "bf5479efeeb583d901e3ecee4334f3df1225c2d65e90235a853175bd4237ab45",
+  "harvestSha256": "20fc6ae394d8bb85349b93c56971e3982754b9d04347dcb20df646c708361596",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
