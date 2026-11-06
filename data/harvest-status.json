@@ -1,43 +1,30 @@
 {
-  "checkedAt": 1793920428770,
-  "checkedAtIso": "2026-11-05T23:13:48.770Z",
+  "checkedAt": 1793923215289,
+  "checkedAtIso": "2026-11-06T00:00:15.289Z",
   "added": [
-    "Axel Javier Martinez-Castillo",
-    "Phaisan Pongkiatsakun",
-    "Wilber Esau Sura-Hernandez",
-    "Felipe Menchu",
-    "Anardo Batista",
-    "Sukhdev Singh",
-    "Anmol Anmol",
-    "Mwasi Songambele"
+    "Joan Manuel Tavarez Bueno",
+    "Fidel Antonio Cruz Cruz",
+    "Sebastian Higuera-Fuentes",
+    "Stanley Robert Kengu Muthee"
   ],
   "addedStatus": "approved",
-  "heldPending": [
-    "Sukhdev Singh (not stated to be a non-citizen)"
-  ],
+  "heldPending": [],
   "sameNameReview": {
     "replaced": [
       {
-        "reviewId": "2097764334826868861",
-        "name": "Sukhdev Singh",
-        "liveId": "dhs-20261105-sukhdev-singh",
-        "why": "same country (India) and same case wording: that left / left a / a u / u s / s citizen / citizen hospitalized"
+        "reviewId": "x-2118448215649583295-joan-manuel-tavarez-bueno",
+        "name": "Joan Manuel Tavarez Bueno",
+        "liveId": "doj-20261105-joan-manuel-tavarez-bueno",
+        "why": "same country (Dominican Republic) and same case wording: convicted st / st thomas / thomas usvi / usvi u / u s / s attorney"
       }
     ],
-    "keptBoth": [
-      {
-        "reviewId": "2097764345199436171",
-        "name": "Anmol Anmol",
-        "liveId": "dhs-20261105-anmol-anmol",
-        "why": "same country but too few case words in common (york)"
-      }
-    ]
+    "keptBoth": []
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 84,
+  "scannedReleases": 86,
   "error": null,
-  "note": "Added 8 as approved: Axel Javier Martinez-Castillo, Phaisan Pongkiatsakun, Wilber Esau Sura-Hernandez, Felipe Menchu, Anardo Batista, Sukhdev Singh, Anmol Anmol, Mwasi Songambele",
+  "note": "Added 4 as approved: Joan Manuel Tavarez Bueno, Fidel Antonio Cruz Cruz, Sebastian Higuera-Fuentes, Stanley Robert Kengu Muthee",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
