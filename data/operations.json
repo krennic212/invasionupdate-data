@@ -338,5 +338,18 @@
     "people": [],
     "text": "ICEgov 6 Nov 2026, as posted: 5M during Operation Iron Current November 6, 2026Hattiesburg, MS, United StatesNarcotics HSI Hattiesburg seizes over 6,000 kg of narcotics worth $80. Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true
+  },
+  {
+    "id": "op-icegov-20261106-14",
+    "name": "Operation Fresh Catch",
+    "when": "6 Nov 2026",
+    "place": "Not stated",
+    "posted": 14,
+    "unnamed": 14,
+    "sourceUrl": "https://www.ice.gov/news/releases/ice-captures-14-illegal-aliens-during-operation-fresh-catch-northern-michigan",
+    "people": [],
+    "text": "ICEgov 6 Nov 2026, as posted: Forest Service arrested 14 illegal aliens from El Salvador, Guatemala, Honduras and Mexico during Operation Fresh Catch in the Cadillac and Manistee areas of Northern Michigan Oct. 14 total, 0 named on their own rows, 14 unnamed counted here.",
+    "heads": 14,
+    "operation": true
   }
 ]

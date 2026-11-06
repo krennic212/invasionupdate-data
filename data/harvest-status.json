@@ -1,13 +1,8 @@
 {
-  "checkedAt": 1793989424244,
-  "checkedAtIso": "2026-11-06T18:23:44.244Z",
+  "checkedAt": 1793992134757,
+  "checkedAtIso": "2026-11-06T19:08:54.757Z",
   "added": [
-    "Bruno Gustavo Hernandez-Munuz",
-    "Fabian Fernando Ruiz-Estrada",
-    "Eliecer Pineda-Torres",
-    "Yefri Nuevo-Ruiz",
-    "Edgar Carreno Araizaga",
-    "Operation Iron Current November (operation, not a person)"
+    "Operation Fresh Catch (operation, not a person)"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -18,9 +13,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 167,
+  "scannedReleases": 158,
   "error": null,
-  "note": "Added 6 as approved: Bruno Gustavo Hernandez-Munuz, Fabian Fernando Ruiz-Estrada, Eliecer Pineda-Torres, Yefri Nuevo-Ruiz, Edgar Carreno Araizaga, Operation Iron Current November (operation, not a person)",
+  "note": "Added 1 as approved: Operation Fresh Catch (operation, not a person)",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

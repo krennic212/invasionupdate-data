@@ -5,15 +5,9 @@
   "pending": 17,
   "photos": 389,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-06T18:23:44Z",
-  "lastAddedCount": 5,
-  "lastAdded": [
-    "Bruno Gustavo Hernandez-Munuz",
-    "Fabian Fernando Ruiz-Estrada",
-    "Eliecer Pineda-Torres",
-    "Yefri Nuevo-Ruiz",
-    "Edgar Carreno Araizaga"
-  ],
+  "lastAddedAt": "2026-11-06T19:08:54Z",
+  "lastAddedCount": 0,
+  "lastAdded": [],
   "harvestSha256": "ae3c8b93a5b1ba521c88263760696b0d047a66133a2ae2a15eef92c9f5918a44",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
