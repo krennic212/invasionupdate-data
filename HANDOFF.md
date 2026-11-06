@@ -1,5 +1,6 @@
 ## 2026-11-06 (evening) daily missed-cases check
 
+- Approved by id: Luis Benítez Alcántara (hold was "not stated to be a non-citizen"; release says Mexican judge / Mexico City). Rule fix (count demonym+office title) needs Krennic yes.
 - Pending intake (AUTO_APPROVE): Bryan Silva (NDNY Nov 6 / sentenced Nov 5, Brazilian citizen illegally present, enticement of a minor — adult defendant only, no victim names); Luis Benítez Alcántara (OPA Nov 5, Mexican judge, Charged accessory after the fact, arrested Colombia).
 - DHS Nov 5–6 WOW / White House / Mayna names already on IU — not re-added.
 - No parser/guard code changes.

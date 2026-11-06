@@ -1,15 +1,16 @@
 {
-  "updatedAt": "2026-11-06T23:57:05Z",
+  "updatedAt": "2026-11-06T23:58:26Z",
   "rows": 1444,
-  "approved": 1425,
-  "pending": 19,
+  "approved": 1426,
+  "pending": 18,
   "photos": 389,
   "reviewRows": 777,
   "lastAddedAt": "2026-11-06T23:56:57Z",
-  "lastAddedCount": 1,
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Bryan Silva"
+    "Bryan Silva",
+    "Luis Benítez Alcántara"
   ],
-  "harvestSha256": "20fc6ae394d8bb85349b93c56971e3982754b9d04347dcb20df646c708361596",
+  "harvestSha256": "39d0307c3c5ffe1022621319582d0557d035a03e9e5d7e314c473a7f0a9fed62",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

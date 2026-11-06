@@ -24,9 +24,9 @@
     "confirmedBy": "DOJ",
     "lat": 19.4326,
     "lon": -99.1332,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen",
-    "tags": []
+    "status": "approved",
+    "tags": [],
+    "approvalNote": "Approved by id (daily missed-cases 2026-11-06): release calls him a Mexican judge / district judge in Mexico City; guard only reads citizen-of / national / illegal-alien wording, not \"Mexican judge\"."
   },
   {
     "name": "Bryan Silva",
