@@ -1,30 +1,18 @@
 {
-  "checkedAt": 1793923215289,
-  "checkedAtIso": "2026-11-06T00:00:15.289Z",
-  "added": [
-    "Joan Manuel Tavarez Bueno",
-    "Fidel Antonio Cruz Cruz",
-    "Sebastian Higuera-Fuentes",
-    "Stanley Robert Kengu Muthee"
-  ],
+  "checkedAt": 1793978082553,
+  "checkedAtIso": "2026-11-06T15:14:42.553Z",
+  "added": [],
   "addedStatus": "approved",
   "heldPending": [],
   "sameNameReview": {
-    "replaced": [
-      {
-        "reviewId": "x-2118448215649583295-joan-manuel-tavarez-bueno",
-        "name": "Joan Manuel Tavarez Bueno",
-        "liveId": "doj-20261105-joan-manuel-tavarez-bueno",
-        "why": "same country (Dominican Republic) and same case wording: convicted st / st thomas / thomas usvi / usvi u / u s / s attorney"
-      }
-    ],
+    "replaced": [],
     "keptBoth": []
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 86,
+  "scannedReleases": 90,
   "error": null,
-  "note": "Added 4 as approved: Joan Manuel Tavarez Bueno, Fidel Antonio Cruz Cruz, Sebastian Higuera-Fuentes, Stanley Robert Kengu Muthee",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
