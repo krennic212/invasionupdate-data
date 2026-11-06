@@ -1,20 +1,19 @@
 {
-  "updatedAt": "2026-11-06T18:22:43Z",
-  "rows": 1417,
-  "approved": 1400,
+  "updatedAt": "2026-11-06T18:23:50Z",
+  "rows": 1422,
+  "approved": 1405,
   "pending": 17,
   "photos": 376,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-06T18:22:06Z",
-  "lastAddedCount": 6,
+  "lastAddedAt": "2026-11-06T18:23:44Z",
+  "lastAddedCount": 5,
   "lastAdded": [
-    "Yves Frantz Augustine",
-    "Nika Tkeshelashvili",
-    "Guillermo Torres-Hernandez",
-    "Rohan Dauswell",
-    "Ravindha Ramroop",
-    "Juan Rivas"
+    "Bruno Gustavo Hernandez-Munuz",
+    "Fabian Fernando Ruiz-Estrada",
+    "Eliecer Pineda-Torres",
+    "Yefri Nuevo-Ruiz",
+    "Edgar Carreno Araizaga"
   ],
-  "harvestSha256": "42c3f67819f69dfcc40407ae3a6788e365e724f5162a8a8d269da54ea624e599",
+  "harvestSha256": "f37f02d6201cbde0e28de7799527a76ecdca76807fa04319592fd1bedf86e90b",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

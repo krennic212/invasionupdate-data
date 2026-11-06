@@ -1,9 +1,13 @@
 {
-  "checkedAt": 1793986703572,
-  "checkedAtIso": "2026-11-06T17:38:23.572Z",
+  "checkedAt": 1793989424244,
+  "checkedAtIso": "2026-11-06T18:23:44.244Z",
   "added": [
-    "Ysidoro Martinez-Arguello",
-    "Rolando Ariel Gonzalez-Gonzalez"
+    "Bruno Gustavo Hernandez-Munuz",
+    "Fabian Fernando Ruiz-Estrada",
+    "Eliecer Pineda-Torres",
+    "Yefri Nuevo-Ruiz",
+    "Edgar Carreno Araizaga",
+    "Operation Iron Current November (operation, not a person)"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -16,7 +20,7 @@
   "sentToReview": [],
   "scannedReleases": 167,
   "error": null,
-  "note": "Added 2 as approved: Ysidoro Martinez-Arguello, Rolando Ariel Gonzalez-Gonzalez",
+  "note": "Added 6 as approved: Bruno Gustavo Hernandez-Munuz, Fabian Fernando Ruiz-Estrada, Eliecer Pineda-Torres, Yefri Nuevo-Ruiz, Edgar Carreno Araizaga, Operation Iron Current November (operation, not a person)",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

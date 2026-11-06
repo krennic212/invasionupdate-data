@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-06",
   "windowDays": 7,
-  "total": 184,
+  "total": 189,
   "rows": [
     {
       "id": "dhs-20261102-jose-perez-chaparro-chaparra",
@@ -124,6 +124,17 @@
       "severityCrimes": [
         "Child sex crime",
         "Kidnapping / human trafficking"
+      ]
+    },
+    {
+      "id": "dhs-20261106-fabian-fernando-ruiz-estrada",
+      "name": "Fabian Fernando Ruiz-Estrada",
+      "when": "6 Nov 2026",
+      "severity": 140,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Drug trafficking"
       ]
     },
     {
@@ -286,13 +297,13 @@
       ]
     },
     {
-      "id": "x-2117376211462631829-stefan-brehl",
-      "name": "Stefan Brehl",
-      "when": "2 Nov 2026",
-      "severity": 105,
-      "severityReason": "Rape / sexual assault",
+      "id": "dhs-20261106-bruno-gustavo-hernandez-munuz",
+      "name": "Bruno Gustavo Hernandez-Munuz",
+      "when": "6 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
       "severityCrimes": [
-        "Rape / sexual assault"
+        "Child sex crime"
       ]
     },
     {

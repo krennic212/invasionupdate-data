@@ -327,5 +327,16 @@
     "text": "SecMullinDHS 5 Nov 2026, as posted: Operation Southern Surge Under the leadership of @POTUS Trump, the men and women of @CBP, @HSI_HQ and our @HSTaskForce partners are working to SECURE our border and defeat the cartels. Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true,
     "people": []
+  },
+  {
+    "id": "op-icegov-20261106-operation-iron-current-november",
+    "name": "Operation Iron Current November",
+    "when": "6 Nov 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.ice.gov/news/releases/hsi-hattiesburg-seizes-over-6000-kg-narcotics-worth-805m-during-operation-iron",
+    "people": [],
+    "text": "ICEgov 6 Nov 2026, as posted: 5M during Operation Iron Current November 6, 2026Hattiesburg, MS, United StatesNarcotics HSI Hattiesburg seizes over 6,000 kg of narcotics worth $80. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
   }
 ]
