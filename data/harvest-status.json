@@ -1,10 +1,7 @@
 {
-  "checkedAt": 1794009417916,
-  "checkedAtIso": "2026-11-06T23:56:57.916Z",
-  "added": [
-    "Bryan Silva",
-    "Luis Benítez Alcántara"
-  ],
+  "checkedAt": 1794009639806,
+  "checkedAtIso": "2026-11-07T00:00:39.806Z",
+  "added": [],
   "addedStatus": "approved",
   "heldPending": [],
   "stageUpdates": [],
@@ -16,7 +13,7 @@
   "sentToReview": [],
   "scannedReleases": 158,
   "error": null,
-  "note": "Added 2 as approved: Bryan Silva, Luis Benítez Alcántara",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
