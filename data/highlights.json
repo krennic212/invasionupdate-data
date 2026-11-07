@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-07",
   "windowDays": 7,
-  "total": 203,
+  "total": 211,
   "rows": [
     {
       "id": "dhs-20261102-jose-perez-chaparro-chaparra",
@@ -43,6 +43,18 @@
         "Violent crime against a child",
         "Weapons",
         "Assault / battery"
+      ]
+    },
+    {
+      "id": "x-2119136781740425474-alexander-sanchez-montano",
+      "name": "Alexander Sanchez Montano",
+      "when": "7 Nov 2026",
+      "severity": 185,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Weapons",
+        "Burglary / theft"
       ]
     },
     {
@@ -197,6 +209,17 @@
       ]
     },
     {
+      "id": "x-2119138075700060660-dinh-nguyen",
+      "name": "Dinh Nguyen",
+      "when": "7 Nov 2026",
+      "severity": 130,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Burglary / theft"
+      ]
+    },
+    {
       "id": "ice-20261102-horatio-humphrey-hutchinson",
       "name": "Horatio Humphrey Hutchinson",
       "when": "2 Nov 2026",
@@ -205,6 +228,18 @@
       "severityCrimes": [
         "Rape / sexual assault",
         "Assault / battery"
+      ]
+    },
+    {
+      "id": "x-2119172523820736881-wilno-morisset",
+      "name": "Wilno Morisset",
+      "when": "7 Nov 2026",
+      "severity": 126,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Drug trafficking",
+        "Burglary / theft"
       ]
     },
     {
@@ -242,6 +277,17 @@
       ]
     },
     {
+      "id": "x-2119138723468386434-noi-ly",
+      "name": "Noi Ly",
+      "when": "7 Nov 2026",
+      "severity": 117,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Burglary / theft"
+      ]
+    },
+    {
       "id": "x-2118431107704053985-reynaldo-hoel-mayna",
       "name": "Reynaldo Hoel Mayna",
       "when": "5 Nov 2026",
@@ -253,48 +299,13 @@
       ]
     },
     {
-      "id": "dhs-20261103-danilo-mazariegos-maldonado",
-      "name": "Danilo Mazariegos-Maldonado",
-      "when": "3 Nov 2026",
-      "severity": 116,
-      "severityReason": "Attack on police officer",
+      "id": "x-2119138511089537370-julio-camey",
+      "name": "Julio Camey",
+      "when": "7 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
       "severityCrimes": [
-        "Attack on police officer",
-        "DUI"
-      ]
-    },
-    {
-      "id": "x-2117360256586260774-yefri-isais-aguirre-castro",
-      "name": "YEFRI ISAIS AGUIRRE-CASTRO",
-      "when": "2 Nov 2026",
-      "severity": 115,
-      "severityReason": "Attack on police officer",
-      "severityCrimes": [
-        "Attack on police officer",
-        "Assault / battery"
-      ]
-    },
-    {
-      "id": "x-2117444653381476704-sang-van-nguyen",
-      "name": "Sang Van Nguyen",
-      "when": "2 Nov 2026",
-      "severity": 113,
-      "severityReason": "Fraud (incl. voter fraud)",
-      "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Burglary / theft",
-        "Drug possession"
-      ]
-    },
-    {
-      "id": "doj-20261104-conrod-davy",
-      "name": "CONROD DAVY",
-      "when": "4 Nov 2026",
-      "severity": 110,
-      "severityReason": "Fraud (incl. voter fraud)",
-      "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Drug trafficking"
+        "Child sex crime"
       ]
     },
     {
@@ -402,6 +413,16 @@
       "name": "William Gonzalez-Luna",
       "when": "2 Nov 2026",
       "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2119137054856737274-luis-fernando-castillo-perez",
+      "name": "Luis Fernando Castillo-Perez",
+      "when": "7 Nov 2026",
+      "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"

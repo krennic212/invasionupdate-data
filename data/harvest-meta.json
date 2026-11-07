@@ -1,16 +1,23 @@
 {
-  "updatedAt": "2026-11-07T19:07:02Z",
-  "rows": 1446,
-  "approved": 1428,
+  "updatedAt": "2026-11-07T23:14:03Z",
+  "rows": 1455,
+  "approved": 1437,
   "pending": 18,
   "photos": 393,
   "reviewRows": 778,
-  "lastAddedAt": "2026-11-07T15:14:41Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-11-07T23:14:03Z",
+  "lastAddedCount": 9,
   "lastAdded": [
-    "Miguel Bernal-Molina",
-    "Gustavo Rodruguez-Collado"
+    "Joaquin Omana-Soto",
+    "Danny Jose Parada-Mendez",
+    "Wilno Morisset",
+    "Noi Ly",
+    "Julio Camey",
+    "Javier Gallegos Rangel",
+    "Dinh Nguyen",
+    "Luis Fernando Castillo-Perez",
+    "Alexander Sanchez Montano"
   ],
-  "harvestSha256": "c7bb77eba2519372d714ec8ab312b5451fa5763380883f0c447c16f36b7aff5f",
+  "harvestSha256": "f03698cb527d3f70ba8044c32c1c3cac7189d574e30c7b2261e3a574a359616c",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
