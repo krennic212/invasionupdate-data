@@ -9396,5 +9396,65 @@
     "name": "Bryan Silva",
     "result": "none",
     "why": "no single person-specific image in the release"
+  },
+  "x.com/icegov/status/2118901316302835803": {
+    "checkedAt": "2026-11-07T19:06:46.644Z",
+    "name": "Miguel Bernal-Molina",
+    "result": "photo",
+    "file": "x-2118901316302835803-miguel-bernal-molina.jpg",
+    "image": "https://pbs.twimg.com/media/HWfZhMgXcAItwFD?format=png&name=orig",
+    "bytes": 17933,
+    "reviewed": "Viewed image: single adult male headshot with glasses and chin-curtain beard, white t-shirt, indoor institutional background, no other people, no text card"
+  },
+  "x.com/erosanfrancisco/status/2118769885417439472": {
+    "checkedAt": "2026-11-07T19:06:47.217Z",
+    "name": "Fernando De Los Reyes",
+    "result": "photo",
+    "file": "x-2118769885417439472-fernando-de-los-reyes.jpg",
+    "image": "https://pbs.twimg.com/media/HWTJP0_bgAAji6h?format=png&name=orig",
+    "bytes": 22395,
+    "reviewed": "Viewed image: single adult male chest-up headshot, gray sweatshirt, outdoor against vehicle with razor wire in background, no other people, no text card"
+  },
+  "x.com/eroharlingen/status/2118787389623570618": {
+    "checkedAt": "2026-11-07T19:06:47.582Z",
+    "name": "Orlando Eugenio Parada-Mancia",
+    "result": "photo",
+    "file": "x-2118787389623570618-orlando-eugenio-parada-mancia.jpg",
+    "image": "https://pbs.twimg.com/media/HWdxlBIXIAA8rnd?format=jpg&name=orig",
+    "bytes": 13928,
+    "reviewed": "Viewed image: single adult male booking headshot against white cinderblock wall, red sweater, no other people, no text card"
+  },
+  "x.com/erobuffalo/status/2118814386383102277": {
+    "checkedAt": "2026-11-07T19:06:47.848Z",
+    "name": "Heriberto Perez-Velasquez",
+    "result": "photo",
+    "file": "x-2118814386383102277-heriberto-perez-velasquez.jpg",
+    "image": "https://pbs.twimg.com/media/HWeKO1TXcAAtqtQ?format=png&name=orig",
+    "bytes": 8711,
+    "reviewed": "Viewed image: single adult male booking headshot with glasses, buzz cut, mustache/goatee, white collared shirt, plain light wall, no other people, no text card"
+  },
+  "x.com/erosaltlakecity/status/2118896972916527277": {
+    "checkedAt": "2026-11-07T19:06:50.376Z",
+    "name": "Gustavo Rodruguez-Collado",
+    "result": "none",
+    "why": "arrest/transport scene in vehicle, side profile, not booking headshot"
+  },
+  "x.com/erophiladelphia/status/2118797928160510412": {
+    "checkedAt": "2026-11-07T19:06:50.489Z",
+    "name": "Jesus Manuel Regalado",
+    "result": "none",
+    "why": "arrest scene with officer and detainee, two people visible"
+  },
+  "x.com/eroseattle/status/2118825756482842892": {
+    "checkedAt": "2026-11-07T19:06:50.631Z",
+    "name": "Paula Anaya-Barcelo",
+    "result": "none",
+    "why": "ICE graphic card with text overlays, not plain booking photo"
+  },
+  "x.com/usao_dc/status/2118826149069394123": {
+    "checkedAt": "2026-11-07T19:06:50.744Z",
+    "name": "Karin L. Contreras",
+    "result": "none",
+    "why": "surveillance stills from bank/lobby camera, not booking headshot"
   }
 }

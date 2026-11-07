@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-07T15:15:13Z",
+  "updatedAt": "2026-11-07T19:07:02Z",
   "rows": 1446,
   "approved": 1428,
   "pending": 18,
-  "photos": 389,
+  "photos": 393,
   "reviewRows": 778,
   "lastAddedAt": "2026-11-07T15:14:41Z",
   "lastAddedCount": 2,
@@ -11,6 +11,6 @@
     "Miguel Bernal-Molina",
     "Gustavo Rodruguez-Collado"
   ],
-  "harvestSha256": "732426f52ad74712b8feb99810d38d3a1fe138116da57a9525703ce281ea6887",
+  "harvestSha256": "c7bb77eba2519372d714ec8ab312b5451fa5763380883f0c447c16f36b7aff5f",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
