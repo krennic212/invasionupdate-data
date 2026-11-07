@@ -1,5 +1,65 @@
 [
   {
+    "name": "Miguel Bernal-Molina",
+    "city": "Not stated",
+    "crime": "As posted: Wyoming Honor Conservation Camp released Miguel Bernal-Molina, of Mexico, into ICE custody pursuant to an immigration detainer. He had been incarcerated in the correctional facility for third-degree sexual abuse of a minor in Campbell County. Honoring ICE’s detainer prevented this criminal alien sex offender from being released into the Newcastle community. ICE escorted him home to Mexico Nov. 3.",
+    "usa": "ICE X post Nov 6, 2026 (@ICEgov)",
+    "foreign": "Not stated in post",
+    "picked": "11/6/2026 (@ICEgov post)",
+    "entered": "Not stated",
+    "office": "ICEgov",
+    "id": "x-2118901316302835803-miguel-bernal-molina",
+    "when": "6 Nov 2026",
+    "severity": 83,
+    "severityReason": "Child sex crime",
+    "severityCrimes": [
+      "Child sex crime"
+    ],
+    "text": "@ICEgov Nov 6, 2026, as posted: WYOMING CORRECTIONAL FACILITY HONORED ICE DETAINER, PREVENTING CONVICTED CHILD SEXUAL PREDATOR’S RELEASE INTO THE COMMUNITY Wyoming Honor Conservation Camp released Miguel Bernal-Molina, of Mexico, into ICE custody pursuant to an immigration detainer. He had been incarcerated in the correctional facility for third-degree sexual abuse of a minor in Campbell County. Honoring ICE’s detainer prevented this criminal alien sex offender from being released into the Newcastle community. ICE escorted him home to Mexico Nov. 3. ➡️Learn more about detainers on our website.",
+    "photo": "",
+    "via": "@ICEgov 2118901316302835803",
+    "sourceUrl": "https://x.com/ICEgov/status/2118901316302835803",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "tags": []
+  },
+  {
+    "name": "Gustavo Rodruguez-Collado",
+    "city": "Not stated",
+    "crime": "Arrested: ICE Salt Lake City arrested Gustavo Rodruguez-Collado a criminal alien from Mexico and known gang member.",
+    "usa": "ICE X post Nov 6, 2026 (@EROSaltLakeCity)",
+    "foreign": "Not stated in post",
+    "picked": "11/6/2026 (@EROSaltLakeCity post)",
+    "entered": "Not stated",
+    "office": "EROSaltLakeCity",
+    "id": "x-2118896972916527277-gustavo-rodruguez-collado",
+    "when": "6 Nov 2026",
+    "severity": 149,
+    "severityReason": "Armed robbery / aggravated assault",
+    "severityCrimes": [
+      "Armed robbery / aggravated assault",
+      "Weapons",
+      "Assault / battery"
+    ],
+    "text": "@EROSaltLakeCity Nov 6, 2026, as posted: ICE Salt Lake City arrested Gustavo Rodruguez-Collado a criminal alien from Mexico and known gang member. He was charged with agg. assault w/deadly weapon, robbery, destruction of evidence. He will be held in ICE custody pending his removal.",
+    "photo": "",
+    "via": "@EROSaltLakeCity 2118896972916527277",
+    "sourceUrl": "https://x.com/EROSaltLakeCity/status/2118896972916527277",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "tags": [
+      "Gang"
+    ]
+  },
+  {
     "name": "Luis Benítez Alcántara",
     "city": "Mexico City, MX",
     "crime": "Charged: Luis Benítez Alcántara, 49, of Mexico City, was arrested on Sunday in Colombia. He is charged in a second superseding indictment with nine counts of being an accessory after the fact. Benítez Alcántara was a district judge in Mexico City who allegedly accepted $2 million in exchange for granting bond to and ordering the release of Wedding’s second in command.",

@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-11-06",
+  "asOf": "2026-11-07",
   "windowDays": 7,
-  "total": 201,
+  "total": 203,
   "rows": [
     {
       "id": "dhs-20261102-jose-perez-chaparro-chaparra",
@@ -124,6 +124,18 @@
       "severityCrimes": [
         "Child sex crime",
         "Kidnapping / human trafficking"
+      ]
+    },
+    {
+      "id": "x-2118896972916527277-gustavo-rodruguez-collado",
+      "name": "Gustavo Rodruguez-Collado",
+      "when": "6 Nov 2026",
+      "severity": 149,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons",
+        "Assault / battery"
       ]
     },
     {
@@ -286,17 +298,6 @@
       ]
     },
     {
-      "id": "x-2117736788081127469-jose-ayala",
-      "name": "Jose Ayala",
-      "when": "3 Nov 2026",
-      "severity": 105,
-      "severityReason": "Weapons",
-      "severityCrimes": [
-        "Weapons",
-        "Drug trafficking"
-      ]
-    },
-    {
       "id": "dhs-20261106-bruno-gustavo-hernandez-munuz",
       "name": "Bruno Gustavo Hernandez-Munuz",
       "when": "6 Nov 2026",
@@ -401,6 +402,16 @@
       "name": "William Gonzalez-Luna",
       "when": "2 Nov 2026",
       "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2118901316302835803-miguel-bernal-molina",
+      "name": "Miguel Bernal-Molina",
+      "when": "6 Nov 2026",
+      "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"

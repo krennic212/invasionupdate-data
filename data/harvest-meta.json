@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-06T23:58:26Z",
-  "rows": 1444,
-  "approved": 1426,
+  "updatedAt": "2026-11-07T15:15:13Z",
+  "rows": 1446,
+  "approved": 1428,
   "pending": 18,
   "photos": 389,
-  "reviewRows": 777,
-  "lastAddedAt": "2026-11-06T23:56:57Z",
+  "reviewRows": 778,
+  "lastAddedAt": "2026-11-07T15:14:41Z",
   "lastAddedCount": 2,
   "lastAdded": [
-    "Bryan Silva",
-    "Luis Benítez Alcántara"
+    "Miguel Bernal-Molina",
+    "Gustavo Rodruguez-Collado"
   ],
-  "harvestSha256": "39d0307c3c5ffe1022621319582d0557d035a03e9e5d7e314c473a7f0a9fed62",
+  "harvestSha256": "732426f52ad74712b8feb99810d38d3a1fe138116da57a9525703ce281ea6887",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
