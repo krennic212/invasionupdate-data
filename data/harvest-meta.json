@@ -1,16 +1,18 @@
 {
-  "updatedAt": "2026-11-08T19:11:47Z",
-  "rows": 1457,
-  "approved": 1439,
+  "updatedAt": "2026-11-08T23:14:30Z",
+  "rows": 1461,
+  "approved": 1443,
   "pending": 18,
   "photos": 401,
   "reviewRows": 778,
-  "lastAddedAt": "2026-11-08T15:13:58Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-11-08T23:14:29Z",
+  "lastAddedCount": 4,
   "lastAdded": [
-    "Alvaro Adrian Veliz Gonzalez",
-    "Emar Lopez-Lopez"
+    "Jose Ibarra-Herra",
+    "Sebastian Ibarra-Anaya",
+    "Valentin Castrejon",
+    "Alejandro Galvan Mangana"
   ],
-  "harvestSha256": "334f90fdbdf6535077ec3da1fcc328945e8e08c70516309844ed388696b79f50",
+  "harvestSha256": "d37ea3509a2842b0e199c53f75f4e9e9e0317be2cf3e1cbdb26961887be49813",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
