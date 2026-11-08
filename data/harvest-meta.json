@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-08T15:13:58Z",
+  "updatedAt": "2026-11-08T19:11:47Z",
   "rows": 1457,
   "approved": 1439,
   "pending": 18,
-  "photos": 393,
+  "photos": 401,
   "reviewRows": 778,
   "lastAddedAt": "2026-11-08T15:13:58Z",
   "lastAddedCount": 2,
@@ -11,6 +11,6 @@
     "Alvaro Adrian Veliz Gonzalez",
     "Emar Lopez-Lopez"
   ],
-  "harvestSha256": "0f58b8a0673ef720bc796939547bc45057c7532a4679b994141e516a8978557c",
+  "harvestSha256": "334f90fdbdf6535077ec3da1fcc328945e8e08c70516309844ed388696b79f50",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
