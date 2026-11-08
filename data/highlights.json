@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-07",
   "windowDays": 7,
-  "total": 211,
+  "total": 205,
   "rows": [
     {
       "id": "dhs-20261102-jose-perez-chaparro-chaparra",
@@ -125,17 +125,6 @@
       "severityCrimes": [
         "Murder / manslaughter",
         "Violent crime against a child"
-      ]
-    },
-    {
-      "id": "x-2116938413358166242-jair-fernandes-de-oliveira-junior",
-      "name": "Jair Fernandes De Oliveira Junior",
-      "when": "1 Nov 2026",
-      "severity": 157,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Kidnapping / human trafficking"
       ]
     },
     {
@@ -296,6 +285,17 @@
       "severityCrimes": [
         "Rape / sexual assault",
         "Assault / battery"
+      ]
+    },
+    {
+      "id": "dhs-20261103-danilo-mazariegos-maldonado",
+      "name": "Danilo Mazariegos-Maldonado",
+      "when": "3 Nov 2026",
+      "severity": 116,
+      "severityReason": "Attack on police officer",
+      "severityCrimes": [
+        "Attack on police officer",
+        "DUI"
       ]
     },
     {
