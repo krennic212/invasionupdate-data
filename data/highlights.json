@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-09",
   "windowDays": 7,
-  "total": 130,
+  "total": 131,
   "rows": [
     {
       "id": "x-2119136781740425474-alexander-sanchez-montano",
@@ -313,6 +313,16 @@
       "name": "Leomar Alexander Lopez Zambrano",
       "when": "3 Nov 2026",
       "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2119754740708118576-guillermo-argiro-restrepo-munera",
+      "name": "Guillermo Argiro Restrepo Munera",
+      "when": "9 Nov 2026",
+      "severity": 91,
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"

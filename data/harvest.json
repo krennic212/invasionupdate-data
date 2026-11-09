@@ -1,5 +1,33 @@
 [
   {
+    "name": "Guillermo Argiro Restrepo Munera",
+    "city": "Revere, MA",
+    "crime": "Arrested: ICE Boston arrested Guillermo Argiro Restrepo Munera, a criminal illegal alien from Colombia, during targeted operations in Revere, Mass.",
+    "usa": "ICE X post Nov 9, 2026 (@EROBoston)",
+    "foreign": "Not stated in post",
+    "picked": "11/9/2026 (@EROBoston post)",
+    "entered": "Not stated",
+    "office": "EROBoston",
+    "id": "x-2119754740708118576-guillermo-argiro-restrepo-munera",
+    "when": "9 Nov 2026",
+    "severity": 91,
+    "severityReason": "Child sex crime",
+    "severityCrimes": [
+      "Child sex crime"
+    ],
+    "text": "@EROBoston Nov 9, 2026, as posted: ICE Boston arrested Guillermo Argiro Restrepo Munera, a criminal illegal alien from Colombia, during targeted operations in Revere, Mass. His criminal history includes arrest for two counts of indecent assault and battery on a child under 14,...",
+    "photo": "",
+    "via": "@EROBoston 2119754740708118576",
+    "sourceUrl": "https://x.com/EROBoston/status/2119754740708118576",
+    "voting": false,
+    "origin": "Colombia",
+    "confirmedBy": "ICE",
+    "lat": 42.4138,
+    "lon": -71.0052,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Jose Ibarra-Herra",
     "city": "Mesa, AZ",
     "crime": "Arrested: .@HSI_HQ special agents, including agents from the Arizona Special Response Team, arrested two Mexican citizens in Mesa, Ariz., for alleged human smuggling violations. Sebastian Ibarra-Anaya and Jose Ibarra-Herra were arrested for human smuggling and now are facing federal",
