@@ -1,36 +1,32 @@
 {
-  "checkedAt": 1794248040566,
-  "checkedAtIso": "2026-11-09T18:14:00.566Z",
+  "checkedAt": 1794266416055,
+  "checkedAtIso": "2026-11-09T23:20:16.055Z",
   "added": [
-    "Jose Daniel Antonio Orellana",
-    "Antonio Hernandez-Lincona",
-    "David Estrada-Jerez",
-    "Jose Antonio Maturel-Reyes",
-    "Birgilio Cheluca-Garcia",
-    "Jackson Pata",
-    "Feras Fakhrei Husni Abdelbaqi",
-    "Luis Gonzalez",
-    "Carlos Alberto Sierra-Dominguez",
-    "Aldair Torres-Gutierrez",
-    "Edras Aroeli Lopez-Lopez",
-    "Miguel Fierro-Perez",
-    "Fabian Trevinio-Villarreal"
+    "Sobirjon Sobirov Khusen Ugli",
+    "Julio Cesar Zuniga Luna",
+    "Saiful Islam",
+    "Contreras Villeda",
+    "Seferino Huerta-Casillas",
+    "Jonas Ulloa-Aguilera",
+    "Rosario Cristal Lopez-Saldana",
+    "Franklin Williams Ayala Aguilera",
+    "Pascual Raymundo Loarca",
+    "Juan Alvaro Membreno-Contreras",
+    "Mavis Aleyda Escalante Peraza",
+    "Operation New Day (operation, not a person)"
   ],
   "addedStatus": "approved",
   "heldPending": [],
-  "stageUpdates": [
-    "Heriberto Perez-Velasquez (Arrested -> Convicted)",
-    "Juan Rivas (Arrested -> Convicted)"
-  ],
+  "stageUpdates": [],
   "sameNameReview": {
     "replaced": [],
     "keptBoth": []
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 154,
+  "scannedReleases": 144,
   "error": null,
-  "note": "Added 13 as approved: Jose Daniel Antonio Orellana, Antonio Hernandez-Lincona, David Estrada-Jerez, Jose Antonio Maturel-Reyes, Birgilio Cheluca-Garcia, Jackson Pata, Feras Fakhrei Husni Abdelbaqi, Luis Gonzalez, Carlos Alberto Sierra-Dominguez, Aldair Torres-Gutierrez, Edras Aroeli Lopez-Lopez, Miguel Fierro-Perez, Fabian Trevinio-Villarreal",
+  "note": "Added 12 as approved: Sobirjon Sobirov Khusen Ugli, Julio Cesar Zuniga Luna, Saiful Islam, Contreras Villeda, Seferino Huerta-Casillas, Jonas Ulloa-Aguilera, Rosario Cristal Lopez-Saldana, Franklin Williams Ayala Aguilera, Pascual Raymundo Loarca, Juan Alvaro Membreno-Contreras, Mavis Aleyda Escalante Peraza, Operation New Day (operation, not a person)",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
