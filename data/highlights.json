@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-09",
   "windowDays": 7,
-  "total": 144,
+  "total": 155,
   "rows": [
     {
       "id": "dhs-20261109-jose-antonio-maturel-reyes",
@@ -295,6 +295,16 @@
       "severityCrimes": [
         "Child sex crime",
         "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "x-2119880296808017982-alex-disney-alverez-ordonez",
+      "name": "Alex Disney Alverez Ordonez",
+      "when": "9 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
       ]
     },
     {
