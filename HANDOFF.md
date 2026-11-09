@@ -1,3 +1,8 @@
+## 2026-11-09 (afternoon) Pages publish-before-push (Krennic t125s784: "Yes, re-run and fix the workflow")
+
+- Noon harvest reached 1,478 rows in the repo but live Pages stayed on this morning's 1,462: same mid-run push blocked deploy-pages.
+- .github/workflows/hourly-harvest.yml: upload Pages artifact, deploy-pages, then commit/push only after deploy succeeds (harvest-data artifact handoff). Concurrency group unchanged. No harvest/guard rule changes.
+
 ## 2026-11-09 (morning) foreign-office guard (Krennic card t125s776: "Yes, update that guard")
 
 - scripts/guards.mjs foreignOfficeStated / foreignOfficeFor, used in holdReasons: a foreign public office tied to the defendant's
