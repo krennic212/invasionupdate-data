@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T23:14:30Z",
+  "updatedAt": "2026-11-09T14:53:29Z",
   "rows": 1461,
   "approved": 1443,
   "pending": 18,
@@ -13,6 +13,6 @@
     "Valentin Castrejon",
     "Alejandro Galvan Mangana"
   ],
-  "harvestSha256": "d37ea3509a2842b0e199c53f75f4e9e9e0317be2cf3e1cbdb26961887be49813",
+  "harvestSha256": "d56e7ebd56dc0ee40a1e6bd37deb9c7b6a3b4d56419254dad4592a35e35a3cd9",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

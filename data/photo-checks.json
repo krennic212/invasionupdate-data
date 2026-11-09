@@ -9546,5 +9546,14 @@
     "image": "https://pbs.twimg.com/media/HWmYhvAWkAAyaYU?format=png&name=orig",
     "bytes": 5912,
     "reviewed": "Viewed image: booking headshot, one adult man in gray shirt, plain wall, no other people, no text"
+  },
+  "justice.gov/opa/pr/homeland-security-task-force-investigation-leads-mexican-federal-judges-arrest-us-charges": {
+    "checkedAt": "2026-11-09T14:53:26.479Z",
+    "name": "Luis Benítez Alcántara",
+    "result": "held",
+    "file": "doj-20261105-luis-benitez-alcantara.jpg",
+    "image": "https://www.justice.gov/sites/default/files/2026-11/screenshot_2026-11-05_094245.png",
+    "bytes": 74999,
+    "why": "needs visual check"
   }
 }
