@@ -15,6 +15,7 @@
  */
 import { stripPriors, CONVICT_WORDS, CHARGE_WORDS, isPlaceName, NOT_NAME } from "./parse.mjs";
 import { suspiciousName } from "./names.mjs";
+import { DEMONYMS, COUNTRIES } from "./country.mjs";
 
 const esc = (s) => String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
@@ -202,6 +203,60 @@ export function nonCitizenStatedFor(name, sentence) {
   return mine.some((p) => nonCitizenStated(p));
 }
 
+/**
+ * Krennic 2026-11-09 (card t125s776, "Yes, update that guard"): a foreign public office held by THIS defendant states their
+ * non-citizen status: "Mexican judge", "a Mexican federal judge", "a district judge in Mexico City", "Honduran police officer",
+ * "former Guatemalan official" (OPA Nov 5, 2026, Luis Benítez Alcántara). Narrow on purpose:
+ *  - the office must be tied to the defendant's own name (full name or the surname form the release uses), right before or
+ *    right after it ("<Name>, 49, was a district judge in Mexico City" / "former Guatemalan official <Name>"); a victim,
+ *    witness or official named elsewhere never counts for this person;
+ *  - the demonym must stand alone: "Mexican-American" never counts, nor American / U.S. offices, nor demonyms that can mean
+ *    a U.S. person (Indian, Samoan, Georgian, Micronesian, Marshallese, Palauan);
+ *  - "<office> in <Country>" is limited to offices a foreign government holds (judge, prosecutor, mayor, governor, police,
+ *    legislator, minister, military officer), so a U.S. consular or embassy officer abroad never counts;
+ *  - any U.S.-citizen / naturalized / dual wording about the person still wins (checked by the caller first).
+ */
+const OFFICE_NOT_DEMONYM = new Set(["Indian", "Samoan", "Georgian", "Micronesian", "Marshallese", "Palauan", "Cape"]);
+const escG = (x) => String(x).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const altG = (list) => [...list].sort((a, b) => b.length - a.length).map(escG).join("|");
+const OFFICE_DEM = `(?:${altG(Object.keys(DEMONYMS).filter((k) => DEMONYMS[k] && !OFFICE_NOT_DEMONYM.has(k)))})`;
+const OFFICE_COUNTRY = `(?:${altG([...COUNTRIES].filter((c) => c !== "Georgia" && c !== "Samoa"))})`;
+const OFFICE_MOD = "(?:(?:federal|state|municipal|local|district|circuit|criminal|civil|appeals|appellate|supreme court|high-ranking|senior|top|national|army|military|navy|naval|police|customs|immigration|prison|border|security|government|elected|public|tax|judicial|election|electoral)\\s+){0,3}";
+const OFFICE_ANY = `${OFFICE_MOD}(?:judge|magistrate|justice|prosecutor|attorney general|police(?:\\s+(?:officer|chief|commander|official|agent|director))?|officer|official|agent|mayor|governor|senator|congress(?:man|woman)|legislator|lawmaker|minister|diplomat|consul|ambassador|general|colonel|commander|soldier|president|commissioner|director|chief|civil servant|public servant)s?`;
+const OFFICE_GOV = `${OFFICE_MOD}(?:judge|magistrate|justice|prosecutor|attorney general|police\\s+(?:officer|chief|commander|official|director)|mayor|governor|senator|congress(?:man|woman)|legislator|lawmaker|minister|(?:army|military|navy|naval)\\s+(?:officer|general|colonel|commander))s?`;
+const PREFIX = "(?:(?:a|an|the|former|then-|retired|ex-|sitting|one-time)\\s*)*";
+export function foreignOfficeStated(name, sentence) {
+  const s = String(sentence || "").replace(/\s+/g, " ");
+  const toks = String(name || "").replace(/\b(?:Jr|Sr|II|III|IV)\.?$/i, "").trim().split(/\s+/).filter(Boolean);
+  if (toks.length < 2) return false;
+  const forms = [...new Set([toks.join(" "), toks.slice(1).join(" "), toks.slice(-2).join(" "), toks[toks.length - 1]].filter((f) => f.length > 2))];
+  for (const f of forms) {
+    const N = `(?<![\\p{L}'’-])${escG(f)}(?![\\p{L}'’-])`;
+    const before = new RegExp(`(?<![\\p{L}-])${OFFICE_DEM}\\s+${OFFICE_ANY},?\\s+${N}`, "iu");
+    const after = new RegExp(`${N}(?:,\\s+\\d{1,3})?(?:,\\s+(?:of|from)\\s+[^,]{1,40})?(?:,\\s+|\\s+(?:is|was|who\\s+(?:is|was)|has\\s+been|had\\s+been|served\\s+as)\\s+)${PREFIX}(?:(?<![\\p{L}-])${OFFICE_DEM}\\s+${OFFICE_ANY}|${OFFICE_GOV}\\s+(?:in|of|for)\\s+(?:the\\s+)?(?:(?<!New\\s)${OFFICE_COUNTRY}(?:\\s+City)?|[A-Z][\\p{L}. '’-]{1,40},\\s+${OFFICE_COUNTRY}))(?![\\p{L}-])`, "iu");
+    // Case-sensitive demonym / country words; the "i" flag is only for the office words.
+    for (const re of [before, after]) {
+      const m = s.match(re);
+      if (!m) continue;
+      if (/-American\b/.test(s.slice(m.index, m.index + m[0].length + 10))) continue;
+      if (!new RegExp(`(?<![\\p{L}-])(?:${OFFICE_DEM}|${OFFICE_COUNTRY})(?![\\p{L}]|-American)`, "u").test(m[0])) continue;
+      if (/\bPanama City\b/.test(m[0])) continue;
+      return true;
+    }
+  }
+  return false;
+}
+
+/** Foreign office for this person, unless the person's own clause (or the sentence) has U.S.-citizen wording. */
+export function foreignOfficeFor(name, sentence) {
+  const s = String(sentence || "");
+  const last = String(name || "").trim().split(/\s+/).slice(-1)[0] || "";
+  const parts = /;\s/.test(s) ? s.split(/;\s+/).filter((p) => p.includes(name) || (last && p.includes(last))) : [s];
+  const clauses = parts.length ? parts : [s];
+  if (clauses.some((p) => CITIZEN_OVERRIDE.test(stripVictimIdentity(p).replace(CITIZEN_CLAIM, " ")))) return false;
+  return clauses.some((p) => foreignOfficeStated(name, p));
+}
+
 /** All reasons a row must stay pending (empty array = may be auto-approved). */
 export function holdReasons({ name, sentence, title = "", releaseText = "", label = "", mononym = false }) {
   const out = [];
@@ -212,7 +267,7 @@ export function holdReasons({ name, sentence, title = "", releaseText = "", labe
   if (isMinor(name, sentence, title)) out.push("possible minor / juvenile");
   if (!stageOk(label, sentence, title)) out.push(`stage: label "${label}" is later than the source wording`);
   if (atLarge(sentence, releaseText, name)) out.push("suspect described as still at large");
-  if (!nonCitizenStatedFor(name, sentence) && !denaturalizedStated(`${sentence} ${releaseText}`) && !deportedStated(`${sentence} ${releaseText}`)) out.push("not stated to be a non-citizen");
+  if (!nonCitizenStatedFor(name, sentence) && !denaturalizedStated(`${sentence} ${releaseText}`) && !deportedStated(`${sentence} ${releaseText}`) && !foreignOfficeFor(name, sentence)) out.push("not stated to be a non-citizen");
   return out;
 }
 

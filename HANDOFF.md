@@ -1,3 +1,16 @@
+## 2026-11-09 (morning) foreign-office guard (Krennic card t125s776: "Yes, update that guard")
+
+- scripts/guards.mjs foreignOfficeStated / foreignOfficeFor, used in holdReasons: a foreign public office tied to the defendant's
+  own name states non-citizen status ("<Name>, 51, a Mexican federal judge", "former Guatemalan official <Name>", "<Name> was a
+  district judge in Mexico City", "a Honduran police officer"). Only right before / after the person's name (full or surname
+  form); never a victim, witness or other official. "Mexican-American", U.S. offices, "in New Mexico", "Panama City", consular /
+  embassy officers abroad, and demonyms that can mean a U.S. person (Indian, Samoan, Georgian, Micronesian, Marshallese,
+  Palauan) never count. Any U.S.-citizen / naturalized / dual wording in the person's clause still wins.
+- Luis Benítez Alcántara (doj-20261105-luis-benitez-alcantara, approved by id Nov 5) now passes the guard on his own; one row.
+- Dry run (old vs new): live feed 1461 rows, last 400 DOJ API releases, pending (empty), full DOJ corpus (35,931): only change
+  is Benítez's guard recheck (hold -> pass). 0 new rows, 0 removals, 0 demotions. Rows 1461 -> 1461.
+- Tests: scripts/rules-1109.test.mjs (4). Full suite 309/309.
+
 ## 2026-11-06 (evening) daily missed-cases check
 
 - Approved by id: Luis Benítez Alcántara (hold was "not stated to be a non-citizen"; release says Mexican judge / Mexico City). Rule fix (count demonym+office title) needs Krennic yes.
