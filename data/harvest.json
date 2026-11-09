@@ -387,7 +387,7 @@
     "severityReason": "",
     "severityCrimes": [],
     "text": "@EROSanFrancisco Nov 9, 2026, as posted: ICE San Francisco arrested illegal alien Igor Andreevich, 25, of Russia, in East Palo Alto, CA. He has a pending charge for economic espionage. He was turned over to a federal agency for prosecution.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2119854029316485248-igor-andreevich.jpg",
     "via": "@EROSanFrancisco 2119854029316485248",
     "sourceUrl": "https://x.com/EROSanFrancisco/status/2119854029316485248",
     "voting": false,
@@ -396,7 +396,8 @@
     "lat": 37.4678,
     "lon": -122.1325,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWdfWwMbIAA8G3S?format=png&name=orig"
   },
   {
     "name": "Octavio Jorge Cortes-Jiminez",

@@ -9633,5 +9633,26 @@
     "name": "Fabian Trevinio-Villarreal",
     "result": "none",
     "why": "multi-person release: no image names this person"
+  },
+  "x.com/eroboston/status/2119754740708118576": {
+    "checkedAt": "2026-11-09T19:10:55.201Z",
+    "name": "Guillermo Argiro Restrepo Munera",
+    "result": "none",
+    "why": "Arrest scene: handcuffed outdoors beside an officer (partial second person), not a plain booking photo"
+  },
+  "x.com/ero__phoenix/status/2119837427179086033": {
+    "checkedAt": "2026-11-09T19:10:55.332Z",
+    "name": "Lorenzo Sotelo-Vasquez",
+    "result": "none",
+    "why": "ICE graphic card with text overlay, man seated in vehicle"
+  },
+  "x.com/erosanfrancisco/status/2119854029316485248": {
+    "checkedAt": "2026-11-09T19:10:55.630Z",
+    "name": "Igor Andreevich",
+    "result": "photo",
+    "file": "x-2119854029316485248-igor-andreevich.jpg",
+    "image": "https://pbs.twimg.com/media/HWdfWwMbIAA8G3S?format=png&name=orig",
+    "bytes": 13604,
+    "reviewed": "Viewed image: plain close-up headshot of one adult man, no text, no other people"
   }
 }

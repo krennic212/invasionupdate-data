@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-09T18:14:16Z",
+  "updatedAt": "2026-11-09T19:10:55Z",
   "rows": 1478,
   "approved": 1460,
   "pending": 18,
-  "photos": 401,
+  "photos": 402,
   "reviewRows": 778,
   "lastAddedAt": "2026-11-09T18:14:00Z",
   "lastAddedCount": 13,
@@ -22,6 +22,6 @@
     "Miguel Fierro-Perez",
     "Fabian Trevinio-Villarreal"
   ],
-  "harvestSha256": "937b87d574da98fcf802131cedb5964e89f93d278b8aad655176bc52bd63e09a",
+  "harvestSha256": "f11a792a8732c265c337a414fd0e0efd78761a6ec08f93e97104a9e0a726ed9f",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
