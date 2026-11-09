@@ -1,15 +1,17 @@
 {
-  "updatedAt": "2026-11-09T15:12:04Z",
-  "rows": 1462,
-  "approved": 1444,
+  "updatedAt": "2026-11-09T18:10:19Z",
+  "rows": 1465,
+  "approved": 1447,
   "pending": 18,
   "photos": 401,
   "reviewRows": 778,
-  "lastAddedAt": "2026-11-09T15:12:04Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-11-09T18:10:19Z",
+  "lastAddedCount": 3,
   "lastAdded": [
-    "Guillermo Argiro Restrepo Munera"
+    "Igor Andreevich",
+    "Octavio Jorge Cortes-Jiminez",
+    "Lorenzo Sotelo-Vasquez"
   ],
-  "harvestSha256": "c2f298509bdacbddc82b078343c4e5fe265edda5adbd517cbab9124961c12610",
+  "harvestSha256": "2de467b84ca4952a7678556677cab5e6a5996447b790ef3a0f095efa9ea2b874",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
