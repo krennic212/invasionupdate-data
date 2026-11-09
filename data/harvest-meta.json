@@ -1,17 +1,27 @@
 {
-  "updatedAt": "2026-11-09T18:10:19Z",
-  "rows": 1465,
-  "approved": 1447,
+  "updatedAt": "2026-11-09T18:14:16Z",
+  "rows": 1478,
+  "approved": 1460,
   "pending": 18,
   "photos": 401,
   "reviewRows": 778,
-  "lastAddedAt": "2026-11-09T18:10:19Z",
-  "lastAddedCount": 3,
+  "lastAddedAt": "2026-11-09T18:14:00Z",
+  "lastAddedCount": 13,
   "lastAdded": [
-    "Igor Andreevich",
-    "Octavio Jorge Cortes-Jiminez",
-    "Lorenzo Sotelo-Vasquez"
+    "Jose Daniel Antonio Orellana",
+    "Antonio Hernandez-Lincona",
+    "David Estrada-Jerez",
+    "Jose Antonio Maturel-Reyes",
+    "Birgilio Cheluca-Garcia",
+    "Jackson Pata",
+    "Feras Fakhrei Husni Abdelbaqi",
+    "Luis Gonzalez",
+    "Carlos Alberto Sierra-Dominguez",
+    "Aldair Torres-Gutierrez",
+    "Edras Aroeli Lopez-Lopez",
+    "Miguel Fierro-Perez",
+    "Fabian Trevinio-Villarreal"
   ],
-  "harvestSha256": "2de467b84ca4952a7678556677cab5e6a5996447b790ef3a0f095efa9ea2b874",
+  "harvestSha256": "937b87d574da98fcf802131cedb5964e89f93d278b8aad655176bc52bd63e09a",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

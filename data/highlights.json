@@ -1,8 +1,20 @@
 {
   "asOf": "2026-11-09",
   "windowDays": 7,
-  "total": 131,
+  "total": 144,
   "rows": [
+    {
+      "id": "dhs-20261109-jose-antonio-maturel-reyes",
+      "name": "Jose Antonio Maturel-Reyes",
+      "when": "9 Nov 2026",
+      "severity": 187,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Fraud (incl. voter fraud)",
+        "Burglary / theft"
+      ]
+    },
     {
       "id": "x-2119136781740425474-alexander-sanchez-montano",
       "name": "Alexander Sanchez Montano",
@@ -13,6 +25,17 @@
         "Murder / manslaughter",
         "Weapons",
         "Burglary / theft"
+      ]
+    },
+    {
+      "id": "dhs-20261109-david-estrada-jerez",
+      "name": "David Estrada-Jerez",
+      "when": "9 Nov 2026",
+      "severity": 182,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Rape / sexual assault"
       ]
     },
     {
@@ -27,6 +50,17 @@
       ]
     },
     {
+      "id": "dhs-20261109-jackson-pata",
+      "name": "Jackson Pata",
+      "when": "9 Nov 2026",
+      "severity": 172,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Kidnapping / human trafficking"
+      ]
+    },
+    {
       "id": "x-2119550541797712139-valentin-castrejon",
       "name": "Valentin Castrejon",
       "when": "8 Nov 2026",
@@ -35,6 +69,29 @@
       "severityCrimes": [
         "Child sex crime",
         "Rape / sexual assault"
+      ]
+    },
+    {
+      "id": "dhs-20261109-luis-gonzalez",
+      "name": "Luis Gonzalez",
+      "when": "9 Nov 2026",
+      "severity": 160,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Fraud (incl. voter fraud)",
+        "Drug possession"
+      ]
+    },
+    {
+      "id": "x-2118735615709888595-juan-rivas",
+      "name": "Juan Rivas",
+      "when": "6 Nov 2026",
+      "severity": 150,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Weapons"
       ]
     },
     {
@@ -175,6 +232,17 @@
       ]
     },
     {
+      "id": "dhs-20261109-carlos-alberto-sierra-dominguez",
+      "name": "Carlos Alberto Sierra-Dominguez",
+      "when": "9 Nov 2026",
+      "severity": 110,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Assault / battery"
+      ]
+    },
+    {
       "id": "doj-20261104-conrod-davy",
       "name": "CONROD DAVY",
       "when": "4 Nov 2026",
@@ -219,33 +287,24 @@
       ]
     },
     {
-      "id": "x-2118667930607161473-gamal-mohamed-abdeltawab-elsharkawai",
-      "name": "Gamal Mohamed Abdeltawab Elsharkawai",
-      "when": "6 Nov 2026",
+      "id": "dhs-20261109-antonio-hernandez-lincona",
+      "name": "Antonio Hernandez-Lincona",
+      "when": "9 Nov 2026",
       "severity": 97,
-      "severityReason": "Rape / sexual assault",
+      "severityReason": "Child sex crime",
       "severityCrimes": [
-        "Rape / sexual assault"
+        "Child sex crime",
+        "Illegal entry / reentry"
       ]
     },
     {
-      "id": "x-2118740160779317500-guillermo-torres-hernandez",
-      "name": "Guillermo Torres-Hernandez",
-      "when": "6 Nov 2026",
-      "severity": 95,
-      "severityReason": "Murder / manslaughter",
+      "id": "dhs-20261109-birgilio-cheluca-garcia",
+      "name": "Birgilio Cheluca-Garcia",
+      "when": "9 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
       "severityCrimes": [
-        "Murder / manslaughter"
-      ]
-    },
-    {
-      "id": "x-2117736773186883935-ever-anselmo-torres-aleman",
-      "name": "Ever Anselmo Torres-Aleman",
-      "when": "3 Nov 2026",
-      "severity": 95,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter"
+        "Child sex crime"
       ]
     },
     {

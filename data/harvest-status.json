@@ -1,19 +1,36 @@
 {
-  "checkedAt": 1794236002129,
-  "checkedAtIso": "2026-11-09T14:53:22.129Z",
-  "added": [],
+  "checkedAt": 1794248040566,
+  "checkedAtIso": "2026-11-09T18:14:00.566Z",
+  "added": [
+    "Jose Daniel Antonio Orellana",
+    "Antonio Hernandez-Lincona",
+    "David Estrada-Jerez",
+    "Jose Antonio Maturel-Reyes",
+    "Birgilio Cheluca-Garcia",
+    "Jackson Pata",
+    "Feras Fakhrei Husni Abdelbaqi",
+    "Luis Gonzalez",
+    "Carlos Alberto Sierra-Dominguez",
+    "Aldair Torres-Gutierrez",
+    "Edras Aroeli Lopez-Lopez",
+    "Miguel Fierro-Perez",
+    "Fabian Trevinio-Villarreal"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
-  "stageUpdates": [],
+  "stageUpdates": [
+    "Heriberto Perez-Velasquez (Arrested -> Convicted)",
+    "Juan Rivas (Arrested -> Convicted)"
+  ],
   "sameNameReview": {
     "replaced": [],
     "keptBoth": []
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 155,
+  "scannedReleases": 154,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 13 as approved: Jose Daniel Antonio Orellana, Antonio Hernandez-Lincona, David Estrada-Jerez, Jose Antonio Maturel-Reyes, Birgilio Cheluca-Garcia, Jackson Pata, Feras Fakhrei Husni Abdelbaqi, Luis Gonzalez, Carlos Alberto Sierra-Dominguez, Aldair Torres-Gutierrez, Edras Aroeli Lopez-Lopez, Miguel Fierro-Perez, Fabian Trevinio-Villarreal",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
