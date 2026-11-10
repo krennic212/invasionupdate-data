@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-11-10T19:13:57Z",
-  "rows": 1522,
-  "approved": 1499,
+  "updatedAt": "2026-11-10T21:16:23Z",
+  "rows": 1526,
+  "approved": 1503,
   "pending": 23,
   "photos": 404,
   "reviewRows": 777,
-  "lastAddedAt": "2026-11-10T19:13:52Z",
+  "lastAddedAt": "2026-11-10T21:16:16Z",
   "lastAddedCount": 4,
   "lastAdded": [
-    "Juan Fernando Lara Saavedra",
-    "David Alejandro Vera Belandia",
-    "Santiago Lopez Diaz",
-    "Rogelio Ramos Celedon"
+    "Traian Anghel",
+    "MOHSEN MOHAJERI",
+    "MOHAMMED ALI AL-HASSANI",
+    "Gerardo Miranda Mendoza"
   ],
-  "harvestSha256": "d65b934faf2d710dd10cf83274a70c1fa0a64009247dc9ca3c8696dc26d8493d",
+  "harvestSha256": "4961e70dcccd0317610a40a3048b0498c6766bfb4e94bb750417872c3cf14f49",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
