@@ -403,5 +403,27 @@
     "text": "USAO_NDIN 10 Nov 2026, as posted: Operation Summit City Sweep Operation Summit City Sweep The success of Operation Summit City Sweep highlights the critical role of Task Force Officers (TFOs). Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true,
     "people": []
+  },
+  {
+    "id": "op-thejusticedept-20261110-operation-tequila-sunset",
+    "name": "Operation Tequila Sunset",
+    "when": "10 Nov 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/usao-wdtx/pr/federal-judge-del-rio-sentences-prm-general-25-years-federal-prison-drug-trafficking",
+    "people": [],
+    "text": "TheJusticeDept 10 Nov 2026, as posted: The DEA and FBI led the investigation, known as Operation Tequila Sunset. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
+  },
+  {
+    "id": "op-thejusticedept-20261110-operation-summit-city-sweep-fort-wayne",
+    "name": "Operation Summit City Sweep FORT WAYNE",
+    "when": "10 Nov 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/usao-ndin/pr/us-attorney-atf-state-and-local-law-enforcement-partners-announce-results-operation",
+    "people": [],
+    "text": "TheJusticeDept 10 Nov 2026, as posted: Attorney, ATF, State and Local Law Enforcement Partners announce results of Operation Summit City Sweep FORT WAYNE – Adam Mildred, the U. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
   }
 ]
