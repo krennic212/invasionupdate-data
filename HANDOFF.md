@@ -1,3 +1,8 @@
+## 2026-11-10 (morning) Publish commit guard (Krennic t137s843: "Yes, fix both workflows and re-run Fraud Ledger")
+
+- Same deploy-then-commit workflow as Fraud Ledger. Artifact layout is already correct here: upload of the `data` directory plus scripts/city-geo*.json preserves the data/ and scripts/ prefixes, so download path: `.` is right (do not use path: data — that would nest data/data/).
+- .github/workflows/hourly-harvest.yml: commit step exits 0 if nothing is staged. Download path unchanged. Deploy-then-commit order unchanged. No harvest/guard rule changes.
+
 ## 2026-11-09 (afternoon) Pages publish-before-push (Krennic t125s784: "Yes, re-run and fix the workflow")
 
 - Noon harvest reached 1,478 rows in the repo but live Pages stayed on this morning's 1,462: same mid-run push blocked deploy-pages.
