@@ -1,26 +1,43 @@
 {
-  "checkedAt": 1794330964191,
-  "checkedAtIso": "2026-11-10T17:16:04.191Z",
+  "checkedAt": 1794338032061,
+  "checkedAtIso": "2026-11-10T19:13:52.061Z",
   "added": [
-    "Gustavo Rodriguez-Callado",
-    "Juan Contreras-Saucedo",
-    "Jose Adrian Mejia-Garcia",
-    "Poeurt Nhean",
-    "Manuel Francisco Tasama-Portilla",
-    "Ronny Guanipa-Chrinos"
+    "Hamed Mohammed Hamed Alsaidi",
+    "Giovanna Mercedes Moreno Occhipinti",
+    "Radule Bojovic",
+    "Luis Mendoza-Gonzalez",
+    "Julio Cucul-Bol",
+    "Juan Fernando Lara Saavedra",
+    "David Alejandro Vera Belandia",
+    "Santiago Lopez Diaz",
+    "Rogelio Ramos Celedon",
+    "Operation Midway Blitz (operation, not a person)"
   ],
   "addedStatus": "approved",
-  "heldPending": [],
+  "heldPending": [
+    "Hamed Mohammed Hamed Alsaidi (suspect described as still at large)",
+    "Giovanna Mercedes Moreno Occhipinti (suspect described as still at large)",
+    "Radule Bojovic (suspect described as still at large)",
+    "Luis Mendoza-Gonzalez (suspect described as still at large)",
+    "Julio Cucul-Bol (suspect described as still at large)"
+  ],
   "stageUpdates": [],
   "sameNameReview": {
-    "replaced": [],
+    "replaced": [
+      {
+        "reviewId": "1947075235611619418",
+        "name": "Luis Mendoza-Gonzalez",
+        "liveId": "dhs-20261110-luis-mendoza-gonzalez",
+        "why": "same country (Mexico) and same case wording: the body / body of / megan bos"
+      }
+    ],
     "keptBoth": []
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 140,
+  "scannedReleases": 144,
   "error": null,
-  "note": "Added 6 as approved: Gustavo Rodriguez-Callado, Juan Contreras-Saucedo, Jose Adrian Mejia-Garcia, Poeurt Nhean, Manuel Francisco Tasama-Portilla, Ronny Guanipa-Chrinos",
+  "note": "Added 10 as approved: Hamed Mohammed Hamed Alsaidi, Giovanna Mercedes Moreno Occhipinti, Radule Bojovic, Luis Mendoza-Gonzalez, Julio Cucul-Bol, Juan Fernando Lara Saavedra, David Alejandro Vera Belandia, Santiago Lopez Diaz, Rogelio Ramos Celedon, Operation Midway Blitz (operation, not a person)",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

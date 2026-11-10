@@ -375,5 +375,22 @@
     "people": [],
     "text": "TheJusticeDept 9 Nov 2026, as posted: Operation New Day concludes with 141 defendants federally charged in Fort Worth public safety push FORT WORTH, Texas — United States Attorney for the Northern District of Texas Ryan Raybould in a press conference today announced the conclusion of Operation New Day, a public safety public safety initiative launched by federal prosecutors, in coordination with federal and local law enforcement partners, to address dangerous criminal offenders in Fort Worth communities. Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true
+  },
+  {
+    "id": "op-dhsgov-20261110-operation-midway-blitz",
+    "name": "Operation Midway Blitz",
+    "when": "10 Nov 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.dhs.gov/news/2026/11/10/sanctuary-insanity-dhs-condemns-sanctuary-politicians-illinois-releasing-violent",
+    "people": [
+      "dhs-20261110-hamed-mohammed-hamed-alsaidi",
+      "dhs-20261110-giovanna-mercedes-moreno-occhipinti",
+      "dhs-20261110-radule-bojovic",
+      "dhs-20261110-luis-mendoza-gonzalez",
+      "dhs-20261110-julio-cucul-bol"
+    ],
+    "text": "DHSgov 10 Nov 2026, as posted: Operation Midway Blitz was launched in September 2025 in Katie’s honor. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
   }
 ]

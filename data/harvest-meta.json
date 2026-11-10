@@ -1,15 +1,18 @@
 {
-  "updatedAt": "2026-11-10T19:12:42Z",
-  "rows": 1513,
-  "approved": 1495,
-  "pending": 18,
+  "updatedAt": "2026-11-10T19:13:57Z",
+  "rows": 1522,
+  "approved": 1499,
+  "pending": 23,
   "photos": 404,
-  "reviewRows": 778,
-  "lastAddedAt": "2026-11-10T18:08:05Z",
-  "lastAddedCount": 1,
+  "reviewRows": 777,
+  "lastAddedAt": "2026-11-10T19:13:52Z",
+  "lastAddedCount": 4,
   "lastAdded": [
-    "Milton Gustovo Benegas-Reyes"
+    "Juan Fernando Lara Saavedra",
+    "David Alejandro Vera Belandia",
+    "Santiago Lopez Diaz",
+    "Rogelio Ramos Celedon"
   ],
-  "harvestSha256": "83fac7fdc029d7c666d5a6d55d0860c242e390fa08d24abd1766a9315602a50b",
+  "harvestSha256": "d65b934faf2d710dd10cf83274a70c1fa0a64009247dc9ca3c8696dc26d8493d",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
