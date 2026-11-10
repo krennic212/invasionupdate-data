@@ -392,5 +392,16 @@
     ],
     "text": "DHSgov 10 Nov 2026, as posted: Operation Midway Blitz was launched in September 2025 in Katie’s honor. Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true
+  },
+  {
+    "id": "op-usao_ndin-20261110-operation-summit-city-sweep-operation-summit",
+    "name": "Operation Summit City Sweep Operation Summit",
+    "when": "10 Nov 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://x.com/USAO_NDIN/status/2120252644950171936",
+    "text": "USAO_NDIN 10 Nov 2026, as posted: Operation Summit City Sweep Operation Summit City Sweep The success of Operation Summit City Sweep highlights the critical role of Task Force Officers (TFOs). Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true,
+    "people": []
   }
 ]

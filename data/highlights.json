@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-10",
   "windowDays": 7,
-  "total": 144,
+  "total": 156,
   "rows": [
     {
       "id": "dhs-20261109-jose-antonio-maturel-reyes",
@@ -25,6 +25,17 @@
         "Murder / manslaughter",
         "Weapons",
         "Burglary / theft"
+      ]
+    },
+    {
+      "id": "x-2120225919143203235-jose-gonzalez",
+      "name": "Jose Gonzalez",
+      "when": "10 Nov 2026",
+      "severity": 182,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Rape / sexual assault"
       ]
     },
     {
@@ -61,6 +72,17 @@
       ]
     },
     {
+      "id": "x-2120225907264704816-ramon-grajales-barbis",
+      "name": "Ramon Grajales-Barbis",
+      "when": "10 Nov 2026",
+      "severity": 172,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Kidnapping / human trafficking"
+      ]
+    },
+    {
       "id": "dhs-20261109-jackson-pata",
       "name": "Jackson Pata",
       "when": "9 Nov 2026",
@@ -69,6 +91,17 @@
       "severityCrimes": [
         "Rape / sexual assault",
         "Kidnapping / human trafficking"
+      ]
+    },
+    {
+      "id": "x-2120225893226319936-jose-martin-quinones-castro",
+      "name": "Jose Martin Quinones-Castro",
+      "when": "10 Nov 2026",
+      "severity": 168,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Assault / battery"
       ]
     },
     {
@@ -187,6 +220,17 @@
       ]
     },
     {
+      "id": "x-2120225909663817765-angel-cornejo-romero",
+      "name": "Angel Cornejo Romero",
+      "when": "10 Nov 2026",
+      "severity": 130,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Assault / battery"
+      ]
+    },
+    {
       "id": "x-2119138075700060660-dinh-nguyen",
       "name": "Dinh Nguyen",
       "when": "7 Nov 2026",
@@ -242,50 +286,6 @@
       "severityCrimes": [
         "Kidnapping / human trafficking",
         "Burglary / theft"
-      ]
-    },
-    {
-      "id": "x-2118431107704053985-reynaldo-hoel-mayna",
-      "name": "Reynaldo Hoel Mayna",
-      "when": "5 Nov 2026",
-      "severity": 117,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Assault / battery"
-      ]
-    },
-    {
-      "id": "dhs-20261109-carlos-alberto-sierra-dominguez",
-      "name": "Carlos Alberto Sierra-Dominguez",
-      "when": "9 Nov 2026",
-      "severity": 110,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Assault / battery"
-      ]
-    },
-    {
-      "id": "doj-20261104-conrod-davy",
-      "name": "CONROD DAVY",
-      "when": "4 Nov 2026",
-      "severity": 110,
-      "severityReason": "Fraud (incl. voter fraud)",
-      "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Drug trafficking"
-      ]
-    },
-    {
-      "id": "x-2118440213274096116-cristian-antonio-valle-acosta",
-      "name": "Cristian Antonio Valle-Acosta",
-      "when": "5 Nov 2026",
-      "severity": 99,
-      "severityReason": "Fraud (incl. voter fraud)",
-      "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Drug trafficking"
       ]
     },
     {

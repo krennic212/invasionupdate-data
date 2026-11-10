@@ -1,18 +1,27 @@
 {
-  "updatedAt": "2026-11-10T21:16:23Z",
-  "rows": 1526,
-  "approved": 1503,
+  "updatedAt": "2026-11-10T23:13:14Z",
+  "rows": 1539,
+  "approved": 1516,
   "pending": 23,
   "photos": 404,
   "reviewRows": 777,
-  "lastAddedAt": "2026-11-10T21:16:16Z",
-  "lastAddedCount": 4,
+  "lastAddedAt": "2026-11-10T23:13:14Z",
+  "lastAddedCount": 13,
   "lastAdded": [
-    "Traian Anghel",
-    "MOHSEN MOHAJERI",
-    "MOHAMMED ALI AL-HASSANI",
-    "Gerardo Miranda Mendoza"
+    "Gabriel Carreno-Martinez",
+    "Bogar Arroyo-Garibay",
+    "Thiago Lacerda Araujo",
+    "Jose Gonzalez",
+    "Eulises Reyes-Parra",
+    "Jaime Perez-Sanchez",
+    "Angel Cornejo Romero",
+    "Ramon Grajales-Barbis",
+    "Pedro De Jesus Figueroa-Roman",
+    "Rolando Salomon Garza-Aguirre",
+    "Jenifer Beltran Arredondo",
+    "Jose Martin Quinones-Castro",
+    "Jose Rosales-Ayala"
   ],
-  "harvestSha256": "4961e70dcccd0317610a40a3048b0498c6766bfb4e94bb750417872c3cf14f49",
+  "harvestSha256": "d62f40f95542ccffecbb75713824ac29a0239c1f49087e62a3666cd2f1732faf",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
