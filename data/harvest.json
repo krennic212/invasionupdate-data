@@ -1,5 +1,35 @@
 [
   {
+    "name": "Milton Gustovo Benegas-Reyes",
+    "city": "Not stated",
+    "crime": "Arrested: 🚨ICE Los Angeles arrested criminal illegal alien Milton Gustovo Benegas-Reyes, 22, of Honduras, Nov. 9.",
+    "usa": "ICE X post Nov 10, 2026 (@EROLosAngeles)",
+    "foreign": "Not stated in post",
+    "picked": "11/10/2026 (@EROLosAngeles post)",
+    "entered": "Not stated",
+    "office": "EROLosAngeles",
+    "id": "x-2120201558818480486-milton-gustovo-benegas-reyes",
+    "when": "10 Nov 2026",
+    "severity": 131,
+    "severityReason": "Armed robbery / aggravated assault",
+    "severityCrimes": [
+      "Armed robbery / aggravated assault",
+      "Assault / battery",
+      "Burglary / theft"
+    ],
+    "text": "@EROLosAngeles Nov 10, 2026, as posted: 🚨ICE Los Angeles arrested criminal illegal alien Milton Gustovo Benegas-Reyes, 22, of Honduras, Nov. 9. Benegas’ criminal record includes arrest for robbery, burglary, inflicting corporal injury on a spouse and assault with a deadly weapon. His is in ICE custody pending removal.",
+    "photo": "",
+    "via": "@EROLosAngeles 2120201558818480486",
+    "sourceUrl": "https://x.com/EROLosAngeles/status/2120201558818480486",
+    "voting": false,
+    "origin": "Honduras",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Gustavo Rodriguez-Callado",
     "city": "Caldwell, ID",
     "crime": "Convicted: Gustavo Rodriguez-Callado, a criminal illegal alien from Mexico, convicted for second-degree murder, THREE counts of aggravated assault, and robbery in Caldwell, Idaho.",
