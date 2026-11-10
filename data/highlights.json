@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-11-09",
+  "asOf": "2026-11-10",
   "windowDays": 7,
-  "total": 157,
+  "total": 133,
   "rows": [
     {
       "id": "dhs-20261109-jose-antonio-maturel-reyes",
@@ -58,6 +58,17 @@
       "severityCrimes": [
         "Rape / sexual assault",
         "Kidnapping / human trafficking"
+      ]
+    },
+    {
+      "id": "x-2120162268260491346-kovi-bryan-carrillo-flores",
+      "name": "Kovi Bryan Carrillo-Flores",
+      "when": "10 Nov 2026",
+      "severity": 164,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Rape / sexual assault"
       ]
     },
     {
@@ -188,17 +199,6 @@
       ]
     },
     {
-      "id": "dhs-20261103-aepod-saysanom",
-      "name": "Aepod Saysanom",
-      "when": "3 Nov 2026",
-      "severity": 118,
-      "severityReason": "Attack on police officer",
-      "severityCrimes": [
-        "Attack on police officer",
-        "Drug possession"
-      ]
-    },
-    {
       "id": "x-2119138723468386434-noi-ly",
       "name": "Noi Ly",
       "when": "7 Nov 2026",
@@ -221,17 +221,6 @@
       ]
     },
     {
-      "id": "dhs-20261103-danilo-mazariegos-maldonado",
-      "name": "Danilo Mazariegos-Maldonado",
-      "when": "3 Nov 2026",
-      "severity": 116,
-      "severityReason": "Attack on police officer",
-      "severityCrimes": [
-        "Attack on police officer",
-        "DUI"
-      ]
-    },
-    {
       "id": "dhs-20261109-carlos-alberto-sierra-dominguez",
       "name": "Carlos Alberto Sierra-Dominguez",
       "when": "9 Nov 2026",
@@ -250,17 +239,6 @@
       "severityReason": "Fraud (incl. voter fraud)",
       "severityCrimes": [
         "Fraud (incl. voter fraud)",
-        "Drug trafficking"
-      ]
-    },
-    {
-      "id": "x-2117736788081127469-jose-ayala",
-      "name": "Jose Ayala",
-      "when": "3 Nov 2026",
-      "severity": 105,
-      "severityReason": "Weapons",
-      "severityCrimes": [
-        "Weapons",
         "Drug trafficking"
       ]
     },
@@ -295,6 +273,16 @@
       "severityCrimes": [
         "Child sex crime",
         "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "x-2118667930607161473-gamal-mohamed-abdeltawab-elsharkawai",
+      "name": "Gamal Mohamed Abdeltawab Elsharkawai",
+      "when": "6 Nov 2026",
+      "severity": 97,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault"
       ]
     },
     {
@@ -351,36 +339,6 @@
       "id": "dhs-20261105-phaisan-pongkiatsakun",
       "name": "Phaisan Pongkiatsakun",
       "when": "5 Nov 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261103-abel-garcia-flores",
-      "name": "Abel Garcia-Flores",
-      "when": "3 Nov 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2117736779054977043-jesus-moran-medel",
-      "name": "Jesus Moran Medel",
-      "when": "3 Nov 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2117671561134010819-leomar-alexander-lopez-zambrano",
-      "name": "Leomar Alexander Lopez Zambrano",
-      "when": "3 Nov 2026",
       "severity": 92,
       "severityReason": "Child sex crime",
       "severityCrimes": [

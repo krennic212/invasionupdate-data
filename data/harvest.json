@@ -1,5 +1,64 @@
 [
   {
+    "name": "Kovi Bryan Carrillo-Flores",
+    "city": "Not stated",
+    "crime": "Charged: Kovi Bryan Carrillo-Flores, a Guatemalan illegal alien, faces four felony rape charges involving a 16-year-old girl.",
+    "usa": "ICE X post Nov 10, 2026 (@ICEgov)",
+    "foreign": "Not stated in post",
+    "picked": "11/10/2026 (@ICEgov post)",
+    "entered": "Not stated",
+    "office": "ICEgov",
+    "id": "x-2120162268260491346-kovi-bryan-carrillo-flores",
+    "when": "10 Nov 2026",
+    "severity": 164,
+    "severityReason": "Child sex crime",
+    "severityCrimes": [
+      "Child sex crime",
+      "Rape / sexual assault"
+    ],
+    "text": "@ICEgov Nov 10, 2026, as posted: ANOTHER ILLEGAL ALIEN CHARGED WITH RAPE IN SANCTUARY NEW YORK Kovi Bryan Carrillo-Flores, a Guatemalan illegal alien, faces four felony rape charges involving a 16-year-old girl. During his arrest, he bit one police detective and injured another. ICE lodged a detainer requesting custody upon his release. Heinous crimes continue in states like New York, where sanctuary policies create a hotbed for illegal alien crime and innocent victims pay the price. When cities and states work WITH ICE rather than against us, Americans are safer. ICE will continue fighting every day to get criminal illegal aliens off our streets and protect American communities.",
+    "photo": "",
+    "via": "@ICEgov 2120162268260491346",
+    "sourceUrl": "https://x.com/ICEgov/status/2120162268260491346",
+    "voting": false,
+    "origin": "Guatemala",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "tags": []
+  },
+  {
+    "name": "Jose Contreras",
+    "city": "Hartford, CT",
+    "crime": "Arrested: On Sept. 15, ICE Boston arrested Jose Contreras, a criminal illegal alien and alleged 18th Street gang member from Mexico, during targeted operations in Hartford, Connecticut.",
+    "usa": "ICE X post Nov 10, 2026 (@EROBoston)",
+    "foreign": "Not stated in post",
+    "picked": "11/10/2026 (@EROBoston post)",
+    "entered": "Not stated",
+    "office": "EROBoston",
+    "id": "x-2120118452052799612-jose-contreras",
+    "when": "10 Nov 2026",
+    "severity": 36,
+    "severityReason": "Assault / battery",
+    "severityCrimes": [
+      "Assault / battery"
+    ],
+    "text": "@EROBoston Nov 10, 2026, as posted: On Sept. 15, ICE Boston arrested Jose Contreras, a criminal illegal alien and alleged 18th Street gang member from Mexico, during targeted operations in Hartford, Connecticut. His criminal history includes arrest for third-degree assault of a pregnant person,...",
+    "photo": "",
+    "via": "@EROBoston 2120118452052799612",
+    "sourceUrl": "https://x.com/EROBoston/status/2120118452052799612",
+    "voting": false,
+    "origin": "Not stated",
+    "confirmedBy": "ICE",
+    "lat": 41.7636,
+    "lon": -72.6855,
+    "status": "approved",
+    "tags": [
+      "Gang"
+    ]
+  },
+  {
     "name": "Sobirjon Sobirov Khusen Ugli",
     "city": "New York, NY",
     "crime": "Arrested: New York City — On Oct. 14, 2026, ICE officers from New York City arrested Sobirjon Sobirov Khusen Ugli, 35, a criminal illegal alien from Uzbekistan, near his home in Brooklyn.",

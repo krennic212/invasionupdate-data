@@ -1,25 +1,16 @@
 {
-  "updatedAt": "2026-11-09T23:20:25Z",
-  "rows": 1504,
-  "approved": 1486,
+  "updatedAt": "2026-11-10T15:11:55Z",
+  "rows": 1506,
+  "approved": 1488,
   "pending": 18,
   "photos": 402,
   "reviewRows": 778,
-  "lastAddedAt": "2026-11-09T23:20:16Z",
-  "lastAddedCount": 11,
+  "lastAddedAt": "2026-11-10T15:11:55Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Sobirjon Sobirov Khusen Ugli",
-    "Julio Cesar Zuniga Luna",
-    "Saiful Islam",
-    "Contreras Villeda",
-    "Seferino Huerta-Casillas",
-    "Jonas Ulloa-Aguilera",
-    "Rosario Cristal Lopez-Saldana",
-    "Franklin Williams Ayala Aguilera",
-    "Pascual Raymundo Loarca",
-    "Juan Alvaro Membreno-Contreras",
-    "Mavis Aleyda Escalante Peraza"
+    "Kovi Bryan Carrillo-Flores",
+    "Jose Contreras"
   ],
-  "harvestSha256": "922efe5a8e58f38fb3623eae1842d41cc5845b8fddce92f45e0c5cc244178681",
+  "harvestSha256": "bd12afcdc4283a54fed410391333ae81dd51b62b63c5b5d068bc3c60906f53fa",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
