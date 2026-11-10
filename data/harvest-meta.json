@@ -1,16 +1,20 @@
 {
-  "updatedAt": "2026-11-10T15:11:55Z",
-  "rows": 1506,
-  "approved": 1488,
+  "updatedAt": "2026-11-10T17:16:13Z",
+  "rows": 1512,
+  "approved": 1494,
   "pending": 18,
   "photos": 402,
   "reviewRows": 778,
-  "lastAddedAt": "2026-11-10T15:11:55Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-11-10T17:16:04Z",
+  "lastAddedCount": 6,
   "lastAdded": [
-    "Kovi Bryan Carrillo-Flores",
-    "Jose Contreras"
+    "Gustavo Rodriguez-Callado",
+    "Juan Contreras-Saucedo",
+    "Jose Adrian Mejia-Garcia",
+    "Poeurt Nhean",
+    "Manuel Francisco Tasama-Portilla",
+    "Ronny Guanipa-Chrinos"
   ],
-  "harvestSha256": "bd12afcdc4283a54fed410391333ae81dd51b62b63c5b5d068bc3c60906f53fa",
+  "harvestSha256": "651846ece066217da29a7a6eff2ec5e292557e6c3c1557f87ca0807744ca5c73",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
