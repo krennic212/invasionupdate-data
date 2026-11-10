@@ -1,32 +1,25 @@
 {
-  "checkedAt": 1794352487528,
-  "checkedAtIso": "2026-11-10T23:14:47.528Z",
+  "checkedAt": 1794354597703,
+  "checkedAtIso": "2026-11-10T23:49:57.703Z",
   "added": [
-    "Nazira Haji Zada",
-    "Abdulhafiz Bahovatdiny",
-    "From Mexicali",
-    "Operation Tequila Sunset (operation, not a person)",
-    "Operation Summit City Sweep FORT WAYNE (operation, not a person)"
+    "Brajhan Luna-Vazquez",
+    "Federico Sanchez Alvarado",
+    "Dexing Zhang",
+    "Farzad Toutouni",
+    "Ivan Wilbur Seales"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "stageUpdates": [],
   "sameNameReview": {
-    "replaced": [
-      {
-        "reviewId": "2102462808843788357",
-        "name": "Nazira Haji Zada",
-        "liveId": "dhs-20261110-nazira-haji-zada",
-        "why": "same country (Afghanistan) and same case wording: september 2026 / fort worth / residing in / in fort / worth texas"
-      }
-    ],
+    "replaced": [],
     "keptBoth": []
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 144,
+  "scannedReleases": 145,
   "error": null,
-  "note": "Added 5 as approved: Nazira Haji Zada, Abdulhafiz Bahovatdiny, From Mexicali, Operation Tequila Sunset (operation, not a person), Operation Summit City Sweep FORT WAYNE (operation, not a person)",
+  "note": "Added 5 as approved: Brajhan Luna-Vazquez, Federico Sanchez Alvarado, Dexing Zhang, Farzad Toutouni, Ivan Wilbur Seales",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
