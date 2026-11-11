@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-11T23:10:41Z",
-  "rows": 1553,
-  "approved": 1530,
+  "updatedAt": "2026-11-11T23:50:10Z",
+  "rows": 1555,
+  "approved": 1532,
   "pending": 23,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-11T23:10:41Z",
+  "lastAddedAt": "2026-11-11T23:50:03Z",
   "lastAddedCount": 2,
   "lastAdded": [
-    "Eldar Skander",
-    "Lorenzo Chavez Sanchez"
+    "Vilmelena Dye",
+    "Cong Anh Nguyen"
   ],
-  "harvestSha256": "ea3d30a90e458619bcdaa339e2577830994857a3ca38051df3d06f99c311813e",
+  "harvestSha256": "e32a11c7a2de042b1bd2fc028e777afdd46b4f7d5f6f4de1d967ac7e92d9c8a2",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -1,7 +1,10 @@
 {
-  "checkedAt": 1794410249845,
-  "checkedAtIso": "2026-11-11T15:17:29.845Z",
-  "added": [],
+  "checkedAt": 1794441003041,
+  "checkedAtIso": "2026-11-11T23:50:03.041Z",
+  "added": [
+    "Vilmelena Dye",
+    "Cong Anh Nguyen"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "stageUpdates": [],
@@ -13,7 +16,7 @@
   "sentToReview": [],
   "scannedReleases": 135,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 2 as approved: Vilmelena Dye, Cong Anh Nguyen",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
