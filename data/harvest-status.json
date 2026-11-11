@@ -1,13 +1,7 @@
 {
-  "checkedAt": 1794354597703,
-  "checkedAtIso": "2026-11-10T23:49:57.703Z",
-  "added": [
-    "Brajhan Luna-Vazquez",
-    "Federico Sanchez Alvarado",
-    "Dexing Zhang",
-    "Farzad Toutouni",
-    "Ivan Wilbur Seales"
-  ],
+  "checkedAt": 1794364903536,
+  "checkedAtIso": "2026-11-11T02:41:43.536Z",
+  "added": [],
   "addedStatus": "approved",
   "heldPending": [],
   "stageUpdates": [],
@@ -17,9 +11,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 145,
+  "scannedReleases": 143,
   "error": null,
-  "note": "Added 5 as approved: Brajhan Luna-Vazquez, Federico Sanchez Alvarado, Dexing Zhang, Farzad Toutouni, Ivan Wilbur Seales",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

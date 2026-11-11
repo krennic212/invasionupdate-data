@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-10",
   "windowDays": 7,
-  "total": 163,
+  "total": 129,
   "rows": [
     {
       "id": "dhs-20261109-jose-antonio-maturel-reyes",
@@ -185,17 +185,6 @@
       ]
     },
     {
-      "id": "x-2118067891018838349-jesus-moreno-lucio",
-      "name": "Jesus Moreno-Lucio",
-      "when": "4 Nov 2026",
-      "severity": 140,
-      "severityReason": "Attempted murder",
-      "severityCrimes": [
-        "Attempted murder",
-        "Armed robbery / aggravated assault"
-      ]
-    },
-    {
       "id": "x-2120201558818480486-milton-gustovo-benegas-reyes",
       "name": "Milton Gustovo Benegas-Reyes",
       "when": "10 Nov 2026",
@@ -266,18 +255,6 @@
       ]
     },
     {
-      "id": "x-2118100982458618025-josue-rodriguez-rios",
-      "name": "Josue Rodriguez-Rios",
-      "when": "4 Nov 2026",
-      "severity": 122,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Burglary / theft",
-        "Drug possession"
-      ]
-    },
-    {
       "id": "x-2119138723468386434-noi-ly",
       "name": "Noi Ly",
       "when": "7 Nov 2026",
@@ -286,6 +263,28 @@
       "severityCrimes": [
         "Kidnapping / human trafficking",
         "Burglary / theft"
+      ]
+    },
+    {
+      "id": "x-2118431107704053985-reynaldo-hoel-mayna",
+      "name": "Reynaldo Hoel Mayna",
+      "when": "5 Nov 2026",
+      "severity": 117,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Assault / battery"
+      ]
+    },
+    {
+      "id": "dhs-20261109-carlos-alberto-sierra-dominguez",
+      "name": "Carlos Alberto Sierra-Dominguez",
+      "when": "9 Nov 2026",
+      "severity": 110,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Assault / battery"
       ]
     },
     {
@@ -383,16 +382,6 @@
       "id": "x-2118901316302835803-miguel-bernal-molina",
       "name": "Miguel Bernal-Molina",
       "when": "6 Nov 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2118067909679354198-kevin-ramirez-gomez",
-      "name": "Kevin Ramirez-Gomez",
-      "when": "4 Nov 2026",
       "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
