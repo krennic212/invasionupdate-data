@@ -1,16 +1,15 @@
 {
-  "updatedAt": "2026-11-11T15:16:22Z",
-  "rows": 1550,
-  "approved": 1527,
+  "updatedAt": "2026-11-11T18:15:43Z",
+  "rows": 1551,
+  "approved": 1528,
   "pending": 23,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-11T15:16:03Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-11-11T18:15:43Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Jimmi Martinez",
-    "Rony Alexander Gomez-Alberto"
+    "Roberto Carlos Castillo-Leal"
   ],
-  "harvestSha256": "cc4c7d590b4617ff39cea50b855f2ba424aff1890c6d537fef60a26b7f835161",
+  "harvestSha256": "30f69bfd7dd1b3a8966e199fd7141faee136d79bbccb7125e101d2509a2dd6dc",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
