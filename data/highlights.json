@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-11",
   "windowDays": 7,
-  "total": 129,
+  "total": 131,
   "rows": [
     {
       "id": "dhs-20261109-jose-antonio-maturel-reyes",
@@ -363,6 +363,16 @@
       "name": "Guillermo Argiro Restrepo Munera",
       "when": "9 Nov 2026",
       "severity": 91,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2120509063825883488-jimmi-martinez",
+      "name": "Jimmi Martinez",
+      "when": "11 Nov 2026",
+      "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"

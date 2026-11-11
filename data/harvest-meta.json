@@ -1,19 +1,16 @@
 {
-  "updatedAt": "2026-11-10T23:50:07Z",
-  "rows": 1547,
-  "approved": 1524,
+  "updatedAt": "2026-11-11T15:16:22Z",
+  "rows": 1550,
+  "approved": 1527,
   "pending": 23,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-10T23:49:57Z",
-  "lastAddedCount": 5,
+  "lastAddedAt": "2026-11-11T15:16:03Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Brajhan Luna-Vazquez",
-    "Federico Sanchez Alvarado",
-    "Dexing Zhang",
-    "Farzad Toutouni",
-    "Ivan Wilbur Seales"
+    "Jimmi Martinez",
+    "Rony Alexander Gomez-Alberto"
   ],
-  "harvestSha256": "7e9069a18d8060c165fac2d11e9019e3e225d6766c7155960317d2ef6096c1f3",
+  "harvestSha256": "cc4c7d590b4617ff39cea50b855f2ba424aff1890c6d537fef60a26b7f835161",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
