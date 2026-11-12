@@ -1,9 +1,7 @@
 {
-  "checkedAt": 1794527733976,
-  "checkedAtIso": "2026-11-12T23:55:33.976Z",
-  "added": [
-    "Richard Calix-Valle"
-  ],
+  "checkedAt": 1794527795935,
+  "checkedAtIso": "2026-11-12T23:56:35.935Z",
+  "added": [],
   "addedStatus": "approved",
   "heldPending": [],
   "stageUpdates": [],
@@ -13,9 +11,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 0,
+  "scannedReleases": 142,
   "error": null,
-  "note": "Added 1 as approved: Richard Calix-Valle",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
