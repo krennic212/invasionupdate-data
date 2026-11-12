@@ -1,3 +1,8 @@
+# HANDOFF: 2026-11-12 (6 PM CT) daily missed-cases check
+
+- Added Richard Calix-Valle via data/pending.json (DHS Nov 10 Mecklenburg County detainer release; Arrested burglary + rape, Honduras, in jail). Commit 54024ad, live in feed. Tests 309/309.
+- Not added: Salinas jail trio (ICE Nov 3: Castro-Lopez, Quinones, Ramirez-Sepulveda): release names no charge or arrest, only prior arrests.
+
 ## 2026-11-10 (morning) Publish commit guard (Krennic t137s843: "Yes, fix both workflows and re-run Fraud Ledger")
 
 - Same deploy-then-commit workflow as Fraud Ledger. Artifact layout is already correct here: upload of the `data` directory plus scripts/city-geo*.json preserves the data/ and scripts/ prefixes, so download path: `.` is right (do not use path: data — that would nest data/data/).
