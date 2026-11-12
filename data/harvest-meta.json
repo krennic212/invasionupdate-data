@@ -1,19 +1,15 @@
 {
-  "updatedAt": "2026-11-12T21:49:30Z",
-  "rows": 1576,
-  "approved": 1552,
+  "updatedAt": "2026-11-12T23:11:51Z",
+  "rows": 1577,
+  "approved": 1553,
   "pending": 24,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-12T21:49:20Z",
-  "lastAddedCount": 5,
+  "lastAddedAt": "2026-11-12T23:11:44Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Raymond Jones",
-    "Adrian Duran-Sequra",
-    "Eddy Chacon-Cruz",
-    "Aurelio Cervantes-Cabrera",
-    "Araldo Renald"
+    "Leonel A. Umana-Gonzalez"
   ],
-  "harvestSha256": "d658d8d68a2535648ac74fc56fce647421c7ab8f91aacbd56e8ae206245f5770",
+  "harvestSha256": "9d23d40cb8a7054beab9dd98c3f210033b817a18afaa2cad1f80466b2855b460",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

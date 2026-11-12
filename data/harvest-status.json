@@ -1,21 +1,11 @@
 {
-  "checkedAt": 1794520160568,
-  "checkedAtIso": "2026-11-12T21:49:20.568Z",
+  "checkedAt": 1794525104687,
+  "checkedAtIso": "2026-11-12T23:11:44.687Z",
   "added": [
-    "Raymond Jones",
-    "Adrian Duran-Sequra",
-    "Eddy Chacon-Cruz",
-    "Aurelio Cervantes-Cabrera",
-    "Araldo Renald",
-    "Stanislav Chernyshov",
-    "Operation Targeting Opioid (operation, not a person)",
-    "Operation DENVER (operation, not a person)",
-    "Operation The Department (operation, not a person)"
+    "Leonel A. Umana-Gonzalez"
   ],
   "addedStatus": "approved",
-  "heldPending": [
-    "Stanislav Chernyshov (not stated to be a non-citizen)"
-  ],
+  "heldPending": [],
   "stageUpdates": [],
   "sameNameReview": {
     "replaced": [],
@@ -23,9 +13,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 132,
+  "scannedReleases": 140,
   "error": null,
-  "note": "Added 9 as approved: Raymond Jones, Adrian Duran-Sequra, Eddy Chacon-Cruz, Aurelio Cervantes-Cabrera, Araldo Renald, Stanislav Chernyshov, Operation Targeting Opioid (operation, not a person), Operation DENVER (operation, not a person), Operation The Department (operation, not a person)",
+  "note": "Added 1 as approved: Leonel A. Umana-Gonzalez",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
