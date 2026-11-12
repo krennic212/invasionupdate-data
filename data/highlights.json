@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-12",
   "windowDays": 7,
-  "total": 108,
+  "total": 113,
   "rows": [
     {
       "id": "dhs-20261109-jose-antonio-maturel-reyes",
@@ -58,6 +58,18 @@
       "severityCrimes": [
         "Murder / manslaughter",
         "Armed robbery / aggravated assault"
+      ]
+    },
+    {
+      "id": "x-2120898241734570406-jose-garnica-naranjo",
+      "name": "Jose Garnica-Naranjo",
+      "when": "12 Nov 2026",
+      "severity": 178,
+      "severityReason": "Attack on police officer",
+      "severityCrimes": [
+        "Attack on police officer",
+        "Armed robbery / aggravated assault",
+        "Assault / battery"
       ]
     },
     {
@@ -243,6 +255,18 @@
       ]
     },
     {
+      "id": "x-2120940305033605236-apolinar-santibanez-avellanea",
+      "name": "Apolinar Santibanez Avellanea",
+      "when": "12 Nov 2026",
+      "severity": 113,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "DUI",
+        "Illegal entry / reentry"
+      ]
+    },
+    {
       "id": "dhs-20261109-carlos-alberto-sierra-dominguez",
       "name": "Carlos Alberto Sierra-Dominguez",
       "when": "9 Nov 2026",
@@ -273,16 +297,6 @@
       "severityCrimes": [
         "Child sex crime",
         "Illegal entry / reentry"
-      ]
-    },
-    {
-      "id": "x-2118667930607161473-gamal-mohamed-abdeltawab-elsharkawai",
-      "name": "Gamal Mohamed Abdeltawab Elsharkawai",
-      "when": "6 Nov 2026",
-      "severity": 97,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault"
       ]
     },
     {
@@ -346,6 +360,16 @@
       ]
     },
     {
+      "id": "x-2120926318493614243-jairo-dagoberto-rodriguez-munoz",
+      "name": "Jairo Dagoberto Rodriguez-Munoz",
+      "when": "12 Nov 2026",
+      "severity": 83,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
       "id": "x-2120509063825883488-jimmi-martinez",
       "name": "Jimmi Martinez",
       "when": "11 Nov 2026",
@@ -373,6 +397,16 @@
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2120941175028727972-robert-alejandro-ortuno-guerra",
+      "name": "Robert Alejandro Ortuno Guerra",
+      "when": "12 Nov 2026",
+      "severity": 72,
+      "severityReason": "Violent crime against a child",
+      "severityCrimes": [
+        "Violent crime against a child"
       ]
     }
   ]
