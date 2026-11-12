@@ -456,5 +456,18 @@
     "text": "DHSgov 12 Nov 2026, as posted: The record prior to July was held by June 2026, when 43,900 illegal aliens were arrested. 900 total, 12 named on their own rows, 888 unnamed counted here.",
     "heads": 888,
     "operation": true
+  },
+  {
+    "id": "op-icegov-20261112-900",
+    "name": "ICEgov Not stated operation",
+    "when": "12 Nov 2026",
+    "place": "Not stated",
+    "posted": 900,
+    "unnamed": 900,
+    "sourceUrl": "https://www.ice.gov/news/releases/ice-breaks-records-fiscal-year-2026-most-arrests-and-deportations-agencys-history",
+    "people": [],
+    "text": "ICEgov 12 Nov 2026, as posted: The record prior to July was held by June 2026, when 43,900 illegal aliens were arrested. 900 total, 0 named on their own rows, 900 unnamed counted here.",
+    "heads": 900,
+    "operation": true
   }
 ]

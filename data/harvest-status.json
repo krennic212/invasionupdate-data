@@ -1,14 +1,10 @@
 {
-  "checkedAt": 1794496370164,
-  "checkedAtIso": "2026-11-12T15:12:50.164Z",
+  "checkedAt": 1794507430846,
+  "checkedAtIso": "2026-11-12T18:17:10.846Z",
   "added": [
-    "Raul Genesis Ortiz Moran",
-    "Tou Lue Vang",
-    "Josue David Carranza-Castellon",
-    "Felipe Linares De Oliveira Dell Aquilla",
-    "Soili Xiomara Aparicio-Santos",
-    "John Young Cotter Johnstone",
-    "DHSgov Not stated operation (operation, not a person)"
+    "Victor Andres Ayala Rosales",
+    "Reymundo Hernandez-Nino",
+    "ICEgov Not stated operation (operation, not a person)"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -19,9 +15,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 146,
+  "scannedReleases": 147,
   "error": null,
-  "note": "Added 7 as approved: Raul Genesis Ortiz Moran, Tou Lue Vang, Josue David Carranza-Castellon, Felipe Linares De Oliveira Dell Aquilla, Soili Xiomara Aparicio-Santos, John Young Cotter Johnstone, DHSgov Not stated operation (operation, not a person)",
+  "note": "Added 3 as approved: Victor Andres Ayala Rosales, Reymundo Hernandez-Nino, ICEgov Not stated operation (operation, not a person)",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

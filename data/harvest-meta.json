@@ -1,20 +1,16 @@
 {
-  "updatedAt": "2026-11-12T18:15:34Z",
-  "rows": 1568,
-  "approved": 1545,
+  "updatedAt": "2026-11-12T18:17:17Z",
+  "rows": 1570,
+  "approved": 1547,
   "pending": 23,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-12T18:15:33Z",
-  "lastAddedCount": 6,
+  "lastAddedAt": "2026-11-12T18:17:10Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Jose Francis Diaz Cortez",
-    "Robert Alejandro Ortuno Guerra",
-    "Apolinar Santibanez Avellanea",
-    "Fengxian Yang",
-    "Jairo Dagoberto Rodriguez-Munoz",
-    "Jose Garnica-Naranjo"
+    "Victor Andres Ayala Rosales",
+    "Reymundo Hernandez-Nino"
   ],
-  "harvestSha256": "2cbcbec14ec64c131e7c87869ff6421417ec5bdb0977b68bb764536768b57c8c",
+  "harvestSha256": "32e7555aa8c9e8abb1615497e5a7119c52c74a9aca3471c18bb7081e31bc7860",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
