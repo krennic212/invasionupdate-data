@@ -469,5 +469,40 @@
     "text": "ICEgov 12 Nov 2026, as posted: The record prior to July was held by June 2026, when 43,900 illegal aliens were arrested. 900 total, 0 named on their own rows, 900 unnamed counted here.",
     "heads": 900,
     "operation": true
+  },
+  {
+    "id": "op-thejusticedept-20261112-operation-targeting-opioid",
+    "name": "Operation Targeting Opioid",
+    "when": "12 Nov 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/opa/pr/international-law-enforcement-operation-targeting-opioid-and-fentanyl-traffickers-dark-web",
+    "people": [
+      "doj-20261112-stanislav-chernyshov"
+    ],
+    "text": "TheJusticeDept 12 Nov 2026, as posted: International Law Enforcement Operation Targeting Opioid and Fentanyl Traffickers on the Dark Web Results in over 350 Arrests Worldwide and the Seizure of Drugs, Weapons, and over $234 Million Note: Relevant court documents can be found here. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
+  },
+  {
+    "id": "op-thejusticedept-20261112-operation-denver",
+    "name": "Operation DENVER",
+    "when": "12 Nov 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/usao-co/pr/gootloader-malware-disrupted-international-cyber-operation",
+    "people": [],
+    "text": "TheJusticeDept 12 Nov 2026, as posted: Gootloader Malware Disrupted in International Cyber Operation DENVER — The Department of Justice today announced the successful removal of malware known as “Gootloader” from over 100 computer servers, including compromised WordPress sites, and the seizure of U. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
+  },
+  {
+    "id": "op-thejusticedept-20261112-operation-the-department",
+    "name": "Operation The Department",
+    "when": "12 Nov 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/opa/pr/gootloader-malware-disrupted-international-cyber-operation",
+    "people": [],
+    "text": "TheJusticeDept 12 Nov 2026, as posted: Gootloader Malware Disrupted in International Cyber Operation The Department of Justice today announced the successful removal of malware known as “Gootloader” from over 100 computer servers, including compromised WordPress sites, and the seizure of U. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
   }
 ]

@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-12",
   "windowDays": 7,
-  "total": 114,
+  "total": 119,
   "rows": [
     {
       "id": "dhs-20261109-jose-antonio-maturel-reyes",
@@ -125,6 +125,19 @@
       "severityCrimes": [
         "Child sex crime",
         "Rape / sexual assault"
+      ]
+    },
+    {
+      "id": "dhs-20261112-araldo-renald",
+      "name": "Araldo Renald",
+      "when": "12 Nov 2026",
+      "severity": 160,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Assault / battery",
+        "Burglary / theft",
+        "Drug possession"
       ]
     },
     {
@@ -278,14 +291,25 @@
       ]
     },
     {
-      "id": "doj-20261110-ingrid-hernandez-salgado",
-      "name": "Ingrid Hernandez-Salgado",
-      "when": "10 Nov 2026",
-      "severity": 105,
-      "severityReason": "Weapons",
+      "id": "dhs-20261112-adrian-duran-sequra",
+      "name": "Adrian Duran-Sequra",
+      "when": "12 Nov 2026",
+      "severity": 97,
+      "severityReason": "Child sex crime",
       "severityCrimes": [
-        "Weapons",
-        "Drug trafficking"
+        "Child sex crime",
+        "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "dhs-20261112-eddy-chacon-cruz",
+      "name": "Eddy Chacon-Cruz",
+      "when": "12 Nov 2026",
+      "severity": 97,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Illegal entry / reentry"
       ]
     },
     {
