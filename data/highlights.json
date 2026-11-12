@@ -1,8 +1,21 @@
 {
   "asOf": "2026-11-12",
   "windowDays": 7,
-  "total": 120,
+  "total": 127,
   "rows": [
+    {
+      "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
+      "name": "Carlos Jonathan Lebron-Ruiz",
+      "when": "12 Nov 2026",
+      "severity": 274,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Armed robbery / aggravated assault",
+        "Weapons",
+        "Assault / battery"
+      ]
+    },
     {
       "id": "dhs-20261109-jose-antonio-maturel-reyes",
       "name": "Jose Antonio Maturel-Reyes",
@@ -257,6 +270,17 @@
       ]
     },
     {
+      "id": "x-2120980833603661870-adrian-roger-roger-paz-trochez",
+      "name": "Adrian Roger Roger Paz Trochez",
+      "when": "12 Nov 2026",
+      "severity": 122,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Assault / battery"
+      ]
+    },
+    {
       "id": "x-2119138723468386434-noi-ly",
       "name": "Noi Ly",
       "when": "7 Nov 2026",
@@ -265,29 +289,6 @@
       "severityCrimes": [
         "Kidnapping / human trafficking",
         "Burglary / theft"
-      ]
-    },
-    {
-      "id": "x-2120940305033605236-apolinar-santibanez-avellanea",
-      "name": "Apolinar Santibanez Avellanea",
-      "when": "12 Nov 2026",
-      "severity": 113,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "DUI",
-        "Illegal entry / reentry"
-      ]
-    },
-    {
-      "id": "dhs-20261109-carlos-alberto-sierra-dominguez",
-      "name": "Carlos Alberto Sierra-Dominguez",
-      "when": "9 Nov 2026",
-      "severity": 110,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Assault / battery"
       ]
     },
     {

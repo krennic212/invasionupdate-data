@@ -504,5 +504,16 @@
     "people": [],
     "text": "TheJusticeDept 12 Nov 2026, as posted: Gootloader Malware Disrupted in International Cyber Operation The Department of Justice today announced the successful removal of malware known as “Gootloader” from over 100 computer servers, including compromised WordPress sites, and the seizure of U. Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true
+  },
+  {
+    "id": "op-dhsgov-20261112-operation-tornado",
+    "name": "Operation TorNado",
+    "when": "12 Nov 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://x.com/DHSgov/status/2120989160634736734",
+    "text": "DHSgov 12 Nov 2026, as posted: Operation TorNado The @HSTaskForce is uniting law enforcement, intelligence, defense, financial, and diplomatic power under a single national framework to take on America’s biggest threats. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true,
+    "people": []
   }
 ]
