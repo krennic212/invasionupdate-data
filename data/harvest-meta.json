@@ -1,16 +1,15 @@
 {
-  "updatedAt": "2026-11-11T23:50:10Z",
-  "rows": 1555,
-  "approved": 1532,
+  "updatedAt": "2026-11-12T15:11:42Z",
+  "rows": 1556,
+  "approved": 1533,
   "pending": 23,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-11T23:50:03Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-11-12T15:11:42Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Vilmelena Dye",
-    "Cong Anh Nguyen"
+    "Rashid Colton"
   ],
-  "harvestSha256": "e32a11c7a2de042b1bd2fc028e777afdd46b4f7d5f6f4de1d967ac7e92d9c8a2",
+  "harvestSha256": "4003767b41f114c9f3f28626da1e5b3c7e55d7d3121de8e8c3c8e0830d9e4212",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

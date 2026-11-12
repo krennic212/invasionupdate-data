@@ -1,5 +1,33 @@
 [
   {
+    "name": "Rashid Colton",
+    "city": "New Britain, CT",
+    "crime": "Arrested: ICE Boston arrested Rashid Colton, a criminal illegal alien from the Bahamas, during targeted operations in New Britain, CT.",
+    "usa": "ICE X post Nov 12, 2026 (@EROBoston)",
+    "foreign": "Not stated in post",
+    "picked": "11/12/2026 (@EROBoston post)",
+    "entered": "Not stated",
+    "office": "EROBoston",
+    "id": "x-2120841489471389910-rashid-colton",
+    "when": "12 Nov 2026",
+    "severity": 36,
+    "severityReason": "Assault / battery",
+    "severityCrimes": [
+      "Assault / battery"
+    ],
+    "text": "@EROBoston Nov 12, 2026, as posted: ICE Boston arrested Rashid Colton, a criminal illegal alien from the Bahamas, during targeted operations in New Britain, CT. His criminal history includes convictions for first-degree criminal trespass, third-degree assault- physical injury, and probation violation,...",
+    "photo": "",
+    "via": "@EROBoston 2120841489471389910",
+    "sourceUrl": "https://x.com/EROBoston/status/2120841489471389910",
+    "voting": false,
+    "origin": "Bahamas",
+    "confirmedBy": "ICE",
+    "lat": 41.6611,
+    "lon": -72.78,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Cong Anh Nguyen",
     "city": "Not stated",
     "crime": "Convicted: Cong Anh Nguyen is a citizen of Vietnam, who has been convicted of theft and admitted to voting in the 2018, 2020, 2022 and 2024 elections.",
