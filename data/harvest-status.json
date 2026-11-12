@@ -1,7 +1,15 @@
 {
-  "checkedAt": 1794455066597,
-  "checkedAtIso": "2026-11-12T03:44:26.597Z",
-  "added": [],
+  "checkedAt": 1794496370164,
+  "checkedAtIso": "2026-11-12T15:12:50.164Z",
+  "added": [
+    "Raul Genesis Ortiz Moran",
+    "Tou Lue Vang",
+    "Josue David Carranza-Castellon",
+    "Felipe Linares De Oliveira Dell Aquilla",
+    "Soili Xiomara Aparicio-Santos",
+    "John Young Cotter Johnstone",
+    "DHSgov Not stated operation (operation, not a person)"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "stageUpdates": [],
@@ -11,9 +19,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 151,
+  "scannedReleases": 146,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 7 as approved: Raul Genesis Ortiz Moran, Tou Lue Vang, Josue David Carranza-Castellon, Felipe Linares De Oliveira Dell Aquilla, Soili Xiomara Aparicio-Santos, John Young Cotter Johnstone, DHSgov Not stated operation (operation, not a person)",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

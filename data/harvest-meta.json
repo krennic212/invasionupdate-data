@@ -1,15 +1,20 @@
 {
-  "updatedAt": "2026-11-12T15:11:42Z",
-  "rows": 1556,
-  "approved": 1533,
+  "updatedAt": "2026-11-12T15:12:58Z",
+  "rows": 1562,
+  "approved": 1539,
   "pending": 23,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-12T15:11:42Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-11-12T15:12:50Z",
+  "lastAddedCount": 6,
   "lastAdded": [
-    "Rashid Colton"
+    "Raul Genesis Ortiz Moran",
+    "Tou Lue Vang",
+    "Josue David Carranza-Castellon",
+    "Felipe Linares De Oliveira Dell Aquilla",
+    "Soili Xiomara Aparicio-Santos",
+    "John Young Cotter Johnstone"
   ],
-  "harvestSha256": "4003767b41f114c9f3f28626da1e5b3c7e55d7d3121de8e8c3c8e0830d9e4212",
+  "harvestSha256": "f21ba6eb023646b4b5ba5d2a9b3ca7f829c30d58797ea7ffc56bc22f4cfedbd9",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

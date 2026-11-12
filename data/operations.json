@@ -436,5 +436,25 @@
     "text": "NDALnews 12 Nov 2026, as posted: Operation Take Back America Thoughts on the morning drive……are we going to back off of immigration enforcement after the midterms? Short answer: No! There's been speculation that the political winds may drive a change in the enforcement of our nations immigration laws. Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true,
     "people": []
+  },
+  {
+    "id": "op-dhsgov-20261112-900",
+    "name": "DHSgov Not stated operation",
+    "when": "12 Nov 2026",
+    "place": "Not stated",
+    "posted": 900,
+    "unnamed": 888,
+    "sourceUrl": "https://www.dhs.gov/news/2026/11/12/ice-breaks-records-fiscal-year-2026-most-arrests-and-deportations-agencys-history",
+    "people": [
+      "dhs-20261112-raul-genesis-ortiz-moran",
+      "dhs-20261112-tou-lue-vang",
+      "dhs-20261112-josue-david-carranza-castellon",
+      "dhs-20261112-felipe-linares-de-oliveira-dell-aquilla",
+      "dhs-20261112-soili-xiomara-aparicio-santos",
+      "dhs-20261112-john-young-cotter-johnstone"
+    ],
+    "text": "DHSgov 12 Nov 2026, as posted: The record prior to July was held by June 2026, when 43,900 illegal aliens were arrested. 900 total, 12 named on their own rows, 888 unnamed counted here.",
+    "heads": 888,
+    "operation": true
   }
 ]
