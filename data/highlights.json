@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-11",
   "windowDays": 7,
-  "total": 133,
+  "total": 107,
   "rows": [
     {
       "id": "dhs-20261109-jose-antonio-maturel-reyes",
@@ -42,17 +42,6 @@
       "id": "dhs-20261109-david-estrada-jerez",
       "name": "David Estrada-Jerez",
       "when": "9 Nov 2026",
-      "severity": 182,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Rape / sexual assault"
-      ]
-    },
-    {
-      "id": "dhs-20261105-axel-javier-martinez-castillo",
-      "name": "Axel Javier Martinez-Castillo",
-      "when": "5 Nov 2026",
       "severity": 182,
       "severityReason": "Child sex crime",
       "severityCrimes": [
@@ -173,18 +162,6 @@
       ]
     },
     {
-      "id": "x-2118466552353714315-mustafa-abdirahman-abdi",
-      "name": "Mustafa Abdirahman Abdi",
-      "when": "5 Nov 2026",
-      "severity": 140,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Drug trafficking",
-        "Burglary / theft"
-      ]
-    },
-    {
       "id": "x-2120201558818480486-milton-gustovo-benegas-reyes",
       "name": "Milton Gustovo Benegas-Reyes",
       "when": "10 Nov 2026",
@@ -266,17 +243,6 @@
       ]
     },
     {
-      "id": "x-2118431107704053985-reynaldo-hoel-mayna",
-      "name": "Reynaldo Hoel Mayna",
-      "when": "5 Nov 2026",
-      "severity": 117,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Assault / battery"
-      ]
-    },
-    {
       "id": "dhs-20261109-carlos-alberto-sierra-dominguez",
       "name": "Carlos Alberto Sierra-Dominguez",
       "when": "9 Nov 2026",
@@ -288,6 +254,17 @@
       ]
     },
     {
+      "id": "doj-20261110-ingrid-hernandez-salgado",
+      "name": "Ingrid Hernandez-Salgado",
+      "when": "10 Nov 2026",
+      "severity": 105,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Drug trafficking"
+      ]
+    },
+    {
       "id": "dhs-20261109-antonio-hernandez-lincona",
       "name": "Antonio Hernandez-Lincona",
       "when": "9 Nov 2026",
@@ -296,6 +273,16 @@
       "severityCrimes": [
         "Child sex crime",
         "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "x-2118667930607161473-gamal-mohamed-abdeltawab-elsharkawai",
+      "name": "Gamal Mohamed Abdeltawab Elsharkawai",
+      "when": "6 Nov 2026",
+      "severity": 97,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault"
       ]
     },
     {
@@ -342,16 +329,6 @@
       "id": "doj-20261106-bryan-silva",
       "name": "Bryan Silva",
       "when": "6 Nov 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261105-phaisan-pongkiatsakun",
-      "name": "Phaisan Pongkiatsakun",
-      "when": "5 Nov 2026",
       "severity": 92,
       "severityReason": "Child sex crime",
       "severityCrimes": [
