@@ -1,5 +1,34 @@
 [
   {
+    "name": "Richard Calix-Valle",
+    "city": "Charlotte, NC",
+    "crime": "Arrested: Richard Calix-Valle, an illegal alien from Honduras, arrested for first-degree burglary and second-degree forcible rape in Mecklenburg County, North Carolina; held in Mecklenburg County Jail.",
+    "usa": "DHS release Nov 10, 2026: DHS calls on sanctuary politicians in Mecklenburg County, North Carolina to honor ICE detainer",
+    "foreign": "Not stated in post",
+    "picked": "11/10/2026 (DHS release)",
+    "entered": "Not stated",
+    "office": "DHS",
+    "id": "dhs-20261110-richard-calix-valle",
+    "when": "10 Nov 2026",
+    "severity": 113,
+    "severityReason": "Rape / sexual assault",
+    "severityCrimes": [
+      "Rape / sexual assault",
+      "Burglary / theft"
+    ],
+    "text": "DHS Nov 10, 2026, as posted: On October 19, ICE lodged a detainer asking North Carolina authorities not to release Richard Calix-Valle, an illegal alien from Honduras, who had been arrested for first-degree burglary and second-degree forcible rape.",
+    "photo": "",
+    "via": "dhs.gov/news/2026/11/10/dhs-calls-sanctuary-politicians-mecklenburg-county-north-carolina-honor-ice",
+    "sourceUrl": "https://www.dhs.gov/news/2026/11/10/dhs-calls-sanctuary-politicians-mecklenburg-county-north-carolina-honor-ice",
+    "voting": false,
+    "origin": "Honduras",
+    "confirmedBy": "DHS",
+    "lat": 35.2269,
+    "lon": -80.8433,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Rolando Miranda-Perez",
     "city": "Not stated",
     "crime": "Convicted: Rolando Miranda-Perez, an illegal alien from Guatemala, convicted of two counts of assault: malicious, victim severely injured.",

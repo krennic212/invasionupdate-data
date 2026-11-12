@@ -1,8 +1,8 @@
 {
-  "checkedAt": 1794525104687,
-  "checkedAtIso": "2026-11-12T23:11:44.687Z",
+  "checkedAt": 1794527733976,
+  "checkedAtIso": "2026-11-12T23:55:33.976Z",
   "added": [
-    "Leonel A. Umana-Gonzalez"
+    "Richard Calix-Valle"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -13,9 +13,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 140,
+  "scannedReleases": 0,
   "error": null,
-  "note": "Added 1 as approved: Leonel A. Umana-Gonzalez",
+  "note": "Added 1 as approved: Richard Calix-Valle",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

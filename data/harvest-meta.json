@@ -1,21 +1,15 @@
 {
-  "updatedAt": "2026-11-12T23:15:22Z",
-  "rows": 1584,
-  "approved": 1560,
+  "updatedAt": "2026-11-12T23:55:39Z",
+  "rows": 1585,
+  "approved": 1561,
   "pending": 24,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-12T23:15:22Z",
-  "lastAddedCount": 7,
+  "lastAddedAt": "2026-11-12T23:55:33Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Rolando Miranda-Perez",
-    "Henry Daniel Rodriguez-Suarez",
-    "Adrian Roger Roger Paz Trochez",
-    "Maria De Los Angel Ixba-Zavaleta",
-    "Rajubhai B Patel",
-    "Carlos Jonathan Lebron-Ruiz",
-    "Jesus Licea-Lopez"
+    "Richard Calix-Valle"
   ],
-  "harvestSha256": "219af8d02b423eea3895a6c311a3b095ba57e126eeea0fe041d8fac46651831d",
+  "harvestSha256": "9a637603aaefc35917e1f79741dff44c288ed6a6a61d73f9de42c3c37f568651",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
