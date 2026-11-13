@@ -1,17 +1,9 @@
 {
-  "checkedAt": 1794605009467,
-  "checkedAtIso": "2026-11-13T21:23:29.467Z",
-  "added": [
-    "Cesar Carranza Pimentel",
-    "Geovanni De La Rosa Galan",
-    "Anthony Aguilar",
-    "Juan Luis Romero-Garcia"
-  ],
+  "checkedAt": 1794611690858,
+  "checkedAtIso": "2026-11-13T23:14:50.858Z",
+  "added": [],
   "addedStatus": "approved",
-  "heldPending": [
-    "Cesar Carranza Pimentel (not stated to be a non-citizen)",
-    "Anthony Aguilar (not stated to be a non-citizen)"
-  ],
+  "heldPending": [],
   "stageUpdates": [],
   "sameNameReview": {
     "replaced": [],
@@ -19,9 +11,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 144,
+  "scannedReleases": 147,
   "error": null,
-  "note": "Added 4 as approved: Cesar Carranza Pimentel, Geovanni De La Rosa Galan, Anthony Aguilar, Juan Luis Romero-Garcia",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
