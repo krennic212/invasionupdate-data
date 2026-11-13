@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-12T23:55:39Z",
-  "rows": 1585,
-  "approved": 1561,
+  "updatedAt": "2026-11-13T15:16:07Z",
+  "rows": 1586,
+  "approved": 1562,
   "pending": 24,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-12T23:55:33Z",
+  "lastAddedAt": "2026-11-13T15:16:07Z",
   "lastAddedCount": 1,
   "lastAdded": [
-    "Richard Calix-Valle"
+    "Ever Edilberto Zuniga Ramirez"
   ],
-  "harvestSha256": "9a637603aaefc35917e1f79741dff44c288ed6a6a61d73f9de42c3c37f568651",
+  "harvestSha256": "435b9628f944f297784f0020561ec86bb80c9bee8518741ce816dbc0e9ba71a5",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

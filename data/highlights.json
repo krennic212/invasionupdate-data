@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-11-12",
+  "asOf": "2026-11-13",
   "windowDays": 7,
-  "total": 97,
+  "total": 98,
   "rows": [
     {
       "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
@@ -359,6 +359,16 @@
       "name": "Guillermo Argiro Restrepo Munera",
       "when": "9 Nov 2026",
       "severity": 91,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2121217379363631168-ever-edilberto-zuniga-ramirez",
+      "name": "Ever Edilberto Zuniga Ramirez",
+      "when": "13 Nov 2026",
+      "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"

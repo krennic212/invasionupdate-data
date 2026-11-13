@@ -1,5 +1,33 @@
 [
   {
+    "name": "Ever Edilberto Zuniga Ramirez",
+    "city": "East Boston, MA",
+    "crime": "Arrested: ICE Boston arrested Ever Edilberto Zuniga Ramirez, a criminal illegal alien from El Salvador, during targeted operations in East Boston, Mass.",
+    "usa": "ICE X post Nov 13, 2026 (@EROBoston)",
+    "foreign": "Not stated in post",
+    "picked": "11/13/2026 (@EROBoston post)",
+    "entered": "Not stated",
+    "office": "EROBoston",
+    "id": "x-2121217379363631168-ever-edilberto-zuniga-ramirez",
+    "when": "13 Nov 2026",
+    "severity": 83,
+    "severityReason": "Child sex crime",
+    "severityCrimes": [
+      "Child sex crime"
+    ],
+    "text": "@EROBoston Nov 13, 2026, as posted: ICE Boston arrested Ever Edilberto Zuniga Ramirez, a criminal illegal alien from El Salvador, during targeted operations in East Boston, Mass. His criminal history includes convictions for sexual exploitation of a minor, distribution of child sexual abuse material,...",
+    "photo": "",
+    "via": "@EROBoston 2121217379363631168",
+    "sourceUrl": "https://x.com/EROBoston/status/2121217379363631168",
+    "voting": false,
+    "origin": "El Salvador",
+    "confirmedBy": "ICE",
+    "lat": 42.375,
+    "lon": -71.0397,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Richard Calix-Valle",
     "city": "Charlotte, NC",
     "crime": "Arrested: Richard Calix-Valle, an illegal alien from Honduras, arrested for first-degree burglary and second-degree forcible rape in Mecklenburg County, North Carolina; held in Mecklenburg County Jail.",
