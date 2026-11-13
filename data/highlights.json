@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-13",
   "windowDays": 7,
-  "total": 108,
+  "total": 116,
   "rows": [
     {
       "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
@@ -166,6 +166,18 @@
       ]
     },
     {
+      "id": "x-2121308362109280722-jesus-gonzalez-lozano",
+      "name": "Jesus Gonzalez-Lozano",
+      "when": "13 Nov 2026",
+      "severity": 149,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Drug trafficking",
+        "DUI"
+      ]
+    },
+    {
       "id": "x-2120201558818480486-milton-gustovo-benegas-reyes",
       "name": "Milton Gustovo Benegas-Reyes",
       "when": "10 Nov 2026",
@@ -281,17 +293,6 @@
       ]
     },
     {
-      "id": "dhs-20261110-richard-calix-valle",
-      "name": "Richard Calix-Valle",
-      "when": "10 Nov 2026",
-      "severity": 113,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Burglary / theft"
-      ]
-    },
-    {
       "id": "dhs-20261112-adrian-duran-sequra",
       "name": "Adrian Duran-Sequra",
       "when": "12 Nov 2026",
@@ -322,6 +323,16 @@
       "severityCrimes": [
         "Child sex crime",
         "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "doj-20261113-nicolas-perez-paxtor",
+      "name": "Nicolas Perez-Paxtor",
+      "when": "13 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
       ]
     },
     {
@@ -359,6 +370,16 @@
       "name": "Guillermo Argiro Restrepo Munera",
       "when": "9 Nov 2026",
       "severity": 91,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2121357980046131497-cesar-morales-perez",
+      "name": "Cesar Morales-Perez",
+      "when": "13 Nov 2026",
+      "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"

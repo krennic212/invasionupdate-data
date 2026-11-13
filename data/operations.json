@@ -515,5 +515,16 @@
     "text": "DHSgov 12 Nov 2026, as posted: Operation TorNado The @HSTaskForce is uniting law enforcement, intelligence, defense, financial, and diplomatic power under a single national framework to take on America’s biggest threats. Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true,
     "people": []
+  },
+  {
+    "id": "op-atfhq-20261113-operation-summit-city-sweep",
+    "name": "Operation Summit City Sweep",
+    "when": "13 Nov 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://x.com/ATFHQ/status/2121332295495795078",
+    "text": "ATFHQ 13 Nov 2026, as posted: Operation Summit City Sweep 🚨 This Week at ATF: ATF and our law enforcement partners disrupted violent crime through targeted enforcement operations, secured significant sentences for firearms and drug traffickers, apprehended armed robbery suspects, seized cartel-linked weapons, and arrested narcotics traffickers fueling violence in local communities. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true,
+    "people": []
   }
 ]

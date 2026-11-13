@@ -1,16 +1,21 @@
 {
-  "updatedAt": "2026-11-13T21:23:36Z",
-  "rows": 1602,
-  "approved": 1576,
+  "updatedAt": "2026-11-13T23:13:45Z",
+  "rows": 1611,
+  "approved": 1585,
   "pending": 26,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-13T21:23:29Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-11-13T23:13:38Z",
+  "lastAddedCount": 7,
   "lastAdded": [
-    "Geovanni De La Rosa Galan",
-    "Juan Luis Romero-Garcia"
+    "Luis Cristobal Cabrera-Ordonez",
+    "Jesus Alvarado",
+    "Carmen Zaravia-Castro",
+    "Cesar Morales-Perez",
+    "Arturo Flores",
+    "Juan Alan Araujo-Ahumada",
+    "Jesus Gonzalez-Lozano"
   ],
-  "harvestSha256": "2953d24374b0b0c31c8be2ed9e60d0c5e1441f67e2b537962de056ce8cd777fd",
+  "harvestSha256": "beda0e554ba9fa16ec6d361fe57eb6b4dd5f3ef70bfdb1f95b6288b855f1a78d",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
