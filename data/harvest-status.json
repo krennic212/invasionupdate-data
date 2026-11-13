@@ -1,15 +1,17 @@
 {
-  "checkedAt": 1794593685557,
-  "checkedAtIso": "2026-11-13T18:14:45.557Z",
+  "checkedAt": 1794605009467,
+  "checkedAtIso": "2026-11-13T21:23:29.467Z",
   "added": [
-    "Vicente Torres-Vasquez",
-    "Ruben Canos-Bences",
-    "Roger Hernandez-Perez",
-    "Hilario Jimenez-Jimenez",
-    "Alexis Yahir Itehua-Salas"
+    "Cesar Carranza Pimentel",
+    "Geovanni De La Rosa Galan",
+    "Anthony Aguilar",
+    "Juan Luis Romero-Garcia"
   ],
   "addedStatus": "approved",
-  "heldPending": [],
+  "heldPending": [
+    "Cesar Carranza Pimentel (not stated to be a non-citizen)",
+    "Anthony Aguilar (not stated to be a non-citizen)"
+  ],
   "stageUpdates": [],
   "sameNameReview": {
     "replaced": [],
@@ -17,9 +19,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 145,
+  "scannedReleases": 144,
   "error": null,
-  "note": "Added 5 as approved: Vicente Torres-Vasquez, Ruben Canos-Bences, Roger Hernandez-Perez, Hilario Jimenez-Jimenez, Alexis Yahir Itehua-Salas",
+  "note": "Added 4 as approved: Cesar Carranza Pimentel, Geovanni De La Rosa Galan, Anthony Aguilar, Juan Luis Romero-Garcia",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

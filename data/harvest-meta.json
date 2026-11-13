@@ -1,21 +1,16 @@
 {
-  "updatedAt": "2026-11-13T18:17:34Z",
-  "rows": 1598,
-  "approved": 1574,
-  "pending": 24,
+  "updatedAt": "2026-11-13T21:23:36Z",
+  "rows": 1602,
+  "approved": 1576,
+  "pending": 26,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-13T18:17:34Z",
-  "lastAddedCount": 7,
+  "lastAddedAt": "2026-11-13T21:23:29Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Jose Felix Luevano-Nunez",
-    "Jimy Ismar Medina Rapalo",
-    "Tea Jean Marie Kamin",
-    "Ismael Roblero-Gonzalez",
-    "Paciano Ochoa Pena",
-    "Rosario Navarro-Gonzalez",
-    "Inigo Varguez-Felix"
+    "Geovanni De La Rosa Galan",
+    "Juan Luis Romero-Garcia"
   ],
-  "harvestSha256": "901ebdd65e8b6af112b5af2151b0a19ef100e0d6747b60ccf669805641618025",
+  "harvestSha256": "2953d24374b0b0c31c8be2ed9e60d0c5e1441f67e2b537962de056ce8cd777fd",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
