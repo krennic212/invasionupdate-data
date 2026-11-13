@@ -1,7 +1,13 @@
 {
-  "checkedAt": 1794540127169,
-  "checkedAtIso": "2026-11-13T03:22:07.169Z",
-  "added": [],
+  "checkedAt": 1794593685557,
+  "checkedAtIso": "2026-11-13T18:14:45.557Z",
+  "added": [
+    "Vicente Torres-Vasquez",
+    "Ruben Canos-Bences",
+    "Roger Hernandez-Perez",
+    "Hilario Jimenez-Jimenez",
+    "Alexis Yahir Itehua-Salas"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "stageUpdates": [],
@@ -11,9 +17,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 141,
+  "scannedReleases": 145,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 5 as approved: Vicente Torres-Vasquez, Ruben Canos-Bences, Roger Hernandez-Perez, Hilario Jimenez-Jimenez, Alexis Yahir Itehua-Salas",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

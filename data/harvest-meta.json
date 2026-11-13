@@ -1,15 +1,19 @@
 {
-  "updatedAt": "2026-11-13T15:16:07Z",
-  "rows": 1586,
-  "approved": 1562,
+  "updatedAt": "2026-11-13T18:14:56Z",
+  "rows": 1591,
+  "approved": 1567,
   "pending": 24,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-13T15:16:07Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-11-13T18:14:45Z",
+  "lastAddedCount": 5,
   "lastAdded": [
-    "Ever Edilberto Zuniga Ramirez"
+    "Vicente Torres-Vasquez",
+    "Ruben Canos-Bences",
+    "Roger Hernandez-Perez",
+    "Hilario Jimenez-Jimenez",
+    "Alexis Yahir Itehua-Salas"
   ],
-  "harvestSha256": "435b9628f944f297784f0020561ec86bb80c9bee8518741ce816dbc0e9ba71a5",
+  "harvestSha256": "5a9c6104e9c9587e1fc3e2ad03e28911070768eeb4c5a52d754482aa3fe2a39b",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
