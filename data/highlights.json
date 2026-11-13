@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-13",
   "windowDays": 7,
-  "total": 99,
+  "total": 106,
   "rows": [
     {
       "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
@@ -247,6 +247,17 @@
       ]
     },
     {
+      "id": "x-2121305373017837611-ismael-roblero-gonzalez",
+      "name": "Ismael Roblero-Gonzalez",
+      "when": "13 Nov 2026",
+      "severity": 120,
+      "severityReason": "Violent crime against a child",
+      "severityCrimes": [
+        "Violent crime against a child",
+        "Assault / battery"
+      ]
+    },
+    {
       "id": "x-2119138723468386434-noi-ly",
       "name": "Noi Ly",
       "when": "7 Nov 2026",
@@ -278,17 +289,6 @@
       "severityCrimes": [
         "Rape / sexual assault",
         "Burglary / theft"
-      ]
-    },
-    {
-      "id": "dhs-20261109-carlos-alberto-sierra-dominguez",
-      "name": "Carlos Alberto Sierra-Dominguez",
-      "when": "9 Nov 2026",
-      "severity": 110,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Assault / battery"
       ]
     },
     {
@@ -367,6 +367,16 @@
     {
       "id": "x-2121217379363631168-ever-edilberto-zuniga-ramirez",
       "name": "Ever Edilberto Zuniga Ramirez",
+      "when": "13 Nov 2026",
+      "severity": 83,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2121278023982887285-rosario-navarro-gonzalez",
+      "name": "Rosario Navarro-Gonzalez",
       "when": "13 Nov 2026",
       "severity": 83,
       "severityReason": "Child sex crime",

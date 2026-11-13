@@ -1,19 +1,21 @@
 {
-  "updatedAt": "2026-11-13T18:14:56Z",
-  "rows": 1591,
-  "approved": 1567,
+  "updatedAt": "2026-11-13T18:17:34Z",
+  "rows": 1598,
+  "approved": 1574,
   "pending": 24,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-13T18:14:45Z",
-  "lastAddedCount": 5,
+  "lastAddedAt": "2026-11-13T18:17:34Z",
+  "lastAddedCount": 7,
   "lastAdded": [
-    "Vicente Torres-Vasquez",
-    "Ruben Canos-Bences",
-    "Roger Hernandez-Perez",
-    "Hilario Jimenez-Jimenez",
-    "Alexis Yahir Itehua-Salas"
+    "Jose Felix Luevano-Nunez",
+    "Jimy Ismar Medina Rapalo",
+    "Tea Jean Marie Kamin",
+    "Ismael Roblero-Gonzalez",
+    "Paciano Ochoa Pena",
+    "Rosario Navarro-Gonzalez",
+    "Inigo Varguez-Felix"
   ],
-  "harvestSha256": "5a9c6104e9c9587e1fc3e2ad03e28911070768eeb4c5a52d754482aa3fe2a39b",
+  "harvestSha256": "901ebdd65e8b6af112b5af2151b0a19ef100e0d6747b60ccf669805641618025",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
