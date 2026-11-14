@@ -1,16 +1,7 @@
 {
-  "checkedAt": 1794614396886,
-  "checkedAtIso": "2026-11-13T23:59:56.886Z",
-  "added": [
-    "Donaida Gonzalez",
-    "Jesus Diaz-Garcia",
-    "Eduardo Perez-Rodriguez",
-    "Antonio Oseguera Cervantes",
-    "Marco Antonio Lopez-Guerrero",
-    "Evelio Gomez-Mateo",
-    "Jose Juan Garnica-Naranjo",
-    "Julio Cesar Vazquez Hernandez"
-  ],
+  "checkedAt": 1794614564015,
+  "checkedAtIso": "2026-11-14T00:02:44.015Z",
+  "added": [],
   "addedStatus": "approved",
   "heldPending": [],
   "stageUpdates": [],
@@ -20,9 +11,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 150,
+  "scannedReleases": 142,
   "error": null,
-  "note": "Added 8 as approved: Donaida Gonzalez, Jesus Diaz-Garcia, Eduardo Perez-Rodriguez, Antonio Oseguera Cervantes, Marco Antonio Lopez-Guerrero, Evelio Gomez-Mateo, Jose Juan Garnica-Naranjo, Julio Cesar Vazquez Hernandez",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

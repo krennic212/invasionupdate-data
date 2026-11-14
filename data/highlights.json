@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-13",
   "windowDays": 7,
-  "total": 111,
+  "total": 113,
   "rows": [
     {
       "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
@@ -280,9 +280,9 @@
       ]
     },
     {
-      "id": "doj-20261110-ingrid-hernandez-salgado",
-      "name": "Ingrid Hernandez-Salgado",
-      "when": "10 Nov 2026",
+      "id": "doj-20261113-antonio-oseguera-cervantes",
+      "name": "Antonio Oseguera Cervantes",
+      "when": "13 Nov 2026",
       "severity": 105,
       "severityReason": "Weapons",
       "severityCrimes": [

@@ -109,8 +109,7 @@
     "confirmedBy": "DOJ",
     "lat": 32.72,
     "lon": -117.16,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen",
+    "status": "approved",
     "tags": []
   },
   {
@@ -139,8 +138,7 @@
     "confirmedBy": "DOJ",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen",
+    "status": "approved",
     "tags": []
   },
   {
