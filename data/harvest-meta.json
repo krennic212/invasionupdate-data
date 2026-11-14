@@ -1,16 +1,15 @@
 {
-  "updatedAt": "2026-11-14T14:49:37Z",
-  "rows": 1621,
-  "approved": 1594,
+  "updatedAt": "2026-11-14T22:51:48Z",
+  "rows": 1622,
+  "approved": 1595,
   "pending": 27,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-14T14:49:37Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-11-14T22:51:48Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Carlos Zamban",
-    "Carlos Bautista-Lopez"
+    "William Alvarado-Villa"
   ],
-  "harvestSha256": "772f4b063221bbdaa54c120d0c3876745eba72fd5e28acb09a7a6d97655067ab",
+  "harvestSha256": "507f01407ce534cb07afe817afed724da84aa77b7229ade24d9142982d5dcdcb",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
