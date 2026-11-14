@@ -1,21 +1,16 @@
 {
-  "updatedAt": "2026-11-14T00:02:00Z",
-  "rows": 1619,
-  "approved": 1592,
+  "updatedAt": "2026-11-14T14:49:37Z",
+  "rows": 1621,
+  "approved": 1594,
   "pending": 27,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-13T23:59:56Z",
-  "lastAddedCount": 7,
+  "lastAddedAt": "2026-11-14T14:49:37Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Donaida Gonzalez",
-    "Jesus Diaz-Garcia",
-    "Eduardo Perez-Rodriguez",
-    "Antonio Oseguera Cervantes",
-    "Marco Antonio Lopez-Guerrero",
-    "Evelio Gomez-Mateo",
-    "Jose Juan Garnica-Naranjo"
+    "Carlos Zamban",
+    "Carlos Bautista-Lopez"
   ],
-  "harvestSha256": "ee4b8beb5978ebf38c78e64635df0b0122ef30037e9cdf2d14649103801005a1",
+  "harvestSha256": "772f4b063221bbdaa54c120d0c3876745eba72fd5e28acb09a7a6d97655067ab",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
