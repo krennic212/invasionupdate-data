@@ -1,3 +1,10 @@
+## 2026-11-13 (evening) daily missed-cases check
+
+- Added via data/pending.json (commit e9dd61c, harvest run 43530992255): Donaida Gonzalez (NH, Convicted, illegal alien, Dominican Republic), Jesus Diaz-Garcia (NDIA, Pleaded guilty, Mexican citizen), Eduardo Perez-Rodriguez (SDTX, Charged, Mexican national), Evelio Gomez-Mateo (SDGA, Charged, citizen of Guatemala; missed from the roundup, a/k/a confused parser), Jose Juan Garnica-Naranjo (DHS Nov 12, Arrested). Julio Cesar Vazquez Hernandez (DHS Nov 13) held pending: at large.
+- Approved by id (run 43531345172): Antonio Oseguera Cervantes (OPA, "Mexican Cartel Leader" headline, of Michoacan, Mexico) and Marco Antonio Lopez-Guerrero (SDCA, "Mexican Drug Trafficker" headline, extradited from Mexico). Guard hold was "not stated to be a non-citizen". Rule extension to headline demonym+role awaits Krennic.
+- Duplicate: Garnica-Naranjo is now on twice (DHS row + Bill X row "Jose Garnica-Naranjo", x-2120898241734570406). Deleting one needs Krennic approval (approved-deletions.json).
+- No rule, guard or parser changes. Tests 309/309.
+
 # HANDOFF: 2026-11-12 (6 PM CT) daily missed-cases check
 
 - Added Richard Calix-Valle via data/pending.json (DHS Nov 10 Mecklenburg County detainer release; Arrested burglary + rape, Honduras, in jail). Commit 54024ad, live in feed. Tests 309/309.
