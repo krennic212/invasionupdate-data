@@ -1,21 +1,19 @@
 {
-  "updatedAt": "2026-11-13T23:13:45Z",
-  "rows": 1611,
-  "approved": 1585,
-  "pending": 26,
+  "updatedAt": "2026-11-14T00:00:07Z",
+  "rows": 1619,
+  "approved": 1590,
+  "pending": 29,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-13T23:13:38Z",
-  "lastAddedCount": 7,
+  "lastAddedAt": "2026-11-13T23:59:56Z",
+  "lastAddedCount": 5,
   "lastAdded": [
-    "Luis Cristobal Cabrera-Ordonez",
-    "Jesus Alvarado",
-    "Carmen Zaravia-Castro",
-    "Cesar Morales-Perez",
-    "Arturo Flores",
-    "Juan Alan Araujo-Ahumada",
-    "Jesus Gonzalez-Lozano"
+    "Donaida Gonzalez",
+    "Jesus Diaz-Garcia",
+    "Eduardo Perez-Rodriguez",
+    "Evelio Gomez-Mateo",
+    "Jose Juan Garnica-Naranjo"
   ],
-  "harvestSha256": "beda0e554ba9fa16ec6d361fe57eb6b4dd5f3ef70bfdb1f95b6288b855f1a78d",
+  "harvestSha256": "1566c8b1a224b6ee4d3e9fbd463a46e0ef500da5dc14560910aadcefc32c6427",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

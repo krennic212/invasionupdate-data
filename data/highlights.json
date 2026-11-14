@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-13",
   "windowDays": 7,
-  "total": 116,
+  "total": 111,
   "rows": [
     {
       "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
@@ -25,18 +25,6 @@
       "severityCrimes": [
         "Child sex crime",
         "Fraud (incl. voter fraud)",
-        "Burglary / theft"
-      ]
-    },
-    {
-      "id": "x-2119136781740425474-alexander-sanchez-montano",
-      "name": "Alexander Sanchez Montano",
-      "when": "7 Nov 2026",
-      "severity": 185,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "Weapons",
         "Burglary / theft"
       ]
     },
@@ -213,26 +201,14 @@
       ]
     },
     {
-      "id": "x-2119138075700060660-dinh-nguyen",
-      "name": "Dinh Nguyen",
-      "when": "7 Nov 2026",
-      "severity": 130,
-      "severityReason": "Murder / manslaughter",
+      "id": "doj-20261110-eduardo-perez-rodriguez",
+      "name": "Eduardo Perez-Rodriguez",
+      "when": "10 Nov 2026",
+      "severity": 129,
+      "severityReason": "Attack on police officer",
       "severityCrimes": [
-        "Murder / manslaughter",
-        "Burglary / theft"
-      ]
-    },
-    {
-      "id": "x-2119172523820736881-wilno-morisset",
-      "name": "Wilno Morisset",
-      "when": "7 Nov 2026",
-      "severity": 126,
-      "severityReason": "Weapons",
-      "severityCrimes": [
-        "Weapons",
-        "Drug trafficking",
-        "Burglary / theft"
+        "Attack on police officer",
+        "Weapons"
       ]
     },
     {
@@ -270,17 +246,6 @@
       ]
     },
     {
-      "id": "x-2119138723468386434-noi-ly",
-      "name": "Noi Ly",
-      "when": "7 Nov 2026",
-      "severity": 117,
-      "severityReason": "Kidnapping / human trafficking",
-      "severityCrimes": [
-        "Kidnapping / human trafficking",
-        "Burglary / theft"
-      ]
-    },
-    {
       "id": "x-2120940305033605236-apolinar-santibanez-avellanea",
       "name": "Apolinar Santibanez Avellanea",
       "when": "12 Nov 2026",
@@ -290,6 +255,39 @@
         "Murder / manslaughter",
         "DUI",
         "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "dhs-20261110-richard-calix-valle",
+      "name": "Richard Calix-Valle",
+      "when": "10 Nov 2026",
+      "severity": 113,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Burglary / theft"
+      ]
+    },
+    {
+      "id": "dhs-20261109-carlos-alberto-sierra-dominguez",
+      "name": "Carlos Alberto Sierra-Dominguez",
+      "when": "9 Nov 2026",
+      "severity": 110,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Assault / battery"
+      ]
+    },
+    {
+      "id": "doj-20261110-ingrid-hernandez-salgado",
+      "name": "Ingrid Hernandez-Salgado",
+      "when": "10 Nov 2026",
+      "severity": 105,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Drug trafficking"
       ]
     },
     {
@@ -356,16 +354,6 @@
       ]
     },
     {
-      "id": "x-2119138511089537370-julio-camey",
-      "name": "Julio Camey",
-      "when": "7 Nov 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
       "id": "x-2119754740708118576-guillermo-argiro-restrepo-munera",
       "name": "Guillermo Argiro Restrepo Munera",
       "when": "9 Nov 2026",
@@ -419,16 +407,6 @@
       "id": "x-2120509063825883488-jimmi-martinez",
       "name": "Jimmi Martinez",
       "when": "11 Nov 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2119137054856737274-luis-fernando-castillo-perez",
-      "name": "Luis Fernando Castillo-Perez",
-      "when": "7 Nov 2026",
       "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
