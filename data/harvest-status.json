@@ -1,6 +1,6 @@
 {
-  "checkedAt": 1794614564015,
-  "checkedAtIso": "2026-11-14T00:02:44.015Z",
+  "checkedAt": 1794709938880,
+  "checkedAtIso": "2026-11-15T02:32:18.880Z",
   "added": [],
   "addedStatus": "approved",
   "heldPending": [],
@@ -11,7 +11,7 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 142,
+  "scannedReleases": 150,
   "error": null,
   "note": "No new named people in official releases this run.",
   "sources": [

@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-14",
   "windowDays": 7,
-  "total": 115,
+  "total": 110,
   "rows": [
     {
       "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
@@ -118,17 +118,6 @@
       ]
     },
     {
-      "id": "x-2119550541797712139-valentin-castrejon",
-      "name": "Valentin Castrejon",
-      "when": "8 Nov 2026",
-      "severity": 164,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Rape / sexual assault"
-      ]
-    },
-    {
       "id": "dhs-20261112-araldo-renald",
       "name": "Araldo Renald",
       "when": "12 Nov 2026",
@@ -169,18 +158,6 @@
       "id": "x-2120201558818480486-milton-gustovo-benegas-reyes",
       "name": "Milton Gustovo Benegas-Reyes",
       "when": "10 Nov 2026",
-      "severity": 131,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Assault / battery",
-        "Burglary / theft"
-      ]
-    },
-    {
-      "id": "x-2119496926194237816-alejandro-galvan-mangana",
-      "name": "Alejandro Galvan Mangana",
-      "when": "8 Nov 2026",
       "severity": 131,
       "severityReason": "Armed robbery / aggravated assault",
       "severityCrimes": [
@@ -283,6 +260,17 @@
       "id": "doj-20261113-antonio-oseguera-cervantes",
       "name": "Antonio Oseguera Cervantes",
       "when": "13 Nov 2026",
+      "severity": 105,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "doj-20261110-ingrid-hernandez-salgado",
+      "name": "Ingrid Hernandez-Salgado",
+      "when": "10 Nov 2026",
       "severity": 105,
       "severityReason": "Weapons",
       "severityCrimes": [
