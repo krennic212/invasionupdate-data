@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-14T22:51:48Z",
-  "rows": 1622,
-  "approved": 1595,
+  "updatedAt": "2026-11-15T14:53:54Z",
+  "rows": 1623,
+  "approved": 1596,
   "pending": 27,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-14T22:51:48Z",
+  "lastAddedAt": "2026-11-15T14:53:53Z",
   "lastAddedCount": 1,
   "lastAdded": [
-    "William Alvarado-Villa"
+    "Victor Antonio Delacruz Gonzalez"
   ],
-  "harvestSha256": "507f01407ce534cb07afe817afed724da84aa77b7229ade24d9142982d5dcdcb",
+  "harvestSha256": "807c9686978d7c6ea7f8cb904ab4917c7ca769cffdd21a316d4a1440b184b104",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
