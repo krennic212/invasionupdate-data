@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-15T14:53:54Z",
-  "rows": 1623,
-  "approved": 1596,
+  "updatedAt": "2026-11-15T22:50:42Z",
+  "rows": 1624,
+  "approved": 1597,
   "pending": 27,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-15T14:53:53Z",
+  "lastAddedAt": "2026-11-15T22:50:42Z",
   "lastAddedCount": 1,
   "lastAdded": [
-    "Victor Antonio Delacruz Gonzalez"
+    "Heriberto Jimenez-Alvarado"
   ],
-  "harvestSha256": "807c9686978d7c6ea7f8cb904ab4917c7ca769cffdd21a316d4a1440b184b104",
+  "harvestSha256": "700f4623c717ceb7bb81f1b20ee4f314bbcebbd7e2f57c4871474d73a823af1b",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

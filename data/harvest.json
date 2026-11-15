@@ -1,5 +1,36 @@
 [
   {
+    "name": "Heriberto Jimenez-Alvarado",
+    "city": "Not stated",
+    "crime": "Arrested: ICE Seattle arrested illegal alien Heriberto Jimenez-Alvarado, 48, of Mexico.",
+    "usa": "ICE X post Nov 15, 2026 (@EROSeattle)",
+    "foreign": "Not stated in post",
+    "picked": "11/15/2026 (@EROSeattle post)",
+    "entered": "Not stated",
+    "office": "EROSeattle",
+    "id": "x-2122087259650355238-heriberto-jimenez-alvarado",
+    "when": "15 Nov 2026",
+    "severity": 104,
+    "severityReason": "Drug trafficking",
+    "severityCrimes": [
+      "Drug trafficking",
+      "Burglary / theft",
+      "DUI",
+      "Illegal entry / reentry"
+    ],
+    "text": "@EROSeattle Nov 15, 2026, as posted: ICE Seattle arrested illegal alien Heriberto Jimenez-Alvarado, 48, of Mexico. Has convictions in OR and CA: theft, DUI, possession of meth in OR; and 2 DV counts and manufacture of controlled substance in CA. Now facing federal charge of illegal reentry.",
+    "photo": "",
+    "via": "@EROSeattle 2122087259650355238",
+    "sourceUrl": "https://x.com/EROSeattle/status/2122087259650355238",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Victor Antonio Delacruz Gonzalez",
     "city": "Revere, MA",
     "crime": "Arrested: On Sept. 27, ICE Boston arrested Victor Antonio Delacruz Gonzalez, a criminal illegal alien from Guatemala, during targeted operations in Revere, Mass.",
