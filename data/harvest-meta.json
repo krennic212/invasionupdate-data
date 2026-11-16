@@ -1,15 +1,23 @@
 {
-  "updatedAt": "2026-11-16T17:54:14Z",
-  "rows": 1640,
-  "approved": 1613,
+  "updatedAt": "2026-11-16T22:52:04Z",
+  "rows": 1649,
+  "approved": 1622,
   "pending": 27,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-16T17:54:08Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-11-16T22:52:04Z",
+  "lastAddedCount": 9,
   "lastAdded": [
-    "Eddy Antonio Perdomo"
+    "Rigoberto Sanchez-Galvez",
+    "Mohammad Mazen Matit",
+    "Oscar Rodriguez-Ramos",
+    "Nestor Herrera",
+    "Florencio Vasquez-Silva",
+    "Vipin Panchal",
+    "Madeline Henriquez-Portillo",
+    "Vladimir Takhavievish Glazkov",
+    "Jimmy Calix Rodriguez"
   ],
-  "harvestSha256": "5d2a900fea8787255f1cbb748830b24d8b5251b18c30fcfb9cac164a1d083bb9",
+  "harvestSha256": "3546de24a5387848cdc237f1bf69767983f65e21dd468b5624f1687ab2c4f2be",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

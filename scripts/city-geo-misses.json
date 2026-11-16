@@ -2,5 +2,9 @@
   "Clairsville, OH": {
     "at": "2026-10-28T19:14:46.253Z",
     "reason": "geocoder found no place by that name in that state"
+  },
+  "Sandston, MN": {
+    "at": "2026-11-16T22:51:59.938Z",
+    "reason": "geocoder found no place by that name in that state"
   }
 }
