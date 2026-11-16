@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-11-15",
+  "asOf": "2026-11-16",
   "windowDays": 7,
-  "total": 83,
+  "total": 86,
   "rows": [
     {
       "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
@@ -94,6 +94,18 @@
         "Assault / battery",
         "Burglary / theft",
         "Drug possession"
+      ]
+    },
+    {
+      "id": "x-2122303005642866820-carlos-molina-castillo",
+      "name": "Carlos Molina-Castillo",
+      "when": "16 Nov 2026",
+      "severity": 158,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons",
+        "Drug trafficking"
       ]
     },
     {
@@ -274,16 +286,6 @@
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261110-juan-contreras-saucedo",
-      "name": "Juan Contreras-Saucedo",
-      "when": "10 Nov 2026",
-      "severity": 90,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault"
       ]
     },
     {
