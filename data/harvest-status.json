@@ -1,8 +1,22 @@
 {
-  "checkedAt": 1794851648141,
-  "checkedAtIso": "2026-11-16T17:54:08.141Z",
+  "checkedAt": 1794869608155,
+  "checkedAtIso": "2026-11-16T22:53:28.155Z",
   "added": [
-    "Eddy Antonio Perdomo"
+    "Victor Cruz",
+    "Maicky Thimoty",
+    "Billian Xiloj-Aquino",
+    "Arturo Sergio Vasquez-Orduno",
+    "Hicham Elouada",
+    "Edy Guadalupe Alvaro-Guzman",
+    "Akinola Joel George Taylor",
+    "Nevicker Obed Rodenzo-Calderon",
+    "Juan Antoni Maldonado",
+    "Salvador Hernandez Pineda",
+    "Elmer Mauricio Melara-Paulino",
+    "Melvin Ivan Romero Reyes",
+    "JAFFAR ALI",
+    "Roman Khlynovskiy",
+    "Operation Memphis (operation, not a person)"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -13,9 +27,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 152,
+  "scannedReleases": 158,
   "error": null,
-  "note": "Added 1 as approved: Eddy Antonio Perdomo",
+  "note": "Added 15 as approved: Victor Cruz, Maicky Thimoty, Billian Xiloj-Aquino, Arturo Sergio Vasquez-Orduno, Hicham Elouada, Edy Guadalupe Alvaro-Guzman, Akinola Joel George Taylor, Nevicker Obed Rodenzo-Calderon, Juan Antoni Maldonado, Salvador Hernandez Pineda, Elmer Mauricio Melara-Paulino, Melvin Ivan Romero Reyes, JAFFAR ALI, Roman Khlynovskiy, Operation Memphis (operation, not a person)",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-16",
   "windowDays": 7,
-  "total": 108,
+  "total": 120,
   "rows": [
     {
       "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
@@ -13,6 +13,18 @@
         "Murder / manslaughter",
         "Armed robbery / aggravated assault",
         "Weapons",
+        "Assault / battery"
+      ]
+    },
+    {
+      "id": "ice-20261116-salvador-hernandez-pineda",
+      "name": "Salvador Hernandez Pineda",
+      "when": "16 Nov 2026",
+      "severity": 191,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Kidnapping / human trafficking",
         "Assault / battery"
       ]
     },
@@ -190,6 +202,17 @@
       ]
     },
     {
+      "id": "dhs-20261116-hicham-elouada",
+      "name": "Hicham Elouada",
+      "when": "16 Nov 2026",
+      "severity": 122,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Assault / battery"
+      ]
+    },
+    {
       "id": "x-2120980833603661870-adrian-roger-roger-paz-trochez",
       "name": "Adrian Roger Roger Paz Trochez",
       "when": "12 Nov 2026",
@@ -257,38 +280,14 @@
       ]
     },
     {
-      "id": "doj-20261113-antonio-oseguera-cervantes",
-      "name": "Antonio Oseguera Cervantes",
-      "when": "13 Nov 2026",
-      "severity": 105,
-      "severityReason": "Weapons",
+      "id": "ice-20261116-nevicker-obed-rodenzo-calderon",
+      "name": "Nevicker Obed Rodenzo-Calderon",
+      "when": "16 Nov 2026",
+      "severity": 110,
+      "severityReason": "Kidnapping / human trafficking",
       "severityCrimes": [
-        "Weapons",
-        "Drug trafficking"
-      ]
-    },
-    {
-      "id": "doj-20261110-ingrid-hernandez-salgado",
-      "name": "Ingrid Hernandez-Salgado",
-      "when": "10 Nov 2026",
-      "severity": 105,
-      "severityReason": "Weapons",
-      "severityCrimes": [
-        "Weapons",
-        "Drug trafficking"
-      ]
-    },
-    {
-      "id": "x-2122087259650355238-heriberto-jimenez-alvarado",
-      "name": "Heriberto Jimenez-Alvarado",
-      "when": "15 Nov 2026",
-      "severity": 104,
-      "severityReason": "Drug trafficking",
-      "severityCrimes": [
-        "Drug trafficking",
-        "Burglary / theft",
-        "DUI",
-        "Illegal entry / reentry"
+        "Kidnapping / human trafficking",
+        "Assault / battery"
       ]
     },
     {
@@ -334,6 +333,16 @@
       ]
     },
     {
+      "id": "ice-20261116-juan-antoni-maldonado",
+      "name": "Juan Antoni Maldonado",
+      "when": "16 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
       "id": "x-2122404825359171977-nestor-herrera",
       "name": "Nestor Herrera",
       "when": "16 Nov 2026",
@@ -356,6 +365,16 @@
     {
       "id": "x-2122362916146184402-pablo-alberto-martinez-serrano",
       "name": "Pablo Alberto Martinez Serrano",
+      "when": "16 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261116-victor-cruz",
+      "name": "Victor Cruz",
       "when": "16 Nov 2026",
       "severity": 92,
       "severityReason": "Child sex crime",

@@ -526,5 +526,16 @@
     "text": "ATFHQ 13 Nov 2026, as posted: Operation Summit City Sweep 🚨 This Week at ATF: ATF and our law enforcement partners disrupted violent crime through targeted enforcement operations, secured significant sentences for firearms and drug traffickers, apprehended armed robbery suspects, seized cartel-linked weapons, and arrested narcotics traffickers fueling violence in local communities. Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true,
     "people": []
+  },
+  {
+    "id": "op-thejusticedept-20261116-operation-memphis",
+    "name": "Operation Memphis",
+    "when": "16 Nov 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/usao-wdtn/pr/memphis-men-convicted-meth-trafficking-and-possession-firearms-result-homeland",
+    "people": [],
+    "text": "TheJusticeDept 16 Nov 2026, as posted: Memphis Men Convicted for Meth Trafficking and Possession of Firearms as the Result of a Homeland Security Task Force Operation Memphis, TN – A federal jury has convicted Darius Carter, 42, and Samuel Washington, aka \"Jugg\", 36, both of Memphis, of aiding and abetting the distribution of more than 50 grams of methamphetamine, being felons in possession of firearms, and possession of a firearm in furtherance of a drug trafficking offense. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
   }
 ]
