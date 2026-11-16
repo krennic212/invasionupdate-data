@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-15",
   "windowDays": 7,
-  "total": 112,
+  "total": 83,
   "rows": [
     {
       "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
@@ -17,32 +17,9 @@
       ]
     },
     {
-      "id": "dhs-20261109-jose-antonio-maturel-reyes",
-      "name": "Jose Antonio Maturel-Reyes",
-      "when": "9 Nov 2026",
-      "severity": 187,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Fraud (incl. voter fraud)",
-        "Burglary / theft"
-      ]
-    },
-    {
       "id": "x-2120225919143203235-jose-gonzalez",
       "name": "Jose Gonzalez",
       "when": "10 Nov 2026",
-      "severity": 182,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Rape / sexual assault"
-      ]
-    },
-    {
-      "id": "dhs-20261109-david-estrada-jerez",
-      "name": "David Estrada-Jerez",
-      "when": "9 Nov 2026",
       "severity": 182,
       "severityReason": "Child sex crime",
       "severityCrimes": [
@@ -85,17 +62,6 @@
       ]
     },
     {
-      "id": "dhs-20261109-jackson-pata",
-      "name": "Jackson Pata",
-      "when": "9 Nov 2026",
-      "severity": 172,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Kidnapping / human trafficking"
-      ]
-    },
-    {
       "id": "x-2120225893226319936-jose-martin-quinones-castro",
       "name": "Jose Martin Quinones-Castro",
       "when": "10 Nov 2026",
@@ -127,18 +93,6 @@
         "Weapons",
         "Assault / battery",
         "Burglary / theft",
-        "Drug possession"
-      ]
-    },
-    {
-      "id": "dhs-20261109-luis-gonzalez",
-      "name": "Luis Gonzalez",
-      "when": "9 Nov 2026",
-      "severity": 160,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Fraud (incl. voter fraud)",
         "Drug possession"
       ]
     },
@@ -246,17 +200,6 @@
       ]
     },
     {
-      "id": "dhs-20261109-carlos-alberto-sierra-dominguez",
-      "name": "Carlos Alberto Sierra-Dominguez",
-      "when": "9 Nov 2026",
-      "severity": 110,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Assault / battery"
-      ]
-    },
-    {
       "id": "doj-20261113-antonio-oseguera-cervantes",
       "name": "Antonio Oseguera Cervantes",
       "when": "13 Nov 2026",
@@ -314,14 +257,13 @@
       ]
     },
     {
-      "id": "dhs-20261109-antonio-hernandez-lincona",
-      "name": "Antonio Hernandez-Lincona",
-      "when": "9 Nov 2026",
-      "severity": 97,
-      "severityReason": "Child sex crime",
+      "id": "dhs-20261112-raymond-jones",
+      "name": "Raymond Jones",
+      "when": "12 Nov 2026",
+      "severity": 95,
+      "severityReason": "Murder / manslaughter",
       "severityCrimes": [
-        "Child sex crime",
-        "Illegal entry / reentry"
+        "Murder / manslaughter"
       ]
     },
     {
@@ -335,33 +277,13 @@
       ]
     },
     {
-      "id": "x-2119880296808017982-alex-disney-alverez-ordonez",
-      "name": "Alex Disney Alverez Ordonez",
-      "when": "9 Nov 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
+      "id": "dhs-20261110-juan-contreras-saucedo",
+      "name": "Juan Contreras-Saucedo",
+      "when": "10 Nov 2026",
+      "severity": 90,
+      "severityReason": "Rape / sexual assault",
       "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261109-birgilio-cheluca-garcia",
-      "name": "Birgilio Cheluca-Garcia",
-      "when": "9 Nov 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2119754740708118576-guillermo-argiro-restrepo-munera",
-      "name": "Guillermo Argiro Restrepo Munera",
-      "when": "9 Nov 2026",
-      "severity": 91,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
+        "Rape / sexual assault"
       ]
     },
     {
