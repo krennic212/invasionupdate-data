@@ -1,17 +1,15 @@
 {
-  "updatedAt": "2026-11-16T14:54:20Z",
-  "rows": 1627,
-  "approved": 1600,
+  "updatedAt": "2026-11-16T14:55:55Z",
+  "rows": 1628,
+  "approved": 1601,
   "pending": 27,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-16T14:54:19Z",
-  "lastAddedCount": 3,
+  "lastAddedAt": "2026-11-16T14:55:45Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Luis Baez Geronimo",
-    "Israel Domingo-Mendez",
-    "Carlos Molina-Castillo"
+    "Juan Carlos Garcia Vargas"
   ],
-  "harvestSha256": "027bcdad0080079efcaead633fd4213a702a3691f68cf1de29beefe061f25159",
+  "harvestSha256": "2a6b56e7e6a4d0b7d0220fde4266ee52a4305670e61232da576a978ec6990af9",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
