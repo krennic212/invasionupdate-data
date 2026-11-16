@@ -1,5 +1,33 @@
 [
   {
+    "name": "Eddy Antonio Perdomo",
+    "city": "Lawrence, MA",
+    "crime": "Convicted: BOSTON – A Dominican national unlawfully residing in Lawrence, Mass. was sentenced in federal court in Boston for unlawfully reentering the United States after deportation. Eddy Antonio Perdomo, 32, was sentenced by U.S. District Court Judge Angel Kelley to eight months in prison, to be followed by two years of supervised release.",
+    "usa": "DOJ release Nov 16, 2026: Illegal Alien Sentenced to Eight Months in Prison for Illegal Reentry",
+    "foreign": "Not stated in post",
+    "picked": "11/16/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261116-eddy-antonio-perdomo",
+    "when": "16 Nov 2026",
+    "severity": 5,
+    "severityReason": "Illegal entry / reentry",
+    "severityCrimes": [
+      "Illegal entry / reentry"
+    ],
+    "text": "DOJ Nov 16, 2026, as posted: BOSTON – A Dominican national unlawfully residing in Lawrence, Mass. was sentenced in federal court in Boston for unlawfully reentering the United States after deportation. Eddy Antonio Perdomo, 32, was sentenced by U.S. District Court Judge Angel Kelley to eight months in prison, to be followed by two years of supervised release.",
+    "photo": "",
+    "via": "justice.gov/usao-ma/pr/illegal-alien-sentenced-eight-months-prison-illegal-reentry",
+    "sourceUrl": "https://www.justice.gov/usao-ma/pr/illegal-alien-sentenced-eight-months-prison-illegal-reentry",
+    "voting": false,
+    "origin": "Dominican Republic",
+    "confirmedBy": "DOJ",
+    "lat": 42.708,
+    "lon": -71.1638,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Gildardo Garcia-Duron",
     "city": "Not stated",
     "crime": "Arrested: ICE New Orleans arrested Gildardo Garcia-Duron, an illegal alien from Mexico.",

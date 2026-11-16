@@ -1,25 +1,15 @@
 {
-  "updatedAt": "2026-11-16T17:52:46Z",
-  "rows": 1639,
-  "approved": 1612,
+  "updatedAt": "2026-11-16T17:54:14Z",
+  "rows": 1640,
+  "approved": 1613,
   "pending": 27,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-16T17:52:46Z",
-  "lastAddedCount": 11,
+  "lastAddedAt": "2026-11-16T17:54:08Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Gildardo Garcia-Duron",
-    "Bekenvawer Aguilar Hurtado",
-    "Miguel Fabian Ruvalcaba-Munoz",
-    "Jose Hernando Rodriguez-Eraso",
-    "Jose Carlos Cartagena Ortega",
-    "Emilson Yordao Quinonez Hachito",
-    "Luis Fernando Letkeman-Hernandez",
-    "Felipe Pablo Menchu Yax",
-    "Marvin Stiven Camacho Hinestroza",
-    "Alba Rodriguez Rodriguez",
-    "Pablo Alberto Martinez Serrano"
+    "Eddy Antonio Perdomo"
   ],
-  "harvestSha256": "83f4e4bab34544f54cdd3bf35c80a21c0b2778f128dca0401b068134be76a773",
+  "harvestSha256": "5d2a900fea8787255f1cbb748830b24d8b5251b18c30fcfb9cac164a1d083bb9",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -1,8 +1,8 @@
 {
-  "checkedAt": 1794840945860,
-  "checkedAtIso": "2026-11-16T14:55:45.860Z",
+  "checkedAt": 1794851648141,
+  "checkedAtIso": "2026-11-16T17:54:08.141Z",
   "added": [
-    "Juan Carlos Garcia Vargas"
+    "Eddy Antonio Perdomo"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -13,9 +13,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 149,
+  "scannedReleases": 152,
   "error": null,
-  "note": "Added 1 as approved: Juan Carlos Garcia Vargas",
+  "note": "Added 1 as approved: Eddy Antonio Perdomo",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
