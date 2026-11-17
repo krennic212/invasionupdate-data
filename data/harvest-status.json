@@ -1,16 +1,7 @@
 {
-  "checkedAt": 1794874372744,
-  "checkedAtIso": "2026-11-17T00:12:52.744Z",
-  "added": [
-    "Charlie Jarquin-Asnavin",
-    "Wilmer Jesus Colmenares-Gonzalez",
-    "Victor Hugo Garcia-Dominguez",
-    "Axel Bladimir Montejo Saenz",
-    "Ada Evila Serrano Nuñez",
-    "Luis Euceda Serrano",
-    "Angel Euceda Serrano",
-    "Operation Shock Collar (operation, not a person)"
-  ],
+  "checkedAt": 1794874493027,
+  "checkedAtIso": "2026-11-17T00:14:53.027Z",
+  "added": [],
   "addedStatus": "approved",
   "heldPending": [],
   "stageUpdates": [],
@@ -20,9 +11,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 153,
+  "scannedReleases": 149,
   "error": null,
-  "note": "Added 8 as approved: Charlie Jarquin-Asnavin, Wilmer Jesus Colmenares-Gonzalez, Victor Hugo Garcia-Dominguez, Axel Bladimir Montejo Saenz, Ada Evila Serrano Nuñez, Luis Euceda Serrano, Angel Euceda Serrano, Operation Shock Collar (operation, not a person)",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
