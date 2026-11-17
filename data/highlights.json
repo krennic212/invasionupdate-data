@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-17",
   "windowDays": 7,
-  "total": 99,
+  "total": 100,
   "rows": [
     {
       "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
@@ -189,6 +189,17 @@
         "Murder / manslaughter",
         "DUI",
         "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "doj-20261117-jose-carlos-miranda-morales",
+      "name": "Jose Carlos Miranda Morales",
+      "when": "17 Nov 2026",
+      "severity": 110,
+      "severityReason": "Fraud (incl. voter fraud)",
+      "severityCrimes": [
+        "Fraud (incl. voter fraud)",
+        "Drug trafficking"
       ]
     },
     {
