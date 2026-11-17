@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-17",
   "windowDays": 7,
-  "total": 100,
+  "total": 110,
   "rows": [
     {
       "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
@@ -63,6 +63,17 @@
         "Attack on police officer",
         "Armed robbery / aggravated assault",
         "Assault / battery"
+      ]
+    },
+    {
+      "id": "dhs-20261117-jose-antonio-leon-avalos",
+      "name": "Jose Antonio Leon-Avalos",
+      "when": "17 Nov 2026",
+      "severity": 160,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Armed robbery / aggravated assault"
       ]
     },
     {
@@ -279,16 +290,6 @@
         "Drug trafficking",
         "Assault / battery",
         "Illegal entry / reentry"
-      ]
-    },
-    {
-      "id": "dhs-20261112-raymond-jones",
-      "name": "Raymond Jones",
-      "when": "12 Nov 2026",
-      "severity": 95,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter"
       ]
     },
     {

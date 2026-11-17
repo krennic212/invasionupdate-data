@@ -1,15 +1,24 @@
 {
-  "updatedAt": "2026-11-17T17:54:23Z",
-  "rows": 1676,
-  "approved": 1648,
+  "updatedAt": "2026-11-17T22:51:08Z",
+  "rows": 1686,
+  "approved": 1658,
   "pending": 28,
   "photos": 404,
   "reviewRows": 775,
-  "lastAddedAt": "2026-11-17T17:54:16Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-11-17T22:50:57Z",
+  "lastAddedCount": 10,
   "lastAdded": [
-    "Jose Carlos Miranda Morales"
+    "Jose Antonio Leon-Avalos",
+    "Lorena Espinoza-Murillo",
+    "Daniel Martinez Espana",
+    "Abraham Valdivia-Valladolid",
+    "Biyou Makaula",
+    "Ricardo Perez-Flores",
+    "Johan Perez-Ventura",
+    "ELMER ALEXANDER GUARDIOLA-GEORGE",
+    "Paramvir Singh",
+    "Cesar Almeida-Casas"
   ],
-  "harvestSha256": "9b1c59cea21a56c95f4bfa848b4d4ac16fab85970d4441eecbc8ac888eca349c",
+  "harvestSha256": "3add6e27f8f8584a670c7df95d15f0d72b5a2ace299d785562c11b3706719e0b",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -1,8 +1,17 @@
 {
-  "checkedAt": 1794938056368,
-  "checkedAtIso": "2026-11-17T17:54:16.368Z",
+  "checkedAt": 1794955857517,
+  "checkedAtIso": "2026-11-17T22:50:57.517Z",
   "added": [
-    "Jose Carlos Miranda Morales"
+    "Jose Antonio Leon-Avalos",
+    "Lorena Espinoza-Murillo",
+    "Daniel Martinez Espana",
+    "Abraham Valdivia-Valladolid",
+    "Biyou Makaula",
+    "Ricardo Perez-Flores",
+    "Johan Perez-Ventura",
+    "ELMER ALEXANDER GUARDIOLA-GEORGE",
+    "Paramvir Singh",
+    "Cesar Almeida-Casas"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -13,9 +22,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 146,
+  "scannedReleases": 164,
   "error": null,
-  "note": "Added 1 as approved: Jose Carlos Miranda Morales",
+  "note": "Added 10 as approved: Jose Antonio Leon-Avalos, Lorena Espinoza-Murillo, Daniel Martinez Espana, Abraham Valdivia-Valladolid, Biyou Makaula, Ricardo Perez-Flores, Johan Perez-Ventura, ELMER ALEXANDER GUARDIOLA-GEORGE, Paramvir Singh, Cesar Almeida-Casas",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
