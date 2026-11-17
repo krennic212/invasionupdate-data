@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-17",
   "windowDays": 7,
-  "total": 110,
+  "total": 120,
   "rows": [
     {
       "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
@@ -133,6 +133,17 @@
       "severityCrimes": [
         "Kidnapping / human trafficking",
         "Armed robbery / aggravated assault"
+      ]
+    },
+    {
+      "id": "x-2122796591010693588-josue-elias-jeronimo",
+      "name": "Josue Elias Jeronimo",
+      "when": "17 Nov 2026",
+      "severity": 125,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons"
       ]
     },
     {
@@ -281,15 +292,23 @@
       ]
     },
     {
-      "id": "x-2122404860457041982-rigoberto-sanchez-galvez",
-      "name": "Rigoberto Sanchez-Galvez",
-      "when": "16 Nov 2026",
-      "severity": 95,
-      "severityReason": "Drug trafficking",
+      "id": "x-2122796588217291173-elder-manuel-sanchez-carias",
+      "name": "Elder Manuel Sanchez Carias",
+      "when": "17 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
       "severityCrimes": [
-        "Drug trafficking",
-        "Assault / battery",
-        "Illegal entry / reentry"
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2122796585511956895-oscar-rosales-tumin-lopez",
+      "name": "Oscar Rosales Tumin Lopez",
+      "when": "17 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
       ]
     },
     {
