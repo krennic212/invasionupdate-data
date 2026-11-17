@@ -1,5 +1,33 @@
 [
   {
+    "name": "Clemente Miguel Moran-Alcala",
+    "city": "Texas",
+    "crime": "Removed: Clemente Miguel Moran-Alcala, a Mexican national, was charged with felony reentry after authorities allegedly found him unlawfully in the country near La Joya, despite having been removed Aug. 24, 2011.",
+    "usa": "DOJ release Nov 17, 2026: Operation Take Back America efforts continue with 295 more cases filed in border enforcement actions",
+    "foreign": "Not stated in post",
+    "picked": "11/17/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261117-clemente-miguel-moran-alcala",
+    "when": "17 Nov 2026",
+    "severity": 5,
+    "severityReason": "Illegal entry / reentry",
+    "severityCrimes": [
+      "Illegal entry / reentry"
+    ],
+    "text": "DOJ Nov 17, 2026, as posted: Clemente Miguel Moran-Alcala, a Mexican national, was charged with felony reentry after authorities allegedly found him unlawfully in the country near La Joya, despite having been removed Aug. 24, 2011.",
+    "photo": "",
+    "via": "justice.gov/usao-sdtx/pr/operation-take-back-america-efforts-continue-295-more-cases-filed-border-enforcement",
+    "sourceUrl": "https://www.justice.gov/usao-sdtx/pr/operation-take-back-america-efforts-continue-295-more-cases-filed-border-enforcement",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "DOJ",
+    "lat": 31.9686,
+    "lon": -99.9018,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Willan Enrique Galvez Valdivieso",
     "city": "Waterbury, CT",
     "crime": "Arrested: ICE Boston arrested Willan Enrique Galvez Valdivieso, a criminal illegal alien from Spain, during targeted operations in Waterbury, Conn.",
