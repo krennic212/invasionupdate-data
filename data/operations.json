@@ -537,5 +537,16 @@
     "people": [],
     "text": "TheJusticeDept 16 Nov 2026, as posted: Memphis Men Convicted for Meth Trafficking and Possession of Firearms as the Result of a Homeland Security Task Force Operation Memphis, TN – A federal jury has convicted Darius Carter, 42, and Samuel Washington, aka \"Jugg\", 36, both of Memphis, of aiding and abetting the distribution of more than 50 grams of methamphetamine, being felons in possession of firearms, and possession of a firearm in furtherance of a drug trafficking offense. Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true
+  },
+  {
+    "id": "op-thejusticedept-20261116-operation-shock-collar",
+    "name": "Operation Shock Collar",
+    "when": "16 Nov 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/usao-edca/pr/bulldog-gang-leader-sentenced-15-years-prison-firearms-trafficking",
+    "people": [],
+    "text": "TheJusticeDept 16 Nov 2026, as posted: This case is part of a larger investigation, Operation Shock Collar. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
   }
 ]

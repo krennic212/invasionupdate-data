@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-16",
   "windowDays": 7,
-  "total": 120,
+  "total": 93,
   "rows": [
     {
       "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
@@ -29,17 +29,6 @@
       ]
     },
     {
-      "id": "x-2120225919143203235-jose-gonzalez",
-      "name": "Jose Gonzalez",
-      "when": "10 Nov 2026",
-      "severity": 182,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Rape / sexual assault"
-      ]
-    },
-    {
       "id": "x-2122362933971911093-jose-hernando-rodriguez-eraso",
       "name": "Jose Hernando Rodriguez-Eraso",
       "when": "16 Nov 2026",
@@ -52,17 +41,6 @@
       ]
     },
     {
-      "id": "dhs-20261110-gustavo-rodriguez-callado",
-      "name": "Gustavo Rodriguez-Callado",
-      "when": "10 Nov 2026",
-      "severity": 179,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "Armed robbery / aggravated assault"
-      ]
-    },
-    {
       "id": "x-2120898241734570406-jose-garnica-naranjo",
       "name": "Jose Garnica-Naranjo",
       "when": "12 Nov 2026",
@@ -72,39 +50,6 @@
         "Attack on police officer",
         "Armed robbery / aggravated assault",
         "Assault / battery"
-      ]
-    },
-    {
-      "id": "x-2120225907264704816-ramon-grajales-barbis",
-      "name": "Ramon Grajales-Barbis",
-      "when": "10 Nov 2026",
-      "severity": 172,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Kidnapping / human trafficking"
-      ]
-    },
-    {
-      "id": "x-2120225893226319936-jose-martin-quinones-castro",
-      "name": "Jose Martin Quinones-Castro",
-      "when": "10 Nov 2026",
-      "severity": 168,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Assault / battery"
-      ]
-    },
-    {
-      "id": "x-2120162268260491346-kovi-bryan-carrillo-flores",
-      "name": "Kovi Bryan Carrillo-Flores",
-      "when": "10 Nov 2026",
-      "severity": 164,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Rape / sexual assault"
       ]
     },
     {
@@ -133,6 +78,17 @@
       ]
     },
     {
+      "id": "doj-20261116-wilmer-jesus-colmenares-gonzalez",
+      "name": "Wilmer Jesus Colmenares-Gonzalez",
+      "when": "16 Nov 2026",
+      "severity": 152,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Armed robbery / aggravated assault"
+      ]
+    },
+    {
       "id": "x-2121308362109280722-jesus-gonzalez-lozano",
       "name": "Jesus Gonzalez-Lozano",
       "when": "13 Nov 2026",
@@ -153,52 +109,6 @@
       "severityCrimes": [
         "Kidnapping / human trafficking",
         "Armed robbery / aggravated assault"
-      ]
-    },
-    {
-      "id": "x-2120201558818480486-milton-gustovo-benegas-reyes",
-      "name": "Milton Gustovo Benegas-Reyes",
-      "when": "10 Nov 2026",
-      "severity": 131,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Assault / battery",
-        "Burglary / theft"
-      ]
-    },
-    {
-      "id": "x-2120225909663817765-angel-cornejo-romero",
-      "name": "Angel Cornejo Romero",
-      "when": "10 Nov 2026",
-      "severity": 130,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Assault / battery"
-      ]
-    },
-    {
-      "id": "doj-20261110-eduardo-perez-rodriguez",
-      "name": "Eduardo Perez-Rodriguez",
-      "when": "10 Nov 2026",
-      "severity": 129,
-      "severityReason": "Attack on police officer",
-      "severityCrimes": [
-        "Attack on police officer",
-        "Weapons"
-      ]
-    },
-    {
-      "id": "dhs-20261110-poeurt-nhean",
-      "name": "Poeurt Nhean",
-      "when": "10 Nov 2026",
-      "severity": 125,
-      "severityReason": "Weapons",
-      "severityCrimes": [
-        "Weapons",
-        "Assault / battery",
-        "Drug possession"
       ]
     },
     {
@@ -269,17 +179,6 @@
       ]
     },
     {
-      "id": "dhs-20261110-richard-calix-valle",
-      "name": "Richard Calix-Valle",
-      "when": "10 Nov 2026",
-      "severity": 113,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Burglary / theft"
-      ]
-    },
-    {
       "id": "ice-20261116-nevicker-obed-rodenzo-calderon",
       "name": "Nevicker Obed Rodenzo-Calderon",
       "when": "16 Nov 2026",
@@ -288,6 +187,30 @@
       "severityCrimes": [
         "Kidnapping / human trafficking",
         "Assault / battery"
+      ]
+    },
+    {
+      "id": "doj-20261113-antonio-oseguera-cervantes",
+      "name": "Antonio Oseguera Cervantes",
+      "when": "13 Nov 2026",
+      "severity": 105,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "x-2122087259650355238-heriberto-jimenez-alvarado",
+      "name": "Heriberto Jimenez-Alvarado",
+      "when": "15 Nov 2026",
+      "severity": 104,
+      "severityReason": "Drug trafficking",
+      "severityCrimes": [
+        "Drug trafficking",
+        "Burglary / theft",
+        "DUI",
+        "Illegal entry / reentry"
       ]
     },
     {
@@ -310,6 +233,38 @@
       "severityCrimes": [
         "Child sex crime",
         "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "x-2122404792601641179-madeline-henriquez-portillo",
+      "name": "Madeline Henriquez-Portillo",
+      "when": "16 Nov 2026",
+      "severity": 95,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter"
+      ]
+    },
+    {
+      "id": "x-2122404860457041982-rigoberto-sanchez-galvez",
+      "name": "Rigoberto Sanchez-Galvez",
+      "when": "16 Nov 2026",
+      "severity": 95,
+      "severityReason": "Drug trafficking",
+      "severityCrimes": [
+        "Drug trafficking",
+        "Assault / battery",
+        "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "dhs-20261112-raymond-jones",
+      "name": "Raymond Jones",
+      "when": "12 Nov 2026",
+      "severity": 95,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter"
       ]
     },
     {
