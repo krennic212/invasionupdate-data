@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-17",
   "windowDays": 7,
-  "total": 97,
+  "total": 99,
   "rows": [
     {
       "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
@@ -408,6 +408,16 @@
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2122736522759716994-irvin-rogelio-garcia-valenzuela",
+      "name": "Irvin Rogelio Garcia-Valenzuela",
+      "when": "17 Nov 2026",
+      "severity": 72,
+      "severityReason": "Violent crime against a child",
+      "severityCrimes": [
+        "Violent crime against a child"
       ]
     },
     {

@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-17T16:03:19Z",
-  "rows": 1673,
-  "approved": 1645,
+  "updatedAt": "2026-11-17T17:52:50Z",
+  "rows": 1675,
+  "approved": 1647,
   "pending": 28,
   "photos": 404,
   "reviewRows": 775,
-  "lastAddedAt": "2026-11-17T14:53:12Z",
+  "lastAddedAt": "2026-11-17T17:52:50Z",
   "lastAddedCount": 1,
   "lastAdded": [
-    "Clemente Miguel Moran-Alcala"
+    "Elvin Francisco Guevara-Hernandez"
   ],
-  "harvestSha256": "d0a14a235281d6a1fbd9de3c4422dafa664ef6d2b311eab6ef40d7110be77d69",
+  "harvestSha256": "928937ce3c4b7f5ddbcf0f73319bab7e6e541acdd761bb92b607686d1d390e82",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
