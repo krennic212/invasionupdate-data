@@ -1,3 +1,12 @@
+## 2026-11-16 (evening) daily missed-cases check (weekend Nov 13 6 PM - Nov 16)
+
+- Added via data/pending.json (commit 489545e, run 43985636473, live): Charlie Jarquin-Asnavin (EDLA, Pleaded guilty, Nicaraguan national, alien in possession of ammunition), Wilmer Jesus Colmenares-Gonzalez (NDTX, Convicted/sentenced kidnapping, illegal alien from Venezuela), Victor Hugo Garcia-Dominguez (NV, Convicted/sentenced reentry, illegal alien from Mexico), Ada Evila Serrano Nunez (NDGA, Charged, consul general of Honduras - passes foreign-office guard).
+- Held pending (guard "not stated to be a non-citizen", left held): Luis Euceda Serrano and Angel Euceda Serrano (NDGA; release only says "of Honduras").
+- Approved by id: doj-20261112-stanislav-chernyshov (run 43985636473; OPA Nov 12 says "a Russian national illegally residing in the United States"; guard tripped on his brother's "naturalized U.S. citizen" clause in the same sentence) and doj-20261116-axel-bladimir-montejo-saenz (run 43985941985; SDCA "Alleged Guatemalan drug kingpin", same headline-demonym case as Oseguera Cervantes Nov 13).
+- Rule gaps for Krennic: (1) guard should judge U.S.-citizen wording per person, not per sentence (Chernyshov brothers); (2) headline/lead demonym + role ("Guatemalan drug kingpin") - same open item as Nov 13.
+- Possible duplicate: doj-20261019-ernest-gutierrez-ruvalcaba vs doj-20261104-ernesto-gutierrez-ruvalcaba (two CDCA releases, likely same person); deletion needs Krennic approval.
+- No rule, guard or parser changes. Tests 309/309.
+
 ## 2026-11-13 (evening) daily missed-cases check
 
 - Added via data/pending.json (commit e9dd61c, harvest run 43530992255): Donaida Gonzalez (NH, Convicted, illegal alien, Dominican Republic), Jesus Diaz-Garcia (NDIA, Pleaded guilty, Mexican citizen), Eduardo Perez-Rodriguez (SDTX, Charged, Mexican national), Evelio Gomez-Mateo (SDGA, Charged, citizen of Guatemala; missed from the roundup, a/k/a confused parser), Jose Juan Garnica-Naranjo (DHS Nov 12, Arrested). Julio Cesar Vazquez Hernandez (DHS Nov 13) held pending: at large.
