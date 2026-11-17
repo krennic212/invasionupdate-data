@@ -1,19 +1,16 @@
 {
-  "updatedAt": "2026-11-17T00:14:13Z",
-  "rows": 1670,
-  "approved": 1642,
+  "updatedAt": "2026-11-17T14:51:41Z",
+  "rows": 1672,
+  "approved": 1644,
   "pending": 28,
   "photos": 404,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-17T00:12:52Z",
-  "lastAddedCount": 5,
+  "lastAddedAt": "2026-11-17T14:51:41Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Charlie Jarquin-Asnavin",
-    "Wilmer Jesus Colmenares-Gonzalez",
-    "Victor Hugo Garcia-Dominguez",
-    "Axel Bladimir Montejo Saenz",
-    "Ada Evila Serrano Nuñez"
+    "Willan Enrique Galvez Valdivieso",
+    "Arnulfo Palacois Gomez"
   ],
-  "harvestSha256": "b2100b563b3671ebc9b3979774cb2916e939fd00aa41786dd784fdf19aae6977",
+  "harvestSha256": "f2100c09f345a5f914d78186ec18c701d5a4bb83c942772cd23b195dae38baa3",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
