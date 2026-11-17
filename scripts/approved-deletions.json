@@ -19,5 +19,12 @@
     "approvedBy": "Krennic",
     "approvedAt": "2026-10-28T14:40:00-05:00",
     "reason": "Moved out of the named ledger into data/operations.json. Not a person. Posted count stays on the operation."
+  },
+  {
+    "id": "doj-20261019-ernest-gutierrez-ruvalcaba",
+    "name": "Ernest Gutiérrez Ruvalcaba",
+    "approvedBy": "Krennic",
+    "approvedAt": "2026-11-17T09:23:00-06:00",
+    "reason": "Same Central District of California defendant as doj-20261104-ernesto-gutierrez-ruvalcaba (kept). Official USAO-CDCA releases of Oct 19 and Nov 4, 2026 both describe Ernesto Gutiérrez Ruvalcaba, 57, a Mexican national living in Wilmington, who registered to vote in February 2024 and voted one month later; the Oct 19 OPA wrap used the Anglicized given name Ernest. Krennic approved removing the duplicate on 2026-11-17. The kept row uses the correct name, the earliest official source, an aka for Ernest, and both official URLs so the harvester will not re-add him."
   }
 ]

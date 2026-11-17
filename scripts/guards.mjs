@@ -181,26 +181,128 @@ export function deportedStated(text) {
 export const deportedReentryStated = deportedStated;
 
 /**
- * Person-scoped check (2026-10-20). DOJ lists several defendants in one sentence separated by ";":
+ * Person-scoped check (2026-10-20, extended 2026-11-17). DOJ lists several defendants in one sentence separated by ";":
  * "Gabriel Cezar Menezes, 29, a Brazilian national, was sentenced to 94 months; Omar ... Correa, 34, a U.S. citizen,
  * was sentenced to 30 months; ...". The co-defendant's "U.S. citizen" must not cancel THIS person's own wording, and
  * this person's own "U.S. citizen" must still hold them. True when every ";" clause that names the person is free of
  * U.S.-citizen / naturalized / dual wording and at least one of them states non-citizen status.
+ *
+ * Krennic 2026-11-17: the same attachment rule applies inside a sentence that is not split by ";".
+ * "Stanislav Chernyshov, 30, a Russian national illegally residing in the United States, and his brother
+ * Vladislav Chernyshov, 35, a naturalized U.S. citizen, were arrested..." — the brother's citizenship does not
+ * hold Stanislav. A release that calls the defendant himself a U.S. citizen still holds them. Citizen wording
+ * only blocks the person it is attached to (nearest name, "U.S. citizen <Name>", or a his/her/their-relative
+ * phrase); unattached wording in this person's clause still blocks them.
  */
+const RELATIVE = /\b(?:his|her|their)\s+(?:brother|sister|son|daughter|father|mother|wife|husband|cousin|uncle|aunt|nephew|niece|sibling|parent|spouse|step(?:father|mother|brother|sister)|grandson|granddaughter)s?\b/i;
+const CITIZEN_APPOS_LEAD = /(?:,\s+\d{1,3})?(?:\s*,|\s+(?:is|was|who\s+(?:is|was)))?\s+(?:a|an)\s+(?:(?:naturalized|dual(?:\s+(?:national|citizen))?)\s+)*$/i;
+
+function normPersonName(s) {
+  return String(s || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function looksLikePerson(found) {
+  const s = String(found || "").trim();
+  if (!s) return false;
+  if (isPlaceName(s)) return false;
+  if (NOT_NAME.test(s)) return false;
+  if (COUNTRIES.has(s) || COUNTRIES.has(s.replace(/^the\s+/i, ""))) return false;
+  // "Jefferson County", "Daly City", "House of Representatives", "North Macedonia" are not people.
+  if (/\b(?:County|City|Cities|Township|Parish|Municipality|Province|Borough|Village|States?|Kingdom|Republic|District|Court|Department|Office|Offices|House|Representatives|Senate|Congress|University|College|Hospital|Agency|Bureau|Street|Avenue|Boulevard|Road|Park|Beach|Valley|Springs|Heights|Island|Islands|President|Governor)\b/i.test(s)) return false;
+  return true;
+}
+
+/** True when `found` is this person (full name, 2+ token short form, or this person's given name). Not a shared surname alone. */
+function nameRefersTo(person, found) {
+  const a = normPersonName(person);
+  const b = normPersonName(found);
+  if (!a || !b) return false;
+  if (a === b) return true;
+  const at = a.split(" ").filter(Boolean);
+  const bt = b.split(" ").filter(Boolean);
+  if (at.length === bt.length) return false;
+  const [long, short] = at.length > bt.length ? [at, bt] : [bt, at];
+  if (short.length >= 2 && long.slice(-short.length).join(" ") === short.join(" ")) return true;
+  // "Stanislav" refers to "Stanislav Chernyshov"; a lone shared surname does not.
+  return short.length === 1 && long[0] === short[0];
+}
+
+/**
+ * Clean a span the same way the override test does, but keep string length so match indexes stay valid.
+ */
+function cleanCitizenSpan(sentence) {
+  return stripVictimIdentity(sentence).replace(CITIZEN_CLAIM, (m) => " ".repeat(m.length));
+}
+
+/**
+ * True when this CITIZEN_OVERRIDE match is clearly about someone other than `person`: another named
+ * person next to the wording, or a his/her/their-relative phrase (named or not) that is not this person.
+ */
+function citizenMatchAboutOther(person, sentence, m) {
+  const before = sentence.slice(0, m.index);
+  const after = sentence.slice(m.index + m[0].length);
+  const afterName = after.match(new RegExp(`^\\s+(${PERSONISH.source})`));
+  if (afterName && looksLikePerson(afterName[1])) return !nameRefersTo(person, afterName[1]);
+  const head = before.replace(CITIZEN_APPOS_LEAD, "");
+  const rel = head.match(new RegExp(`(?:${RELATIVE.source})(?:\\s+(${PERSONISH.source}))?\\s*$`, "i"));
+  if (rel) return !(rel[1] && nameRefersTo(person, rel[1]));
+  // Only a name immediately before the wording is attached (after stripping ", 35, a "). A place, charge title,
+  // or earlier name in the sentence is not.
+  const near = head.match(new RegExp(`(${PERSONISH.source})\\s*$`));
+  return !!(near && looksLikePerson(near[1]) && !nameRefersTo(person, near[1]));
+}
+
+/** True when U.S.-citizen / naturalized / dual wording in this text is attached to `person` (or unattached in their clause). */
+export function citizenWordingAbout(name, sentence) {
+  const n = String(name || "").trim();
+  const cleaned = cleanCitizenSpan(sentence);
+  const re = new RegExp(CITIZEN_OVERRIDE.source, "gi");
+  let found = false;
+  let m;
+  while ((m = re.exec(cleaned))) {
+    found = true;
+    if (!n || !citizenMatchAboutOther(n, cleaned, m)) return true;
+  }
+  return !n && found;
+}
+
+/** Blank citizen-wording matches that are about someone else, so this person's own foreign wording can still count. */
+function scrubCitizenMatchesAboutOthers(name, sentence) {
+  const cleaned = cleanCitizenSpan(sentence);
+  const re = new RegExp(CITIZEN_OVERRIDE.source, "gi");
+  const out = cleaned.split("");
+  let m;
+  while ((m = re.exec(cleaned))) {
+    if (citizenMatchAboutOther(name, cleaned, m)) {
+      for (let i = m.index; i < m.index + m[0].length; i++) out[i] = " ";
+    }
+  }
+  return out.join("");
+}
+
 export function nonCitizenStatedFor(name, sentence) {
   const s = String(sentence || "");
   const n = String(name || "").trim();
-  if (!n || !/;\s/.test(s)) return nonCitizenStated(s);
+  const statedIn = (span) => {
+    if (citizenWordingAbout(n, span)) return false;
+    return nonCitizenStated(n ? scrubCitizenMatchesAboutOthers(n, span) : span);
+  };
+  if (!n || !/;\s/.test(s)) return statedIn(s);
   const last = n.split(/\s+/).slice(-1)[0];
   const parts = s.split(/;\s+/);
   let mine = parts.filter((p) => p.includes(n));
   if (!mine.length) mine = parts.filter((p) => new RegExp(`(?<![A-Za-z'’-])${esc(last)}(?![A-Za-z'’-])`).test(p));
-  if (!mine.length) return nonCitizenStated(s);
-  if (mine.some((p) => CITIZEN_OVERRIDE.test(stripVictimIdentity(p).replace(CITIZEN_CLAIM, " ")))) return false;
+  if (!mine.length) return statedIn(s);
+  if (mine.some((p) => citizenWordingAbout(n, p))) return false;
   // Krennic 2026-11-03: a one-person list entry that ends with its own nameless status sentence ("... ; convicted again in
   // 2018 of ... Citizen of Mexico.", D. Or. Oct 30, 2026) states this person's status. Only that exact closing form.
-  if (/^[^;]*\S\s+[—–-]\s+/.test(s) && /(?:^|\.\s+)(?:Citizen|National|Native and citizen) of [A-Z][A-Za-z .'’-]+\.$/.test(s.trim()) && !CITIZEN_OVERRIDE.test(s.replace(CITIZEN_CLAIM, " "))) return true;
-  return mine.some((p) => nonCitizenStated(p));
+  if (/^[^;]*\S\s+[—–-]\s+/.test(s) && /(?:^|\.\s+)(?:Citizen|National|Native and citizen) of [A-Z][A-Za-z .'’-]+\.$/.test(s.trim()) && !citizenWordingAbout(n, s)) return true;
+  return mine.some((p) => statedIn(p));
 }
 
 /**
@@ -253,7 +355,7 @@ export function foreignOfficeFor(name, sentence) {
   const last = String(name || "").trim().split(/\s+/).slice(-1)[0] || "";
   const parts = /;\s/.test(s) ? s.split(/;\s+/).filter((p) => p.includes(name) || (last && p.includes(last))) : [s];
   const clauses = parts.length ? parts : [s];
-  if (clauses.some((p) => CITIZEN_OVERRIDE.test(stripVictimIdentity(p).replace(CITIZEN_CLAIM, " ")))) return false;
+  if (clauses.some((p) => citizenWordingAbout(name, p))) return false;
   return clauses.some((p) => foreignOfficeStated(name, p));
 }
 
