@@ -1,3 +1,8 @@
+## 2026-11-17 (morning) approve Modestina Villanueva Javier
+
+- Krennic approved adding her to the live feed. Official @HSISanJuan X post (Oct 13, 2026): Dominican national, arrested and indicted on marriage fraud and conspiracy. She had been in review.json only because the non-citizen guard treated co-defendant Erick Martinez Aulet's "U.S. citizen" wording as hers; the 2026-11-17 per-person fix now passes her.
+- Approved by id (`x-2110078082853818389-modestina-villanueva-javier`): moved to data/harvest.json (approved, approvalNote, severity 54 / fraud), removed from review.json by dedupe. Erick Martinez Aulet was not added. Tests 316/316. Harvest triggered after push; see the log for the run id and live count.
+
 ## 2026-11-17 (morning) approved tracker fixes (Krennic: fix 2 + fix 4 only)
 
 - Fix 2 (approved): non-citizen guard now judges U.S.-citizen / naturalized / dual wording per person (name or relative attached to that clause), not the whole sentence. Stanislav Chernyshov (OPA Nov 12) now passes on his own wording; a release that calls the defendant himself a U.S. citizen still holds him. Regression tests in scripts/rules-1117.test.mjs. Fixes 1 (strip section headings from names) and 3 (headline demonym + role) were not approved and were not changed.

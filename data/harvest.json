@@ -1,5 +1,34 @@
 [
   {
+    "name": "Modestina Villanueva Javier",
+    "city": "Not stated",
+    "crime": "Arrested: Last week, HSI San Juan arrested Modestina Villanueva Javier, a Dominican national and Erick Martinez Aulet, a U.S. citizen.",
+    "usa": "HSI X post Oct 13, 2026 (@HSISanJuan)",
+    "foreign": "Not stated in post",
+    "picked": "10/13/2026 (@HSISanJuan post)",
+    "entered": "Not stated",
+    "office": "HSISanJuan",
+    "id": "x-2110078082853818389-modestina-villanueva-javier",
+    "when": "13 Oct 2026",
+    "severity": 54,
+    "severityReason": "Fraud (incl. voter fraud)",
+    "severityCrimes": [
+      "Fraud (incl. voter fraud)"
+    ],
+    "text": "@HSISanJuan Oct 13, 2026, as posted: A \"marriage\" built on lies isn't a commitment—it’s a crime. 💍❌ Last week, HSI San Juan arrested Modestina Villanueva Javier, a Dominican national and Erick Martinez Aulet, a U.S. citizen. Both were indicted on marriage fraud and conspiracy charges. Marriage is a legal and personal commitment to build a life together. When that commitment is faked simply to bypass immigration laws, it becomes a serious federal offense. Integrity matters. HSI is dedicated to ensuring that the path to legal status remains legitimate and that those who manipulate it face the consequences. @HSI_HQ #MarriageFraud _ Un \"matrimonio\" basado en mentiras no es un compromiso, es un delito. 💍❌ La semana pasada, HSI San Juan arrestó a Modestina Villanueva Javier, una ciudadana dominicana, y a Erick Martinez Aulet, un ciudadano estadounidense. Ambos fueron acusados formalmente de fraude matrimonial y conspiración. El matrimonio es un compromiso legal y personal para construir una vida juntos. Cuando ese compromiso se finge simplemente para evadir las leyes de inmigración, se convierte en un delito federal grave. La integridad importa. HSI se dedica a garantizar que el camino hacia un estatus legal siga siendo legítimo y que aquellos que lo manipulan enfrenten las consecuencias.",
+    "photo": "",
+    "via": "@HSISanJuan 2110078082853818389",
+    "sourceUrl": "https://x.com/HSISanJuan/status/2110078082853818389",
+    "voting": false,
+    "origin": "Dominican Republic",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "tags": [],
+    "approvalNote": "Approved by id (Krennic 2026-11-17): official @HSISanJuan post calls her a Dominican national; the guard had held her because the same sentence called co-defendant Erick Martinez Aulet a U.S. citizen. The 2026-11-17 per-person citizen-wording fix now passes her."
+  },
+  {
     "name": "Clemente Miguel Moran-Alcala",
     "city": "Texas",
     "crime": "Removed: Clemente Miguel Moran-Alcala, a Mexican national, was charged with felony reentry after authorities allegedly found him unlawfully in the country near La Joya, despite having been removed Aug. 24, 2011.",

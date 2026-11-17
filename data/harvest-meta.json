@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-17T15:33:19Z",
-  "rows": 1672,
-  "approved": 1644,
+  "updatedAt": "2026-11-17T16:03:19Z",
+  "rows": 1673,
+  "approved": 1645,
   "pending": 28,
   "photos": 404,
-  "reviewRows": 776,
+  "reviewRows": 775,
   "lastAddedAt": "2026-11-17T14:53:12Z",
   "lastAddedCount": 1,
   "lastAdded": [
     "Clemente Miguel Moran-Alcala"
   ],
-  "harvestSha256": "2fc5348757e9b39ba1043bcdda98838f6cc20ea73caa3defaa2aa356debbe43e",
+  "harvestSha256": "d0a14a235281d6a1fbd9de3c4422dafa664ef6d2b311eab6ef40d7110be77d69",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
