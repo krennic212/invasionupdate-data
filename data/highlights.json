@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-18",
   "windowDays": 7,
-  "total": 154,
+  "total": 165,
   "rows": [
     {
       "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
@@ -132,6 +132,17 @@
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime",
+        "Kidnapping / human trafficking"
+      ]
+    },
+    {
+      "id": "dhs-20261118-kevin-perez-pablo",
+      "name": "Kevin Perez Pablo",
+      "when": "18 Nov 2026",
+      "severity": 155,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
         "Kidnapping / human trafficking"
       ]
     },
@@ -279,18 +290,6 @@
         "Fraud (incl. voter fraud)",
         "Burglary / theft",
         "Drug possession"
-      ]
-    },
-    {
-      "id": "x-2120940305033605236-apolinar-santibanez-avellanea",
-      "name": "Apolinar Santibanez Avellanea",
-      "when": "12 Nov 2026",
-      "severity": 113,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "DUI",
-        "Illegal entry / reentry"
       ]
     },
     {
