@@ -122,12 +122,14 @@ const PICTURED = "(?:\\s+\\((?:pictured|above|left|right|center|top|bottom)\\))?
 const COUNTRY = "(?:the\\s+)?([A-Z][A-Za-z'’.-]+(?:\\s+(?:and|of|the|[A-Z][A-Za-z'’.-]+)){0,4})";
 
 const PATTERNS = [
+  // Krennic 2026-11-17: also "ICE lodged a detainer for <Name>, an illegal alien from X" and
+  // "ICE lodged a detainer asking ... not to release <Name>, an illegal alien from X".
   // "Ian Clive Burton, a criminal illegal alien from Jamaica, convicted for ..."
   // "John Doe, 45, a Mexican national, was charged ..."
   // "Jane Doe, 39, of Omaha, Nebraska, a citizen of Honduras, ..."
   // "Serge Christian Dupont, 57,a French national ..." / "Dupont,57, a French national" (OPA / usao-wdnc Oct 29, 2026:
   // a missing space on either side of the age)
-  new RegExp(`(?:^|[—–-]\\s+|,\\s+|;\\s+(?:and\\s+)?|\\band\\s+|\\b(?:that|is)\\s+|\\b(?:arrested|removed|deported|charged|sentenced|indicted|convicted|apprehended|detained)\\s+)${NAME}${PICTURED},(?:\\s+|(?=\\d{1,3},))(?:(?:age\\s+)?\\d{1,3},\\s*)?${OF_PLACE}${DESC}${TYPE0}(?:\\s+(?:from|of)\\s+${COUNTRY})?`, "g"),
+  new RegExp(`(?:^|[—–-]\\s+|,\\s+|;\\s+(?:and\\s+)?|\\band\\s+|\\b(?:that|is)\\s+|\\b(?:arrested|removed|deported|charged|sentenced|indicted|convicted|apprehended|detained)\\s+|\\blodged a detainer(?:\\s+for|\\s+asking\\b[^.]{0,160}?\\b(?:not release|to not release|not to release))\\s+)${NAME}${PICTURED},(?:\\s+|(?=\\d{1,3},))(?:(?:age\\s+)?\\d{1,3},\\s*)?${OF_PLACE}${DESC}${TYPE0}(?:\\s+(?:from|of)\\s+${COUNTRY})?`, "g"),
   // "Jane Roe and John Doe, both illegal aliens from the Dominican Republic" (two people, two rows)
   // "Rudi Lacatusu and Mirabela Lacatusu, illegal aliens from Romania" (plural wording, no "both"; DHS Oct 13 2026)
   new RegExp(`(?:^|:\\s+|,\\s+|;\\s+(?:and\\s+)?|\\b(?:arrested|identified|charged|indicted|removed|deported)\\s+)${NAME}(?:,\\s+\\d{1,3},)?\\s+and\\s+${NAME},\\s+${AGE}(?:(?:both|each)\\s+${DESC}${TYPE}|${DESC}(alien|national|citizen|noncitizen|non-citizen)s)(?:\\s+(?:from|of)\\s+${COUNTRY})?`, "g"),
@@ -163,6 +165,10 @@ const PAREN_AGE = PATTERNS[PATTERNS.length - 1];
 const LIST_ENTRY = new RegExp(`^${NAME}\\s+[—–]\\s+(Arrested|Removed|Deported|Apprehended|Detained)\\s+(?:on\\s+)?[A-Z][a-z]{2,8}\\.?\\s+\\d{1,2},\\s+(?:19|20)\\d{2}\\.(?:\\s+[^]*?)?\\s+(?:Citizen|National|Native and citizen) of ${COUNTRY}\\.$`);
 const NATIONAL_LIST_ENTRY = /(?:^|[.!?]\s+)(?:[A-Z][a-z]+\s+(?:of\s+)?){0,3}[A-Z][a-z]+\s+[Nn]ational,?\s+[A-Z][\p{L}'’-]+(?:\s+[A-Z][\p{L}'’.-]+){0,5}\s?,\s+\d{1,3},/gu;
 const MONONYM_ENTRY = /^(?:[A-Z][A-Za-z .'’-]{0,40}[:–—]\s+)?((?:[A-Z][a-z]+\s+(?:of\s+)?){0,3}[A-Z][a-z]+)\s+[Nn]ational,?\s+([A-Z][a-z]{2,}),\s+\d{1,3},\s+an?\s+(?:lawful permanent resident|(?:[a-z-]+\s+){0,3}(?:alien|non-?citizen))\b[^.]*?\b(?:has been|have been|was|is|were)\s+(?:charged|indicted|sentenced|convicted|arrested)\b/;
+// Krennic 2026-11-17: ICE removal-flight lists — "Alexandre Esdras Pandolfi Soares, 40, of Brazil. He's been convicted of assault and sexual assault."
+// Only when the same block has removal-flight context, so "Name, 40, of Georgia. He's been convicted of ..." in a state roundup is not a hit.
+const FLIGHT_CONTEXT = /\b(?:offenders on the flight include|on the flight include|removal flights?|deports? (?:a )?plane|plane full of|(?:removed|deported) (?:more than |over )?\d[\d,]* illegal aliens)\b/i;
+const REMOVAL_FLIGHT_ENTRY = new RegExp(`(?<=^|[.!?:]\\s+)${NAME},\\s+(\\d{1,3}),\\s+of\\s+${COUNTRY}\\.\\s*((?:He|She|They)(?:['’]s|['’]ve| has| have) been convicted of [^.]+\\.)`, "g");
 
 export const NOT_NAME = /\b(ICE|DHS|HSI|ERO|CBP|USCIS|FBI|DEA|ATF|DOJ|U\.S|United|States|America|American|Department|Justice|Attorney|Attorneys|Office|Offices|Secretary|President|Homeland|Security|Immigration|Customs|Enforcement|Border|Patrol|County|Court|District|Federal|Judge|Agent|Agents|Special|Officers|Officer|Police|Sheriff|Government|Administration|Trump|Biden|Obama|Act|Operation|Task|Force|Division|Bureau|Service|Services|Today|Yesterday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|January|February|March|April|May|June|July|August|September|October|November|December|The|This|These|Those|His|Her|Their|According|Under|Assistant|Acting|Chief|Director|Deputy|Senior|Prosecutor)\b/;
 
@@ -415,6 +421,24 @@ export function extractPeople(blocks, { title = "" } = {}) {
         found.push({ name, origin: cleanOrigin(entry[3]) || "", sentence, city: "", entryLabel: entry[2] === "Removed" || entry[2] === "Deported" ? "Removed" : "Arrested" });
       }
       continue;
+    }
+    // Krennic 2026-11-17: ICE removal-flight list format ("NAME, 40, of Brazil. He's been convicted of ...").
+    if (FLIGHT_CONTEXT.test(block) || FLIGHT_CONTEXT.test(title)) {
+      const flightIntro = sentences(block).filter((x) => /\billegal aliens?\b/i.test(x) || FLIGHT_CONTEXT.test(x)).pop() || "";
+      REMOVAL_FLIGHT_ENTRY.lastIndex = 0;
+      let fm;
+      const flat = String(block);
+      while ((fm = REMOVAL_FLIGHT_ENTRY.exec(flat))) {
+        const name = cleanPersonName(fm[1]);
+        const origin = cleanOrigin(fm[3]) || "";
+        const key = name.toLowerCase();
+        if (name.split(" ").length < 2 || NOT_NAME.test(name) || isPlaceName(name, { title }) || seen.has(key)) continue;
+        if (!origin || !COUNTRIES.has(origin)) continue;
+        seen.add(key);
+        const entry = `${name}, ${fm[2]}, of ${fm[3]}. ${fm[4]}`.replace(/\s+/g, " ").trim();
+        const sentence = flightIntro && !entry.includes(flightIntro) ? `${flightIntro} ${entry}` : entry;
+        found.push({ name, origin, sentence, city: "", entryLabel: "Removed" });
+      }
     }
     const sents = sentences(block);
     for (let i = 0; i < sents.length; i++) {

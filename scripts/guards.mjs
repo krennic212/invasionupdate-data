@@ -71,11 +71,20 @@ export function atLarge(sentence, releaseText = "", name = "") {
 
 /**
  * Krennic 2026-10-31: strong at-large wording elsewhere in the release holds THIS person only when that sentence
- * names them (full name or surname), or names nobody else (pronoun / anonymous wording: fail-safe, holds everyone).
- * "Marianny Lucia Lopez-Torres and Frandy Aragon-Diaz are at large." no longer holds their sentenced co-defendants.
- * With no name (old callers) the whole release still holds everyone.
+ * names them (full name or surname). "Marianny Lucia Lopez-Torres and Frandy Aragon-Diaz are at large." does not
+ * hold their sentenced co-defendants.
+ * Krennic 2026-11-17: a pronoun / nameless at-large sentence ("He is currently at large.", "He currently remains
+ * at large.") holds only the nearest preceding named person, not everyone else on the same DHS page. With no name
+ * (old callers) the whole release still holds everyone.
  */
 const PERSONISH = /\b[A-ZÁÉÍÓÚÑÜ][a-záéíóúñü'’]+(?:-[A-ZÁÉÍÓÚÑÜ][a-záéíóúñü'’]+)?(?:\s+(?:(?:de|del|de la|la|los|y|van|von|da|dos)\s+)?[A-ZÁÉÍÓÚÑÜ][a-záéíóúñü'’]+(?:-[A-ZÁÉÍÓÚÑÜ][a-záéíóúñü'’]+)?){1,4}\b/g;
+// Places / agencies that PERSONISH can also match ("San Diego Central Jail") are not a person antecedent.
+const NOT_PERSON_ANTECEDENT = /\b(?:Jail|Prison|Penitentiary|Detention|Hospital|Clinic|Department|Police|Sheriff|Office|Offices|County|Court|District|City|State|University|College|School|Center|Centre|Agency|Bureau|Service|Facility|Complex|Island|Heights|Gang|Politicians?|Governor|Secretary|Image|Authorities)\b/;
+const ANON_NAME_SKIP = /^(?:Anyone|Any|Those|They|He|She|His|Her|Both|All|Two|Three|Four|Five|Six)\b/;
+const PRONOUN_AT_LARGE = /^(?:He|She|They|This (?:man|woman|person|defendant|suspect|alien|individual|felon)|The (?:defendant|suspect|alien|individual))\b/i;
+function namedPeopleIn(s) {
+  return (String(s).match(PERSONISH) || []).filter((x) => !NOT_NAME.test(x) && !NOT_PERSON_ANTECEDENT.test(x) && !ANON_NAME_SKIP.test(x) && !isPlaceName(x));
+}
 function releaseAtLargeFor(name, releaseText) {
   const n = String(name || "").trim();
   if (!n) return AT_LARGE_STRONG.test(releaseText);
@@ -83,11 +92,24 @@ function releaseAtLargeFor(name, releaseText) {
   const parts = [n, last, ...last.split("-").filter((x) => x.length > 2)];
   const mine = new RegExp(`(?<![\\p{L}])(?:${parts.map(esc).join("|")})(?![\\p{L}])`, "iu");
   const sents = String(releaseText || "").split(/(?<=[.!?])\s+(?=[“"(]?[A-Z0-9])/);
-  for (const s of sents) {
+  for (let i = 0; i < sents.length; i++) {
+    const s = sents[i];
     if (!AT_LARGE_STRONG.test(s)) continue;
     if (mine.test(s)) return true;
-    const others = (s.match(PERSONISH) || []).filter((x) => !NOT_NAME.test(x) && !/^(?:Anyone|Any|Those|They|He|She|His|Her|Both|All|Two|Three|Four|Five|Six)\b/.test(x));
-    if (!others.length) return true;
+    const others = namedPeopleIn(s);
+    if (others.length) continue;
+    // Pronoun at-large: attach to the nearest preceding named person only, never to the whole page.
+    if (PRONOUN_AT_LARGE.test(s.trim())) {
+      for (let j = i - 1; j >= 0; j--) {
+        const prevPeople = namedPeopleIn(sents[j]);
+        if (prevPeople.length) return mine.test(prevPeople[prevPeople.length - 1]);
+        if (mine.test(sents[j])) return true; // surname-only mention ("RELEASED Hernandez back onto the streets")
+      }
+    }
+    // Nameless wording ("the suspect remains at large") with no other person named in this release:
+    // hold this person (single-defendant / old test). A multi-person page does not hold everyone.
+    const peopleElsewhere = namedPeopleIn(sents.join(" "));
+    if (peopleElsewhere.every((p) => mine.test(p))) return true;
   }
   return false;
 }

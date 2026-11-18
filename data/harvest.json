@@ -3060,7 +3060,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "aka": "Jose Rodriguez-Eraso"
   },
   {
     "name": "Jose Carlos Cartagena Ortega",
@@ -16633,7 +16634,8 @@
     "lon": null,
     "status": "approved",
     "tags": [],
-    "photoSourceUrl": "https://pbs.twimg.com/media/HWDf8QjWoAAvz3F?format=png&name=orig"
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWDf8QjWoAAvz3F?format=png&name=orig",
+    "aka": "Jair Fernandes De Oliveira Jr."
   },
   {
     "name": "Jose Nabor Orosco-Presa",
@@ -41466,35 +41468,6 @@
     "confirmedBy": "DHS",
     "lat": 41.2033,
     "lon": -77.1945,
-    "status": "approved",
-    "tags": []
-  },
-  {
-    "name": "Jose Rodriguez-Eraso",
-    "city": "Not stated",
-    "crime": "Convicted: Jose Rodriguez-Eraso, a criminal illegal alien from Colombia, convicted for murder in the course of a drug conspiracy in the Southern District of New York.",
-    "usa": "DHS release Oct 13, 2026: WORST OF THE WORST: Over Columbus Day Weekend, ICE Arrests Murderers, Pedophiles, Rapists, Drug Traffickers, and Drunk Drivers | Homeland Security",
-    "foreign": "Not stated in post",
-    "picked": "10/13/2026 (DHS release)",
-    "entered": "Not stated",
-    "office": "DHSgov",
-    "id": "dhs-20261013-jose-rodriguez-eraso",
-    "when": "13 Oct 2026",
-    "severity": 125,
-    "severityReason": "Murder / manslaughter",
-    "severityCrimes": [
-      "Murder / manslaughter",
-      "Drug possession"
-    ],
-    "text": "DHS Oct 13, 2026, as posted: Jose Rodriguez-Eraso, a criminal illegal alien from Colombia, convicted for murder in the course of a drug conspiracy in the Southern District of New York.",
-    "photo": "",
-    "via": "dhs.gov/news/2026/10/13/worst-worst-over-columbus-day-weekend-ice-arrests-murderers-pedophiles-rapists-drug",
-    "sourceUrl": "https://www.dhs.gov/news/2026/10/13/worst-worst-over-columbus-day-weekend-ice-arrests-murderers-pedophiles-rapists-drug",
-    "voting": false,
-    "origin": "Colombia",
-    "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
     "status": "approved",
     "tags": []
   },

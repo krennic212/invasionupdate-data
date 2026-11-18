@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-18T00:20:08Z",
-  "rows": 1741,
-  "approved": 1715,
+  "updatedAt": "2026-11-18T00:38:27Z",
+  "rows": 1740,
+  "approved": 1714,
   "pending": 26,
   "photos": 404,
   "reviewRows": 774,
@@ -49,6 +49,6 @@
     "Alex Mauricio Paez Henao",
     "Janyer Mauricio Pulido-Osorio"
   ],
-  "harvestSha256": "da937776aa6c938117693cec70dda3e1f7f0232a7e4a4a25e626614894ce2465",
+  "harvestSha256": "70adf9914510ab15d11b3af31cdf5d09b29c22b2540a6eeea8d73dab447382f2",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -22,8 +22,10 @@ describe("at-large guard is person-scoped", () => {
     assert.equal(atLarge("Frandy Aragon-Diaz was charged.", cubanText, "Frandy Aragon-Diaz"), true);
     assert.ok(holdReasons({ name: "Marianny Lucia Lopez-Torres", sentence: s, title: cuban.title, releaseText: cubanText, label: "Charged" }).includes("suspect described as still at large"));
   });
-  it("fail-safe: pronoun / anonymous at-large wording, own sentence, and no name still hold", () => {
-    assert.equal(atLarge("John Doe was charged with reentry.", "John Doe was charged with reentry. He remains at large.", "Richard Roe"), true);
+  it("fail-safe: own sentence and no-name callers still hold; a pronoun at-large sentence holds only its antecedent", () => {
+    // Krennic 2026-11-17: "He remains at large" after John Doe no longer holds everyone else on the page.
+    assert.equal(atLarge("John Doe was charged with reentry.", "John Doe was charged with reentry. He remains at large.", "Richard Roe"), false);
+    assert.equal(atLarge("John Doe was charged with reentry.", "John Doe was charged with reentry. He remains at large.", "John Doe"), true);
     assert.equal(atLarge("Richard Roe fled and remains at large.", "", "Richard Roe"), true);
     assert.equal(atLarge("x", "Jane Smith is at large.", ""), true);
     assert.equal(atLarge("Richard Roe was sentenced.", "Richard Roe was sentenced. Roe's brother is still at large.", "Richard Roe"), true);

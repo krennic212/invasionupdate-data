@@ -26,5 +26,12 @@
     "approvedBy": "Krennic",
     "approvedAt": "2026-11-17T09:23:00-06:00",
     "reason": "Same Central District of California defendant as doj-20261104-ernesto-gutierrez-ruvalcaba (kept). Official USAO-CDCA releases of Oct 19 and Nov 4, 2026 both describe Ernesto Gutiérrez Ruvalcaba, 57, a Mexican national living in Wilmington, who registered to vote in February 2024 and voted one month later; the Oct 19 OPA wrap used the Anglicized given name Ernest. Krennic approved removing the duplicate on 2026-11-17. The kept row uses the correct name, the earliest official source, an aka for Ernest, and both official URLs so the harvester will not re-add him."
+  },
+  {
+    "id": "dhs-20261013-jose-rodriguez-eraso",
+    "name": "Jose Rodriguez-Eraso",
+    "approvedBy": "Krennic",
+    "approvedAt": "2026-11-17T18:45:00-06:00",
+    "reason": "Same person as x-2122362933971911093-jose-hernando-rodriguez-eraso (kept). The kept ICE X Nov 16, 2026 post names Jose Hernando Rodriguez-Eraso, an illegal alien from Colombia, convicted of murder in the course of a drug conspiracy; the DHS Oct 13, 2026 Columbus Day weekend WOW release used the shorter Jose Rodriguez-Eraso for the same Colombia / SDNY murder-in-a-drug-conspiracy facts. Krennic approved removing the short-name duplicate on 2026-11-17. The kept row has an aka for the short name so the harvester will not re-add it (isShortFormOf does not treat a missing middle given name as a short form)."
   }
 ]
