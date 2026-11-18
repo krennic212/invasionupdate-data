@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-18",
   "windowDays": 7,
-  "total": 165,
+  "total": 177,
   "rows": [
     {
       "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
@@ -27,6 +27,17 @@
         "Armed robbery / aggravated assault",
         "Assault / battery",
         "Burglary / theft"
+      ]
+    },
+    {
+      "id": "x-2123142187949121626-guillermo-cruz-juarez",
+      "name": "Guillermo Cruz Juarez",
+      "when": "18 Nov 2026",
+      "severity": 202,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Kidnapping / human trafficking"
       ]
     },
     {
@@ -281,18 +292,6 @@
       ]
     },
     {
-      "id": "x-2122877955625943079-jose-jorge-guzman-dias",
-      "name": "Jose Jorge Guzman-Dias",
-      "when": "17 Nov 2026",
-      "severity": 113,
-      "severityReason": "Fraud (incl. voter fraud)",
-      "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Burglary / theft",
-        "Drug possession"
-      ]
-    },
-    {
       "id": "dhs-20261112-adrian-duran-sequra",
       "name": "Adrian Duran-Sequra",
       "when": "12 Nov 2026",
@@ -417,6 +416,16 @@
     {
       "id": "x-2123077016693981331-abel-castaneda-gomez",
       "name": "Abel Castaneda-Gomez",
+      "when": "18 Nov 2026",
+      "severity": 83,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2123174418415595893-benjamin-stott",
+      "name": "Benjamin Stott",
       "when": "18 Nov 2026",
       "severity": 83,
       "severityReason": "Child sex crime",
