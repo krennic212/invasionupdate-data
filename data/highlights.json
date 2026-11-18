@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-17",
   "windowDays": 7,
-  "total": 118,
+  "total": 143,
   "rows": [
     {
       "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
@@ -39,6 +39,29 @@
         "Rape / sexual assault",
         "Kidnapping / human trafficking",
         "Assault / battery"
+      ]
+    },
+    {
+      "id": "doj-20261117-asif-merchant",
+      "name": "Asif Merchant",
+      "when": "17 Nov 2026",
+      "severity": 185,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Terrorist plot"
+      ]
+    },
+    {
+      "id": "doj-20261117-mansuri-manuchekhri",
+      "name": "Mansuri Manuchekhri",
+      "when": "17 Nov 2026",
+      "severity": 180,
+      "severityReason": "Material support to a cartel",
+      "severityCrimes": [
+        "Material support to a cartel",
+        "Fraud (incl. voter fraud)",
+        "Weapons"
       ]
     },
     {
@@ -102,6 +125,17 @@
       ]
     },
     {
+      "id": "dhs-20261113-janio-gionel-velasquez-muro",
+      "name": "Janio Gionel Velasquez-Muro",
+      "when": "13 Nov 2026",
+      "severity": 157,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Kidnapping / human trafficking"
+      ]
+    },
+    {
       "id": "doj-20261116-wilmer-jesus-colmenares-gonzalez",
       "name": "Wilmer Jesus Colmenares-Gonzalez",
       "when": "16 Nov 2026",
@@ -136,8 +170,30 @@
       ]
     },
     {
+      "id": "ice-20261117-alexandre-esdras-pandolfi-soares",
+      "name": "Alexandre Esdras Pandolfi Soares",
+      "when": "17 Nov 2026",
+      "severity": 130,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Assault / battery"
+      ]
+    },
+    {
       "id": "x-2122796591010693588-josue-elias-jeronimo",
       "name": "Josue Elias Jeronimo",
+      "when": "17 Nov 2026",
+      "severity": 125,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons"
+      ]
+    },
+    {
+      "id": "ice-20261117-wellison-patrick-viera-serafim",
+      "name": "Wellison Patrick Viera Serafim",
       "when": "17 Nov 2026",
       "severity": 125,
       "severityReason": "Armed robbery / aggravated assault",
@@ -214,8 +270,8 @@
       ]
     },
     {
-      "id": "doj-20261117-jose-carlos-miranda-morales",
-      "name": "Jose Carlos Miranda Morales",
+      "id": "doj-20261117-fausto-ramirez",
+      "name": "Fausto Ramirez",
       "when": "17 Nov 2026",
       "severity": 110,
       "severityReason": "Fraud (incl. voter fraud)",
@@ -225,49 +281,14 @@
       ]
     },
     {
-      "id": "ice-20261116-nevicker-obed-rodenzo-calderon",
-      "name": "Nevicker Obed Rodenzo-Calderon",
-      "when": "16 Nov 2026",
+      "id": "doj-20261117-jose-carlos-miranda-morales",
+      "name": "Jose Carlos Miranda Morales",
+      "when": "17 Nov 2026",
       "severity": 110,
-      "severityReason": "Kidnapping / human trafficking",
+      "severityReason": "Fraud (incl. voter fraud)",
       "severityCrimes": [
-        "Kidnapping / human trafficking",
-        "Assault / battery"
-      ]
-    },
-    {
-      "id": "doj-20261113-antonio-oseguera-cervantes",
-      "name": "Antonio Oseguera Cervantes",
-      "when": "13 Nov 2026",
-      "severity": 105,
-      "severityReason": "Weapons",
-      "severityCrimes": [
-        "Weapons",
+        "Fraud (incl. voter fraud)",
         "Drug trafficking"
-      ]
-    },
-    {
-      "id": "x-2122087259650355238-heriberto-jimenez-alvarado",
-      "name": "Heriberto Jimenez-Alvarado",
-      "when": "15 Nov 2026",
-      "severity": 104,
-      "severityReason": "Drug trafficking",
-      "severityCrimes": [
-        "Drug trafficking",
-        "Burglary / theft",
-        "DUI",
-        "Illegal entry / reentry"
-      ]
-    },
-    {
-      "id": "dhs-20261113-chamkaur-singh",
-      "name": "Chamkaur Singh",
-      "when": "13 Nov 2026",
-      "severity": 99,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Assault / battery"
       ]
     },
     {
@@ -405,6 +426,16 @@
     {
       "id": "x-2121217379363631168-ever-edilberto-zuniga-ramirez",
       "name": "Ever Edilberto Zuniga Ramirez",
+      "when": "13 Nov 2026",
+      "severity": 83,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261113-gokhan-bagci",
+      "name": "Gokhan Bagci",
       "when": "13 Nov 2026",
       "severity": 83,
       "severityReason": "Child sex crime",
