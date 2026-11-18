@@ -1,13 +1,15 @@
 {
-  "updatedAt": "2026-11-18T00:19:21Z",
+  "updatedAt": "2026-11-18T00:20:08Z",
   "rows": 1741,
-  "approved": 1707,
-  "pending": 34,
+  "approved": 1715,
+  "pending": 26,
   "photos": 404,
   "reviewRows": 774,
   "lastAddedAt": "2026-11-18T00:19:13Z",
-  "lastAddedCount": 37,
+  "lastAddedCount": 40,
   "lastAdded": [
+    "Yensy Santana-Alvarez",
+    "Wilmer Alexander Delcid-Baires",
     "Arnulfo Fernandez Solis",
     "Fausto Ramirez",
     "Asif Merchant",
@@ -17,6 +19,7 @@
     "Cirilo Sauceda-Escamilla",
     "Juan Turrubiates",
     "Erik Manuel Delgado-Pereira",
+    "Gerardo David Zarate Martinez",
     "Janio Gionel Velasquez-Muro",
     "Jose Medina-Medina",
     "Leyter Jeferson Arauz-Medina",
@@ -46,6 +49,6 @@
     "Alex Mauricio Paez Henao",
     "Janyer Mauricio Pulido-Osorio"
   ],
-  "harvestSha256": "5463ac82c470f9650f1d36117dcdab135a5a35915ff87d9291c89687f09174e6",
+  "harvestSha256": "da937776aa6c938117693cec70dda3e1f7f0232a7e4a4a25e626614894ce2465",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -865,9 +865,9 @@
     "confirmedBy": "DOJ",
     "lat": 29.76,
     "lon": -95.37,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen",
-    "tags": []
+    "status": "approved",
+    "tags": [],
+    "approvalNote": "2026-11-17 missed-cases check: SDTX release calls him \"a 20-year-old Mexican man\" (stated nationality describing the defendant)."
   },
   {
     "name": "Erik Manuel Delgado-Pereira",
@@ -1175,9 +1175,9 @@
     "confirmedBy": "DOJ",
     "lat": 29.9605,
     "lon": -90.0753,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen",
-    "tags": []
+    "status": "approved",
+    "tags": [],
+    "approvalNote": "2026-11-17 missed-cases check: headline \"Honduran Illegal Alien Charged With Illegal Re-Entry of Removed Alien\"; release says native of Honduras, previously deported."
   },
   {
     "name": "Yensy Santana-Alvarez",
@@ -1204,9 +1204,9 @@
     "confirmedBy": "DOJ",
     "lat": 40.2732,
     "lon": -76.8867,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen",
-    "tags": []
+    "status": "approved",
+    "tags": [],
+    "approvalNote": "2026-11-17 missed-cases check: headline \"Dominican National Charged with Illegal Reentry\"; release says of the Dominican Republic, previously removed (same headline-demonym case as Oseguera Cervantes / Montejo Saenz)."
   },
   {
     "name": "Chamkaur Singh",
@@ -6274,10 +6274,10 @@
     "confirmedBy": "DHS",
     "lat": 41.5261,
     "lon": -87.8892,
-    "status": "pending",
-    "holdReason": "suspect described as still at large",
+    "status": "approved",
     "operationId": "op-dhsgov-20261110-operation-midway-blitz",
-    "tags": []
+    "tags": [],
+    "approvalNote": "2026-11-17 missed-cases check: wrong hold (\"still at large\" came from another person on the same DHS page). His/her own sentence says ICE arrested them (Cucul-Bol: \"now faces charges\"); DHS Nov 13 repeats it."
   },
   {
     "name": "Giovanna Mercedes Moreno Occhipinti",
@@ -6302,13 +6302,13 @@
     "confirmedBy": "DHS",
     "lat": 41.86,
     "lon": -87.65,
-    "status": "pending",
-    "holdReason": "suspect described as still at large",
+    "status": "approved",
     "operationId": "op-dhsgov-20261110-operation-midway-blitz",
     "tags": [
       "Gang",
       "TdA"
-    ]
+    ],
+    "approvalNote": "2026-11-17 missed-cases check: wrong hold (\"still at large\" came from another person on the same DHS page). His/her own sentence says ICE arrested them (Cucul-Bol: \"now faces charges\"); DHS Nov 13 repeats it."
   },
   {
     "name": "Radule Bojovic",
@@ -6333,10 +6333,10 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "suspect described as still at large",
+    "status": "approved",
     "operationId": "op-dhsgov-20261110-operation-midway-blitz",
-    "tags": []
+    "tags": [],
+    "approvalNote": "2026-11-17 missed-cases check: wrong hold (\"still at large\" came from another person on the same DHS page). His/her own sentence says ICE arrested them (Cucul-Bol: \"now faces charges\"); DHS Nov 13 repeats it."
   },
   {
     "name": "Luis Mendoza-Gonzalez",
@@ -6361,10 +6361,10 @@
     "confirmedBy": "DHS",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "holdReason": "suspect described as still at large",
+    "status": "approved",
     "operationId": "op-dhsgov-20261110-operation-midway-blitz",
-    "tags": []
+    "tags": [],
+    "approvalNote": "2026-11-17 missed-cases check: wrong hold (\"still at large\" came from another person on the same DHS page). His/her own sentence says ICE arrested them (Cucul-Bol: \"now faces charges\"); DHS Nov 13 repeats it."
   },
   {
     "name": "Julio Cucul-Bol",
@@ -6389,10 +6389,10 @@
     "confirmedBy": "DHS",
     "lat": 40.1095,
     "lon": -88.2036,
-    "status": "pending",
-    "holdReason": "suspect described as still at large",
+    "status": "approved",
     "operationId": "op-dhsgov-20261110-operation-midway-blitz",
-    "tags": []
+    "tags": [],
+    "approvalNote": "2026-11-17 missed-cases check: wrong hold (\"still at large\" came from another person on the same DHS page). His/her own sentence says ICE arrested them (Cucul-Bol: \"now faces charges\"); DHS Nov 13 repeats it."
   },
   {
     "name": "Juan Fernando Lara Saavedra",
