@@ -1,20 +1,17 @@
 {
-  "updatedAt": "2026-11-18T14:53:23Z",
-  "rows": 1746,
-  "approved": 1720,
+  "updatedAt": "2026-11-18T17:47:44Z",
+  "rows": 1749,
+  "approved": 1723,
   "pending": 26,
   "photos": 404,
   "reviewRows": 774,
-  "lastAddedAt": "2026-11-18T14:53:23Z",
-  "lastAddedCount": 6,
+  "lastAddedAt": "2026-11-18T17:47:44Z",
+  "lastAddedCount": 3,
   "lastAdded": [
-    "Fabian Santiago Martinez",
-    "Nelicir Leno Arcanjo",
-    "Magdany Joel Mejia-Perez",
-    "Calixto Tumbaco",
-    "Jose Jorge Guzman-Dias",
-    "Rosemery Vindel Gonzalez Perez"
+    "Carlos Amador Medina",
+    "Abel Castaneda-Gomez",
+    "Francisco Javier Ruiz-Nieblas"
   ],
-  "harvestSha256": "2cb07b245423d4cff3ebf3c034d6070ba2987953c8c7e2c2500c240a5585c4d7",
+  "harvestSha256": "d5e694ca9beb1c58f38c6471a2297a0cd8bb1af7eecfd5e09bdf2847c1c92bd6",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

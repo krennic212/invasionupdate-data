@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-18",
   "windowDays": 7,
-  "total": 151,
+  "total": 154,
   "rows": [
     {
       "id": "x-2120980815559659628-carlos-jonathan-lebron-ruiz",
@@ -410,6 +410,16 @@
       "name": "Nicolas Perez-Paxtor",
       "when": "13 Nov 2026",
       "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2123077016693981331-abel-castaneda-gomez",
+      "name": "Abel Castaneda-Gomez",
+      "when": "18 Nov 2026",
+      "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"
