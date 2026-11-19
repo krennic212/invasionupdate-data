@@ -1,24 +1,18 @@
 {
-  "updatedAt": "2026-11-19T00:13:17Z",
-  "rows": 1790,
-  "approved": 1763,
+  "updatedAt": "2026-11-19T14:49:18Z",
+  "rows": 1794,
+  "approved": 1767,
   "pending": 27,
   "photos": 404,
   "reviewRows": 774,
-  "lastAddedAt": "2026-11-19T00:13:05Z",
-  "lastAddedCount": 10,
+  "lastAddedAt": "2026-11-19T14:49:18Z",
+  "lastAddedCount": 4,
   "lastAdded": [
-    "Goran Gogic",
-    "Santi Ricardo Esteban-Delgado",
-    "Carlos Andres Perez-Melens",
-    "Luis Armando Estupinan-Cayola",
-    "Zhong Chen",
-    "Sijia Guo",
-    "Jorge Ivan Diaz-Sanchez",
-    "Alfredo Chica Sanchez",
-    "Jai Vang",
-    "Rene Rosario-Miranda"
+    "Luis Fernando Carranza-Amaya",
+    "Josue Jain Sanchez Ponce",
+    "Daniel Enrrique Martinez Espana",
+    "Manuel Alejandro Pena"
   ],
-  "harvestSha256": "ada498cec60c8c44de2f8d099f50ca1e5a7e69fa3fffef67028be6632af06dc2",
+  "harvestSha256": "51fa332c54066de9f4b797a04fb567b561cfa42bc453d4f232296105516684ce",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
