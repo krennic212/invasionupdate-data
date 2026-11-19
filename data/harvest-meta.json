@@ -1,17 +1,15 @@
 {
-  "updatedAt": "2026-11-19T14:50:54Z",
-  "rows": 1797,
-  "approved": 1770,
+  "updatedAt": "2026-11-19T18:30:25Z",
+  "rows": 1798,
+  "approved": 1771,
   "pending": 27,
   "photos": 404,
   "reviewRows": 774,
-  "lastAddedAt": "2026-11-19T14:50:45Z",
-  "lastAddedCount": 3,
+  "lastAddedAt": "2026-11-19T18:30:15Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Obed Villa Senor Santos",
-    "Chandni Patel",
-    "Shweta Patel"
+    "CHANEL AYBAR-PENA"
   ],
-  "harvestSha256": "da1d5e63d66a8b0161edb5c3d31cd4cccb7d9c164de014ee8f90072fef6f980b",
+  "harvestSha256": "ffccb2dc9a41ee0dc180e0625fb9350089b4a2c25e9906d5e1c935a557e17780",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -1,5 +1,33 @@
 [
   {
+    "name": "CHANEL AYBAR-PENA",
+    "city": "Connecticut",
+    "crime": "Convicted: David X. Sullivan, United States Attorney for the District of Connecticut, today announced that CHANEL AYBAR-PENA, 32, a citizen of the Dominican Republic unlawfully present in the U.S., was sentenced yesterday by U.S. District Judge Omar A. Williams in Hartford to 65 months of imprisonment for trafficking fentanyl.",
+    "usa": "DOJ release Nov 19, 2026: Illegal Alien Sentenced to More Than 5 Years in Federal Prison for Fentanyl Trafficking Offense",
+    "foreign": "Not stated in post",
+    "picked": "11/19/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261119-chanel-aybar-pena",
+    "when": "19 Nov 2026",
+    "severity": 50,
+    "severityReason": "Drug trafficking",
+    "severityCrimes": [
+      "Drug trafficking"
+    ],
+    "text": "DOJ Nov 19, 2026, as posted: David X. Sullivan, United States Attorney for the District of Connecticut, today announced that CHANEL AYBAR-PENA, 32, a citizen of the Dominican Republic unlawfully present in the U.S., was sentenced yesterday by U.S. District Judge Omar A. Williams in Hartford to 65 months of imprisonment for trafficking fentanyl.",
+    "photo": "",
+    "via": "justice.gov/usao-ct/pr/illegal-alien-sentenced-more-5-years-federal-prison-fentanyl-trafficking-offense",
+    "sourceUrl": "https://www.justice.gov/usao-ct/pr/illegal-alien-sentenced-more-5-years-federal-prison-fentanyl-trafficking-offense",
+    "voting": false,
+    "origin": "Dominican Republic",
+    "confirmedBy": "DOJ",
+    "lat": 41.6032,
+    "lon": -73.0877,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Obed Villa Senor Santos",
     "city": "Oregon",
     "crime": "Pleaded guilty: PORTLAND, Ore. — A Mexican national unlawfully residing in the United States has pleaded guilty to possessing more than four kilograms of heroin with the intent to distribute the drug in Oregon, U.S. Attorney Scott E. Bradford announced today. Obed Villa Senor Santos, 29, of Portland, pleaded guilty to possession with intent to distribute one kilogram or more of heroin, a crime that carries a mandatory minimum sentence of 10 years in federal prison and a maximum sentence of life imprisonment.",

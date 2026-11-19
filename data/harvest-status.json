@@ -1,10 +1,8 @@
 {
-  "checkedAt": 1795099845830,
-  "checkedAtIso": "2026-11-19T14:50:45.830Z",
+  "checkedAt": 1795113015039,
+  "checkedAtIso": "2026-11-19T18:30:15.039Z",
   "added": [
-    "Obed Villa Senor Santos",
-    "Chandni Patel",
-    "Shweta Patel"
+    "CHANEL AYBAR-PENA"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -15,9 +13,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 156,
+  "scannedReleases": 153,
   "error": null,
-  "note": "Added 3 as approved: Obed Villa Senor Santos, Chandni Patel, Shweta Patel",
+  "note": "Added 1 as approved: CHANEL AYBAR-PENA",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
