@@ -1,45 +1,30 @@
 {
-  "checkedAt": 1795041229200,
-  "checkedAtIso": "2026-11-18T22:33:49.200Z",
+  "checkedAt": 1795047185752,
+  "checkedAtIso": "2026-11-19T00:13:05.752Z",
   "added": [
-    "Osman Velesquez-Suarez",
-    "Santos Garcia-Lira",
-    "Mainza Lombe Malambo",
-    "Cristian Vazquez-Jantes",
-    "Joel Duarte-Hierro",
-    "Kevin Perez Pablo",
-    "Isaias Jose Rodriguez-Manzanares",
-    "Rufino Varela-Flores",
-    "Dinh Quy Nguyen",
-    "Carlos Ovidio Culgua-Alas",
-    "Daniel Torres Rodriguez",
-    "Jonathan Josue Rivera-Caceres",
-    "Yarlee Freddy Acosta Salmeron",
-    "Jhon Javier Rodas-Flor",
-    "Juan Garcia-Olguin",
-    "Inna Opatska",
-    "Igor D’iu",
-    "Juan Carlos Escobar Rodriguez",
-    "Jorge Edy Pelaez Martinez",
-    "DHSgov Texas who plan to end cooperation with U operation (operation, not a person)"
+    "Goran Gogic",
+    "Santi Ricardo Esteban-Delgado",
+    "Carlos Andres Perez-Melens",
+    "Luis Armando Estupinan-Cayola",
+    "Zhong Chen",
+    "Sijia Guo",
+    "Jorge Ivan Diaz-Sanchez",
+    "Alfredo Chica Sanchez",
+    "Jai Vang",
+    "Rene Rosario-Miranda"
   ],
   "addedStatus": "approved",
-  "heldPending": [
-    "Jhon Javier Rodas-Flor (suspect described as still at large)"
-  ],
-  "stageUpdates": [
-    "Hacina Saadi (Charged -> Pleaded guilty)",
-    "Dilea Ochoa-Perez (Charged -> Pleaded guilty)"
-  ],
+  "heldPending": [],
+  "stageUpdates": [],
   "sameNameReview": {
     "replaced": [],
     "keptBoth": []
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 156,
+  "scannedReleases": 157,
   "error": null,
-  "note": "Added 20 as approved: Osman Velesquez-Suarez, Santos Garcia-Lira, Mainza Lombe Malambo, Cristian Vazquez-Jantes, Joel Duarte-Hierro, Kevin Perez Pablo, Isaias Jose Rodriguez-Manzanares, Rufino Varela-Flores, Dinh Quy Nguyen, Carlos Ovidio Culgua-Alas, Daniel Torres Rodriguez, Jonathan Josue Rivera-Caceres, Yarlee Freddy Acosta Salmeron, Jhon Javier Rodas-Flor, Juan Garcia-Olguin, Inna Opatska, Igor D’iu, Juan Carlos Escobar Rodriguez, Jorge Edy Pelaez Martinez, DHSgov Texas who plan to end cooperation with U operation (operation, not a person)",
+  "note": "Added 10 as approved: Goran Gogic, Santi Ricardo Esteban-Delgado, Carlos Andres Perez-Melens, Luis Armando Estupinan-Cayola, Zhong Chen, Sijia Guo, Jorge Ivan Diaz-Sanchez, Alfredo Chica Sanchez, Jai Vang, Rene Rosario-Miranda",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
