@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-19",
   "windowDays": 7,
-  "total": 182,
+  "total": 192,
   "rows": [
     {
       "id": "x-2122645931350749513-arnulfo-palacois-gomez",
@@ -97,6 +97,18 @@
       "severityCrimes": [
         "Murder / manslaughter",
         "Weapons",
+        "Drug possession"
+      ]
+    },
+    {
+      "id": "x-2123529700647551003-wilber-jandres",
+      "name": "Wilber Jandres",
+      "when": "19 Nov 2026",
+      "severity": 165,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Assault / battery",
         "Drug possession"
       ]
     },
@@ -280,15 +292,13 @@
       ]
     },
     {
-      "id": "x-2122877955625943079-jose-jorge-guzman-dias",
-      "name": "Jose Jorge Guzman-Dias",
-      "when": "17 Nov 2026",
-      "severity": 113,
-      "severityReason": "Fraud (incl. voter fraud)",
+      "id": "x-2123489083871952896-ignacio-garcia-vargas",
+      "name": "Ignacio Garcia Vargas",
+      "when": "19 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
       "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Burglary / theft",
-        "Drug possession"
+        "Child sex crime"
       ]
     },
     {
