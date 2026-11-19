@@ -1,18 +1,17 @@
 {
-  "updatedAt": "2026-11-19T14:49:18Z",
-  "rows": 1794,
-  "approved": 1767,
+  "updatedAt": "2026-11-19T14:50:54Z",
+  "rows": 1797,
+  "approved": 1770,
   "pending": 27,
   "photos": 404,
   "reviewRows": 774,
-  "lastAddedAt": "2026-11-19T14:49:18Z",
-  "lastAddedCount": 4,
+  "lastAddedAt": "2026-11-19T14:50:45Z",
+  "lastAddedCount": 3,
   "lastAdded": [
-    "Luis Fernando Carranza-Amaya",
-    "Josue Jain Sanchez Ponce",
-    "Daniel Enrrique Martinez Espana",
-    "Manuel Alejandro Pena"
+    "Obed Villa Senor Santos",
+    "Chandni Patel",
+    "Shweta Patel"
   ],
-  "harvestSha256": "51fa332c54066de9f4b797a04fb567b561cfa42bc453d4f232296105516684ce",
+  "harvestSha256": "da1d5e63d66a8b0161edb5c3d31cd4cccb7d9c164de014ee8f90072fef6f980b",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

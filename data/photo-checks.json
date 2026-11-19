@@ -10749,5 +10749,23 @@
     "name": "Goran Gogic",
     "result": "none",
     "why": "no single person-specific image in the release"
+  },
+  "justice.gov/usao-or/pr/mexican-national-unlawfully-residing-united-states-pleads-guilty-possessing-more-four": {
+    "checkedAt": "2026-11-19T14:50:51.075Z",
+    "name": "Obed Villa Senor Santos",
+    "result": "none",
+    "why": "no single person-specific image in the release"
+  },
+  "justice.gov/usao-wdny/pr/woman-pleads-guilty-marriage-fraud|chandni patel": {
+    "checkedAt": "2026-11-19T14:50:51.138Z",
+    "name": "Chandni Patel",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "justice.gov/usao-wdny/pr/woman-pleads-guilty-marriage-fraud|shweta patel": {
+    "checkedAt": "2026-11-19T14:50:51.229Z",
+    "name": "Shweta Patel",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
   }
 }

@@ -1,17 +1,10 @@
 {
-  "checkedAt": 1795047185752,
-  "checkedAtIso": "2026-11-19T00:13:05.752Z",
+  "checkedAt": 1795099845830,
+  "checkedAtIso": "2026-11-19T14:50:45.830Z",
   "added": [
-    "Goran Gogic",
-    "Santi Ricardo Esteban-Delgado",
-    "Carlos Andres Perez-Melens",
-    "Luis Armando Estupinan-Cayola",
-    "Zhong Chen",
-    "Sijia Guo",
-    "Jorge Ivan Diaz-Sanchez",
-    "Alfredo Chica Sanchez",
-    "Jai Vang",
-    "Rene Rosario-Miranda"
+    "Obed Villa Senor Santos",
+    "Chandni Patel",
+    "Shweta Patel"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -22,9 +15,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 157,
+  "scannedReleases": 156,
   "error": null,
-  "note": "Added 10 as approved: Goran Gogic, Santi Ricardo Esteban-Delgado, Carlos Andres Perez-Melens, Luis Armando Estupinan-Cayola, Zhong Chen, Sijia Guo, Jorge Ivan Diaz-Sanchez, Alfredo Chica Sanchez, Jai Vang, Rene Rosario-Miranda",
+  "note": "Added 3 as approved: Obed Villa Senor Santos, Chandni Patel, Shweta Patel",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
