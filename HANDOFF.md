@@ -1,3 +1,10 @@
+## 2026-11-18 (evening) daily missed-cases check
+
+- Added via data/pending.json (commit ea37f03, run 44427075117, all 10 live; feed 1,790): Goran Gogic (EDNY, Pleaded guilty, citizen of Montenegro); NDGA Nov 18 "Three illegal aliens from Colombia": Santi Ricardo Esteban-Delgado, Carlos Andres Perez-Melens (sentenced, reentry), Luis Armando Estupinan-Cayola (sentenced, alien in possession); Zhong Chen + Sijia Guo (NH, Pleaded guilty, Chinese nationals); Jorge Ivan Diaz-Sanchez (AZ Nov 17 weekly roundup, Charged, "citizens of Guatemala or Mexico"); Alfredo Chica Sanchez (ICE Nov 18, Removed to Honduras); DHS Nov 18 Minneapolis page "recent examples": Jai Vang (Laos, convictions; release notes the state pardon) and Rene Rosario-Miranda (Guatemala, ICE arrest in April).
+- Why missed: DOJ intro-sentence nationality not tied to the sentencing sentence (NDGA trio), "Bedford residents and Chinese nationals NAME" order (NH), roundup paragraph nationality (AZ), ICE single-person removal page lead "ICE removed NAME to X", DHS example-list entries. No parser change made.
+- Left off: Eric Tabaro Nshimiye (ICE/HSI Nov 18 perjury conviction) - release says he obtained U.S. citizenship. Jhon Javier Rodas-Flor stays held (DHS Nov 18 says he "currently remains at large"; correct per-person hold).
+- Tests 324/324.
+
 ## 2026-11-17 (evening) approved tracker fixes (Krennic: all six from the missed-cases check; this repo is 3, 4, 6)
 
 - Fix 3 (approved): "remains at large" / "is currently at large" now holds only the person that wording is about (pronoun sentence attaches to the nearest preceding named person). A multi-person DHS page no longer holds everyone when someone else on the page is at large. Delon Raymond Jaundoo (DHS Nov 17) and Julio Cesar Vazquez Hernandez (DHS Nov 13) stay held. A single-defendant "the suspect remains at large" still holds that defendant. Old no-name callers still hold the whole release.
