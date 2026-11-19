@@ -1,8 +1,23 @@
 {
-  "checkedAt": 1795113015039,
-  "checkedAtIso": "2026-11-19T18:30:15.039Z",
+  "checkedAt": 1795127947389,
+  "checkedAtIso": "2026-11-19T22:39:07.389Z",
   "added": [
-    "CHANEL AYBAR-PENA"
+    "Diego Arellanes-Carillo",
+    "Eldmond Saye Boley",
+    "Maynor Arevalo-Garcia",
+    "Jose Luis Guitierrez-Rocha",
+    "Ronaldo Barbosa Ortiz",
+    "Pablo Lopez Morales",
+    "Cesar Hernandez-Olvera",
+    "Juan Moreira-Osorio",
+    "Yerri Rivera-Llanes",
+    "Lisandro Sanchez-Guillermo",
+    "Bernabe Sarmiento-Zuniga",
+    "Ismael Rodriguez",
+    "Jorge Guerrero-Martinez",
+    "Jose Antonio Ramos",
+    "Operation Charged (operation, not a person)",
+    "Operation Circle City Shield’ INDIANAPOLIS- U (operation, not a person)"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -13,9 +28,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 153,
+  "scannedReleases": 161,
   "error": null,
-  "note": "Added 1 as approved: CHANEL AYBAR-PENA",
+  "note": "Added 16 as approved: Diego Arellanes-Carillo, Eldmond Saye Boley, Maynor Arevalo-Garcia, Jose Luis Guitierrez-Rocha, Ronaldo Barbosa Ortiz, Pablo Lopez Morales, Cesar Hernandez-Olvera, Juan Moreira-Osorio, Yerri Rivera-Llanes, Lisandro Sanchez-Guillermo, Bernabe Sarmiento-Zuniga, Ismael Rodriguez, Jorge Guerrero-Martinez, Jose Antonio Ramos, Operation Charged (operation, not a person), Operation Circle City Shield’ INDIANAPOLIS- U (operation, not a person)",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

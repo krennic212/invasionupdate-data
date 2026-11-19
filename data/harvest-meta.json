@@ -1,15 +1,28 @@
 {
-  "updatedAt": "2026-11-19T18:30:25Z",
-  "rows": 1798,
-  "approved": 1771,
+  "updatedAt": "2026-11-19T22:39:21Z",
+  "rows": 1812,
+  "approved": 1785,
   "pending": 27,
   "photos": 404,
   "reviewRows": 774,
-  "lastAddedAt": "2026-11-19T18:30:15Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-11-19T22:39:07Z",
+  "lastAddedCount": 14,
   "lastAdded": [
-    "CHANEL AYBAR-PENA"
+    "Diego Arellanes-Carillo",
+    "Eldmond Saye Boley",
+    "Maynor Arevalo-Garcia",
+    "Jose Luis Guitierrez-Rocha",
+    "Ronaldo Barbosa Ortiz",
+    "Pablo Lopez Morales",
+    "Cesar Hernandez-Olvera",
+    "Juan Moreira-Osorio",
+    "Yerri Rivera-Llanes",
+    "Lisandro Sanchez-Guillermo",
+    "Bernabe Sarmiento-Zuniga",
+    "Ismael Rodriguez",
+    "Jorge Guerrero-Martinez",
+    "Jose Antonio Ramos"
   ],
-  "harvestSha256": "ffccb2dc9a41ee0dc180e0625fb9350089b4a2c25e9906d5e1c935a557e17780",
+  "harvestSha256": "b29faf10c0430511e3ae101d5bebbc031b35ae1fb02e81687afefbf616f3a687",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

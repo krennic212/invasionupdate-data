@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-19",
   "windowDays": 7,
-  "total": 171,
+  "total": 182,
   "rows": [
     {
       "id": "x-2122645931350749513-arnulfo-palacois-gomez",
@@ -13,6 +13,32 @@
         "Kidnapping / human trafficking",
         "Armed robbery / aggravated assault",
         "Assault / battery",
+        "Burglary / theft"
+      ]
+    },
+    {
+      "id": "dhs-20261119-ronaldo-barbosa-ortiz",
+      "name": "Ronaldo Barbosa Ortiz",
+      "when": "19 Nov 2026",
+      "severity": 218,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Rape / sexual assault",
+        "Drug possession",
+        "DUI",
+        "Illegal entry / reentry"
+      ]
+    },
+    {
+      "id": "dhs-20261119-eldmond-saye-boley",
+      "name": "Eldmond Saye Boley",
+      "when": "19 Nov 2026",
+      "severity": 205,
+      "severityReason": "Attack on police officer",
+      "severityCrimes": [
+        "Attack on police officer",
+        "Kidnapping / human trafficking",
         "Burglary / theft"
       ]
     },
@@ -263,28 +289,6 @@
         "Fraud (incl. voter fraud)",
         "Burglary / theft",
         "Drug possession"
-      ]
-    },
-    {
-      "id": "doj-20261117-fausto-ramirez",
-      "name": "Fausto Ramirez",
-      "when": "17 Nov 2026",
-      "severity": 110,
-      "severityReason": "Fraud (incl. voter fraud)",
-      "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Drug trafficking"
-      ]
-    },
-    {
-      "id": "doj-20261117-jose-carlos-miranda-morales",
-      "name": "Jose Carlos Miranda Morales",
-      "when": "17 Nov 2026",
-      "severity": 110,
-      "severityReason": "Fraud (incl. voter fraud)",
-      "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Drug trafficking"
       ]
     },
     {
