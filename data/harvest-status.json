@@ -1,11 +1,22 @@
 {
-  "checkedAt": 1795186500117,
-  "checkedAtIso": "2026-11-20T14:55:00.117Z",
+  "checkedAt": 1795212799348,
+  "checkedAtIso": "2026-11-20T22:13:19.348Z",
   "added": [
-    "William Saron Capayas"
+    "Maria Jose Urbina",
+    "Neo Martin Perez Mendoza",
+    "Jesus Ricardo Christobal",
+    "Augusto Villar Vizcaino",
+    "Alexander Cortez-Sanchez",
+    "Oscar Silvano Toga",
+    "Gerialan Humberto Cruz-Dionicio",
+    "Alejandro Lara Del Los Santos",
+    "Victor Manuel Flores Lopez"
   ],
   "addedStatus": "approved",
-  "heldPending": [],
+  "heldPending": [
+    "Maria Jose Urbina (not stated to be a non-citizen)",
+    "Jesus Ricardo Christobal (not stated to be a non-citizen)"
+  ],
   "stageUpdates": [],
   "sameNameReview": {
     "replaced": [],
@@ -13,9 +24,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 173,
+  "scannedReleases": 162,
   "error": null,
-  "note": "Added 1 as approved: William Saron Capayas",
+  "note": "Added 9 as approved: Maria Jose Urbina, Neo Martin Perez Mendoza, Jesus Ricardo Christobal, Augusto Villar Vizcaino, Alexander Cortez-Sanchez, Oscar Silvano Toga, Gerialan Humberto Cruz-Dionicio, Alejandro Lara Del Los Santos, Victor Manuel Flores Lopez",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

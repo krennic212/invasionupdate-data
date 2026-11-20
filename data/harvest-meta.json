@@ -1,22 +1,21 @@
 {
-  "updatedAt": "2026-11-20T17:48:24Z",
-  "rows": 1838,
-  "approved": 1811,
-  "pending": 27,
+  "updatedAt": "2026-11-20T22:13:28Z",
+  "rows": 1847,
+  "approved": 1818,
+  "pending": 29,
   "photos": 404,
   "reviewRows": 778,
-  "lastAddedAt": "2026-11-20T17:48:23Z",
-  "lastAddedCount": 8,
+  "lastAddedAt": "2026-11-20T22:13:19Z",
+  "lastAddedCount": 7,
   "lastAdded": [
-    "Franklin Javier Mejia",
-    "Boos Corona-Aguilar",
-    "Inpone Phothirath",
-    "Jose Rodas-Hernandez",
-    "Castulo Garay-Silva",
-    "Carlos Rivera Morales",
-    "Jose Jairo Hernandez-Ramirez",
-    "Antonio Sanchez-Marrufo"
+    "Neo Martin Perez Mendoza",
+    "Augusto Villar Vizcaino",
+    "Alexander Cortez-Sanchez",
+    "Oscar Silvano Toga",
+    "Gerialan Humberto Cruz-Dionicio",
+    "Alejandro Lara Del Los Santos",
+    "Victor Manuel Flores Lopez"
   ],
-  "harvestSha256": "90ba39d93234b25ee142050866ee306faa75c945149e89abd39389a355416307",
+  "harvestSha256": "4ef4bf3316c14514924cc57834a1ea299150721ce287221f2cb3c5ef6a7270bd",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
