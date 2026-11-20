@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-20",
   "windowDays": 7,
-  "total": 178,
+  "total": 191,
   "rows": [
     {
       "id": "x-2122645931350749513-arnulfo-palacois-gomez",
@@ -54,6 +54,18 @@
       ]
     },
     {
+      "id": "x-2123847233334632523-jose-erasmo-beltran-amaya",
+      "name": "Jose Erasmo Beltran-Amaya",
+      "when": "20 Nov 2026",
+      "severity": 198,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Attempted murder",
+        "Assault / battery"
+      ]
+    },
+    {
       "id": "ice-20261116-salvador-hernandez-pineda",
       "name": "Salvador Hernandez Pineda",
       "when": "16 Nov 2026",
@@ -74,6 +86,17 @@
       "severityCrimes": [
         "Murder / manslaughter",
         "Terrorist plot"
+      ]
+    },
+    {
+      "id": "x-2123882417677017508-andres-quintas-santiago",
+      "name": "Andres Quintas-Santiago",
+      "when": "20 Nov 2026",
+      "severity": 182,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Rape / sexual assault"
       ]
     },
     {
@@ -258,37 +281,14 @@
       ]
     },
     {
-      "id": "x-2122877955625943079-jose-jorge-guzman-dias",
-      "name": "Jose Jorge Guzman-Dias",
-      "when": "17 Nov 2026",
+      "id": "x-2123869232605851983-hector-campos-aguilar",
+      "name": "Hector Campos-Aguilar",
+      "when": "20 Nov 2026",
       "severity": 113,
-      "severityReason": "Fraud (incl. voter fraud)",
+      "severityReason": "Armed robbery / aggravated assault",
       "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Burglary / theft",
-        "Drug possession"
-      ]
-    },
-    {
-      "id": "doj-20261117-fausto-ramirez",
-      "name": "Fausto Ramirez",
-      "when": "17 Nov 2026",
-      "severity": 110,
-      "severityReason": "Fraud (incl. voter fraud)",
-      "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Drug trafficking"
-      ]
-    },
-    {
-      "id": "doj-20261117-jose-carlos-miranda-morales",
-      "name": "Jose Carlos Miranda Morales",
-      "when": "17 Nov 2026",
-      "severity": 110,
-      "severityReason": "Fraud (incl. voter fraud)",
-      "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Drug trafficking"
+        "Armed robbery / aggravated assault",
+        "Weapons"
       ]
     },
     {
