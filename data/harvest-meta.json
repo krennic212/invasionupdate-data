@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-20T03:57:08Z",
-  "rows": 1828,
-  "approved": 1801,
+  "updatedAt": "2026-11-20T14:53:18Z",
+  "rows": 1829,
+  "approved": 1802,
   "pending": 27,
   "photos": 404,
-  "reviewRows": 774,
-  "lastAddedAt": "2026-11-20T03:57:00Z",
+  "reviewRows": 778,
+  "lastAddedAt": "2026-11-20T14:53:18Z",
   "lastAddedCount": 1,
   "lastAdded": [
-    "Mario De La Paz Aguilar"
+    "Angely Paola Rodriguez Miranda"
   ],
-  "harvestSha256": "f607ce52a279e1b49954502c3dcec8fa337ded3c22404b8462e1ffefc1923f0f",
+  "harvestSha256": "c0dfbe1127d6a7588049b14a998cfc4f6878741c9d1ed6d51e7dfcff0592853f",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
