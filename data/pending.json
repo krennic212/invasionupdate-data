@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "name": "Arnol Josue Flores",
+    "city": "Laredo, TX",
+    "crime": "Convicted: LAREDO, Texas – A 29-year-old Honduran national has been convicted of conspiracy to transport illegal aliens and transporting illegal aliens for profit. The jury deliberated for approximately two hours before finding Arnol Josue Flores guilty following a one-day trial.",
+    "usa": "DOJ release Nov 18, 2026: Jury convicts illegal alien in smuggling scheme",
+    "foreign": "Not stated in post",
+    "picked": "11/18/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261118-arnol-josue-flores",
+    "when": "18 Nov 2026",
+    "text": "DOJ Nov 18, 2026, as posted: LAREDO, Texas – A 29-year-old Honduran national has been convicted of conspiracy to transport illegal aliens and transporting illegal aliens for profit. The jury deliberated for approximately two hours before finding Arnol Josue Flores guilty following a one-day trial.",
+    "photo": "",
+    "via": "justice.gov/usao-sdtx/pr/jury-convicts-illegal-alien-smuggling-scheme",
+    "sourceUrl": "https://www.justice.gov/usao-sdtx/pr/jury-convicts-illegal-alien-smuggling-scheme",
+    "voting": false,
+    "origin": "Honduras",
+    "confirmedBy": "DOJ",
+    "lat": 27.5155,
+    "lon": -99.4986
+  },
+  {
+    "name": "Patrick Alvarado Ayala",
+    "city": "Indianapolis, IN",
+    "crime": "Charged: Patrick Alvarado Ayala, 24, of El Salvador: Unlawful Possession of a Firearm by an Illegal Alien",
+    "usa": "DOJ release Nov 19, 2026: 35 Defendants Charged Federally as part of ‘Operation Circle City Shield’",
+    "foreign": "Not stated in post",
+    "picked": "11/19/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261119-patrick-alvarado-ayala",
+    "when": "19 Nov 2026",
+    "text": "DOJ Nov 19, 2026, as posted: Patrick Alvarado Ayala, 24, of El Salvador: Unlawful Possession of a Firearm by an Illegal Alien",
+    "photo": "",
+    "via": "justice.gov/usao-sdin/pr/35-defendants-charged-federally-part-operation-circle-city-shield",
+    "sourceUrl": "https://www.justice.gov/usao-sdin/pr/35-defendants-charged-federally-part-operation-circle-city-shield",
+    "voting": false,
+    "origin": "El Salvador",
+    "confirmedBy": "DOJ",
+    "lat": 39.77,
+    "lon": -86.16
+  }
+]
