@@ -1,5 +1,33 @@
 [
   {
+    "name": "William Saron Capayas",
+    "city": "Not stated",
+    "crime": "Convicted: SAIPAN, CNMI– SHAWN N. ANDERSON, United States Attorney for the Districts of Guam and the Northern Mariana Islands, announced that William Saron Capayas, age 51, a citizen of the Republic of the Philippines, was sentenced to 36 months imprisonment for Possession of Child Pornography, in violation of 18 U.S.C. § 2252A(b)(2).",
+    "usa": "DOJ release Nov 20, 2026: Philippine Citizen Sentenced to 36 Months in Federal Prison for Possession of Child Sexual Abuse Material",
+    "foreign": "Not stated in post",
+    "picked": "11/20/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261120-william-saron-capayas",
+    "when": "20 Nov 2026",
+    "severity": 92,
+    "severityReason": "Child sex crime",
+    "severityCrimes": [
+      "Child sex crime"
+    ],
+    "text": "DOJ Nov 20, 2026, as posted: SAIPAN, CNMI– SHAWN N. ANDERSON, United States Attorney for the Districts of Guam and the Northern Mariana Islands, announced that William Saron Capayas, age 51, a citizen of the Republic of the Philippines, was sentenced to 36 months imprisonment for Possession of Child Pornography, in violation of 18 U.S.C. § 2252A(b)(2).",
+    "photo": "",
+    "via": "justice.gov/usao-gu/pr/philippine-citizen-sentenced-36-months-federal-prison-possession-child-sexual-abuse",
+    "sourceUrl": "https://www.justice.gov/usao-gu/pr/philippine-citizen-sentenced-36-months-federal-prison-possession-child-sexual-abuse",
+    "voting": false,
+    "origin": "Republic of the Philippines",
+    "confirmedBy": "DOJ",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Angely Paola Rodriguez Miranda",
     "city": "Not stated",
     "crime": "Convicted: Los Angeles ICE officers arrested Mexican criminal illegal alien Angely Paola Rodriguez Miranda. In 2024, Rodriguez was sentenced to 2 years in prison for assault with a deadly weapon using force. She’ll remain in ICE custody pending immigration proceedings.",

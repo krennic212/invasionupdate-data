@@ -1,8 +1,8 @@
 {
-  "checkedAt": 1795147020326,
-  "checkedAtIso": "2026-11-20T03:57:00.326Z",
+  "checkedAt": 1795186500117,
+  "checkedAtIso": "2026-11-20T14:55:00.117Z",
   "added": [
-    "Mario De La Paz Aguilar"
+    "William Saron Capayas"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -13,9 +13,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 164,
+  "scannedReleases": 173,
   "error": null,
-  "note": "Added 1 as approved: Mario De La Paz Aguilar",
+  "note": "Added 1 as approved: William Saron Capayas",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-20T14:53:18Z",
-  "rows": 1829,
-  "approved": 1802,
+  "updatedAt": "2026-11-20T14:55:08Z",
+  "rows": 1830,
+  "approved": 1803,
   "pending": 27,
   "photos": 404,
   "reviewRows": 778,
-  "lastAddedAt": "2026-11-20T14:53:18Z",
+  "lastAddedAt": "2026-11-20T14:55:00Z",
   "lastAddedCount": 1,
   "lastAdded": [
-    "Angely Paola Rodriguez Miranda"
+    "William Saron Capayas"
   ],
-  "harvestSha256": "c0dfbe1127d6a7588049b14a998cfc4f6878741c9d1ed6d51e7dfcff0592853f",
+  "harvestSha256": "4cc8c187025acd48f03a5c316721170f3d84640d3e12e50956e36be437e436eb",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

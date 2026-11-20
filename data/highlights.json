@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-20",
   "windowDays": 7,
-  "total": 164,
+  "total": 165,
   "rows": [
     {
       "id": "x-2122645931350749513-arnulfo-palacois-gomez",
@@ -289,6 +289,16 @@
       "severityCrimes": [
         "Fraud (incl. voter fraud)",
         "Drug trafficking"
+      ]
+    },
+    {
+      "id": "doj-20261120-william-saron-capayas",
+      "name": "William Saron Capayas",
+      "when": "20 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
       ]
     },
     {
