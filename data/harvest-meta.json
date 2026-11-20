@@ -1,25 +1,18 @@
 {
-  "updatedAt": "2026-11-19T22:50:03Z",
-  "rows": 1823,
-  "approved": 1796,
+  "updatedAt": "2026-11-20T00:13:51Z",
+  "rows": 1827,
+  "approved": 1800,
   "pending": 27,
   "photos": 404,
   "reviewRows": 774,
-  "lastAddedAt": "2026-11-19T22:50:02Z",
-  "lastAddedCount": 11,
+  "lastAddedAt": "2026-11-20T00:13:42Z",
+  "lastAddedCount": 4,
   "lastAdded": [
-    "Alejandro Veriguete-Montero",
-    "Wilber Jandres",
-    "Juan Jose Anderson-Avila",
-    "Jose Manuel Elizalde-Serrano",
-    "Nicolas Ocampo-Garcia",
-    "Carlos Avisai Mora-Rodriguez",
-    "Angel Mauricio Bustos Santillan",
-    "David Martinez Bermudez",
-    "Julio Cesar Baltazar Carrillo",
-    "Ignacio Garcia Vargas",
-    "Panfilo Abarca-Perez"
+    "Arnol Josue Flores",
+    "Patrick Alvarado Ayala",
+    "Yongzhen Yang",
+    "Jia Ming Zhou"
   ],
-  "harvestSha256": "63c545ca0f68a37b3ec596ffbe53c3dcd6cb5731ab22a0d121ba8f78b6647093",
+  "harvestSha256": "257ed120b75c4f69eda652c2d21d31a60db792e758b553481eddf8a745153f0d",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

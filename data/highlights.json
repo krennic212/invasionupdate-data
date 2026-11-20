@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-19",
   "windowDays": 7,
-  "total": 192,
+  "total": 162,
   "rows": [
     {
       "id": "x-2122645931350749513-arnulfo-palacois-gomez",
@@ -147,17 +147,6 @@
       ]
     },
     {
-      "id": "dhs-20261113-janio-gionel-velasquez-muro",
-      "name": "Janio Gionel Velasquez-Muro",
-      "when": "13 Nov 2026",
-      "severity": 157,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Kidnapping / human trafficking"
-      ]
-    },
-    {
       "id": "dhs-20261118-kevin-perez-pablo",
       "name": "Kevin Perez Pablo",
       "when": "18 Nov 2026",
@@ -177,18 +166,6 @@
       "severityCrimes": [
         "Kidnapping / human trafficking",
         "Armed robbery / aggravated assault"
-      ]
-    },
-    {
-      "id": "x-2121308362109280722-jesus-gonzalez-lozano",
-      "name": "Jesus Gonzalez-Lozano",
-      "when": "13 Nov 2026",
-      "severity": 149,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Drug trafficking",
-        "DUI"
       ]
     },
     {
@@ -281,14 +258,37 @@
       ]
     },
     {
-      "id": "x-2121305373017837611-ismael-roblero-gonzalez",
-      "name": "Ismael Roblero-Gonzalez",
-      "when": "13 Nov 2026",
-      "severity": 120,
-      "severityReason": "Violent crime against a child",
+      "id": "x-2122877955625943079-jose-jorge-guzman-dias",
+      "name": "Jose Jorge Guzman-Dias",
+      "when": "17 Nov 2026",
+      "severity": 113,
+      "severityReason": "Fraud (incl. voter fraud)",
       "severityCrimes": [
-        "Violent crime against a child",
-        "Assault / battery"
+        "Fraud (incl. voter fraud)",
+        "Burglary / theft",
+        "Drug possession"
+      ]
+    },
+    {
+      "id": "doj-20261117-fausto-ramirez",
+      "name": "Fausto Ramirez",
+      "when": "17 Nov 2026",
+      "severity": 110,
+      "severityReason": "Fraud (incl. voter fraud)",
+      "severityCrimes": [
+        "Fraud (incl. voter fraud)",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "doj-20261117-jose-carlos-miranda-morales",
+      "name": "Jose Carlos Miranda Morales",
+      "when": "17 Nov 2026",
+      "severity": 110,
+      "severityReason": "Fraud (incl. voter fraud)",
+      "severityCrimes": [
+        "Fraud (incl. voter fraud)",
+        "Drug trafficking"
       ]
     },
     {
@@ -392,16 +392,6 @@
       ]
     },
     {
-      "id": "doj-20261113-nicolas-perez-paxtor",
-      "name": "Nicolas Perez-Paxtor",
-      "when": "13 Nov 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
       "id": "x-2123077016693981331-abel-castaneda-gomez",
       "name": "Abel Castaneda-Gomez",
       "when": "18 Nov 2026",
@@ -415,46 +405,6 @@
       "id": "x-2123174418415595893-benjamin-stott",
       "name": "Benjamin Stott",
       "when": "18 Nov 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2121357980046131497-cesar-morales-perez",
-      "name": "Cesar Morales-Perez",
-      "when": "13 Nov 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2121217379363631168-ever-edilberto-zuniga-ramirez",
-      "name": "Ever Edilberto Zuniga Ramirez",
-      "when": "13 Nov 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261113-gokhan-bagci",
-      "name": "Gokhan Bagci",
-      "when": "13 Nov 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2121278023982887285-rosario-navarro-gonzalez",
-      "name": "Rosario Navarro-Gonzalez",
-      "when": "13 Nov 2026",
       "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
