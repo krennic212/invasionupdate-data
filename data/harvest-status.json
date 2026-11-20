@@ -1,11 +1,8 @@
 {
-  "checkedAt": 1795133622444,
-  "checkedAtIso": "2026-11-20T00:13:42.444Z",
+  "checkedAt": 1795147020326,
+  "checkedAtIso": "2026-11-20T03:57:00.326Z",
   "added": [
-    "Arnol Josue Flores",
-    "Patrick Alvarado Ayala",
-    "Yongzhen Yang",
-    "Jia Ming Zhou"
+    "Mario De La Paz Aguilar"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -16,9 +13,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 157,
+  "scannedReleases": 164,
   "error": null,
-  "note": "Added 4 as approved: Arnol Josue Flores, Patrick Alvarado Ayala, Yongzhen Yang, Jia Ming Zhou",
+  "note": "Added 1 as approved: Mario De La Paz Aguilar",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

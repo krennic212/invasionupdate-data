@@ -1,18 +1,15 @@
 {
-  "updatedAt": "2026-11-20T00:13:51Z",
-  "rows": 1827,
-  "approved": 1800,
+  "updatedAt": "2026-11-20T03:57:08Z",
+  "rows": 1828,
+  "approved": 1801,
   "pending": 27,
   "photos": 404,
   "reviewRows": 774,
-  "lastAddedAt": "2026-11-20T00:13:42Z",
-  "lastAddedCount": 4,
+  "lastAddedAt": "2026-11-20T03:57:00Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Arnol Josue Flores",
-    "Patrick Alvarado Ayala",
-    "Yongzhen Yang",
-    "Jia Ming Zhou"
+    "Mario De La Paz Aguilar"
   ],
-  "harvestSha256": "257ed120b75c4f69eda652c2d21d31a60db792e758b553481eddf8a745153f0d",
+  "harvestSha256": "f607ce52a279e1b49954502c3dcec8fa337ded3c22404b8462e1ffefc1923f0f",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

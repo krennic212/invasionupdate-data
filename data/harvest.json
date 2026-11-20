@@ -1,5 +1,33 @@
 [
   {
+    "name": "Mario De La Paz Aguilar",
+    "city": "Portland, OR",
+    "crime": "Convicted: Mario De La Paz Aguilar, 29, a citizen of Mexico living in Portland, is expected to face immigration proceedings and removal from the United States after completing his prison sentence.",
+    "usa": "DOJ release Nov 19, 2026: Mexican National Unlawfully Residing in the United States Sentenced to More Than Three Years in Federal Prison for Trafficking Fentanyl",
+    "foreign": "Not stated in post",
+    "picked": "11/19/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261119-mario-de-la-paz-aguilar",
+    "when": "19 Nov 2026",
+    "severity": 50,
+    "severityReason": "Drug trafficking",
+    "severityCrimes": [
+      "Drug trafficking"
+    ],
+    "text": "DOJ Nov 19, 2026, as posted: Mario De La Paz Aguilar, 29, a citizen of Mexico living in Portland, is expected to face immigration proceedings and removal from the United States after completing his prison sentence.",
+    "photo": "",
+    "via": "justice.gov/usao-or/pr/mexican-national-unlawfully-residing-united-states-sentenced-more-three-years-federal",
+    "sourceUrl": "https://www.justice.gov/usao-or/pr/mexican-national-unlawfully-residing-united-states-sentenced-more-three-years-federal",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "DOJ",
+    "lat": 45.4433,
+    "lon": -122.776,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Yongzhen Yang",
     "city": "West Valley City, UT",
     "crime": "Charged: Yongzhen Yang, 60, a Chinese national living in Springville, Utah; Kristian Walker Bryant, 53, of Farr West, Utah; Jia Ming Zhou, 69, Chinese national living in Springville, Utah; Thomas Weyerts, 49, of Logan, Utah; and Marcus Pok Wan Chan, 38, of West Valley City, Utah, were charged by complaint on November 5.",
