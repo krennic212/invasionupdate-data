@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-11-20",
+  "asOf": "2026-11-21",
   "windowDays": 7,
-  "total": 217,
+  "total": 219,
   "rows": [
     {
       "id": "x-2122645931350749513-arnulfo-palacois-gomez",
@@ -406,6 +406,16 @@
       "name": "Victor Cruz",
       "when": "16 Nov 2026",
       "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2123975987478032651-amilcar-perez-morfin",
+      "name": "Amilcar Perez-Morfin",
+      "when": "20 Nov 2026",
+      "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"
