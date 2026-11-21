@@ -1,15 +1,16 @@
 {
-  "updatedAt": "2026-11-21T17:54:46Z",
-  "rows": 1895,
-  "approved": 1865,
+  "updatedAt": "2026-11-21T22:46:06Z",
+  "rows": 1897,
+  "approved": 1867,
   "pending": 30,
   "photos": 404,
   "reviewRows": 779,
-  "lastAddedAt": "2026-11-21T17:54:46Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-11-21T22:46:06Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Jose Carlos Gamez-Cruz"
+    "Angel Mendoza-Cervantes",
+    "Joel Sosa-Sandoval"
   ],
-  "harvestSha256": "8dd83d66787108ebadf52005f9c809ade6d3601fc84c7d8b198376a92e2b7d57",
+  "harvestSha256": "977e6deb935326107d643ecb9144940d3a91f728ceadcd841b99db0f1c8c43ec",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
