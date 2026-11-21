@@ -1,16 +1,15 @@
 {
-  "updatedAt": "2026-11-21T14:54:16Z",
-  "rows": 1894,
-  "approved": 1864,
+  "updatedAt": "2026-11-21T17:54:46Z",
+  "rows": 1895,
+  "approved": 1865,
   "pending": 30,
   "photos": 404,
   "reviewRows": 779,
-  "lastAddedAt": "2026-11-21T14:54:16Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-11-21T17:54:46Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Leoncio Balderos Perez",
-    "Amilcar Perez-Morfin"
+    "Jose Carlos Gamez-Cruz"
   ],
-  "harvestSha256": "6f9403cf65987c65d43c90ebc5f0581b853829f584755167973f6685a3c36cb1",
+  "harvestSha256": "8dd83d66787108ebadf52005f9c809ade6d3601fc84c7d8b198376a92e2b7d57",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

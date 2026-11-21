@@ -1,5 +1,33 @@
 [
   {
+    "name": "Jose Carlos Gamez-Cruz",
+    "city": "Not stated",
+    "crime": "Arrested: ICE New Orleans arrested Jose Carlos Gamez-Cruz, an illegal alien from Honduras.",
+    "usa": "ICE X post Nov 21, 2026 (@ERONewOrleans)",
+    "foreign": "Not stated in post",
+    "picked": "11/21/2026 (@ERONewOrleans post)",
+    "entered": "Not stated",
+    "office": "ERONewOrleans",
+    "id": "x-2124166193795711376-jose-carlos-gamez-cruz",
+    "when": "21 Nov 2026",
+    "severity": 45,
+    "severityReason": "Drug trafficking",
+    "severityCrimes": [
+      "Drug trafficking"
+    ],
+    "text": "@ERONewOrleans Nov 21, 2026, as posted: ICE New Orleans arrested Jose Carlos Gamez-Cruz, an illegal alien from Honduras. Criminal history includes felony conviction for selling cocaine in San Francisco, CA (sentenced to 3 years).",
+    "photo": "",
+    "via": "@ERONewOrleans 2124166193795711376",
+    "sourceUrl": "https://x.com/ERONewOrleans/status/2124166193795711376",
+    "voting": false,
+    "origin": "Honduras",
+    "confirmedBy": "ICE",
+    "lat": null,
+    "lon": null,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Leoncio Balderos Perez",
     "city": "Not stated",
     "crime": "Arrested: ICE and U.S. Border Patrol arrested Leoncio Balderos Perez, a previously removed criminal illegal alien from Mexico.",
