@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-22",
   "windowDays": 7,
-  "total": 221,
+  "total": 225,
   "rows": [
     {
       "id": "x-2122645931350749513-arnulfo-palacois-gomez",
@@ -281,14 +281,14 @@
       ]
     },
     {
-      "id": "x-2123869232605851983-hector-campos-aguilar",
-      "name": "Hector Campos-Aguilar",
-      "when": "20 Nov 2026",
-      "severity": 113,
-      "severityReason": "Armed robbery / aggravated assault",
+      "id": "x-2124623960176304274-jose-trujillo-meraz",
+      "name": "Jose Trujillo-Meraz",
+      "when": "22 Nov 2026",
+      "severity": 117,
+      "severityReason": "Rape / sexual assault",
       "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons"
+        "Rape / sexual assault",
+        "Assault / battery"
       ]
     },
     {

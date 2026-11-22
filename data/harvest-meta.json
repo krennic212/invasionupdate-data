@@ -1,16 +1,18 @@
 {
-  "updatedAt": "2026-11-22T14:53:02Z",
-  "rows": 1899,
-  "approved": 1869,
+  "updatedAt": "2026-11-22T22:55:49Z",
+  "rows": 1903,
+  "approved": 1873,
   "pending": 30,
   "photos": 404,
   "reviewRows": 781,
-  "lastAddedAt": "2026-11-22T14:53:02Z",
-  "lastAddedCount": 2,
+  "lastAddedAt": "2026-11-22T22:55:49Z",
+  "lastAddedCount": 4,
   "lastAdded": [
-    "Sofia Hernandez Mejia",
-    "Ricardo Larrondo Mendoza"
+    "Nelson Pastra",
+    "Jose Trujillo-Meraz",
+    "Juan Carlos Mendoza-Villa",
+    "Silveiro Hernandez-Ramirez"
   ],
-  "harvestSha256": "cc5409f351690aee8ea72dab21d5e0ea371c3ec3e3972be88454af28b9430590",
+  "harvestSha256": "0f4c4931c8d2aeed46224d66fdbe8ecac2dcbefdfc17239661accacccecd67ba",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
