@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-22",
   "windowDays": 7,
-  "total": 225,
+  "total": 184,
   "rows": [
     {
       "id": "x-2122645931350749513-arnulfo-palacois-gomez",
@@ -66,18 +66,6 @@
       ]
     },
     {
-      "id": "ice-20261116-salvador-hernandez-pineda",
-      "name": "Salvador Hernandez Pineda",
-      "when": "16 Nov 2026",
-      "severity": 191,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Kidnapping / human trafficking",
-        "Assault / battery"
-      ]
-    },
-    {
       "id": "doj-20261117-asif-merchant",
       "name": "Asif Merchant",
       "when": "17 Nov 2026",
@@ -109,18 +97,6 @@
         "Material support to a cartel",
         "Fraud (incl. voter fraud)",
         "Weapons"
-      ]
-    },
-    {
-      "id": "x-2122362933971911093-jose-hernando-rodriguez-eraso",
-      "name": "Jose Hernando Rodriguez-Eraso",
-      "when": "16 Nov 2026",
-      "severity": 180,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "Weapons",
-        "Drug possession"
       ]
     },
     {
@@ -158,18 +134,6 @@
       ]
     },
     {
-      "id": "x-2122303005642866820-carlos-molina-castillo",
-      "name": "Carlos Molina-Castillo",
-      "when": "16 Nov 2026",
-      "severity": 158,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons",
-        "Drug trafficking"
-      ]
-    },
-    {
       "id": "dhs-20261118-kevin-perez-pablo",
       "name": "Kevin Perez Pablo",
       "when": "18 Nov 2026",
@@ -178,17 +142,6 @@
       "severityCrimes": [
         "Rape / sexual assault",
         "Kidnapping / human trafficking"
-      ]
-    },
-    {
-      "id": "doj-20261116-wilmer-jesus-colmenares-gonzalez",
-      "name": "Wilmer Jesus Colmenares-Gonzalez",
-      "when": "16 Nov 2026",
-      "severity": 152,
-      "severityReason": "Kidnapping / human trafficking",
-      "severityCrimes": [
-        "Kidnapping / human trafficking",
-        "Armed robbery / aggravated assault"
       ]
     },
     {
@@ -201,17 +154,6 @@
         "Attack on police officer",
         "Assault / battery",
         "DUI"
-      ]
-    },
-    {
-      "id": "x-2122398024517509440-vladimir-takhavievish-glazkov",
-      "name": "Vladimir Takhavievish Glazkov",
-      "when": "16 Nov 2026",
-      "severity": 137,
-      "severityReason": "Kidnapping / human trafficking",
-      "severityCrimes": [
-        "Kidnapping / human trafficking",
-        "Armed robbery / aggravated assault"
       ]
     },
     {
@@ -248,39 +190,6 @@
       ]
     },
     {
-      "id": "dhs-20261116-hicham-elouada",
-      "name": "Hicham Elouada",
-      "when": "16 Nov 2026",
-      "severity": 122,
-      "severityReason": "Kidnapping / human trafficking",
-      "severityCrimes": [
-        "Kidnapping / human trafficking",
-        "Assault / battery"
-      ]
-    },
-    {
-      "id": "x-2122404848524288407-mohammad-mazen-matit",
-      "name": "Mohammad Mazen Matit",
-      "when": "16 Nov 2026",
-      "severity": 120,
-      "severityReason": "Violent crime against a child",
-      "severityCrimes": [
-        "Violent crime against a child",
-        "Assault / battery"
-      ]
-    },
-    {
-      "id": "x-2122404804588912670-vipin-panchal",
-      "name": "Vipin Panchal",
-      "when": "16 Nov 2026",
-      "severity": 120,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "DUI"
-      ]
-    },
-    {
       "id": "x-2124623960176304274-jose-trujillo-meraz",
       "name": "Jose Trujillo-Meraz",
       "when": "22 Nov 2026",
@@ -289,6 +198,95 @@
       "severityCrimes": [
         "Rape / sexual assault",
         "Assault / battery"
+      ]
+    },
+    {
+      "id": "x-2123869232605851983-hector-campos-aguilar",
+      "name": "Hector Campos-Aguilar",
+      "when": "20 Nov 2026",
+      "severity": 113,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons"
+      ]
+    },
+    {
+      "id": "x-2122877955625943079-jose-jorge-guzman-dias",
+      "name": "Jose Jorge Guzman-Dias",
+      "when": "17 Nov 2026",
+      "severity": 113,
+      "severityReason": "Fraud (incl. voter fraud)",
+      "severityCrimes": [
+        "Fraud (incl. voter fraud)",
+        "Burglary / theft",
+        "Drug possession"
+      ]
+    },
+    {
+      "id": "doj-20261117-fausto-ramirez",
+      "name": "Fausto Ramirez",
+      "when": "17 Nov 2026",
+      "severity": 110,
+      "severityReason": "Fraud (incl. voter fraud)",
+      "severityCrimes": [
+        "Fraud (incl. voter fraud)",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "doj-20261117-jose-carlos-miranda-morales",
+      "name": "Jose Carlos Miranda Morales",
+      "when": "17 Nov 2026",
+      "severity": 110,
+      "severityReason": "Fraud (incl. voter fraud)",
+      "severityCrimes": [
+        "Fraud (incl. voter fraud)",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "x-2123817949651927070-carlos-rivera-morales",
+      "name": "Carlos Rivera Morales",
+      "when": "20 Nov 2026",
+      "severity": 105,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "doj-20261120-nikhil-gupta",
+      "name": "Nikhil Gupta",
+      "when": "20 Nov 2026",
+      "severity": 105,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "doj-20261119-ismael-rodriguez",
+      "name": "Ismael Rodriguez",
+      "when": "19 Nov 2026",
+      "severity": 105,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "dhs-20261119-jose-luis-guitierrez-rocha",
+      "name": "Jose Luis Guitierrez-Rocha",
+      "when": "19 Nov 2026",
+      "severity": 105,
+      "severityReason": "Weapons",
+      "severityCrimes": [
+        "Weapons",
+        "Drug trafficking"
       ]
     },
     {
@@ -335,76 +333,6 @@
       "id": "x-2122796585511956895-oscar-rosales-tumin-lopez",
       "name": "Oscar Rosales Tumin Lopez",
       "when": "17 Nov 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2122404815791952278-florencio-vasquez-silva",
-      "name": "Florencio Vasquez-Silva",
-      "when": "16 Nov 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2122362931488973090-jose-carlos-cartagena-ortega",
-      "name": "Jose Carlos Cartagena Ortega",
-      "when": "16 Nov 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "ice-20261116-juan-antoni-maldonado",
-      "name": "Juan Antoni Maldonado",
-      "when": "16 Nov 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2122404825359171977-nestor-herrera",
-      "name": "Nestor Herrera",
-      "when": "16 Nov 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2122404835890728982-oscar-rodriguez-ramos",
-      "name": "Oscar Rodriguez-Ramos",
-      "when": "16 Nov 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2122362916146184402-pablo-alberto-martinez-serrano",
-      "name": "Pablo Alberto Martinez Serrano",
-      "when": "16 Nov 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "dhs-20261116-victor-cruz",
-      "name": "Victor Cruz",
-      "when": "16 Nov 2026",
       "severity": 92,
       "severityReason": "Child sex crime",
       "severityCrimes": [
