@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-23",
   "windowDays": 7,
-  "total": 220,
+  "total": 234,
   "rows": [
     {
       "id": "x-2124913412668874774-juan-carlos-chub-choc",
@@ -26,6 +26,18 @@
         "Armed robbery / aggravated assault",
         "Assault / battery",
         "Burglary / theft"
+      ]
+    },
+    {
+      "id": "x-2124939831902118304-wilfredo-izaguirre-caceres",
+      "name": "Wilfredo Izaguirre Caceres",
+      "when": "23 Nov 2026",
+      "severity": 220,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Armed robbery / aggravated assault",
+        "Weapons"
       ]
     },
     {
@@ -248,6 +260,17 @@
       ]
     },
     {
+      "id": "x-2124941054382129328-sargon-benyamin",
+      "name": "Sargon Benyamin",
+      "when": "23 Nov 2026",
+      "severity": 125,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons"
+      ]
+    },
+    {
       "id": "x-2122796591010693588-josue-elias-jeronimo",
       "name": "Josue Elias Jeronimo",
       "when": "17 Nov 2026",
@@ -267,29 +290,6 @@
       "severityCrimes": [
         "Armed robbery / aggravated assault",
         "Weapons"
-      ]
-    },
-    {
-      "id": "x-2124623960176304274-jose-trujillo-meraz",
-      "name": "Jose Trujillo-Meraz",
-      "when": "22 Nov 2026",
-      "severity": 117,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Assault / battery"
-      ]
-    },
-    {
-      "id": "dhs-20261123-miguel-cruz-polanco",
-      "name": "Miguel Cruz-Polanco",
-      "when": "23 Nov 2026",
-      "severity": 115,
-      "severityReason": "Drug trafficking",
-      "severityCrimes": [
-        "Drug trafficking",
-        "Assault / battery",
-        "DUI"
       ]
     },
     {
