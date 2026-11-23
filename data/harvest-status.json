@@ -1,26 +1,8 @@
 {
-  "checkedAt": 1795473899946,
-  "checkedAtIso": "2026-11-23T22:44:59.946Z",
+  "checkedAt": 1795474551733,
+  "checkedAtIso": "2026-11-23T22:55:51.733Z",
   "added": [
-    "Hector Alejandro Mujica-Hernandez",
-    "Ivan Pereira-Pozo",
-    "Armando Andino-Enamorado",
-    "Amalore Arokiaraju Chinnappan",
-    "Kampanart Sodsaikich",
-    "Nnaemeka Ani",
-    "Juan Munoz-Sanchez",
-    "Rafael Rodriguez-Vasquez",
-    "Francisco Juarez-Abundis",
-    "Miguel Cruz-Polanco",
-    "Jonathan Guzman-Cisneros",
-    "Efrain Dominguez-Betancourt",
-    "Eduardo Alcaraz-Mendoza",
-    "Alfredo Ramon Marroquin-Escobar",
-    "Akber Mohammed",
-    "David Gomez-Gomez",
-    "Yefri Alcides Alvarenga-Soto",
-    "Edwin Gonzales Claros",
-    "Ceferino Lopez-Chavez"
+    "Jose Luis Rosales Ayala"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -33,7 +15,7 @@
   "sentToReview": [],
   "scannedReleases": 162,
   "error": null,
-  "note": "Added 19 as approved: Hector Alejandro Mujica-Hernandez, Ivan Pereira-Pozo, Armando Andino-Enamorado, Amalore Arokiaraju Chinnappan, Kampanart Sodsaikich, Nnaemeka Ani, Juan Munoz-Sanchez, Rafael Rodriguez-Vasquez, Francisco Juarez-Abundis, Miguel Cruz-Polanco, Jonathan Guzman-Cisneros, Efrain Dominguez-Betancourt, Eduardo Alcaraz-Mendoza, Alfredo Ramon Marroquin-Escobar, Akber Mohammed, David Gomez-Gomez, Yefri Alcides Alvarenga-Soto, Edwin Gonzales Claros, Ceferino Lopez-Chavez",
+  "note": "Added 1 as approved: Jose Luis Rosales Ayala",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

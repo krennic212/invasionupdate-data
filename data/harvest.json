@@ -1,5 +1,36 @@
 [
   {
+    "name": "Jose Luis Rosales Ayala",
+    "city": "San Mateo, CA",
+    "crime": "Arrested: On November 6, ICE arrested Jose Luis Rosales Ayala, an illegal alien from El Salvador and active member of MS-13, which has been designated a foreign terrorist organization (FTO), during a targeted enforcement operation in San Mateo, California.",
+    "usa": "DHS release Nov 23, 2026: ICE Arrests Illegal Alien MS-13 Member in California Whose Criminal History Includes Cruelty Toward Child and DUI | Homeland Security",
+    "foreign": "Not stated in post",
+    "picked": "11/23/2026 (DHS release)",
+    "entered": "Not stated",
+    "office": "DHSgov",
+    "id": "dhs-20261123-jose-luis-rosales-ayala",
+    "when": "23 Nov 2026",
+    "severity": 23,
+    "severityReason": "DUI",
+    "severityCrimes": [
+      "DUI"
+    ],
+    "text": "DHS Nov 23, 2026, as posted: On November 6, ICE arrested Jose Luis Rosales Ayala, an illegal alien from El Salvador and active member of MS-13, which has been designated a foreign terrorist organization (FTO), during a targeted enforcement operation in San Mateo, California.",
+    "photo": "",
+    "via": "dhs.gov/news/2026/11/23/ice-arrests-illegal-alien-ms-13-member-california-whose-criminal-history-includes",
+    "sourceUrl": "https://www.dhs.gov/news/2026/11/23/ice-arrests-illegal-alien-ms-13-member-california-whose-criminal-history-includes",
+    "voting": false,
+    "origin": "El Salvador",
+    "confirmedBy": "DHS",
+    "lat": 37.5723,
+    "lon": -122.3203,
+    "status": "approved",
+    "tags": [
+      "Gang",
+      "MS-13"
+    ]
+  },
+  {
     "name": "Hector Alejandro Mucija-Hernandez",
     "city": "Not stated",
     "crime": "Arrested: Hector Alejandro Mucija-Hernandez, an illegal alien from Venezuela who overstayed his visa, was arrested by ICE following an FBI tip linking him to online threats against President Trump.",

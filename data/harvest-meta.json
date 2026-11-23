@@ -1,30 +1,15 @@
 {
-  "updatedAt": "2026-11-23T22:54:35Z",
-  "rows": 1961,
-  "approved": 1931,
+  "updatedAt": "2026-11-23T22:56:00Z",
+  "rows": 1962,
+  "approved": 1932,
   "pending": 30,
   "photos": 539,
   "reviewRows": 781,
-  "lastAddedAt": "2026-11-23T22:54:35Z",
-  "lastAddedCount": 16,
+  "lastAddedAt": "2026-11-23T22:55:51Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Hector Alejandro Mucija-Hernandez",
-    "Carlos Saucedo-Salas",
-    "Samuel Jeremias Grande-Caminos",
-    "Nehemias Perez-De Leon",
-    "Sargon Benyamin",
-    "Milton Lopez Alonso",
-    "Hector Raul Celis",
-    "Oscar Ramirez Santos",
-    "Juilo Cesar Negrete Ramirez",
-    "Erick Ernesto Gonzalez-Garcia",
-    "Jose Maria Fragoso",
-    "Carlos Denton Munoz",
-    "Nancy Rosales Soto",
-    "Walter Beltran-Rosas",
-    "Wilfredo Izaguirre Caceres",
-    "Jhonatan Stiven Prieto-Chacon"
+    "Jose Luis Rosales Ayala"
   ],
-  "harvestSha256": "4fd0dcee6b5dfa0e0fde027f0154858cfecd9d7e71d9ff47c74b0988e24f57b6",
+  "harvestSha256": "42aace940a95e988117ff76a7fde592106d56cc369d17d806e2df86f4b03b179",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
