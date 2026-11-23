@@ -1,18 +1,17 @@
 {
-  "updatedAt": "2026-11-22T22:55:49Z",
-  "rows": 1903,
-  "approved": 1873,
+  "updatedAt": "2026-11-23T17:53:38Z",
+  "rows": 1906,
+  "approved": 1876,
   "pending": 30,
   "photos": 404,
   "reviewRows": 781,
-  "lastAddedAt": "2026-11-22T22:55:49Z",
-  "lastAddedCount": 4,
+  "lastAddedAt": "2026-11-23T17:53:38Z",
+  "lastAddedCount": 3,
   "lastAdded": [
-    "Nelson Pastra",
-    "Jose Trujillo-Meraz",
-    "Juan Carlos Mendoza-Villa",
-    "Silveiro Hernandez-Ramirez"
+    "Juan Carlos Chub Choc",
+    "Dung Quoc Phan",
+    "Priscila Guardado"
   ],
-  "harvestSha256": "0f4c4931c8d2aeed46224d66fdbe8ecac2dcbefdfc17239661accacccecd67ba",
+  "harvestSha256": "19913591f32a75ff628e837bfe03c6fc8815c185a2ce5bf02b7b1407b054c5af",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

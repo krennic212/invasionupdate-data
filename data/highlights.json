@@ -1,8 +1,20 @@
 {
   "asOf": "2026-11-23",
   "windowDays": 7,
-  "total": 184,
+  "total": 187,
   "rows": [
+    {
+      "id": "x-2124913412668874774-juan-carlos-chub-choc",
+      "name": "Juan Carlos Chub Choc",
+      "when": "23 Nov 2026",
+      "severity": 238,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Rape / sexual assault",
+        "Kidnapping / human trafficking"
+      ]
+    },
     {
       "id": "x-2122645931350749513-arnulfo-palacois-gomez",
       "name": "Arnulfo Palacois Gomez",
@@ -270,17 +282,6 @@
     {
       "id": "doj-20261119-ismael-rodriguez",
       "name": "Ismael Rodriguez",
-      "when": "19 Nov 2026",
-      "severity": 105,
-      "severityReason": "Weapons",
-      "severityCrimes": [
-        "Weapons",
-        "Drug trafficking"
-      ]
-    },
-    {
-      "id": "dhs-20261119-jose-luis-guitierrez-rocha",
-      "name": "Jose Luis Guitierrez-Rocha",
       "when": "19 Nov 2026",
       "severity": 105,
       "severityReason": "Weapons",
