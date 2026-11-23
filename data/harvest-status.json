@@ -1,53 +1,39 @@
 {
-  "checkedAt": 1795456510207,
-  "checkedAtIso": "2026-11-23T17:55:10.207Z",
+  "checkedAt": 1795473899946,
+  "checkedAtIso": "2026-11-23T22:44:59.946Z",
   "added": [
-    "Oscar Evaristo Nunez",
-    "Freddi Chigo Mil",
-    "Jorge Gilberto Zamorano-Burciaga",
-    "Alexis Antonio Cedillos-Campos",
-    "Nehemia Noel Fuentes-Banegas",
-    "Juan Arevalo Mendez",
-    "Jose Nahun Aleman Hernandez",
-    "Cristian Wilfredo Alvarenga Aguilar",
-    "Aroldo Santos-Velasques",
-    "Cristian Romero Saenz-Argueta",
-    "Jorge Enrique Garcia-Rodriguez",
-    "Eduardo Perez-Legra",
-    "Josue Saul Garcia-Lopez",
-    "Roni Mendez-Escobar",
-    "Luzvin Orvando Garcia Moran",
-    "Israel Christopher Flores-Ortiz",
-    "Misael Lopez Gomez",
-    "Anibal Armando Chavarria Muy",
-    "Abdul Jalloh",
-    "In Laredo"
+    "Hector Alejandro Mujica-Hernandez",
+    "Ivan Pereira-Pozo",
+    "Armando Andino-Enamorado",
+    "Amalore Arokiaraju Chinnappan",
+    "Kampanart Sodsaikich",
+    "Nnaemeka Ani",
+    "Juan Munoz-Sanchez",
+    "Rafael Rodriguez-Vasquez",
+    "Francisco Juarez-Abundis",
+    "Miguel Cruz-Polanco",
+    "Jonathan Guzman-Cisneros",
+    "Efrain Dominguez-Betancourt",
+    "Eduardo Alcaraz-Mendoza",
+    "Alfredo Ramon Marroquin-Escobar",
+    "Akber Mohammed",
+    "David Gomez-Gomez",
+    "Yefri Alcides Alvarenga-Soto",
+    "Edwin Gonzales Claros",
+    "Ceferino Lopez-Chavez"
   ],
   "addedStatus": "approved",
   "heldPending": [],
   "stageUpdates": [],
   "sameNameReview": {
     "replaced": [],
-    "keptBoth": [
-      {
-        "reviewId": "2105305872729563376",
-        "name": "Oscar Evaristo Nunez",
-        "liveId": "dhs-20261123-oscar-evaristo-nunez",
-        "why": "same country but too few case words in common (fairfax, child, despite)"
-      },
-      {
-        "reviewId": "2102058759879061635",
-        "name": "Roni Mendez-Escobar",
-        "liveId": "dhs-20261123-roni-mendez-escobar",
-        "why": "same country but too few case words in common (child, fairfax, virginia, sanctuary)"
-      }
-    ]
+    "keptBoth": []
   },
   "autoApprove": true,
   "sentToReview": [],
   "scannedReleases": 162,
   "error": null,
-  "note": "Added 20 as approved: Oscar Evaristo Nunez, Freddi Chigo Mil, Jorge Gilberto Zamorano-Burciaga, Alexis Antonio Cedillos-Campos, Nehemia Noel Fuentes-Banegas, Juan Arevalo Mendez, Jose Nahun Aleman Hernandez, Cristian Wilfredo Alvarenga Aguilar, Aroldo Santos-Velasques, Cristian Romero Saenz-Argueta, Jorge Enrique Garcia-Rodriguez, Eduardo Perez-Legra, Josue Saul Garcia-Lopez, Roni Mendez-Escobar, Luzvin Orvando Garcia Moran, Israel Christopher Flores-Ortiz, Misael Lopez Gomez, Anibal Armando Chavarria Muy, Abdul Jalloh, In Laredo",
+  "note": "Added 19 as approved: Hector Alejandro Mujica-Hernandez, Ivan Pereira-Pozo, Armando Andino-Enamorado, Amalore Arokiaraju Chinnappan, Kampanart Sodsaikich, Nnaemeka Ani, Juan Munoz-Sanchez, Rafael Rodriguez-Vasquez, Francisco Juarez-Abundis, Miguel Cruz-Polanco, Jonathan Guzman-Cisneros, Efrain Dominguez-Betancourt, Eduardo Alcaraz-Mendoza, Alfredo Ramon Marroquin-Escobar, Akber Mohammed, David Gomez-Gomez, Yefri Alcides Alvarenga-Soto, Edwin Gonzales Claros, Ceferino Lopez-Chavez",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

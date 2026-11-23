@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-23",
   "windowDays": 7,
-  "total": 204,
+  "total": 220,
   "rows": [
     {
       "id": "x-2124913412668874774-juan-carlos-chub-choc",
@@ -75,6 +75,18 @@
         "Murder / manslaughter",
         "Attempted murder",
         "Assault / battery"
+      ]
+    },
+    {
+      "id": "dhs-20261123-jonathan-guzman-cisneros",
+      "name": "Jonathan Guzman-Cisneros",
+      "when": "23 Nov 2026",
+      "severity": 185,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Fraud (incl. voter fraud)",
+        "Weapons"
       ]
     },
     {
@@ -225,6 +237,17 @@
       ]
     },
     {
+      "id": "dhs-20261123-francisco-juarez-abundis",
+      "name": "Francisco Juarez-Abundis",
+      "when": "23 Nov 2026",
+      "severity": 125,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons"
+      ]
+    },
+    {
       "id": "x-2122796591010693588-josue-elias-jeronimo",
       "name": "Josue Elias Jeronimo",
       "when": "17 Nov 2026",
@@ -258,37 +281,55 @@
       ]
     },
     {
-      "id": "x-2123869232605851983-hector-campos-aguilar",
-      "name": "Hector Campos-Aguilar",
-      "when": "20 Nov 2026",
-      "severity": 113,
-      "severityReason": "Armed robbery / aggravated assault",
+      "id": "dhs-20261123-miguel-cruz-polanco",
+      "name": "Miguel Cruz-Polanco",
+      "when": "23 Nov 2026",
+      "severity": 115,
+      "severityReason": "Drug trafficking",
       "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons"
+        "Drug trafficking",
+        "Assault / battery",
+        "DUI"
       ]
     },
     {
-      "id": "x-2122877955625943079-jose-jorge-guzman-dias",
-      "name": "Jose Jorge Guzman-Dias",
-      "when": "17 Nov 2026",
-      "severity": 113,
-      "severityReason": "Fraud (incl. voter fraud)",
+      "id": "dhs-20261123-amalore-arokiaraju-chinnappan",
+      "name": "Amalore Arokiaraju Chinnappan",
+      "when": "23 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
       "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Burglary / theft",
-        "Drug possession"
+        "Child sex crime"
       ]
     },
     {
-      "id": "doj-20261117-fausto-ramirez",
-      "name": "Fausto Ramirez",
-      "when": "17 Nov 2026",
-      "severity": 110,
-      "severityReason": "Fraud (incl. voter fraud)",
+      "id": "dhs-20261123-armando-andino-enamorado",
+      "name": "Armando Andino-Enamorado",
+      "when": "23 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
       "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Drug trafficking"
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261123-kampanart-sodsaikich",
+      "name": "Kampanart Sodsaikich",
+      "when": "23 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261123-rafael-rodriguez-vasquez",
+      "name": "Rafael Rodriguez-Vasquez",
+      "when": "23 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
       ]
     },
     {
