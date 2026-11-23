@@ -6,7 +6,7 @@
  *
  *   node scripts/x-photo.mjs <rowId> <https://pbs.twimg.com/media/...> --reviewed "booking photo, one person, matches post"
  *   node scripts/x-photo.mjs <rowId> --none "graphic / collage / several people"
- *   node scripts/x-photo.mjs --todo <run>/write.json [...]   # exit 1 if any photo candidate has no recorded decision
+ *   node scripts/x-photo.mjs --todo [<run>/write.json ...]   # no files = every write.json under /workspace/invasionupdate-xscan; exit 1 if any photo candidate has no recorded decision
  *
  * Refuses unless: the row is in data/harvest.json, approved, not held by any guard, its source is an
  * OFFICIAL_X_HANDLES post, that post produced exactly one row (feed + review) and names exactly one
@@ -14,7 +14,7 @@
  * data/photos/<key>.jpg (served from Pages, never hotlinked), and the check is recorded in
  * data/photo-checks.json keyed by the post URL. Then the row is re-checked with photoProblem().
  */
-import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync, readdirSync } from "node:fs";
 import sharp from "sharp";
 import { isOfficialXPostUrl, urlsIn } from "./rules.mjs";
 import { holdReasonsForRow } from "./guards.mjs";
@@ -28,10 +28,20 @@ if (args[0] === "--todo") {
   const checksNow = existsSync("data/photo-checks.json") ? JSON.parse(readFileSync("data/photo-checks.json", "utf8")) : {};
   const live = new Map(JSON.parse(readFileSync("data/harvest.json", "utf8")).map((x) => [x?.id, x]));
   const todo = [];
-  for (const f of args.slice(1)) {
+  // Krennic 2026-11-23: with no file arguments, read EVERY run's write.json under the scan folder (the daily photo job
+  // used to run --todo against nothing / one stale file and always saw "undecided: 0" while 168 candidates piled up).
+  let files = args.slice(1);
+  if (!files.length) {
+    const base = process.env.XSCAN_DIR || "/workspace/invasionupdate-xscan";
+    files = existsSync(base) ? readdirSync(base).map((d) => `${base}/${d}/write.json`).filter((f) => existsSync(f)).sort() : [];
+    if (!files.length) die(`--todo found no write.json files under ${base}`);
+  }
+  const seenIds = new Set();
+  for (const f of files) {
     for (const c of JSON.parse(readFileSync(f, "utf8")).photoCandidates || []) {
       const row = live.get(c.id);
-      if (!row) continue; // row no longer live (held / moved): nothing to publish
+      if (!row || seenIds.has(c.id)) continue;
+      seenIds.add(c.id); // row no longer live (held / moved): nothing to publish
       const post = urlsIn(row.sourceUrl).find(isOfficialXPostUrl);
       if (!post || checksNow[urlKey(post)] || row.photo) continue;
       todo.push({ id: c.id, name: c.name, post: c.post, images: (c.images || []).map((i) => i.url), pick: c.pick || null, flag: c.flag || undefined });

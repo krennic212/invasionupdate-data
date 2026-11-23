@@ -85,6 +85,11 @@ The daily photo job stays at 1:03 PM CT.
    - Then `node scripts/write-meta.mjs` to refresh the photo count (keeps lastAdded; lastAdded only lists
      rows that are approved right now).
    - Gate: `node scripts/x-photo.mjs --todo <run>/write.json` must print `"undecided": 0` (exit 0) before committing.
+   - Daily photo job: run `node scripts/x-photo.mjs --todo` with NO file arguments. It reads every
+     `/workspace/invasionupdate-xscan/*/write.json` (all runs, any folder name) and lists every live official-post row that
+     has no photo and no recorded decision. Never pass it one file: a missing or stale file prints "undecided: 0" and hides the backlog
+     (Nov 8-23, 2026: 168 candidates went unseen). Zero X calls are needed; the image URLs are already in write.json.
+   - `sharp` lives in node_modules (not committed). Run `npm ci || npm install` in the repo before `x-photo.mjs`.
 7. Check: `node scripts/dedupe.mjs data/harvest.json data/review.json && npm test && node scripts/validate.mjs`
    (`npm test` re-stamps harvest-meta.json first via `pretest`, so a hand edit can no longer leave it stale.)
 8. Commit only if something changed (`git status --short`), `git pull --rebase`, then

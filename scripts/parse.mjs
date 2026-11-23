@@ -144,7 +144,8 @@ const PATTERNS = [
   // Sentence start only, and the name must be followed by an age, so a headline or official never matches.
   // Krennic 2026-11-06: also "Honduran citizen <Name>, 29," and, for a known demonym only, no age when a verb follows
   // ("Guatemalan national <Name> was sentenced"); a dateline with a comma ("MIAMI, Fla. – ") may come first.
-  new RegExp(`^(?:[A-Z][A-Za-z .,'’-]{0,40}[:–—]\\s+)?((?:[A-Z][a-z]+\\s+(?:of\\s+)?){0,3}[A-Z][a-z]+)\\s+(?:[Nn]ational|[Cc]itizen),?\\s+${NAME}(?:\\s?,\\s+(?:age\\s+)?\\d{1,3},|(?=\\s+(?:was|has been|have been|is|pleaded|pled|admitted|faces)\\b))`, "g"),
+  // Krennic 2026-11-23: also after a "In <Place>, a federal jury convicted" opener, and "<Name> of <verb>ing ..." as the follow-on.
+  new RegExp(`^(?:[A-Z][A-Za-z .,'’-]{0,40}[:–—]\\s+|In\\s+[A-Z][A-Za-z .'’-]{1,40},\\s+(?:an?\\s+)?[a-z ]{0,40}?\\b(?:convicted|sentenced|charged|indicted|found)\\s+)?((?:[A-Z][a-z]+\\s+(?:of\\s+)?){0,3}[A-Z][a-z]+)\\s+(?:[Nn]ational|[Cc]itizen),?\\s+${NAME}(?:\\s?,\\s+(?:age\\s+)?\\d{1,3},|(?=\\s+(?:was|has been|have been|is|pleaded|pled|admitted|faces)\\b)|(?=\\s+of\\s+[a-z]+ing\\b))`, "g"),
   // Date before the name: "On October 21, 2026, ICE arrested Juan Silva, a criminal alien from Mexico."
   // The same sentence must name the person as an alien / non-citizen / citizen of / national of.
   // A date plus "charged <Name>" whose status is in the next paragraph stays with linkedPeople.
@@ -170,6 +171,7 @@ const MONONYM_ENTRY = /^(?:[A-Z][A-Za-z .'’-]{0,40}[:–—]\s+)?((?:[A-Z][a-z
 const FLIGHT_CONTEXT = /\b(?:offenders on the flight include|on the flight include|removal flights?|deports? (?:a )?plane|plane full of|(?:removed|deported) (?:more than |over )?\d[\d,]* illegal aliens)\b/i;
 const REMOVAL_FLIGHT_ENTRY = new RegExp(`(?<=^|[.!?:]\\s+)${NAME},\\s+(\\d{1,3}),\\s+of\\s+${COUNTRY}\\.\\s*((?:He|She|They)(?:['’]s|['’]ve| has| have) been convicted of [^.]+\\.)`, "g");
 
+const LEAD_WORD = /^(?:In|On|At|By|After|Before|During|Following|From|Near|Outside|Inside|Within|Across|Throughout|Under|Over|Last|Earlier|Meanwhile|Also|Here|There|When|While|Since)\s/;
 export const NOT_NAME = /\b(ICE|DHS|HSI|ERO|CBP|USCIS|FBI|DEA|ATF|DOJ|U\.S|United|States|America|American|Department|Justice|Attorney|Attorneys|Office|Offices|Secretary|President|Homeland|Security|Immigration|Customs|Enforcement|Border|Patrol|County|Court|District|Federal|Judge|Agent|Agents|Special|Officers|Officer|Police|Sheriff|Government|Administration|Trump|Biden|Obama|Act|Operation|Task|Force|Division|Bureau|Service|Services|Today|Yesterday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|January|February|March|April|May|June|July|August|September|October|November|December|The|This|These|Those|His|Her|Their|According|Under|Assistant|Acting|Chief|Director|Deputy|Senior|Prosecutor)\b/;
 
 const DEMONYM = {
@@ -485,6 +487,8 @@ export function extractPeople(blocks, { title = "" } = {}) {
           const toks = name.split(" ");
           if (toks.length < 2 || toks.length > 6 || name.length > 60) continue;
           if (NOT_NAME.test(name)) continue;
+          // Krennic 2026-11-23: a preposition / article opener ("In Laredo", "At Houston") is never a person's name.
+          if (LEAD_WORD.test(name)) continue;
           // Never a place: "In Syracuse, New York, ICE has arrested illegal aliens ..." is not a person named "New York".
           if (isPlaceName(name, { title })) continue;
           const key = name.toLowerCase();

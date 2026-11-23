@@ -536,15 +536,15 @@
     "tags": []
   },
   {
-    "name": "In Laredo",
-    "city": "Texas",
+    "name": "Arnol Josue Flores",
+    "city": "Laredo, TX",
     "crime": "Convicted: In Laredo, a federal jury convicted Honduran national Arnol Josue Flores of conspiring to transport illegal aliens and transporting them for profit.",
     "usa": "DOJ release Nov 23, 2026: Continued border enforcement actions result in 216 new cases filed in Southern District",
     "foreign": "Not stated in post",
     "picked": "11/23/2026 (DOJ release)",
     "entered": "Not stated",
     "office": "TheJusticeDept",
-    "id": "doj-20261123-in-laredo",
+    "id": "doj-20261123-arnol-josue-flores",
     "when": "23 Nov 2026",
     "severity": 0,
     "severityReason": "",
@@ -556,10 +556,10 @@
     "voting": false,
     "origin": "Honduras",
     "confirmedBy": "DOJ",
-    "lat": 31.9686,
-    "lon": -99.9018,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "lat": 27.5155,
+    "lon": -99.4986
   },
   {
     "name": "Juan Carlos Chub Choc",
@@ -610,7 +610,7 @@
       "Drug trafficking"
     ],
     "text": "@EROBoston Nov 23, 2026, as posted: On Oct. 14, ICE Boston arrested Dung Quoc Phan, a criminal illegal alien from Vietnam, during targeted operations in Scarborough, Maine. His lengthy criminal history includes convictions for drug distribution Class B, drug possession Class D,...",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2124877477478560009-dung-quoc-phan.jpg",
     "via": "@EROBoston 2124877477478560009",
     "sourceUrl": "https://x.com/EROBoston/status/2124877477478560009",
     "voting": false,
@@ -619,7 +619,8 @@
     "lat": 43.5781,
     "lon": -70.3222,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HX0UlB8XkAAjGNB?format=png&name=orig"
   },
   {
     "name": "Priscila Guardado",
@@ -666,7 +667,7 @@
       "Murder / manslaughter"
     ],
     "text": "@ICEgov Nov 22, 2026, as posted: Nelson Pastra’s criminal history includes a conviction for manslaughter. ICE arrested him at-large in Galveston, Texas, following a brief foot chase during an immigration enforcement operation. He’s a criminal illegal alien from El Salvador with a final order of removal.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2124625271806451847-nelson-pastra.jpg",
     "via": "@ICEgov 2124625271806451847",
     "sourceUrl": "https://x.com/ICEgov/status/2124625271806451847",
     "voting": false,
@@ -675,7 +676,8 @@
     "lat": 29.2983,
     "lon": -94.793,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXwvbQbXUAANG17?format=png&name=orig"
   },
   {
     "name": "Jose Trujillo-Meraz",
@@ -723,7 +725,7 @@
       "Armed robbery / aggravated assault"
     ],
     "text": "@ERONewOrleans Nov 22, 2026, as posted: ICE New Orleans arrested Juan Carlos Mendoza-Villa, an illegal alien from Mexico. Criminal history includes a conviction for aggravated robbery in Eagle Pass, Texas, with to 12-years confinement, a conviction for escape from custody in Eagle Pass, Texas with 10-years",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2124589986196717632-juan-carlos-mendoza-villa.jpg",
     "via": "@ERONewOrleans 2124589986196717632",
     "sourceUrl": "https://x.com/ERONewOrleans/status/2124589986196717632",
     "voting": false,
@@ -732,7 +734,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW8vpGIXsAA75iH?format=png&name=orig"
   },
   {
     "name": "Silveiro Hernandez-Ramirez",
@@ -893,7 +896,7 @@
       "Drug trafficking"
     ],
     "text": "@ERONewOrleans Nov 21, 2026, as posted: ICE New Orleans arrested Jose Carlos Gamez-Cruz, an illegal alien from Honduras. Criminal history includes felony conviction for selling cocaine in San Francisco, CA (sentenced to 3 years).",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2124166193795711376-jose-carlos-gamez-cruz.jpg",
     "via": "@ERONewOrleans 2124166193795711376",
     "sourceUrl": "https://x.com/ERONewOrleans/status/2124166193795711376",
     "voting": false,
@@ -902,7 +905,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW8uQbwWUAAAVJF?format=jpg&name=orig"
   },
   {
     "name": "Leoncio Balderos Perez",
@@ -921,7 +925,7 @@
       "Assault / battery"
     ],
     "text": "@EROMiami Nov 21, 2026, as posted: ICE and U.S. Border Patrol arrested Leoncio Balderos Perez, a previously removed criminal illegal alien from Mexico. Convicted of Lewd Lascivious Battery, he will remain in ICE custody pending removal.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2124095494326530485-leoncio-balderos-perez.jpg",
     "via": "@EROMiami 2124095494326530485",
     "sourceUrl": "https://x.com/EROMiami/status/2124095494326530485",
     "voting": false,
@@ -930,7 +934,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXaskekXQAAkBFu?format=png&name=orig"
   },
   {
     "name": "Amilcar Perez-Morfin",
@@ -949,7 +954,7 @@
       "Child sex crime"
     ],
     "text": "@ICEgov Nov 20, 2026, as posted: ICE arrested Amilcar Perez-Morfin after an Iowa correctional facility released him without notifying ICE. He’s a criminal illegal alien with a criminal history that includes sexual exploitation of a child. ICE Fugitive Operations officers met him at the door and ICE deportation officers escorted him home to Mexico.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123975987478032651-amilcar-perez-morfin.jpg",
     "via": "@ICEgov 2123975987478032651",
     "sourceUrl": "https://x.com/ICEgov/status/2123975987478032651",
     "voting": false,
@@ -958,7 +963,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXng59KXsAAe0ZL?format=png&name=orig"
   },
   {
     "name": "Adrian Duran Segura",
@@ -1931,7 +1937,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 20, 2026, as posted: Jaime Hernan Velasquez Hernandez, an illegal alien from Colombia, convicted of narcotics importation conspiracy.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123886654536687766-jaime-hernan-velasquez-hernandez.jpg",
     "via": "@ICEgov 2123886654536687766",
     "sourceUrl": "https://x.com/ICEgov/status/2123886654536687766",
     "voting": false,
@@ -1940,7 +1946,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXmPjj8W0AAPacg?format=jpg&name=orig"
   },
   {
     "name": "Sergio Aaron Arvizu Alcaraz",
@@ -1959,7 +1966,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 20, 2026, as posted: Sergio Aaron Arvizu Alcaraz, an illegal alien from Mexico, convicted of importation of methamphetamine.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123886651072233598-sergio-aaron-arvizu-alcaraz.jpg",
     "via": "@ICEgov 2123886651072233598",
     "sourceUrl": "https://x.com/ICEgov/status/2123886651072233598",
     "voting": false,
@@ -1968,7 +1975,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXmPhNtXEAA6F7N?format=jpg&name=orig"
   },
   {
     "name": "Juan Carlos Salas-Ortega",
@@ -1987,7 +1995,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 20, 2026, as posted: Juan Carlos Salas-Ortega, an illegal alien from Ecuador, convicted of conspiracy to possess with intent to distribute five kilograms or more of cocaine while aboard a vessel.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123886647859405043-juan-carlos-salas-ortega.jpg",
     "via": "@ICEgov 2123886647859405043",
     "sourceUrl": "https://x.com/ICEgov/status/2123886647859405043",
     "voting": false,
@@ -1996,7 +2004,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXmPfXUX0AAYzNi?format=jpg&name=orig"
   },
   {
     "name": "Gerald Campbell",
@@ -2016,7 +2025,7 @@
       "Assault / battery"
     ],
     "text": "@ICEgov Nov 20, 2026, as posted: Gerald Campbell, an illegal alien from Jamaica, convicted of trespassing, loitering, assault on law enforcement, resisting/obstruction of arrest, distribution of cocaine, resisting an officer, two counts of possession of cocaine, possession/sale/delivery of cocaine, and",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123886644906361159-gerald-campbell.jpg",
     "via": "@ICEgov 2123886644906361159",
     "sourceUrl": "https://x.com/ICEgov/status/2123886644906361159",
     "voting": false,
@@ -2025,7 +2034,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXmPc4wWYAEpfqJ?format=jpg&name=orig"
   },
   {
     "name": "Jose Guillermo Silva-Martinez",
@@ -2044,7 +2054,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 20, 2026, as posted: Jose Guillermo Silva-Martinez, an illegal alien from Mexico, convicted of possession with intent to distribute more than 5 kilograms, approximately 56.68 kilograms, of a mixture or substance containing a detectable amount of cocaine.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123886642276556998-jose-guillermo-silva-martinez.jpg",
     "via": "@ICEgov 2123886642276556998",
     "sourceUrl": "https://x.com/ICEgov/status/2123886642276556998",
     "voting": false,
@@ -2053,7 +2063,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXmPZZuXIAArj9f?format=jpg&name=orig"
   },
   {
     "name": "Nestor Javier Cano Rosas",
@@ -2072,7 +2083,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 20, 2026, as posted: Nestor Javier Cano Rosas, an illegal alien from Mexico, convicted of possession with intent to distribute a quantity of more than 500 grams, approximately 3.11 kilograms (6.84 pounds) of cocaine.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123886639475040318-nestor-javier-cano-rosas.jpg",
     "via": "@ICEgov 2123886639475040318",
     "sourceUrl": "https://x.com/ICEgov/status/2123886639475040318",
     "voting": false,
@@ -2081,7 +2092,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXmPWjGXoAAT5-R?format=jpg&name=orig"
   },
   {
     "name": "Damion Anthony Mccalla",
@@ -2100,7 +2112,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 20, 2026, as posted: Damion Anthony Mccalla, an illegal alien from Jamaica, convicted of conspiracy to possess at least 500 grams of cocaine hydrochloride and 100 kilograms of marijuana with the intent to distribute, attempt to possess at least 500 grams of cocaine hydrochloride with the intent to",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123886636413161663-damion-anthony-mccalla.jpg",
     "via": "@ICEgov 2123886636413161663",
     "sourceUrl": "https://x.com/ICEgov/status/2123886636413161663",
     "voting": false,
@@ -2109,7 +2121,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXmPSDJWkAA81CJ?format=jpg&name=orig"
   },
   {
     "name": "Darren Richard Allen",
@@ -2128,7 +2141,7 @@
       "Attempted murder"
     ],
     "text": "@ICEgov Nov 20, 2026, as posted: Darren Richard Allen, an illegal alien from Jamaica, convicted of attempted murder.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123886633745535081-darren-richard-allen.jpg",
     "via": "@ICEgov 2123886633745535081",
     "sourceUrl": "https://x.com/ICEgov/status/2123886633745535081",
     "voting": false,
@@ -2137,7 +2150,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXmPQFiWQAAU9jC?format=jpg&name=orig"
   },
   {
     "name": "Andres Quintas-Santiago",
@@ -2157,7 +2171,7 @@
       "Rape / sexual assault"
     ],
     "text": "@EROChicago Nov 20, 2026, as posted: @EROChicago St. Louis suboffice officers arrested Andres Quintas-Santiago, 41, a criminal illegal alien from Mexico convicted of felony sexual assault and sexual exploitation of a minor. He was sentenced to 2 years in prison. He remains in ICE custody pending removal proceedings.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123882417677017508-andres-quintas-santiago.jpg",
     "via": "@EROChicago 2123882417677017508",
     "sourceUrl": "https://x.com/EROChicago/status/2123882417677017508",
     "voting": false,
@@ -2166,7 +2180,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXmLevzWYAAJjkl?format=png&name=orig"
   },
   {
     "name": "Hector Campos-Aguilar",
@@ -2219,7 +2234,7 @@
       "Assault / battery"
     ],
     "text": "@EROSanFrancisco Nov 20, 2026, as posted: ICE San Francisco deported Jose Erasmo Beltran-Amaya, 28, to his home country of El Salvador where he is wanted on charges including homicide, attempted homicide, conspiracy of aggravated homicide, forced disappearance, assault, and illicit association.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123847233334632523-jose-erasmo-beltran-amaya.jpg",
     "via": "@EROSanFrancisco 2123847233334632523",
     "sourceUrl": "https://x.com/EROSanFrancisco/status/2123847233334632523",
     "voting": false,
@@ -2228,7 +2243,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXlrv8-aUAA9bti?format=png&name=orig"
   },
   {
     "name": "Maria Jose Urbina",
@@ -2497,7 +2513,7 @@
     "severityReason": "",
     "severityCrimes": [],
     "text": "@DHSgov Nov 20, 2026, as posted: Franklin Javier Mejia, a criminal illegal alien from Honduras, convicted for racketeering conspiracy in Newark, New Jersey.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123821606971539471-franklin-javier-mejia.jpg",
     "via": "@DHSgov 2123821606971539471",
     "sourceUrl": "https://x.com/DHSgov/status/2123821606971539471",
     "voting": false,
@@ -2506,7 +2522,8 @@
     "lat": 40.7357,
     "lon": -74.1724,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXlUfodWUAAQ6WW?format=jpg&name=orig"
   },
   {
     "name": "Boos Corona-Aguilar",
@@ -2525,7 +2542,7 @@
       "Drug trafficking"
     ],
     "text": "@DHSgov Nov 20, 2026, as posted: Boos Corona-Aguilar, a criminal illegal alien from Mexico, convicted for trafficking in heroin and trafficking in cocaine in Chillicothe, Ohio.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123821598712988095-boos-corona-aguilar.jpg",
     "via": "@DHSgov 2123821598712988095",
     "sourceUrl": "https://x.com/DHSgov/status/2123821598712988095",
     "voting": false,
@@ -2534,7 +2551,8 @@
     "lat": 39.338,
     "lon": -82.9895,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXlUfPXW4AARPOR?format=jpg&name=orig"
   },
   {
     "name": "Inpone Phothirath",
@@ -2554,7 +2572,7 @@
       "Drug possession"
     ],
     "text": "@DHSgov Nov 20, 2026, as posted: Inpone Phothirath, a criminal illegal alien from Laos, convicted for first-degree assault, resisting arrest, and possession of narcotics, in Hartford, Connecticut.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123821591071170982-inpone-phothirath.jpg",
     "via": "@DHSgov 2123821591071170982",
     "sourceUrl": "https://x.com/DHSgov/status/2123821591071170982",
     "voting": false,
@@ -2563,7 +2581,8 @@
     "lat": 41.7636,
     "lon": -72.6855,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXlUeqpWUAAyQsp?format=jpg&name=orig"
   },
   {
     "name": "Jose Rodas-Hernandez",
@@ -2580,7 +2599,7 @@
     "severityReason": "",
     "severityCrimes": [],
     "text": "@DHSgov Nov 20, 2026, as posted: Jose Rodas-Hernandez, a criminal illegal alien from El Salvador, convicted for second-degree exploitation of a minor in Mecklenburg County, North Carolina.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123821580237349251-jose-rodas-hernandez.jpg",
     "via": "@DHSgov 2123821580237349251",
     "sourceUrl": "https://x.com/DHSgov/status/2123821580237349251",
     "voting": false,
@@ -2589,7 +2608,8 @@
     "lat": 35.25,
     "lon": -80.83,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXlUeFAXQAEIgjF?format=jpg&name=orig"
   },
   {
     "name": "Castulo Garay-Silva",
@@ -2608,7 +2628,7 @@
       "Child sex crime"
     ],
     "text": "@DHSgov Nov 20, 2026, as posted: Castulo Garay-Silva, a criminal illegal alien from Mexico, convicted for aggravated sexual assault on a child in Amarillo, Texas.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123821572217618873-castulo-garay-silva.jpg",
     "via": "@DHSgov 2123821572217618873",
     "sourceUrl": "https://x.com/DHSgov/status/2123821572217618873",
     "voting": false,
@@ -2617,7 +2637,8 @@
     "lat": 35.1663,
     "lon": -101.8868,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXlUdpjXwAAyRau?format=jpg&name=orig"
   },
   {
     "name": "Carlos Rivera Morales",
@@ -2665,7 +2686,7 @@
       "Armed robbery / aggravated assault"
     ],
     "text": "@ERONewOrleans Nov 20, 2026, as posted: ICE New Orleans arrested Jose Jairo Hernandez-Ramirez, an illegal alien from Mexico. Criminal history includes two felony convictions for aggravated assault with a weapon in Chicago, IL and in Nashville, TN.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123803302743667021-jose-jairo-hernandez-ramirez.jpg",
     "via": "@ERONewOrleans 2123803302743667021",
     "sourceUrl": "https://x.com/ERONewOrleans/status/2123803302743667021",
     "voting": false,
@@ -2674,7 +2695,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW8tn86WwAAf26K?format=jpg&name=orig"
   },
   {
     "name": "Antonio Sanchez-Marrufo",
@@ -3005,7 +3027,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 19, 2026, as posted: Jose Manuel Elizalde-Serrano, an illegal alien from Mexico, convicted of conspiracy to distribute cocaine.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123489098577183099-jose-manuel-elizalde-serrano.jpg",
     "via": "@ICEgov 2123489098577183099",
     "sourceUrl": "https://x.com/ICEgov/status/2123489098577183099",
     "voting": false,
@@ -3014,7 +3036,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXglQ4HasAA8xPC?format=jpg&name=orig"
   },
   {
     "name": "Nicolas Ocampo-Garcia",
@@ -3033,7 +3056,7 @@
       "Rape / sexual assault"
     ],
     "text": "@ICEgov Nov 19, 2026, as posted: Nicolas Ocampo-Garcia, an illegal alien from Mexico, convicted predatory criminal sexual assault.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123489095876006238-nicolas-ocampo-garcia.jpg",
     "via": "@ICEgov 2123489095876006238",
     "sourceUrl": "https://x.com/ICEgov/status/2123489095876006238",
     "voting": false,
@@ -3042,7 +3065,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXglOnna4AAdhSp?format=jpg&name=orig"
   },
   {
     "name": "Carlos Avisai Mora-Rodriguez",
@@ -3059,7 +3083,7 @@
     "severityReason": "",
     "severityCrimes": [],
     "text": "@ICEgov Nov 19, 2026, as posted: Carlos Avisai Mora-Rodriguez, an illegal alien from Mexico, convicted of smuggling of persons and evading arrest with vehicle.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123489093120340246-carlos-avisai-mora-rodriguez.jpg",
     "via": "@ICEgov 2123489093120340246",
     "sourceUrl": "https://x.com/ICEgov/status/2123489093120340246",
     "voting": false,
@@ -3068,7 +3092,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXglLIza8AA0TYw?format=jpg&name=orig"
   },
   {
     "name": "Angel Mauricio Bustos Santillan",
@@ -3087,7 +3112,7 @@
       "Armed robbery / aggravated assault"
     ],
     "text": "@ICEgov Nov 19, 2026, as posted: Angel Mauricio Bustos Santillan, an illegal alien from Mexico, convicted of 2nd degree robbery.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123489090805146091-angel-mauricio-bustos-santillan.jpg",
     "via": "@ICEgov 2123489090805146091",
     "sourceUrl": "https://x.com/ICEgov/status/2123489090805146091",
     "voting": false,
@@ -3096,7 +3121,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXglJJYa0AAlb4y?format=jpg&name=orig"
   },
   {
     "name": "David Martinez Bermudez",
@@ -3115,7 +3141,7 @@
       "Rape / sexual assault"
     ],
     "text": "@ICEgov Nov 19, 2026, as posted: David Martinez Bermudez, an illegal alien from Mexico, convicted of rape by force, fear, etc.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123489088494026859-david-martinez-bermudez.jpg",
     "via": "@ICEgov 2123489088494026859",
     "sourceUrl": "https://x.com/ICEgov/status/2123489088494026859",
     "voting": false,
@@ -3124,7 +3150,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXglGvYaYAAv9zw?format=jpg&name=orig"
   },
   {
     "name": "Julio Cesar Baltazar Carrillo",
@@ -3144,7 +3171,7 @@
       "DUI"
     ],
     "text": "@ICEgov Nov 19, 2026, as posted: Julio Cesar Baltazar Carrillo, an illegal alien from Mexico, convicted criminal threats, obstructing an executive officer, disorderly conduct, assault with a deadly weapon, and driving under the influence.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123489086187184615-julio-cesar-baltazar-carrillo.jpg",
     "via": "@ICEgov 2123489086187184615",
     "sourceUrl": "https://x.com/ICEgov/status/2123489086187184615",
     "voting": false,
@@ -3153,7 +3180,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXglDYybEAAYwEd?format=jpg&name=orig"
   },
   {
     "name": "Ignacio Garcia Vargas",
@@ -3172,7 +3200,7 @@
       "Child sex crime"
     ],
     "text": "@ICEgov Nov 19, 2026, as posted: Ignacio Garcia Vargas, an illegal alien from Mexico, convicted of child molesting – fondling or touching with child under 14.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123489083871952896-ignacio-garcia-vargas.jpg",
     "via": "@ICEgov 2123489083871952896",
     "sourceUrl": "https://x.com/ICEgov/status/2123489083871952896",
     "voting": false,
@@ -3181,7 +3209,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXgkfq-a8AA3Qez?format=jpg&name=orig"
   },
   {
     "name": "Panfilo Abarca-Perez",
@@ -3735,7 +3764,7 @@
       "Rape / sexual assault"
     ],
     "text": "@ERONewOrleans Nov 19, 2026, as posted: ICE New Orleans arrested Luis Fernando Carranza-Amaya, an illegal alien from Honduras. Criminal history includes an arrest for rape in Little Rock, Arkansas.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123425060232802759-luis-fernando-carranza-amaya.jpg",
     "via": "@ERONewOrleans 2123425060232802759",
     "sourceUrl": "https://x.com/ERONewOrleans/status/2123425060232802759",
     "voting": false,
@@ -3744,7 +3773,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW8tQ-cWQAAZyKf?format=png&name=orig"
   },
   {
     "name": "Josue Jain Sanchez Ponce",
@@ -3763,7 +3793,7 @@
       "Rape / sexual assault"
     ],
     "text": "@EROBoston Nov 19, 2026, as posted: ICE Boston arrested Josue Jain Sanchez Ponce, a criminal illegal alien from Honduras, during targeted operations in New London, Conn. His criminal history includes arrest for fourth-degree sexual assault and disorderly conduct.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123408227178369181-josue-jain-sanchez-ponce.jpg",
     "via": "@EROBoston 2123408227178369181",
     "sourceUrl": "https://x.com/EROBoston/status/2123408227178369181",
     "voting": false,
@@ -3772,7 +3802,8 @@
     "lat": 41.3556,
     "lon": -72.0998,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXfcfynXAAAMNJs?format=png&name=orig"
   },
   {
     "name": "Daniel Enrrique Martinez Espana",
@@ -3791,7 +3822,7 @@
       "Drug trafficking"
     ],
     "text": "@EROMiami Nov 19, 2026, as posted: ICE arrested Daniel Enrrique Martinez Espana, a criminal illegal alien from Venezuela with a final order of removal. Convicted of conspiracy to possess with intent to distribute cocaine, he will remain in ICE custody pending removal.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123370709162606810-daniel-enrrique-martinez-espana.jpg",
     "via": "@EROMiami 2123370709162606810",
     "sourceUrl": "https://x.com/EROMiami/status/2123370709162606810",
     "voting": false,
@@ -3800,7 +3831,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXar-WlXAAAbiSl?format=png&name=orig"
   },
   {
     "name": "Manuel Alejandro Pena",
@@ -4158,7 +4190,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 18, 2026, as posted: Jesus Manuel Rodriguez Rodruguez, an illegal alien from Venezuela, convicted of conspiracy to possess with intent to distribute cocaine while on board a vessel.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123142228327690264-jesus-manuel-rodriguez-rodruguez.jpg",
     "via": "@ICEgov 2123142228327690264",
     "sourceUrl": "https://x.com/ICEgov/status/2123142228327690264",
     "voting": false,
@@ -4167,7 +4199,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXbqmt7WAAAH_uZ?format=jpg&name=orig"
   },
   {
     "name": "Danny Alexander Linares-Alvarez",
@@ -4186,7 +4219,7 @@
       "Weapons"
     ],
     "text": "@ICEgov Nov 18, 2026, as posted: Danny Alexander Linares-Alvarez, an illegal alien from Venezuela, convicted of importing/manufacturing firearms.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123142223307194803-danny-alexander-linares-alvarez.jpg",
     "via": "@ICEgov 2123142223307194803",
     "sourceUrl": "https://x.com/ICEgov/status/2123142223307194803",
     "voting": false,
@@ -4195,7 +4228,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXbqmbdXsAAVWdQ?format=jpg&name=orig"
   },
   {
     "name": "Jean Carlos Cuello-Restituyo",
@@ -4214,7 +4248,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 18, 2026, as posted: Jean Carlos Cuello-Restituyo, an illegal alien from the Dominican Republic, convicted of conspiracy to distribute and possess with intent to distribute fentanyl and possession with intent to distribute fentanyl.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123142218211066101-jean-carlos-cuello-restituyo.jpg",
     "via": "@ICEgov 2123142218211066101",
     "sourceUrl": "https://x.com/ICEgov/status/2123142218211066101",
     "voting": false,
@@ -4223,7 +4257,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXbqmHyWYAApufY?format=jpg&name=orig"
   },
   {
     "name": "Jairo Martinez-Covarrubias",
@@ -4242,7 +4277,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 18, 2026, as posted: Jairo Martinez-Covarrubias, an illegal alien from Mexico, convicted of conspiracy to distribute methamphetamine.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123142213106626597-jairo-martinez-covarrubias.jpg",
     "via": "@ICEgov 2123142213106626597",
     "sourceUrl": "https://x.com/ICEgov/status/2123142213106626597",
     "voting": false,
@@ -4251,7 +4286,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXbql16WIAAHRq3?format=jpg&name=orig"
   },
   {
     "name": "Jorge Garcia Lemus",
@@ -4270,7 +4306,7 @@
       "Fraud (incl. voter fraud)"
     ],
     "text": "@ICEgov Nov 18, 2026, as posted: Jorge Garcia Lemus, an illegal alien from Mexico, convicted of making a false statement in an application for a passport and aggravated identity theft.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123142208199295196-jorge-garcia-lemus.jpg",
     "via": "@ICEgov 2123142208199295196",
     "sourceUrl": "https://x.com/ICEgov/status/2123142208199295196",
     "voting": false,
@@ -4279,7 +4315,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXbqlhwXwAAsBpQ?format=jpg&name=orig"
   },
   {
     "name": "Jose Carlos Baez Fernandez",
@@ -4298,7 +4335,7 @@
       "Burglary / theft"
     ],
     "text": "@ICEgov Nov 18, 2026, as posted: Jose Carlos Baez Fernandez, an illegal alien from Venezuela, convicted of theft of property.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123142202868273315-jose-carlos-baez-fernandez.jpg",
     "via": "@ICEgov 2123142202868273315",
     "sourceUrl": "https://x.com/ICEgov/status/2123142202868273315",
     "voting": false,
@@ -4307,7 +4344,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXbqlPjXgAA0Ves?format=jpg&name=orig"
   },
   {
     "name": "Juan Jose Coronado Gonzalez",
@@ -4326,7 +4364,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 18, 2026, as posted: Juan Jose Coronado Gonzalez, an illegal alien from the Dominican Republic, convicted of conspiracy to distribute cocaine on board a vessel.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123142197944176671-juan-jose-coronado-gonzalez.jpg",
     "via": "@ICEgov 2123142197944176671",
     "sourceUrl": "https://x.com/ICEgov/status/2123142197944176671",
     "voting": false,
@@ -4335,7 +4373,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXbqk9DXwAAD7E4?format=jpg&name=orig"
   },
   {
     "name": "Yonathan Polanco",
@@ -4354,7 +4393,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 18, 2026, as posted: Yonathan Polanco, an illegal alien from the Dominican Republic, convicted of conspiracy to possess with intent to distribute a controlled substance aboard a vessel.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123142192961409475-yonathan-polanco.jpg",
     "via": "@ICEgov 2123142192961409475",
     "sourceUrl": "https://x.com/ICEgov/status/2123142192961409475",
     "voting": false,
@@ -4363,7 +4402,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXbqkq3WMAAYWVo?format=jpg&name=orig"
   },
   {
     "name": "Guillermo Cruz Juarez",
@@ -4383,7 +4423,7 @@
       "Kidnapping / human trafficking"
     ],
     "text": "@ICEgov Nov 18, 2026, as posted: Guillermo Cruz Juarez, an illegal alien from Mexico, convicted of five counts of indecent liberties with child and second-degree kidnapping.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123142187949121626-guillermo-cruz-juarez.jpg",
     "via": "@ICEgov 2123142187949121626",
     "sourceUrl": "https://x.com/ICEgov/status/2123142187949121626",
     "voting": false,
@@ -4392,7 +4432,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXbqkYrW8AAwJ45?format=jpg&name=orig"
   },
   {
     "name": "Santos Tovar-Morales",
@@ -4411,7 +4452,7 @@
       "Rape / sexual assault"
     ],
     "text": "@ICEgov Nov 18, 2026, as posted: Santos Tovar-Morales, an illegal alien from El Salvador, convicted of aggravated sexual battery.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123142183268335940-santos-tovar-morales.jpg",
     "via": "@ICEgov 2123142183268335940",
     "sourceUrl": "https://x.com/ICEgov/status/2123142183268335940",
     "voting": false,
@@ -4420,7 +4461,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXbqkG2XQAA6ZMF?format=jpg&name=orig"
   },
   {
     "name": "Jairo Abisai Fuentes-Bravo",
@@ -5034,7 +5076,7 @@
       "Child sex crime"
     ],
     "text": "@ERONewOrleans Nov 18, 2026, as posted: ICE New Orleans arrested Abel Castaneda-Gomez, an illegal alien from Mexico. Criminal history includes felony conviction for sexual exploitation of minor in Hendersonville, TN (sentenced to 18 months).",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123077016693981331-abel-castaneda-gomez.jpg",
     "via": "@ERONewOrleans 2123077016693981331",
     "sourceUrl": "https://x.com/ERONewOrleans/status/2123077016693981331",
     "voting": false,
@@ -5043,7 +5085,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW8soE-XEAELE6A?format=jpg&name=orig"
   },
   {
     "name": "Francisco Javier Ruiz-Nieblas",
@@ -5062,7 +5105,7 @@
       "Drug trafficking"
     ],
     "text": "@EROLosAngeles Nov 18, 2026, as posted: 🚨ICE Los Angeles arrested criminal illegal alien Francisco Javier Ruiz-Nieblas, 49, of Mexico, Nov. 16. Ruiz has convictions for trespassing, conspiracy to distribute a controlled substance, and possess of methamphetamine. He is in ICE custody pending removal.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123068723019780200-francisco-javier-ruiz-nieblas.jpg",
     "via": "@EROLosAngeles 2123068723019780200",
     "sourceUrl": "https://x.com/EROLosAngeles/status/2123068723019780200",
     "voting": false,
@@ -5071,7 +5114,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXXEwjoXAAALKyT?format=png&name=orig"
   },
   {
     "name": "Fabian Santiago Martinez",
@@ -5120,7 +5164,7 @@
       "Assault / battery"
     ],
     "text": "@EROBoston Nov 18, 2026, as posted: ICE Boston arrested Nelicir Leno Arcanjo, a criminal illegal alien from Brazil, during targeted operations in Danbury, Conn. His criminal history includes arrest for second-degree assault-serious physical injury, second-degree breach of peace-assault/strike,...",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123022147148996790-nelicir-leno-arcanjo.jpg",
     "via": "@EROBoston 2123022147148996790",
     "sourceUrl": "https://x.com/EROBoston/status/2123022147148996790",
     "voting": false,
@@ -5129,7 +5173,8 @@
     "lat": 41.3917,
     "lon": -73.4532,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXZ9KlvXMAAFQx6?format=png&name=orig"
   },
   {
     "name": "Magdany Joel Mejia-Perez",
@@ -5149,7 +5194,7 @@
       "Illegal entry / reentry"
     ],
     "text": "@EROMiami Nov 18, 2026, as posted: ICE arrested criminal illegal alien Magdany Joel Mejia-Perez, a Honduran national with multiple illegal re-entries, following his arrest by MDSO for cocaine possession, providing a false name, resisting without violence, & drug paraphernalia. He remains in custody pending removal",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2123008315420749993-magdany-joel-mejia-perez.jpg",
     "via": "@EROMiami 2123008315420749993",
     "sourceUrl": "https://x.com/EROMiami/status/2123008315420749993",
     "voting": false,
@@ -5158,7 +5203,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXWoEtVW8AANe_9?format=png&name=orig"
   },
   {
     "name": "Calixto Tumbaco",
@@ -5177,7 +5223,7 @@
       "Drug possession"
     ],
     "text": "@EROLosAngeles Nov 17, 2026, as posted: 🚨ICE Los Angeles arrested criminal illegal alien Calixto Tumbaco, 49, of Ecuador, Nov. 16. Tumbaco has convictions for conspiracy to possess cocaine while on board a submersible vessel. He is in ICE custody pending removal.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122924511406559321-calixto-tumbaco.jpg",
     "via": "@EROLosAngeles 2122924511406559321",
     "sourceUrl": "https://x.com/EROLosAngeles/status/2122924511406559321",
     "voting": false,
@@ -5186,7 +5232,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXXEZQ0XwAA8CFO?format=png&name=orig"
   },
   {
     "name": "Jose Jorge Guzman-Dias",
@@ -5207,7 +5254,7 @@
       "Drug possession"
     ],
     "text": "@EROLosAngeles Nov 17, 2026, as posted: 🚨ICE Los Angeles arrested criminal illegal alien Jose Jorge Guzman-Dias, 44, of Mexico, Nov. 16. Guzman has convictions for forgery, possessions of a controlled substance, burglary, and trespassing. He is in ICE custody pending removal.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122877955625943079-jose-jorge-guzman-dias.jpg",
     "via": "@EROLosAngeles 2122877955625943079",
     "sourceUrl": "https://x.com/EROLosAngeles/status/2122877955625943079",
     "voting": false,
@@ -5216,7 +5263,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXXDg-yXEAAaq4b?format=png&name=orig"
   },
   {
     "name": "Rosemery Vindel Gonzalez Perez",
@@ -5235,7 +5283,7 @@
       "Assault / battery"
     ],
     "text": "@EROLosAngeles Nov 17, 2026, as posted: 🚨ICE Los Angeles arrested criminal illegal alien Rosemery Vindel Gonzalez Perez, 31, of Honduras, Nov. 16. Gonzalez has convictions for battery, assault with a deadly weapon, and aiding and abetting. He is in ICE custody pending removal.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122847755651719366-rosemery-vindel-gonzalez-perez.jpg",
     "via": "@EROLosAngeles 2122847755651719366",
     "sourceUrl": "https://x.com/EROLosAngeles/status/2122847755651719366",
     "voting": false,
@@ -5244,7 +5292,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXXDT-8WcAAg-jX?format=png&name=orig"
   },
   {
     "name": "Janyer Mauricio Pulido-Osorio",
@@ -6530,7 +6579,7 @@
       "Illegal entry / reentry"
     ],
     "text": "@EROLosAngeles Nov 17, 2026, as posted: 🚨ICE Los Angeles arrested criminal illegal alien Oscar Rene Alvarado Velasquez, 45, of Mexico, Nov. 16. Alvarado is a member of the Paisas gang. He has convictions for assault, DUI, false imprisonment, and illegal reentry. He is in ICE custody pending removal.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122817393542246579-oscar-rene-alvarado-velasquez.jpg",
     "via": "@EROLosAngeles 2122817393542246579",
     "sourceUrl": "https://x.com/EROLosAngeles/status/2122817393542246579",
     "voting": false,
@@ -6539,7 +6588,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXXDGpYWUAA15Po?format=jpg&name=orig"
   },
   {
     "name": "Juan Pablo Tapia Avila",
@@ -6558,7 +6608,7 @@
       "DUI"
     ],
     "text": "@EROPhiladelphia Nov 17, 2026, as posted: Nov. 4: @EROPhiladelphia arrested Juan Pablo Tapia Avila, a Mexican illegal alien and suspected Sureños gang member, in Wilmington, DE. Tapia Avila has two DUI convictions in Delaware. He remains in ICE custody pending immigration proceedings.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122811500809039962-juan-pablo-tapia-avila.jpg",
     "via": "@EROPhiladelphia 2122811500809039962",
     "sourceUrl": "https://x.com/EROPhiladelphia/status/2122811500809039962",
     "voting": false,
@@ -6569,7 +6619,8 @@
     "status": "approved",
     "tags": [
       "Gang"
-    ]
+    ],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXW9zzyWEAAswUi?format=png&name=orig"
   },
   {
     "name": "Mauricio Hernandez Nunez",
@@ -6588,7 +6639,7 @@
       "DUI"
     ],
     "text": "@ICEgov Nov 17, 2026, as posted: Mauricio Hernandez Nunez, an illegal alien from Mexico, convicted of DUI.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122796604285763727-mauricio-hernandez-nunez.jpg",
     "via": "@ICEgov 2122796604285763727",
     "sourceUrl": "https://x.com/ICEgov/status/2122796604285763727",
     "voting": false,
@@ -6597,7 +6648,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXWvVC3XwAAXj8X?format=jpg&name=orig"
   },
   {
     "name": "Roby Rudman Martinez Ponce",
@@ -6616,7 +6668,7 @@
       "DUI"
     ],
     "text": "@ICEgov Nov 17, 2026, as posted: Roby Rudman Martinez Ponce, an illegal alien from Honduras, convicted of driving while intoxicated with child under 15 years of age.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122796601664217391-roby-rudman-martinez-ponce.jpg",
     "via": "@ICEgov 2122796601664217391",
     "sourceUrl": "https://x.com/ICEgov/status/2122796601664217391",
     "voting": false,
@@ -6625,7 +6677,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXWvS-3WYAAlPYL?format=jpg&name=orig"
   },
   {
     "name": "Alex Lagos-Escoto",
@@ -6644,7 +6697,7 @@
       "DUI"
     ],
     "text": "@ICEgov Nov 17, 2026, as posted: Alex Lagos-Escoto, an illegal alien from Honduras, convicted of DUI.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122796598942208329-alex-lagos-escoto.jpg",
     "via": "@ICEgov 2122796598942208329",
     "sourceUrl": "https://x.com/ICEgov/status/2122796598942208329",
     "voting": false,
@@ -6653,7 +6706,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXWvQfeXwAAkuHV?format=jpg&name=orig"
   },
   {
     "name": "Moises Jose Hernandez",
@@ -6672,7 +6726,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 17, 2026, as posted: Moises Jose Hernandez, an illegal alien from Honduras, convicted of possession with intent to distribute fentanyl.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122796593548279853-moises-jose-hernandez.jpg",
     "via": "@ICEgov 2122796593548279853",
     "sourceUrl": "https://x.com/ICEgov/status/2122796593548279853",
     "voting": false,
@@ -6681,7 +6735,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXWvKVCWQAAw2Z1?format=jpg&name=orig"
   },
   {
     "name": "Josue Elias Jeronimo",
@@ -6701,7 +6756,7 @@
       "Weapons"
     ],
     "text": "@ICEgov Nov 17, 2026, as posted: Josue Elias Jeronimo, an illegal alien from Guatemala, convicted of aggravated assault-attempt/cause bodily injury with deadly weapon.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122796591010693588-josue-elias-jeronimo.jpg",
     "via": "@ICEgov 2122796591010693588",
     "sourceUrl": "https://x.com/ICEgov/status/2122796591010693588",
     "voting": false,
@@ -6710,7 +6765,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXWvF0kXIAA647B?format=jpg&name=orig"
   },
   {
     "name": "Elder Manuel Sanchez Carias",
@@ -6729,7 +6785,7 @@
       "Child sex crime"
     ],
     "text": "@ICEgov Nov 17, 2026, as posted: Elder Manuel Sanchez Carias, an illegal alien from Guatemala, convicted of lewd or lascivious acts with child by force or fear.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122796588217291173-elder-manuel-sanchez-carias.jpg",
     "via": "@ICEgov 2122796588217291173",
     "sourceUrl": "https://x.com/ICEgov/status/2122796588217291173",
     "voting": false,
@@ -6738,7 +6794,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXWvCiXXIAAoiQ2?format=jpg&name=orig"
   },
   {
     "name": "Oscar Rosales Tumin Lopez",
@@ -6757,7 +6814,7 @@
       "Child sex crime"
     ],
     "text": "@ICEgov Nov 17, 2026, as posted: Oscar Rosales Tumin Lopez, an illegal alien from Guatemala, convicted of oral copulation / sexual penetration on a child 10 years or younger.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122796585511956895-oscar-rosales-tumin-lopez.jpg",
     "via": "@ICEgov 2122796585511956895",
     "sourceUrl": "https://x.com/ICEgov/status/2122796585511956895",
     "voting": false,
@@ -6766,7 +6823,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXWu-CGWcAASvhx?format=jpg&name=orig"
   },
   {
     "name": "Roselia Vences-Pena",
@@ -6785,7 +6843,7 @@
       "Armed robbery / aggravated assault"
     ],
     "text": "@EROSanAntonio Nov 17, 2026, as posted: A prior deadly conduct conviction led to 160 days in jail. Now, ICE San Antonio has arrested and removed Roselia Vences-Pena, 42, a criminal illegal alien from Mexico.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122763427563376783-roselia-vences-pena.jpg",
     "via": "@EROSanAntonio 2122763427563376783",
     "sourceUrl": "https://x.com/EROSanAntonio/status/2122763427563376783",
     "voting": false,
@@ -6794,7 +6852,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXWSBjFWMAAzzLu?format=png&name=orig"
   },
   {
     "name": "Alejandro Sevilla-Ramirez",
@@ -6811,7 +6870,7 @@
     "severityReason": "",
     "severityCrimes": [],
     "text": "@EROSanFrancisco Nov 17, 2026, as posted: ICE San Francisco arrested illegal alien Alejandro Sevilla-Ramirez, 28, of Mexico, in Oakland. He has a conviction for vandalism. He is in ICE custody pending removal from the United States.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122757158785765803-alejandro-sevilla-ramirez.jpg",
     "via": "@EROSanFrancisco 2122757158785765803",
     "sourceUrl": "https://x.com/EROSanFrancisco/status/2122757158785765803",
     "voting": false,
@@ -6820,7 +6879,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXRF6rbasAAdTQ3?format=png&name=orig"
   },
   {
     "name": "Jose Antonio Leon-Avalos",
@@ -7021,8 +7081,8 @@
     "tags": []
   },
   {
-    "name": "ELMER ALEXANDER GUARDIOLA-GEORGE",
-    "city": "Louisiana",
+    "name": "Elmer Alexander Guardiola-George",
+    "city": "New Orleans, LA",
     "crime": "Charged: NEW ORLEANS, LOUISIANA, ELMER ALEXANDER GUARDIOLA-GEORGE, age 42, a native of Honduras, was charged on November 13, 2026, in a one-count indictment with illegal re-entry of a removed alien, in violation of Title 8, United States Code, Section 1326(a), announced U.S. Attorney David I. Courcelle.",
     "usa": "DOJ release Nov 17, 2026: Honduran Illegal Alien Charged With Illegal Re-Entry of Removed Alien",
     "foreign": "Not stated in post",
@@ -7043,10 +7103,10 @@
     "voting": false,
     "origin": "Honduras",
     "confirmedBy": "DOJ",
-    "lat": 31,
-    "lon": -92,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "lat": 29.9605,
+    "lon": -90.0753
   },
   {
     "name": "Paramvir Singh",
@@ -7151,7 +7211,7 @@
       "Armed robbery / aggravated assault"
     ],
     "text": "@ERONewOrleans Nov 17, 2026, as posted: ICE New Orleans arrested Elvin Francisco Guevara-Hernandez, a 23-year-old illegal alien from Honduras. Criminal history includes felony conviction for aggravated assault – strongarm in TN (sentenced to 11 months, 29 days).",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122744324169634120-elvin-francisco-guevara-hernandez.jpg",
     "via": "@ERONewOrleans 2122744324169634120",
     "sourceUrl": "https://x.com/ERONewOrleans/status/2122744324169634120",
     "voting": false,
@@ -7160,7 +7220,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW8ruS1WEAARMIP?format=jpg&name=orig"
   },
   {
     "name": "Irvin Rogelio Garcia-Valenzuela",
@@ -7264,7 +7325,7 @@
       "Assault / battery"
     ],
     "text": "@EROBoston Nov 17, 2026, as posted: ICE Boston arrested Willan Enrique Galvez Valdivieso, a criminal illegal alien from Spain, during targeted operations in Waterbury, Conn. His criminal history includes arrest for second-degree assault with a motor vehicle,...",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122655300050424017-willan-enrique-galvez-valdivieso.jpg",
     "via": "@EROBoston 2122655300050424017",
     "sourceUrl": "https://x.com/EROBoston/status/2122655300050424017",
     "voting": false,
@@ -7273,7 +7334,8 @@
     "lat": 41.558,
     "lon": -73.0519,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXUvkGdWcAA9chn?format=png&name=orig"
   },
   {
     "name": "Arnulfo Palacois Gomez",
@@ -7926,7 +7988,7 @@
       "Illegal entry / reentry"
     ],
     "text": "@DHSgov Nov 16, 2026, as posted: Rigoberto Sanchez-Galvez, a criminal illegal alien from Mexico, convicted for assault,manufacturing and dealing methamphetamine, and illegal re-entry in Sandston, Minnesota.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122404860457041982-rigoberto-sanchez-galvez.jpg",
     "via": "@DHSgov 2122404860457041982",
     "sourceUrl": "https://x.com/DHSgov/status/2122404860457041982",
     "voting": false,
@@ -7935,7 +7997,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXRL-FrXUAAzkGC?format=jpg&name=orig"
   },
   {
     "name": "Mohammad Mazen Matit",
@@ -7955,7 +8018,7 @@
       "Assault / battery"
     ],
     "text": "@DHSgov Nov 16, 2026, as posted: Mohammad Mazen Matit, a criminal illegal alien from Syria, convicted for cruelty to a child and assault in Southington, Connecticut.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122404848524288407-mohammad-mazen-matit.jpg",
     "via": "@DHSgov 2122404848524288407",
     "sourceUrl": "https://x.com/DHSgov/status/2122404848524288407",
     "voting": false,
@@ -7964,7 +8027,8 @@
     "lat": 41.6005,
     "lon": -72.8783,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXRL9WDX0AAsvL9?format=jpg&name=orig"
   },
   {
     "name": "Oscar Rodriguez-Ramos",
@@ -7983,7 +8047,7 @@
       "Child sex crime"
     ],
     "text": "@DHSgov Nov 16, 2026, as posted: Oscar Rodriguez-Ramos, a criminal illegal alien from El Salvador, convicted for lewd or lascivious acts with child under 14 years old and continuous sexual abuse of a child in Los Angeles, California.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122404835890728982-oscar-rodriguez-ramos.jpg",
     "via": "@DHSgov 2122404835890728982",
     "sourceUrl": "https://x.com/DHSgov/status/2122404835890728982",
     "voting": false,
@@ -7992,7 +8056,8 @@
     "lat": 34.05,
     "lon": -118.25,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXRL8rXWkAA-9fe?format=jpg&name=orig"
   },
   {
     "name": "Nestor Herrera",
@@ -8011,7 +8076,7 @@
       "Child sex crime"
     ],
     "text": "@DHSgov Nov 16, 2026, as posted: Nestor Herrera, a criminal illegal alien from Mexico, convicted for sexual assault as an act of sexual contact with a victim less than 13 years old in New Brunswick, New Jersey.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122404825359171977-nestor-herrera.jpg",
     "via": "@DHSgov 2122404825359171977",
     "sourceUrl": "https://x.com/DHSgov/status/2122404825359171977",
     "voting": false,
@@ -8020,7 +8085,8 @@
     "lat": 40.4891,
     "lon": -74.4482,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXRL8EtXUAAmm5R?format=jpg&name=orig"
   },
   {
     "name": "Florencio Vasquez-Silva",
@@ -8039,7 +8105,7 @@
       "Child sex crime"
     ],
     "text": "@DHSgov Nov 16, 2026, as posted: Florencio Vasquez-Silva, a criminal illegal alien from Mexico, convicted for first-degree rape of a child and sexual exploitation of a minor in Seattle, Washington.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122404815791952278-florencio-vasquez-silva.jpg",
     "via": "@DHSgov 2122404815791952278",
     "sourceUrl": "https://x.com/DHSgov/status/2122404815791952278",
     "voting": false,
@@ -8048,7 +8114,8 @@
     "lat": 47.6114,
     "lon": -122.3305,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXRL7gGWEAAdIyV?format=jpg&name=orig"
   },
   {
     "name": "Vipin Panchal",
@@ -8068,7 +8135,7 @@
       "DUI"
     ],
     "text": "@DHSgov Nov 16, 2026, as posted: Vipin Panchal, a criminal illegal alien from India, convicted for homicide by vehicle while driving under the influence in Upper Macungie Township, Pennsylvania.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122404804588912670-vipin-panchal.jpg",
     "via": "@DHSgov 2122404804588912670",
     "sourceUrl": "https://x.com/DHSgov/status/2122404804588912670",
     "voting": false,
@@ -8077,7 +8144,8 @@
     "lat": 40.5736,
     "lon": -75.6146,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXRL61KXwAAsLE9?format=jpg&name=orig"
   },
   {
     "name": "Madeline Henriquez-Portillo",
@@ -8096,7 +8164,7 @@
       "Murder / manslaughter"
     ],
     "text": "@DHSgov Nov 16, 2026, as posted: Madeline Henriquez-Portillo, a criminal illegal alien from El Salvador, convicted for reckless manslaughter and interfering with investigation in Riverhead, New York.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122404792601641179-madeline-henriquez-portillo.jpg",
     "via": "@DHSgov 2122404792601641179",
     "sourceUrl": "https://x.com/DHSgov/status/2122404792601641179",
     "voting": false,
@@ -8105,7 +8173,8 @@
     "lat": 40.9262,
     "lon": -72.652,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXRL6GzXkAA8pW2?format=jpg&name=orig"
   },
   {
     "name": "Vladimir Takhavievish Glazkov",
@@ -8212,7 +8281,7 @@
       "Assault / battery"
     ],
     "text": "@ERONewOrleans Nov 16, 2026, as posted: ICE New Orleans arrested Gildardo Garcia-Duron, an illegal alien from Mexico. Criminal history includes a conviction for assault in Hamilton County, TN and sentenced to 11 months 29 days incarceration.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122366081818108262-gildardo-garcia-duron.jpg",
     "via": "@ERONewOrleans 2122366081818108262",
     "sourceUrl": "https://x.com/ERONewOrleans/status/2122366081818108262",
     "voting": false,
@@ -8221,7 +8290,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW8ra7FWsAEs3q5?format=jpg&name=orig"
   },
   {
     "name": "Bekenvawer Aguilar Hurtado",
@@ -8240,7 +8310,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 16, 2026, as posted: Bekenvawer Aguilar Hurtado, an illegal alien from Colombia, convicted of conspiracy to possess with intent to distribute cocaine while on board a vessel and possession with intent to distribute cocaine while on board a vessel.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122362939047096778-bekenvawer-aguilar-hurtado.jpg",
     "via": "@ICEgov 2122362939047096778",
     "sourceUrl": "https://x.com/ICEgov/status/2122362939047096778",
     "voting": false,
@@ -8249,7 +8319,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXQlos_bEAAraDH?format=jpg&name=orig"
   },
   {
     "name": "Miguel Fabian Ruvalcaba-Munoz",
@@ -8268,7 +8339,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 16, 2026, as posted: Miguel Fabian Ruvalcaba-Munoz, an illegal alien from Mexico, convicted of conspiracy to distribute and possession with intent to distribute and distribute 50 grams or more of actual methamphetamine.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122362936543068524-miguel-fabian-ruvalcaba-munoz.jpg",
     "via": "@ICEgov 2122362936543068524",
     "sourceUrl": "https://x.com/ICEgov/status/2122362936543068524",
     "voting": false,
@@ -8277,7 +8348,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXQllp4bIAAZnJW?format=jpg&name=orig"
   },
   {
     "name": "Jose Hernando Rodriguez-Eraso",
@@ -8298,7 +8370,7 @@
       "Drug possession"
     ],
     "text": "@ICEgov Nov 16, 2026, as posted: Jose Hernando Rodriguez-Eraso, an illegal alien from Colombia, convicted of murder in the course of drug conspiracy and use of firearm where death occurs.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122362933971911093-jose-hernando-rodriguez-eraso.jpg",
     "via": "@ICEgov 2122362933971911093",
     "sourceUrl": "https://x.com/ICEgov/status/2122362933971911093",
     "voting": false,
@@ -8308,7 +8380,8 @@
     "lon": null,
     "status": "approved",
     "tags": [],
-    "aka": "Jose Rodriguez-Eraso"
+    "aka": "Jose Rodriguez-Eraso",
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXQliXyakAA0h4H?format=jpg&name=orig"
   },
   {
     "name": "Jose Carlos Cartagena Ortega",
@@ -8327,7 +8400,7 @@
       "Child sex crime"
     ],
     "text": "@ICEgov Nov 16, 2026, as posted: Jose Carlos Cartagena Ortega, an illegal alien from Honduras, convicted of three offenses of indecent liberties with child.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122362931488973090-jose-carlos-cartagena-ortega.jpg",
     "via": "@ICEgov 2122362931488973090",
     "sourceUrl": "https://x.com/ICEgov/status/2122362931488973090",
     "voting": false,
@@ -8336,7 +8409,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXQlgDYawAAW37y?format=jpg&name=orig"
   },
   {
     "name": "Emilson Yordao Quinonez Hachito",
@@ -8355,7 +8429,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 16, 2026, as posted: Emilson Yordao Quinonez Hachito, an illegal alien from Colombia, convicted of conspiracy to possess with intent to distribute a controlled substance, possession with intent to distribute a controlled substance aboard a vessel, and operation of a submersible vessel or",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122362928779428098-emilson-yordao-quinonez-hachito.jpg",
     "via": "@ICEgov 2122362928779428098",
     "sourceUrl": "https://x.com/ICEgov/status/2122362928779428098",
     "voting": false,
@@ -8364,7 +8438,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXQldnha8AAVh-X?format=jpg&name=orig"
   },
   {
     "name": "Luis Fernando Letkeman-Hernandez",
@@ -8383,7 +8458,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 16, 2026, as posted: Luis Fernando Letkeman-Hernandez, an illegal alien from Mexico, convicted of conspiracy to possess with intent to distribute a controlled substance.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122362926048870512-luis-fernando-letkeman-hernandez.jpg",
     "via": "@ICEgov 2122362926048870512",
     "sourceUrl": "https://x.com/ICEgov/status/2122362926048870512",
     "voting": false,
@@ -8392,7 +8467,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXQlbX4a0AAStvM?format=jpg&name=orig"
   },
   {
     "name": "Felipe Pablo Menchu Yax",
@@ -8411,7 +8487,7 @@
       "Rape / sexual assault"
     ],
     "text": "@ICEgov Nov 16, 2026, as posted: Felipe Pablo Menchu Yax, an illegal alien from Guatemala, convicted of two counts of aggravated sexual battery.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122362923574268297-felipe-pablo-menchu-yax.jpg",
     "via": "@ICEgov 2122362923574268297",
     "sourceUrl": "https://x.com/ICEgov/status/2122362923574268297",
     "voting": false,
@@ -8420,7 +8496,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXQlZH3aIAAVN8Q?format=jpg&name=orig"
   },
   {
     "name": "Marvin Stiven Camacho Hinestroza",
@@ -8439,7 +8516,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 16, 2026, as posted: Marvin Stiven Camacho Hinestroza, an illegal alien from Colombia, convicted of conspiracy to possess with intent to distribute five kilograms or more of cocaine while onboard a vessel.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122362921095504144-marvin-stiven-camacho-hinestroza.jpg",
     "via": "@ICEgov 2122362921095504144",
     "sourceUrl": "https://x.com/ICEgov/status/2122362921095504144",
     "voting": false,
@@ -8448,7 +8525,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXQlWChbkAAixgi?format=jpg&name=orig"
   },
   {
     "name": "Alba Rodriguez Rodriguez",
@@ -8467,7 +8545,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 16, 2026, as posted: Alba Rodriguez Rodriguez, an illegal alien from Colombia, convicted of conspiracy to import cocaine and to manufacture and distribute cocaine intending and knowing that the cocaine would be unlawfully imported into the United States.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122362918390165922-alba-rodriguez-rodriguez.jpg",
     "via": "@ICEgov 2122362918390165922",
     "sourceUrl": "https://x.com/ICEgov/status/2122362918390165922",
     "voting": false,
@@ -8476,7 +8554,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXQlTtmbcAA50Nv?format=jpg&name=orig"
   },
   {
     "name": "Pablo Alberto Martinez Serrano",
@@ -8495,7 +8574,7 @@
       "Child sex crime"
     ],
     "text": "@ICEgov Nov 16, 2026, as posted: Pablo Alberto Martinez Serrano, an illegal alien from Mexico, convicted of receipt of child pornography & distribution of child pornography.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122362916146184402-pablo-alberto-martinez-serrano.jpg",
     "via": "@ICEgov 2122362916146184402",
     "sourceUrl": "https://x.com/ICEgov/status/2122362916146184402",
     "voting": false,
@@ -8504,7 +8583,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXQlO4ubMAA3LN5?format=jpg&name=orig"
   },
   {
     "name": "Juan Carlos Garcia Vargas",
@@ -8551,7 +8631,7 @@
       "Drug trafficking"
     ],
     "text": "@EROBoston Nov 16, 2026, as posted: On Oct. 5, ICE Boston arrested Luis Baez Geronimo, a criminal illegal alien from the Dominican Republic, following his release from Rhode Island DOC custody. His criminal history includes conviction for possession with intent to distribute class A (fentanyl),...",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122320558591549790-luis-baez-geronimo.jpg",
     "via": "@EROBoston 2122320558591549790",
     "sourceUrl": "https://x.com/EROBoston/status/2122320558591549790",
     "voting": false,
@@ -8560,7 +8640,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXP_EJfXoAAmJWs?format=png&name=orig"
   },
   {
     "name": "Israel Domingo-Mendez",
@@ -8580,7 +8661,7 @@
       "Illegal entry / reentry"
     ],
     "text": "@EROMiami Nov 16, 2026, as posted: ICE arrested Israel Domingo-Mendez, a criminal illegal alien from Guatemala with a final order of removal. He has been removed from the U.S. 3 times and was convicted of illegal reentry after deportation, DUI with damage to property or persons, driving without a driver’s license,",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122303884555370568-israel-domingo-mendez.jpg",
     "via": "@EROMiami 2122303884555370568",
     "sourceUrl": "https://x.com/EROMiami/status/2122303884555370568",
     "voting": false,
@@ -8589,7 +8670,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXPwHAZW0AA_SM8?format=png&name=orig"
   },
   {
     "name": "Carlos Molina-Castillo",
@@ -8610,7 +8692,7 @@
       "Drug trafficking"
     ],
     "text": "@EROMiami Nov 16, 2026, as posted: ICE arrested Carlos Molina-Castillo, a criminal illegal alien from El Salvador, with arrests for selling cocaine & aggravated battery (weapon/injury) to which he ultimately pled no contest and was sentenced to probation. He remains in ICE custody pending removal proceedings.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2122303005642866820-carlos-molina-castillo.jpg",
     "via": "@EROMiami 2122303005642866820",
     "sourceUrl": "https://x.com/EROMiami/status/2122303005642866820",
     "voting": false,
@@ -8619,7 +8701,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXPvTHFXwAAN232?format=png&name=orig"
   },
   {
     "name": "Heriberto Jimenez-Alvarado",
@@ -8669,7 +8752,7 @@
       "Assault / battery"
     ],
     "text": "@EROBoston Nov 15, 2026, as posted: On Sept. 27, ICE Boston arrested Victor Antonio Delacruz Gonzalez, a criminal illegal alien from Guatemala, during targeted operations in Revere, Mass. His criminal history includes conviction for assault and battery with a dangerous weapon.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2121955785270047119-victor-antonio-delacruz-gonzalez.jpg",
     "via": "@EROBoston 2121955785270047119",
     "sourceUrl": "https://x.com/EROBoston/status/2121955785270047119",
     "voting": false,
@@ -8678,7 +8761,8 @@
     "lat": 42.4138,
     "lon": -71.0052,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXKzW0BXYAA9Y11?format=png&name=orig"
   },
   {
     "name": "William Alvarado-Villa",
@@ -8723,7 +8807,7 @@
     "severityReason": "",
     "severityCrimes": [],
     "text": "@EROBoston Nov 14, 2026, as posted: On Sept. 25, ICE Boston arrested Carlos Zamban, a criminal illegal alien from Brazil. He entered the United States legally on Dec. 15, 1990, with permission to stay for six months. He remained in the United States illegally for over 35 years, in violation of our country’s laws.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2121569165865517309-carlos-zamban.jpg",
     "via": "@EROBoston 2121569165865517309",
     "sourceUrl": "https://x.com/EROBoston/status/2121569165865517309",
     "voting": false,
@@ -8732,7 +8816,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXFSr4rXoAAALKZ?format=png&name=orig"
   },
   {
     "name": "Carlos Bautista-Lopez",
@@ -9064,7 +9149,7 @@
     "severityReason": "",
     "severityCrimes": [],
     "text": "@EROPhiladelphia Nov 13, 2026, as posted: Nov. 6: @EROPhiladelphia arrested Luis Cristobal Cabrera-Ordonez, an Ecuadorian illegal alien and suspected Lobos gang member, in Allentown, PA. Cabrera-Ordonez remains in ICE custody pending removal!",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2121372684118335948-luis-cristobal-cabrera-ordonez.jpg",
     "via": "@EROPhiladelphia 2121372684118335948",
     "sourceUrl": "https://x.com/EROPhiladelphia/status/2121372684118335948",
     "voting": false,
@@ -9075,7 +9160,8 @@
     "status": "approved",
     "tags": [
       "Gang"
-    ]
+    ],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXChNsfWUAApbQP?format=png&name=orig"
   },
   {
     "name": "Jesus Alvarado",
@@ -9122,7 +9208,7 @@
       "Assault / battery"
     ],
     "text": "@EROBuffalo Nov 13, 2026, as posted: ICE Buffalo arrested 34-year-old Mexican national Carmen Zaravia-Castro on Nov. 12. Zaravia-Castro was sentenced to three years in prison for vehicular assault in Bronx, New York. He remains in ICE custody pending removal.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2121358170597519646-carmen-zaravia-castro.jpg",
     "via": "@EROBuffalo 2121358170597519646",
     "sourceUrl": "https://x.com/EROBuffalo/status/2121358170597519646",
     "voting": false,
@@ -9131,7 +9217,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXCT_jqXwAANmJs?format=png&name=orig"
   },
   {
     "name": "Cesar Morales-Perez",
@@ -9150,7 +9237,7 @@
       "Child sex crime"
     ],
     "text": "@EROBuffalo Nov 13, 2026, as posted: ICE Buffalo arrested 43-year-old Guatemalan national Cesar Morales-Perez on Nov. 12. Morales-Perez was previously sentenced to 12 years in prison for course of sexual conduct against a child in New City, New York. He remains in ICE custody pending removal.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2121357980046131497-cesar-morales-perez.jpg",
     "via": "@EROBuffalo 2121357980046131497",
     "sourceUrl": "https://x.com/EROBuffalo/status/2121357980046131497",
     "voting": false,
@@ -9159,7 +9246,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXCQBRqWkAAhhFx?format=jpg&name=orig"
   },
   {
     "name": "Arturo Flores",
@@ -9178,7 +9266,7 @@
       "Murder / manslaughter"
     ],
     "text": "@EROBuffalo Nov 13, 2026, as posted: ICE Buffalo arrested Arturo Flores, a 53-year-old criminal illegal alien from Mexico, on Oct. 30. Kings County Supreme Court convicted him of murder with intent. Flores remains in ICE custody pending removal.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2121335723873673286-arturo-flores.jpg",
     "via": "@EROBuffalo 2121335723873673286",
     "sourceUrl": "https://x.com/EROBuffalo/status/2121335723873673286",
     "voting": false,
@@ -9187,7 +9275,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXB_kH3XAAA5lv8?format=png&name=orig"
   },
   {
     "name": "Juan Alan Araujo-Ahumada",
@@ -9236,7 +9325,7 @@
       "DUI"
     ],
     "text": "@EROLosAngeles Nov 13, 2026, as posted: 🚨ICE Los Angeles arrested criminal illegal alien Jesus Gonzalez-Lozano, 43, of Mexico, Nov. 10. Gonzalez is registered sex offender. He has convictions for sale of narcotics, DUI, and sexual battery. He is in ICE custody pending removal.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2121308362109280722-jesus-gonzalez-lozano.jpg",
     "via": "@EROLosAngeles 2121308362109280722",
     "sourceUrl": "https://x.com/EROLosAngeles/status/2121308362109280722",
     "voting": false,
@@ -9245,7 +9334,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXBLO2tWYAA6f7-?format=png&name=orig"
   },
   {
     "name": "Cesar Carranza Pimentel",
@@ -9378,7 +9468,7 @@
       "Drug possession"
     ],
     "text": "@ICEgov Nov 13, 2026, as posted: Jose Felix Luevano-Nunez, an illegal alien from Mexico, convicted of reckless driving involving alcohol or controlled substance and driving without a drivers license.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2121305381817512279-jose-felix-luevano-nunez.jpg",
     "via": "@ICEgov 2121305381817512279",
     "sourceUrl": "https://x.com/ICEgov/status/2121305381817512279",
     "voting": false,
@@ -9387,7 +9477,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXBhdJmbwAAaToG?format=jpg&name=orig"
   },
   {
     "name": "Jimy Ismar Medina Rapalo",
@@ -9406,7 +9497,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 13, 2026, as posted: Jimy Ismar Medina Rapalo, an illegal alien from Honduras, convicted of conspiracy to possess with intent to distribute controlled substance.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2121305379200237629-jimy-ismar-medina-rapalo.jpg",
     "via": "@ICEgov 2121305379200237629",
     "sourceUrl": "https://x.com/ICEgov/status/2121305379200237629",
     "voting": false,
@@ -9415,7 +9506,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXBhXPSaoAAcipt?format=jpg&name=orig"
   },
   {
     "name": "Tea Jean Marie Kamin",
@@ -9434,7 +9526,7 @@
       "Assault / battery"
     ],
     "text": "@ICEgov Nov 13, 2026, as posted: Tea Jean Marie Kamin, an illegal alien from Ivory Coast, convicted of disorderly conduct, two counts of battery, obstructing police, and two counts of family violence battery.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2121305376356540790-tea-jean-marie-kamin.jpg",
     "via": "@ICEgov 2121305376356540790",
     "sourceUrl": "https://x.com/ICEgov/status/2121305376356540790",
     "voting": false,
@@ -9443,7 +9535,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXBhU9RakAA4N-B?format=jpg&name=orig"
   },
   {
     "name": "Ismael Roblero-Gonzalez",
@@ -9463,7 +9556,7 @@
       "Assault / battery"
     ],
     "text": "@ICEgov Nov 13, 2026, as posted: Ismael Roblero-Gonzalez, an illegal alien from Mexico, convicted of battery-family violence and cruelty to children in the third degree.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2121305373017837611-ismael-roblero-gonzalez.jpg",
     "via": "@ICEgov 2121305373017837611",
     "sourceUrl": "https://x.com/ICEgov/status/2121305373017837611",
     "voting": false,
@@ -9472,7 +9565,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXBhRDiaMAE7qQS?format=jpg&name=orig"
   },
   {
     "name": "Paciano Ochoa Pena",
@@ -9519,7 +9613,7 @@
       "Child sex crime"
     ],
     "text": "@EROLosAngeles Nov 13, 2026, as posted: 🚨ICE Los Angeles arrested criminal illegal alien Rosario Navarro-Gonzalez, 53, of Mexico, Nov. 9. Navarro is a registered sex offender. He was convicted of lewd or lascivious acts with a child of 14 years of age. He is in ICE custody pending removal.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2121278023982887285-rosario-navarro-gonzalez.jpg",
     "via": "@EROLosAngeles 2121278023982887285",
     "sourceUrl": "https://x.com/EROLosAngeles/status/2121278023982887285",
     "voting": false,
@@ -9528,7 +9622,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXBK55MWIAI1pec?format=png&name=orig"
   },
   {
     "name": "Inigo Varguez-Felix",
@@ -9547,7 +9642,7 @@
       "Rape / sexual assault"
     ],
     "text": "@ERONewOrleans Nov 13, 2026, as posted: ICE New Orleans arrested Inigo Varguez-Felix, a sex predator and criminal illegal alien from Mexico. Varguez’s criminal history includes Sexual Assault-Sodomy strongarm (minor boy) and Sexual Assault-Sodomy strongarm (minor girl) sentenced to 20 years in prison in Elmore County",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2121273885400166553-inigo-varguez-felix.jpg",
     "via": "@ERONewOrleans 2121273885400166553",
     "sourceUrl": "https://x.com/ERONewOrleans/status/2121273885400166553",
     "voting": false,
@@ -9556,7 +9651,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW8meoZXoAECY-C?format=png&name=orig"
   },
   {
     "name": "Vicente Torres-Vasquez",
@@ -9708,7 +9804,7 @@
       "Child sex crime"
     ],
     "text": "@EROBoston Nov 13, 2026, as posted: ICE Boston arrested Ever Edilberto Zuniga Ramirez, a criminal illegal alien from El Salvador, during targeted operations in East Boston, Mass. His criminal history includes convictions for sexual exploitation of a minor, distribution of child sexual abuse material,...",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2121217379363631168-ever-edilberto-zuniga-ramirez.jpg",
     "via": "@EROBoston 2121217379363631168",
     "sourceUrl": "https://x.com/EROBoston/status/2121217379363631168",
     "voting": false,
@@ -9717,7 +9813,8 @@
     "lat": 42.375,
     "lon": -71.0397,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HXATDzCWUAA0lhP?format=png&name=orig"
   },
   {
     "name": "Richard Calix-Valle",
@@ -9765,7 +9862,7 @@
       "Assault / battery"
     ],
     "text": "@ICEgov Nov 12, 2026, as posted: Rolando Miranda-Perez, an illegal alien from Guatemala, convicted of two counts of assault: malicious, victim severely injured.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120980842428457212-rolando-miranda-perez.jpg",
     "via": "@ICEgov 2120980842428457212",
     "sourceUrl": "https://x.com/ICEgov/status/2120980842428457212",
     "voting": false,
@@ -9774,7 +9871,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW88ew6XgAE0Y0-?format=jpg&name=orig"
   },
   {
     "name": "Henry Daniel Rodriguez-Suarez",
@@ -9793,7 +9891,7 @@
       "Burglary / theft"
     ],
     "text": "@ICEgov Nov 12, 2026, as posted: Henry Daniel Rodriguez-Suarez, an illegal alien from Venezuela, convicted of burglary of habitation.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120980839412695259-henry-daniel-rodriguez-suarez.jpg",
     "via": "@ICEgov 2120980839412695259",
     "sourceUrl": "https://x.com/ICEgov/status/2120980839412695259",
     "voting": false,
@@ -9802,7 +9900,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW88cx7WEAAcuYK?format=jpg&name=orig"
   },
   {
     "name": "Adrian Roger Roger Paz Trochez",
@@ -9822,7 +9921,7 @@
       "Assault / battery"
     ],
     "text": "@ICEgov Nov 12, 2026, as posted: Adrian Roger Roger Paz Trochez, an illegal alien from Honduras, convicted of strangulation and abduction by force.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120980833603661870-adrian-roger-roger-paz-trochez.jpg",
     "via": "@ICEgov 2120980833603661870",
     "sourceUrl": "https://x.com/ICEgov/status/2120980833603661870",
     "voting": false,
@@ -9831,7 +9930,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW88YaIWwAAkQTr?format=jpg&name=orig"
   },
   {
     "name": "Maria De Los Angel Ixba-Zavaleta",
@@ -9850,7 +9950,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 12, 2026, as posted: Maria De Los Angel Ixba-Zavaleta, an illegal alien from Mexico, convicted of trafficking in cocaine by possession (400+ grams) and possession with intent to sell or deliver cocaine.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120980821368791500-maria-de-los-angel-ixba-zavaleta.jpg",
     "via": "@ICEgov 2120980821368791500",
     "sourceUrl": "https://x.com/ICEgov/status/2120980821368791500",
     "voting": false,
@@ -9859,7 +9959,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW87_36XwAAVjOb?format=jpg&name=orig"
   },
   {
     "name": "Rajubhai B Patel",
@@ -9878,7 +9979,7 @@
       "Fraud (incl. voter fraud)"
     ],
     "text": "@ICEgov Nov 12, 2026, as posted: Rajubhai B Patel, an illegal alien from India, convicted of conspiracy to commit money laundering.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120980818470568117-rajubhai-b-patel.jpg",
     "via": "@ICEgov 2120980818470568117",
     "sourceUrl": "https://x.com/ICEgov/status/2120980818470568117",
     "voting": false,
@@ -9887,7 +9988,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW877lrXAAAIqug?format=jpg&name=orig"
   },
   {
     "name": "Carlos Jonathan Lebron-Ruiz",
@@ -9909,7 +10011,7 @@
       "Assault / battery"
     ],
     "text": "@ICEgov Nov 12, 2026, as posted: Carlos Jonathan Lebron-Ruiz, an illegal alien from the Dominican Republic, convicted of murder of the third degree, conspiracy – murder of the third degree, firearms not to be carried without a license, 3 counts of aggravated assault, 2 counts of simple assault, 1 count of assault by prisoner and 1 count of recklessly endangering another person.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120980815559659628-carlos-jonathan-lebron-ruiz.jpg",
     "via": "@ICEgov 2120980815559659628",
     "sourceUrl": "https://x.com/ICEgov/status/2120980815559659628",
     "voting": false,
@@ -9918,7 +10020,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW872mVXMAEe_4_?format=jpg&name=orig"
   },
   {
     "name": "Jesus Licea-Lopez",
@@ -9937,7 +10040,7 @@
       "Weapons"
     ],
     "text": "@EROSanFrancisco Nov 12, 2026, as posted: ICE San Francisco arrested illegal alien Jesus Licea-Lopez, 49, of Mexico, in San Francisco, CA. He has an arrest for concealed weapon in vehicle. He is in ICE custody pending immigration proceedings.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120945722547945602-jesus-licea-lopez.jpg",
     "via": "@EROSanFrancisco 2120945722547945602",
     "sourceUrl": "https://x.com/EROSanFrancisco/status/2120945722547945602",
     "voting": false,
@@ -9946,7 +10049,8 @@
     "lat": 37.6219,
     "lon": -122.3819,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWdf7ywbQAAb5O8?format=png&name=orig"
   },
   {
     "name": "Leonel A. Umana-Gonzalez",
@@ -10222,7 +10326,7 @@
       "Kidnapping / human trafficking"
     ],
     "text": "@SecMullinDHS Nov 12, 2026, as posted: Jose Francis Diaz Cortez, an illegal alien from Honduras, arrested by ICE on October 27. His criminal history includes a conviction for aggravated kidnapping result in in bodily injury. He illegally entered the United States through Texas in September 2023, and was arrested by",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120941308022055024-jose-francis-diaz-cortez.jpg",
     "via": "@SecMullinDHS 2120941308022055024",
     "sourceUrl": "https://x.com/SecMullinDHS/status/2120941308022055024",
     "voting": false,
@@ -10233,7 +10337,8 @@
     "status": "approved",
     "tags": [
       "Entered under Biden"
-    ]
+    ],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW8Y33yXkAA2DcZ?format=png&name=orig"
   },
   {
     "name": "Robert Alejandro Ortuno Guerra",
@@ -10252,7 +10357,7 @@
       "Violent crime against a child"
     ],
     "text": "@SecMullinDHS Nov 12, 2026, as posted: Robert Alejandro Ortuno Guerra, an illegal alien from Venezuela, arrested by ICE on October 2. His criminal history includes convictions for third-degree cruelty to children and attempting to evade arrest with a vehicle. He illegally entered the United States through Texas in May",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120941175028727972-robert-alejandro-ortuno-guerra.jpg",
     "via": "@SecMullinDHS 2120941175028727972",
     "sourceUrl": "https://x.com/SecMullinDHS/status/2120941175028727972",
     "voting": false,
@@ -10261,7 +10366,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW8Yv8aWEAAka6a?format=png&name=orig"
   },
   {
     "name": "Apolinar Santibanez Avellanea",
@@ -10282,7 +10388,7 @@
       "Illegal entry / reentry"
     ],
     "text": "@SecMullinDHS Nov 12, 2026, as posted: Apolinar Santibanez Avellanea, an illegal alien from Mexico, arrested by ICE on October 16. His criminal history includes convictions for murder and driving while intoxicated. He had been deported twice before, in 2008 and 2025, before illegally re-entering the country at an",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120940305033605236-apolinar-santibanez-avellanea.jpg",
     "via": "@SecMullinDHS 2120940305033605236",
     "sourceUrl": "https://x.com/SecMullinDHS/status/2120940305033605236",
     "voting": false,
@@ -10291,7 +10397,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW8XtkmX0AAfYpf?format=png&name=orig"
   },
   {
     "name": "Fengxian Yang",
@@ -10556,7 +10663,7 @@
       "Assault / battery"
     ],
     "text": "@EROBoston Nov 12, 2026, as posted: ICE Boston arrested Rashid Colton, a criminal illegal alien from the Bahamas, during targeted operations in New Britain, CT. His criminal history includes convictions for first-degree criminal trespass, third-degree assault- physical injury, and probation violation,...",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120841489471389910-rashid-colton.jpg",
     "via": "@EROBoston 2120841489471389910",
     "sourceUrl": "https://x.com/EROBoston/status/2120841489471389910",
     "voting": false,
@@ -10565,7 +10672,8 @@
     "lat": 41.6611,
     "lon": -72.78,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW6915rXcAAIcjR?format=png&name=orig"
   },
   {
     "name": "Cong Anh Nguyen",
@@ -10698,7 +10806,7 @@
       "Burglary / theft"
     ],
     "text": "@EROChicago Nov 11, 2026, as posted: @EROChicago Louisville and Bowling Green KY suboffices arrested Roberto Carlos Castillo-Leal, 43, a criminal illegal alien from Mexico, for making a false statement regarding U.S. citizenship and aggravated identify theft. He was ordered removed from the country on March 4, 2026.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120566881274966264-roberto-carlos-castillo-leal.jpg",
     "via": "@EROChicago 2120566881274966264",
     "sourceUrl": "https://x.com/EROChicago/status/2120566881274966264",
     "voting": false,
@@ -10707,7 +10815,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW3C7OpW4AAeMDL?format=png&name=orig"
   },
   {
     "name": "Ingrid Hernandez-Salgado",
@@ -10756,7 +10865,7 @@
       "Child sex crime"
     ],
     "text": "@EROBoston Nov 11, 2026, as posted: On Sept. 29, ICE Boston arrested Jimmi Martinez, a criminal illegal alien from El Salvador, following release from Mass DOC custody. His criminal history includes conviction for rape of a child, rape of a child with force, and indecent assault and battery on a child under 14.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120509063825883488-jimmi-martinez.jpg",
     "via": "@EROBoston 2120509063825883488",
     "sourceUrl": "https://x.com/EROBoston/status/2120509063825883488",
     "voting": false,
@@ -10765,7 +10874,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HW2PKIiXAAAUokh?format=png&name=orig"
   },
   {
     "name": "Rony Alexander Gomez-Alberto",
@@ -11061,7 +11171,7 @@
     "severityReason": "",
     "severityCrimes": [],
     "text": "@EROLosAngeles Nov 10, 2026, as posted: 🚨ICE Los Angeles arrested criminal illegal alien Bogar Arroyo-Garibay, 43, of Mexico, Nov. 8. Arroyo has convictions for inflicting corporal injury on a spouse. His is in ICE custody pending removal.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120231768225698125-bogar-arroyo-garibay.jpg",
     "via": "@EROLosAngeles 2120231768225698125",
     "sourceUrl": "https://x.com/EROLosAngeles/status/2120231768225698125",
     "voting": false,
@@ -11070,7 +11180,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWx4SnqWgAACJI8?format=png&name=orig"
   },
   {
     "name": "Thiago Lacerda Araujo",
@@ -11089,7 +11200,7 @@
       "Rape / sexual assault"
     ],
     "text": "@EROChicago Nov 10, 2026, as posted: @EROChicago St. Louis deportation officers arrested Thiago Lacerda Araujo, 31, a fugitive and illegal alien wanted by Brazil for alleged child rape, Nov. 5 in St. Charles, MO. He remains in ICE custody pending immigration proceedings.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120226636079780184-thiago-lacerda-araujo.jpg",
     "via": "@EROChicago 2120226636079780184",
     "sourceUrl": "https://x.com/EROChicago/status/2120226636079780184",
     "voting": false,
@@ -11098,7 +11209,8 @@
     "lat": 38.8014,
     "lon": -90.5065,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWyOZOYWgAA04lH?format=png&name=orig"
   },
   {
     "name": "Jose Gonzalez",
@@ -11118,7 +11230,7 @@
       "Rape / sexual assault"
     ],
     "text": "@ICEgov Nov 10, 2026, as posted: Jose Gonzalez, an illegal alien from Mexico, convicted of possession of unlawful paraphernalia , driving without license, continuous sexual abuse of a child, and rape by force/fear.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120225919143203235-jose-gonzalez.jpg",
     "via": "@ICEgov 2120225919143203235",
     "sourceUrl": "https://x.com/ICEgov/status/2120225919143203235",
     "voting": false,
@@ -11127,7 +11239,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWyLGoaWAAAPjii?format=jpg&name=orig"
   },
   {
     "name": "Eulises Reyes-Parra",
@@ -11146,7 +11259,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 10, 2026, as posted: Eulises Reyes-Parra, an illegal alien from Mexico, convicted of distribution of methamphetamine.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120225916114567547-eulises-reyes-parra.jpg",
     "via": "@ICEgov 2120225916114567547",
     "sourceUrl": "https://x.com/ICEgov/status/2120225916114567547",
     "voting": false,
@@ -11155,7 +11268,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWyLDD4XsAAVLCJ?format=jpg&name=orig"
   },
   {
     "name": "Jaime Perez-Sanchez",
@@ -11174,7 +11288,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 10, 2026, as posted: Jaime Perez-Sanchez, an illegal alien from Mexico, convicted of attempted manufacture, distribution, delivery or possession with intent to deliver over 10 grams of cocaine.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120225913652797790-jaime-perez-sanchez.jpg",
     "via": "@ICEgov 2120225913652797790",
     "sourceUrl": "https://x.com/ICEgov/status/2120225913652797790",
     "voting": false,
@@ -11183,7 +11297,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWyLAorW4AAODD-?format=jpg&name=orig"
   },
   {
     "name": "Angel Cornejo Romero",
@@ -11203,7 +11318,7 @@
       "Assault / battery"
     ],
     "text": "@ICEgov Nov 10, 2026, as posted: Angel Cornejo Romero, an illegal alien from Mexico, convicted of force rape, assault with intent to commit mayhem, rape, sodomy, oral copulation, rape in concert with another, lascivious acts upon a child, or penetration of genitals or anus with foreign object, and sexual battery.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120225909663817765-angel-cornejo-romero.jpg",
     "via": "@ICEgov 2120225909663817765",
     "sourceUrl": "https://x.com/ICEgov/status/2120225909663817765",
     "voting": false,
@@ -11212,7 +11327,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWyK8aCWIAAxYwl?format=jpg&name=orig"
   },
   {
     "name": "Ramon Grajales-Barbis",
@@ -11232,7 +11348,7 @@
       "Kidnapping / human trafficking"
     ],
     "text": "@ICEgov Nov 10, 2026, as posted: Ramon Grajales-Barbis, an illegal alien from Mexico, convicted of second degree-forcible rape and first-degree kidnapping.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120225907264704816-ramon-grajales-barbis.jpg",
     "via": "@ICEgov 2120225907264704816",
     "sourceUrl": "https://x.com/ICEgov/status/2120225907264704816",
     "voting": false,
@@ -11241,7 +11357,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWyK308XkAIf0gq?format=jpg&name=orig"
   },
   {
     "name": "Pedro De Jesus Figueroa-Roman",
@@ -11260,7 +11377,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 10, 2026, as posted: Pedro De Jesus Figueroa-Roman, an illegal alien from Mexico, convicted of possession of fentanyl with intent to distribute.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120225904672870641-pedro-de-jesus-figueroa-roman.jpg",
     "via": "@ICEgov 2120225904672870641",
     "sourceUrl": "https://x.com/ICEgov/status/2120225904672870641",
     "voting": false,
@@ -11269,7 +11386,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWyK1OdXUAEeas_?format=jpg&name=orig"
   },
   {
     "name": "Rolando Salomon Garza-Aguirre",
@@ -11288,7 +11406,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 10, 2026, as posted: Rolando Salomon Garza-Aguirre, an illegal alien from Mexico, convicted of possession with intent to distribute 500 grams or more, approximately 412 kilograms of a mixture or substance containing a detectable amount of methamphetamine.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120225901984035069-rolando-salomon-garza-aguirre.jpg",
     "via": "@ICEgov 2120225901984035069",
     "sourceUrl": "https://x.com/ICEgov/status/2120225901984035069",
     "voting": false,
@@ -11297,7 +11415,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWyKxklXsAAZPvO?format=jpg&name=orig"
   },
   {
     "name": "Jenifer Beltran Arredondo",
@@ -11316,7 +11435,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 10, 2026, as posted: Jenifer Beltran Arredondo, an illegal alien from Mexico, convicted of conspiracy to possess with intent to distribute and to distribute fentanyl.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120225895776498012-jenifer-beltran-arredondo.jpg",
     "via": "@ICEgov 2120225895776498012",
     "sourceUrl": "https://x.com/ICEgov/status/2120225895776498012",
     "voting": false,
@@ -11325,7 +11444,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWyKpyWWgAEdNSC?format=jpg&name=orig"
   },
   {
     "name": "Jose Martin Quinones-Castro",
@@ -11345,7 +11465,7 @@
       "Assault / battery"
     ],
     "text": "@ICEgov Nov 10, 2026, as posted: Jose Martin Quinones-Castro, an illegal alien from Mexico, convicted of lewd/lascivious act to child by force, five counts of lewd/lascivious act to child 14 or 15, and three counts of assault of another under 18 years of age.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2120225893226319936-jose-martin-quinones-castro.jpg",
     "via": "@ICEgov 2120225893226319936",
     "sourceUrl": "https://x.com/ICEgov/status/2120225893226319936",
     "voting": false,
@@ -11354,7 +11474,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWyKnAnW0AAJm1N?format=jpg&name=orig"
   },
   {
     "name": "Jose Rosales-Ayala",
@@ -12341,7 +12462,7 @@
     "severityReason": "",
     "severityCrimes": [],
     "text": "@EROPhiladelphia Nov 9, 2026, as posted: Nov. 6: @EROPhiladelphia arrested Michael John Marquez-Noesi, a Dominican illegal alien who is a suspected Trinitarios gang member, in Allentown, PA. He is detained pending immigration proceedings.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2119912114286412155-michael-john-marquez-noesi.jpg",
     "via": "@EROPhiladelphia 2119912114286412155",
     "sourceUrl": "https://x.com/EROPhiladelphia/status/2119912114286412155",
     "voting": false,
@@ -12352,7 +12473,8 @@
     "status": "approved",
     "tags": [
       "Gang"
-    ]
+    ],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWtw1WSXAAAzQ7Q?format=png&name=orig"
   },
   {
     "name": "Cristian Sandoval-Monterros",
@@ -12397,7 +12519,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 9, 2026, as posted: Luis Alberto Valdez-Niro, an illegal alien from Mexico, convicted of importation of methamphetamine.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2119880323991314639-luis-alberto-valdez-niro.jpg",
     "via": "@ICEgov 2119880323991314639",
     "sourceUrl": "https://x.com/ICEgov/status/2119880323991314639",
     "voting": false,
@@ -12406,7 +12528,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWtTfUfXAAAg6D2?format=jpg&name=orig"
   },
   {
     "name": "Abner Chovajay-Noj",
@@ -12425,7 +12548,7 @@
       "Rape / sexual assault"
     ],
     "text": "@ICEgov Nov 9, 2026, as posted: Abner Chovajay-Noj, an illegal alien from Guatemala, convicted of sexual battery/victim 18+/no serious injury.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2119880321982198188-abner-chovajay-noj.jpg",
     "via": "@ICEgov 2119880321982198188",
     "sourceUrl": "https://x.com/ICEgov/status/2119880321982198188",
     "voting": false,
@@ -12434,7 +12557,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWtTcfKWUAAIn2T?format=jpg&name=orig"
   },
   {
     "name": "Juan Reynoso-Hernandez",
@@ -12453,7 +12577,7 @@
       "Rape / sexual assault"
     ],
     "text": "@ICEgov Nov 9, 2026, as posted: Juan Reynoso-Hernandez, an illegal alien from Mexico, convicted of two counts of aggravated criminal sexual abuse/family, aggravated criminal sexual abuse/victim <18/family, predatory criminal sexual assault, criminal sexual assault/force, sex relations within families, and",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2119880319344243179-juan-reynoso-hernandez.jpg",
     "via": "@ICEgov 2119880319344243179",
     "sourceUrl": "https://x.com/ICEgov/status/2119880319344243179",
     "voting": false,
@@ -12462,7 +12586,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWtTZ8gW8AA1t-t?format=jpg&name=orig"
   },
   {
     "name": "Rosendo Garcia Osorio",
@@ -12481,7 +12606,7 @@
       "DUI"
     ],
     "text": "@ICEgov Nov 9, 2026, as posted: Rosendo Garcia Osorio, an illegal alien from Mexico, convicted of attempt to prevent/dissuade victim/victim and two or more prior DUIs.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2119880316940685780-rosendo-garcia-osorio.jpg",
     "via": "@ICEgov 2119880316940685780",
     "sourceUrl": "https://x.com/ICEgov/status/2119880316940685780",
     "voting": false,
@@ -12490,7 +12615,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWtTWfQXkAA6xhs?format=jpg&name=orig"
   },
   {
     "name": "Edward Espana Marquinez",
@@ -12509,7 +12635,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 9, 2026, as posted: Edward Espana Marquinez, an illegal alien from Colombia, convicted of conspiracy to distribute 5 kilograms or more of cocaine knowing that it would be unlawfully imported into the United States.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2119880314864497001-edward-espana-marquinez.jpg",
     "via": "@ICEgov 2119880314864497001",
     "sourceUrl": "https://x.com/ICEgov/status/2119880314864497001",
     "voting": false,
@@ -12518,7 +12644,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWtTHg4WgAA_tSu?format=jpg&name=orig"
   },
   {
     "name": "Luis Urioste Bracamontes",
@@ -12537,7 +12664,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 9, 2026, as posted: Luis Urioste Bracamontes, an illegal alien from Mexico, convicted of conspiracy to distribute and possess with intent to distribute methamphetamine.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2119880312830239088-luis-urioste-bracamontes.jpg",
     "via": "@ICEgov 2119880312830239088",
     "sourceUrl": "https://x.com/ICEgov/status/2119880312830239088",
     "voting": false,
@@ -12546,7 +12673,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWtTFoIW8AApd0A?format=jpg&name=orig"
   },
   {
     "name": "Jose Marlon Ibarra Zelaya",
@@ -12563,7 +12691,7 @@
     "severityReason": "",
     "severityCrimes": [],
     "text": "@ICEgov Nov 9, 2026, as posted: Jose Marlon Ibarra Zelaya, an illegal alien from Honduras, convicted of conspiracy to conceal, harbor, shield and transport illegal aliens within the United States, for the purpose of commercial advantage and private financial gain.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2119880309831602491-jose-marlon-ibarra-zelaya.jpg",
     "via": "@ICEgov 2119880309831602491",
     "sourceUrl": "https://x.com/ICEgov/status/2119880309831602491",
     "voting": false,
@@ -12572,7 +12700,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWtTB8YXwAAm64d?format=jpg&name=orig"
   },
   {
     "name": "Salvador Vasquez-Alas",
@@ -12589,7 +12718,7 @@
     "severityReason": "",
     "severityCrimes": [],
     "text": "@ICEgov Nov 9, 2026, as posted: Salvador Vasquez-Alas, an illegal alien from El Salvador, convicted of computer pornography.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2119880306396438619-salvador-vasquez-alas.jpg",
     "via": "@ICEgov 2119880306396438619",
     "sourceUrl": "https://x.com/ICEgov/status/2119880306396438619",
     "voting": false,
@@ -12598,7 +12727,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWtS_jkW0AAGc9G?format=jpg&name=orig"
   },
   {
     "name": "Sam Nang Bou",
@@ -12617,7 +12747,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 9, 2026, as posted: Sam Nang Bou, an illegal alien from Canada, convicted of possession with intent to distribute and distribution of cocaine.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2119880302210490472-sam-nang-bou.jpg",
     "via": "@ICEgov 2119880302210490472",
     "sourceUrl": "https://x.com/ICEgov/status/2119880302210490472",
     "voting": false,
@@ -12626,7 +12756,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWtS9ceWQAAfGrw?format=jpg&name=orig"
   },
   {
     "name": "Alfredo Solares Mejia",
@@ -12645,7 +12776,7 @@
       "Drug trafficking"
     ],
     "text": "@ICEgov Nov 9, 2026, as posted: Alfredo Solares Mejia, an illegal alien from Guatemala, convicted of conspiracy to distribute 5 kilograms or more of cocaine knowing that it would be imported into the United States.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2119880298804465936-alfredo-solares-mejia.jpg",
     "via": "@ICEgov 2119880298804465936",
     "sourceUrl": "https://x.com/ICEgov/status/2119880298804465936",
     "voting": false,
@@ -12654,7 +12785,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWtS63GXwAAybhY?format=jpg&name=orig"
   },
   {
     "name": "Alex Disney Alverez Ordonez",
@@ -12673,7 +12805,7 @@
       "Child sex crime"
     ],
     "text": "@ICEgov Nov 9, 2026, as posted: Alex Disney Alverez Ordonez, an illegal alien from Honduras, convicted of indecent liberties with a child.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2119880296808017982-alex-disney-alverez-ordonez.jpg",
     "via": "@ICEgov 2119880296808017982",
     "sourceUrl": "https://x.com/ICEgov/status/2119880296808017982",
     "voting": false,
@@ -12682,7 +12814,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWtS1-JWwAAVYuW?format=jpg&name=orig"
   },
   {
     "name": "Kevin Rojo-Rojo",
@@ -12701,7 +12834,7 @@
       "Burglary / theft"
     ],
     "text": "@EROBuffalo Nov 9, 2026, as posted: ICE Buffalo arrested Kevin Rojo-Rojo, a Chilean national, Nov. 6. His criminal history includes burglary in White Plains, NY, for which he was convicted and sentenced to 8 years and for burglary in Nassau Co., NY on a 9-year sentence. He is in ICE custody pending removal.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2119876756933054909-kevin-rojo-rojo.jpg",
     "via": "@EROBuffalo 2119876756933054909",
     "sourceUrl": "https://x.com/EROBuffalo/status/2119876756933054909",
     "voting": false,
@@ -12710,7 +12843,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWtQnVuWIAAA5Q5?format=png&name=orig"
   },
   {
     "name": "Jose Daniel Antonio Orellana",
@@ -13296,7 +13430,7 @@
       "Burglary / theft"
     ],
     "text": "@EROSanFrancisco Nov 8, 2026, as posted: ICE San Francisco arrested criminal alien Alejandro Galvan Mangana, 31, of Mexico, in Represa. He has a long rap sheet that includes convictions for carjacking, , burglary, assault with a deadly weapon, etc. His final order of removal was reinstated.",
-    "photo": "",
+    "photo": "https://krennic212.github.io/invasionupdate-data/photos/x-2119496926194237816-alejandro-galvan-mangana.jpg",
     "via": "@EROSanFrancisco 2119496926194237816",
     "sourceUrl": "https://x.com/EROSanFrancisco/status/2119496926194237816",
     "voting": false,
@@ -13305,7 +13439,8 @@
     "lat": null,
     "lon": null,
     "status": "approved",
-    "tags": []
+    "tags": [],
+    "photoSourceUrl": "https://pbs.twimg.com/media/HWTJgoAbcAAX_kC?format=png&name=orig"
   },
   {
     "name": "Alvaro Adrian Veliz Gonzalez",

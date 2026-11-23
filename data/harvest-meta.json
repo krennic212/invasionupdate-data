@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-23T17:55:23Z",
+  "updatedAt": "2026-11-23T22:43:20Z",
   "rows": 1926,
   "approved": 1896,
   "pending": 30,
-  "photos": 404,
+  "photos": 539,
   "reviewRows": 781,
   "lastAddedAt": "2026-11-23T17:55:10Z",
-  "lastAddedCount": 20,
+  "lastAddedCount": 19,
   "lastAdded": [
     "Oscar Evaristo Nunez",
     "Freddi Chigo Mil",
@@ -26,9 +26,8 @@
     "Israel Christopher Flores-Ortiz",
     "Misael Lopez Gomez",
     "Anibal Armando Chavarria Muy",
-    "Abdul Jalloh",
-    "In Laredo"
+    "Abdul Jalloh"
   ],
-  "harvestSha256": "5363bcf9e7eb6543c866c0cf3533218ae00a8868679a0abcf17c1dc5037a2bed",
+  "harvestSha256": "07768712281066b30359f893f27cdce1a8f04fe4c63ff8153948b10247da7634",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

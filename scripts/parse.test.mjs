@@ -264,3 +264,11 @@ test("date before the name, a 4-time deported alien, and the arrest of a name", 
   const arrestOf = extractPeople(["DHS confirmed the arrest of Luis Valdez-Ruiz, an illegal alien from Mexico."]);
   assert.equal(arrestOf[0]?.name, "Luis Valdez-Ruiz");
 });
+
+test("'In <City>,' opener is never a person's name (DOJ Nov 23, 2026: In Laredo)", () => {
+  const s = "In Laredo, a federal jury convicted Honduran national Arnol Josue Flores of conspiring to transport illegal aliens and transporting them for profit.";
+  const hits = extractPeople([s], { title: "Continued border enforcement actions result in 216 new cases filed in Southern District" });
+  assert.deepEqual(hits.map((h) => h.name), ["Arnol Josue Flores"]);
+  assert.equal(hits[0].origin, "Honduras");
+  assert.deepEqual(extractPeople(["In Houston, Texas, ICE arrested illegal alien Pedro Lopez Garcia, 40, of Mexico."]).map((h) => h.name).filter((n) => /^In /.test(n)), []);
+});
