@@ -3374,7 +3374,14 @@
     "via": "@DHSgov 2105305872729563376",
     "sourceUrl": "https://x.com/DHSgov/status/2105305872729563376",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "sameNameAs": [
+      {
+        "id": "dhs-20261123-oscar-evaristo-nunez",
+        "decision": "kept both",
+        "why": "same country but too few case words in common (fairfax, child, despite)"
+      }
+    ]
   },
   {
     "entered": "Not stated",
@@ -5905,7 +5912,14 @@
     "lat": 38.8462,
     "lon": -77.3064,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "sameNameAs": [
+      {
+        "id": "dhs-20261123-roni-mendez-escobar",
+        "decision": "kept both",
+        "why": "same country but too few case words in common (child, fairfax, virginia, sanctuary)"
+      }
+    ]
   },
   {
     "name": "Jorge Ernesto Anguiano-Monreal",

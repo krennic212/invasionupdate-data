@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-23",
   "windowDays": 7,
-  "total": 187,
+  "total": 204,
   "rows": [
     {
       "id": "x-2124913412668874774-juan-carlos-chub-choc",
@@ -112,6 +112,18 @@
       ]
     },
     {
+      "id": "dhs-20261123-cristian-wilfredo-alvarenga-aguilar",
+      "name": "Cristian Wilfredo Alvarenga Aguilar",
+      "when": "23 Nov 2026",
+      "severity": 173,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Armed robbery / aggravated assault",
+        "Assault / battery"
+      ]
+    },
+    {
       "id": "x-2123529700647551003-wilber-jandres",
       "name": "Wilber Jandres",
       "when": "19 Nov 2026",
@@ -146,6 +158,28 @@
       ]
     },
     {
+      "id": "dhs-20261123-misael-lopez-gomez",
+      "name": "Misael Lopez Gomez",
+      "when": "23 Nov 2026",
+      "severity": 158,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Violent crime against a child"
+      ]
+    },
+    {
+      "id": "dhs-20261123-juan-arevalo-mendez",
+      "name": "Juan Arevalo Mendez",
+      "when": "23 Nov 2026",
+      "severity": 155,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Kidnapping / human trafficking"
+      ]
+    },
+    {
       "id": "dhs-20261118-kevin-perez-pablo",
       "name": "Kevin Perez Pablo",
       "when": "18 Nov 2026",
@@ -177,6 +211,17 @@
       "severityCrimes": [
         "Rape / sexual assault",
         "Assault / battery"
+      ]
+    },
+    {
+      "id": "dhs-20261123-roni-mendez-escobar",
+      "name": "Roni Mendez-Escobar",
+      "when": "23 Nov 2026",
+      "severity": 128,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Drug trafficking"
       ]
     },
     {
@@ -247,50 +292,6 @@
       ]
     },
     {
-      "id": "doj-20261117-jose-carlos-miranda-morales",
-      "name": "Jose Carlos Miranda Morales",
-      "when": "17 Nov 2026",
-      "severity": 110,
-      "severityReason": "Fraud (incl. voter fraud)",
-      "severityCrimes": [
-        "Fraud (incl. voter fraud)",
-        "Drug trafficking"
-      ]
-    },
-    {
-      "id": "x-2123817949651927070-carlos-rivera-morales",
-      "name": "Carlos Rivera Morales",
-      "when": "20 Nov 2026",
-      "severity": 105,
-      "severityReason": "Weapons",
-      "severityCrimes": [
-        "Weapons",
-        "Drug trafficking"
-      ]
-    },
-    {
-      "id": "doj-20261120-nikhil-gupta",
-      "name": "Nikhil Gupta",
-      "when": "20 Nov 2026",
-      "severity": 105,
-      "severityReason": "Weapons",
-      "severityCrimes": [
-        "Weapons",
-        "Drug trafficking"
-      ]
-    },
-    {
-      "id": "doj-20261119-ismael-rodriguez",
-      "name": "Ismael Rodriguez",
-      "when": "19 Nov 2026",
-      "severity": 105,
-      "severityReason": "Weapons",
-      "severityCrimes": [
-        "Weapons",
-        "Drug trafficking"
-      ]
-    },
-    {
       "id": "x-2123821572217618873-castulo-garay-silva",
       "name": "Castulo Garay-Silva",
       "when": "20 Nov 2026",
@@ -335,6 +336,56 @@
       "name": "Oscar Rosales Tumin Lopez",
       "when": "17 Nov 2026",
       "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261123-cristian-romero-saenz-argueta",
+      "name": "Cristian Romero Saenz-Argueta",
+      "when": "23 Nov 2026",
+      "severity": 83,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261123-jorge-enrique-garcia-rodriguez",
+      "name": "Jorge Enrique Garcia-Rodriguez",
+      "when": "23 Nov 2026",
+      "severity": 83,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261123-jorge-gilberto-zamorano-burciaga",
+      "name": "Jorge Gilberto Zamorano-Burciaga",
+      "when": "23 Nov 2026",
+      "severity": 83,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261123-jose-nahun-aleman-hernandez",
+      "name": "Jose Nahun Aleman Hernandez",
+      "when": "23 Nov 2026",
+      "severity": 83,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "dhs-20261123-oscar-evaristo-nunez",
+      "name": "Oscar Evaristo Nunez",
+      "when": "23 Nov 2026",
+      "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"

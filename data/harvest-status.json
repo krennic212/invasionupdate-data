@@ -1,19 +1,53 @@
 {
-  "checkedAt": 1795448025313,
-  "checkedAtIso": "2026-11-23T15:33:45.313Z",
-  "added": [],
+  "checkedAt": 1795456510207,
+  "checkedAtIso": "2026-11-23T17:55:10.207Z",
+  "added": [
+    "Oscar Evaristo Nunez",
+    "Freddi Chigo Mil",
+    "Jorge Gilberto Zamorano-Burciaga",
+    "Alexis Antonio Cedillos-Campos",
+    "Nehemia Noel Fuentes-Banegas",
+    "Juan Arevalo Mendez",
+    "Jose Nahun Aleman Hernandez",
+    "Cristian Wilfredo Alvarenga Aguilar",
+    "Aroldo Santos-Velasques",
+    "Cristian Romero Saenz-Argueta",
+    "Jorge Enrique Garcia-Rodriguez",
+    "Eduardo Perez-Legra",
+    "Josue Saul Garcia-Lopez",
+    "Roni Mendez-Escobar",
+    "Luzvin Orvando Garcia Moran",
+    "Israel Christopher Flores-Ortiz",
+    "Misael Lopez Gomez",
+    "Anibal Armando Chavarria Muy",
+    "Abdul Jalloh",
+    "In Laredo"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "stageUpdates": [],
   "sameNameReview": {
     "replaced": [],
-    "keptBoth": []
+    "keptBoth": [
+      {
+        "reviewId": "2105305872729563376",
+        "name": "Oscar Evaristo Nunez",
+        "liveId": "dhs-20261123-oscar-evaristo-nunez",
+        "why": "same country but too few case words in common (fairfax, child, despite)"
+      },
+      {
+        "reviewId": "2102058759879061635",
+        "name": "Roni Mendez-Escobar",
+        "liveId": "dhs-20261123-roni-mendez-escobar",
+        "why": "same country but too few case words in common (child, fairfax, virginia, sanctuary)"
+      }
+    ]
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 166,
+  "scannedReleases": 162,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 20 as approved: Oscar Evaristo Nunez, Freddi Chigo Mil, Jorge Gilberto Zamorano-Burciaga, Alexis Antonio Cedillos-Campos, Nehemia Noel Fuentes-Banegas, Juan Arevalo Mendez, Jose Nahun Aleman Hernandez, Cristian Wilfredo Alvarenga Aguilar, Aroldo Santos-Velasques, Cristian Romero Saenz-Argueta, Jorge Enrique Garcia-Rodriguez, Eduardo Perez-Legra, Josue Saul Garcia-Lopez, Roni Mendez-Escobar, Luzvin Orvando Garcia Moran, Israel Christopher Flores-Ortiz, Misael Lopez Gomez, Anibal Armando Chavarria Muy, Abdul Jalloh, In Laredo",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
