@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-24",
   "windowDays": 7,
-  "total": 202,
+  "total": 208,
   "rows": [
     {
       "id": "x-2124913412668874774-juan-carlos-chub-choc",
@@ -168,6 +168,19 @@
       ]
     },
     {
+      "id": "x-2125061341400485960-hamid-mahmud",
+      "name": "Hamid Mahmud",
+      "when": "23 Nov 2026",
+      "severity": 144,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Burglary / theft",
+        "Drug possession",
+        "DUI"
+      ]
+    },
+    {
       "id": "x-2123047427708002428-fabian-santiago-martinez",
       "name": "Fabian Santiago Martinez",
       "when": "18 Nov 2026",
@@ -280,17 +293,6 @@
       ]
     },
     {
-      "id": "dhs-20261119-jose-luis-guitierrez-rocha",
-      "name": "Jose Luis Guitierrez-Rocha",
-      "when": "19 Nov 2026",
-      "severity": 105,
-      "severityReason": "Weapons",
-      "severityCrimes": [
-        "Weapons",
-        "Drug trafficking"
-      ]
-    },
-    {
       "id": "dhs-20261123-amalore-arokiaraju-chinnappan",
       "name": "Amalore Arokiaraju Chinnappan",
       "when": "23 Nov 2026",
@@ -373,6 +375,26 @@
     {
       "id": "dhs-20261123-cristian-romero-saenz-argueta",
       "name": "Cristian Romero Saenz-Argueta",
+      "when": "23 Nov 2026",
+      "severity": 83,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2125006198797697036-fermin-valladares",
+      "name": "Fermin Valladares",
+      "when": "23 Nov 2026",
+      "severity": 83,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2125006664831008970-fredy-suruy-siney",
+      "name": "Fredy Suruy-Siney",
       "when": "23 Nov 2026",
       "severity": 83,
       "severityReason": "Child sex crime",
