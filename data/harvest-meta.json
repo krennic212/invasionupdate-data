@@ -1,20 +1,19 @@
 {
-  "updatedAt": "2026-11-24T14:51:02Z",
-  "rows": 1983,
-  "approved": 1953,
+  "updatedAt": "2026-11-24T17:53:39Z",
+  "rows": 1988,
+  "approved": 1958,
   "pending": 30,
   "photos": 539,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-24T14:51:02Z",
-  "lastAddedCount": 6,
+  "lastAddedAt": "2026-11-24T17:53:39Z",
+  "lastAddedCount": 5,
   "lastAdded": [
-    "Allan Ricardo Sanchez Fernandez",
-    "Hamid Mahmud",
-    "Oscar Wilfredo Guerra-Martinez",
-    "Fredy Suruy-Siney",
-    "Fermin Valladares",
-    "Jose Madrigal-Fernandez"
+    "Omar Higareda-Julian",
+    "Delmy Chirinos-Madrid",
+    "Noel Martinez-Papa",
+    "Javier Mendez-Juarez",
+    "Santos Gonzalez-Aguilar"
   ],
-  "harvestSha256": "8b6bd3c9fe3ec5fb814066cd4a44330c7da7e9f392f2ac242ea2a14ebe89b82a",
+  "harvestSha256": "b17df2a561082a86654023272f209e5c390211b1e3f064e55cefaae26c1ec6df",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
