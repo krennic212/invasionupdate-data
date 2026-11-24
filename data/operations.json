@@ -602,5 +602,18 @@
     "text": "USAO_MD 23 Nov 2026, as posted: Operation Take Back America We recently secured multiple immigration-related prosecutions against illegal aliens, including two Honduran nationals, who are charged with murder-related offenses, in connection with the Department of Justice’s Operation Take Back America. Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true,
     "people": []
+  },
+  {
+    "id": "op-icegov-20261124-115",
+    "name": "ICEgov Indiana operation",
+    "when": "24 Nov 2026",
+    "place": "Not stated",
+    "posted": 115,
+    "unnamed": 115,
+    "sourceUrl": "https://x.com/ICEgov/status/2125331975716163958",
+    "text": "ICEgov 24 Nov 2026, as posted: MAJOR ILLEGAL ALIEN SWEEP IN INDIANA @EROChicago arrested 115 illegal aliens during a targeted enforcement operation in Indiana, including 1 MAJOR ILLEGAL ALIEN SWEEP IN INDIANA @EROChicago arrested 115 illegal aliens during a targeted enforcement operation in Indiana, including 18 with final orders of removal. 115 total, 0 named on their own rows, 115 unnamed counted here.",
+    "heads": 115,
+    "operation": true,
+    "people": []
   }
 ]

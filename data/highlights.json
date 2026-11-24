@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-24",
   "windowDays": 7,
-  "total": 213,
+  "total": 226,
   "rows": [
     {
       "id": "x-2124913412668874774-juan-carlos-chub-choc",
@@ -293,6 +293,16 @@
       ]
     },
     {
+      "id": "x-2125323206386966787-edwin-o-mejia",
+      "name": "Edwin O. Mejia",
+      "when": "24 Nov 2026",
+      "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
       "id": "x-2125285736094290398-noel-martinez-papa",
       "name": "Noel Martinez-Papa",
       "when": "24 Nov 2026",
@@ -377,6 +387,16 @@
       "name": "Ignacio Garcia Vargas",
       "when": "19 Nov 2026",
       "severity": 92,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
+      ]
+    },
+    {
+      "id": "x-2125314718919241800-gerson-daniel-amaya-garcia",
+      "name": "Gerson Daniel Amaya-Garcia",
+      "when": "24 Nov 2026",
+      "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime"
