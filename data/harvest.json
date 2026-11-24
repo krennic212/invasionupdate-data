@@ -221,9 +221,9 @@
     "confirmedBy": "DOJ",
     "lat": 39.2946,
     "lon": -76.6252,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen",
-    "tags": []
+    "status": "approved",
+    "tags": [],
+    "approvalNote": "Approved by id 2026-11-23: USAO-MD release lists him among \"five additional illegal aliens\" indicted for illegal re-entry; guard missed the shared-sentence wording."
   },
   {
     "name": "Justo German Hernandez-Chavez",
@@ -250,9 +250,9 @@
     "confirmedBy": "DOJ",
     "lat": 39.2946,
     "lon": -76.6252,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen",
-    "tags": []
+    "status": "approved",
+    "tags": [],
+    "approvalNote": "Approved by id 2026-11-23: USAO-MD release lists him among \"five additional illegal aliens\" indicted for illegal re-entry; guard missed the shared-sentence wording."
   },
   {
     "name": "Noe Castillo-Mendez",
@@ -279,9 +279,9 @@
     "confirmedBy": "DOJ",
     "lat": 39.2946,
     "lon": -76.6252,
-    "status": "pending",
-    "holdReason": "not stated to be a non-citizen",
-    "tags": []
+    "status": "approved",
+    "tags": [],
+    "approvalNote": "Approved by id 2026-11-23: USAO-MD release lists him among \"five additional illegal aliens\" indicted for illegal re-entry; guard missed the shared-sentence wording."
   },
   {
     "name": "Waldermar Alquejay-Gonzalez",
