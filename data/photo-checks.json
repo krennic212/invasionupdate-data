@@ -13074,5 +13074,65 @@
     "name": "Ganesh Bista",
     "result": "none",
     "why": "no single person-specific image in the release"
+  },
+  "ice.gov/news/releases/ice-cracks-down-criminal-illegal-aliens-indiana-arrests-115-over-several-weeks|antonio camacho gutierrez": {
+    "checkedAt": "2026-11-24T23:50:42.494Z",
+    "name": "Antonio Camacho-Gutierrez",
+    "result": "none",
+    "why": "multi-person release: no image names this person"
+  },
+  "ice.gov/news/releases/ice-cracks-down-criminal-illegal-aliens-indiana-arrests-115-over-several-weeks|yefri arnoldo genis ardon": {
+    "checkedAt": "2026-11-24T23:50:42.545Z",
+    "name": "Yefri Arnoldo Genis-Ardon",
+    "result": "held",
+    "file": "ice-20261124-yefri-arnoldo-genis-ardon.jpg",
+    "image": "https://www.ice.gov/sites/default/files/2026-11/261124indianapolis-2.png",
+    "bytes": 7414,
+    "why": "needs visual check"
+  },
+  "ice.gov/news/releases/ice-cracks-down-criminal-illegal-aliens-indiana-arrests-115-over-several-weeks|omar pinto sanchez": {
+    "checkedAt": "2026-11-24T23:50:42.588Z",
+    "name": "Omar Pinto Sanchez",
+    "result": "held",
+    "file": "ice-20261124-omar-pinto-sanchez.jpg",
+    "image": "https://www.ice.gov/sites/default/files/2026-11/261124indianapolis-3.png",
+    "bytes": 11690,
+    "why": "needs visual check"
+  },
+  "ice.gov/news/releases/ice-cracks-down-criminal-illegal-aliens-indiana-arrests-115-over-several-weeks|esmelin perez jimenez": {
+    "checkedAt": "2026-11-24T23:50:42.704Z",
+    "name": "Esmelin Perez-Jimenez",
+    "result": "held",
+    "file": "ice-20261124-esmelin-perez-jimenez.jpg",
+    "image": "https://www.ice.gov/sites/default/files/2026-11/261124indianapolis-4.png",
+    "bytes": 13981,
+    "why": "needs visual check"
+  },
+  "ice.gov/news/releases/ice-cracks-down-criminal-illegal-aliens-indiana-arrests-115-over-several-weeks|luciano rojas gonzalez": {
+    "checkedAt": "2026-11-24T23:50:42.856Z",
+    "name": "Luciano Rojas-Gonzalez",
+    "result": "held",
+    "file": "ice-20261124-luciano-rojas-gonzalez.jpg",
+    "image": "https://www.ice.gov/sites/default/files/2026-11/261124indianapolis-5.png",
+    "bytes": 15570,
+    "why": "needs visual check"
+  },
+  "ice.gov/news/releases/ice-cracks-down-criminal-illegal-aliens-indiana-arrests-115-over-several-weeks|abraham ramos castro": {
+    "checkedAt": "2026-11-24T23:50:42.984Z",
+    "name": "Abraham Ramos Castro",
+    "result": "held",
+    "file": "ice-20261124-abraham-ramos-castro.jpg",
+    "image": "https://www.ice.gov/sites/default/files/2026-11/261124indianapolis-6.png",
+    "bytes": 15819,
+    "why": "needs visual check"
+  },
+  "ice.gov/news/releases/ice-cracks-down-criminal-illegal-aliens-indiana-arrests-115-over-several-weeks|osmel roel pospoy navarro": {
+    "checkedAt": "2026-11-24T23:50:43.093Z",
+    "name": "Osmel Roel Pospoy-Navarro",
+    "result": "held",
+    "file": "ice-20261124-osmel-roel-pospoy-navarro.jpg",
+    "image": "https://www.ice.gov/sites/default/files/2026-11/261124indianapolis-7.png",
+    "bytes": 17984,
+    "why": "needs visual check"
   }
 }

@@ -1,11 +1,14 @@
 {
-  "checkedAt": 1795560489398,
-  "checkedAtIso": "2026-11-24T22:48:09.398Z",
+  "checkedAt": 1795564233992,
+  "checkedAtIso": "2026-11-24T23:50:33.993Z",
   "added": [
-    "Sherwayne Benjamin Bellinfantie",
-    "Joseph Kwadwo Badu Boateng",
-    "Ganesh Bista",
-    "Operation Team (operation, not a person)"
+    "Antonio Camacho-Gutierrez",
+    "Yefri Arnoldo Genis-Ardon",
+    "Omar Pinto Sanchez",
+    "Esmelin Perez-Jimenez",
+    "Luciano Rojas-Gonzalez",
+    "Abraham Ramos Castro",
+    "Osmel Roel Pospoy-Navarro"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -16,9 +19,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 151,
+  "scannedReleases": 157,
   "error": null,
-  "note": "Added 4 as approved: Sherwayne Benjamin Bellinfantie, Joseph Kwadwo Badu Boateng, Ganesh Bista, Operation Team (operation, not a person)",
+  "note": "Added 7 as approved: Antonio Camacho-Gutierrez, Yefri Arnoldo Genis-Ardon, Omar Pinto Sanchez, Esmelin Perez-Jimenez, Luciano Rojas-Gonzalez, Abraham Ramos Castro, Osmel Roel Pospoy-Navarro",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

@@ -1,17 +1,21 @@
 {
-  "updatedAt": "2026-11-24T22:48:17Z",
-  "rows": 2006,
-  "approved": 1976,
+  "updatedAt": "2026-11-24T23:50:47Z",
+  "rows": 2013,
+  "approved": 1983,
   "pending": 30,
   "photos": 561,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-24T22:48:09Z",
-  "lastAddedCount": 3,
+  "lastAddedAt": "2026-11-24T23:50:33Z",
+  "lastAddedCount": 7,
   "lastAdded": [
-    "Sherwayne Benjamin Bellinfantie",
-    "Joseph Kwadwo Badu Boateng",
-    "Ganesh Bista"
+    "Antonio Camacho-Gutierrez",
+    "Yefri Arnoldo Genis-Ardon",
+    "Omar Pinto Sanchez",
+    "Esmelin Perez-Jimenez",
+    "Luciano Rojas-Gonzalez",
+    "Abraham Ramos Castro",
+    "Osmel Roel Pospoy-Navarro"
   ],
-  "harvestSha256": "e74f3b485d05aa3742c9198cd28ed278405d4e127952969c01b66bb3c7ebeded",
+  "harvestSha256": "25680519a1de96ffd0ad1e9378d9d133827d6c578c8c1f0b43fe4c75f9373f0d",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
