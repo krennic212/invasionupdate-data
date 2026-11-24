@@ -1,8 +1,22 @@
 {
-  "checkedAt": 1795474551733,
-  "checkedAtIso": "2026-11-23T22:55:51.733Z",
+  "checkedAt": 1795479297473,
+  "checkedAtIso": "2026-11-24T00:14:57.473Z",
   "added": [
-    "Jose Luis Rosales Ayala"
+    "Lucas Gallegos Vasquez",
+    "Luis Samuel Rios-Rodriguez",
+    "Danny Edelio Hernandez-Figeroa",
+    "Roberto Lopez-Perez",
+    "Waldermar Alquejay-Gonzalez",
+    "Noe Castillo-Mendez",
+    "Justo German Hernandez-Chavez",
+    "Braulio Heriberto Rodriguez-Martinez",
+    "Salvador Padilla-Valadez Jr.",
+    "Bayron Leopoldo Perez Batres",
+    "Luis Ernesto Chinchilla-Osorio",
+    "Hektor Avdyli",
+    "Francisco Federico Reyes-Bravo",
+    "Chukwuebuka Madueke Arinze",
+    "Jesus Romero-Morales"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -15,7 +29,7 @@
   "sentToReview": [],
   "scannedReleases": 162,
   "error": null,
-  "note": "Added 1 as approved: Jose Luis Rosales Ayala",
+  "note": "Added 15 as approved: Lucas Gallegos Vasquez, Luis Samuel Rios-Rodriguez, Danny Edelio Hernandez-Figeroa, Roberto Lopez-Perez, Waldermar Alquejay-Gonzalez, Noe Castillo-Mendez, Justo German Hernandez-Chavez, Braulio Heriberto Rodriguez-Martinez, Salvador Padilla-Valadez Jr., Bayron Leopoldo Perez Batres, Luis Ernesto Chinchilla-Osorio, Hektor Avdyli, Francisco Federico Reyes-Bravo, Chukwuebuka Madueke Arinze, Jesus Romero-Morales",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

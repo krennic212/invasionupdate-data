@@ -1,15 +1,25 @@
 {
-  "updatedAt": "2026-11-23T22:56:00Z",
-  "rows": 1962,
-  "approved": 1932,
-  "pending": 30,
+  "updatedAt": "2026-11-24T00:15:07Z",
+  "rows": 1977,
+  "approved": 1943,
+  "pending": 34,
   "photos": 539,
   "reviewRows": 781,
-  "lastAddedAt": "2026-11-23T22:55:51Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-11-24T00:14:57Z",
+  "lastAddedCount": 11,
   "lastAdded": [
-    "Jose Luis Rosales Ayala"
+    "Lucas Gallegos Vasquez",
+    "Luis Samuel Rios-Rodriguez",
+    "Danny Edelio Hernandez-Figeroa",
+    "Roberto Lopez-Perez",
+    "Waldermar Alquejay-Gonzalez",
+    "Salvador Padilla-Valadez Jr.",
+    "Bayron Leopoldo Perez Batres",
+    "Luis Ernesto Chinchilla-Osorio",
+    "Hektor Avdyli",
+    "Francisco Federico Reyes-Bravo",
+    "Jesus Romero-Morales"
   ],
-  "harvestSha256": "42aace940a95e988117ff76a7fde592106d56cc369d17d806e2df86f4b03b179",
+  "harvestSha256": "3f821511d9e442bc55da207ed92f49ae89488dffad24f089277b57b5bf675279",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
