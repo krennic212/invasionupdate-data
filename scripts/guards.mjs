@@ -199,6 +199,27 @@ export function deportedStated(text) {
     /\b[Rr]emoved\s+(?:him\s+|her\s+)?to\s+(?:the\s+)?[A-Z][a-z]+/.test(t)
   );
 }
+/**
+ * Krennic decision 2026-11-24 (t70u): "<Nationality> national" plus past removal wording counts as non-citizen wording
+ * ("honduran national removed basically counts. we wont call him an illegal alien, but we definitely want him in the site").
+ * Counts: "Honduran national ... ICE removed him", "was removed", "had been / previously removed", "removed from the U.S.".
+ * Does NOT count: forward-looking removal ("will / to be / could be removed", "pending / facing / awaiting removal",
+ * "removal proceedings"), and the citizen / dual-national / naturalized override still wins. The row keeps its own wording;
+ * nothing adds "illegal alien".
+ */
+const FOREIGN_NATIONAL = /\b(?!American\b|United\b|States\b|U\.S\.)[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?\s+national\b/;
+export function nationalRemovedStated(text) {
+  const s = String(text || "").replace(/\s+/g, " ");
+  if (CITIZEN_OVERRIDE.test(stripVictimIdentity(s).replace(CITIZEN_CLAIM, " "))) return false;
+  const nat = [...s.matchAll(new RegExp(FOREIGN_NATIONAL.source, "g"))].map((m) => m[0]);
+  if (!nat.some((m) => !/\b(?:American|United|States|U\.S)\b/.test(m))) return false;
+  const t = s
+    .replace(/\b(?:will|would|could|can|may|might|shall|to|must|should)\s+(?:also\s+|then\s+|soon\s+|likely\s+|eventually\s+)?(?:be|get)\s+removed\b/gi, " ")
+    .replace(/\b(?:faces?|facing|pending|awaiting|await|avoid(?:ed|ing)?|fight(?:ing|s)?|seek(?:s|ing)?)\s+(?:possible\s+|his\s+|her\s+)?removal\b/gi, " ")
+    .replace(/\bremoval\s+proceedings\b/gi, " ");
+  return /\b(?:was|were|been|previously|ICE|ERO|CBP|officers?|agents?|they|we)\s+(?:previously\s+|later\s+|successfully\s+)?removed\b/i.test(t) ||
+    /\bremoved\s+(?:him|her|them)\b/i.test(t) || /\bremoved\s+from\s+the\s+(?:U\.S\.|United States|country)/i.test(t);
+}
 /** Kept for callers of the 2026-10-19 morning rule; now the same as deportedStated (the wider rule). */
 export const deportedReentryStated = deportedStated;
 
@@ -391,7 +412,7 @@ export function holdReasons({ name, sentence, title = "", releaseText = "", labe
   if (isMinor(name, sentence, title)) out.push("possible minor / juvenile");
   if (!stageOk(label, sentence, title)) out.push(`stage: label "${label}" is later than the source wording`);
   if (atLarge(sentence, releaseText, name)) out.push("suspect described as still at large");
-  if (!nonCitizenStatedFor(name, sentence) && !denaturalizedStated(`${sentence} ${releaseText}`) && !deportedStated(`${sentence} ${releaseText}`) && !foreignOfficeFor(name, sentence)) out.push("not stated to be a non-citizen");
+  if (!nonCitizenStatedFor(name, sentence) && !denaturalizedStated(`${sentence} ${releaseText}`) && !deportedStated(`${sentence} ${releaseText}`) && !nationalRemovedStated(`${sentence} ${releaseText}`) && !foreignOfficeFor(name, sentence)) out.push("not stated to be a non-citizen");
   return out;
 }
 

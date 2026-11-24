@@ -140,6 +140,21 @@ Only completed revocation counts ("citizenship revoked", "was denaturalized", "r
 "seeks to revoke", "could be denaturalized" do NOT count: that person is still a U.S. citizen and stays held.
 The stage label still follows the sentence wording (Convicted / Charged / ...); never label beyond what is stated.
 
+## "<Nationality> national" + removed counts: Krennic decision 2026-11-24 (t70u)
+
+Krennic: "honduran national removed basically counts. we wont call him an illegal alien, but we definitely want him in
+the site. note this for the future." This is the default from now on.
+`nationalRemovedStated()` in `scripts/guards.mjs` checks the sentence plus the whole post text.
+- Counts: a "<Nationality> national" (Honduran, Mexican, ...; never American / U.S. / United States) together with
+  past removal wording: "ICE removed him", "was removed", "previously removed", "had been removed",
+  "removed from the U.S.".
+- Does NOT count: "will be / to be / could be removed", "pending / facing / awaiting removal", "removal proceedings".
+- The citizen / dual-national / naturalized override still wins.
+- Copy the wording exactly. Never add "illegal alien" to such a row.
+- "from Mexico" or "Mexican gang member" without the word "national" is not this rule. Ask Krennic.
+- Krennic holds ("Krennic kept held") still win.
+Applied to Jairo Recarte-Bazquez (@EROBuffalo 2123875509843218453), moved live 2026-11-24.
+
 ## "Deported" means illegal alien: Krennic decision 2026-10-19 (11:42 AM CT)
 
 This replaces the narrower morning rule (deported AND illegally reentered). When a post says the named person was

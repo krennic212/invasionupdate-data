@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-24T02:07:32Z",
-  "rows": 1978,
+  "updatedAt": "2026-11-24T14:24:46Z",
+  "rows": 1977,
   "approved": 1947,
-  "pending": 31,
+  "pending": 30,
   "photos": 539,
-  "reviewRows": 781,
+  "reviewRows": 776,
   "lastAddedAt": "2026-11-24T02:07:23Z",
   "lastAddedCount": 1,
   "lastAdded": [
     "VELASQUEZ BERNARDEZ"
   ],
-  "harvestSha256": "c989255e1f53ae57c5a87c68256e267c5d3e4e4f1cc727e75754651d9744193a",
+  "harvestSha256": "b7e77902e2a5d17bfa91080b38a2920607eb6c97888663e51555ac9402315d10",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

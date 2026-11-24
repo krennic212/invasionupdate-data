@@ -50,31 +50,6 @@
     "tags": []
   },
   {
-    "name": "Jairo Recarte-Bazquez",
-    "city": "Not stated",
-    "crime": "Removed: ICE Buffalo arrested 33-year-old Honduran national Jairo Recarte-Bazquez on Oct. 30. Recarte-Basquez was convicted of first-degree sexual abuse in Suffolk County Court. ICE removed him from the U.S. on Nov. 16.",
-    "usa": "ICE X post Nov 20, 2026 (@EROBuffalo)",
-    "foreign": "Not stated in post",
-    "picked": "11/20/2026 (@EROBuffalo post)",
-    "entered": "Not stated",
-    "office": "EROBuffalo",
-    "id": "x-2123875509843218453-jairo-recarte-bazquez",
-    "when": "20 Nov 2026",
-    "text": "@EROBuffalo Nov 20, 2026, as posted: ICE Buffalo arrested 33-year-old Honduran national Jairo Recarte-Bazquez on Oct. 30. Recarte-Basquez was convicted of first-degree sexual abuse in Suffolk County Court. ICE removed him from the U.S. on Nov. 16.",
-    "photo": "",
-    "via": "@EROBuffalo 2123875509843218453",
-    "sourceUrl": "https://x.com/EROBuffalo/status/2123875509843218453",
-    "voting": false,
-    "origin": "Honduras",
-    "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
-    "status": "pending",
-    "holdReason": "reviewer hold: Post says Honduran national and removed, but not illegal alien or deported wording; held for Krennic.",
-    "reviewReason": "held by guard: reviewer hold: Post says Honduran national and removed, but not illegal alien or deported wording; held for Krennic.",
-    "tags": []
-  },
-  {
     "name": "Micky Reinaldo Colon-Martinez",
     "city": "Not stated",
     "crime": "Convicted: Los Angeles ICE officers arrested Micky Reinaldo Colon-Martinez from Honduras. In 2023 Colon was sentenced to 5 years for weapons trafficking and disorderly conduct. In July an immigration judge ordered him removed. He’ll remain in ICE custody pending removal back to Honduras.",
@@ -581,41 +556,6 @@
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
     "tags": []
-  },
-  {
-    "name": "Allan Adonay Contreras-Vasquez",
-    "city": "Not stated",
-    "crime": "As posted: Allan Adonay Contreras-Vasquez, an illegal alien MS-13 member from Honduras, was previously arrested for attempted murder but released by local authorities.",
-    "usa": "DHS X post Oct 30, 2026 (@DHSgov)",
-    "foreign": "Not stated in post",
-    "picked": "10/30/2026 (@DHSgov post)",
-    "entered": "Not stated",
-    "office": "DHSgov",
-    "id": "x-2116251535055208567-allan-adonay-contreras-vasquez",
-    "when": "30 Oct 2026",
-    "text": "@DHSgov Oct 30, 2026, as posted: WANTED Allan Adonay Contreras-Vasquez, an illegal alien MS-13 member from Honduras, was previously arrested for attempted murder but released by local authorities. After his first release, he is alleged to have RAPED a 13-year-old girl. He was released a second time. If you have any information on his whereabouts, please reach out to the ICE tipline at (866)-347-2423. This tragic incident could have been avoided had Maryland sanctuary politicians honored ICE detainers.",
-    "photo": "",
-    "via": "@DHSgov 2116251535055208567",
-    "sourceUrl": "https://x.com/DHSgov/status/2116251535055208567",
-    "voting": false,
-    "origin": "Not stated",
-    "confirmedBy": "DHS",
-    "lat": null,
-    "lon": null,
-    "status": "pending",
-    "holdReason": "suspect described as still at large",
-    "reviewReason": "held by guard: suspect described as still at large",
-    "tags": [
-      "Gang",
-      "MS-13"
-    ],
-    "sameNameAs": [
-      {
-        "id": "dhs-20261030-allan-adonay-contreras-vasquez",
-        "decision": "kept both",
-        "why": "country not stated on both rows"
-      }
-    ]
   },
   {
     "name": "Rodnar Centeno Moreno",
@@ -3357,36 +3297,6 @@
     "entered": "Not stated",
     "foreign": "Not stated in post",
     "photo": "",
-    "voting": false,
-    "lat": 38.8462,
-    "lon": -77.3064,
-    "confirmedBy": "DHS",
-    "name": "Oscar Evaristo Nunez",
-    "city": "Fairfax, VA",
-    "origin": "Honduras",
-    "office": "ICEgov",
-    "id": "2105305872729563376",
-    "when": "30 Sep 2026",
-    "picked": "15 Sep 2026 (arrest as posted)",
-    "crime": "Charged: ICE arrested him Sept. 15. Illegal alien from Honduras. Previously charged with filming an undressed minor and two counts of aggravated sexual battery of a victim-while-under-13. Fairfax County released him; ICE arrested him. Do not name the child. Charged, not Convicted, unless a conviction is later posted. In custody is not Removed.",
-    "usa": "DHS post Sept. 30, 2026. Official photo. https://www.dhs.gov/news/2026/09/30/ice-arrests-illegal-alien-released-fairfax-county-despite-charges-sexually",
-    "text": "@DHSgov: ICE arrested Oscar Evaristo Nunez, illegal alien from Honduras, Sept. 15 after Fairfax County released him on child sex-crime charges. Official photo. Charged, not Removed. uniqueByName.",
-    "via": "@DHSgov 2105305872729563376",
-    "sourceUrl": "https://x.com/DHSgov/status/2105305872729563376",
-    "reviewReason": "X post (not an official .gov page)",
-    "tags": [],
-    "sameNameAs": [
-      {
-        "id": "dhs-20261123-oscar-evaristo-nunez",
-        "decision": "kept both",
-        "why": "same country but too few case words in common (fairfax, child, despite)"
-      }
-    ]
-  },
-  {
-    "entered": "Not stated",
-    "foreign": "Not stated in post",
-    "photo": "",
     "voting": true,
     "lat": null,
     "lon": null,
@@ -5890,36 +5800,6 @@
     "aka": "13 Chinese Nationals",
     "reviewReason": "X post (not an official .gov page)",
     "tags": []
-  },
-  {
-    "name": "Roni Mendez-Escobar",
-    "city": "Fairfax County, VA",
-    "crime": "Convicted: sentenced to six years and five months for receipt of child sexual abuse material and illegal re-entry. Illegal alien from Guatemala. ICE has not posted that he was put on a flight — not Removed.",
-    "usa": "Arrested October 2025. ICE lodged a detainer Oct. 23, 2025; Fairfax County released him Oct. 27, 2025. ICE arrested him April 22, 2026 after a court appearance. HSI investigated the child-exploitation counts; ERO Chantilly the immigration counts. Sentenced as posted Sept. 2026. ICE says it will be ready to deport after the sentence. Do not name child victims.",
-    "foreign": "Not stated in post",
-    "picked": "9/21/2026 (date of X post)",
-    "entered": "Illegally entered and was deported three times in 2015; illegally re-entered a fourth time at an unknown date and location (as posted).",
-    "office": "DHSgov",
-    "id": "2102058759879061635",
-    "when": "21 Sep 2026",
-    "text": "DHS: Roni Mendez-Escobar, an illegal alien from Guatemala, sentenced in Fairfax County, Virginia, to six years and five months after convictions for child pornography / CSAM and illegal re-entry. ICE arrested him April 22, 2026 after a prior sanctuary release. Official mugshot. Convicted, not Removed. Do not name child victims.",
-    "photo": "",
-    "via": "@DHSgov 2102058759879061635 · dhs.gov/news/2026/09/21/dhs-releases-statement-after-illegal-alien-sentenced-child-pornography-virginia",
-    "sourceUrl": "https://x.com/DHSgov/status/2102058759879061635",
-    "voting": false,
-    "origin": "Guatemala",
-    "confirmedBy": "DHS",
-    "lat": 38.8462,
-    "lon": -77.3064,
-    "reviewReason": "X post (not an official .gov page)",
-    "tags": [],
-    "sameNameAs": [
-      {
-        "id": "dhs-20261123-roni-mendez-escobar",
-        "decision": "kept both",
-        "why": "same country but too few case words in common (child, fairfax, virginia, sanctuary)"
-      }
-    ]
   },
   {
     "name": "Jorge Ernesto Anguiano-Monreal",
@@ -16727,36 +16607,6 @@
     "sourceUrl": "https://x.com/DHSgov/status/2100688234179113030",
     "reviewReason": "X post (not an official .gov page)",
     "tags": []
-  },
-  {
-    "name": "Anmol Anmol",
-    "city": "Not stated",
-    "crime": "Driving. Granted a New York CDL under the name “No Name Given Anmol.” Illegal alien from India. ICE arrested October 2025.",
-    "usa": "Arrested (not convicted on this card): ICE arrested him in October 2025. New York had granted him a commercial driver’s license under the name “No Name Given Anmol.”",
-    "picked": "10/2025 (ICE arrest as posted); X post 9/9/2026",
-    "office": "DHSgov",
-    "id": "2097764345199436171",
-    "when": "9 Sep 2026",
-    "text": "DHS: Anmol Anmol, an illegal alien from India, had been granted a CDL by New York with the name “No Name Given Anmol.” ICE arrested him in October 2025. Official DHS card.",
-    "photo": "",
-    "origin": "India",
-    "confirmedBy": "DHS",
-    "foreign": "Not stated in post",
-    "entered": "Not stated",
-    "voting": false,
-    "lat": null,
-    "lon": null,
-    "via": "@DHSgov 2097764345199436171",
-    "sourceUrl": "https://x.com/DHSgov/status/2097764345199436171",
-    "reviewReason": "X post (not an official .gov page)",
-    "tags": [],
-    "sameNameAs": [
-      {
-        "id": "dhs-20261105-anmol-anmol",
-        "decision": "kept both",
-        "why": "same country but too few case words in common (york)"
-      }
-    ]
   },
   {
     "name": "Akhror Bozorov",
