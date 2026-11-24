@@ -615,5 +615,16 @@
     "heads": 115,
     "operation": true,
     "people": []
+  },
+  {
+    "id": "op-thejusticedept-20261124-operation-team",
+    "name": "Operation Team",
+    "when": "24 Nov 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/usao-wdmo/pr/guatemalan-national-pleads-guilty-immigration-related-charges",
+    "people": [],
+    "text": "TheJusticeDept 24 Nov 2026, as posted: On July 6, 2026, members of the Kansa City Fugitive Operation Team encountered Solis-Ralios in Kansas City. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
   }
 ]

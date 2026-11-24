@@ -1,29 +1,17 @@
 {
-  "updatedAt": "2026-11-24T22:47:02Z",
-  "rows": 2003,
-  "approved": 1973,
+  "updatedAt": "2026-11-24T22:48:17Z",
+  "rows": 2006,
+  "approved": 1976,
   "pending": 30,
   "photos": 561,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-24T22:47:02Z",
-  "lastAddedCount": 15,
+  "lastAddedAt": "2026-11-24T22:48:09Z",
+  "lastAddedCount": 3,
   "lastAdded": [
-    "Saif Abdul Junab Ali",
-    "Madaleno Benitez-Mendez",
-    "Edwin O. Mejia",
-    "Miguel Angel De Jesus Rivas-Rivera",
-    "Mario Miranda Centeno",
-    "Abel Gonzalez-Vasquez",
-    "Laurian Zamora-Sanchez",
-    "Gamaliel Velasco Hernandez",
-    "Eduardo Lopez-Vargas",
-    "Martin Ruiz Garcia",
-    "Jose Angel Fiscal",
-    "Marvin Ozias Hernandez Luna",
-    "Gerson Daniel Amaya-Garcia",
-    "Francisco Solis-Ralios",
-    "Juan Ernesto Chan-Lopez"
+    "Sherwayne Benjamin Bellinfantie",
+    "Joseph Kwadwo Badu Boateng",
+    "Ganesh Bista"
   ],
-  "harvestSha256": "c0f71d43a9cfc2f0979d7a4071f626b94db6cdeca9164de5d7d5af7ba85ee0ba",
+  "harvestSha256": "e74f3b485d05aa3742c9198cd28ed278405d4e127952969c01b66bb3c7ebeded",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

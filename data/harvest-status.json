@@ -1,8 +1,11 @@
 {
-  "checkedAt": 1795486043058,
-  "checkedAtIso": "2026-11-24T02:07:23.058Z",
+  "checkedAt": 1795560489398,
+  "checkedAtIso": "2026-11-24T22:48:09.398Z",
   "added": [
-    "VELASQUEZ BERNARDEZ"
+    "Sherwayne Benjamin Bellinfantie",
+    "Joseph Kwadwo Badu Boateng",
+    "Ganesh Bista",
+    "Operation Team (operation, not a person)"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -13,9 +16,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 156,
+  "scannedReleases": 151,
   "error": null,
-  "note": "Added 1 as approved: VELASQUEZ BERNARDEZ",
+  "note": "Added 4 as approved: Sherwayne Benjamin Bellinfantie, Joseph Kwadwo Badu Boateng, Ganesh Bista, Operation Team (operation, not a person)",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
