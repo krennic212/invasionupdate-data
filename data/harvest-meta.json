@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-24T17:53:39Z",
+  "updatedAt": "2026-11-24T19:13:29Z",
   "rows": 1988,
   "approved": 1958,
   "pending": 30,
-  "photos": 539,
+  "photos": 561,
   "reviewRows": 776,
   "lastAddedAt": "2026-11-24T17:53:39Z",
   "lastAddedCount": 5,
@@ -14,6 +14,6 @@
     "Javier Mendez-Juarez",
     "Santos Gonzalez-Aguilar"
   ],
-  "harvestSha256": "b17df2a561082a86654023272f209e5c390211b1e3f064e55cefaae26c1ec6df",
+  "harvestSha256": "2ec91e3e95c0c696c380f57768aa924b76fa5c6ecf00699c14088e3caa27745c",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
