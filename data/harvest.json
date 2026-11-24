@@ -1,5 +1,33 @@
 [
   {
+    "name": "VELASQUEZ BERNARDEZ",
+    "city": "Louisiana",
+    "crime": "Removed: According to the indictment, on or about November 3, 2026, in the Eastern District of Louisiana, VELASQUEZ BERNARDEZ, an alien, was found in the United States after having been deported and removed therefrom on or about October 23, 2020, without the approval of the Attorney General of the United States or his designated successor, the Secretary of the Department of Homeland Security, having expressly consented to the defendant’s reapplication for admission into the United States.",
+    "usa": "DOJ release Nov 23, 2026: Honduran Citizen and Convicted Felon Indicted for Illegal Re-entry",
+    "foreign": "Not stated in post",
+    "picked": "11/23/2026 (DOJ release)",
+    "entered": "Not stated",
+    "office": "TheJusticeDept",
+    "id": "doj-20261123-velasquez-bernardez",
+    "when": "23 Nov 2026",
+    "severity": 5,
+    "severityReason": "Illegal entry / reentry",
+    "severityCrimes": [
+      "Illegal entry / reentry"
+    ],
+    "text": "DOJ Nov 23, 2026, as posted: According to the indictment, on or about November 3, 2026, in the Eastern District of Louisiana, VELASQUEZ BERNARDEZ, an alien, was found in the United States after having been deported and removed therefrom on or about October 23, 2020, without the approval of the Attorney General of the United States or his designated successor, the Secretary of the Department of Homeland Security, having expressly consented to the defendant’s reapplication for admission into the United States.",
+    "photo": "",
+    "via": "justice.gov/usao-edla/pr/honduran-citizen-and-convicted-felon-indicted-illegal-re-entry",
+    "sourceUrl": "https://www.justice.gov/usao-edla/pr/honduran-citizen-and-convicted-felon-indicted-illegal-re-entry",
+    "voting": false,
+    "origin": "Not stated",
+    "confirmedBy": "DOJ",
+    "lat": 31,
+    "lon": -92,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Jesus Romero-Morales",
     "city": "Kingman, AZ",
     "crime": "Charged: On Nov. 19, 2026, Jesus Romero-Morales was charged by criminal complaint with Transportation of an Illegal Alien. The agent also learned that Romero-Rosales was a Mexican citizen without legal authority to be in the United States and that he had been paid to transport the aliens from Arizona to destinations in California. [Case Number: 26-MJ-01943]",

@@ -1,28 +1,15 @@
 {
-  "updatedAt": "2026-11-24T00:16:14Z",
-  "rows": 1977,
-  "approved": 1946,
+  "updatedAt": "2026-11-24T02:07:32Z",
+  "rows": 1978,
+  "approved": 1947,
   "pending": 31,
   "photos": 539,
   "reviewRows": 781,
-  "lastAddedAt": "2026-11-24T00:14:57Z",
-  "lastAddedCount": 14,
+  "lastAddedAt": "2026-11-24T02:07:23Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Lucas Gallegos Vasquez",
-    "Luis Samuel Rios-Rodriguez",
-    "Danny Edelio Hernandez-Figeroa",
-    "Roberto Lopez-Perez",
-    "Waldermar Alquejay-Gonzalez",
-    "Noe Castillo-Mendez",
-    "Justo German Hernandez-Chavez",
-    "Braulio Heriberto Rodriguez-Martinez",
-    "Salvador Padilla-Valadez Jr.",
-    "Bayron Leopoldo Perez Batres",
-    "Luis Ernesto Chinchilla-Osorio",
-    "Hektor Avdyli",
-    "Francisco Federico Reyes-Bravo",
-    "Jesus Romero-Morales"
+    "VELASQUEZ BERNARDEZ"
   ],
-  "harvestSha256": "f6280c61c06723431dec2ea71cd21372f418bf8c344363d35f5d3c7c7d5fa6a1",
+  "harvestSha256": "c989255e1f53ae57c5a87c68256e267c5d3e4e4f1cc727e75754651d9744193a",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

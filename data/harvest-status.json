@@ -1,7 +1,9 @@
 {
-  "checkedAt": 1795479425635,
-  "checkedAtIso": "2026-11-24T00:17:05.635Z",
-  "added": [],
+  "checkedAt": 1795486043058,
+  "checkedAtIso": "2026-11-24T02:07:23.058Z",
+  "added": [
+    "VELASQUEZ BERNARDEZ"
+  ],
   "addedStatus": "approved",
   "heldPending": [],
   "stageUpdates": [],
@@ -11,9 +13,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 171,
+  "scannedReleases": 156,
   "error": null,
-  "note": "No new named people in official releases this run.",
+  "note": "Added 1 as approved: VELASQUEZ BERNARDEZ",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
