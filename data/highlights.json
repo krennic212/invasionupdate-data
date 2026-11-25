@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-11-24",
+  "asOf": "2026-11-25",
   "windowDays": 7,
-  "total": 205,
+  "total": 208,
   "rows": [
     {
       "id": "x-2124913412668874774-juan-carlos-chub-choc",
@@ -51,6 +51,18 @@
         "Attack on police officer",
         "Kidnapping / human trafficking",
         "Burglary / theft"
+      ]
+    },
+    {
+      "id": "dhs-20261124-alex-alender-florentino-maldanado",
+      "name": "Alex Alender Florentino-Maldanado",
+      "when": "24 Nov 2026",
+      "severity": 203,
+      "severityReason": "Murder / manslaughter",
+      "severityCrimes": [
+        "Murder / manslaughter",
+        "Rape / sexual assault",
+        "Assault / battery"
       ]
     },
     {
@@ -278,17 +290,6 @@
       "severityCrimes": [
         "Child sex crime",
         "Drug trafficking"
-      ]
-    },
-    {
-      "id": "dhs-20261123-francisco-juarez-abundis",
-      "name": "Francisco Juarez-Abundis",
-      "when": "23 Nov 2026",
-      "severity": 125,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons"
       ]
     },
     {

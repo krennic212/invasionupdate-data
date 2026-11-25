@@ -1,15 +1,18 @@
 {
-  "updatedAt": "2026-11-25T14:24:12Z",
-  "rows": 2028,
-  "approved": 1998,
+  "updatedAt": "2026-11-25T14:25:44Z",
+  "rows": 2032,
+  "approved": 2002,
   "pending": 30,
   "photos": 561,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-25T00:22:50Z",
-  "lastAddedCount": 1,
+  "lastAddedAt": "2026-11-25T14:25:30Z",
+  "lastAddedCount": 4,
   "lastAdded": [
-    "Vladimir Pesina-Galindo"
+    "Alex Alender Florentino-Maldanado",
+    "Kilmar Abrego Garcia",
+    "Nayeli Noemi Montoya Rodriguez",
+    "Pradeep Patel"
   ],
-  "harvestSha256": "357e0323fc1124de37ca545e976f87374721bc773528bbeae50a586a38ec192a",
+  "harvestSha256": "da9089544dc6267158c353e3e978a3c167c356fe584cc6b588067deab95ac084",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

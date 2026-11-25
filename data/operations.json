@@ -626,5 +626,18 @@
     "people": [],
     "text": "TheJusticeDept 24 Nov 2026, as posted: On July 6, 2026, members of the Kansa City Fugitive Operation Team encountered Solis-Ralios in Kansas City. Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true
+  },
+  {
+    "id": "op-thejusticedept-20261124-11",
+    "name": "Operation Get Your Kicks Supported",
+    "when": "24 Nov 2026",
+    "place": "Not stated",
+    "posted": 11,
+    "unnamed": 11,
+    "sourceUrl": "https://www.justice.gov/usao-ndok/pr/operation-get-your-kicks-supported-homeland-security-task-force-leads-disruption",
+    "people": [],
+    "text": "TheJusticeDept 24 Nov 2026, as posted: \" The operation resulted in: 23 arrests 11 individuals arrested on immigration-related charges 122 firearms recovered 126. 11 total, 0 named on their own rows, 11 unnamed counted here.",
+    "heads": 11,
+    "operation": true
   }
 ]

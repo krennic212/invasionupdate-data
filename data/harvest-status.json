@@ -1,8 +1,12 @@
 {
-  "checkedAt": 1795566170236,
-  "checkedAtIso": "2026-11-25T00:22:50.236Z",
+  "checkedAt": 1795616730921,
+  "checkedAtIso": "2026-11-25T14:25:30.921Z",
   "added": [
-    "Vladimir Pesina-Galindo"
+    "Alex Alender Florentino-Maldanado",
+    "Kilmar Abrego Garcia",
+    "Nayeli Noemi Montoya Rodriguez",
+    "Pradeep Patel",
+    "Operation Get Your Kicks Supported (operation, not a person)"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -13,9 +17,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 156,
+  "scannedReleases": 161,
   "error": null,
-  "note": "Added 1 as approved: Vladimir Pesina-Galindo",
+  "note": "Added 5 as approved: Alex Alender Florentino-Maldanado, Kilmar Abrego Garcia, Nayeli Noemi Montoya Rodriguez, Pradeep Patel, Operation Get Your Kicks Supported (operation, not a person)",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
