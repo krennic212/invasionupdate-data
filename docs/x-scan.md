@@ -90,7 +90,10 @@ The daily photo job stays at 1:03 PM CT.
      has no photo and no recorded decision. Never pass it one file: a missing or stale file prints "undecided: 0" and hides the backlog
      (Nov 8-23, 2026: 168 candidates went unseen). Zero X calls are needed; the image URLs are already in write.json.
    - `sharp` lives in node_modules (not committed). Run `npm ci || npm install` in the repo before `x-photo.mjs`.
-7. Check: `node scripts/dedupe.mjs data/harvest.json data/review.json && npm test && node scripts/validate.mjs`
+7. Check: first `node scripts/prior-arrests.mjs data/harvest.json data/review.json` (Krennic 2026-11-25: every live row must
+   carry the six prior-* fields; x-scan.mjs does not set them, so a new X row fails `npm test` without this step; also
+   `node scripts/tags.mjs` after hand edits), then
+   `node scripts/dedupe.mjs data/harvest.json data/review.json && npm test && node scripts/validate.mjs`
    (`npm test` re-stamps harvest-meta.json first via `pretest`, so a hand edit can no longer leave it stale.)
 8. Commit only if something changed (`git status --short`), `git pull --rebase`, then
    `git -c credential.helper='!gh auth git-credential' push`.
