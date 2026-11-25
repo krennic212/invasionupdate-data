@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-25",
   "windowDays": 7,
-  "total": 216,
+  "total": 226,
   "rows": [
     {
       "id": "x-2124913412668874774-juan-carlos-chub-choc",
@@ -290,6 +290,17 @@
       "severityCrimes": [
         "Child sex crime",
         "Drug trafficking"
+      ]
+    },
+    {
+      "id": "x-2125677400973271055-melvin-galeas-canizalez",
+      "name": "Melvin Galeas Canizalez",
+      "when": "25 Nov 2026",
+      "severity": 110,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime",
+        "Drug possession"
       ]
     },
     {
