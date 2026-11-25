@@ -402,8 +402,44 @@ export function foreignOfficeFor(name, sentence) {
   return clauses.some((p) => foreignOfficeStated(name, p));
 }
 
+/**
+ * Krennic 2026-11-24 (standing OK for rule fixes that pass a dry run): a single-defendant official
+ * release TITLE of the form "<Demonym> National(s)" with a capital N ("Peruvian National Extradited
+ * ...") states nationality / non-citizen status. Mirrors fraudtracker-data titleNationalStated.
+ * Title only; multi-defendant releases do not use the title; U.S.-citizen wording anywhere still wins.
+ * "Air National Guard", "First National Bank" and "National Fraud Enforcement Division" never count.
+ */
+const TITLE_NATIONAL =
+  /(?<![\p{L}])(?!American\b|Native\b)(?:\p{Lu}\p{Ll}*(?:an|ian|ese|ish|i|ic|ch|ss)|Greek|Thai|Lao|Filipino|Kyrgyz)(?:[- ]\p{Lu}\p{Ll}+)? Nationals?\b(?! (?:Guard|Bank|Park|Forest|Security|Lab|Laboratory|Institutes?|Cent(?:er|re)|Association|Committee|Airport|Cemetery|Monument|League|Team)\b)/u;
+const TITLE_CITIZEN_TOO = /\bdual (?:U\.S\. )?(?:national|citizen)|\bnaturali[sz]ed\b|\bU\.S\. citizen\b|\bUnited States citizen\b|\bAmerican citizen\b|\bnational of the United States\b/i;
+export function titleNationalStated(title) {
+  const t = String(title || "");
+  return TITLE_NATIONAL.test(t) && !TITLE_CITIZEN_TOO.test(t) && !/\bdual\b/i.test(t);
+}
+
+function isMultiDefendantRelease(title, sentence, releaseText) {
+  const t = String(title || "");
+  if (/\bNationals\b/.test(t)) return true;
+  if (/\b(?:two|three|four|five|six|seven|eight|nine|ten|\d+)\s+(?:other\s+)?(?:people|persons|defendants|individuals|men|women|others|suspects|aliens|nationals)\b/i.test(t)) return true;
+  if (/\b\d+\s+Others?\b/i.test(t)) return true;
+  const blob = `${sentence || ""} ${releaseText || ""}`;
+  const names = [...blob.matchAll(/\b([A-Z][\p{L}'’.-]*(?:\s+[A-Z][\p{L}'’.-]*){1,3}),\s+\d{1,3}\b/gu)].map((m) => m[1]);
+  return new Set(names).size > 1;
+}
+
+/** Title "<Demonym> National" counts only for a single-defendant official release with no U.S.-citizen wording anywhere. */
+export function titleNationalFor(name, title, sentence = "", releaseText = "", singleDefendant = null) {
+  if (!titleNationalStated(title)) return false;
+  if (singleDefendant === false) return false;
+  if (singleDefendant !== true && isMultiDefendantRelease(title, sentence, releaseText)) return false;
+  const all = `${title || ""} ${sentence || ""} ${releaseText || ""}`;
+  const cleaned = stripVictimIdentity(all).replace(CITIZEN_CLAIM, " ");
+  if (TITLE_CITIZEN_TOO.test(cleaned) || CITIZEN_OVERRIDE.test(cleaned)) return false;
+  return true;
+}
+
 /** All reasons a row must stay pending (empty array = may be auto-approved). */
-export function holdReasons({ name, sentence, title = "", releaseText = "", label = "", mononym = false }) {
+export function holdReasons({ name, sentence, title = "", releaseText = "", label = "", mononym = false, singleDefendant = null }) {
   const out = [];
   // A one-word name passes only when the parser found it in a clearly structured list entry (parse.mjs MONONYM_ENTRY).
   if ((String(name || "").trim().split(/\s+/).length < 2 && !mononym) || isPlaceName(name, { title })) out.push("not a person: name is a place name or a single word");
@@ -412,7 +448,7 @@ export function holdReasons({ name, sentence, title = "", releaseText = "", labe
   if (isMinor(name, sentence, title)) out.push("possible minor / juvenile");
   if (!stageOk(label, sentence, title)) out.push(`stage: label "${label}" is later than the source wording`);
   if (atLarge(sentence, releaseText, name)) out.push("suspect described as still at large");
-  if (!nonCitizenStatedFor(name, sentence) && !denaturalizedStated(`${sentence} ${releaseText}`) && !deportedStated(`${sentence} ${releaseText}`) && !nationalRemovedStated(`${sentence} ${releaseText}`) && !foreignOfficeFor(name, sentence)) out.push("not stated to be a non-citizen");
+  if (!nonCitizenStatedFor(name, sentence) && !denaturalizedStated(`${sentence} ${releaseText}`) && !deportedStated(`${sentence} ${releaseText}`) && !nationalRemovedStated(`${sentence} ${releaseText}`) && !foreignOfficeFor(name, sentence) && !titleNationalFor(name, title, sentence, releaseText, singleDefendant)) out.push("not stated to be a non-citizen");
   return out;
 }
 

@@ -1,3 +1,23 @@
+## 2026-11-24 (evening) title-national guard (Krennic standing OK for rule fixes that pass a dry run)
+
+- scripts/guards.mjs titleNationalStated / titleNationalFor, used in holdReasons: a single-defendant official release TITLE
+  of the form "<Demonym> National" with a capital N ("Peruvian National Extradited ...") states nationality / non-citizen
+  status. Mirrors fraudtracker-data titleNationalStated. Title only; multi-defendant releases do not use the title;
+  U.S.-citizen / naturalized / dual wording anywhere still wins. "Air National Guard", "First National Bank", "National
+  Fraud Enforcement Division", "American National" never count. Eagle guards (charged never shown as convicted, no minors,
+  at-large held) are unchanged. harvest.mjs passes singleDefendant when extractPeople finds exactly one person on the release.
+- Karount Jannet Toledo Vazquez (doj-20261124-karount-jannet-toledo-vazquez, OPA Nov 24, Charged, extradited from Peru) now
+  passes the guard and is approved (was pending "not stated to be a non-citizen"; only the title said "Peruvian National";
+  the body says "of Lima, Peru").
+- Dry run (old vs new): live + pending + review (2,803 rows) and 2,948 unique saved official releases (610 people extracted):
+  two hold->pass flips, both this title rule. Toledo Vazquez (pending -> pass). Yensy Santana-Alvarez
+  (doj-20261117-yensy-santana-alvarez, already approved/live; MDPA Nov 17 "Dominican National Charged with Illegal Reentry";
+  body says "of the Dominican Republic" and illegal reentry after a 2021 removal). The Yensy flip was accepted: Krennic
+  already approved her on Nov 17 as a headline-demonym case, and it changes nothing on the live feed. 0 new extractPeople
+  hits (title-only defendants are not parsed from the body). 0 removals, 0 demotions. Rows 2,027 -> 2,027 (1,996 approved /
+  31 pending -> 1,997 approved / 30 pending).
+- Tests: scripts/rules-1124b.test.mjs (7). Full suite 334/334.
+
 ## 2026-11-24 (evening) daily missed-cases check
 
 - Added via data/pending.json (13 live): Richard Odelis Villegas Nunez (D. Mass., Pleaded guilty, Dominican, unlawfully residing); 9 Venezuelan illegal aliens sentenced in the Nashville sex-trafficking ring (OPA/M.D. Tenn. Nov 23): Yilibeth Carmen Rivero-de Caldera, Kleiver Daniel Mota Rivero, Ramon De Jesus Velasquez Martinez, Wilmarys Del Valle Manzano Solorzano, Endrik Alexander Morales-Rivero, Ariannys Beatriz Gutierrez-Carrillo, Frankyanna Del Valle Romero-Rivero, Jesus Enrique Castillo Rodriguez, Yuribetzi Del Valle Gomez Machuca (all Convicted); Syed M. Makki (citizen of India, Convicted) and Trung Nguyen Van (Vietnamese national, Charged) from the W.D. Mo. scam-surge roundup; Zhi Ge (Singaporean citizen, Charged, D. Mass.).

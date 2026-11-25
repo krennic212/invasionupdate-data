@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-25T00:10:43Z",
+  "updatedAt": "2026-11-25T00:21:16Z",
   "rows": 2027,
-  "approved": 1996,
-  "pending": 31,
+  "approved": 1997,
+  "pending": 30,
   "photos": 561,
   "reviewRows": 776,
   "lastAddedAt": "2026-11-25T00:10:29Z",
-  "lastAddedCount": 13,
+  "lastAddedCount": 14,
   "lastAdded": [
     "Richard Odelis Villegas Nunez",
     "Yilibeth Carmen Rivero-de Caldera",
@@ -20,8 +20,9 @@
     "Yuribetzi Del Valle Gomez Machuca",
     "Syed M. Makki",
     "Trung Nguyen Van",
+    "Karount Jannet Toledo Vazquez",
     "Zhi Ge"
   ],
-  "harvestSha256": "7455ef44101108db956fd955dd64820fd5b26504d6a9c036b8beb99a52354cbd",
+  "harvestSha256": "19d20e51fd91798f7e0c07f177f669bb1a53278d0d35cc66dc3b5cd8ecc78f4f",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -225,7 +225,9 @@ async function dailySignalHits(errors) {
 export function rowsFromRelease(rel, { have, uniqueId, gate: gateFn = gate, existing = null, staged = null }) {
   const rows = [];
   const held = [];
-  for (const hit of extractPeople(rel.blocks, { title: rel.title })) {
+  const hits = extractPeople(rel.blocks, { title: rel.title });
+  const singleDefendant = hits.length === 1;
+  for (const hit of hits) {
     const k = nameKey(hit.name);
     if (!k) continue;
     if (have.has(k)) {
@@ -242,7 +244,7 @@ export function rowsFromRelease(rel, { have, uniqueId, gate: gateFn = gate, exis
     // Every state-source release is an election-crime release (isElectionCase), so its rows are voting rows.
     if (rel.stateCase) row.voting = true;
     const label = row.crime.slice(0, row.crime.indexOf(":"));
-    const reasons = holdReasons({ name: hit.name, sentence: hit.sentence, title: rel.title, releaseText: rel.blocks.join(" "), label, mononym: !!hit.mononym });
+    const reasons = holdReasons({ name: hit.name, sentence: hit.sentence, title: rel.title, releaseText: rel.blocks.join(" "), label, mononym: !!hit.mononym, singleDefendant });
     const gated = gateFn({ ...row, id: uniqueId(row.id, row) }, reasons);
     const placed = fillCity(gated);
     if (placed.city && placed.city !== "Not stated" && (placed.lat == null || placed.lon == null)) {
