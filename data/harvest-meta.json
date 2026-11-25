@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-25T17:49:18Z",
-  "rows": 2038,
-  "approved": 2008,
+  "updatedAt": "2026-11-25T19:07:41Z",
+  "rows": 2040,
+  "approved": 2010,
   "pending": 30,
-  "photos": 561,
+  "photos": 574,
   "reviewRows": 776,
   "lastAddedAt": "2026-11-25T17:49:04Z",
   "lastAddedCount": 4,
@@ -13,6 +13,6 @@
     "Shubh Ketankumar Patel",
     "Gavril Sandu"
   ],
-  "harvestSha256": "2af76f9559abc5495970f43de0a6de98340bf4c02a46268c45fa87795fecc512",
+  "harvestSha256": "6f4cb3f45b48bd1a5150bdc8372eaca2a8cb1b6fbd436b94a483eb4ef4e2bc88",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
