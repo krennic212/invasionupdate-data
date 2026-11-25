@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-24",
   "windowDays": 7,
-  "total": 232,
+  "total": 203,
   "rows": [
     {
       "id": "x-2124913412668874774-juan-carlos-chub-choc",
@@ -54,14 +54,15 @@
       ]
     },
     {
-      "id": "x-2123142187949121626-guillermo-cruz-juarez",
-      "name": "Guillermo Cruz Juarez",
-      "when": "18 Nov 2026",
+      "id": "doj-20261123-ramon-de-jesus-velasquez-martinez",
+      "name": "Ramon De Jesus Velasquez Martinez",
+      "when": "23 Nov 2026",
       "severity": 202,
-      "severityReason": "Child sex crime",
+      "severityReason": "Kidnapping / human trafficking",
       "severityCrimes": [
-        "Child sex crime",
-        "Kidnapping / human trafficking"
+        "Kidnapping / human trafficking",
+        "Alien smuggling",
+        "Weapons"
       ]
     },
     {
@@ -124,17 +125,6 @@
       ]
     },
     {
-      "id": "dhs-20261118-rene-rosario-miranda",
-      "name": "Rene Rosario-Miranda",
-      "when": "18 Nov 2026",
-      "severity": 164,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Rape / sexual assault"
-      ]
-    },
-    {
       "id": "dhs-20261123-misael-lopez-gomez",
       "name": "Misael Lopez Gomez",
       "when": "23 Nov 2026",
@@ -168,14 +158,91 @@
       ]
     },
     {
-      "id": "dhs-20261118-kevin-perez-pablo",
-      "name": "Kevin Perez Pablo",
-      "when": "18 Nov 2026",
-      "severity": 155,
-      "severityReason": "Rape / sexual assault",
+      "id": "doj-20261123-ariannys-beatriz-gutierrez-carrillo",
+      "name": "Ariannys Beatriz Gutierrez-Carrillo",
+      "when": "23 Nov 2026",
+      "severity": 147,
+      "severityReason": "Kidnapping / human trafficking",
       "severityCrimes": [
-        "Rape / sexual assault",
-        "Kidnapping / human trafficking"
+        "Kidnapping / human trafficking",
+        "Alien smuggling"
+      ]
+    },
+    {
+      "id": "doj-20261123-endrik-alexander-morales-rivero",
+      "name": "Endrik Alexander Morales-Rivero",
+      "when": "23 Nov 2026",
+      "severity": 147,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Alien smuggling"
+      ]
+    },
+    {
+      "id": "doj-20261123-frankyanna-del-valle-romero-rivero",
+      "name": "Frankyanna Del Valle Romero-Rivero",
+      "when": "23 Nov 2026",
+      "severity": 147,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Alien smuggling"
+      ]
+    },
+    {
+      "id": "doj-20261123-jesus-enrique-castillo-rodriguez",
+      "name": "Jesus Enrique Castillo Rodriguez",
+      "when": "23 Nov 2026",
+      "severity": 147,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Alien smuggling"
+      ]
+    },
+    {
+      "id": "doj-20261123-kleiver-daniel-mota-rivero",
+      "name": "Kleiver Daniel Mota Rivero",
+      "when": "23 Nov 2026",
+      "severity": 147,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Alien smuggling"
+      ]
+    },
+    {
+      "id": "doj-20261123-wilmarys-del-valle-manzano-solorzano",
+      "name": "Wilmarys Del Valle Manzano Solorzano",
+      "when": "23 Nov 2026",
+      "severity": 147,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Alien smuggling"
+      ]
+    },
+    {
+      "id": "doj-20261123-yilibeth-carmen-rivero-de-caldera",
+      "name": "Yilibeth Carmen Rivero-de Caldera",
+      "when": "23 Nov 2026",
+      "severity": 147,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Alien smuggling"
+      ]
+    },
+    {
+      "id": "doj-20261123-yuribetzi-del-valle-gomez-machuca",
+      "name": "Yuribetzi Del Valle Gomez Machuca",
+      "when": "23 Nov 2026",
+      "severity": 147,
+      "severityReason": "Kidnapping / human trafficking",
+      "severityCrimes": [
+        "Kidnapping / human trafficking",
+        "Alien smuggling"
       ]
     },
     {
@@ -188,18 +255,6 @@
         "Armed robbery / aggravated assault",
         "Burglary / theft",
         "Drug possession",
-        "DUI"
-      ]
-    },
-    {
-      "id": "x-2123047427708002428-fabian-santiago-martinez",
-      "name": "Fabian Santiago Martinez",
-      "when": "18 Nov 2026",
-      "severity": 138,
-      "severityReason": "Attack on police officer",
-      "severityCrimes": [
-        "Attack on police officer",
-        "Assault / battery",
         "DUI"
       ]
     },
@@ -230,62 +285,6 @@
       "name": "Francisco Juarez-Abundis",
       "when": "23 Nov 2026",
       "severity": 125,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons"
-      ]
-    },
-    {
-      "id": "x-2124941054382129328-sargon-benyamin",
-      "name": "Sargon Benyamin",
-      "when": "23 Nov 2026",
-      "severity": 125,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Weapons"
-      ]
-    },
-    {
-      "id": "x-2125285745141391412-delmy-chirinos-madrid",
-      "name": "Delmy Chirinos-Madrid",
-      "when": "24 Nov 2026",
-      "severity": 120,
-      "severityReason": "Armed robbery / aggravated assault",
-      "severityCrimes": [
-        "Armed robbery / aggravated assault",
-        "Drug trafficking"
-      ]
-    },
-    {
-      "id": "x-2124623960176304274-jose-trujillo-meraz",
-      "name": "Jose Trujillo-Meraz",
-      "when": "22 Nov 2026",
-      "severity": 117,
-      "severityReason": "Rape / sexual assault",
-      "severityCrimes": [
-        "Rape / sexual assault",
-        "Assault / battery"
-      ]
-    },
-    {
-      "id": "dhs-20261123-miguel-cruz-polanco",
-      "name": "Miguel Cruz-Polanco",
-      "when": "23 Nov 2026",
-      "severity": 115,
-      "severityReason": "Drug trafficking",
-      "severityCrimes": [
-        "Drug trafficking",
-        "Assault / battery",
-        "DUI"
-      ]
-    },
-    {
-      "id": "x-2123869232605851983-hector-campos-aguilar",
-      "name": "Hector Campos-Aguilar",
-      "when": "20 Nov 2026",
-      "severity": 113,
       "severityReason": "Armed robbery / aggravated assault",
       "severityCrimes": [
         "Armed robbery / aggravated assault",
@@ -476,26 +475,6 @@
       "id": "x-2123975987478032651-amilcar-perez-morfin",
       "name": "Amilcar Perez-Morfin",
       "when": "20 Nov 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2123077016693981331-abel-castaneda-gomez",
-      "name": "Abel Castaneda-Gomez",
-      "when": "18 Nov 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2123174418415595893-benjamin-stott",
-      "name": "Benjamin Stott",
-      "when": "18 Nov 2026",
       "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [
