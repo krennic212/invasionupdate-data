@@ -1,3 +1,10 @@
+## 2026-11-25 8:03 AM CT  Krennic approval recorded (via Rex)
+
+- Krennic: "Yes, accept single-person \"<Country> National\" headlines on Invasion Update". Already live since Nov 24 evening
+  under the standing rule-fix OK: commit 9ab5d32 (scripts/guards.mjs titleNationalStated, single-defendant only), tests 334/334,
+  dry run flipped 2 rows (Toledo Vazquez pending->approved; Yensy Santana-Alvarez already live, no visible change), 0 removals.
+  Feed run 45517525711 / feed commit 81f99ce. Live feed now 2,028 rows; Karount Jannet Toledo Vazquez live as Charged.
+
 ## 2026-11-24 (evening) title-national guard (Krennic standing OK for rule fixes that pass a dry run)
 
 - scripts/guards.mjs titleNationalStated / titleNationalFor, used in holdReasons: a single-defendant official release TITLE
