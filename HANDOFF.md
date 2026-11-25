@@ -1,3 +1,24 @@
+## 2026-11-25 9:30 AM CT  "# of previous arrests" fields (Krennic 8:15 AM) + Florentino-Maldanado
+
+- New scripts/prior-arrests.mjs. Every live row carries priorArrests (integer|null), priorArrestsPlus (true = "at least"),
+  priorArrestsQuote (exact phrase, null when no number), priorReleases, priorConvictions, priorRemovals (integer|null).
+  Read ONLY from the release's own words, about THIS person. null when no number is stated: "multiple arrests", "arrests for X, Y and Z",
+  "an arrest for DUI" (one item of a history list), "nearly 40", operation totals ("led to 12 arrests"). Counted: "six arrests",
+  "more than 30 prior arrests" (plus), "arrested FOUR TIMES for DUI" and "THREE prior arrests for DUI" (plus: count is for that offense),
+  "has a prior arrest" (1), "arrested twice", "racked up 38 arrests", "On five occasions ... NYPD arrested" + "Two more times ... arrested" (summed, plus).
+  "released from jail seven times" / "let him go seven times" is priorReleases and is never folded into arrests.
+- Wiring: harvest.mjs rowsFromRelease stamps the fields from the whole release (strict: only sentences naming the person, plus a pronoun
+  sentence right after; sentences naming a co-defendant are skipped). New workflow step + npm run harvest step run
+  `node scripts/prior-arrests.mjs data/harvest.json data/review.json`, which FILLS ONLY rows that lack the fields (never overwrites) from the row's stored text.
+  validate.mjs checks the fields (present, null or whole number >= 1, quote present when a number is set).
+- Backfill (one-off, /workspace/research/iu-prior-arrests/backfill.mjs): DOJ rows from saved DOJ corpora, dhs.gov / ice.gov pages fetched once (cache in that folder), X rows from stored post text.
+  2,028 rows: 10 got a priorArrests number, 2,018 null; 6 priorConvictions, 40 priorRemovals. Dry run: row count 2,028 -> 2,028, status/holdReason changed 0, every other field changed 0.
+- Tests: scripts/prior-arrests-1125.test.mjs (19). Full suite 353/353.
+- DHS Nov 24 release "SANCTUARY CALAMITY ..." added via data/pending.json: Alex Alender Florentino-Maldanado (official DHS spelling; NY Post/Fox spell
+  Maldonado), Honduran, Charged, incarcerated at Rikers (not at large), age 25. priorArrests 7+ (5 + 2 NYPD arrests in 2026), priorReleases 7.
+  Victim name left out of the row. The NY Post X post is a reporter source and was NOT used; the row stands on the DHS release.
+- Grok Build prompt for the column: /workspace/invasionupdate-data/GROK-BUILD-PROMPT-PRIOR-ARRESTS.md (needs Krennic to paste and publish).
+
 ## 2026-11-25 8:03 AM CT  Krennic approval recorded (via Rex)
 
 - Krennic: "Yes, accept single-person \"<Country> National\" headlines on Invasion Update". Already live since Nov 24 evening
