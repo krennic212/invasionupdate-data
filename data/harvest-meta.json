@@ -1,18 +1,26 @@
 {
-  "updatedAt": "2026-11-25T21:14:26Z",
-  "rows": 2040,
-  "approved": 2010,
+  "updatedAt": "2026-11-25T21:16:18Z",
+  "rows": 2052,
+  "approved": 2022,
   "pending": 30,
   "photos": 574,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-25T17:49:04Z",
-  "lastAddedCount": 4,
+  "lastAddedAt": "2026-11-25T21:16:08Z",
+  "lastAddedCount": 12,
   "lastAdded": [
-    "Zerisenay Tesfamicael Gerbregiorgis",
-    "Clinton Ogedegbe",
-    "Shubh Ketankumar Patel",
-    "Gavril Sandu"
+    "Yeabsira Fetene Lemma",
+    "Saturnino Lopez-Gonzalez",
+    "Juan Jose Paredes-Cruces",
+    "Hung Van Le",
+    "Naing Nyi Min",
+    "Jose Manuel Montoya-Sanchez",
+    "David Gomez-Perez",
+    "Victor Daniel Muniz-Garcia",
+    "Ariel Velasquez-Morales",
+    "Martin Schlaepfer",
+    "Francisco Ivan Velazquez",
+    "Jose Carlos Dalli Castro"
   ],
-  "harvestSha256": "a54223038b606067a1ea0aa8712a0f0df48d40fe0fd2ca39b054dea5a6ba13d1",
+  "harvestSha256": "507aec4eccb701be436490efba35919138c9ea6b804d4d90b80bab1529816e38",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

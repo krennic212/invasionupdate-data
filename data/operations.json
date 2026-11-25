@@ -661,5 +661,24 @@
     "people": [],
     "text": "TheJusticeDept 24 Nov 2026, as posted: “Through Operation Blackout, this FBI’s scam center demolition initiative, we’ve seized nearly $17 billion in illicit funds, taken more than 14,000 digital devices, directly warned over 11,000 Americans from scam attempts, and prevented more than $690 million in potential victim losses. Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true
+  },
+  {
+    "id": "op-dhsgov-20261125-2026",
+    "name": "DHSgov Washington state that include murder operation",
+    "when": "25 Nov 2026",
+    "place": "Not stated",
+    "posted": 2026,
+    "unnamed": 2016,
+    "sourceUrl": "https://www.dhs.gov/news/2026/11/25/dhs-condemns-washington-sanctuary-politicians-highlights-worst-illegal-aliens",
+    "people": [
+      "dhs-20261125-hung-van-le",
+      "dhs-20261125-naing-nyi-min",
+      "dhs-20261125-jose-manuel-montoya-sanchez",
+      "dhs-20261125-david-gomez-perez",
+      "dhs-20261125-victor-daniel-muniz-garcia"
+    ],
+    "text": "DHSgov 25 Nov 2026, as posted: DHS Condemns Washington Sanctuary Politicians, Highlights Worst Illegal Aliens with Criminal Histories in Washington State | Homeland Security Breadcrumb Home News Press Releases DHS Condemns Washington Sanctuary Politicians, Highlights Worst Illegal Aliens with Criminal Histories in Washington State News All DHS News Apps Blog Comunicados de Prensa Data Events Featured News Homeland Security LIVE Media Contacts Media Library National Terrorism Advisory System Press Releases Publications Library Academic Engagement Border Security Citizenship And Immigration Services Ombudsman Citizenship and Immigration Services Civil Rights and Civil Liberties Cybersecurity Disasters Do Business with DHS Election Security Homeland Security Careers Homeland Security Enterprise Human Trafficking Immigration and Customs Enforcement Intelligence and Analysis International Engagement Law Enforcement National Terrorism Advisory System Preventing Terrorism and Targeted Violence Privacy REAL ID Resilience Science and Technology Trade and Economic Security Transportation Security Weapons of Mass Destruction Social Media Subscribe DHS Condemns Washington Sanctuary Politicians, Highlights Worst Illegal Aliens with Criminal Histories in Washington State Release Date: November 25, 2026 Illegal aliens arrested in recent months have criminal histories in Washington state that include murder, child rape, and drug trafficking WASHINGTON – The United States Department of Homeland Security (DHS) released the following statement lambasting sanctuary politicians in the state of Washington after they suggested that U. 2026 total, 10 named on their own rows, 2016 unnamed counted here.",
+    "heads": 2016,
+    "operation": true
   }
 ]
