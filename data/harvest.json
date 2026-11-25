@@ -44356,7 +44356,7 @@
     "priorArrestsPlus": false,
     "priorArrestsQuote": null,
     "priorReleases": null,
-    "priorConvictions": null,
+    "priorConvictions": 5,
     "priorRemovals": null
   },
   {
