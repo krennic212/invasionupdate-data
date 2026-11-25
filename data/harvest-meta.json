@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T00:22:58Z",
+  "updatedAt": "2026-11-25T14:24:12Z",
   "rows": 2028,
   "approved": 1998,
   "pending": 30,
@@ -10,6 +10,6 @@
   "lastAdded": [
     "Vladimir Pesina-Galindo"
   ],
-  "harvestSha256": "7ae8ba63eb742ecad2b7eef5c7244e17b5dcd2c1bba130b277fa9e887c9e22d0",
+  "harvestSha256": "357e0323fc1124de37ca545e976f87374721bc773528bbeae50a586a38ec192a",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

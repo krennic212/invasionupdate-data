@@ -26,6 +26,7 @@ import { fileURLToPath } from "node:url";
 import { resolve as resolvePath } from "node:path";
 import { scrubVictimNames } from "./victims.mjs";
 import { extractPeople, htmlBlocks, decode, toRow } from "./parse.mjs";
+import { priorFromRelease } from "./prior-arrests.mjs";
 import { nameKey, nameKeysOf, routeRows, isOfficialUrl, isShortFormOf, stateOfficialSource } from "./rules.mjs";
 import { readStateSources, stateDefendants, stateGeo, BROWSER_UA } from "./state-sources.mjs";
 import { holdReasons, holdReasonsForRow } from "./guards.mjs";
@@ -264,6 +265,8 @@ export function rowsFromRelease(rel, { have, uniqueId, gate: gateFn = gate, exis
     // Standing rule: this row is written only after the release was opened and extractPeople found the name in it.
     // A page that 404s or never loads does not become a row. X posts are checked in x-scan.mjs --write
     // (scripts/link-check.mjs). 403 is blocked, not a dead link.
+    // Krennic 2026-11-25: prior arrests / releases / convictions / removals, only as the release states them for THIS person.
+    Object.assign(placed, priorFromRelease(rel.blocks, hit.name, hits.filter((h) => h !== hit).map((h) => h.name)));
     rows.push(scrubVictimNames(placed).row);
   }
   return { rows, held };

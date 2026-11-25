@@ -49,6 +49,16 @@ problems.push(...idProblems({ [FILE]: Array.isArray(rows) ? rows : [], "data/rev
     if (JSON.stringify(r.tags) !== JSON.stringify(want)) problems.push(`row (${r.name}): tags ${JSON.stringify(r.tags)} != ${JSON.stringify(want)}; run node scripts/tags.mjs`);
   }
 }
+// Prior-count fields (scripts/prior-arrests.mjs): present on every live row, each null or a whole number >= 1.
+for (const r of Array.isArray(rows) ? rows : []) {
+  if (!r || typeof r !== "object") continue;
+  for (const k of ["priorArrests", "priorReleases", "priorConvictions", "priorRemovals"]) {
+    if (!(k in r)) { problems.push(`row (${r.name}): no ${k}; run node scripts/prior-arrests.mjs`); continue; }
+    if (r[k] !== null && !(Number.isInteger(r[k]) && r[k] >= 1)) problems.push(`row (${r.name}): ${k} must be null or a whole number >= 1`);
+  }
+  if (r.priorArrests == null && (r.priorArrestsQuote || r.priorArrestsPlus)) problems.push(`row (${r.name}): priorArrests is null but a quote / plus flag is set`);
+  if (r.priorArrests != null && !String(r.priorArrestsQuote || "").trim()) problems.push(`row (${r.name}): priorArrests has no quoted phrase`);
+}
 for (const [i, r] of (Array.isArray(rows) ? rows : []).entries()) {
   const tag = `row ${i} (${r?.name ?? "?"})`;
   if (!r || typeof r !== "object") { problems.push(`${tag}: not an object`); continue; }
