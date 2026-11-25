@@ -131,3 +131,7 @@ test("every live feed row carries the six fields; counts are whole numbers with 
     else assert.equal(r.priorArrestsQuote, null, r.name);
   }
 });
+
+test("'removed from the U.S. 3 times' is a removal count", () => {
+  assert.equal(priorFor({ name: "Israel Domingo-Mendez", text: "He has been removed from the U.S. 3 times and was convicted of illegal reentry." }).priorRemovals, 3);
+});

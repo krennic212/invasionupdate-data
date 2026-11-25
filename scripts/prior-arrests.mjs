@@ -152,6 +152,8 @@ function convictionCount(s) {
 
 const REMOVAL_RES = [
   new RegExp(`\\b(?:previously\\s+|been\\s+|was\\s+|were\\s+)?(?:deported|removed)\\s+(?<n>(?:${NUM})\\s+times|twice|thrice)\\b`, "gi"),
+  // "removed from the U.S. 3 times", "previously removed at least twice"
+  new RegExp(`\\b(?:deported|removed)(?:\\s+[A-Za-z.]+){0,6}\\s+(?:at least\\s+)?(?<n>(?:${NUM})\\s+times|twice|thrice)\\b`, "gi"),
   new RegExp(`\\b(?<n>twice|thrice|${NUM})[- ](?:time[- ])?(?:deported|removed)\\b`, "gi"),
   new RegExp(`\\b(?<n>${NUM})\\s+(?:prior\\s+|previous\\s+)?(?:removals|deportations)\\b`, "gi"),
 ];
