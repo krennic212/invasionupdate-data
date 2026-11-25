@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T14:48:48Z",
+  "updatedAt": "2026-11-25T17:47:08Z",
   "rows": 2034,
   "approved": 2004,
   "pending": 30,
@@ -11,6 +11,6 @@
     "Ariel Antonio Velasquez-Morales",
     "Clevon Reeves"
   ],
-  "harvestSha256": "61e66a3773fb121ee82ecde57e26bc16996d5964d8cdcfd36fb05bead6c872f8",
+  "harvestSha256": "4b309a83a64a0498d4aa86d67bea3c2a1f63a18d7cce4808c81b1050f2e309fa",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
