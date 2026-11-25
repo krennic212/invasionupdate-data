@@ -1,28 +1,15 @@
 {
-  "updatedAt": "2026-11-25T00:21:16Z",
-  "rows": 2027,
-  "approved": 1997,
+  "updatedAt": "2026-11-25T00:22:58Z",
+  "rows": 2028,
+  "approved": 1998,
   "pending": 30,
   "photos": 561,
   "reviewRows": 776,
-  "lastAddedAt": "2026-11-25T00:10:29Z",
-  "lastAddedCount": 14,
+  "lastAddedAt": "2026-11-25T00:22:50Z",
+  "lastAddedCount": 1,
   "lastAdded": [
-    "Richard Odelis Villegas Nunez",
-    "Yilibeth Carmen Rivero-de Caldera",
-    "Kleiver Daniel Mota Rivero",
-    "Ramon De Jesus Velasquez Martinez",
-    "Wilmarys Del Valle Manzano Solorzano",
-    "Endrik Alexander Morales-Rivero",
-    "Ariannys Beatriz Gutierrez-Carrillo",
-    "Frankyanna Del Valle Romero-Rivero",
-    "Jesus Enrique Castillo Rodriguez",
-    "Yuribetzi Del Valle Gomez Machuca",
-    "Syed M. Makki",
-    "Trung Nguyen Van",
-    "Karount Jannet Toledo Vazquez",
-    "Zhi Ge"
+    "Vladimir Pesina-Galindo"
   ],
-  "harvestSha256": "19d20e51fd91798f7e0c07f177f669bb1a53278d0d35cc66dc3b5cd8ecc78f4f",
+  "harvestSha256": "7ae8ba63eb742ecad2b7eef5c7244e17b5dcd2c1bba130b277fa9e887c9e22d0",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

@@ -1,5 +1,33 @@
 [
   {
+    "name": "Vladimir Pesina-Galindo",
+    "city": "Harrisburg, PA",
+    "crime": "Convicted: HARRISBURG - The United States Attorney’s Office for the Middle District of Pennsylvania announced that Vladimir Pesina-Galindo, 36, a Mexican national most recently residing in Harrisburg, Pennsylvania, was sentenced to time served, or approximately 355 days, by United States District Judge Julia K. Munley for illegal reentry.",
+    "usa": "DOJ release Nov 24, 2026: Mexican National Sentenced to 355 Days in Prison for Illegal Reentry",
+    "foreign": "Not stated in post",
+    "picked": "11/24/2026 (DOJ release)",
+    "entered": "Entered illegally, as posted; date not stated.",
+    "office": "TheJusticeDept",
+    "id": "doj-20261124-vladimir-pesina-galindo",
+    "when": "24 Nov 2026",
+    "severity": 5,
+    "severityReason": "Illegal entry / reentry",
+    "severityCrimes": [
+      "Illegal entry / reentry"
+    ],
+    "text": "DOJ Nov 24, 2026, as posted: HARRISBURG - The United States Attorney’s Office for the Middle District of Pennsylvania announced that Vladimir Pesina-Galindo, 36, a Mexican national most recently residing in Harrisburg, Pennsylvania, was sentenced to time served, or approximately 355 days, by United States District Judge Julia K. Munley for illegal reentry.",
+    "photo": "",
+    "via": "justice.gov/usao-mdpa/pr/mexican-national-sentenced-355-days-prison-illegal-reentry",
+    "sourceUrl": "https://www.justice.gov/usao-mdpa/pr/mexican-national-sentenced-355-days-prison-illegal-reentry",
+    "voting": false,
+    "origin": "Mexico",
+    "confirmedBy": "DOJ",
+    "lat": 40.2732,
+    "lon": -76.8867,
+    "status": "approved",
+    "tags": []
+  },
+  {
     "name": "Zhi Ge",
     "city": "Boston, MA",
     "crime": "Charged: BOSTON – A Singaporean citizen has been extradited to the United States to face federal securities fraud and money laundering charges in Boston. Zhi Ge, a/k/a “Josh Ge,” a/k/a “Josh Gez,” a/k/a “Jay Gat,” 35, of Singapore, appeared on Nov. 20, 2026 before U.S. Magistrate Judge Jennifer C. Boal.",

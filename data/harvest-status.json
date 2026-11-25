@@ -1,21 +1,8 @@
 {
-  "checkedAt": 1795565429581,
-  "checkedAtIso": "2026-11-25T00:10:29.581Z",
+  "checkedAt": 1795566170236,
+  "checkedAtIso": "2026-11-25T00:22:50.236Z",
   "added": [
-    "Richard Odelis Villegas Nunez",
-    "Yilibeth Carmen Rivero-de Caldera",
-    "Kleiver Daniel Mota Rivero",
-    "Ramon De Jesus Velasquez Martinez",
-    "Wilmarys Del Valle Manzano Solorzano",
-    "Endrik Alexander Morales-Rivero",
-    "Ariannys Beatriz Gutierrez-Carrillo",
-    "Frankyanna Del Valle Romero-Rivero",
-    "Jesus Enrique Castillo Rodriguez",
-    "Yuribetzi Del Valle Gomez Machuca",
-    "Syed M. Makki",
-    "Trung Nguyen Van",
-    "Karount Jannet Toledo Vazquez",
-    "Zhi Ge"
+    "Vladimir Pesina-Galindo"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -26,9 +13,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 162,
+  "scannedReleases": 156,
   "error": null,
-  "note": "Added 14 as approved: Richard Odelis Villegas Nunez, Yilibeth Carmen Rivero-de Caldera, Kleiver Daniel Mota Rivero, Ramon De Jesus Velasquez Martinez, Wilmarys Del Valle Manzano Solorzano, Endrik Alexander Morales-Rivero, Ariannys Beatriz Gutierrez-Carrillo, Frankyanna Del Valle Romero-Rivero, Jesus Enrique Castillo Rodriguez, Yuribetzi Del Valle Gomez Machuca, Syed M. Makki, Trung Nguyen Van, Karount Jannet Toledo Vazquez, Zhi Ge",
+  "note": "Added 1 as approved: Vladimir Pesina-Galindo",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
