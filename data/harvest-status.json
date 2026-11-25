@@ -1,12 +1,12 @@
 {
-  "checkedAt": 1795616730921,
-  "checkedAtIso": "2026-11-25T14:25:30.921Z",
+  "checkedAt": 1795628944343,
+  "checkedAtIso": "2026-11-25T17:49:04.343Z",
   "added": [
-    "Alex Alender Florentino-Maldanado",
-    "Kilmar Abrego Garcia",
-    "Nayeli Noemi Montoya Rodriguez",
-    "Pradeep Patel",
-    "Operation Get Your Kicks Supported (operation, not a person)"
+    "Zerisenay Tesfamicael Gerbregiorgis",
+    "Clinton Ogedegbe",
+    "Shubh Ketankumar Patel",
+    "Gavril Sandu",
+    "Operation Blackout (operation, not a person)"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -17,9 +17,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 161,
+  "scannedReleases": 158,
   "error": null,
-  "note": "Added 5 as approved: Alex Alender Florentino-Maldanado, Kilmar Abrego Garcia, Nayeli Noemi Montoya Rodriguez, Pradeep Patel, Operation Get Your Kicks Supported (operation, not a person)",
+  "note": "Added 5 as approved: Zerisenay Tesfamicael Gerbregiorgis, Clinton Ogedegbe, Shubh Ketankumar Patel, Gavril Sandu, Operation Blackout (operation, not a person)",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

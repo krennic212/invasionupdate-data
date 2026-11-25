@@ -650,5 +650,16 @@
     "text": "USAO_NDOK 24 Nov 2026, as posted: Operation Get Your Kicks Supported Operation Get Your Kicks Supported by the Homeland Security Task Force Leads to the Disruption of an Alleged Firearms Trafficking Network, 23 Arrests, Seizure of 122 Firearms, and More Than 126 Pounds of Methamphetamine United States Attorney Christopher J. Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true,
     "people": []
+  },
+  {
+    "id": "op-thejusticedept-20261124-operation-blackout",
+    "name": "Operation Blackout",
+    "when": "24 Nov 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://www.justice.gov/opa/pr/justice-department-announces-largest-ever-crackdown-scammers-targeting-over-800-defendants",
+    "people": [],
+    "text": "TheJusticeDept 24 Nov 2026, as posted: “Through Operation Blackout, this FBI’s scam center demolition initiative, we’ve seized nearly $17 billion in illicit funds, taken more than 14,000 digital devices, directly warned over 11,000 Americans from scam attempts, and prevented more than $690 million in potential victim losses. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true
   }
 ]
