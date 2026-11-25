@@ -639,5 +639,16 @@
     "text": "TheJusticeDept 24 Nov 2026, as posted: \" The operation resulted in: 23 arrests 11 individuals arrested on immigration-related charges 122 firearms recovered 126. 11 total, 0 named on their own rows, 11 unnamed counted here.",
     "heads": 11,
     "operation": true
+  },
+  {
+    "id": "op-usao_ndok-20261124-operation-get-your-kicks-supported-operation",
+    "name": "Operation Get Your Kicks Supported Operation",
+    "when": "24 Nov 2026",
+    "place": "Not stated",
+    "posted": null,
+    "sourceUrl": "https://x.com/USAO_NDOK/status/2125378260406018552",
+    "text": "USAO_NDOK 24 Nov 2026, as posted: Operation Get Your Kicks Supported Operation Get Your Kicks Supported by the Homeland Security Task Force Leads to the Disruption of an Alleged Firearms Trafficking Network, 23 Arrests, Seizure of 122 Firearms, and More Than 126 Pounds of Methamphetamine United States Attorney Christopher J. Named operation. Posted count not stated in this text. Do not invent one.",
+    "operation": true,
+    "people": []
   }
 ]
