@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-26T00:09:49Z",
+  "updatedAt": "2026-11-26T19:13:45Z",
   "rows": 2072,
   "approved": 2042,
   "pending": 30,
-  "photos": 574,
+  "photos": 582,
   "reviewRows": 777,
   "lastAddedAt": "2026-11-26T00:09:12Z",
   "lastAddedCount": 9,
@@ -18,6 +18,6 @@
     "Xiuqin Huang",
     "Somboon Phaymany"
   ],
-  "harvestSha256": "2ddfb8f6dcf1d93e51b9d64250bbecf768138f01b11967b2632ebf873d505428",
+  "harvestSha256": "b432e4f075e39773ada17a04604157d35118b244816b709d8512ea4fbccca39c",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
