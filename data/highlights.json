@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-25",
   "windowDays": 7,
-  "total": 226,
+  "total": 181,
   "rows": [
     {
       "id": "x-2124913412668874774-juan-carlos-chub-choc",
@@ -25,32 +25,6 @@
         "Murder / manslaughter",
         "Armed robbery / aggravated assault",
         "Weapons"
-      ]
-    },
-    {
-      "id": "dhs-20261119-ronaldo-barbosa-ortiz",
-      "name": "Ronaldo Barbosa Ortiz",
-      "when": "19 Nov 2026",
-      "severity": 218,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Rape / sexual assault",
-        "Drug possession",
-        "DUI",
-        "Illegal entry / reentry"
-      ]
-    },
-    {
-      "id": "dhs-20261119-eldmond-saye-boley",
-      "name": "Eldmond Saye Boley",
-      "when": "19 Nov 2026",
-      "severity": 205,
-      "severityReason": "Attack on police officer",
-      "severityCrimes": [
-        "Attack on police officer",
-        "Kidnapping / human trafficking",
-        "Burglary / theft"
       ]
     },
     {
@@ -122,18 +96,6 @@
         "Kidnapping / human trafficking",
         "Armed robbery / aggravated assault",
         "Assault / battery"
-      ]
-    },
-    {
-      "id": "x-2123529700647551003-wilber-jandres",
-      "name": "Wilber Jandres",
-      "when": "19 Nov 2026",
-      "severity": 165,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "Assault / battery",
-        "Drug possession"
       ]
     },
     {
@@ -293,6 +255,39 @@
       ]
     },
     {
+      "id": "dhs-20261125-somboon-phaymany",
+      "name": "Somboon Phaymany",
+      "when": "25 Nov 2026",
+      "severity": 125,
+      "severityReason": "Attempted murder",
+      "severityCrimes": [
+        "Attempted murder",
+        "Assault / battery"
+      ]
+    },
+    {
+      "id": "dhs-20261123-francisco-juarez-abundis",
+      "name": "Francisco Juarez-Abundis",
+      "when": "23 Nov 2026",
+      "severity": 125,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons"
+      ]
+    },
+    {
+      "id": "x-2124941054382129328-sargon-benyamin",
+      "name": "Sargon Benyamin",
+      "when": "23 Nov 2026",
+      "severity": 125,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Weapons"
+      ]
+    },
+    {
       "id": "x-2125677400973271055-melvin-galeas-canizalez",
       "name": "Melvin Galeas Canizalez",
       "when": "25 Nov 2026",
@@ -387,16 +382,6 @@
       "id": "doj-20261120-william-saron-capayas",
       "name": "William Saron Capayas",
       "when": "20 Nov 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2123489083871952896-ignacio-garcia-vargas",
-      "name": "Ignacio Garcia Vargas",
-      "when": "19 Nov 2026",
       "severity": 92,
       "severityReason": "Child sex crime",
       "severityCrimes": [
