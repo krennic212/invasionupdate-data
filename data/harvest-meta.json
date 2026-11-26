@@ -1,23 +1,22 @@
 {
-  "updatedAt": "2026-11-26T19:13:45Z",
-  "rows": 2072,
-  "approved": 2042,
+  "updatedAt": "2026-11-26T22:56:43Z",
+  "rows": 2080,
+  "approved": 2050,
   "pending": 30,
   "photos": 582,
   "reviewRows": 777,
-  "lastAddedAt": "2026-11-26T00:09:12Z",
-  "lastAddedCount": 9,
+  "lastAddedAt": "2026-11-26T22:56:37Z",
+  "lastAddedCount": 8,
   "lastAdded": [
-    "Juan Ricardo Palacio Escobar",
-    "Jorge Luis Cisneros-Zuniga",
-    "Santo Victorino Lugo Veras",
-    "Fernando Bahena Ruiz",
-    "Efren Duque-Benitez",
-    "Efrain Rangel Fuentes",
-    "Jian Xin Huang",
-    "Xiuqin Huang",
-    "Somboon Phaymany"
+    "Jefferson Elias Alcantara-Matos",
+    "Omar Sanchez-Aquino",
+    "Deibi Hernadez-Castro",
+    "Gustavo Garcia-Nunez",
+    "Eduardo Trinidad Hernandez",
+    "Primitivo Arellano Cuevas",
+    "Jesus Romero-Geronimo",
+    "Juan Balthazar-Mayo"
   ],
-  "harvestSha256": "b432e4f075e39773ada17a04604157d35118b244816b709d8512ea4fbccca39c",
+  "harvestSha256": "bac9637bd1e5e43aec22bf120929eafe4576dad7d63867edccee702521500f24",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

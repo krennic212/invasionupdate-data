@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-26",
   "windowDays": 7,
-  "total": 181,
+  "total": 187,
   "rows": [
     {
       "id": "x-2124913412668874774-juan-carlos-chub-choc",
@@ -285,6 +285,16 @@
       "severityCrimes": [
         "Armed robbery / aggravated assault",
         "Weapons"
+      ]
+    },
+    {
+      "id": "x-2126083086987243532-primitivo-arellano-cuevas",
+      "name": "Primitivo Arellano Cuevas",
+      "when": "26 Nov 2026",
+      "severity": 110,
+      "severityReason": "Child sex crime",
+      "severityCrimes": [
+        "Child sex crime"
       ]
     },
     {
