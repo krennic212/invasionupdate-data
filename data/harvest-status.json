@@ -1,17 +1,7 @@
 {
-  "checkedAt": 1795651752915,
-  "checkedAtIso": "2026-11-26T00:09:12.915Z",
-  "added": [
-    "Juan Ricardo Palacio Escobar",
-    "Jorge Luis Cisneros-Zuniga",
-    "Santo Victorino Lugo Veras",
-    "Fernando Bahena Ruiz",
-    "Efren Duque-Benitez",
-    "Efrain Rangel Fuentes",
-    "Jian Xin Huang",
-    "Xiuqin Huang",
-    "Somboon Phaymany"
-  ],
+  "checkedAt": 1795704808511,
+  "checkedAtIso": "2026-11-26T14:53:28.511Z",
+  "added": [],
   "addedStatus": "approved",
   "heldPending": [],
   "stageUpdates": [],
@@ -21,9 +11,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 158,
+  "scannedReleases": 159,
   "error": null,
-  "note": "Added 9 as approved: Juan Ricardo Palacio Escobar, Jorge Luis Cisneros-Zuniga, Santo Victorino Lugo Veras, Fernando Bahena Ruiz, Efren Duque-Benitez, Efrain Rangel Fuentes, Jian Xin Huang, Xiuqin Huang, Somboon Phaymany",
+  "note": "No new named people in official releases this run.",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",
