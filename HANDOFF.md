@@ -1,3 +1,10 @@
+## 2026-11-25 (evening) daily missed-cases check
+
+- Added via data/pending.json (9): Juan Ricardo Palacio Escobar (D.R.I. Nov 25, Colombian national, Charged, ransomware-victim fraud); Jorge Luis Cisneros-Zuniga (E.D. La. Nov 25, "a native of Mexico" / "an alien" found after removal, indicted -> Charged; the builder first labeled him "Removed" from "reentry of a removed alien", overridden to Charged); Santo Victorino Lugo Veras (D. Mass. Nov 24, Dominican national unlawfully residing in Lawrence, Pleaded guilty, cocaine); Fernando Bahena Ruiz (W.D. Va. Nov 24, illegal alien from Mexico, sentenced -> Convicted); Efren Duque-Benitez and Efrain Rangel Fuentes (M.D. Fla. Nov 24, citizen and national of Mexico, sentenced -> Convicted); Jian Xin Huang and Xiuqin Huang (OPA/E.D.N.Y. Nov 24, Chinese nationals with lawful permanent residency, Charged, Medicare/Medicaid); Somboon Phaymany (DHS Nov 25 California sanctuary release, illegal alien from Cambodia convicted of attempted murder, later pardoned by Gov. Newsom; label keeps the release's "pardoned" sentence; no city stated, so no map pin).
+- Not added to IU: Zhang Huang, Yanle Huang (release states non-citizen status only for Jian Xin and Xiuqin).
+- Already listed: Daniel Enrrique Martinez Espana (ICE Miami Nov 25), DHS Nov 25 Worst-of-the-Worst five, DHS Nov 25 Washington list (11), DHS Sudan (Gerbregiorgis), all other DHS California-list names, Alexander Suvorov, Vladimir Pesina-Galindo.
+- Skipped: CBP Nov 25 "eight illegal aliens on a plane" (no names); CBP Eagle Pass / San Luis (U.S. citizen drivers).
+
 ## 2026-11-25 9:30 AM CT  "# of previous arrests" fields (Krennic 8:15 AM) + Florentino-Maldanado
 
 - New scripts/prior-arrests.mjs. Every live row carries priorArrests (integer|null), priorArrestsPlus (true = "at least"),
