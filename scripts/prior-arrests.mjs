@@ -73,12 +73,17 @@ const ARREST_RES = [
   new RegExp(`(?<fl>${FLOOR}\\s+)?\\b(?<n>${NUM})\\s+(?:prior|previous|earlier)\\s+(?:\\w+\\s+)?arrests?\\b`, "gi"),
   // "arrested 5 times", "has been arrested twice", "arrested by NYPD 38 times"
   new RegExp(`\\barrested(?:\\s+(?:by\\s+[A-Za-z.]+(?:\\s+[A-Za-z.]+)?|previously|repeatedly|in\\s+[A-Z][a-z]+))?\\s+(?<fl>${FLOOR}\\s+)?(?<n>(?:${NUM})\\s+times|twice|thrice)\\b`, "gi"),
+  // Krennic 2026-11-26 backfill: "He had twice been arrested in California", "has three times been arrested"
+  new RegExp(`\\b(?:has|had|have)\\s+(?<n>twice|thrice|(?:${NUM})\\s+times)\\s+been\\s+arrested\\b`, "gi"),
+  // "The U.S. Border Patrol later arrested Figueroa three times between Nov. 2015 and Feb. 2019" (an agency arrested the
+  // person, named or "him", N times). Only sentences already picked as about this person reach here.
+  new RegExp(`\\barrested\\s+(?:him|her|[A-Z][\\w'-]+(?:\\s+[A-Z][\\w'-]+){0,3})\\s+(?<fl>${FLOOR}\\s+)?(?<n>(?:${NUM})\\s+times|twice|thrice)\\b`, "g"),
 ];
 
 function arrestCount(s) {
   const strip = (r) => r && { ...r, n: r.n };
   // "arrested 5 times": group n includes "times"; reduce to the number
-  for (const re of ARREST_RES) {
+  for (const [ri, re] of ARREST_RES.entries()) {
     re.lastIndex = 0;
     let m;
     while ((m = re.exec(s))) {
@@ -89,8 +94,11 @@ function arrestCount(s) {
       if (n == null || n < 1 || n > 500) continue;
       // A floor when the release says "more than", leads with "includes / including / also", or goes on to name further arrests.
       // "THREE prior arrests for driving under the influence": the count is for that offense, so the total is at least that.
-      const forOffense = /^\s*(?:for|on charges? of)\b/i.test(s.slice(m.index + m[0].length));
-      const plus = forOffense || !!m.groups.fl || new RegExp(`${FLOOR}\\s*$`, "i").test(before) || /^(?:includes?|including|also)\b/i.test(m[0]) || /\b(?:as well as|and|plus)\s+(?:other\s+|additional\s+)?arrests\b/i.test(s.slice(m.index + m[0].length));
+      const after = s.slice(m.index + m[0].length);
+      const forOffense = /^\s*(?:for|on charges? of)\b/i.test(after) || /^\s+in\s+[A-Z][\w.]*(?:\s+[A-Z][\w.]*)?\s+for\b/.test(after);
+      // (2026-11-26 patterns only) A count limited to a stretch of time ("three times between Nov. 2015 and Feb. 2019") is a floor.
+      const window = ri >= 3 && /^\s+(?:between|since|during|from|in\s+(?:19|20)\d{2}|in\s+[A-Z][a-z]+\s+(?:19|20)\d{2})\b/.test(after);
+      const plus = forOffense || window || !!m.groups.fl || new RegExp(`${FLOOR}\\s*$`, "i").test(before) || /^(?:includes?|including|also)\b/i.test(m[0]) || /\b(?:as well as|and|plus)\s+(?:other\s+|additional\s+)?arrests\b/i.test(s.slice(m.index + m[0].length));
       return { n, plus, quote: clip(s, m) };
     }
   }
@@ -121,6 +129,8 @@ const RELEASE_RES = [
   new RegExp(`\\blet\\s+(?:him|her|them)\\s+(?:go|out)\\s+(?<fl>${FLOOR}\\s+)?(?<n>${NUM})\\s+times\\b`, "gi"),
   new RegExp(`\\breleased\\s+(?:him|her|them)\\s+(?<n>twice|thrice)\\b`, "gi"),
   new RegExp(`\\b(?<fl>${FLOOR}\\s+)?(?<n>${NUM})\\s+(?:prior|previous)\\s+releases\\b`, "gi"),
+  // "released Flores back into the community on two separate occasions"
+  new RegExp(`\\breleased\\s+(?:him|her|them|[A-Z][\\w-]+(?:\\s+[A-Z][\\w-]+){0,3})\\s+(?:back\\s+(?:onto|into)\\s+the\\s+(?:community|streets?)\\s+)?on\\s+(?<n>${NUM})\\s+(?:separate\\s+|different\\s+)?occasions\\b`, "gi"),
 ];
 
 function releaseCount(s) {
@@ -183,7 +193,11 @@ function nameHits(sentence, name) {
   if (s.includes(full)) return true;
   const parts = full.split(" ").filter((p) => p.length > 3);
   const last = parts[parts.length - 1];
-  return !!last && new RegExp(`\\b${last}\\b`).test(s);
+  if (!!last && new RegExp(`\\b${last}\\b`).test(s)) return true;
+  // A hyphenated surname is often shortened to its first half ("Figueroa-Bonilla" -> "Figueroa", "Flores-Arce" -> "Flores").
+  const tail = String(name || "").trim().split(/\s+/).pop() || "";
+  const half = tail.includes("-") ? keyOf(tail.split("-")[0]) : "";
+  return half.length > 3 && new RegExp(`\\b${half}\\b`).test(s);
 }
 
 const PRONOUN_LEAD = /^(?:He|She|His|Her|The\s+(?:defendant|suspect|illegal alien|criminal illegal alien|criminal alien|alien))\b/;
@@ -205,7 +219,10 @@ export function pick(all, name, siblings, strict) {
   let subjectIsSelf = !strict;
   for (const sen of all) {
     const self = nameHits(sen, name);
-    const other = siblings.some((n) => nameHits(sen, n));
+    // Test the others on the sentence minus this person's full name, so a sibling surname that is also one of this person's
+    // given names ("Elias Izquiero Manuel" vs "Jose Manuel Munoz Ramos") does not mark the sentence as shared.
+    const rest = keyOf(sen).split(keyOf(name)).join(" ");
+    const other = siblings.some((n) => nameHits(rest, n));
     if (self && other) { subjectIsSelf = false; continue; }
     if (self) subjectIsSelf = true;
     else if (other) subjectIsSelf = false;
@@ -243,6 +260,8 @@ export function siblingNames(rows, pool = rows) {
   for (const r of pool) {
     for (const u of [r?.sourceUrl, r?.via].filter(Boolean)) {
       const k = String(u).split(/[\s,]+/)[0];
+      // Only a link is a shared source. A bare handle ("@EROBaltimore 1927...") would join every post from that account.
+      if (!k.includes("/")) continue;
       if (!bySource.has(k)) bySource.set(k, new Map());
       bySource.get(k).set(r.id, r.name);
     }
