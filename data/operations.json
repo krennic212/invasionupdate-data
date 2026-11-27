@@ -1212,5 +1212,18 @@
     "text": "ICEgov 2 Sep 2026, as posted: Operation Rotten Apple ICE arrested more than 2,100 criminal illegal aliens in the New York – where sanctuary policies prohibit state and local law enforcement from working with federal immigration officers – during Operation Rotten Apple. Named operation. Posted count not stated in this text. Do not invent one.",
     "operation": true,
     "people": []
+  },
+  {
+    "id": "op-erosanfrancisco-20261127-21",
+    "name": "EROSanFrancisco Not stated operation",
+    "when": "27 Nov 2026",
+    "place": "Not stated",
+    "posted": 21,
+    "unnamed": 21,
+    "sourceUrl": "https://x.com/EROSanFrancisco/status/2126379275733418443",
+    "text": "EROSanFrancisco 27 Nov 2026, as posted: ICE San Francisco arrested 21 illegal alien commercial truckers since Oct. 25, 2026. 21 total, 0 named on their own rows, 21 unnamed counted here.",
+    "heads": 21,
+    "operation": true,
+    "people": []
   }
 ]
