@@ -36,3 +36,8 @@ test("sentences do not split after 'U.S.' or 'Nov.' so quotes stay whole", () =>
   assert.match(p.priorArrestsQuote, /U\.S\. Border Patrol/);
   assert.equal(sentences("He was arrested. She was not.").length, 2);
 });
+test("'removed from the United States on three occasions' is a removal count", () => {
+  const p = priorFor(row("Jon Doe", "Jon Doe was removed from the United States on three occasions, most recently in 2021."));
+  assert.equal(p.priorRemovals, 3);
+  assert.equal(p.priorArrests, null);
+});

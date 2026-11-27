@@ -172,6 +172,8 @@ const REMOVAL_RES = [
   new RegExp(`\\b(?:deported|removed)(?:\\s+[A-Za-z.]+){0,6}\\s+(?:at least\\s+)?(?<n>(?:${NUM})\\s+times|twice|thrice)\\b`, "gi"),
   new RegExp(`\\b(?<n>twice|thrice|${NUM})[- ](?:time[- ])?(?:deported|removed)\\b`, "gi"),
   new RegExp(`\\b(?<n>${NUM})\\s+(?:prior\\s+|previous\\s+)?(?:removals|deportations)\\b`, "gi"),
+  // 2026-11-27: "removed from the United States on three occasions", "deported on two prior occasions"
+  new RegExp(`\\b(?:deported|removed)(?:\\s+[A-Za-z.]+){0,6}?\\s+on\\s+(?<n>${NUM})\\s+(?:separate\\s+|prior\\s+|previous\\s+|different\\s+)?occasions\\b`, "gi"),
 ];
 function removalCount(s) {
   for (const re of REMOVAL_RES) {

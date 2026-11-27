@@ -54,3 +54,7 @@ test("reinstated YYYY final order", () => {
   const t = "Omar Pinto Sanchez, 40, a criminal illegal alien from Mexico. Sanchez has a reinstated 2016 final order of removal from a judge.";
   assert.equal(orderDateIn(t)?.date, "2016");
 });
+test("2026-11-27: 'An immigration judge ordered Ordonez removed ... on Feb. 27, 2023' names the person", async () => {
+  const { orderDateIn } = await import("./removal-order.mjs");
+  assert.equal(orderDateIn("An immigration judge ordered Ordonez removed from the United States on Feb. 27, 2023.").date, "2023-02-27");
+});

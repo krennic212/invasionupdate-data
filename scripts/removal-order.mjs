@@ -20,7 +20,7 @@ const MONTHS = ["january", "february", "march", "april", "may", "june", "july", 
 const MON = "(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|June?|July?|Aug(?:ust)?|Sept?(?:ember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\\.?";
 const DATE = `(?:${MON}\\s+\\d{1,2}(?:st|nd|rd|th)?,?\\s+(?:19|20)\\d{2}|${MON}\\s+(?:of\\s+)?(?:19|20)\\d{2}|(?:19|20)\\d{2})`;
 // The order itself: "final order of removal", "removal order", "order of deportation", "ordered removed/deported".
-const ORDER = "(?:(?:final\\s+)?(?:order|orders)\\s+of\\s+(?:removal|deportation|exclusion)|(?:final\\s+)?(?:removal|deportation|expedited removal)\\s+order|ordered\\s+(?:him\\s+|her\\s+)?(?:removed|deported|excluded)(?:\\s+(?:from|to)\\s+[^,.;]{1,40}?)?)";
+const ORDER = "(?:(?:final\\s+)?(?:order|orders)\\s+of\\s+(?:removal|deportation|exclusion)|(?:final\\s+)?(?:removal|deportation|expedited removal)\\s+order|ordered\\s+(?:him\\s+|her\\s+|[A-Z][\\w'-]+(?:[\\s-][A-Z][\\w'-]+){0,2}\\s+)?(?:removed|deported|excluded)(?:\\s+(?:from|to)\\s+[^,.;]{1,40}?)?)";
 const GAP = "[^.;]{0,60}?";
 const RES = [
   // "... ordered removed by an immigration judge on May 3, 2019" / "issued a final order of removal on February 3, 2020"

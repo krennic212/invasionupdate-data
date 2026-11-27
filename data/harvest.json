@@ -10407,7 +10407,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Authorities previously removed Hernandez Guardado from the United States twice",
+        "url": "https://www.justice.gov/usao-md/pr/illegal-alien-sentenced-attempted-murder-hire",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Jose Arevalo Carballo",
@@ -27284,12 +27291,19 @@
     "lon": null,
     "status": "approved",
     "tags": [],
-    "priorArrests": null,
-    "priorArrestsPlus": false,
-    "priorArrestsQuote": null,
+    "priorArrests": 4,
+    "priorArrestsPlus": true,
+    "priorArrestsQuote": "Cruz-Hernandez had already been arrested on four prior occasions for driving under the influence.",
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": null,
+    "priorSources": {
+      "priorArrests": {
+        "quote": "Cruz-Hernandez had already been arrested on four prior occasions for driving under the influence.",
+        "url": "https://www.justice.gov/usao-wdmo/pr/illegal-alien-mexico-sentenced-federal-prison-immigration-violation",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Loi Nguyen",
@@ -28797,7 +28811,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 5,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Perez-Roblero had been deported from the United States five times – in 2009, 2011, 2017, 2020, and 2021",
+        "url": "https://www.justice.gov/usao-wdmo/pr/illegal-alien-guatemala-sentenced-14-months-illegal-reentry",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Walter Alvarado",
@@ -29170,7 +29191,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 3,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Chavez-Paz has illegally entered or reentered the United States four times and has been deported on three previous occasions",
+        "url": "https://www.justice.gov/usao-edva/pr/illegal-immigrant-honduras-pleads-guilty-reentering-country-and-stealing-identity-us",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Luis Antonio Tejada-Santamaria",

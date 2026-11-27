@@ -162,6 +162,17 @@
       "outlet": "DHS (official)",
       "confidence": "CONFLICT, not applied: row already has orderedRemovedDate 2000; DHS gives the BIA appeal date (2002-11-14), not the judge order date. Krennic to decide which to keep.",
       "added": "2026-11-27"
+    },
+    {
+      "rowId": "x-2114860580788203914-jose-vasquez-lopez",
+      "name": "Jose Vasquez-Lopez",
+      "field": "priorRemovals",
+      "count": 5,
+      "quote": "Jose Vasquez-Lopez, an illegal alien from Mexico, who was previously removed from the United States on five separate occasions and convicted of battery in Florida.",
+      "sourceUrl": "https://www.dhs.gov/news/2025/07/14/dhs-releases-update-criminal-illegal-aliens-arrested-children-rescued-during",
+      "outlet": "DHS press release (official)",
+      "confidence": "low: identity uncertain. Same name and country, but the DHS item is a July 2025 Florida battery case and the row is an Oct 2026 ERO San Antonio arrest (age 32, terroristic threat); no shared second detail",
+      "addedBy": "Tech 2026-11-27"
     }
   ]
 }

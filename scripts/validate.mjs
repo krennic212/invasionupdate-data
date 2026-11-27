@@ -59,6 +59,16 @@ for (const r of Array.isArray(rows) ? rows : []) {
   }
   if (r.priorArrests == null && (r.priorArrestsQuote || r.priorArrestsPlus)) problems.push(`row (${r.name}): priorArrests is null but a quote / plus flag is set`);
   if (r.priorArrests != null && !String(r.priorArrestsQuote || "").trim()) problems.push(`row (${r.name}): priorArrests has no quoted phrase`);
+  // Optional provenance (2026-11-27): priorSources.<field> = { quote, url, kind: "official" | "news" } for counts filled from a
+  // page other than the row's own excerpt. Each entry needs an exact quote, an https URL and a filled field.
+  if (r.priorSources != null) {
+    if (typeof r.priorSources !== "object" || Array.isArray(r.priorSources)) problems.push(`row (${r.name}): priorSources must be an object`);
+    else for (const [k, v] of Object.entries(r.priorSources)) {
+      if (!["priorArrests", "priorReleases", "priorRemovals"].includes(k)) problems.push(`row (${r.name}): priorSources.${k} is not a prior-count field`);
+      else if (r[k] == null) problems.push(`row (${r.name}): priorSources.${k} is set but ${k} is null`);
+      if (!v || !String(v.quote || "").trim() || !/^https:\/\//.test(String(v.url || "")) || !["official", "news"].includes(v.kind)) problems.push(`row (${r.name}): priorSources.${k} needs quote, https url and kind official|news`);
+    }
+  }
 }
 // Removal-order date (scripts/removal-order.mjs, Krennic 2026-11-26 t81u): optional; checked only when present.
 for (const r of Array.isArray(rows) ? rows : []) if (r && typeof r === "object") problems.push(...orderProblems(r));
