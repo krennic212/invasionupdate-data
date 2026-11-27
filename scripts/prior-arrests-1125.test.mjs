@@ -22,12 +22,14 @@ test("'arrested FOUR TIMES for DUI' is a floor (count is for that offense)", () 
 test("'THREE prior arrests for DUI, as well as arrests for ...' is a floor", () => {
   assert.deepEqual(arrests("Kevin Perez Pablo", "Kevin Perez Pablo His criminal history includes THREE prior arrests for driving under the influence, as well as arrests for TWO counts of child endangerment and driving without a license."), [3, true]);
 });
-test("'has a prior arrest for ...' is one", () => {
-  assert.deepEqual(arrests("Luis Alfrando Digueros Quintanilla", "Digueros Quintanilla has a prior arrest for felony sexual assault of a child out of Dallas County."), [1, false]);
-  assert.deepEqual(arrests("Jose Almendares Suazo", "Almendares Suazo has a prior conviction for assault causing bodily injury, as well as a prior arrest for assault involving family violence."), [1, false]);
+test("'has a prior arrest for ...' is not a count (2026-11-27: one item of a history, like 'an arrest for X')", () => {
+  assert.deepEqual(arrests("Luis Alfrando Digueros Quintanilla", "Digueros Quintanilla has a prior arrest for felony sexual assault of a child out of Dallas County."), [null, false]);
+  assert.deepEqual(arrests("Jose Almendares Suazo", "Almendares Suazo has a prior conviction for assault causing bodily injury, as well as a prior arrest for assault involving family violence."), [null, false]);
+  assert.deepEqual(arrests("Delon Jaundoo", "His criminal history includes a prior arrest for third-degree assault."), [null, false]);
 });
-test("'includes a prior arrest' is a floor of one", () => {
-  assert.deepEqual(arrests("Delon Jaundoo", "His criminal history includes a prior arrest for third-degree assault."), [1, true]);
+test("'one prior arrest' / 'his only prior arrest' is still one", () => {
+  assert.deepEqual(arrests("Jon Doe", "Jon Doe has one prior arrest."), [1, false]);
+  assert.deepEqual(arrests("Jon Doe", "Jon Doe was held. His only prior arrest was for theft."), [1, false]);
 });
 test("number words and digits: 'arrested twice', 'five prior arrests', '38 arrests'", () => {
   assert.deepEqual(arrests("Jon Doe", "Jon Doe, an illegal alien from Peru, has been arrested twice in Queens."), [2, false]);

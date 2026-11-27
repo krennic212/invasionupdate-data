@@ -66,18 +66,23 @@ function firstCount(s, regexes, { allowFloor = true } = {}) {
 
 const LEAD = "(?:with|has|had|having|have|history of|record of|racked up|accrued|accumulated|including|includes|also|and|of|prior|previous|previously)";
 const ADJ = "(?:(?:prior|previous|past|earlier|criminal|separate|different|known|additional|felony|misdemeanor|other|total|documented)\\s+){0,2}";
+// "twice-deported" / "twice deported" / "three times removed" right after the number belongs to removals, not arrests
+// ("ICE arrested twice-deported Juan ...").
+const NOT_REMOVAL = "(?![- ]+(?:time[- ]+)?(?:deported|removed|returned)\\b)";
 const ARREST_RES = [
   // "with six arrests", "more than 30 prior arrests", "has 5 previous arrests"
   new RegExp(`\\b${LEAD}\\s+(?<fl>${FLOOR}\\s+)?(?<n>${NUM})\\s+${ADJ}arrests?\\b`, "gi"),
   // "38 prior arrests" without a lead-in word is only taken with prior / previous in front of arrests
   new RegExp(`(?<fl>${FLOOR}\\s+)?\\b(?<n>${NUM})\\s+(?:prior|previous|earlier)\\s+(?:\\w+\\s+)?arrests?\\b`, "gi"),
   // "arrested 5 times", "has been arrested twice", "arrested by NYPD 38 times"
-  new RegExp(`\\barrested(?:\\s+(?:by\\s+[A-Za-z.]+(?:\\s+[A-Za-z.]+)?|previously|repeatedly|in\\s+[A-Z][a-z]+))?\\s+(?<fl>${FLOOR}\\s+)?(?<n>(?:${NUM})\\s+times|twice|thrice)\\b`, "gi"),
+  new RegExp(`\\barrested(?:\\s+(?:by\\s+[A-Za-z.]+(?:\\s+[A-Za-z.]+)?|previously|repeatedly|in\\s+[A-Z][a-z]+))?\\s+(?<fl>${FLOOR}\\s+)?(?<n>(?:${NUM})\\s+times|twice|thrice)\\b${NOT_REMOVAL}`, "gi"),
   // Krennic 2026-11-26 backfill: "He had twice been arrested in California", "has three times been arrested"
   new RegExp(`\\b(?:has|had|have)\\s+(?<n>twice|thrice|(?:${NUM})\\s+times)\\s+been\\s+arrested\\b`, "gi"),
   // "The U.S. Border Patrol later arrested Figueroa three times between Nov. 2015 and Feb. 2019" (an agency arrested the
   // person, named or "him", N times). Only sentences already picked as about this person reach here.
-  new RegExp(`\\barrested\\s+(?:him|her|[A-Z][\\w'-]+(?:\\s+[A-Z][\\w'-]+){0,3})\\s+(?<fl>${FLOOR}\\s+)?(?<n>(?:${NUM})\\s+times|twice|thrice)\\b`, "g"),
+  new RegExp(`\\barrested\\s+(?:him|her|[A-Z][\\w'-]+(?:\\s+[A-Z][\\w'-]+){0,3})\\s+(?<fl>${FLOOR}\\s+)?(?<n>(?:${NUM})\\s+times|twice|thrice)\\b${NOT_REMOVAL}`, "g"),
+  // "arrested on three occasions", "has been arrested on 5 separate occasions", "ICE arrested him on two prior occasions"
+  new RegExp(`\\barrested(?:\\s+(?:him|her|[A-Z][\\w'-]+(?:\\s+[A-Z][\\w'-]+){0,3}))?(?:\\s+(?:previously|repeatedly))?\\s+on\\s+(?<fl>${FLOOR}\\s+)?(?<n>${NUM})\\s+(?:separate\\s+|different\\s+|prior\\s+|previous\\s+|other\\s+)?occasions\\b`, "g"),
 ];
 
 function arrestCount(s) {
@@ -102,8 +107,9 @@ function arrestCount(s) {
       return { n, plus, quote: clip(s, m) };
     }
   }
-  // One stated prior arrest: "has a prior arrest for DUI", "one previous arrest". (A bare "an arrest for X" in a history list is not a count.)
-  const one = /\b(?:a|one)\s+(?:prior|previous)\s+(?:\w+\s+)?arrest\b/i.exec(s);
+  // One stated prior arrest: "one previous arrest", "his only prior arrest". "a prior arrest for DUI" (Bill / Krennic 2026-11-27) is one
+  // item of a history, like "an arrest for X", and is not a count. Rows filled before 2026-11-27 keep their stored value.
+  const one = /\b(?:one|(?:his|her|a|the)\s+only)\s+(?:prior|previous)\s+(?:\w+\s+)?arrest\b/i.exec(s);
   if (one && !/\b(?:no|any)\s+$/i.test(s.slice(0, one.index))) return { n: 1, plus: /\b(?:includes?|including)\s+$/i.test(s.slice(0, one.index)), quote: clip(s, one) };
   // Counted occasions: "On five occasions in 2026, the NYPD arrested him" + "Two more times in November 2026, the NYPD arrested him".
   const occ = new RegExp(`\\b(?:on\\s+)?(?<n>${NUM})\\s+(?:more\\s+)?(?:occasions|times)(?:\\s+(?:in|during)\\s+(?:[A-Z][a-z]+\\s+)?(?:19|20)\\d{2})?,?\\s+(?:the\\s+)?(?<who>[A-Za-z.]+(?:\\s+[A-Za-z.]+){0,2}?)\\s+arrested\\b`, "gi");
@@ -182,7 +188,7 @@ function removalCount(s) {
 }
 
 export function sentences(text) {
-  return tidy(text).split(/(?<=[.!?])\s+(?=[A-Z0-9"“🚨@])/);
+  return tidy(text).split(/(?<=[.!?])(?<!\b(?:U\.S|U\.K|D\.C|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sept?|Oct|Nov|Dec|Mr|Mrs|Ms|Dr|St|Ft|Mt|No|Jr|Sr|Gov|Sen|Rep|Lt|Sgt|Det|Capt|Insp|Co|Inc|vs|Ave|Blvd|Rd)\.)\s+(?=[A-Z0-9"“🚨@])/);
 }
 
 /** Name keys that point at one person: the full name and each surname-ish piece longer than 3 letters. */
