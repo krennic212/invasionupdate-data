@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-27T16:49:53Z",
+  "updatedAt": "2026-11-27T19:23:37Z",
   "rows": 3089,
   "approved": 3058,
   "pending": 31,
-  "photos": 582,
+  "photos": 1222,
   "reviewRows": 786,
   "lastAddedAt": "2026-11-27T14:55:39Z",
   "lastAddedCount": 3,
@@ -12,6 +12,6 @@
     "Derli Hernandez-Roblero",
     "Jose Alberto Nunez De Jesus"
   ],
-  "harvestSha256": "20ebf3da99fe0f4b4a44dc7e856ca964aaf634a89fa7747fb0fcb98a414ecf1f",
+  "harvestSha256": "93866bab21f60e82e731d23c1d6823a638c362a7d1d2ad185d142ba855a31acc",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
