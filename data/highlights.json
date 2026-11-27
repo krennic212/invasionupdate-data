@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-27",
   "windowDays": 7,
-  "total": 153,
+  "total": 156,
   "rows": [
     {
       "id": "x-2124913412668874774-juan-carlos-chub-choc",
@@ -304,6 +304,17 @@
       "severityReason": "Child sex crime",
       "severityCrimes": [
         "Child sex crime",
+        "Drug possession"
+      ]
+    },
+    {
+      "id": "x-2126316415309205915-cesar-eduardo-mejia-sanabria",
+      "name": "Cesar Eduardo Mejia-Sanabria",
+      "when": "27 Nov 2026",
+      "severity": 99,
+      "severityReason": "Violent crime against a child",
+      "severityCrimes": [
+        "Violent crime against a child",
         "Drug possession"
       ]
     },
