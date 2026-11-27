@@ -537,7 +537,14 @@
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
     "tags": [],
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "NYC ICE officers arrested Arys Robert Amarante-Flete from Dominican Republic. Amarante was convicted of second-degree assault with intent to cause physical injury with a weapon/instrument. He was previously removed at least twice. He’ll remain in ICE custody until removed again. https://t.co/UxqYrmPbuO",
+        "url": "https://x.com/ERONewYork/status/2118083758012486120",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Jose Alas Monterosa",
@@ -688,7 +695,14 @@
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
     "tags": [],
-    "priorRemovals": 4
+    "priorRemovals": 4,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "LA ICE officers arrested Mexican Otoniel Pineda-Macedo. Pineda has a criminal record going back to at least 2005 and was sentenced to 2+ years for burglary, DUI, traffic offenses, and illegal reentry. He was removed 4 times. He’ll remain in ICE custody until removed again. https://t.co/UcLn3D0VAY",
+        "url": "https://x.com/EROLosAngeles/status/2116319239497990628",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Jose Gonzaga Delgado",
@@ -714,7 +728,14 @@
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
     "tags": [],
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "LA ICE officers arrested Mexican Jose Gonzaga Delgado. Delgado has a criminal record going back to at least 1997 and was sentenced to 6+ years for burglary, DUI, traffic offenses, and illegal reentry. He's been removed at least twice. He’ll remain in ICE custody until removed. https://t.co/SEyl8glJuM",
+        "url": "https://x.com/EROLosAngeles/status/2116319239087022359",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Angel Uriel Rivera-Calderon",
@@ -742,7 +763,14 @@
     "tags": [
       "Gang"
     ],
-    "priorRemovals": 4
+    "priorRemovals": 4,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "LA ICE officers arrested Angel Uriel Rivera-Calderon, an alleged gang member from Mexico previously removed at least 4 times since 2008.",
+        "url": "https://x.com/EROLosAngeles/status/2116319238692720904",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Nassim Pourahmad",
@@ -1691,7 +1719,14 @@
     "tags": [
       "Gang"
     ],
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "LA ICE officers arrested Luis Alberto RIVERA Pena, 44, a Mexican gang member removed from the U.S. at least twice and served 7+ years numerous crimes, including burglary, unauthorized vehicle use, assault, DUI, and reentry.",
+        "url": "https://x.com/EROLosAngeles/status/2107988848160452877",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Pedro LARA-Torrez",
@@ -1719,7 +1754,14 @@
     "tags": [
       "Gang"
     ],
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "LA ICE officers arrested Pedro LARA-Torrez, 40, is a Mexican gang member removed from the U.S. at least twice and served 14+ years for a long list of crimes like carrying a prohibited weapon and firing a weapon.",
+        "url": "https://x.com/EROLosAngeles/status/2107988847686533611",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Jorge Luis MOLINA Vides",
@@ -2588,7 +2630,15 @@
     "lat": 37.7749,
     "lon": -122.4194,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 3,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Garcia-Cobarruvias has already been removed from the country THREE times and has a lengthy criminal history that includes convictions for burglary, obstruction, and domestic violence.",
+        "url": "https://www.dhs.gov/news/2026/09/25/hsi-arrests-previously-deported-illegal-alien-who-attacked-ice-officer-vehicle",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Taurino Montealegre-Ramon",
@@ -4259,7 +4309,15 @@
     "sourceUrl": "https://x.com/EROSanFrancisco/status/2103171101220298913",
     "origin": "Mexico",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 7,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "He's been deported from the U.S. 7 times and is in ICE custody pending removal.",
+        "url": "https://x.com/EROSanFrancisco/status/2103171101220298913",
+        "kind": "official"
+      }
+    }
   },
   {
     "entered": "Not stated",
@@ -5081,7 +5139,10 @@
     "lat": null,
     "lon": null,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2019-02-08",
+    "orderedRemovedQuote": "On February 8, 2019, an immigration judge issued him a final order of removal.",
+    "orderedRemovedSource": "https://www.dhs.gov/news/2025/10/17/criminal-illegal-alien-who-offered-10000-bounties-murder-ice-agents-arrested-dallas"
   },
   {
     "name": "Pedro Trejo Reyes",
@@ -5267,7 +5328,14 @@
     "lon": -95.3698,
     "reviewReason": "X post (not an official .gov page)",
     "tags": [],
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "🚨ICE arrested Rolando Ponce Amelcar, a twice deported violent criminal illegal alien from El Salvador, Sept. 21 who has been convicted of assault causing bodily harm. (3 of 3) https://t.co/Du8SilqhQ9",
+        "url": "https://x.com/EROHouston/status/2102384464043311378",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Javier Alonzo Morales",
@@ -5291,7 +5359,14 @@
     "lon": -95.3698,
     "reviewReason": "X post (not an official .gov page)",
     "tags": [],
-    "priorRemovals": 4
+    "priorRemovals": 4,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "🚨ICE arrested Javier Alonzo Morales, a 4-time deported criminal illegal alien from Guatemala, Sept. 21 who has been convicted of illegal entry, prostitution, evading arrest, failure to stop and give info, and twice for DWI.",
+        "url": "https://x.com/EROHouston/status/2102384461900042583",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Marlon Rafael Carpio Carreno",
@@ -5855,7 +5930,14 @@
     "victims": "victim while under 14, unnamed",
     "reviewReason": "X post (not an official .gov page)",
     "tags": [],
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "LA ICE officers arrested Angel Gomez, a 65-year-old accused sex offender from Mexico removed at least twice and recently arrested for sexual battery, continuous sexual abuse of a child, and lewd or lascivious acts with a child under 14.",
+        "url": "https://x.com/EROLosAngeles/status/2100272112225096114",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Francisco Tambriz",
@@ -6040,7 +6122,14 @@
     "lon": -118.25,
     "reviewReason": "X post (not an official .gov page)",
     "tags": [],
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Los Angeles ICE officers have arrested Aaron Comisario Galicia, 45, from Mexico. He was sentenced to 7 years in prison for rape by force/fear in 2022. He was removed twice before in 2000 and 2004, so he’ll remain in ICE custody until removed again. https://t.co/3caCYr9q0H",
+        "url": "https://x.com/EROLosAngeles/status/2099515598636015784",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "13 Chinese, 8 Honduran, 1 Dominican",
@@ -6284,7 +6373,19 @@
     "priorArrests": 9,
     "priorArrestsPlus": true,
     "priorArrestsQuote": "Espinoza-Paguada has also been arrested nine times for public intoxication and disorderly conduct.",
-    "priorRemovals": 5
+    "priorRemovals": 5,
+    "priorSources": {
+      "priorArrests": {
+        "quote": "Espinoza-Paguada has also been arrested nine times for public intoxication and disorderly conduct.",
+        "url": "https://x.com/ICEgov/status/2101718119005737051",
+        "kind": "official"
+      },
+      "priorRemovals": {
+        "quote": "Celso Espinoza-Paguada is a criminal illegal alien of Honduras with an aggravated assault conviction who has been removed from the United States FIVE TIMES.",
+        "url": "https://x.com/ICEgov/status/2101718119005737051",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Miran Kostic",
@@ -7932,7 +8033,14 @@
     "sourceUrl": "https://x.com/ERODallas/status/1960805793755701547",
     "reviewReason": "X post (not an official .gov page)",
     "tags": [],
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "ICE @ERODallas arrested Jose Luis Morales Huerta, a twice-deported child predator wanted for sexually assaulting a child in Dallas County who has been convicted of aggravated sexual assault of a child, failure to register as a sex offender, illegal reentry, and a weapons offense. https://t.co/3bVO2TY6yi",
+        "url": "https://x.com/ERODallas/status/1960805793755701547",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Noe Nava-Mata",
@@ -7956,7 +8064,14 @@
     "sourceUrl": "https://x.com/ERODallas/status/1960805673974861859",
     "reviewReason": "X post (not an official .gov page)",
     "tags": [],
-    "priorRemovals": 3
+    "priorRemovals": 3,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "ICE @ERODallas arrested Noe Nava-Mata, a 3-time deported criminal alien from Mexico, Aug. 26.",
+        "url": "https://x.com/ERODallas/status/1960805673974861859",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Juan Antonio Flores-Amateco",
@@ -8098,7 +8213,14 @@
     "sourceUrl": "https://x.com/ERODallas/status/1968303889637319154",
     "reviewReason": "X post (not an official .gov page)",
     "tags": [],
-    "priorRemovals": 3
+    "priorRemovals": 3,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "🚨ICE @ERODallas arrested David Alcocer Escamilla, a 3-time deported criminal alien from Mexico who has been convicted 3 times for drug offenses, 2 times for weapons offenses and illegal reentry; and one time for trespassing, obstruction of justice, and evading arrest. https://t.co/PG0DWdwzjD",
+        "url": "https://x.com/ERODallas/status/1968303889637319154",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Jonathan Berumen-Romero",
@@ -9297,7 +9419,14 @@
     "priorRemovals": 2,
     "orderedRemovedDate": "2012-10-12",
     "orderedRemovedQuote": "Maldonado-Paredes was ordered removed by an immigration judge on Oct. 12, 2012 and removed to Honduras on Oct. 24, 2012.",
-    "orderedRemovedSource": "https://www.ice.gov/news/releases/ice-san-antonio-arrests-twice-deported-honduran-national-illegally-present-us"
+    "orderedRemovedSource": "https://www.ice.gov/news/releases/ice-san-antonio-arrests-twice-deported-honduran-national-illegally-present-us",
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Maldonado-Paredes has been removed from the U.S. twice, and was illegally present when arrested. https://t.co/yKJ3SfobPQ https://t.co/A0KVxT4DoO",
+        "url": "https://x.com/EROSanAntonio/status/1894857642427752805",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Victor Manuel Llanos-Mendoza",
@@ -9489,7 +9618,14 @@
     "tags": [],
     "priorArrests": 5,
     "priorArrestsPlus": true,
-    "priorArrestsQuote": "..., illegally present in the U.S. Paxtian has five arrests for driving while intoxicated and viola..."
+    "priorArrestsQuote": "..., illegally present in the U.S. Paxtian has five arrests for driving while intoxicated and viola...",
+    "priorSources": {
+      "priorArrests": {
+        "quote": ", illegally present in the U.S. Paxtian has five arrests for driving while intoxicated and viola",
+        "url": "https://x.com/EROSanAntonio/status/1935400968600097033",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Melgar Edmilson Pelico-Guox",
@@ -10208,7 +10344,14 @@
     "tags": [
       "Gang"
     ],
-    "priorRemovals": 5
+    "priorRemovals": 5,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "ICE arrested Jorge Felipe Payan-Morales, 44, a Mexican national illegally present in U.S. &amp; confirmed member of Barrio Azteca Gang, previously deported five times with convictions for cocaine possession, drug trafficking, robbery, illegal re-entry. https://t.co/JG7esJNKJI",
+        "url": "https://x.com/EROElPaso/status/1905350443741429859",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Jorge Vazquez-Ramirez",
@@ -10461,7 +10604,15 @@
     "via": "@EROElPaso 1923744061640573372",
     "sourceUrl": "https://x.com/EROElPaso/status/1923744061640573372",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 3,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Now facing a federal illegal re-entry charge, Hernandez has three prior removals and a criminal history that includes convictions for burglary of a habitation, assault on a public servant and an additional assault charge.",
+        "url": "https://www.justice.gov/usao-wdtx/pr/western-district-texas-adds-316-immigration-cases-first-week-may",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Alexis Perozo-Monasterios",
@@ -11049,7 +11200,14 @@
     "sourceUrl": "https://x.com/EROPhiladelphia/status/1888377389614305420",
     "reviewReason": "X post (not an official .gov page)",
     "tags": [],
-    "priorRemovals": 3
+    "priorRemovals": 3,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "On Feb. 2, @ICEgov Philadelphia arrested Wilmer Yovani Fuentes-Benitez, a citizen of Honduras who was previously deported three times.",
+        "url": "https://x.com/EROPhiladelphia/status/1888377389614305420",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Cristian Omar Vega-Guerra",
@@ -11523,7 +11681,14 @@
     "sourceUrl": "https://x.com/ICEgov/status/1883334131175538966",
     "reviewReason": "X post (not an official .gov page)",
     "tags": [],
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Pablo Beningo Calva-Deamonte, a Mexican national with three DUI convictions, faces removal after his arrest by @ERODenver officers Jan. 22. \n\nThe criminal alien has already been removed from the U.S. twice. https://t.co/XcwL1V0PsD",
+        "url": "https://x.com/ICEgov/status/1883334131175538966",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Arturo Alejandro Silvestre-Mendiola",
@@ -13521,7 +13686,14 @@
       "Gang",
       "MS-13"
     ],
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "German Beltran-Escobar was previously arrested in El Salvador for aggravated homicide.  \n\nHe’s a Salvadoran confirmed MS-13 gang member whom we’ve deported twice before.  \n\nICE Newark and @CBP arrested him to protect the public while he waits for his third court-ordered flight out of the country.",
+        "url": "https://x.com/ICEgov/status/1957382148744192075",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Jose Fredi Rivera-Mejia",
@@ -13545,7 +13717,14 @@
     "sourceUrl": "https://x.com/ICEgov/status/1957215936307433838",
     "reviewReason": "X post (not an official .gov page)",
     "tags": [],
-    "priorRemovals": 3
+    "priorRemovals": 3,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Jose Fredi Rivera-Mejia aka Wilfredo Lopez is a Honduran criminal illegal alien we’ve deported THREE TIMES before.",
+        "url": "https://x.com/ICEgov/status/1957215936307433838",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Rolando Ico-Choc",
@@ -14106,7 +14285,14 @@
     "sourceUrl": "https://x.com/EROBoston/status/1934928344610480466",
     "reviewReason": "X post (not an official .gov page)",
     "tags": [],
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "“Additionally, Pineda has been previously removed from the U.S. twice.",
+        "url": "https://www.ice.gov/news/releases/ice-boston-arrests-salvadoran-alien-several-convictions-massachusetts",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Carlos Alfredo Ortiz",
@@ -14953,7 +15139,14 @@
     "sourceUrl": "https://x.com/EROSeattle/status/1937619993635566007",
     "reviewReason": "X post (not an official .gov page)",
     "tags": [],
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Santos has been removed to his home country twice, both in 2020. https://t.co/Ub0RFGPWko",
+        "url": "https://x.com/EROSeattle/status/1937619993635566007",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "David Chavez-Mendoza",
@@ -15701,7 +15894,14 @@
     "sourceUrl": "https://x.com/ERONewark/status/1929878232129478662",
     "reviewReason": "X post (not an official .gov page)",
     "tags": [],
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "ICE ERO Newark arrested Francisco Jiron-Jose, an illegally present Guatemalan national who was previously removed from the U.S. twice.",
+        "url": "https://x.com/ERONewark/status/1929878232129478662",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Cristian Alfredo Sifuentes Medrano",
@@ -15771,7 +15971,14 @@
     "sourceUrl": "https://x.com/HSINewark/status/1990431082685046977",
     "reviewReason": "X post (not an official .gov page)",
     "tags": [],
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Fugitive captured! ICE HSI Newark and federal partners arrested Joaquin Edelmiro Barrios, an illegal alien &amp; fugitive wanted for homicide in Guatemala. He was previously removed twice from the U.S. in 2010 and 2023 and had unlawfully reentered @DEANEWJERSEYDiv @FBINewark @IRS_CI https://t.co/GhUXU10Wqx",
+        "url": "https://x.com/HSINewark/status/1990431082685046977",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Marco Hernandez-Martinez",
@@ -15798,7 +16005,14 @@
       "Gang",
       "MS-13"
     ],
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Twice-removed, self-proclaimed MS-13 gang member Marco Hernandez-Martinez, a Mexican national, was arrested by ICE Newark Aug. 22.",
+        "url": "https://x.com/HSINewark/status/1960345349245010026",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Nigel Alexander",
@@ -17771,7 +17985,14 @@
     "lon": -71.0325,
     "reviewReason": "non-official source (bostonherald.com)",
     "tags": [],
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "ICE Boston arrested Leonel Santos-Diaz, a twice-deported foreign fugitive and criminal illegal alien from El Salvador, during targeted immigration enforcement operations Sept. 2 in Chelsea.",
+        "url": "https://www.ice.gov/news/releases/ice-boston-arrests-foreign-fugitive-wanted-aggravated-homicide-el-salvador",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Pekings Aziwung",

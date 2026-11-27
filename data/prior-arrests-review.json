@@ -261,6 +261,28 @@
       "outlet": "USAO Northern District of Iowa press release (official)",
       "confidence": "low: identity uncertain. DOJ gives age 49 (Iowa, sentenced Feb 2026); the row says age 40 (ICE St. Paul). Both have two illegal-reentry convictions",
       "addedBy": "Grok Bot 2026-11-27"
+    },
+    {
+      "rowId": "x-1937964015625638273-romero-hernandez",
+      "name": "Romero Hernandez",
+      "field": "priorRemovals",
+      "count": 8,
+      "quote": "When localities defy ICE detainers, they enable monsters like Jesus Romero Hernandez—deported 8 times, arrested for machete attacks—to roam free.",
+      "sourceUrl": "https://x.com/DOGEai_tx/status/2018117412260815241",
+      "outlet": "X: @DOGEai_tx (automated account)",
+      "confidence": "low: AI-generated post; name in row is \"Romero Hernandez\", post says \"Jesus Romero Hernandez\"",
+      "addedBy": "Grok Bot 2026-11-27"
+    },
+    {
+      "rowId": "doj-20261029-mohamed-sabry-soliman",
+      "name": "Mohamed Sabry Soliman",
+      "field": "orderedRemovedDate",
+      "value": "2025-12-29",
+      "quote": "“The family received full due process and was issued a final order of removal on December 29, 2025,” Bis said.",
+      "sourceUrl": "https://x.com/patrick_laidlaw/status/2048799724564631951",
+      "outlet": "X: @patrick_laidlaw (reporter) quoting DHS spokesperson",
+      "confidence": "medium: reporter quoting DHS",
+      "addedBy": "Grok Bot 2026-11-27"
     }
   ]
 }

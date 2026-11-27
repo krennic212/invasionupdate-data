@@ -32920,7 +32920,14 @@
     "priorRemovals": 2,
     "orderedRemovedDate": "2024",
     "orderedRemovedQuote": "...Martinez Rivera, a criminal illegal alien from Mexico, has a 2024 final removal order and pending charges for FOUR DUIs and multiple traffic...",
-    "orderedRemovedSource": "https://x.com/ICEgov/status/2016660703495528762"
+    "orderedRemovedSource": "https://x.com/ICEgov/status/2016660703495528762",
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "He has two prior removals, the most recent being to Mexico on Jan. 10, 2025.",
+        "url": "https://www.justice.gov/usao-wdtx/pr/western-district-texas-us-attorneys-office-adds-nearly-200-more-immigration-cases-week",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Adrian Hernandez Romero",
@@ -40589,7 +40596,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "He was deported in 2003, but then illegally re-entered the United States – a felony – before being deported a second time in 2014.",
+        "url": "https://www.dhs.gov/news/2026/07/07/ice-lodges-detainer-asking-governor-abigail-spanberger-and-fairfax-sanctuary",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Jose Nahun Aleman Hernandez",
@@ -46336,7 +46350,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": 4
+    "priorRemovals": 4,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Garcia-Olguin has been deported from the United States on four previous occasions and has been convicted of multiple crimes while present in the United States.",
+        "url": "https://www.justice.gov/usao-wdmo/pr/mexican-national-prior-felony-convictions-sentenced-imprisonment-illegally-reentering",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Inna Opatska",
@@ -47321,9 +47342,16 @@
     "priorArrests": 2,
     "priorArrestsPlus": true,
     "priorArrestsQuote": "...ted for murdering a veteran in Utah. He had twice been arrested in California for domestic violence – i...",
-    "priorReleases": null,
+    "priorReleases": 2,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": null,
+    "priorSources": {
+      "priorReleases": {
+        "quote": "Chavez-Marroquin has a criminal history but was RELEASED TWICE by https://t.co/vzkTeMqvqU https://t.co/WoInfujLbQ",
+        "url": "https://x.com/DHSgov/status/2079330935196061942",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Manjit Singh",
@@ -47747,7 +47775,10 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": null,
+    "orderedRemovedDate": "2025-07-17",
+    "orderedRemovedQuote": "An immigration judge ordered Arauz-Medina removed on July 17, 2025.",
+    "orderedRemovedSource": "https://www.dhs.gov/news/2025/10/22/ice-lodges-arrest-detainer-criminal-illegal-alien-who-raped-woman-pritzkers"
   },
   {
     "name": "Jose Medina-Medina",
@@ -49437,7 +49468,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Garcia-Dominguez was previously removed and deported from the United States to Mexico on two prior occasions: August 10, 2020, and December 20, 2023.",
+        "url": "https://www.justice.gov/usao-nv/pr/five-illegal-aliens-prior-felony-convictions-and-multiple-deportations-charged-illegally",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Wilmer Jesus Colmenares-Gonzalez",
@@ -51364,7 +51402,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Perez was deported twice in 2012.",
+        "url": "https://www.justice.gov/usao-ks/pr/illegal-alien-pleads-guilty-after-soliciting-sex-minor",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Carlos Baustista-Lopez",
@@ -67800,7 +67845,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": 6
+    "priorRemovals": 6,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "A fingerprint scan revealed Olivas-Chaves has been previously removed from the U.S. to Mexico six times and has been convicted of burglary of habitation twice.",
+        "url": "https://www.justice.gov/usao-wdtx/pr/us-attorneys-office-exceeds-250-new-immigration-cases-another-week-western-district",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Alvaro Lopez Ayala",
@@ -67869,7 +67921,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": 3
+    "priorRemovals": 3,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Espinoza-Ponce has been previously removed from the U.S. three times and convicted for two DWIs, a hit-and-run, and failure to ID.",
+        "url": "https://www.justice.gov/usao-wdtx/pr/us-attorneys-office-exceeds-250-new-immigration-cases-another-week-western-district",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Selvin Noe Santos-Umana",
@@ -88089,10 +88148,17 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null,
+    "priorRemovals": 2,
     "orderedRemovedDate": "2006-04-05",
     "orderedRemovedQuote": "...for a second time after an Immigration Judge issued him a final order of removal on April 5, 2006.",
-    "orderedRemovedSource": "https://www.dhs.gov/news/2026/10/16/secretary-mullin-oversees-deportation-flights-out-arizona"
+    "orderedRemovedSource": "https://www.dhs.gov/news/2026/10/16/secretary-mullin-oversees-deportation-flights-out-arizona",
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "He illegally re-entered the country at an unknown date and location and was deported for a second time after an Immigration Judge issued him a final order of removal",
+        "url": "https://www.dhs.gov/news/2026/10/16/secretary-mullin-oversees-deportation-flights-out-arizona",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Jaime Velasquez Orozco",
@@ -88241,7 +88307,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": 7
+    "priorRemovals": 7,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Gutierres-Cruz has been deported a total of seven times and has multiple prior convictions, including driving without a license and possession of cocaine.",
+        "url": "https://www.justice.gov/usao-wdtx/pr/western-district-texas-us-attorneys-office-files-nearly-500-immigration-cases-through",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Melvin Acosta-Martinez",
@@ -88385,7 +88458,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": 3
+    "priorRemovals": 3,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Garcia-Soto has been previously removed from the U.S. three times and has three DUI convictions, along with a conviction for possession of a controlled substance, and for obstructing a public officer.",
+        "url": "https://www.justice.gov/usao-wdtx/pr/western-district-texas-us-attorneys-office-files-nearly-500-immigration-cases-through",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Raul Reyes-Hernandez",
@@ -91478,7 +91558,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": 5
+    "priorRemovals": 5,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "He’s been deported from the U.S. five times, the last being in August 2022, and has been convicted of three DWIs as well as making a terroristic threat against a public servant and possession of a controlled substance.",
+        "url": "https://www.justice.gov/usao-wdtx/pr/western-district-texas-us-attorneys-office-files-nearly-500-immigration-cases-through",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Vanderlucio Miranda-Silva",
@@ -103633,7 +103720,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "After serving his prison sentence for the prior convictions, he was deported a second time by the Trump Administration in August 2020.",
+        "url": "https://www.dhs.gov/news/2026/10/08/hstf-investigation-leads-sentencing-illegal-alien-drug-trafficker-20-years-prison",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Chimaobim Adedayo Igbojekwe",
