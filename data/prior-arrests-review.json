@@ -173,6 +173,72 @@
       "outlet": "DHS press release (official)",
       "confidence": "low: identity uncertain. Same name and country, but the DHS item is a July 2025 Florida battery case and the row is an Oct 2026 ERO San Antonio arrest (age 32, terroristic threat); no shared second detail",
       "addedBy": "Tech 2026-11-27"
+    },
+    {
+      "rowId": "2100674255960576227",
+      "name": "Luis Nino-Moncada",
+      "field": "orderedRemovedDate",
+      "value": "2024",
+      "quote": "Portland just spent nine months housing a man with a 2024 removal order after he rammed a Border Patrol car outside Adventist Health.",
+      "sourceUrl": "https://x.com/momma_pdx/status/2100415639521562787",
+      "outlet": "X user @momma_pdx",
+      "confidence": "medium: non-agency post; name not in the quoted sentence",
+      "addedBy": "Grok Bot 2026-11-27"
+    },
+    {
+      "rowId": "2100987898992451646",
+      "name": "Molis Augustave",
+      "field": "orderedRemovedDate",
+      "value": "2018",
+      "quote": "An immigration judge subsequently ordered him removed from the United States in 2018.",
+      "sourceUrl": "https://x.com/AliBradleyTV/status/2100327709503283400",
+      "outlet": "X: @AliBradleyTV (NewsNation reporter)",
+      "confidence": "medium: reporter citing DHS",
+      "addedBy": "Grok Bot 2026-11-27"
+    },
+    {
+      "rowId": "1969068977935556930",
+      "name": "Jose Edwin Cruz Gomez",
+      "field": "orderedRemovedDate",
+      "value": "2005",
+      "quote": "Jose Edwin Cruz Gomez, a 38-year-old Honduran with a 2005 deportation order he ignored",
+      "sourceUrl": "https://x.com/Smokers1Wipes/status/1992762286038012345",
+      "outlet": "X user @Smokers1Wipes",
+      "confidence": "medium: non-agency post",
+      "addedBy": "Grok Bot 2026-11-27"
+    },
+    {
+      "rowId": "1956883734264787217",
+      "name": "Rolando Ico-Choc",
+      "field": "priorArrests",
+      "count": 7,
+      "quote": "Rolando Ico-Choc, an illegal alien arrested 7 times (DUI, child endangerment, domestic battery), was released again and again.",
+      "sourceUrl": "https://x.com/SecureAmerica/status/1958997224832344193",
+      "outlet": "X: @SecureAmerica",
+      "confidence": "medium: advocacy account",
+      "addedBy": "Grok Bot 2026-11-27"
+    },
+    {
+      "rowId": "1919792074343514136",
+      "name": "Santiago Josue Vargas-Rodriguez",
+      "field": "priorArrests",
+      "count": 16,
+      "quote": "Santiago Josue Vargas-Rodriguez, who had been arrested 16 times since he illegally entered the US in 2023, before ICE apprehended him.",
+      "sourceUrl": "https://x.com/theconread/status/1921287621268947183",
+      "outlet": "X: @theconread",
+      "confidence": "medium: news-aggregator account attributing ICE Chicago",
+      "addedBy": "Grok Bot 2026-11-27"
+    },
+    {
+      "rowId": "2101055375957242286",
+      "name": "Alma Patricia Contreras Villafana",
+      "field": "orderedRemovedDate",
+      "value": "2003",
+      "quote": "a Mexican national under a 2003 deportation order she simply ignored",
+      "sourceUrl": "https://x.com/ScottMechkowski/status/2101419628820078973",
+      "outlet": "X: @ScottMechkowski",
+      "confidence": "medium: non-agency post",
+      "addedBy": "Grok Bot 2026-11-27"
     }
   ]
 }

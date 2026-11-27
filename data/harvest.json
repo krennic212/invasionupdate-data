@@ -46311,7 +46311,7 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 4
   },
   {
     "name": "Inna Opatska",
@@ -51339,7 +51339,7 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 2
   },
   {
     "name": "Carlos Baustista-Lopez",
@@ -66406,7 +66406,10 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": null,
+    "orderedRemovedDate": "2011-12",
+    "orderedRemovedQuote": "An immigration judge ordered Francisco-Juan removed in December 2011, and he illegally reentered the country following his removal.",
+    "orderedRemovedSource": "https://www.ice.gov/news/releases/ice-arrests-more-180-illegal-aliens-during-5-day-operation-alabama"
   },
   {
     "name": "Cesar Sanchez Correa",
@@ -67772,7 +67775,7 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 6
   },
   {
     "name": "Alvaro Lopez Ayala",
@@ -67841,7 +67844,7 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 3
   },
   {
     "name": "Selvin Noe Santos-Umana",
@@ -88213,7 +88216,7 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 7
   },
   {
     "name": "Melvin Acosta-Martinez",
@@ -88357,7 +88360,7 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 3
   },
   {
     "name": "Raul Reyes-Hernandez",
@@ -91450,7 +91453,7 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 5
   },
   {
     "name": "Vanderlucio Miranda-Silva",

@@ -401,7 +401,10 @@
     "status": "pending",
     "holdReason": "reviewer hold: at large: sanctuary release + ICE tip line seeking arrest",
     "reviewReason": "held by guard: reviewer hold: at large: sanctuary release + ICE tip line seeking arrest",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2006-10-31",
+    "orderedRemovedQuote": "...and was deported after an Immigration Judge issued him a final order of removal on October 31, 2006.",
+    "orderedRemovedSource": "https://www.dhs.gov/news/2026/11/06/sanctuary-insanity-new-york-sanctuary-politicians-release-illegal-alien-convicted"
   },
   {
     "name": "Victor Manuel Montiel Diaz",
@@ -3693,7 +3696,10 @@
     "via": "@DHSGenCounsel 2104924436361077014",
     "sourceUrl": "https://x.com/DHSGenCounsel/status/2104924436361077014",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "1999-09-13",
+    "orderedRemovedQuote": "He was issued a final order of removal on September 13, 1999.",
+    "orderedRemovedSource": "https://www.dhs.gov/news/2025/05/23/dhs-releases-documents-detailing-rap-sheets-8-criminal-illegal-aliens-after"
   },
   {
     "entered": "Not stated",
@@ -6516,7 +6522,10 @@
     "lat": 35.5175,
     "lon": -86.5804,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2013-01",
+    "orderedRemovedQuote": "He was issued a final order of removal in January 2013 and was removed from the United States in February 2013.",
+    "orderedRemovedSource": "https://www.ice.gov/news/releases/ice-expands-local-287g-law-enforcement-partnerships-tennessee"
   },
   {
     "name": "Kevin Zecena Batres",
@@ -9282,7 +9291,10 @@
     "sourceUrl": "https://x.com/EROSanAntonio/status/1894857642427752805",
     "reviewReason": "X post (not an official .gov page)",
     "tags": [],
-    "priorRemovals": 2
+    "priorRemovals": 2,
+    "orderedRemovedDate": "2012-10-12",
+    "orderedRemovedQuote": "Maldonado-Paredes was ordered removed by an immigration judge on Oct. 12, 2012 and removed to Honduras on Oct. 24, 2012.",
+    "orderedRemovedSource": "https://www.ice.gov/news/releases/ice-san-antonio-arrests-twice-deported-honduran-national-illegally-present-us"
   },
   {
     "name": "Victor Manuel Llanos-Mendoza",
@@ -11864,7 +11876,10 @@
     "reviewReason": "X post (not an official .gov page)",
     "tags": [
       "Gang"
-    ]
+    ],
+    "orderedRemovedDate": "2020-01-16",
+    "orderedRemovedQuote": "On Jan. 16, 2020, the DOJ immigration judge ordered Lopez removed from the United States to El Salvador.",
+    "orderedRemovedSource": "https://www.ice.gov/news/releases/ice-washington-dc-arrests-salvadoran-alien-gang-member-northern-virginia"
   },
   {
     "name": "Silvia Lorena Bonilla-De Jandres",
@@ -11936,7 +11951,10 @@
     "via": "@EROWashington 1910787653848494330",
     "sourceUrl": "https://x.com/EROWashington/status/1910787653848494330",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2006-04-05",
+    "orderedRemovedQuote": "On April 5, 2006, the DOJ immigration judge ordered Mateo-Alberto removed from the United States to Honduras.",
+    "orderedRemovedSource": "https://www.ice.gov/news/releases/ice-federal-partners-arrest-illegal-honduran-national-charged-incest-sex-crimes"
   },
   {
     "name": "Enrique Montes Flores-Espana",
@@ -12028,7 +12046,10 @@
     "via": "@EROWashington 1917129243890258319",
     "sourceUrl": "https://x.com/EROWashington/status/1917129243890258319",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2012-03-29",
+    "orderedRemovedQuote": "On March 29, 2012, the DOJ immigration judge ordered Ramos-Giron removed from the United States to Guatemala.",
+    "orderedRemovedSource": "https://www.ice.gov/news/releases/ice-arrests-guatemalan-alien-convicted-firearm-crime-and-charged-abduction-force"
   },
   {
     "name": "Carlos Alberto Gomez",
@@ -13306,7 +13327,10 @@
     "via": "@DHSgov 1946262175514804226",
     "sourceUrl": "https://x.com/DHSgov/status/1946262175514804226",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2012",
+    "orderedRemovedQuote": "...indecent exposure, and a U.S. immigration judge issued a final order of removal in 2012.",
+    "orderedRemovedSource": "https://www.dhs.gov/news/2025/07/18/ice-continues-round-worst-worst-convicted-killer-and-fentanyl-trafficker-american"
   },
   {
     "name": "Cindy Rivas-Cruz",
@@ -14078,7 +14102,8 @@
     "via": "@EROBoston 1934928344610480466",
     "sourceUrl": "https://x.com/EROBoston/status/1934928344610480466",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 2
   },
   {
     "name": "Carlos Alfredo Ortiz",
@@ -17742,7 +17767,8 @@
     "lat": 42.3963,
     "lon": -71.0325,
     "reviewReason": "non-official source (bostonherald.com)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 2
   },
   {
     "name": "Pekings Aziwung",
