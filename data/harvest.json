@@ -10449,7 +10449,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Arevalo is a known MS-13 gang member and has been removed on TWO occasions.",
+        "url": "https://x.com/ERONewOrleans/status/2080715636624515345",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Hom Lotakhoon",
@@ -68354,9 +68361,16 @@
     "priorArrests": null,
     "priorArrestsPlus": false,
     "priorArrestsQuote": null,
-    "priorReleases": null,
+    "priorReleases": 2,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": null,
+    "priorSources": {
+      "priorReleases": {
+        "quote": "Jose Medina, an illegal alien from Venezuela, entered the U.S. illegally under the Biden administration and was released TWICE before brutally murdering Sheridan.",
+        "url": "https://x.com/ICEgov/status/2116217715333443735",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Abraham Gallegos Mendez",

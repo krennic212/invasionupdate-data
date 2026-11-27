@@ -31,6 +31,8 @@ const RES = [
   // "a 2018 final removal order" / "his March 2019 order of removal"
   new RegExp(`\\b(?:a|an|his|her)\\s+(?:reinstated\\s+|prior\\s+|previous\\s+|administratively\\s+final\\s+)?(${DATE})\\s+(?:final\\s+)?(?:removal|deportation)\\s+order`, "i"),
   new RegExp(`\\b(?:a|an|his|her)\\s+(?:reinstated\\s+|prior\\s+|previous\\s+|administratively\\s+final\\s+)?(${DATE})\\s+(?:final\\s+)?order\\s+of\\s+(?:removal|deportation)`, "i"),
+  // "Final removal order May 9, 2026." (DHS list style: the date follows the phrase directly; full or month-year dates only)
+  new RegExp(`\\b(?:final\\s+)?(?:removal|deportation)\\s+order:?\\s+(${MON}\\s+\\d{1,2}(?:st|nd|rd|th)?,?\\s+(?:19|20)\\d{2}|${MON}\\s+(?:19|20)\\d{2})\\b`, "i"),
 ];
 // A date that clearly belongs to something else in the gap ("removed on", "arrested on", "entered in") is not the order date.
 const OTHER_EVENT = /\b(?:removed|deported|arrested|entered|re-?entered|convicted|sentenced|released|apprehended|encountered|crossed)\s+(?:him\s+|her\s+)?(?:\w+\s+){0,3}(?:on|in)\s*$/i;

@@ -45,3 +45,12 @@ test("'a twice previously removed' and 'a three-time previously removed' are rem
   assert.equal(priorFor(row("Marcos Contreras-Lopez", "Marcos Contreras-Lopez, a twice previously removed criminal illegal alien from Mexico, was arrested in June.")).priorRemovals, 2);
   assert.equal(priorFor(row("Marcel Jordan Lopes Da Silva", "Meet Marcel Jordan Lopes Da Silva, a three-time previously removed criminal illegal alien from Brazil.")).priorRemovals, 3);
 });
+test("'released TWICE before' is releases; 'arrested and released twice before' is both", () => {
+  const a = priorFor(row("Jose Medina", "Jose Medina, an illegal alien from Venezuela, entered the U.S. illegally and was released TWICE before brutally murdering Sheridan."));
+  assert.equal(a.priorReleases, 2);
+  assert.equal(a.priorArrests, null);
+  const b = priorFor(row("Alpha Bah", "Despite an ICE detainer, NYPD RELEASED Bah without notifying ICE. He had been arrested and released twice before and remains AT LARGE."));
+  assert.equal(b.priorReleases, 2);
+  assert.equal(b.priorArrests, 2);
+  assert.equal(priorFor(row("Jon Doe", "Jon Doe was released from custody.")).priorReleases, null);
+});

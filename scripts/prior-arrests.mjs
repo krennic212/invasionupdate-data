@@ -81,6 +81,8 @@ const ARREST_RES = [
   // "The U.S. Border Patrol later arrested Figueroa three times between Nov. 2015 and Feb. 2019" (an agency arrested the
   // person, named or "him", N times). Only sentences already picked as about this person reach here.
   new RegExp(`\\barrested\\s+(?:him|her|[A-Z][\\w'-]+(?:\\s+[A-Z][\\w'-]+){0,3})\\s+(?<fl>${FLOOR}\\s+)?(?<n>(?:${NUM})\\s+times|twice|thrice)\\b${NOT_REMOVAL}`, "g"),
+  // 2026-11-27: "He had been arrested and released twice before" (both happened that many times)
+  new RegExp(`\\b(?:has|had|have)\\s+been\\s+arrested\\s+and\\s+released\\s+(?<n>twice|thrice|(?:${NUM})\\s+times)\\b`, "gi"),
   // "arrested on three occasions", "has been arrested on 5 separate occasions", "ICE arrested him on two prior occasions"
   new RegExp(`\\barrested(?:\\s+(?:him|her|[A-Z][\\w'-]+(?:\\s+[A-Z][\\w'-]+){0,3}))?(?:\\s+(?:previously|repeatedly))?\\s+on\\s+(?<fl>${FLOOR}\\s+)?(?<n>${NUM})\\s+(?:separate\\s+|different\\s+|prior\\s+|previous\\s+|other\\s+)?occasions\\b`, "g"),
 ];
@@ -134,6 +136,8 @@ const RELEASE_RES = [
   new RegExp(`\\breleased\\s+from\\s+(?:jail|custody|prison)\\s+(?<fl>${FLOOR}\\s+)?(?<n>${NUM})\\s+times\\b`, "gi"),
   new RegExp(`\\blet\\s+(?:him|her|them)\\s+(?:go|out)\\s+(?<fl>${FLOOR}\\s+)?(?<n>${NUM})\\s+times\\b`, "gi"),
   new RegExp(`\\breleased\\s+(?:him|her|them)\\s+(?<n>twice|thrice)\\b`, "gi"),
+  // 2026-11-27: "was released TWICE before ...", "had been arrested and released twice before", "been released 3 times"
+  new RegExp(`\\b(?:was|were|been|and)\\s+released\\s+(?<fl>${FLOOR}\\s+)?(?<n>twice|thrice|(?:${NUM})\\s+times)\\b`, "gi"),
   new RegExp(`\\b(?<fl>${FLOOR}\\s+)?(?<n>${NUM})\\s+(?:prior|previous)\\s+releases\\b`, "gi"),
   // "released Flores back into the community on two separate occasions"
   new RegExp(`\\breleased\\s+(?:him|her|them|[A-Z][\\w-]+(?:\\s+[A-Z][\\w-]+){0,3})\\s+(?:back\\s+(?:onto|into)\\s+the\\s+(?:community|streets?)\\s+)?on\\s+(?<n>${NUM})\\s+(?:separate\\s+|different\\s+)?occasions\\b`, "gi"),
@@ -149,7 +153,7 @@ function releaseCount(s) {
       if (NEAR.test(before) || /\ball\s+$/i.test(before)) continue;
       const mid = m[0];
       if (/\ball\s+\w+\s+times/i.test(mid)) continue;
-      const n = toInt(m.groups.n);
+      const n = toInt(String(m.groups.n).replace(/\s+times$/i, ""));
       if (n == null || n < 1 || n > 500) continue;
       if (!best || n > best) best = n;
     }

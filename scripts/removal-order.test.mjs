@@ -58,3 +58,8 @@ test("2026-11-27: 'An immigration judge ordered Ordonez removed ... on Feb. 27, 
   const { orderDateIn } = await import("./removal-order.mjs");
   assert.equal(orderDateIn("An immigration judge ordered Ordonez removed from the United States on Feb. 27, 2023.").date, "2023-02-27");
 });
+test("2026-11-27: 'Final removal order May 9, 2026.' is an order date", async () => {
+  const { orderDateIn } = await import("./removal-order.mjs");
+  assert.equal(orderDateIn("Deported Sept. 3. Final removal order May 9, 2026.").date, "2026-05-09");
+  assert.equal(orderDateIn("His removal order was reinstated."), null);
+});
