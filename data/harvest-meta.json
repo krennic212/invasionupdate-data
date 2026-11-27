@@ -1,17 +1,19 @@
 {
-  "updatedAt": "2026-11-27T19:23:37Z",
-  "rows": 3089,
-  "approved": 3058,
+  "updatedAt": "2026-11-27T22:43:02Z",
+  "rows": 3094,
+  "approved": 3063,
   "pending": 31,
   "photos": 1222,
   "reviewRows": 786,
-  "lastAddedAt": "2026-11-27T14:55:39Z",
-  "lastAddedCount": 3,
+  "lastAddedAt": "2026-11-27T22:42:40Z",
+  "lastAddedCount": 5,
   "lastAdded": [
-    "Cesar Eduardo Mejia-Sanabria",
-    "Derli Hernandez-Roblero",
-    "Jose Alberto Nunez De Jesus"
+    "Juan Carlos Esteban-Romero",
+    "Anilbert Barrera-Galicia",
+    "Ramiro Ruiz Romero",
+    "Jimma Ding Yan",
+    "German Alejandro Rivas-Berroteran"
   ],
-  "harvestSha256": "93866bab21f60e82e731d23c1d6823a638c362a7d1d2ad185d142ba855a31acc",
+  "harvestSha256": "7fab20ab45a3d69edb027f1ecf4624efdf4e60aa94ed43526628938aa0af494d",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
