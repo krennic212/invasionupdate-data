@@ -47,5 +47,12 @@
     "approvedBy": "Krennic",
     "approvedAt": "2026-11-24T08:30:00-06:00",
     "reason": "Krennic Nov 24, 2026 (t69u): \"remove duplicates, keep newer item if more detailed.\" Duplicate of live row x-2107579277432758721-andre-s-garcia. Same person (Cuba, voted 2022 and 2024 in Missouri). Removed row was a pending duplicate; the kept approved row has the WDMO release, age, city and fuller charge text."
+  },
+  {
+    "id": "dhs-20261117-daniel-martinez-espana",
+    "name": "Daniel Martinez Espana",
+    "approvedBy": "Krennic",
+    "approvedAt": "2026-11-26T18:30:00-06:00",
+    "reason": "Duplicate cleanup under Krennic's Nov 24, 2026 standing order (name/duplicate cleanups without asking; \"remove duplicates, keep newer item if more detailed\"). Same person as live row x-2123370709162606810-daniel-enrrique-martinez-espana (Venezuelan, Miami ERO arrest, federal narcotics conviction, final order of removal; ICE Miami release Nov 25, 2026 names him Daniel Enrrique Martinez Espana). Kept the newer @EROMiami row (full name, official booking photo) with aka \"Daniel Martinez Espana\"."
   }
 ]
