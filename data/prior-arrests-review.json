@@ -239,6 +239,28 @@
       "outlet": "X: @ScottMechkowski",
       "confidence": "medium: non-agency post",
       "addedBy": "Grok Bot 2026-11-27"
+    },
+    {
+      "rowId": "x-2122404860457041982-rigoberto-sanchez-galvez",
+      "name": "Rigoberto Sanchez-Galvez",
+      "field": "orderedRemovedDate",
+      "value": "2019-01",
+      "quote": "He was ordered removed in January 2019, and filed an application for cancellation of removal",
+      "sourceUrl": "https://biahelp.com/rigoberto-sanchez-galvez-v-merrick-garland/",
+      "outlet": "Ninth Circuit memorandum (No. 20-73027) reposted on BIAhelp.com",
+      "confidence": "low: same name and Mexico, but the court case gives no age, city or charge to tie it to the DHS Nov 16, 2026 row (assault, methamphetamine; Sandstone, MN)",
+      "addedBy": "Tech 2026-11-27"
+    },
+    {
+      "rowId": "x-2114803701558952294-lesli-joel-calix-sarmiento",
+      "name": "Lesli Joel Calix-Sarmiento",
+      "field": "priorRemovals",
+      "count": 3,
+      "quote": "removed from the United States on August 27, 2013, February 11, 2014, and March 11, 2014 (indictment summary, per the release)",
+      "sourceUrl": "https://www.justice.gov/usao-edla/pr/honduran-illegal-alien-indicted-attempted-coercion-and-enticement-minor-and-illegal",
+      "outlet": "DOJ USAO EDLA release (official)",
+      "confidence": "medium: same person (EDLA indictment, Honduras, Oct 2026). The release lists three dated removals but never states a total, so this needs a yes before going live",
+      "addedBy": "Tech 2026-11-27"
     }
   ]
 }

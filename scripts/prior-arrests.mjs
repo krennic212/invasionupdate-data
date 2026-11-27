@@ -28,6 +28,8 @@ const WORDS = {
   thirteen: 13, fourteen: 14, fifteen: 15, sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19, twenty: 20,
   thirty: 30, forty: 40, fifty: 50, sixty: 60, seventy: 70, eighty: 80, ninety: 90, twice: 2, thrice: 3,
 };
+// Ordinals are read only by the "deported for a second time" pattern; they are not part of NUM.
+const ORDS = { second: 2, third: 3, fourth: 4, fifth: 5, sixth: 6, seventh: 7, eighth: 8, ninth: 9, tenth: 10 };
 const NUM = "(?:\\d{1,3}(?:,\\d{3})*|\\d+|" + Object.keys(WORDS).join("|") + ")";
 const FLOOR = "(?:more than|over|at least|upwards of|in excess of)";
 const NEAR = /\b(?:nearly|almost|approximately|about|around|roughly|under|fewer than|less than|up to)\s+$/i;
@@ -35,7 +37,7 @@ const NEAR = /\b(?:nearly|almost|approximately|about|around|roughly|under|fewer 
 function toInt(w) {
   const s = String(w).toLowerCase().replace(/,/g, "");
   if (/^\d+$/.test(s)) return Number(s);
-  return WORDS[s] ?? null;
+  return WORDS[s] ?? ORDS[s] ?? null;
 }
 
 const tidy = (s) => String(s || "").replace(/\s+/g, " ").trim();
@@ -177,6 +179,8 @@ const REMOVAL_RES = [
   // "twice-deported", "a twice previously removed", "a three-time previously removed" (2026-11-27)
   new RegExp(`\\b(?<n>twice|thrice|${NUM})[- ](?:time[- ])?(?:previously\\s+|prior\\s+)?(?:deported|removed)\\b`, "gi"),
   new RegExp(`\\b(?<n>${NUM})\\s+(?:prior\\s+|previous\\s+)?(?:removals|deportations)\\b`, "gi"),
+  // 2026-11-27: "was deported for a second time on January 17, 2014", "removed a third time" (ordinal = how many removals so far)
+  new RegExp(`\\b(?:deported|removed)\\s+(?:again\\s+)?(?:for\\s+)?(?:a|the)\\s+(?<n>second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth)\\s+time\\b`, "gi"),
   // 2026-11-27: "removed from the United States on three occasions", "deported on two prior occasions"
   new RegExp(`\\b(?:deported|removed)(?:\\s+[A-Za-z.]+){0,6}?\\s+on\\s+(?<n>${NUM})\\s+(?:separate\\s+|prior\\s+|previous\\s+|different\\s+)?occasions\\b`, "gi"),
 ];
@@ -214,6 +218,9 @@ function nameHits(sentence, name) {
 }
 
 const PRONOUN_LEAD = /^(?:He|She|His|Her|The\s+(?:defendant|suspect|illegal alien|criminal illegal alien|criminal alien|alien))\b/;
+// 2026-11-27 (DHS deportation lists): "After a DOJ Immigration Judge issued him a final order ..., he was deported on April 21." also
+// continues the person just named: a time lead-in followed by he / him / his within the first words.
+const TIME_PRONOUN_LEAD = /^(?:After|Then|Later|Subsequently|(?:In|On|By)\s+[A-Z0-9][^,]{0,25},)\s[^.]{0,120}?\b(?:he|him|his|she|her)\b/;
 
 /**
  * The text this person's counts may be read from. `siblings` = other names whose rows share this release / post.
@@ -239,7 +246,7 @@ export function pick(all, name, siblings, strict) {
     if (self && other) { subjectIsSelf = false; continue; }
     if (self) subjectIsSelf = true;
     else if (other) subjectIsSelf = false;
-    else if (strict && !PRONOUN_LEAD.test(sen)) subjectIsSelf = false;
+    else if (strict && !PRONOUN_LEAD.test(sen) && !TIME_PRONOUN_LEAD.test(sen)) subjectIsSelf = false;
     if (subjectIsSelf) keep.push(sen);
   }
   return keep.join(" ");

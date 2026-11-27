@@ -98176,7 +98176,10 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": null,
+    "orderedRemovedDate": "2002-08",
+    "orderedRemovedQuote": "El dominicano también había sido condenado en julio de 2002 a 119 días de prisión por presentar una solicitud fraudulenta de pasaporte. En agosto de ese mismo año, un juez de inmigración ordenó su expulsión de Estados Unidos, y Flete García renunció a su derecho a apelar esa decisión.",
+    "orderedRemovedSource": "https://www.diariolibre.com/usa/actualidad/2026/10/15/ice-arresta-furvio-flete-garcia-condenado-por-defraudar-al-irs/3690152"
   },
   {
     "name": "Sanjay Kaushik",
@@ -105970,10 +105973,17 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null,
+    "priorRemovals": 2,
     "orderedRemovedDate": "2008-04-16",
     "orderedRemovedQuote": "After a DOJ Immigration Judge issued him a final order of removal on April 16, 2008, he was deported on April 21.",
-    "orderedRemovedSource": "https://www.dhs.gov/news/2026/09/17/make-america-safe-again-ice-deports-murderers-pedophiles-and-drunk-drivers"
+    "orderedRemovedSource": "https://www.dhs.gov/news/2026/09/17/make-america-safe-again-ice-deports-murderers-pedophiles-and-drunk-drivers",
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "He then illegally re-entered the country – a felony – at an unknown date and location, and was deported for a second time on January 17, 2014.",
+        "url": "https://www.dhs.gov/news/2026/09/17/make-america-safe-again-ice-deports-murderers-pedophiles-and-drunk-drivers",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Armando Vladimir Salgado",
@@ -106013,10 +106023,17 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null,
+    "priorRemovals": 3,
     "orderedRemovedDate": "2006-09-13",
     "orderedRemovedQuote": "After a DOJ Immigration Judge issued Salgado a final order of removal on September 13, 2006, he was deported on May 15, 2009.",
-    "orderedRemovedSource": "https://www.dhs.gov/news/2026/09/17/make-america-safe-again-ice-deports-murderers-pedophiles-and-drunk-drivers"
+    "orderedRemovedSource": "https://www.dhs.gov/news/2026/09/17/make-america-safe-again-ice-deports-murderers-pedophiles-and-drunk-drivers",
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "After illegally entering the country for a THIRD time at an unknown date and location, he was deported for a third time on January 19, 2024.",
+        "url": "https://www.dhs.gov/news/2026/09/17/make-america-safe-again-ice-deports-murderers-pedophiles-and-drunk-drivers",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Mary Angelica Landeros-Quen",

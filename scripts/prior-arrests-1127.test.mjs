@@ -54,3 +54,8 @@ test("'released TWICE before' is releases; 'arrested and released twice before' 
   assert.equal(b.priorArrests, 2);
   assert.equal(priorFor(row("Jon Doe", "Jon Doe was released from custody.")).priorReleases, null);
 });
+test("'deported for a second time on January 17, 2014' is 2 removals; ordinals do not leak into arrests", () => {
+  const p = priorFromRelease("Edan Yoel Gomez-Rodriguez, an illegal alien from Honduras, deported on September 11. After a DOJ Immigration Judge issued him a final order of removal on April 16, 2008, he was deported on April 21. He then illegally re-entered the country and was deported for a second time on January 17, 2014.", "Edan Yoel Gomez-Rodriguez");
+  assert.equal(p.priorRemovals, 2);
+  assert.equal(priorFor(row("Jon Doe", "Jon Doe was arrested for his second prior arrest offense of DWI.")).priorArrests, null);
+});
