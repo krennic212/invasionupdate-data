@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-27T07:56:46Z",
+  "updatedAt": "2026-11-27T07:58:20Z",
   "rows": 3087,
-  "approved": 3057,
-  "pending": 30,
+  "approved": 3055,
+  "pending": 32,
   "photos": 582,
   "reviewRows": 784,
   "lastAddedAt": "2026-11-27T03:47:50Z",
-  "lastAddedCount": 575,
+  "lastAddedCount": 574,
   "lastAdded": [
     "Diego Mateo-Pedro",
     "Rosendo Abelino Ruiz-Mendez",
@@ -288,7 +288,6 @@
     "Heriberto Del Fierro-Moreno",
     "Rony Obando-Cruz",
     "Daniel Narcisse",
-    "Katie Abraham",
     "Carlos Arteaga-Acosta",
     "Joel Hernandez",
     "Agustin Morales-Renteria",
@@ -584,6 +583,6 @@
     "Yia Xiong",
     "Xiong Pao Vang"
   ],
-  "harvestSha256": "167a99d96af4fcc59065de3ef4f854483353d801fd2ed5d095482af478470c90",
+  "harvestSha256": "2bc4080334936ccda47e8fab1858f323f741ea9086f3d88eae53036210bf5249",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }

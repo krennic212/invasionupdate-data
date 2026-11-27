@@ -9623,14 +9623,15 @@
     "confirmedBy": "ICE",
     "lat": null,
     "lon": null,
-    "status": "approved",
+    "status": "pending",
     "tags": [],
     "priorArrests": null,
     "priorArrestsPlus": false,
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": null,
+    "holdReason": "not an offender: @EROChicago Jul 9, 2026 post names Katie Abraham as a VICTIM (\"to honor Megan Bos and Katie Abraham, both victims of criminal illegal aliens\"). Parser-error row; held by Tech 2026-11-27 pending Krennic decision to delete."
   },
   {
     "name": "Carlos Arteaga-Acosta",
@@ -29686,14 +29687,18 @@
     "confirmedBy": "ICE",
     "lat": 36.2637,
     "lon": -82.4912,
-    "status": "approved",
+    "status": "pending",
     "tags": [],
     "priorArrests": null,
     "priorArrestsPlus": false,
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": null,
+    "orderedRemovedDate": "2017-10",
+    "orderedRemovedQuote": "He was ordered removed in October 2017.",
+    "orderedRemovedSource": "https://www.ice.gov/most-wanted/mogollon-anaya-alan-jacob",
+    "holdReason": "suspect described as still at large: ICE Most Wanted page (https://www.ice.gov/most-wanted/mogollon-anaya-alan-jacob) lists him as \"Wanted for vehicular homicide; criminal fugitive\"; the @ICEgov Jun 10, 2026 post reports no arrest. Krennic guard: hold at-large suspects."
   },
   {
     "name": "Gabriel Maror Ayuel",
