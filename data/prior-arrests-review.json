@@ -1,0 +1,35 @@
+{
+  "note": "Prior-count suggestions found only in non-agency sources (reporters, news sites, X users), or in agency text whose count is ambiguous. NOT applied to live rows. For Director Krennic to approve or reject. Added 2026-11-26.",
+  "suggestions": [
+    {
+      "rowId": "x-2046680652544676028-eri-otoniel-roblero-perez",
+      "name": "Eri Otoniel Roblero Perez",
+      "field": "priorArrests",
+      "count": 3,
+      "quote": "He also had 3 prior DUI arrests.",
+      "sourceUrl": "https://x.com/hernandoarce/status/2046680706944774303",
+      "outlet": "X user @hernandoarce",
+      "confidence": "low: single unverified X user; the ICE/DHS posts, WYFF and Fox Carolina coverage give no prior arrests"
+    },
+    {
+      "rowId": "x-2119392875662152148-alvaro-adrian-veliz-gonzalez",
+      "name": "Alvaro Adrian Veliz Gonzalez",
+      "field": "priorRemovals",
+      "count": 2,
+      "quote": "ICE Boston Nabs Twice Deported Guatemalan Criminal Illegal Alien With History of Sexual Battery, Drugs, Weapons",
+      "sourceUrl": "https://www.newbedfordguide.com/ice-boston-nabs-twice-deported-guatemalan-criminal-illegal-alien-with-history-of-sexual-battery-drugs-weapons/2026/11/08",
+      "outlet": "New Bedford Guide (headline); also X user @texkota: \"According to ICE, Gonzalez had previously been deported twice\" https://x.com/texkota/status/2119579114566758432",
+      "confidence": "medium: the row's own @EROBoston post only says \"previously removed\""
+    },
+    {
+      "rowId": "dhs-20261030-allan-adonay-contreras-vasquez",
+      "name": "Allan Adonay Contreras-Vasquez",
+      "field": "priorReleases",
+      "count": 2,
+      "quote": "After his release, he allegedly went on to rape a 13-year-old girl , only for them to release him a SECOND time after that.",
+      "sourceUrl": "https://www.dhs.gov/news/2026/10/30/wanted-criminal-released-sanctuary-politicians-ms-13-gang-member-prior-arrests",
+      "outlet": "DHS (official) - held for review because it is ambiguous: 2 Prince George's County releases plus 1 earlier Border Patrol release (3 in all). X user @NightOwl43822 also says \"released him twice\"",
+      "confidence": "official source, but the count is ambiguous (2 or 3)"
+    }
+  ]
+}
