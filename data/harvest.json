@@ -32917,7 +32917,7 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null,
+    "priorRemovals": 2,
     "orderedRemovedDate": "2024",
     "orderedRemovedQuote": "...Martinez Rivera, a criminal illegal alien from Mexico, has a 2024 final removal order and pending charges for FOUR DUIs and multiple traffic...",
     "orderedRemovedSource": "https://x.com/ICEgov/status/2016660703495528762"
@@ -40868,7 +40868,10 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": 3
+    "priorRemovals": 3,
+    "orderedRemovedDate": "2015-08-24",
+    "orderedRemovedQuote": "...removed from the United States three times since a final a final order of removal dated Aug. 24, 2015.",
+    "orderedRemovedSource": "https://www.justice.gov/usao-edva/pr/illegal-alien-guatemala-sentenced-over-six-years-prison-immigration-and-child-sexual"
   },
   {
     "name": "Luzvin Orvando Garcia Moran",
@@ -44733,7 +44736,7 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": 3,
-    "priorRemovals": null
+    "priorRemovals": 3
   },
   {
     "name": "Jose Antonio Ramos",
@@ -49434,7 +49437,7 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 2
   },
   {
     "name": "Wilmer Jesus Colmenares-Gonzalez",
@@ -91440,7 +91443,7 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 2
   },
   {
     "name": "Luis Alberto Guajardo",

@@ -175,17 +175,6 @@
       "addedBy": "Tech 2026-11-27"
     },
     {
-      "rowId": "2100674255960576227",
-      "name": "Luis Nino-Moncada",
-      "field": "orderedRemovedDate",
-      "value": "2024",
-      "quote": "Portland just spent nine months housing a man with a 2024 removal order after he rammed a Border Patrol car outside Adventist Health.",
-      "sourceUrl": "https://x.com/momma_pdx/status/2100415639521562787",
-      "outlet": "X user @momma_pdx",
-      "confidence": "medium: non-agency post; name not in the quoted sentence",
-      "addedBy": "Grok Bot 2026-11-27"
-    },
-    {
       "rowId": "2100987898992451646",
       "name": "Molis Augustave",
       "field": "orderedRemovedDate",
@@ -261,6 +250,17 @@
       "outlet": "DOJ USAO EDLA release (official)",
       "confidence": "medium: same person (EDLA indictment, Honduras, Oct 2026). The release lists three dated removals but never states a total, so this needs a yes before going live",
       "addedBy": "Tech 2026-11-27"
+    },
+    {
+      "rowId": "1949515941621993954",
+      "name": "Jesus Banuelos Lepe",
+      "field": "priorRemovals",
+      "count": 5,
+      "quote": "Banuelos-Lepe, a citizen of Mexico, who had been removed from the United States on five occasions and did not have permission to legally be in the United States.",
+      "sourceUrl": "https://www.justice.gov/usao-ndia/pr/two-time-felon-sentenced-illegally-re-entering-united-states",
+      "outlet": "USAO Northern District of Iowa press release (official)",
+      "confidence": "low: identity uncertain. DOJ gives age 49 (Iowa, sentenced Feb 2026); the row says age 40 (ICE St. Paul). Both have two illegal-reentry convictions",
+      "addedBy": "Grok Bot 2026-11-27"
     }
   ]
 }
