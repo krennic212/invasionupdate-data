@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T03:37:17Z",
+  "updatedAt": "2026-11-27T03:43:00Z",
   "rows": 2513,
   "approved": 2483,
   "pending": 30,
@@ -443,6 +443,6 @@
     "Miguel Mauro Avendano",
     "Time Meippen"
   ],
-  "harvestSha256": "732281ec7f398d34f1eb8985bf11785f90ba957e2c5c4104c4bfe0ba7d3e8e40",
+  "harvestSha256": "8e5478cbde09f1c00a5a91dd709af0f47429705483eaca107d1356aff38f06ac",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
