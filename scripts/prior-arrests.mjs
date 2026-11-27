@@ -184,7 +184,36 @@ const REMOVAL_RES = [
   // 2026-11-27: "removed from the United States on three occasions", "deported on two prior occasions"
   new RegExp(`\\b(?:deported|removed)(?:\\s+[A-Za-z.]+){0,6}?\\s+on\\s+(?<n>${NUM})\\s+(?:separate\\s+|prior\\s+|previous\\s+|different\\s+)?occasions\\b`, "gi"),
 ];
+// 2026-11-27 (Krennic): a source that lists dated removals without a total counts the listed dates.
+// "removed from the United States on August 27, 2013, February 11, 2014, and March 11, 2014" -> 3.
+// Only one list in one clause, at least 2 distinct dates; a single date may be the current removal, so it is not counted.
+const MONTH = "(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|June?|July?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\\.?";
+const DATE = `(?:${MONTH}\\s+\\d{1,2}(?:st|nd|rd|th)?,?\\s+(?:19|20)\\d{2}|${MONTH}\\s+(?:of\\s+)?(?:19|20)\\d{2}|\\d{1,2}/\\d{1,2}/(?:19|20)\\d{2}|(?:19|20)\\d{2})`;
+const DATE_LIST_RE = new RegExp(
+  `\\b(?:deported|removed)(?:\\s+(?!on\\b|in\\b)[A-Za-z.]+){0,6}?\\s+(?:on|in)\\s+(?:or\\s+about\\s+)?(?<list>${DATE}(?:\\s*(?:,|;)?\\s*(?:and\\s+(?:again\\s+)?(?:on|in)?\\s*(?:or\\s+about\\s+)?|(?:on|in)\\s+(?:or\\s+about\\s+)?)?${DATE}){1,20})`,
+  "gi",
+);
+export function datedRemovalCount(s) {
+  DATE_LIST_RE.lastIndex = 0;
+  let m;
+  while ((m = DATE_LIST_RE.exec(s))) {
+    // "ordered removed on ...", "an order to be removed in ..." are orders, not removals.
+    const lead = s.slice(Math.max(0, m.index - 30), m.index) + m[0].split(/\s+(?:on|in)\s+(?!or\b)/i)[0];
+    if (/\b(?:ordered|order|orders|scheduled|hearing|judge|entered|arrived|admitted|be|being|will)\b/i.test(lead)) continue;
+    const dates = [...new Set((m.groups.list.match(new RegExp(DATE, "gi")) || []).map((d) => d.toLowerCase().replace(/[.,\s]+/g, " ").trim()))];
+    if (dates.length >= 2 && dates.length <= 20) return { n: dates.length, quote: m[0] };
+  }
+  return null;
+}
+
 function removalCount(s) {
+  const r = removalTotal(s);
+  if (r != null) return r;
+  const d = datedRemovalCount(s);
+  return d ? d.n : null;
+}
+
+export function removalTotal(s) {
   for (const re of REMOVAL_RES) {
     re.lastIndex = 0;
     let m;

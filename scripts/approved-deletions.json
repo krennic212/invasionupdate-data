@@ -54,5 +54,12 @@
     "approvedBy": "Krennic",
     "approvedAt": "2026-11-26T18:30:00-06:00",
     "reason": "Duplicate cleanup under Krennic's Nov 24, 2026 standing order (name/duplicate cleanups without asking; \"remove duplicates, keep newer item if more detailed\"). Same person as live row x-2123370709162606810-daniel-enrrique-martinez-espana (Venezuelan, Miami ERO arrest, federal narcotics conviction, final order of removal; ICE Miami release Nov 25, 2026 names him Daniel Enrrique Martinez Espana). Kept the newer @EROMiami row (full name, official booking photo) with aka \"Daniel Martinez Espana\"."
+  },
+  {
+    "id": "x-2082918187327242665-katie-abraham",
+    "name": "Katie Abraham",
+    "approvedBy": "Krennic",
+    "approvedAt": "2026-11-27T10:40:00-06:00",
+    "reason": "Not an offender: the @EROChicago Jul 30, 2026 memorial post names Katie Abraham as a victim (\"to honor Megan Bos and Katie Abraham, both victims of criminal illegal aliens\"). Parser-error row. One-time approved deletion."
   }
 ]

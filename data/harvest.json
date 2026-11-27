@@ -9705,39 +9705,6 @@
     "priorRemovals": null
   },
   {
-    "name": "Katie Abraham",
-    "city": "Not stated",
-    "crime": "As posted: @EROChicago leadership and ICE Victims of Immigration Crime Engagement (VOICE) gathered with the Abraham and Bos Angel Families July 9 to honor Megan Bos and Katie Abraham, both victims of criminal illegal aliens, and to recognize the officers who helped pursue justice for them.",
-    "usa": "ICE X post Jul 30, 2026 (@EROChicago)",
-    "foreign": "Not stated in post",
-    "picked": "7/30/2026 (@EROChicago post)",
-    "entered": "Not stated",
-    "office": "EROChicago",
-    "id": "x-2082918187327242665-katie-abraham",
-    "when": "30 Jul 2026",
-    "severity": 0,
-    "severityReason": "",
-    "severityCrimes": [],
-    "text": "@EROChicago Jul 30, 2026, as posted: @EROChicago leadership and ICE Victims of Immigration Crime Engagement (VOICE) gathered with the Abraham and Bos Angel Families July 9 to honor Megan Bos and Katie Abraham, both victims of criminal illegal aliens, and to recognize the officers who helped pursue justice for them.",
-    "photo": "",
-    "via": "@EROChicago 2082918187327242665",
-    "sourceUrl": "https://x.com/EROChicago/status/2082918187327242665",
-    "voting": false,
-    "origin": "Not stated",
-    "confirmedBy": "ICE",
-    "lat": null,
-    "lon": null,
-    "status": "pending",
-    "tags": [],
-    "priorArrests": null,
-    "priorArrestsPlus": false,
-    "priorArrestsQuote": null,
-    "priorReleases": null,
-    "priorConvictions": null,
-    "priorRemovals": null,
-    "holdReason": "not an offender: @EROChicago Jul 9, 2026 post names Katie Abraham as a VICTIM (\"to honor Megan Bos and Katie Abraham, both victims of criminal illegal aliens\"). Parser-error row; held by Tech 2026-11-27 pending Krennic decision to delete."
-  },
-  {
     "name": "Carlos Arteaga-Acosta",
     "city": "Not stated",
     "crime": "Arrested: ICE San Francisco arrested criminal alien Carlos Arteaga-Acosta, 34, of Honduras, in San Francisco.",
@@ -29114,7 +29081,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "According to court documents, Jean Claude Casimir, 59, was deported from the United States on June 7, 1995, and Sept. 8, 2007.",
+        "url": "https://www.justice.gov/usao-edva/pr/illegal-immigrant-french-guiana-pleads-guilty-after-stealing-identities-two-victims",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Akinpelumi Olawale Oyewusi",
@@ -32074,7 +32048,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "— FELONY FRAUD — FELONY ILLEGAL REENTRY Miguel Franscisco-Austria, a criminal illegal alien from Mexico, was previously deported in 2008 and 2010. https://t.co/idqFRfhSaW",
+        "url": "https://x.com/ICEgov/status/2019096048933777661",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Denis Alecsis Garcia Nunes",
@@ -48323,7 +48304,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 3,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "According to investigators, on April 24, 2026, Solis, an alien, was found in Beggs, Oklahoma, without obtaining the express consent of the Secretary of Homeland Security to reapply for admission to the United States after having been previously removed on May 2, 2005, June 28, 2001, and January 29, 1998.",
+        "url": "https://www.justice.gov/usao-edok/pr/illegal-alien-sentenced-unlawful-reentry-42",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Wilmer Alexander Delcid-Baires",
@@ -49021,7 +49009,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 4,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "According to allegations contained in the criminal complaint and statements made during court proceedings, Perez-Flores is a citizen and national of Mexico who was previously deported on or about January 30, 2013; March 19, 2019; July 24, 2019; and August 3, 2019, and reentered the United States illegally.",
+        "url": "https://www.justice.gov/usao-nv/pr/illegal-alien-multiple-deportations-and-drug-trafficking-conviction-charged-illegal",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Johan Perez-Ventura",
@@ -55336,7 +55331,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 4,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "The Indictment alleged that on September 17, 2026, Contreras Villeda, an alien, was found in the Eastern District of Oklahoma, without obtaining the express consent of the Secretary of Homeland Security to reapply for admission to the United States after having been previously removed on September 29, 2011, August 19, 2009, September 27, 2008, and August 12, 2008.",
+        "url": "https://www.justice.gov/usao-edok/pr/illegal-alien-pleads-guilty-unlawful-reentry-41",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Seferino Huerta-Casillas",
@@ -61453,7 +61455,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Orozco-Becerra was previously deported to Mexico on or about December 17, 2019, and April 19, 2022.",
+        "url": "https://www.justice.gov/usao-nv/pr/illegal-alien-prior-deportations-and-multiple-violent-felony-convictions-sentenced-two",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Bryan Sixto Arias-Chicas",
@@ -62035,7 +62044,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Altunar-Rueda is a citizen of Mexico who was deported from the United States in 2013 and again in 2019.",
+        "url": "https://www.justice.gov/usao-ma/pr/illegal-alien-mexico-pleads-guilty-illegal-reentry",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Randy Pierre-Louis",
@@ -67084,7 +67100,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Juarez was previously removed in 2010 and 2023.",
+        "url": "https://x.com/EROLosAngeles/status/2117043761712922804",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Rodrigo Ortega-Reyes",
@@ -67747,7 +67770,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 3,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "He was removed in 2011, 2019, and 2023.",
+        "url": "https://x.com/EROLosAngeles/status/2116319239913275570",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Mariela Delia Mendoza",
@@ -69777,7 +69807,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 5,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "According to investigators, on July 10, 2026, Hernandez, an alien, was found in Sallisaw, Oklahoma, without obtaining the express consent of the Secretary of Homeland Security to reapply for admission to the United States after having been previously removed on October 17, 2013; April 12, 2013; September 6, 2012; January 12, 2005; and July 5, 2000.",
+        "url": "https://www.justice.gov/usao-edok/pr/illegal-alien-sentenced-unlawful-reentry-40",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Javier Hernandez Alcon",
@@ -77621,7 +77658,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 3,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "In addition, on or about August 28, 2026, CALIX-SARMIENTO , an alien, was found in the United States after having been deported and removed therefrom on or about August 27, 2013, February 11, 2014, and March 11, 2014, without the approval of the Attorney General of the United States, or his designated successor, the Secretary of the Department of Homeland Security, having expressly consented to the defendant’s reapplication for admission into the United States.",
+        "url": "https://www.justice.gov/usao-edla/pr/honduran-illegal-alien-indicted-attempted-coercion-and-enticement-minor-and-illegal",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Antoniell Flores-Blanco",
@@ -79056,7 +79100,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Previously removed in 2013 and 2018, his Removal Order was reinstated, and he was removed in August https://t.co/m5AXiJheoH",
+        "url": "https://x.com/EROLosAngeles/status/2113790073720434890",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Luciano Gabriel Rodriguez-Ortiz",
@@ -88807,7 +88858,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Toribio Canales had previously been deported from the United States in 2006 and 2020, and he has never obtained permission from the Attorney General or the Secretary of the Department of Homeland Security for readmission in the United States.",
+        "url": "https://www.justice.gov/usao-mdfl/pr/salvadoran-national-sentenced-federal-prison-illegal-reentry-united-states",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Manuel De Jesus Arce Cruz",
@@ -93736,7 +93794,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 3,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "The Indictment alleged that on September 3, 2026, Becerra-Del Rio, an alien, was found in the Eastern District of Oklahoma without obtaining the express consent of the Secretary of Homeland Security to reapply for admission to the United States after having been previously removed on April 19, 2020, April 11, 2020, and December 12, 2017.",
+        "url": "https://www.justice.gov/usao-edok/pr/illegal-alien-pleads-guilty-unlawful-reentry-38",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Pedro Vega-Wizard",
@@ -103608,10 +103673,17 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null,
+    "priorRemovals": 2,
     "orderedRemovedDate": "2004-03-10",
     "orderedRemovedQuote": "He was issued a final order of removal on March 10, 2004.",
-    "orderedRemovedSource": "https://www.dhs.gov/news/2026/10/08/make-america-safe-again-ice-deports-illegal-alien-gang-members-murderers-pedophiles"
+    "orderedRemovedSource": "https://www.dhs.gov/news/2026/10/08/make-america-safe-again-ice-deports-illegal-alien-gang-members-murderers-pedophiles",
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Cruz-Estefina illegally entered the United States at an unknown date and location and was previously deported in 2004 and 2009.",
+        "url": "https://www.dhs.gov/news/2026/10/08/make-america-safe-again-ice-deports-illegal-alien-gang-members-murderers-pedophiles",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Ian Clive Burton",
@@ -105719,7 +105791,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 2,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "According to charging documents, Granados-Duarte was removed from the United States in 2018 and 2020.",
+        "url": "https://www.justice.gov/usao-sdoh/pr/grand-jury-indicts-illegal-alien-mexico-who-has-prior-drug-conviction-illegally",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Heriberto Lopez-Trevino",
