@@ -1,4 +1,8 @@
 {
+  "Caroll County, MD": {
+    "at": "2026-11-27T03:47:23.560Z",
+    "reason": "geocoder found no place by that name in that state"
+  },
   "Clairsville, OH": {
     "at": "2026-10-28T19:14:46.253Z",
     "reason": "geocoder found no place by that name in that state"
