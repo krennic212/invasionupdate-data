@@ -41,3 +41,7 @@ test("'removed from the United States on three occasions' is a removal count", (
   assert.equal(p.priorRemovals, 3);
   assert.equal(p.priorArrests, null);
 });
+test("'a twice previously removed' and 'a three-time previously removed' are removal counts", () => {
+  assert.equal(priorFor(row("Marcos Contreras-Lopez", "Marcos Contreras-Lopez, a twice previously removed criminal illegal alien from Mexico, was arrested in June.")).priorRemovals, 2);
+  assert.equal(priorFor(row("Marcel Jordan Lopes Da Silva", "Meet Marcel Jordan Lopes Da Silva, a three-time previously removed criminal illegal alien from Brazil.")).priorRemovals, 3);
+});

@@ -67489,7 +67489,10 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": null,
+    "orderedRemovedDate": "2005",
+    "orderedRemovedQuote": "An immigration judge ordered Acicon removed in 2005.",
+    "orderedRemovedSource": "https://x.com/EROLosAngeles/status/2116333582050324538"
   },
   {
     "name": "Miguel Angel Delgado-Guzman",
@@ -73130,7 +73133,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 4,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Glen Madric Reyes, a 4-time previously deported criminal alien & former Tango Blast gang member from Honduras",
+        "url": "https://x.com/EROHouston/status/2115483594089255226",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Nolberto Valdez-Ruiz",
@@ -73756,7 +73766,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 3,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "ICE Boston arrested Jose Perez-Antonio, a three-time previously removed criminal illegal alien from the Dominican Republic",
+        "url": "https://x.com/EROBoston/status/2115409996817256611",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Victor Falfan",
@@ -76141,7 +76158,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 3,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Meet Marcel Jordan Lopes Da Silva, a three-time previously removed criminal illegal alien from Brazil.",
+        "url": "https://x.com/EROBoston/status/2115031991242358986",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Maksat Amanturov",
@@ -92705,10 +92729,17 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null,
+    "priorRemovals": 2,
     "orderedRemovedDate": "2008",
     "orderedRemovedQuote": "...back onto NYC streets despite the threat he poses and a 2008 final removal order.",
-    "orderedRemovedSource": "https://x.com/ICEgov/status/2111170426764206488"
+    "orderedRemovedSource": "https://x.com/ICEgov/status/2111170426764206488",
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Marcos Contreras-Lopez, a twice previously removed criminal illegal alien from Mexico",
+        "url": "https://x.com/ICEgov/status/2111170426764206488",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Korakanh Phornsavanh",
