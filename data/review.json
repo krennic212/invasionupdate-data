@@ -505,7 +505,10 @@
     "reviewReason": "held by guard: not stated to be a non-citizen",
     "tags": [
       "Gang"
-    ]
+    ],
+    "orderedRemovedDate": "2023",
+    "orderedRemovedQuote": "An immigration judge ordered him removed in 2023.",
+    "orderedRemovedSource": "https://x.com/ERONewYork/status/2118084655488614772"
   },
   {
     "name": "Arys Robert Amarante-Flete",
@@ -530,7 +533,8 @@
     "status": "pending",
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 2
   },
   {
     "name": "Jose Alas Monterosa",
@@ -680,7 +684,8 @@
     "status": "pending",
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 4
   },
   {
     "name": "Jose Gonzaga Delgado",
@@ -705,7 +710,8 @@
     "status": "pending",
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 2
   },
   {
     "name": "Angel Uriel Rivera-Calderon",
@@ -732,7 +738,8 @@
     "reviewReason": "held by guard: not stated to be a non-citizen",
     "tags": [
       "Gang"
-    ]
+    ],
+    "priorRemovals": 4
   },
   {
     "name": "Nassim Pourahmad",
@@ -757,7 +764,10 @@
     "status": "pending",
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2009",
+    "orderedRemovedQuote": "Ordered removed in 2009, she’ll remain in ICE custody until removed.",
+    "orderedRemovedSource": "https://x.com/EROLosAngeles/status/2116303634719740217"
   },
   {
     "name": "Rodnar Centeno Moreno",
@@ -937,7 +947,10 @@
     "status": "pending",
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2003",
+    "orderedRemovedQuote": "Immigration judge ordered him removed in 2003, and ICE finally sent him back to Ukraine in August.",
+    "orderedRemovedSource": "https://x.com/ERONewYork/status/2114869693534355946"
   },
   {
     "name": "Yinke Chen",
@@ -962,7 +975,10 @@
     "status": "pending",
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2019",
+    "orderedRemovedQuote": "Final Removal Order issued in 2019.",
+    "orderedRemovedSource": "https://x.com/EROLosAngeles/status/2113775224537673818"
   },
   {
     "name": "Edduard Omar Majano-Sosa",
@@ -1190,7 +1206,10 @@
     "status": "pending",
     "holdReason": "not stated to be a non-citizen",
     "reviewReason": "held by guard: not stated to be a non-citizen",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2024",
+    "orderedRemovedQuote": "An immigration judge ordered him removed in 2024.",
+    "orderedRemovedSource": "https://x.com/EROLosAngeles/status/2110518263549681758"
   },
   {
     "name": "Renzo Yance Dominguez",
@@ -1668,7 +1687,8 @@
     "reviewReason": "held by guard: not stated to be a non-citizen",
     "tags": [
       "Gang"
-    ]
+    ],
+    "priorRemovals": 2
   },
   {
     "name": "Pedro LARA-Torrez",
@@ -1695,7 +1715,8 @@
     "reviewReason": "held by guard: not stated to be a non-citizen",
     "tags": [
       "Gang"
-    ]
+    ],
+    "priorRemovals": 2
   },
   {
     "name": "Jorge Luis MOLINA Vides",
@@ -2681,7 +2702,10 @@
     "reviewReason": "X post (not an official .gov page)",
     "tags": [
       "Gang"
-    ]
+    ],
+    "orderedRemovedDate": "2016-10-27",
+    "orderedRemovedQuote": "He was issued a final order of removal by an Immigration Judge on October 27, 2016.",
+    "orderedRemovedSource": "https://x.com/DHSgov/status/2106144650088108394"
   },
   {
     "name": "Jose Manchame-Morales",
@@ -2704,7 +2728,10 @@
     "lat": null,
     "lon": null,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2005-10-05",
+    "orderedRemovedQuote": "...was released into the country, and was later issued a removal order by an Immigration Judge on October 5, 2005.",
+    "orderedRemovedSource": "https://x.com/DHSgov/status/2106144659189731715"
   },
   {
     "name": "Leonardo Parra Altamirano",
@@ -2731,7 +2758,10 @@
     "holdReason": "duplicate of x-2108880723612766243-juan-leonardo-parra-altamirano",
     "tags": [
       "Entered under Biden"
-    ]
+    ],
+    "orderedRemovedDate": "2023-05-08",
+    "orderedRemovedQuote": "He was issued a final order of removal on May 8, 2023.",
+    "orderedRemovedSource": "https://x.com/DHSgov/status/2106144667259515150"
   },
   {
     "name": "Ramon Antonio Bonifacio",
@@ -2802,7 +2832,10 @@
     "lon": null,
     "victims": "victim while under 18, unnamed",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2014-12-09",
+    "orderedRemovedQuote": "He was issued a final order of removal by an Immigration Judge on December 9, 2014.",
+    "orderedRemovedSource": "https://x.com/DHSgov/status/2106144693511733409"
   },
   {
     "name": "Hoang Nhan Truong",
@@ -2825,7 +2858,10 @@
     "lat": null,
     "lon": null,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2010-09-01",
+    "orderedRemovedQuote": "Truong was issued a final order of removal on September 1, 2010.",
+    "orderedRemovedSource": "https://x.com/DHSgov/status/2106144716286767159"
   },
   {
     "name": "Nestor Alexander Galvis Ayala",
@@ -2848,7 +2884,10 @@
     "lat": null,
     "lon": null,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2025-11-18",
+    "orderedRemovedQuote": "Ayala was issued a final order of removal on November 18, 2025.",
+    "orderedRemovedSource": "https://x.com/DHSgov/status/2106144723954012378"
   },
   {
     "name": "Nocasse Lucas Orelus",
@@ -3978,7 +4017,10 @@
     "sourceUrl": "https://x.com/EROLosAngeles/status/2103288382923350459",
     "origin": "Mexico",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2024",
+    "orderedRemovedQuote": "Ordered removed in 2024, he will remain in ICE custody pending removal proceedings.",
+    "orderedRemovedSource": "https://x.com/EROLosAngeles/status/2103288382923350459"
   },
   {
     "entered": "Not stated",
@@ -4024,7 +4066,10 @@
     "sourceUrl": "https://x.com/EROLosAngeles/status/2103273279104618646",
     "origin": "Vietnam",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2018",
+    "orderedRemovedQuote": "He was ordered removed in 2018 and will remain in ICE custody pending removal",
+    "orderedRemovedSource": "https://x.com/EROLosAngeles/status/2103273279104618646"
   },
   {
     "entered": "Not stated",
@@ -4631,7 +4676,10 @@
     "lat": 34.0522,
     "lon": -118.2437,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2011",
+    "orderedRemovedQuote": "A Final Order of Removal was issued in 2011.",
+    "orderedRemovedSource": "https://x.com/EROLosAngeles/status/2102563599394713751"
   },
   {
     "name": "Jose Steven Estupinan Cuero",
@@ -5212,7 +5260,8 @@
     "lat": 29.7604,
     "lon": -95.3698,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 2
   },
   {
     "name": "Javier Alonzo Morales",
@@ -5235,7 +5284,8 @@
     "lat": 29.7604,
     "lon": -95.3698,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 4
   },
   {
     "name": "Marlon Rafael Carpio Carreno",
@@ -5281,7 +5331,10 @@
     "lat": 34.05,
     "lon": -118.25,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "1993",
+    "orderedRemovedQuote": "A judge ordered him removed in 1993.",
+    "orderedRemovedSource": "https://x.com/EROLosAngeles/status/2102201211139371185"
   },
   {
     "name": "Esteban Enriquez-Munoz",
@@ -5351,7 +5404,10 @@
     "lat": 34.05,
     "lon": -118.25,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2000",
+    "orderedRemovedQuote": "A judge ordered him removed in 2000 and ICE will hold him until he is removed.",
+    "orderedRemovedSource": "https://x.com/EROLosAngeles/status/2102178560941384091"
   },
   {
     "name": "Maurilio Lazcano-Vargas",
@@ -5792,7 +5848,8 @@
     "lon": -118.25,
     "victims": "victim while under 14, unnamed",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 2
   },
   {
     "name": "Francisco Tambriz",
@@ -5976,7 +6033,8 @@
     "lat": 34.05,
     "lon": -118.25,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 2
   },
   {
     "name": "13 Chinese, 8 Honduran, 1 Dominican",
@@ -6118,7 +6176,10 @@
     "lat": null,
     "lon": null,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2026-06-16",
+    "orderedRemovedQuote": "He entered the United States legally but lost his status after receiving a final order of removal on June 16, 2026.",
+    "orderedRemovedSource": "https://x.com/DHSgov/status/2101739290954703181"
   },
   {
     "name": "Ahmed Mahmoud Soliman",
@@ -6141,7 +6202,10 @@
     "lat": null,
     "lon": null,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2025-10-22",
+    "orderedRemovedQuote": "He was issued a final order of removal on October 22, 2025.",
+    "orderedRemovedSource": "https://x.com/DHSgov/status/2101739290954703181"
   },
   {
     "name": "Yasmani Garcia-Portillo",
@@ -6210,7 +6274,11 @@
     "lat": 35.5175,
     "lon": -86.5804,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorArrests": 9,
+    "priorArrestsPlus": true,
+    "priorArrestsQuote": "Espinoza-Paguada has also been arrested nine times for public intoxication and disorderly conduct.",
+    "priorRemovals": 5
   },
   {
     "name": "Miran Kostic",
@@ -6636,7 +6704,10 @@
     "lat": 42.8967,
     "lon": -78.8846,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2024",
+    "orderedRemovedQuote": "He entered the US at an unknown date and place and was ordered removed in 2024.",
+    "orderedRemovedSource": "https://x.com/EROBuffalo/status/2101114048649519490"
   },
   {
     "name": "Romaine Robinson",
@@ -7799,7 +7870,10 @@
     "via": "@ERODallas 1932492262211977459",
     "sourceUrl": "https://x.com/ERODallas/status/1932492262211977459",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2003",
+    "orderedRemovedQuote": "Moth Khammanivong a citizen Laos, illegally residing in Oklahoma City, Oklahoma was ordered removed in 2003.",
+    "orderedRemovedSource": "https://x.com/ERODallas/status/1932492262211977459"
   },
   {
     "name": "Juan Jose Gonzalez-Rangel",
@@ -7845,7 +7919,8 @@
     "via": "@ERODallas 1960805793755701547",
     "sourceUrl": "https://x.com/ERODallas/status/1960805793755701547",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 2
   },
   {
     "name": "Noe Nava-Mata",
@@ -7868,7 +7943,8 @@
     "via": "@ERODallas 1960805673974861859",
     "sourceUrl": "https://x.com/ERODallas/status/1960805673974861859",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 3
   },
   {
     "name": "Juan Antonio Flores-Amateco",
@@ -7891,7 +7967,10 @@
     "via": "@ERODallas 1960089839644119185",
     "sourceUrl": "https://x.com/ERODallas/status/1960089839644119185",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2014",
+    "orderedRemovedQuote": "He was ordered removed by an immigration judge in 2014 and failed to depart as required.",
+    "orderedRemovedSource": "https://x.com/ERODallas/status/1960089839644119185"
   },
   {
     "name": "Victor Manuel Lopez Perez",
@@ -8006,7 +8085,8 @@
     "via": "@ERODallas 1968303889637319154",
     "sourceUrl": "https://x.com/ERODallas/status/1968303889637319154",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 3
   },
   {
     "name": "Jonathan Berumen-Romero",
@@ -8029,7 +8109,8 @@
     "via": "@ERODallas 1967624494325116983",
     "sourceUrl": "https://x.com/ERODallas/status/1967624494325116983",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 4
   },
   {
     "name": "Santiago Cabello-Peralta",
@@ -8541,7 +8622,8 @@
     "via": "@ERODetroit 1932557887962034538",
     "sourceUrl": "https://x.com/ERODetroit/status/1932557887962034538",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 2
   },
   {
     "name": "Thy Loeuy",
@@ -8679,7 +8761,10 @@
     "via": "@EROSaltLakeCity 1905764841718972658",
     "sourceUrl": "https://x.com/EROSaltLakeCity/status/1905764841718972658",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "1998",
+    "orderedRemovedQuote": "He was ordered deported in 1998 and concocted a new identity to evade ICE and try to fraudulently obtain immigration benefits.",
+    "orderedRemovedSource": "https://x.com/EROSaltLakeCity/status/1905764841718972658"
   },
   {
     "name": "Carlos Villasmil-Urdaneta",
@@ -9052,7 +9137,10 @@
     "via": "@EROSaltLakeCity 1953155247008043125",
     "sourceUrl": "https://x.com/EROSaltLakeCity/status/1953155247008043125",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2019",
+    "orderedRemovedQuote": "A judge ordered him removed in 2019 and we’ll deliver on that order.",
+    "orderedRemovedSource": "https://x.com/EROSaltLakeCity/status/1953155247008043125"
   },
   {
     "name": "Erwin Ramirez-Castro",
@@ -9193,7 +9281,8 @@
     "via": "@EROSanAntonio 1894857642427752805",
     "sourceUrl": "https://x.com/EROSanAntonio/status/1894857642427752805",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 2
   },
   {
     "name": "Victor Manuel Llanos-Mendoza",
@@ -9356,7 +9445,10 @@
     "via": "@EROSanAntonio 1935424217765527787",
     "sourceUrl": "https://x.com/EROSanAntonio/status/1935424217765527787",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2021",
+    "orderedRemovedQuote": "Luna was convicted of driving while intoxicated in 2011 and ordered removed by an immigration judge in 2021.",
+    "orderedRemovedSource": "https://x.com/EROSanAntonio/status/1935424217765527787"
   },
   {
     "name": "Silvano Paxtian-Diaga",
@@ -9379,7 +9471,10 @@
     "via": "@EROSanAntonio 1935400968600097033",
     "sourceUrl": "https://x.com/EROSanAntonio/status/1935400968600097033",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorArrests": 5,
+    "priorArrestsPlus": true,
+    "priorArrestsQuote": "..., illegally present in the U.S. Paxtian has five arrests for driving while intoxicated and viola..."
   },
   {
     "name": "Melgar Edmilson Pelico-Guox",
@@ -10097,7 +10192,8 @@
     "reviewReason": "X post (not an official .gov page)",
     "tags": [
       "Gang"
-    ]
+    ],
+    "priorRemovals": 5
   },
   {
     "name": "Jorge Vazquez-Ramirez",
@@ -10442,7 +10538,10 @@
     "via": "@EROElPaso 1956360228183982271",
     "sourceUrl": "https://x.com/EROElPaso/status/1956360228183982271",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "1997",
+    "orderedRemovedQuote": "He was ordered removed in 1997 & is in ICE custody pending removal proceedings.",
+    "orderedRemovedSource": "https://x.com/EROElPaso/status/1956360228183982271"
   },
   {
     "name": "Erick Javier Colomo",
@@ -10934,7 +11033,8 @@
     "via": "@EROPhiladelphia 1888377389614305420",
     "sourceUrl": "https://x.com/EROPhiladelphia/status/1888377389614305420",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 3
   },
   {
     "name": "Cristian Omar Vega-Guerra",
@@ -11193,7 +11293,10 @@
     "via": "@DHSgov 1983550041496117532",
     "sourceUrl": "https://x.com/DHSgov/status/1983550041496117532",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2006",
+    "orderedRemovedQuote": "Following his heinous crimes, he lost his green card, and an immigration judge ordered him removed in 2006.",
+    "orderedRemovedSource": "https://x.com/DHSgov/status/1983550041496117532"
   },
   {
     "name": "Alexander Herrera-Acosta",
@@ -11404,7 +11507,8 @@
     "via": "@ICEgov 1883334131175538966",
     "sourceUrl": "https://x.com/ICEgov/status/1883334131175538966",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 2
   },
   {
     "name": "Arturo Alejandro Silvestre-Mendiola",
@@ -11476,7 +11580,10 @@
     "via": "@ICEgov 1883220876914487756",
     "sourceUrl": "https://x.com/ICEgov/status/1883220876914487756",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2019",
+    "orderedRemovedQuote": "He has an existing removal order from 2019.",
+    "orderedRemovedSource": "https://x.com/ICEgov/status/1883220876914487756"
   },
   {
     "name": "Jesus Vazquez Daniel",
@@ -12293,7 +12400,10 @@
     "via": "@DHSgov 1924618024780173559",
     "sourceUrl": "https://x.com/DHSgov/status/1924618024780173559",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2024-08-28",
+    "orderedRemovedQuote": "Padilla was ordered removed by an immigration judge on August 28, 2024.",
+    "orderedRemovedSource": "https://x.com/DHSgov/status/1924618024780173559"
   },
   {
     "name": "Abymahel Torres-Arriaga",
@@ -12868,7 +12978,10 @@
     "via": "@DHSgov 1935766358748545376",
     "sourceUrl": "https://x.com/DHSgov/status/1935766358748545376",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2004-10-21",
+    "orderedRemovedQuote": "Maria Isidro, an illegal alien from Mexico, was issued a final order of removal from an immigration judge on Oct. 21, 2004, after she failed to show up for her court date.",
+    "orderedRemovedSource": "https://x.com/DHSgov/status/1935766358748545376"
   },
   {
     "name": "Roberto Carlos Munoz",
@@ -13380,7 +13493,8 @@
     "tags": [
       "Gang",
       "MS-13"
-    ]
+    ],
+    "priorRemovals": 2
   },
   {
     "name": "Jose Fredi Rivera-Mejia",
@@ -13403,7 +13517,8 @@
     "via": "@ICEgov 1957215936307433838",
     "sourceUrl": "https://x.com/ICEgov/status/1957215936307433838",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 3
   },
   {
     "name": "Rolando Ico-Choc",
@@ -14783,7 +14898,10 @@
     "via": "@EROSeattle 1938342918822969421",
     "sourceUrl": "https://x.com/EROSeattle/status/1938342918822969421",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2002",
+    "orderedRemovedQuote": "Farokhrani entered the U.S. under a tourist visa was ordered removed by an immigration judge in 2002.",
+    "orderedRemovedSource": "https://x.com/EROSeattle/status/1938342918822969421"
   },
   {
     "name": "Teofilo De Los Santos-Romero",
@@ -14806,7 +14924,8 @@
     "via": "@EROSeattle 1937619993635566007",
     "sourceUrl": "https://x.com/EROSeattle/status/1937619993635566007",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 2
   },
   {
     "name": "David Chavez-Mendoza",
@@ -15553,7 +15672,8 @@
     "via": "@ERONewark 1929878232129478662",
     "sourceUrl": "https://x.com/ERONewark/status/1929878232129478662",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 2
   },
   {
     "name": "Cristian Alfredo Sifuentes Medrano",
@@ -15622,7 +15742,8 @@
     "via": "@HSINewark 1990431082685046977",
     "sourceUrl": "https://x.com/HSINewark/status/1990431082685046977",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 2
   },
   {
     "name": "Marco Hernandez-Martinez",
@@ -15648,7 +15769,8 @@
     "tags": [
       "Gang",
       "MS-13"
-    ]
+    ],
+    "priorRemovals": 2
   },
   {
     "name": "Nigel Alexander",
@@ -15855,7 +15977,8 @@
     "via": "@EROPhiladelphia 2095602968879931852",
     "sourceUrl": "https://x.com/EROPhiladelphia/status/2095602968879931852",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 2
   },
   {
     "name": "Endy Anton-Cruz",
@@ -17642,7 +17765,10 @@
     "lat": 42.3576,
     "lon": -71.0684,
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "orderedRemovedDate": "2026-06-11",
+    "orderedRemovedQuote": "Aziwung was issued a final order of removal on June 11, 2026.",
+    "orderedRemovedSource": "https://x.com/DHSgov/status/2106144701493440517"
   },
   {
     "name": "Inthavong Somsy",
@@ -18252,7 +18378,8 @@
     "lon": -117.9318,
     "aka": "Oscar Eduardo Ortega-Anguiano",
     "reviewReason": "X post (not an official .gov page)",
-    "tags": []
+    "tags": [],
+    "priorRemovals": 2
   },
   {
     "name": "Carlitos Ricardo Parias",

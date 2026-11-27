@@ -31881,7 +31881,10 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": null,
+    "orderedRemovedDate": "2013",
+    "orderedRemovedQuote": "ICE arrested him and, since he has a 2013 final removal order, he will be deported.",
+    "orderedRemovedSource": "https://x.com/ICEgov/status/2019412030378139664"
   },
   {
     "name": "Karla Peralta-Rodriguez",
