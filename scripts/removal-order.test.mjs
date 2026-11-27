@@ -49,3 +49,8 @@ test("validate rules for the optional fields", () => {
   assert.equal(orderProblems({ name: "noq", orderedRemovedDate: "2019", orderedRemovedSource: "https://a" }).length, 1);
   assert.equal(orderProblems({ name: "nosrc", orderedRemovedDate: "2019", orderedRemovedQuote: "q" }).length, 1);
 });
+
+test("reinstated YYYY final order", () => {
+  const t = "Omar Pinto Sanchez, 40, a criminal illegal alien from Mexico. Sanchez has a reinstated 2016 final order of removal from a judge.";
+  assert.equal(orderDateIn(t)?.date, "2016");
+});

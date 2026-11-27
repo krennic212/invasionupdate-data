@@ -29,8 +29,8 @@ const RES = [
   new RegExp(`\\b(?:On|In)\\s+(${DATE}),?\\s+(?:a|an|the)\\s+(?:DOJ\\s+)?(?:federal\\s+)?(?:immigration\\s+)?judge\\s+(?:with\\s+the\\s+[^,]{1,60},\\s+)?(?:(?:issued|entered|granted)[^.;]{0,40}?)?${ORDER}`, "i"),
   new RegExp(`\\b(?:On|In)\\s+(${DATE}),?\\s+(?:he|she)\\s+(?:was|received|got)\\s+(?:issued\\s+)?(?:a\\s+)?${ORDER}`, "i"),
   // "a 2018 final removal order" / "his March 2019 order of removal"
-  new RegExp(`\\b(?:a|an|his|her)\\s+(${DATE})\\s+(?:final\\s+)?(?:removal|deportation)\\s+order`, "i"),
-  new RegExp(`\\b(?:a|an|his|her)\\s+(${DATE})\\s+(?:final\\s+)?order\\s+of\\s+(?:removal|deportation)`, "i"),
+  new RegExp(`\\b(?:a|an|his|her)\\s+(?:reinstated\\s+|prior\\s+|previous\\s+|administratively\\s+final\\s+)?(${DATE})\\s+(?:final\\s+)?(?:removal|deportation)\\s+order`, "i"),
+  new RegExp(`\\b(?:a|an|his|her)\\s+(?:reinstated\\s+|prior\\s+|previous\\s+|administratively\\s+final\\s+)?(${DATE})\\s+(?:final\\s+)?order\\s+of\\s+(?:removal|deportation)`, "i"),
 ];
 // A date that clearly belongs to something else in the gap ("removed on", "arrested on", "entered in") is not the order date.
 const OTHER_EVENT = /\b(?:removed|deported|arrested|entered|re-?entered|convicted|sentenced|released|apprehended|encountered|crossed)\s+(?:him\s+|her\s+)?(?:\w+\s+){0,3}(?:on|in)\s*$/i;
