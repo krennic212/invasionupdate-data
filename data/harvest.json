@@ -21858,7 +21858,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 4,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "He was most recently deported after being apprehended again at the border on Feb. 21, 2019, and was deported for the fourth time.",
+        "url": "https://www.justice.gov/usao-wdmo/pr/illegal-alien-guatemala-sentenced-federal-prison-violating-immigration-laws",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Armida Cayetano-Ruiz",
