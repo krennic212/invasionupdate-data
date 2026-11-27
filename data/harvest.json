@@ -1978,9 +1978,9 @@
     "lon": -122.0357,
     "status": "approved",
     "tags": [],
-    "priorArrests": 1,
+    "priorArrests": null,
     "priorArrestsPlus": false,
-    "priorArrestsQuote": "...or possession of marijuana for sale and a prior arrest for inflicting corporal injury on a spo...",
+    "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
     "priorRemovals": null
@@ -28208,9 +28208,9 @@
     "lon": -121.9082,
     "status": "approved",
     "tags": [],
-    "priorArrests": 1,
+    "priorArrests": null,
     "priorArrestsPlus": false,
-    "priorArrestsQuote": "..., CA. He has final order of removal and a prior arrest for DUI. He is in ICE custody pending r...",
+    "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
     "priorRemovals": null
@@ -47242,9 +47242,9 @@
     "status": "pending",
     "holdReason": "suspect described as still at large",
     "tags": [],
-    "priorArrests": 1,
+    "priorArrests": null,
     "priorArrestsPlus": false,
-    "priorArrestsQuote": "... firearm. His criminal history includes a prior arrest for third-degree assault: with intent t...",
+    "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
     "priorRemovals": null
@@ -66220,9 +66220,9 @@
     "status": "approved",
     "tags": [],
     "photoHold": "needs visual check",
-    "priorArrests": 1,
+    "priorArrests": null,
     "priorArrestsPlus": false,
-    "priorArrestsQuote": "...ion to law enforcement officer, and had a prior arrest for driving under the influence.",
+    "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
     "priorRemovals": 2
@@ -104458,9 +104458,9 @@
       "TdA"
     ],
     "enteredSource": "As posted: Jose Almendares Suazo, 30, a criminal illegal alien from Honduras who had been previously removed from the U.S.",
-    "priorArrests": 1,
+    "priorArrests": null,
     "priorArrestsPlus": false,
-    "priorArrestsQuote": "...sault causing bodily injury, as well as a prior arrest for assault involving family violence. ...",
+    "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
     "priorRemovals": null
@@ -104529,9 +104529,9 @@
       "TdA"
     ],
     "enteredSource": "Charged: Luis Alfrando Digueros Quintanilla, 23, Guatemalan citizen and previously removed noncitizen.",
-    "priorArrests": 1,
+    "priorArrests": null,
     "priorArrestsPlus": false,
-    "priorArrestsQuote": "...ed noncitizen. Digueros Quintanilla has a prior arrest for felony sexual assault of a child ou...",
+    "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
     "priorRemovals": null
@@ -104564,9 +104564,9 @@
       "Gang",
       "TdA"
     ],
-    "priorArrests": 1,
+    "priorArrests": null,
     "priorArrestsPlus": false,
-    "priorArrestsQuote": "... in the United States. Mejia Ortega has a prior arrest for felony indecency with a child by se...",
+    "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
     "priorRemovals": null

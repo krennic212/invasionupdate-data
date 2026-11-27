@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T07:58:20Z",
+  "updatedAt": "2026-11-27T08:01:00Z",
   "rows": 3087,
   "approved": 3055,
   "pending": 32,
@@ -583,6 +583,6 @@
     "Yia Xiong",
     "Xiong Pao Vang"
   ],
-  "harvestSha256": "2bc4080334936ccda47e8fab1858f323f741ea9086f3d88eae53036210bf5249",
+  "harvestSha256": "aecd5db045148c41c7df1699e218212c439786327e10f70c8317a1d7b1891449",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
