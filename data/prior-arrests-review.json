@@ -1,5 +1,5 @@
 {
-  "note": "Prior-count suggestions found only in non-agency sources (reporters, news sites, X users), or in agency text whose count is ambiguous. NOT applied to live rows. For Director Krennic to approve or reject. Added 2026-11-26.",
+  "note": "Prior-count suggestions found only in non-agency sources (reporters, news sites, X users), or in agency text whose count is ambiguous. NOT applied to live rows. For Director Krennic to approve or reject. Added 2026-11-26. Removal-order date suggestions (field orderedRemovedDate, key \"value\") added 2026-11-27.",
   "suggestions": [
     {
       "rowId": "x-2046680652544676028-eri-otoniel-roblero-perez",
@@ -30,6 +30,138 @@
       "sourceUrl": "https://www.dhs.gov/news/2026/10/30/wanted-criminal-released-sanctuary-politicians-ms-13-gang-member-prior-arrests",
       "outlet": "DHS (official) - held for review because it is ambiguous: 2 Prince George's County releases plus 1 earlier Border Patrol release (3 in all). X user @NightOwl43822 also says \"released him twice\"",
       "confidence": "official source, but the count is ambiguous (2 or 3)"
+    },
+    {
+      "rowId": "x-2102850808609914966-mario-alexander-bonilla-canales",
+      "name": "Mario Alexander Bonilla Canales",
+      "field": "priorRemovals",
+      "count": 3,
+      "quote": "Mario Alexander Bonilla Canales, deported three times, was sentenced after being convicted of attempting to sexually exploit a minor and illegally reentering the U.S.",
+      "sourceUrl": "https://x.com/RJackX718/status/2103096712860479544",
+      "outlet": "X user @RJackX718; USAO EDVA release as republished by Virginia Courts Daily says removed \"on at least three occasions\" https://vacourtsdaily.com/salvadoran-national-sentenced-to-18-years-for-child-exploitation-and-illegal-reentry",
+      "confidence": "medium: DOJ text (\"at least three\") seen only via republisher; justice.gov blocks automated reads",
+      "added": "2026-11-27"
+    },
+    {
+      "rowId": "dhs-20261123-roni-mendez-escobar",
+      "name": "Roni Mendez-Escobar",
+      "field": "orderedRemovedDate",
+      "value": "2015-08-24",
+      "quote": "final order of removal dated August 24, 2015",
+      "sourceUrl": "https://vacourtsdaily.com/guatemalan-national-sentenced-to-over-six-years-for-immigration-and-child-sexual-abuse-crimes",
+      "outlet": "Virginia Courts Daily (republished USAO EDVA release)",
+      "confidence": "medium: DOJ text seen only via republisher; justice.gov blocks automated reads",
+      "added": "2026-11-27"
+    },
+    {
+      "rowId": "x-2098154550263947724-noune-phompor",
+      "name": "Noune Phompor",
+      "field": "orderedRemovedDate",
+      "value": "2009",
+      "quote": "His 2009 removal order sat unenforced 17 years while he checked in",
+      "sourceUrl": "https://x.com/usaJAckLaw/status/2124586879140217275",
+      "outlet": "X user @usaJAckLaw",
+      "confidence": "low: single X user",
+      "added": "2026-11-27"
+    },
+    {
+      "rowId": "x-2092646696207430137-romeo-perez-bravo",
+      "name": "Romeo Perez-Bravo",
+      "field": "priorRemovals",
+      "count": 3,
+      "quote": "Romeo Perez-Bravo, a 44-year-old Guatemalan national who had previously been deported from the United States THREE TIMES, has been sentenced to 84 months in federal prison",
+      "sourceUrl": "https://x.com/Dreamrideguard/status/2093497391731130769",
+      "outlet": "X user @Dreamrideguard",
+      "confidence": "low-medium: reads like a USAO release paraphrase; no agency copy found",
+      "added": "2026-11-27"
+    },
+    {
+      "rowId": "x-2114745990850760860-alfredo-jose-castillo-tejera",
+      "name": "Alfredo Jose Castillo-Tejera",
+      "field": "orderedRemovedDate",
+      "value": "2025",
+      "quote": "Alfredo Jose Castillo-Tejera is a Venezuelan national who entered the country illegally at an unknown date and received a final order of removal in 2025",
+      "sourceUrl": "https://x.com/679Kott/status/2115259184556253579",
+      "outlet": "X user @679Kott (attributes to DHS)",
+      "confidence": "low-medium: no DHS copy found in crawl",
+      "added": "2026-11-27"
+    },
+    {
+      "rowId": "x-2114462070351733239-fatoumata-niang",
+      "name": "Fatoumata Niang",
+      "field": "orderedRemovedDate",
+      "value": "2006",
+      "quote": "Fatoumata Niang allegedly entered as a “gotaway” and received a final deportation order in 2006",
+      "sourceUrl": "https://x.com/FundMyFraud/status/2115126384129441884",
+      "outlet": "X user @FundMyFraud",
+      "confidence": "low: single X user",
+      "added": "2026-11-27"
+    },
+    {
+      "rowId": "x-2112995372679266811-walvin-victor-hugo-garcia",
+      "name": "Walvin Victor Hugo Garcia",
+      "field": "orderedRemovedDate",
+      "value": "2025",
+      "quote": "He was ordered removed in 2025, but instead of leaving, he was soon arrested for rape and sexual battery of a child",
+      "sourceUrl": "https://x.com/RealBrittHughes/status/2052179104661663761",
+      "outlet": "X user @RealBrittHughes",
+      "confidence": "low-medium: DHS pages name him but give no order date",
+      "added": "2026-11-27"
+    },
+    {
+      "rowId": "x-2108687300699754743-juan-jose-morales-colindres",
+      "name": "Juan Jose Morales-Colindres",
+      "field": "orderedRemovedDate",
+      "value": "2026-07",
+      "quote": "ICE says 22-year-old Guatemalan national Juan Jose Morales-Colindres has now been deported under a final order of removal issued in July 2026",
+      "sourceUrl": "https://x.com/LawEnforceToday/status/2114190209583841576",
+      "outlet": "Law Enforcement Today (X)",
+      "confidence": "medium: attributes to ICE; no ICE copy found",
+      "added": "2026-11-27"
+    },
+    {
+      "rowId": "ice-20261125-ariel-velasquez-morales",
+      "name": "Ariel Velasquez-Morales",
+      "field": "orderedRemovedDate",
+      "value": "2014",
+      "quote": "ICE says he entered the country illegally from El Salvador in 2013 and was ordered removed by an immigration judge in 2014",
+      "sourceUrl": "https://x.com/MichaelARothman/status/2126152750438490261",
+      "outlet": "X user @MichaelARothman (reporter)",
+      "confidence": "medium: attributes to ICE",
+      "added": "2026-11-27"
+    },
+    {
+      "rowId": "dhs-20261029-victor-manuel-macias-castro",
+      "name": "Victor Manuel Macias-Castro",
+      "field": "priorRemovals",
+      "count": 3,
+      "quote": "Victor Manuel Macias-Castro: La Línea Cartel member; convictions for conspiracy to harbor aliens, illegal entry, and illegal re-entry; previously removed three times.",
+      "sourceUrl": "https://x.com/blm_news/status/2121681374151061680",
+      "outlet": "X account @blm_news",
+      "confidence": "low: the DHS 2026-10-29 page for him lists convictions but no removal count",
+      "added": "2026-11-27"
+    },
+    {
+      "rowId": "ice-20261102-sirena-prosper",
+      "name": "Sirena Prosper",
+      "field": "orderedRemovedDate",
+      "value": "2002",
+      "quote": "ICE cites a 2002 final removal order; vigil organizers say she is a permanent resident",
+      "sourceUrl": "https://x.com/migraprep/status/2102765588485755163",
+      "outlet": "X account @migraprep",
+      "confidence": "low: ICE voter-fraud release says only \"has a final order of removal\"; status disputed",
+      "added": "2026-11-27"
+    },
+    {
+      "rowId": "doj-20260305-mahady-sacko",
+      "name": "Mahady Sacko",
+      "field": "orderedRemovedDate",
+      "value": "2002-11-14",
+      "quote": "Sacko exhausted all appeals, and the Board of Immigration Appeals upheld his removal on November 14, 2002—over two decades ago.",
+      "sourceUrl": "https://www.dhs.gov/news/2026/03/09/ice-arrests-criminal-illegal-alien-who-voted-seven-federal-elections-2008",
+      "outlet": "DHS (official)",
+      "confidence": "CONFLICT, not applied: row already has orderedRemovedDate 2000; DHS gives the BIA appeal date (2002-11-14), not the judge order date. Krennic to decide which to keep.",
+      "added": "2026-11-27"
     }
   ]
 }
