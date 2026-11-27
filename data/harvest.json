@@ -135,7 +135,14 @@
     "priorArrestsQuote": null,
     "priorReleases": null,
     "priorConvictions": null,
-    "priorRemovals": null
+    "priorRemovals": 4,
+    "priorSources": {
+      "priorRemovals": {
+        "quote": "Rodriguez-Cordero has been previously deported four times, the last being on Nov. 24, 2025, through Nogales, Arizona.",
+        "url": "https://www.justice.gov/usao-wdtx/pr/western-district-texas-us-attorneys-office-adds-231-new-immigration-cases",
+        "kind": "official"
+      }
+    }
   },
   {
     "name": "Vicente Gordillo Aldan",
