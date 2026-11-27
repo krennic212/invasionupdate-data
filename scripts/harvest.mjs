@@ -27,6 +27,7 @@ import { resolve as resolvePath } from "node:path";
 import { scrubVictimNames } from "./victims.mjs";
 import { extractPeople, htmlBlocks, decode, toRow } from "./parse.mjs";
 import { priorFromRelease } from "./prior-arrests.mjs";
+import { orderFor } from "./removal-order.mjs";
 import { nameKey, nameKeysOf, routeRows, isOfficialUrl, isShortFormOf, stateOfficialSource } from "./rules.mjs";
 import { readStateSources, stateDefendants, stateGeo, BROWSER_UA } from "./state-sources.mjs";
 import { holdReasons, holdReasonsForRow } from "./guards.mjs";
@@ -267,6 +268,9 @@ export function rowsFromRelease(rel, { have, uniqueId, gate: gateFn = gate, exis
     // (scripts/link-check.mjs). 403 is blocked, not a dead link.
     // Krennic 2026-11-25: prior arrests / releases / convictions / removals, only as the release states them for THIS person.
     Object.assign(placed, priorFromRelease(rel.blocks, hit.name, hits.filter((h) => h !== hit).map((h) => h.name)));
+    // Krennic 2026-11-26 (t81u): removal-order date, only when the release states it for THIS person (scripts/removal-order.mjs).
+    const od = orderFor(rel.blocks, hit.name, hits.filter((h) => h !== hit).map((h) => h.name));
+    if (od && rel.url) Object.assign(placed, { orderedRemovedDate: od.date, orderedRemovedQuote: od.quote, orderedRemovedSource: rel.url });
     rows.push(scrubVictimNames(placed).row);
   }
   return { rows, held };
