@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-26",
   "windowDays": 7,
-  "total": 187,
+  "total": 153,
   "rows": [
     {
       "id": "x-2124913412668874774-juan-carlos-chub-choc",
@@ -52,18 +52,6 @@
       ]
     },
     {
-      "id": "x-2123847233334632523-jose-erasmo-beltran-amaya",
-      "name": "Jose Erasmo Beltran-Amaya",
-      "when": "20 Nov 2026",
-      "severity": 198,
-      "severityReason": "Murder / manslaughter",
-      "severityCrimes": [
-        "Murder / manslaughter",
-        "Attempted murder",
-        "Assault / battery"
-      ]
-    },
-    {
       "id": "dhs-20261123-jonathan-guzman-cisneros",
       "name": "Jonathan Guzman-Cisneros",
       "when": "23 Nov 2026",
@@ -73,17 +61,6 @@
         "Armed robbery / aggravated assault",
         "Fraud (incl. voter fraud)",
         "Weapons"
-      ]
-    },
-    {
-      "id": "x-2123882417677017508-andres-quintas-santiago",
-      "name": "Andres Quintas-Santiago",
-      "when": "20 Nov 2026",
-      "severity": 182,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime",
-        "Rape / sexual assault"
       ]
     },
     {
@@ -288,6 +265,28 @@
       ]
     },
     {
+      "id": "x-2125285745141391412-delmy-chirinos-madrid",
+      "name": "Delmy Chirinos-Madrid",
+      "when": "24 Nov 2026",
+      "severity": 120,
+      "severityReason": "Armed robbery / aggravated assault",
+      "severityCrimes": [
+        "Armed robbery / aggravated assault",
+        "Drug trafficking"
+      ]
+    },
+    {
+      "id": "x-2124623960176304274-jose-trujillo-meraz",
+      "name": "Jose Trujillo-Meraz",
+      "when": "22 Nov 2026",
+      "severity": 117,
+      "severityReason": "Rape / sexual assault",
+      "severityCrimes": [
+        "Rape / sexual assault",
+        "Assault / battery"
+      ]
+    },
+    {
       "id": "x-2126083086987243532-primitivo-arellano-cuevas",
       "name": "Primitivo Arellano Cuevas",
       "when": "26 Nov 2026",
@@ -379,26 +378,6 @@
       ]
     },
     {
-      "id": "x-2123821572217618873-castulo-garay-silva",
-      "name": "Castulo Garay-Silva",
-      "when": "20 Nov 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "doj-20261120-william-saron-capayas",
-      "name": "William Saron Capayas",
-      "when": "20 Nov 2026",
-      "severity": 92,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
       "id": "x-2125314718919241800-gerson-daniel-amaya-garcia",
       "name": "Gerson Daniel Amaya-Garcia",
       "when": "24 Nov 2026",
@@ -472,16 +451,6 @@
       "id": "dhs-20261123-oscar-evaristo-nunez",
       "name": "Oscar Evaristo Nunez",
       "when": "23 Nov 2026",
-      "severity": 83,
-      "severityReason": "Child sex crime",
-      "severityCrimes": [
-        "Child sex crime"
-      ]
-    },
-    {
-      "id": "x-2123975987478032651-amilcar-perez-morfin",
-      "name": "Amilcar Perez-Morfin",
-      "when": "20 Nov 2026",
       "severity": 83,
       "severityReason": "Child sex crime",
       "severityCrimes": [

@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-26T22:56:43Z",
-  "rows": 2080,
-  "approved": 2050,
+  "updatedAt": "2026-11-27T00:13:15Z",
+  "rows": 2079,
+  "approved": 2049,
   "pending": 30,
   "photos": 582,
   "reviewRows": 777,
@@ -17,6 +17,6 @@
     "Jesus Romero-Geronimo",
     "Juan Balthazar-Mayo"
   ],
-  "harvestSha256": "bac9637bd1e5e43aec22bf120929eafe4576dad7d63867edccee702521500f24",
+  "harvestSha256": "61423fc35af0ddf58f91489e817a8daee05acb0b03ff1ce9579284fb095ce86b",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
