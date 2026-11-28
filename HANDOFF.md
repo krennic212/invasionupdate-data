@@ -1,3 +1,7 @@
+## 2026-11-27 (evening) daily missed-cases check
+- Added via data/pending.json (2, both live, voting=true, Charged): Luis Andres Meza (citizen of Honduras, Souderton PA, 2022 election) and Han Wan (citizen of Taiwan, North Wales PA, 2024 election) from E.D. Pa. Nov 27 "Two Illegal Aliens Charged With Unlawfully Voting" (https://www.justice.gov/usao-edpa/pr/two-illegal-aliens-charged-unlawfully-voting). DOJ API did not list it yet; release text taken from the official USAO email/Public mirror and built with the official URL. Fraud Ledger picked both up via the IU voting cross-post.
+- DHS Nov 27 Thanksgiving WOW release (5 people) and ice.gov/cbp.gov items already covered. No rule fixes. 0 X reads.
+
 ## 2026-11-26 (evening) daily missed-cases check
 - Thanksgiving: DOJ API has no Nov 26 releases; Nov 25 DOJ, ice.gov, dhs.gov and cbp.gov releases all already covered. 0 rows added. 0 X reads.
 - Duplicate cleanup (standing Nov 24 OK, "keep newer item if more detailed"): removed dhs-20261117-daniel-martinez-espana; kept x-2123370709162606810-daniel-enrrique-martinez-espana (ICE Miami release Nov 25 uses the full name; official photo) with aka "Daniel Martinez Espana" so the harvester will not re-add the short form. Recorded in scripts/approved-deletions.json. Tests 354/354, validate OK, live after harvest run 45915465419 (2079 rows).
