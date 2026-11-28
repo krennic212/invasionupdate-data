@@ -1,12 +1,9 @@
 {
-  "checkedAt": 1795819360879,
-  "checkedAtIso": "2026-11-27T22:42:40.879Z",
+  "checkedAt": 1795824786998,
+  "checkedAtIso": "2026-11-28T00:13:06.998Z",
   "added": [
-    "Juan Carlos Esteban-Romero",
-    "Anilbert Barrera-Galicia",
-    "Ramiro Ruiz Romero",
-    "Jimma Ding Yan",
-    "German Alejandro Rivas-Berroteran"
+    "Luis Andres Meza",
+    "Han Wan"
   ],
   "addedStatus": "approved",
   "heldPending": [],
@@ -17,9 +14,9 @@
   },
   "autoApprove": true,
   "sentToReview": [],
-  "scannedReleases": 155,
+  "scannedReleases": 162,
   "error": null,
-  "note": "Added 5 as approved: Juan Carlos Esteban-Romero, Anilbert Barrera-Galicia, Ramiro Ruiz Romero, Jimma Ding Yan, German Alejandro Rivas-Berroteran",
+  "note": "Added 2 as approved: Luis Andres Meza, Han Wan",
   "sources": [
     "dhs.gov/news-releases/press-releases",
     "ice.gov/newsroom",

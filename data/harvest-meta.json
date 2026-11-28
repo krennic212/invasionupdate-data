@@ -1,19 +1,16 @@
 {
-  "updatedAt": "2026-11-27T22:43:26Z",
-  "rows": 3094,
-  "approved": 3063,
+  "updatedAt": "2026-11-28T00:13:28Z",
+  "rows": 3096,
+  "approved": 3065,
   "pending": 31,
   "photos": 1222,
   "reviewRows": 787,
-  "lastAddedAt": "2026-11-27T22:42:40Z",
-  "lastAddedCount": 5,
+  "lastAddedAt": "2026-11-28T00:13:06Z",
+  "lastAddedCount": 2,
   "lastAdded": [
-    "Juan Carlos Esteban-Romero",
-    "Anilbert Barrera-Galicia",
-    "Ramiro Ruiz Romero",
-    "Jimma Ding Yan",
-    "German Alejandro Rivas-Berroteran"
+    "Luis Andres Meza",
+    "Han Wan"
   ],
-  "harvestSha256": "7fab20ab45a3d69edb027f1ecf4624efdf4e60aa94ed43526628938aa0af494d",
+  "harvestSha256": "344c22ffede337340638e233cd92424963883afd79536e42d30a8c274bdd50e7",
   "source": "https://github.com/krennic212/invasionupdate-data"
 }
